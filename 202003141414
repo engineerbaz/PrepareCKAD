@@ -1,0 +1,175 @@
+Script started on 2020-03-14 14:13:35+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git add .
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gts[K[Ku[Kir [K[Kt sat[K[Ktatus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   202003141414[m
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git config status
+error: key does not contain a section: status
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git config status[K[K[K[K[K[K
+Display all 324 possibilities? (y or n)
+add.ignoreErrors                core.bigFileThreshold           gc.logExpiry                    mergetool.keepBackup 
+advice.amWorkDir                core.checkStat                  gc.packrefs                     mergetool.keepTemporaries 
+advice.commitBeforeMerge        core.commentChar                gc.pruneexpire                  mergetool.prompt 
+advice.detachedHead             core.compression                gc.reflogexpire                 merge.verbosity 
+advice.ignoredHook              core.createObject               gc.reflogexpireunreachable      notes.displayRef 
+advice.implicitIdentity         core.deltaBaseCacheLimit        gc.rerereresolved               notes.rewrite.
+advice.pushAlreadyExists        core.editor                     gc.rerereunresolved             notes.rewrite.amend 
+advice.pushFetchFirst           core.eol                        gc.worktreePruneExpire          notes.rewriteMode 
+advice.pushNeedsForce           core.excludesfile               gitcvs.allbinary                notes.rewrite.rebase 
+advice.pushNonFFCurrent         core.fileMode                   gitcvs.commitmsgannotation      notes.rewriteRef 
+advice.pushNonFFMatching        core.fsyncobjectfiles           gitcvs.dbdriver                 pack.compression 
+advice.pushUpdateRejected       core.gitProxy                   gitcvs.dbname                   pack.deltaCacheLimit 
+advice.resolveConflict          core.hideDotFiles               gitcvs.dbpass                   pack.deltaCacheSize 
+advice.rmHints                  core.hooksPath                  gitcvs.dbTableNamePrefix        pack.depth 
+advice.statusHints              core.ignorecase                 gitcvs.dbuser                   pack.indexVersion 
+advice.statusUoption            core.ignoreStat                 gitcvs.enabled                  pack.packSizeLimit 
+alias.                          core.logAllRefUpdates           gitcvs.logfile                  pack.threads 
+am.keepcr                       core.loosecompression           gitcvs.usecrlfattr              pack.window 
+am.threeWay                     core.notesRef                   gui.blamehistoryctx             pack.windowMemory 
+apply.ignorewhitespace          core.packedGitLimit             gui.commitmsgwidth              pager.
+apply.whitespace                core.packedGitWindowSize        gui.copyblamethreshold          pretty.
+branch.                         core.packedRefsTimeout          gui.diffcontext                 pull.octopus 
+branch.autosetupmerge           core.pager                      gui.encoding                    pull.twohead 
+branch.autosetuprebase          core.precomposeUnicode          gui.fastcopyblame               push.default 
+browser.                        core.preferSymlinkRefs          gui.matchtrackingbranch         push.followTags 
+clean.requireForce              core.preloadindex               gui.newbranchtemplate           rebase.autosquash 
+color.branch                    core.protectHFS                 gui.pruneduringfetch            rebase.stat 
+color.branch.current            core.protectNTFS                gui.spellingdictionary          receive.autogc 
+color.branch.local              core.quotepath                  guitool.                        receive.denyCurrentBranch 
+color.branch.plain              core.repositoryFormatVersion    gui.trustmtime                  receive.denyDeleteCurrent 
+color.branch.remote             core.safecrlf                   help.autocorrect                receive.denyDeletes 
+color.decorate.branch           core.sharedRepository           help.browser                    receive.denyNonFastForwards 
+color.decorate.HEAD             core.sparseCheckout             help.format                     receive.fsckObjects 
+color.decorate.remoteBranch     core.splitIndex                 http.lowSpeedLimit              receive.unpackLimit 
+color.decorate.stash            core.sshCommand                 http.lowSpeedTime               receive.updateserverinfo 
+color.decorate.tag              core.symlinks                   http.maxRequests                remote.
+color.diff                      core.trustctime                 http.minSessions                remote.pushdefault 
+--More--^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git config status[K[K[K[K[K[Kremote ?[K
+Display all 324 possibilities? (y or n)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git config remote satt[K[K[Ktatus
+error: key does not contain a section: remote
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git remote 
+add            prune          rename         set-head       show           
+get-url        remove         set-branches   set-url        update         
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git remote add 
+202003141414  .git/         README.md     
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git remote add ABB[KX[KC.txt
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl conf[K[K[K[K[K[Kl get [K[K[K[K[K[K[K[K[K[K[K[Kkubectl [K[K[K[K[K[K[K[Kminikube status
+host: Running
+kubelet: Running
+apiserver: Running
+kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.101
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl ge\[K[K[K[K[K[K[K[K[K[K[Ksource <(kubectl compltion[K[K[K[Ketion bash)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ju[K[Ku[Kkubectl get all 
+NAME                         READY   STATUS      RESTARTS   AGE
+pod/06nginx                  0/1     Error       0          26d
+pod/07nginx                  0/1     Error       0          26d
+pod/100vol                   0/1     Error       0          14d
+pod/104pvc2b                 0/1     Error       0          14d
+pod/111                      0/1     Error       0          13d
+pod/113                      0/1     Completed   0          12d
+pod/114nginx                 0/1     Completed   0          12d
+pod/117                      0/1     Error       0          12d
+pod/118                      0/1     Error       0          12d
+pod/126                      0/1     Error       0          9d
+pod/131                      0/1     Error       0          9d
+pod/132                      0/1     Error       0          9d
+pod/134                      0/1     Completed   0          6d22h
+pod/136                      0/1     Completed   0          6d22h
+pod/137busybox               0/1     Error       0          6d21h
+pod/13nginx                  0/1     Completed   1          26d
+pod/140                      0/1     Error       0          6d21h
+pod/144                      0/1     Error       0          6d21h
+pod/17shell                  0/1     Error       0          26d
+pod/19bb                     0/1     Completed   0          26d
+pod/21bb                     0/1     Completed   0          26d
+pod/29mc                     0/3     Completed   0          25d
+pod/34mc                     0/2     Error       0          25d
+pod/37-ng-1                  0/1     Error       0          19d
+pod/37-ng-2                  0/1     Error       0          19d
+pod/37-ng-3                  0/1     Error       0          19d
+pod/67dep-7db4cf66f7-2hfgb   1/1     Running     12         14d
+pod/67dep-7db4cf66f7-9wrj7   1/1     Running     12         14d
+pod/67dep-7db4cf66f7-h5g7f   1/1     Running     12         14d
+pod/67dep-7db4cf66f7-m2269   1/1     Running     12         14d
+pod/84job-9gkc8              0/1     Completed   0          14d
+pod/88job-bx58m              0/1     Completed   0          14d
+pod/hello                    0/1     Error       0          6d21h
+pod/mysec                    0/1     Error       0          12d
+pod/nginx                    0/1     Completed   0          12d
+pod/not-running              0/1     Error       0          6d21h
+pod/secbusybox               0/1     Error       0          12d
+pod/test114                  0/1     Completed   0          12d
+
+
+NAME                 TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)        AGE
+service/kubernetes   ClusterIP   10.96.0.1     <none>        443/TCP        27d
+service/nginx        NodePort    10.105.5.19   <none>        80:32286/TCP   6d20h
+
+
+NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/67dep   4/4     4            4           14d
+
+NAME                               DESIRED   CURRENT   READY   AGE
+replicaset.apps/67dep-55587b4f67   0         0         0       14d
+replicaset.apps/67dep-6dfdd9cbff   0         0         0       14d
+replicaset.apps/67dep-77585865c6   0         0         0       14d
+replicaset.apps/67dep-7db4cf66f7   4         4         4       14d
+replicaset.apps/67dep-f4677c588    0         0         0       14d
+
+
+
+NAME              COMPLETIONS   DURATION   AGE
+job.batch/84job   1/1           48s        14d
+job.batch/88job   2/2           15s        14d
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl con
+config   convert  
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl cong[Kfig view 
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: /home/baz/.minikube/ca.crt
+    server: https://192.168.99.101:8443
+  name: minikube
+contexts:
+- context:
+    cluster: minikube
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+- name: minikube
+  user:
+    client-certificate: /home/baz/.minikube/client.crt
+    client-key: /home/baz/.minikube/client.key
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ exit
+exit
+
+Script done on 2020-03-14 14:42:53+0500
