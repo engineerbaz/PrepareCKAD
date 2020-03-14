@@ -628,4 +628,44 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	[31m
+	[31mmodified:   202003141444[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m202003150112[m
+	[31m2b.yaml[m
+	[31m2b1.yaml[m
+	[31mb2mc.yaml[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+[master 32788e8] update on file .
+ 5 files changed, 762 insertions(+), 1 deletion(-)
+ create mode 100644 202003150112
+ create mode 100644 2b.yaml
+ create mode 100644 2b1.yaml
+ create mode 100644 b2mc.yaml
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitBatch.sh 
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	202003141414  202003141444  202003150112  2b1.yaml  2b.yaml  2rq.yaml  b2mc.yaml  bb.yaml  envpod.yaml	gitBatch.sh  README.md
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ exit
+exit
+
+Script done on 2020-03-15 02:23:44+0500
