@@ -2953,4 +2953,1178 @@ To https://github.com/engineerbaz/k8CKAD.git
    8de0e53..8938703  master -> master
 ]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
 1.yaml  202003141414  202003141444  2rq.yaml  bye.txt  envpod.yaml  gitBatch.sh  README.md
-]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CN
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ touch 2.tt[Kxt
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ basg[Kh gitBatch.sh 
+****** Welcome to Git *****
+1.yaml	202003141414  202003141444  2rq.yaml  2.txt  bye.txt  envpod.yaml  gitBatch.sh	README.md
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   202003141414[m
+	[31mdeleted:    2he.txt[m
+	[31mdeleted:    3he.txt[m
+	[31mdeleted:    55.tt[m
+	[31mmodified:   gitBatch.sh[m
+	[31mdeleted:    he1.txt[m
+	[31mdeleted:    hey.txt[m
+	[31mdeleted:    hi.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m2.txt[m
+	[31m202003141444[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+2.txt
+[master 7546625] update on file 2.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 2.txt
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml  202003141414  202003141444  2rq.yaml  2.txt  bye.txt  envpod.yaml  gitBatch.sh  README.md
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ rm 2.txt 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ rm bey[K[Kye.txt 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git add.[K .
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git a[Kcommit -m "update all $fname"
+[master ba910ca] update all 55.tt
+ 11 files changed, 3134 insertions(+), 2 deletions(-)
+ delete mode 100644 2.txt
+ create mode 100644 202003141444
+ delete mode 100644 2he.txt
+ delete mode 100644 3he.txt
+ delete mode 100644 55.tt
+ delete mode 100644 bye.txt
+ delete mode 100644 he1.txt
+ delete mode 100644 hey.txt
+ delete mode 100644 hi.txt
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git commit -m "update all $fname"add .[Krm bye.txt [2P2[C[C[C[C[Cls[Kbash gitBatch.sh [6Ptouch 2.txtls[Kgit push origin master 
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 32.47 KiB | 3.25 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   8938703..ba910ca  master -> master
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano gitBatch.sh 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;74H(B[0;7m 8 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        gitBatch.sh                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Linter    (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git *****"(B[0m[42m [4d[49m(B[mls[5dgit status[6d[32mread[39m(B[m fname[7dgit add (B[0;1m[31m$fname[8d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[9d[39m(B[mgit push origin master[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"--------- Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[10;35r[10;1HM[1;38r[11;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l7[4;35r8M[1;38r[5;1H[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l7[11;35r8M[1;38r[12;1H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: gitBatch.sh                              (B[m[36;32H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 11 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml  202003141414  202003141444  2rq.yaml  envpod.yaml  gitBatch.sh  README.md
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cclsnano gitBatch.sh 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 11 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  gitBatch.sh                             [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Linter[36d[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git *****"(B[0m[42m [5d[49m(B[mls[6dgit status[7d[32mread[39m(B[m fname[8dgit add (B[0;1m[31m$fname[9d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[10d[39m(B[mgit push origin master[13d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"--------- Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[36d[K[3;25H[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[3;25H(B[0;1m[33mSGit *****"(B[0m[42m [3;26H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mcGit *****"(B[0m[42m [3;27H[49m(B[m[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m  *****"(B[0m[42m [3;29H[49m(B[m[?12l[?25h[?25l(B[0;1m[33ma *****"(B[0m[42m [3;30H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mu *****"(B[0m[42m [3;31H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mt *****"(B[0m[42m [3;32H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mo *****"(B[0m[42m [3;33H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mm *****"(B[0m[42m [3;34H[49m(B[m[?12l[?25h[?25l(B[0;1m[33ma *****"(B[0m[42m [3;35H[49m(B[m[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[4d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25l [?12l[?25h[?25lT[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l s[?12l[?25h[?25lc[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lp[?12l[?25h[?25lt[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l w[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l u[?12l[?25h[?25lp[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l f[?12l[?25h[?25l[32mfi[39m(B[m[?12l[?25h[?25lfir[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25l[32mfi[39m(B[m[K[?12l[?25h[?25lfil[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l G[?12l[?25h[?25lt[?12l[?25h[?25lH[?12l[?25h[?25lu[?12l[?25h[?25lb[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l b[?12l[?25h[?25ly[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25la[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l f[?12l[?25h[?25l[32mfi[39m(B[m[?12l[?25h[?25lfil[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l i[?12l[?25h[?25l[32min[39m(B[m[?12l[?25h[?25linp[?12l[?25h[?25lu[?12l[?25h[?25lt[?12l[?25h[?25l[6G(B[0;1m[33m"This script will upadte file to GtHub by taking filename input"[39m(B[m[?12l[?25h[?25l7[5;36r8[5dM[1;38r[5;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l7[8;36r8M[1;38r[9;1H[?12l[?25h[?25l[A[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lP[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l e[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l f[?12l[?25h[?25l[32mfi[39m(B[m[?12l[?25h[?25lfil[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l n[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l y[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l w[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l u[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l t[?12l[?25h[?25lo[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l r[?12l[?25h[?25le[?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l r[?12l[?25h[?25le[?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25l[6G(B[0;1m[33m"Please enter file name you want to upload to remote repo"[39m(B[m[?12l[?25h[?25l7[9;36r8[9dM[1;38r[9;1H[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[A[?12l[?25h[?25l[3;37H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mb *****"(B[0m[42m [3;30H[49m(B[m[?12l[?25h[?25l(B[0;1m[33my *****"(B[0m[42m [3;31H[49m(B[m[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l(B[0;1m[33mS *****"(B[0m[42m [3;29H[49m(B[m[?12l[?25h[?25l[1P[?12l[?25h[?25l(B[0;1m[33m  *****"(B[0m[42m [3;29H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mS *****"(B[0m[42m [3;30H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mc *****"(B[0m[42m [3;31H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mr *****"(B[0m[42m [3;32H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mi *****"(B[0m[42m [3;33H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mp *****"(B[0m[42m [3;34H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mt *****"(B[0m[42m [3;35H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m  *****"(B[0m[42m [3;36H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mb *****"(B[0m[42m [3;37H[49m(B[m[?12l[?25h[?25l(B[0;1m[33my *****"(B[0m[42m [3;38H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m  *****"(B[0m[42m [3;39H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mB *****"(B[0m[42m [3;40H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mA *****"(B[0m[42m [3;41H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mZ *****"(B[0m[42m [3;42H[49m(B[m[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: gitBatch.sh                              (B[m[36;32H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 14 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ touch 66.tt
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git[K[K[Kbashi[K gitBatch.sh 
+****** Welcome to Git Script by BAZ *****
+This script will upadte file to GtHub by taking filename input
+1.yaml	      202003141444  66.tt	 gitBatch.sh
+202003141414  2rq.yaml	    envpod.yaml  README.md
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   202003141444[m
+	[31mmodified:   gitBatch.sh[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m66.tt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Please enter file name you want to upload to remote repo
+66.tt
+[master 70df4d6] update on file 66.tt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 66.tt
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 265 bytes | 265.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   ba910ca..70df4d6  master -> master
+--------- Completed update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitBatch.sh [6Ptouch 66.ttnano gitBatch.sh 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  gitBatch.sh                             [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Linter[36d[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git Script by BAZ *****"(B[0m[42m [4d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"This script will upadte file to GtHub by taking filename input"[6d[39m(B[mls[7dgit status[8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Please enter file name you want to upload to remote repo"[10d(B[0m[32mread[39m(B[m fname[11dgit add (B[0;1m[31m$fname[12d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[13d[39m(B[mgit push origin master[16d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"--------- Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[8;64H[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[8;63H(B[0;1m[33m?"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m "[39m(B[m[?12l[?25h[?25l[9d[?12l[?25h[?25lE[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l"[?12l[?25h[?25l [?12l[?25h[?25l[42m [36d[49m(B[m[K[9;6H[?12l[?25h[?25l "[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m" "[39m(B[m[?12l[?25h[?25l7[10;36r8[10dM[1;38r[10;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[A[?12l[?25h[?25l7[8;36r8M[1;38r[9;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l7[4;36r8M[1;38r[5;1H[?12l[?25h[?25l[A[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[6G(B[0;1m[33m"[14X[4;21H"[39m(B[m[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: gitBatch.sh                              (B[m[36;32H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 17 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ rm 66.tt 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ r[Krm 66.tt [8@nano gitBatch.sh[Cbash[C[C[C[C[C[C[C[C[C[C[C[C[C[6Ptouch 66.tt[C[1P.tt[1P.tt7.tt7.tt
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ touch 77.tt[2Prm 66.tt [8@nano gitBatch.sh[Cbash[C[C[C[C[C[C[C[C[C[C[C[C[C
+****** Welcome to Git Script by BAZ *****
+              
+This script will upadte file to GtHub by taking filename input
+1.yaml	      202003141444  77.tt	 gitBatch.sh
+202003141414  2rq.yaml	    envpod.yaml  README.md
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   202003141444[m
+	[31mdeleted:    66.tt[m
+	[31mmodified:   gitBatch.sh[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m77.tt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Please enter file name you want to upload to remote repo? 
+ 
+77.tt
+[master eb55e19] update on file 77.tt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 77.tt
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)   Writing objects: 100% (2/2)   Writing objects: 100% (2/2), 228 bytes | 228.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   70df4d6..eb55e19  master -> master
+--------- Completed update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitBatch.sh [6Ptouch 77.tt[2Prm 66.tt [8@nano gitBatch.sh[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 17 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  gitBatch.sh                             [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Linter[36d[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git Script by BAZ *****"(B[0m[42m [4d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"[14X[4;21H"[5d[34mecho[39m(B[m (B[0;1m[33m"This script will upadte file to GtHub by taking filename input"[7d[39m(B[mls[8dgit status[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Please enter file name you want to upload to remote repo? "[11d[34mecho[39m(B[m (B[0;1m[33m" "[13d(B[0m[32mread[39m(B[m fname[14dgit add (B[0;1m[31m$fname[15d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[16d[39m(B[mgit push origin master[19d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"--------- Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[3deecho (B[0;1m[33m"****** Welcome to Git Script by BAZ *****"(B[0m[42m [C[49m(B[m[?12l[?25h[?25lcecho (B[0;1m[33m"****** Welcome to Git Script by BAZ *****"(B[0m[42m [3G[49m(B[m[?12l[?25h[?25lhecho (B[0;1m[33m"****** Welcome to Git Script by BAZ *****"(B[0m[42m [4G[49m(B[m[?12l[?25h[?25loecho (B[0;1m[33m"****** Welcome to Git Script by BAZ *****"(B[0m[42m [5G[49m(B[m[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m (B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git Script by BAZ *****"(B[0m[42m [6G[49m(B[m[?12l[?25h[?25l(B[0;1m[33m"echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [7G[49m(B[m[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [8G[49m(B[m[?12l[?25h[?25l(B[0;1m[33m  echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;9H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m   echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;10H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m    echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;11H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m     echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;12H[49m(B[m[?12l[?25h[?25l[7G(B[0;1m[33m      echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;13H[49m(B[m[?12l[?25h[?25l[7G[13G(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;14H[49m(B[m[?12l[?25h[?25l[7G[14G(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;15H[49m(B[m[?12l[?25h[?25l[7G[3;15H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;16H[49m(B[m[?12l[?25h[?25l[7G[3;16H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;17H[49m(B[m[?12l[?25h[?25l[7G[3;17H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;18H[49m(B[m[?12l[?25h[?25l[7G[3;18H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;19H[49m(B[m[?12l[?25h[?25l[7G[3;19H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;20H[49m(B[m[?12l[?25h[?25l[7G[3;20H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;21H[49m(B[m[?12l[?25h[?25l[7G[3;21H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;22H[49m(B[m[?12l[?25h[?25l[7G[3;22H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [36d[49m(B[m[K[3;23H[?12l[?25h[?25l[7G[3;23H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;24H[49m(B[m[?12l[?25h[?25l[7G[3;24H(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m [3;25H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****"[42m[K[3;26H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ *****$[3;27H[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ [3;28H[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ [3;29H[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ [3;30H[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ [3;31H[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ [3;32H[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BAZ[3;33H[?12l[?25h[?25l(B[0;1m[33m echo "[39m(B[m****** Welcome to Git Script by BA[3;34H[?12l[?25h[?25l(B[0;1m[33m"[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git Script by B[3;35H[39m(B[m[?12l[?25h[?25l (B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git Script by [3;36H[39m(B[m[?12l[?25h[?25l7[4;36r8[4dM[1;38r[3;35H[42m [49m(B[m[K[4d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git Script by BAZ *****"(B[0m[42m [49m(B[m[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[13d[?12l[?25h[?25l[13;36r[36;1H
+[1;38r[13;1H[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m [19;16H- Completed update on Git ------"[8G[39m(B[m[?12l[?25h[?25l(B[0;1m[33m  [19;17H- Completed update on Git ------"[19;9H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m   [19;18H- Completed update on Git ------"[19;10H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m    [19;19H- Completed update on Git ------"[19;11H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m     [19;20H- Completed update on Git ------"[19;12H[39m(B[m[?12l[?25h[?25l[6G"[42m     [49m(B[m[K[20d--------- Completed update on Git ------"[?12l[?25h[?25l[19;12H[?12l[?25h[?25l[6G(B[0;1m[33m"     "[39m(B[m[?12l[?25h[?25l7[20;36r8[20dM[1;38r[20;1H[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33m" --------- Completed update on Git ------"[21d[39m(B[m[K[20;8H[?12l[?25h[?25l[1P[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: gitBatch.sh                              (B[m[36;32H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 18 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano gitBatch.sh bash[C[C[C[C[C[C[C[C[C[C[C[C[C
+                           
+****** Welcome to Git Script by BAZ *****
+              
+This script will upadte file to GtHub by taking filename input
+1.yaml	      202003141444  77.tt	 gitBatch.sh
+202003141414  2rq.yaml	    envpod.yaml  README.md
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   202003141444[m
+	[31mdeleted:    66.tt[m
+	[31mmodified:   gitBatch.sh[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Please enter file name you want to upload to remote repo? 
+ 
+gitBatch.sh
+[master 568ff3e] update on file gitBatch.sh
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 481 bytes | 481.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   eb55e19..568ff3e  master -> master
+     
+--------- Completed update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml        202003141444  77.tt        gitBatch.sh
+202003141414  2rq.yaml      envpod.yaml  README.md
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ rm 77.tt 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git pull
+Already up to date.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   202003141444[m
+	[31mdeleted:    66.tt[m
+	[31mdeleted:    77.tt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ echo =[K--hep[Klp
+--help
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ echo --help[C[C[K[K[K[K[Kj[Kh
+-h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ man echo[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ man echo
+[?1049h[22;0;0t[?1h=ECHO(1)                                                            User Commands                                                           ECHO(1)[m
+[m
+[1mNAME[0m[m
+       echo - display a line of text[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mecho[0m [[4mSHORT-OPTION[24m]... [[4mSTRING[24m]...[m
+       [1mecho[0m [4mLONG-OPTION[24m[m
+[m
+[1mDESCRIPTION[0m[m
+       Echo the STRING(s) to standard output.[m
+[m
+       [1m-n[0m     do not output the trailing newline[m
+[m
+       [1m-e[0m     enable interpretation of backslash escapes[m
+[m
+       [1m-E[0m     disable interpretation of backslash escapes (default)[m
+[m
+       [1m--help[0m display this help and exit[m
+[m
+       [1m--version[0m[m
+              output version information and exit[m
+[m
+       If [1m-e[0m is in effect, the following sequences are recognized:[m
+[m
+       \\     backslash[m
+[m
+       \a     alert (BEL)[m
+[m
+       \b     backspace[m
+[m
+       \c     produce no further output[m
+[m
+       \e     escape[m
+[m
+       \f     form feed[m
+[m
+[7m Manual page echo(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \n     new line[m
+[7m Manual page echo(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \r     carriage return[m
+[7m Manual page echo(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \t     horizontal tab[m
+[7m Manual page echo(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \v     vertical tab[m
+[7m Manual page echo(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \0NNN  byte with octal value NNN (1 to 3 digits)[m
+[7m Manual page echo(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \xHH   byte with hexadecimal value HH (1 to 2 digits)[m
+[7m Manual page echo(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       NOTE: your shell may have its own version of echo, which usually supersedes the version described here.  Please refer to your shell's docu‐[m
+[7m Manual page echo(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       mentation for details about the options it supports.[m
+[7m Manual page echo(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page echo(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written by Brian Fox and Chet Ramey.[m
+[7m Manual page echo(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREPORTING[0m [1mBUGS[0m[m
+[7m Manual page echo(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU coreutils online help: <http://www.gnu.org/software/coreutils/>[m
+[7m Manual page echo(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Report echo translation bugs to <http://translationproject.org/team/>[m
+[7m Manual page echo(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOPYRIGHT[0m[m
+[7m Manual page echo(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Copyright © 2017 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.[m
+[7m Manual page echo(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.[m
+[7m Manual page echo(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page echo(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Full documentation at: <http://www.gnu.org/software/coreutils/echo>[m
+[7m Manual page echo(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or available locally via: info '(coreutils) echo invocation'[m
+[7m Manual page echo(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KGNU coreutils 8.28                                                 January 2018                                                            ECHO(1)[m
+[7m Manual page echo(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K[7mNo next tag  (press RETURN)[27m[38;1H[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K[HM[m
+[38;1H[K[7m Manual page echo(1) line 31/68 94% (press h for help or q to quit)[27m[K[KGNU coreutils 8.28                                                 January 2018                                                            ECHO(1)[m
+[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K/[K[1;1H       \c     produce no further output[m
+[2;1H[m
+[3;1H       \e     escape[m
+[4;1H[m
+[5;1H       \f     form feed[m
+[6;1H[m
+[7;1H       \n     new line[m
+[8;1H[m
+[9;1H       \r     carriage return[m
+[10;1H[m
+[11;1H       \t     horizontal tab[m
+[12;1H[m
+[13;1H       \v     vertical tab[m
+[14;1H[m
+[15;1H       \0NNN  byte with octal value NNN (1 to 3 digits)[m
+[16;1H[m
+[17;1H       \xHH   byte with hexadecimal value HH (1 to 2 digits)[m
+[18;1H[m
+[19;1H       NOTE: your shell may have its own version of echo, which usually supersedes the version described here.  Please refer to your shell's docu‐[m
+[20;1H       mentation for details about the options it supports.[m
+[21;1H[m
+[22;1H[1mAUTHOR[0m[m
+[23;1H       Written by Brian Fox and Chet Ramey.[m
+[24;1H[m
+[25;1H[1mREPORTING[0m [1mBUGS[0m[m
+[26;1H       GNU coreutils online help: <http://www.gnu.org/software/coreutils/>[m
+[27;1H       Report echo translation bugs to <http://translationproject.org/team/>[m
+[28;1H[m
+[29;1H[1mCOPYRIGHT[0m[m
+[30;1H       Copyright © 2017 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.[m
+[31;1H       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.[m
+[32;1H[m
+[33;1H[1mSEE[0m [1mALSO[0m[m
+[34;1H       Full documentation at: <http://www.gnu.org/software/coreutils/echo>[m
+[35;1H       or available locally via: info '(coreutils) echo invocation'[m
+[36;1H[m
+[37;1HGNU coreutils 8.28                                                 January 2018                                                            ECHO(1)[m
+[38;1H[K[7mPattern not found  (press RETURN)[27m[38;1H[K[K[HM[m
+[HM       \b     backspace[m
+[HM[m
+[HM       \a     alert (BEL)[m
+[HM[m
+[HM       \\     backslash[m
+[HM[m
+[HM       If [1m-e[0m is in effect, the following sequences are recognized:[m
+[HM[m
+[HM              output version information and exit[m
+[HM       [1m--version[0m[m
+[HM[m
+[HM       [1m--help[0m display this help and exit[m
+[HM[m
+[HM       [1m-E[0m     disable interpretation of backslash escapes (default)[m
+[HM[m
+[HM       [1m-e[0m     enable interpretation of backslash escapes[m
+[HM[m
+[HM       [1m-n[0m     do not output the trailing newline[m
+[HM[m
+[HM       Echo the STRING(s) to standard output.[m
+[HM[1mDESCRIPTION[0m[m
+[HM[m
+[HM       [1mecho[0m [4mLONG-OPTION[24m[m
+[HM       [1mecho[0m [[4mSHORT-OPTION[24m]... [[4mSTRING[24m]...[m
+[HM[1mSYNOPSIS[0m[m
+[HM[m
+[HM       echo - display a line of text[m
+[HM[1mNAME[0m[m
+[HM[m
+[HMECHO(1)                                                            User Commands                                                           ECHO(1)[m
+[38;1H[K[7m Manual page echo(1) line 1/68 44% (press h for help or q to quit)[27m[K[K[K[7m Manual page echo(1) line 1/68 44% (press h for help or q to quit)[27m[K[K[7mNo next tag  (press RETURN)[27m[38;1H[K[K[7m Manual page echo(1) line 1/68 44% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \n     new line[m
+[7m Manual page echo(1) line 2/68 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 3/68 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \r     carriage return[m
+[7m Manual page echo(1) line 4/68 46% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 5/68 46% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \t     horizontal tab[m
+[7m Manual page echo(1) line 6/68 47% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 7/68 47% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \v     vertical tab[m
+[7m Manual page echo(1) line 8/68 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 9/68 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \0NNN  byte with octal value NNN (1 to 3 digits)[m
+[7m Manual page echo(1) line 10/68 51% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 11/68 51% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       \xHH   byte with hexadecimal value HH (1 to 2 digits)[m
+[7m Manual page echo(1) line 12/68 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 13/68 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       NOTE: your shell may have its own version of echo, which usually supersedes the version described here.  Please refer to your shell's docu‐[m
+[7m Manual page echo(1) line 14/68 60% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       mentation for details about the options it supports.[m
+[7m Manual page echo(1) line 15/68 63% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 16/68 63% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHOR[0m[m
+[7m Manual page echo(1) line 17/68 63% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Written by Brian Fox and Chet Ramey.[m
+[7m Manual page echo(1) line 18/68 65% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 19/68 65% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mREPORTING[0m [1mBUGS[0m[m
+[7m Manual page echo(1) line 20/68 67% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       GNU coreutils online help: <http://www.gnu.org/software/coreutils/>[m
+[7m Manual page echo(1) line 21/68 70% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Report echo translation bugs to <http://translationproject.org/team/>[m
+[7m Manual page echo(1) line 22/68 74% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 23/68 74% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOPYRIGHT[0m[m
+[7m Manual page echo(1) line 24/68 75% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Copyright © 2017 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.[m
+[7m Manual page echo(1) line 25/68 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.[m
+[7m Manual page echo(1) line 26/68 86% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 27/68 86% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page echo(1) line 28/68 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Full documentation at: <http://www.gnu.org/software/coreutils/echo>[m
+[7m Manual page echo(1) line 29/68 91% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       or available locally via: info '(coreutils) echo invocation'[m
+[7m Manual page echo(1) line 30/68 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page echo(1) line 31/68 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KGNU coreutils 8.28                                                 January 2018                                                            ECHO(1)[m
+[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page echo(1) line 32/68 (END) (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ man echo[1Pecho -h-helpgit status [3Ppullrm 77.tt ls[Kbash gitBatch.sh nano[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 18 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        gitBatch.sh                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Linter    (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"[27X[3;34H"(B[0m[42m [4d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git Script by BAZ *****"(B[0m[42m [5d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"[14X[5;21H"[6d[34mecho[39m(B[m (B[0;1m[33m"This script will upadte file to GtHub by taking filename input"[8d[39m(B[mls[9dgit status[11d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Please enter file name you want to upload to remote repo? "[12d[34mecho[39m(B[m (B[0;1m[33m" "[13d(B[0m[32mread[39m(B[m fname[14dgit add (B[0;1m[31m$fname[15d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[16d[39m(B[mgit push origin master[19d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"     "[20d[34mecho[39m(B[m (B[0;1m[33m"--------- Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[5;35r[35;1H
+[1;38r[5;1H[?12l[?25h[?25l[4;50H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m\"(B[0m[42m [49m(B[m[?12l[?25h[?25l(B[0;1m[33mn"(B[0m[42m [49m(B[m[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[5;70H[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m."[39m(B[m[?12l[?25h[?25l(B[0;1m[33m"[39m(B[m[K[?12l[?25h[?25l(B[0;1m[33m!"[39m(B[m[?12l[?25h[?25l[6d[?12l[?25h[?25l[7dls[?12l[?25h[?25l[8;11H[?12l[?25h[?25l[9d[?12l[?25h[?25l[10;66H[?12l[?25h[?25l[11;9H[?12l[?25h[?25l[12dme[?12l[?25h[?25l[36d[K[11;9H[?12l[?25h[?25l[10;66H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m\"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mn"[39m(B[m[?12l[?25h[?25l[11;9H[?12l[?25h[?25l[11;36r[36;1H
+[1;38r[11;1H[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[15;36r[36;1H
+[1;38r[14;23H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: gitBatch.sh                              (B[m[36;32H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 15 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ echo -e "I ${RED}love${NC} Stack Overflow" [A
+I love Stack Overflow
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ RED='\033[0;31m'
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ NC='\033[0m' # No Color
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ printf "I ${RED}love${NC} Stack Overflow\n""
+I [0;31mlove[0m Stack Overflow
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano gitBatch.sh 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        gitBatch.sh                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Linter    (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"[27X[3;34H"(B[0m[42m [4d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git Script by BAZ *****\n"(B[0m[42m [5d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"This script will upadte file to GtHub by taking filename input!"[7d[39m(B[mls[8dgit status[10d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Please enter file name you want to upload to remote repo? \n"[11d(B[0m[32mread[39m(B[m fname[12dgit add (B[0;1m[31m$fname[13d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[14d[39m(B[mgit push origin master[16d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"     "[17d[34mecho[39m(B[m (B[0;1m[33m"--------- Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m7[2;35r8[2dM[1;38r[4;1H[?12l[?25h[?25l[2;35r[2;1HM[1;38r[5;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[2;36r[2;1H[2T[1;38r[3;1HRED[32m=(B[0;1m[33m'\033[0;31m'[4d[39m(B[mNC[32m=(B[0;1m[33m'\033[0m'(B[0m[36m # No Color[5d(B[0;1m[34mprintf[39m(B[m (B[0;1m[33m"I ${RED}love${NC} Stack Overflow\n"[39m(B[m[?12l[?25h[?25l[4;24H[?12l[?25h[?25l[5;44H[?12l[?25h[?25l[4;24H[?12l[?25h[?25l[5d[?12l[?25h[?25l[36m#printf (B[0;1m[33m"I ${RED}love${NC} Stack Overflow\n"[C[39m(B[m[?12l[?25h[?25l[36m printf (B[0;1m[33m"I ${RED}love${NC} Stack Overflow\n"[3G[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l  No Color[K[4;14H[?12l[?25h[?25l[1P [?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P [?12l[?25h[?25lolor[K[?12l[?25h[?25llor[K[?12l[?25h[?25lor[K[?12l[?25h[?25lr[K[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l[5;36r[36;1H
+[1;38r[4;13H[36m # printf (B[0;1m[33m"I ${RED}love${NC} Stack Overflow\n"[4;14H[39m(B[m[?12l[?25h[?25l7[4;36r8M[1;38r[4;1HNC[32m=(B[0;1m[33m'\033[0m'(B[0m[42m [5d[49m(B[m[13P[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m$BAZ *****\n"(B[0m[42m [8;40H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m{BAZ *****\n"(B[0m[42m [8;41H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mRBAZ *****\n"(B[0m[42m [8;42H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mEBAZ *****\n"(B[0m[42m [8;43H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mDBAZ *****\n"(B[0m[42m [8;44H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m}BAZ *****\n"(B[0m[42m [8;45H[49m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: gitBatch.sh                              (B[m[36;32H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 19 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ RED='\033[0;31m'
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ NC='\033[0m' 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ # printf "I ${RED}love${NC} Stack Overflow\n"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ echo "                           " 
+                           
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ echo "****** Welcome to Git Script by ${RED}BAZ *****\n" 
+****** Welcome to Git Script by \033[0;31mBAZ *****\n
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ echo "****** Welcome to Git Script by ${RED}BAZ *****\n" [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22P                           [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# printf "I ${RED}love${NC} Stack Overflow\n"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CNC='\033[0m' [K[K[K[K[K[K[K[K[K[K[K[K[K[Knano gitBatch.sh 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 19 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        gitBatch.sh                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Linter    (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mRED[32m=(B[0;1m[33m'\033[0;31m'[4d[39m(B[mNC[32m=(B[0;1m[33m'\033[0m'(B[0m[42m [5d[49m[36m# printf (B[0;1m[33m"I ${RED}love${NC} Stack Overflow\n"[7d[34mecho[39m(B[m (B[0;1m[33m"[27X[7;34H"(B[0m[42m [8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"****** Welcome to Git Script by ${RED}BAZ *****\n"(B[0m[42m [9d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"This script will upadte file to GtHub by taking filename input!"[11d[39m(B[mls[12dgit status[14d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Please enter file name you want to upload to remote repo? \n"[15d(B[0m[32mread[39m(B[m fname[16dgit add (B[0;1m[31m$fname[17d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[18d[39m(B[mgit push origin master[20d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"     "[21d[34mecho[39m(B[m (B[0;1m[33m"--------- Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[8d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[7d[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[7;35r[35;1H
+[1;38r[7;1H[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[36d[K[7;4H[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l-(B[0;1m[33m"****** Welcome to Git Script by ${RED}BAZ *****\n"(B[0m[42m [7G[49m(B[m[?12l[?25h[?25l[32m-e(B[0;1m[33m"****** Welcome to Git Script by ${RED}BAZ *****\n"(B[0m[42m [8G[49m(B[m[?12l[?25h[?25l (B[0;1m[33m"****** Welcome to Git Script by ${RED}BAZ *****\n"(B[0m[42m [7;9H[49m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m\****** Welcome to Git Script by ${RED}BAZ *****\n"(B[0m[42m [7;11H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mn****** Welcome to Git Script by ${RED}BAZ *****\n"(B[0m[42m [7;12H[49m(B[m[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: gitBatch.sh                              (B[m[36;32H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 18 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ RED='\033[0;31m'
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ NC='\033[0m' 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ # printf "I ${RED}love${NC} Stack Overflow\n"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ echo -e "\n****** Welcome to Git Script by ${RED}BAZ *****\n" 
+
+****** Welcome to Git Script by [0;31mBAZ *****
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ echo -e "\n****** Welcome to Git Script by ${RED}BAZ *****\n" [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17P# printf "I ${RED}love${NC} Stack Overflow\n"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CNC='\033[0m' [KRED='\033[0;31m'cc[Knano gitBatch.sh 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 18 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        gitBatch.sh                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Linter    (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mRED[32m=(B[0;1m[33m'\033[0;31m'[4d[39m(B[mNC[32m=(B[0;1m[33m'\033[0m'(B[0m[42m [5d[49m[36m# printf (B[0;1m[33m"I ${RED}love${NC} Stack Overflow\n"[7d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n****** Welcome to Git Script by ${RED}BAZ *****\n"(B[0m[42m [8d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"This script will upadte file to GtHub by taking filename input!"[10d[39m(B[mls[11dgit status[13d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"Please enter file name you want to upload to remote repo? \n"[14d(B[0m[32mread[39m(B[m fname[15dgit add (B[0;1m[31m$fname[16d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[17d[39m(B[mgit push origin master[19d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"     "[20d[34mecho[39m(B[m (B[0;1m[33m"--------- Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[36d[K[7;13H[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[7;53H(B[0;1m[33m$ *****\n"(B[0m[42m [7;54H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m{ *****\n"(B[0m[42m [7;55H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mN *****\n"(B[0m[42m [7;56H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mC *****\n"(B[0m[42m [7;57H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m} *****\n"(B[0m[42m [7;58H[49m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m$Git Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;31H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m{Git Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;32H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mRGit Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;33H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mEGit Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;34H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mDGit Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;35H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m}Git Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;36H[49m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m$ Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;40H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m{ Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;41H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mN Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;42H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mC Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;43H[49m(B[m[?12l[?25h[?25l(B[0;1m[33m} Script by ${RED}BAZ${NC} *****\n"(B[0m[42m [7;44H[49m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l(B[0;1m[33mG}BAZ${NC} *****\n"(B[0m[42m [7;58H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mR}BAZ${NC} *****\n"(B[0m[42m [7;59H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mE}BAZ${NC} *****\n"(B[0m[42m [7;60H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mEE}BAZ${NC} *****\n"(B[0m[42m [7;61H[49m(B[m[?12l[?25h[?25l(B[0;1m[33mM}BAZ${NC} *****\n"(B[0m[42m [7;62H[49m(B[m[?12l[?25h[?25l[1P[?12l[?25h[?25l(B[0;1m[33mN}BAZ${NC} *****\n"(B[0m[42m [7;62H[49m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[7;62H[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10dls[?12l[?25h[?25l[11;11H[?12l[?25h[?25l[12d[?12l[?25h[?25l[13;62H[?12l[?25h[?25l[14;11H[?12l[?25h[?25l[15;15H[?12l[?25h[?25l[16;38H[?12l[?25h[?25l[17;23H[?12l[?25h[?25l[18d[?12l[?25h[?25l[19;13H[?12l[?25h[?25l[20;48H[?12l[?25h[?25l[21d[?12l[?25h[?25l[?12l[?25h[?25l[20;48H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l-(B[0;1m[33m"[20;16H- Completed update on Git ------"[7G[39m(B[m[?12l[?25h[?25l[32m-e(B[0;1m[33m"[20;17H- Completed update on Git ------"[8G[39m(B[m[?12l[?25h[?25l (B[0;1m[33m"[20;18H- Completed update on Git ------"[20;9H[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m$Completed update on Git ------"[20;21H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m{Completed update on Git ------"[20;22H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mBCompleted update on Git ------"[20;23H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mLCompleted update on Git ------"[20;24H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mUCompleted update on Git ------"[20;25H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mECompleted update on Git ------"[20;26H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m}Completed update on Git ------"[20;27H[39m(B[m[?12l[?25h[?25l[19;13H[?12l[?25h[?25l[A[?12l[?25h[?25l[17;23H[?12l[?25h[?25l[16;27H[?12l[?25h[?25l[15;15H[?12l[?25h[?25l[A[?12l[?25h[?25l[13;27H[?12l[?25h[?25l[A[?12l[?25h[?25l[11;11H[?12l[?25h[?25l[Als[?12l[?25h[?25l[A[?12l[?25h[?25l[8;27H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[5;27H[?12l[?25h[?25l[4;14H[?12l[?25h[?25l7[5;36r8[5dM[1;38r[5;1H[?12l[?25h[?25lG[?12l[?25h[?25lR[?12l[?25h[?25lE[?12l[?25h[?25lR[?12l[?25h[?25l [?12l[?25h[?25lE[?12l[?25h[?25lN[?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l'[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25l0[?12l[?25h[?25l3[?12l[?25h[?25l3[?12l[?25h[?25l3[?12l[?25h[?25l [?12l[?25h[?25l[32m{[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[32m[[39m(B[m[?12l[?25h[?25l0[?12l[?25h[?25l[32m;[39m(B[m[?12l[?25h[?25l3[?12l[?25h[?25l2[?12l[?25h[?25l[7G(B[0;1m[33m'\033[0;32'[39m(B[m[?12l[?25h[?25l7[6;36r8[6dM[1;38r[6;1H[?12l[?25h[?25lB[?12l[?25h[?25lL[?12l[?25h[?25lU[?12l[?25h[?25lE[?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l'[?12l[?25h[?25l[32m\[39m(B[m[?12l[?25h[?25l0[?12l[?25h[?25l3[?12l[?25h[?25l3[?12l[?25h[?25l[32m[[39m(B[m[?12l[?25h[?25l0[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l3[?12l[?25h[?25l4[?12l[?25h[?25l[6G(B[0;1m[33m'\033[0:34'[39m(B[m[?12l[?25h[?25l7[7;36r8[7dM[1;38r[7;1H[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l-(B[0;1m[33m"Please enter file name you want to upload to remote repo? \n"[7G[39m(B[m[?12l[?25h[?25l[32m-e(B[0;1m[33m"Please enter file name you want to upload to remote repo? \n"[8G[39m(B[m[?12l[?25h[?25l (B[0;1m[33m"Please enter file name you want to upload to remote repo? \n"[16;9H[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[A[?12l[?25h[?25l[15;36r[36;1H
+[1;38r[14;11H[?12l[?25h[?25l[15d[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33m\Please enter file name you want to upload to remote repo? \n"[15;11H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mnPlease enter file name you want to upload to remote repo? \n"[15;12H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m Please enter file name you want to upload to remote repo? \n"[15;13H[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m$Please enter file name you want to upload to remote repo? \n"[15;14H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m{Please enter file name you want to upload to remote repo? \n"[15;15H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mBPlease enter file name you want to upload to remote repo? \n"[15;16H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mLPlease enter file name you want to upload to remote repo? \n"[15;17H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mUPlease enter file name you want to upload to remote repo? \n"[15;18H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mEPlease enter file name you want to upload to remote repo? \n"[15;19H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m}Please enter file name you want to upload to remote repo? \n"[15;20H[39m(B[m[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33m$\n"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m{\n"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mN\n"[39m(B[m[?12l[?25h[?25l(B[0;1m[33mC\n"[39m(B[m[?12l[?25h[?25l(B[0;1m[33m}\n"[39m(B[m[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: gitBatch.sh                              (B[m[36;32H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 20 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ touch 33.ty
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitb[KBatch.sh 
+
+****** Welcome to [0;31mGit[0m Script by [0;32BAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	202003141414  202003141444  2rq.yaml  33.ty  envpod.yaml  gitBatch.sh  README.md
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   202003141444[m
+	[31mdeleted:    66.tt[m
+	[31mdeleted:    77.tt[m
+	[31mmodified:   gitBatch.sh[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m33.ty[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ [0:34Please enter file name you want to upload to remote repo? [0m
+
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitBatch.sh [6Ptouch 33.tynano gitBatch.sh 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        gitBatch.sh                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Linter    (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mRED[32m=(B[0;1m[33m'\033[0;31m'[4d[39m(B[mNC[32m=(B[0;1m[33m'\033[0m'(B[0m[42m [5d[49m(B[mGREEN[32m=(B[0;1m[33m'\033[0;32'[6d[39m(B[mBLUE[32m=(B[0;1m[33m'\033[0:34'[8d(B[0m[36m# printf (B[0;1m[33m"I ${RED}love${NC} Stack Overflow\n"[10d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n****** Welcome to ${RED}Git${NC} Script by ${GREEN}BAZ${NC} *****\n"(B[0m[42m [11d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"This script will upadte file to GtHub by taking filename input!"[13d[39m(B[mls[14dgit status[15d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n ${BLUE}Please enter file name you want to upload to remote repo? ${NC}\n"[16d(B[0m[32mread[39m(B[m fname[17dgit add (B[0;1m[31m$fname[18d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[19d[39m(B[mgit push origin master[21d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"     "[22d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"--------- ${BLUE}Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25lB[?12l[?25h[?25lL[?12l[?25h[?25lU[?12l[?25h[?25lE[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[36d[K[8;6H[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[9d[?12l[?25h[?25l[37d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano gitBatch.sh bash[C[C[C[C[C[C[C[C[C[C[C[C[Cnano[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        gitBatch.sh                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Linter    (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mRED[32m=(B[0;1m[33m'\033[0;31m'[4d[39m(B[mNC[32m=(B[0;1m[33m'\033[0m'(B[0m[42m [5d[49m(B[mGREEN[32m=(B[0;1m[33m'\033[0;32'[6d[39m(B[mBLUE[32m=(B[0;1m[33m'\033[0:34'[8d(B[0m[36m# printf (B[0;1m[33m"I ${RED}love${NC} Stack Overflow\n"[10d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n****** Welcome to ${RED}Git${NC} Script by ${GREEN}BAZ${NC} *****\n"(B[0m[42m [11d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"This script will upadte file to GtHub by taking filename input!"[13d[39m(B[mls[14dgit status[15d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n ${BLUE}Please enter file name you want to upload to remote repo? ${NC}\n"[16d(B[0m[32mread[39m(B[m fname[17dgit add (B[0;1m[31m$fname[18d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[19d[39m(B[mgit push origin master[21d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"     "[22d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"--------- ${BLUE}Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[6;17H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[6;13H(B[0;1m[33m34'[39m(B[m[K[?12l[?25h[?25l(B[0;1m[33m;34'[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l(B[0;1m[33mm'[39m(B[m[?12l[?25h[?25l[6d[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mm'[39m(B[m[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: gitBatch.sh                              (B[m[36;32H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 20 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano gitBatch.sh 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        gitBatch.sh                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Linter    (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mRED[32m=(B[0;1m[33m'\033[0;31m'[4d[39m(B[mNC[32m=(B[0;1m[33m'\033[0m'(B[0m[42m [5d[49m(B[mGREEN[32m=(B[0;1m[33m'\033[0;32m'[6d[39m(B[mBLUE[32m=(B[0;1m[33m'\033[0;34m'[8d(B[0m[36m# printf (B[0;1m[33m"I ${RED}love${NC} Stack Overflow\n"[10d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n****** Welcome to ${RED}Git${NC} Script by ${GREEN}BAZ${NC} *****\n"(B[0m[42m [11d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"This script will upadte file to GtHub by taking filename input!"[13d[39m(B[mls[14dgit status[15d(B[0;1m[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"\n ${BLUE}Please enter file name you want to upload to remote repo? ${NC}\n"[16d(B[0m[32mread[39m(B[m fname[17dgit add (B[0;1m[31m$fname[18d[39m(B[mgit commit -m (B[0;1m[33m"update on file $fname"[19d[39m(B[mgit push origin master[21d(B[0;1m[34mecho[39m(B[m (B[0;1m[33m"     "[22d[34mecho[39m(B[m [32m-e[39m(B[m (B[0;1m[33m"--------- ${BLUE}Completed update on Git ------"[3d[39m(B[m[?12l[?25h[?25l[36d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano gitBatch.sh bash[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	202003141414  202003141444  2rq.yaml  33.ty  envpod.yaml  gitBatch.sh  README.md
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   202003141444[m
+	[31mdeleted:    66.tt[m
+	[31mdeleted:    77.tt[m
+	[31mmodified:   gitBatch.sh[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m33.ty[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+33.ty
+[master 69702d8] update on file 33.ty
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 33.ty
+fatal: unable to access 'https://github.com/engineerbaz/k8CKAD.git/': Failed to connect to github.com port 443: Connection timed out
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml        202003141444  33.ty        gitBatch.sh
+202003141414  2rq.yaml      envpod.yaml  README.md
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ rm 33.ty 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run bb --image=bud[Ksybox --restart=N ever -- /bin/sh echo -c[K[K[K[K[K[K[K"echo -c Hello W0rld"
+pod/bb created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs pod bb
+Error from server (NotFound): pods "pod" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po [K d [K[K[Kd bb
+NAME   READY   STATUS   RESTARTS   AGE
+bb     0/1     Error    0          19s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod bb
+NAME   READY   STATUS   RESTARTS   AGE
+bb     0/1     Error    0          22s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe pod bbb[K
+Name:         bb
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sat, 14 Mar 2020 20:55:14 +0500
+Labels:       run=bb
+Annotations:  <none>
+Status:       Failed
+IP:           172.17.0.11
+Containers:
+  bb:
+    Container ID:  docker://2f942ff6eb117cc397dcceaf6d28585ed03a28958b6d51fd5f5c2b14e4237ae2
+    Image:         busybox
+    Image ID:      docker-pullable://busybox@sha256:b26cd013274a657b86e706210ddd5cc1f82f50155791199d29b9e86e935ce135
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      /bin/sh
+      echo -c Hello W0rld
+    State:          Terminated
+      Reason:       Error
+      Exit Code:    2
+      Started:      Sat, 14 Mar 2020 20:55:27 +0500
+      Finished:     Sat, 14 Mar 2020 20:55:27 +0500
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  35s   default-scheduler  Successfully assigned default/bb to minikube
+  Normal  Pulling    35s   kubelet, minikube  Pulling image "busybox"
+  Normal  Pulled     22s   kubelet, minikube  Successfully pulled image "busybox"
+  Normal  Created    22s   kubelet, minikube  Created container bb
+  Normal  Started    22s   kubelet, minikube  Started container bb
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod bb --dry [K-run -oyaml
+Error: unknown flag: --dry-run
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --dry-run
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod bb --dry-run -oyaml[C yaml
+Error: unknown flag: --dry-run
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --dry-run
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod bb --dry-run -o yaml[C[1P[1Pet pod bb --dry-run -oyaml[1P[1P[1P[1@r[1@u[1@n
+Error: required flag(s) "image" not set
+
+
+Examples:
+  # Start a single instance of nginx.
+  kubectl run nginx --image=nginx
+  
+  # Start a single instance of hazelcast and let the container expose port 5701 .
+  kubectl run hazelcast --image=hazelcast --port=5701
+  
+  # Start a single instance of hazelcast and set environment variables "DNS_DOMAIN=cluster" and "POD_NAMESPACE=default" in the container.
+  kubectl run hazelcast --image=hazelcast --env="DNS_DOMAIN=cluster" --env="POD_NAMESPACE=default"
+  
+  # Start a single instance of hazelcast and set labels "app=hazelcast" and "env=prod" in the container.
+  kubectl run hazelcast --image=hazelcast --labels="app=hazelcast,env=prod"
+  
+  # Start a replicated instance of nginx.
+  kubectl run nginx --image=nginx --replicas=5
+  
+  # Dry run. Print the corresponding API objects without creating them.
+  kubectl run nginx --image=nginx --dry-run
+  
+  # Start a single instance of nginx, but overload the spec of the deployment with a partial set of values parsed from JSON.
+  kubectl run nginx --image=nginx --overrides='{ "apiVersion": "v1", "spec": { ... } }'
+  
+  # Start a pod of busybox and keep it in the foreground, don't restart it if it exits.
+  kubectl run -i -t busybox --image=busybox --restart=Never
+  
+  # Start the nginx container using the default command, but use custom arguments (arg1 .. argN) for that command.
+  kubectl run nginx --image=nginx -- <arg1> <arg2> ... <argN>
+  
+  # Start the nginx container using a different command and custom arguments.
+  kubectl run nginx --image=nginx --command -- <cmd> <arg1> ... <argN>
+  
+  # Start the perl container to compute π to 2000 places and print it out.
+  kubectl run pi --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+  
+  # Start the cron job to compute π to 2000 places and print it out every 5 minutes.
+  kubectl run pi --schedule="0/5 * * * ?" --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --attach=false: If true, wait for the Pod to start running, and then attach to the Pod as if 'kubectl attach ...' were called.  Default false, unless '-i/--stdin' is set, in which case the default is true. With '--restart=Never' the exit code of the container process is returned.
+      --cascade=true: If true, cascade the deletion of the resources managed by this resource (e.g. Pods created by a ReplicationController).  Default true.
+      --command=false: If true and extra arguments are present, use them as the 'command' field in the container, rather than the 'args' field which is the default.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --env=[]: Environment variables to set in the container
+      --expose=false: If true, a public, external service is created for the container(s) which are run
+  -f, --filename=[]: to use to replace the resource.
+      --force=false: Only used when grace-period=0. If true, immediately remove resources from API and bypass graceful deletion. Note that immediate deletion of some resources may result in inconsistency or data loss and requires confirmation.
+      --generator='': The name of the API generator to use, see http://kubernetes.io/docs/user-guide/kubectl-conventions/#generators for a list.
+      --grace-period=-1: Period of time in seconds given to the resource to terminate gracefully. Ignored if negative. Set to 1 for immediate shutdown. Can only be set to 0 when --force is true (force deletion).
+      --hostport=-1: The host port mapping for the container port. To demonstrate a single-machine container.
+      --image='': The image for the container to run.
+      --image-pull-policy='': The image pull policy for the container. If left empty, this value will not be specified by the client and defaulted by the server
+  -k, --kustomize='': Process a kustomization directory. This flag can't be used together with -f or -R.
+  -l, --labels='': Comma separated labels to apply to the pod(s). Will override previous values.
+      --leave-stdin-open=false: If the pod is started in interactive mode or with stdin, leave stdin open after the first attach completes. By default, stdin will be closed after the first attach completes.
+      --limits='': The resource requirement limits for this container.  For example, 'cpu=200m,memory=512Mi'.  Note that server side components may assign limits depending on the server configuration, such as limit ranges.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --overrides='': An inline JSON override for the generated object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.
+      --pod-running-timeout=1m0s: The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
+      --port='': The port that this container exposes.  If --expose is true, this is also the port used by the service that is created.
+      --quiet=false: If true, suppress prompt messages.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -r, --replicas=1: Number of replicas to create for this container. Default is 1.
+      --requests='': The resource requirement requests for this container.  For example, 'cpu=100m,memory=256Mi'.  Note that server side components may assign requests depending on the server configuration, such as limit ranges.
+      --restart='Always': The restart policy for this Pod.  Legal values [Always, OnFailure, Never].  If set to 'Always' a deployment is created, if set to 'OnFailure' a job is created, if set to 'Never', a regular pod is created. For the latter two --replicas must be 1.  Default 'Always', for CronJobs `Never`.
+      --rm=false: If true, delete resources created in this command for attached containers.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+      --schedule='': A schedule in the Cron format the job should be run with.
+      --service-generator='service/v2': The name of the generator to use for creating a service.  Only used if --expose is true
+      --service-overrides='': An inline JSON override for the generated service object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.  Only used if --expose is true.
+      --serviceaccount='': Service account to set in the pod spec
+  -i, --stdin=false: Keep stdin open on the container(s) in the pod, even if nothing is attached.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --timeout=0s: The length of time to wait before giving up on a delete, zero means determine a timeout from the size of the object
+  -t, --tty=false: Allocated a TTY for each container in the pod.
+      --wait=false: If true, wait for resources to be gone before returning. This waits for finalizers.
+
+Usage:
+  kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+required flag(s) "image" not set
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run pod bb --dry-run -oyaml[C[1P[1P[1P[1P
+Error: required flag(s) "image" not set
+
+
+Examples:
+  # Start a single instance of nginx.
+  kubectl run nginx --image=nginx
+  
+  # Start a single instance of hazelcast and let the container expose port 5701 .
+  kubectl run hazelcast --image=hazelcast --port=5701
+  
+  # Start a single instance of hazelcast and set environment variables "DNS_DOMAIN=cluster" and "POD_NAMESPACE=default" in the container.
+  kubectl run hazelcast --image=hazelcast --env="DNS_DOMAIN=cluster" --env="POD_NAMESPACE=default"
+  
+  # Start a single instance of hazelcast and set labels "app=hazelcast" and "env=prod" in the container.
+  kubectl run hazelcast --image=hazelcast --labels="app=hazelcast,env=prod"
+  
+  # Start a replicated instance of nginx.
+  kubectl run nginx --image=nginx --replicas=5
+  
+  # Dry run. Print the corresponding API objects without creating them.
+  kubectl run nginx --image=nginx --dry-run
+  
+  # Start a single instance of nginx, but overload the spec of the deployment with a partial set of values parsed from JSON.
+  kubectl run nginx --image=nginx --overrides='{ "apiVersion": "v1", "spec": { ... } }'
+  
+  # Start a pod of busybox and keep it in the foreground, don't restart it if it exits.
+  kubectl run -i -t busybox --image=busybox --restart=Never
+  
+  # Start the nginx container using the default command, but use custom arguments (arg1 .. argN) for that command.
+  kubectl run nginx --image=nginx -- <arg1> <arg2> ... <argN>
+  
+  # Start the nginx container using a different command and custom arguments.
+  kubectl run nginx --image=nginx --command -- <cmd> <arg1> ... <argN>
+  
+  # Start the perl container to compute π to 2000 places and print it out.
+  kubectl run pi --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+  
+  # Start the cron job to compute π to 2000 places and print it out every 5 minutes.
+  kubectl run pi --schedule="0/5 * * * ?" --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --attach=false: If true, wait for the Pod to start running, and then attach to the Pod as if 'kubectl attach ...' were called.  Default false, unless '-i/--stdin' is set, in which case the default is true. With '--restart=Never' the exit code of the container process is returned.
+      --cascade=true: If true, cascade the deletion of the resources managed by this resource (e.g. Pods created by a ReplicationController).  Default true.
+      --command=false: If true and extra arguments are present, use them as the 'command' field in the container, rather than the 'args' field which is the default.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --env=[]: Environment variables to set in the container
+      --expose=false: If true, a public, external service is created for the container(s) which are run
+  -f, --filename=[]: to use to replace the resource.
+      --force=false: Only used when grace-period=0. If true, immediately remove resources from API and bypass graceful deletion. Note that immediate deletion of some resources may result in inconsistency or data loss and requires confirmation.
+      --generator='': The name of the API generator to use, see http://kubernetes.io/docs/user-guide/kubectl-conventions/#generators for a list.
+      --grace-period=-1: Period of time in seconds given to the resource to terminate gracefully. Ignored if negative. Set to 1 for immediate shutdown. Can only be set to 0 when --force is true (force deletion).
+      --hostport=-1: The host port mapping for the container port. To demonstrate a single-machine container.
+      --image='': The image for the container to run.
+      --image-pull-policy='': The image pull policy for the container. If left empty, this value will not be specified by the client and defaulted by the server
+  -k, --kustomize='': Process a kustomization directory. This flag can't be used together with -f or -R.
+  -l, --labels='': Comma separated labels to apply to the pod(s). Will override previous values.
+      --leave-stdin-open=false: If the pod is started in interactive mode or with stdin, leave stdin open after the first attach completes. By default, stdin will be closed after the first attach completes.
+      --limits='': The resource requirement limits for this container.  For example, 'cpu=200m,memory=512Mi'.  Note that server side components may assign limits depending on the server configuration, such as limit ranges.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --overrides='': An inline JSON override for the generated object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.
+      --pod-running-timeout=1m0s: The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
+      --port='': The port that this container exposes.  If --expose is true, this is also the port used by the service that is created.
+      --quiet=false: If true, suppress prompt messages.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -r, --replicas=1: Number of replicas to create for this container. Default is 1.
+      --requests='': The resource requirement requests for this container.  For example, 'cpu=100m,memory=256Mi'.  Note that server side components may assign requests depending on the server configuration, such as limit ranges.
+      --restart='Always': The restart policy for this Pod.  Legal values [Always, OnFailure, Never].  If set to 'Always' a deployment is created, if set to 'OnFailure' a job is created, if set to 'Never', a regular pod is created. For the latter two --replicas must be 1.  Default 'Always', for CronJobs `Never`.
+      --rm=false: If true, delete resources created in this command for attached containers.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+      --schedule='': A schedule in the Cron format the job should be run with.
+      --service-generator='service/v2': The name of the generator to use for creating a service.  Only used if --expose is true
+      --service-overrides='': An inline JSON override for the generated service object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.  Only used if --expose is true.
+      --serviceaccount='': Service account to set in the pod spec
+  -i, --stdin=false: Keep stdin open on the container(s) in the pod, even if nothing is attached.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --timeout=0s: The length of time to wait before giving up on a delete, zero means determine a timeout from the size of the object
+  -t, --tty=false: Allocated a TTY for each container in the pod.
+      --wait=false: If true, wait for resources to be gone before returning. This waits for finalizers.
+
+Usage:
+  kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+required flag(s) "image" not set
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run bb --dry-run -oyaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C yaml
+Error: required flag(s) "image" not set
+
+
+Examples:
+  # Start a single instance of nginx.
+  kubectl run nginx --image=nginx
+  
+  # Start a single instance of hazelcast and let the container expose port 5701 .
+  kubectl run hazelcast --image=hazelcast --port=5701
+  
+  # Start a single instance of hazelcast and set environment variables "DNS_DOMAIN=cluster" and "POD_NAMESPACE=default" in the container.
+  kubectl run hazelcast --image=hazelcast --env="DNS_DOMAIN=cluster" --env="POD_NAMESPACE=default"
+  
+  # Start a single instance of hazelcast and set labels "app=hazelcast" and "env=prod" in the container.
+  kubectl run hazelcast --image=hazelcast --labels="app=hazelcast,env=prod"
+  
+  # Start a replicated instance of nginx.
+  kubectl run nginx --image=nginx --replicas=5
+  
+  # Dry run. Print the corresponding API objects without creating them.
+  kubectl run nginx --image=nginx --dry-run
+  
+  # Start a single instance of nginx, but overload the spec of the deployment with a partial set of values parsed from JSON.
+  kubectl run nginx --image=nginx --overrides='{ "apiVersion": "v1", "spec": { ... } }'
+  
+  # Start a pod of busybox and keep it in the foreground, don't restart it if it exits.
+  kubectl run -i -t busybox --image=busybox --restart=Never
+  
+  # Start the nginx container using the default command, but use custom arguments (arg1 .. argN) for that command.
+  kubectl run nginx --image=nginx -- <arg1> <arg2> ... <argN>
+  
+  # Start the nginx container using a different command and custom arguments.
+  kubectl run nginx --image=nginx --command -- <cmd> <arg1> ... <argN>
+  
+  # Start the perl container to compute π to 2000 places and print it out.
+  kubectl run pi --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+  
+  # Start the cron job to compute π to 2000 places and print it out every 5 minutes.
+  kubectl run pi --schedule="0/5 * * * ?" --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --attach=false: If true, wait for the Pod to start running, and then attach to the Pod as if 'kubectl attach ...' were called.  Default false, unless '-i/--stdin' is set, in which case the default is true. With '--restart=Never' the exit code of the container process is returned.
+      --cascade=true: If true, cascade the deletion of the resources managed by this resource (e.g. Pods created by a ReplicationController).  Default true.
+      --command=false: If true and extra arguments are present, use them as the 'command' field in the container, rather than the 'args' field which is the default.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --env=[]: Environment variables to set in the container
+      --expose=false: If true, a public, external service is created for the container(s) which are run
+  -f, --filename=[]: to use to replace the resource.
+      --force=false: Only used when grace-period=0. If true, immediately remove resources from API and bypass graceful deletion. Note that immediate deletion of some resources may result in inconsistency or data loss and requires confirmation.
+      --generator='': The name of the API generator to use, see http://kubernetes.io/docs/user-guide/kubectl-conventions/#generators for a list.
+      --grace-period=-1: Period of time in seconds given to the resource to terminate gracefully. Ignored if negative. Set to 1 for immediate shutdown. Can only be set to 0 when --force is true (force deletion).
+      --hostport=-1: The host port mapping for the container port. To demonstrate a single-machine container.
+      --image='': The image for the container to run.
+      --image-pull-policy='': The image pull policy for the container. If left empty, this value will not be specified by the client and defaulted by the server
+  -k, --kustomize='': Process a kustomization directory. This flag can't be used together with -f or -R.
+  -l, --labels='': Comma separated labels to apply to the pod(s). Will override previous values.
+      --leave-stdin-open=false: If the pod is started in interactive mode or with stdin, leave stdin open after the first attach completes. By default, stdin will be closed after the first attach completes.
+      --limits='': The resource requirement limits for this container.  For example, 'cpu=200m,memory=512Mi'.  Note that server side components may assign limits depending on the server configuration, such as limit ranges.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --overrides='': An inline JSON override for the generated object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.
+      --pod-running-timeout=1m0s: The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
+      --port='': The port that this container exposes.  If --expose is true, this is also the port used by the service that is created.
+      --quiet=false: If true, suppress prompt messages.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -r, --replicas=1: Number of replicas to create for this container. Default is 1.
+      --requests='': The resource requirement requests for this container.  For example, 'cpu=100m,memory=256Mi'.  Note that server side components may assign requests depending on the server configuration, such as limit ranges.
+      --restart='Always': The restart policy for this Pod.  Legal values [Always, OnFailure, Never].  If set to 'Always' a deployment is created, if set to 'OnFailure' a job is created, if set to 'Never', a regular pod is created. For the latter two --replicas must be 1.  Default 'Always', for CronJobs `Never`.
+      --rm=false: If true, delete resources created in this command for attached containers.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+      --schedule='': A schedule in the Cron format the job should be run with.
+      --service-generator='service/v2': The name of the generator to use for creating a service.  Only used if --expose is true
+      --service-overrides='': An inline JSON override for the generated service object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.  Only used if --expose is true.
+      --serviceaccount='': Service account to set in the pod spec
+  -i, --stdin=false: Keep stdin open on the container(s) in the pod, even if nothing is attached.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --timeout=0s: The length of time to wait before giving up on a delete, zero means determine a timeout from the size of the object
+  -t, --tty=false: Allocated a TTY for each container in the pod.
+      --wait=false: If true, wait for resources to be gone before returning. This waits for finalizers.
+
+Usage:
+  kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+required flag(s) "image" not set
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run bb --dry-run -o yaml[1Pyaml[4@pod [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pg pod bb --dry-run -o yaml[1@e[1@t
+Error: unknown flag: --dry-run
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --dry-run
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod bb --dry-run -o yaml[C[C[C[1P[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+NAME   READY   STATUS   RESTARTS   AGE
+bb     0/1     Error    0          3m23s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod bb --dry-run -o yaml[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krun bb --dry-run -o yaml[1Pyaml[4@pod [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cget pod bb --dry-run -o yaml[1Pyaml[12Pdescribe pod bb[5Pget[C[C[C[C[C[C[C[1@logs[C[C[C[C[C[C[Crun bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kkubectl run bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld" --dry-run -o yaml
+Error from server (AlreadyExists): pods "bb" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld" --dry-run -o yaml[C[1@1
+pod/bb1 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl gt [K[K[Ke[Kget pod bb*
+Error from server (NotFound): pods "bb*" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod bb*[K1
+NAME   READY   STATUS   RESTARTS   AGE
+bb1    0/1     Error    0          15s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ky[Kubectl delete pod bb
+pod "bb" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete pod bb1
+pod "bb1" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete pod bb1[K[2Pget pod bb1*run bb1 --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld" --dry-run -o yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cget pod bb[K[1Prun bb --dry-run -o yaml[1Pyaml[4@pod [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cget pod bb --dry-run -o yaml[1Pyaml[12Pdescribe pod bb[5Pget[C[C[C[C[C[C[C[1@logs[C[C[C[C[C[C[Crun bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld"[C[C[1@ [1@-[1@-[1@d[1@r[1@y[1@-[1@r[1@u[1@n[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -o yaml
+pod/bb created (dry run)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld" -o yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdelete pod bb1[K[K
+Error from server (NotFound): pods "bb" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete pod bbrun bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld" -o yaml > bb.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat bb.yaml 
+pod/bb created (dry run)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat bb.yaml kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld" -o yaml > bb.yaml[1P[1P[1P[1P[1P[1P[1P
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  > bb.yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat bb.yaml [K
+pod/bb created (dry run)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat bb.yaml kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  > bb.yaml> bb.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  >> bb.yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat bb.yaml [K
+pod/bb created (dry run)
+pod/bb created (dry run)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat bb.yaml kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  >> bb.yaml[C[C[1@-[1@o[1@ [1@y[1@a[1@m[1@l[1@ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run bb --image=busybox --restart=Never --dry-run  -o yaml -- /bin/sh "echo -c Hello W0rld"  >> bb.yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat bb.yaml [K
+pod/bb created (dry run)
+pod/bb created (dry run)
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: bb
+  name: bb
+spec:
+  containers:
+  - args:
+    - /bin/sh
+    - echo -c Hello W0rld
+    image: busybox
+    name: bb
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox -it --restart=Never -- /bin/sh -c 'echo hello world'
+
+
+
+
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox -it --restart=Never -- echo 'hello world'
+Error from server (AlreadyExists): pods "busybox" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ #kubectl run busybox --image=busybox -it --restart=Never -- echo 'hello world'[1@1
+
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox1 --image=busybox -it --restart=Never -- echo 'hello world'[C[C[C[C[C[C[C[1@2
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k=[K[Kminikube status
+host: Running
+kubelet: Running
+apiserver: Running
+kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.101
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube statuskubectl run 2busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+Error from server (AlreadyExists): pods "2busybox1" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run 2busybox1 --image=busybox -it --restart=Never -- echo 'hello world'[1P[1@3
+hello world
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run 3busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml;[K
+Error from server (AlreadyExists): pods "3busybox1" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run 3busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3
+hello world --dry-run -o yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run 33busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[C[1@4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@-[C[C[1@-[1@d[1@r[1@y[C[C[1@-[1@r[1@u[1@n[1@ [C[C[1@-[1@o[1@ [1@y[1@a[1@m[1@l[1@ 
+error: --dry-run can't be used with attached containers options (--attach, --stdin, or --tty)
+See 'kubectl run -h' for help and examples
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ skubectl run 43busybox1 --image=busybox -it --restart=Never --dry-run -o yaml -- echo 'hello world'[1P[1P[1P[C[1P[1@-[1@c[1@/[1@b[1@i[1@n[1@/[1@s[1@h[1@ 
+error: --dry-run can't be used with attached containers options (--attach, --stdin, or --tty)
+See 'kubectl run -h' for help and examples
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run 43busybox1 --image=busybox -it --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'[C[1P[1P[1P
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 43busybox1
+  name: 43busybox1
+spec:
+  containers:
+  - args:
+    - /bin/sh
+    - -c
+    - hello world
+    image: busybox
+    name: 43busybox1
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run 43busybox1 --image=busybox  --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'[3@-it[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 43busybox1
+  name: 43busybox1
+spec:
+  containers:
+  - args:
+    - /bin/sh
+    - -c
+    - hello world
+    image: busybox
+    name: 43busybox1
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run 43busybox1 --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-it[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pecho[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C33busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P
+Error from server (AlreadyExists): pods "3busybox1" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run 3busybox1 --image=busybox  --restart=Never -- echo 'hello world' --dry-run -o yaml[C[C[C[C[C[C[C[C[1P[1@5
+pod/53busybox1 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run 53busybox1 --image=busybox --restart=Never -- echo 'hello world' --dry-run -o yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3busybox1 --image=busybox [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C43busybox1 --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@-it[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6Pecho[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C33busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cminikube status[K
+host: Running
+kubelet: Running
+apiserver: Running
+kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.101
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run ngENV [K[K[K[KinxENV --image=nginx --resta rt=Never --env=var1=val2[K1
+The Pod "nginxENV" is invalid: 
+* metadata.name: Invalid value: "nginxENV": a DNS-1123 subdomain must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*')
+* spec.containers[0].name: Invalid value: "nginxENV": a DNS-1123 label must consist of lower case alphanumeric characters or '-', and must start and end with an alphanumeric character (e.g. 'my-name',  or '123-abc', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?')
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run nginxENV --image=nginx --restarrt=Never --env=var1=val1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=nginx --restart[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=nginx --restart=[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=nginx --restart=N[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce --image=nginx --restart=[1@N[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn --image=nginx --restart[1@=[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv --image=nginx --restar[1@t[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+pod/nginxenv created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl exec -it ngenv -- env
+Error from server (NotFound): pods "ngenv" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl exec -it ngenv -- env[C[C[1@i[1@n[1@x
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=nginxenv
+TERM=xterm
+var1=val1
+KUBERNETES_PORT=tcp://10.96.0.1:443
+NGINX_PORT_80_TCP_ADDR=10.105.5.19
+KUBERNETES_SERVICE_HOST=10.96.0.1
+NGINX_SERVICE_PORT=80
+NGINX_PORT_80_TCP_PROTO=tcp
+NGINX_PORT_80_TCP=tcp://10.105.5.19:80
+KUBERNETES_SERVICE_PORT_HTTPS=443
+KUBERNETES_PORT_443_TCP=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+KUBERNETES_PORT_443_TCP_PORT=443
+NGINX_PORT_80_TCP_PORT=80
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_PORT_443_TCP_ADDR=10.96.0.1
+NGINX_SERVICE_HOST=10.105.5.19
+NGINX_PORT=tcp://10.105.5.19:80
+NGINX_VERSION=1.17.9
+NJS_VERSION=0.3.9
+PKG_RELEASE=1~buster
+HOME=/root
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc'
+> ^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc'[K
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ basg[Kj[Kh gitBAs[K[K[KBatch.sh 
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      202003141444  bb.yaml	 gitBatch.sh
+202003141414  2rq.yaml	    envpod.yaml  README.md
+On branch master
+Your branch is ahead of 'origin/ma
