@@ -1,0 +1,947 @@
+Script started on 2020-03-16 00:07:22+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ll
+total 700
+drwxr-xr-x  4 baz baz   4096 Mar 16 00:07 [0m[01;34m.[0m/
+drwxrwxr-x 12 baz baz   4096 Mar 14 14:03 [01;34m..[0m/
+-rw-r--r--  1 baz baz    256 Mar 14 14:46 1.yaml
+-rw-r--r--  1 baz baz  12235 Mar 14 14:42 202003141414
+-rw-r--r--  1 baz baz 369035 Mar 15 01:11 202003141444
+-rw-r--r--  1 baz baz  70963 Mar 15 02:23 202003150112
+-rw-r--r--  1 baz baz 180286 Mar 15 23:58 202003151935
+-rw-r--r--  1 baz baz      0 Mar 16 00:07 202003160010
+-rw-r--r--  1 baz baz     34 Mar 15 01:14 2b1.yaml
+-rw-r--r--  1 baz baz     27 Mar 15 01:15 2b.yaml
+-rw-r--r--  1 baz baz    151 Mar 14 14:54 2rq.yaml
+-rw-r--r--  1 baz baz    389 Mar 15 01:18 b2mc.yaml
+-rw-r--r--  1 baz baz    324 Mar 14 21:00 bb.yaml
+-rw-r--r--  1 baz baz    429 Mar 15 19:39 ca1a.yaml
+-rw-r--r--  1 baz baz    188 Mar 15 20:01 commandsReview.txt
+-rw-r--r--  1 baz baz    262 Mar 14 14:48 envpod.yaml
+drwxr-xr-x  8 baz baz   4096 Mar 15 23:59 [01;34m.git[0m/
+-rw-r--r--  1 baz baz    528 Mar 14 20:20 gitBatch.sh
+drwxr-xr-x  3 baz baz   4096 Mar 15 20:11 [01;34mkubernetes-metrics-server[0m/
+-rw-r--r--  1 baz baz     92 Mar 14 14:44 README.md
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml        202003160010  bb.yaml             [0m[01;34mkubernetes-metrics-server[0m
+202003141414  2b1.yaml      ca1a.yaml           README.md
+202003141444  2b.yaml       commandsReview.txt
+202003150112  2rq.yaml      envpod.yaml
+202003151935  b2mc.yaml     gitBatch.sh
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ll kubernetes-metrics-server/
+total 44
+drwxr-xr-x 3 baz baz 4096 Mar 15 20:11 [0m[01;34m.[0m/
+drwxr-xr-x 4 baz baz 4096 Mar 16 00:07 [01;34m..[0m/
+-rw-r--r-- 1 baz baz  384 Mar 15 20:11 aggregated-metrics-reader.yaml
+-rw-r--r-- 1 baz baz  308 Mar 15 20:11 auth-delegator.yaml
+-rw-r--r-- 1 baz baz  329 Mar 15 20:11 auth-reader.yaml
+drwxr-xr-x 8 baz baz 4096 Mar 15 20:11 [01;34m.git[0m/
+-rw-r--r-- 1 baz baz  298 Mar 15 20:11 metrics-apiservice.yaml
+-rw-r--r-- 1 baz baz  976 Mar 15 20:11 metrics-server-deployment.yaml
+-rw-r--r-- 1 baz baz  249 Mar 15 20:11 metrics-server-service.yaml
+-rw-r--r-- 1 baz baz  219 Mar 15 20:11 README.md
+-rw-r--r-- 1 baz baz  612 Mar 15 20:11 resource-reader.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl c23[K[K4 --image=busybx[Kpx[K[Kox --restart=OnFai lure -- /bin/sh -c "echo hello;sleep 30;echo world"
+Error: unknown command "c4" for "kubectl"
+
+Did you mean this?
+	cp
+
+Run 'kubectl --help' for usage.
+unknown command "c4" for "kubectl"
+
+Did you mean this?
+	cp
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl c4 --image=busybox --restart=OnFaillure -- /bin/sh -c "echo hello;sleep 30;echo world"[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C c4 --image=busybox --restart=OnFai[1@l[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[Cr c4 --image=busybox --restart=OnFa[1@i[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[Cu c4 --image=busybox --restart=OnF[1@a[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[Cn c4 --image=busybox --restart=On[1@F[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C
+
+kubectl run --generator=job/v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+job.batch/c4 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        16d
+88job   2/2           15s        16d
+c2      1/1           8m         3h13m
+c4      0/1           5s         5s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job -w
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        16d
+88job   2/2           15s        16d
+c2      1/1           8m         3h13m
+c4      0/1           9s         9s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl j[Klogs c4
+Error from server (NotFound): pods "c4" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs c4[K2
+Error from server (NotFound): pods "c2" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs c24get job -w
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        16d
+88job   2/2           15s        16d
+c2      1/1           8m         3h13m
+c4      0/1           28s        28s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job -w[3Plogs c2[K4
+Error from server (NotFound): pods "c4" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs c4[K[K[Kget job -w[3Plogs c2get job -w[K[K[K [K, pod
+error: arguments in resource/name form must have a single resource and name
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job, pod[1Ppod
+NAME              COMPLETIONS   DURATION   AGE
+job.batch/84job   1/1           48s        16d
+job.batch/88job   2/2           15s        16d
+job.batch/c2      1/1           8m         3h13m
+job.batch/c4      1/1           38s        48s
+
+NAME                         READY   STATUS      RESTARTS   AGE
+pod/06nginx                  0/1     Error       0          28d
+pod/07nginx                  0/1     Error       0          28d
+pod/100vol                   0/1     Error       0          15d
+pod/104pvc2b                 0/1     Error       0          15d
+pod/111                      0/1     Error       0          14d
+pod/113                      0/1     Completed   0          14d
+pod/114nginx                 0/1     Completed   0          14d
+pod/117                      0/1     Error       0          13d
+pod/118                      0/1     Error       0          13d
+pod/126                      0/1     Error       0          11d
+pod/131                      0/1     Error       0          11d
+pod/132                      0/1     Error       0          11d
+pod/134                      0/1     Completed   0          8d
+pod/136                      0/1     Completed   0          8d
+pod/137busybox               0/1     Error       0          8d
+pod/13nginx                  0/1     Completed   1          28d
+pod/140                      0/1     Error       0          8d
+pod/144                      0/1     Error       0          8d
+pod/17shell                  0/1     Error       0          28d
+pod/19bb                     0/1     Completed   0          28d
+pod/21bb                     0/1     Completed   0          28d
+pod/29mc                     0/3     Completed   0          27d
+pod/2busybox1                0/1     Completed   0          27h
+pod/33busybox1               0/1     Completed   0          27h
+pod/34mc                     0/2     Error       0          27d
+pod/37-ng-1                  0/1     Error       0          21d
+pod/37-ng-2                  0/1     Error       0          21d
+pod/37-ng-3                  0/1     Error       0          21d
+pod/3busybox1                0/1     Completed   0          27h
+pod/53busybox1               0/1     Completed   0          27h
+pod/67dep-7db4cf66f7-2hfgb   1/1     Running     14         16d
+pod/67dep-7db4cf66f7-9wrj7   1/1     Running     14         16d
+pod/67dep-7db4cf66f7-h5g7f   1/1     Running     14         16d
+pod/67dep-7db4cf66f7-m2269   1/1     Running     14         16d
+pod/84job-9gkc8              0/1     Completed   0          16d
+pod/88job-bx58m              0/1     Completed   0          16d
+pod/b2mc                     0/2     Completed   0          22h
+pod/busybox                  0/1     Completed   0          27h
+pod/busybox1                 0/1     Completed   0          27h
+pod/c1a                      0/1     Error       0          22h
+pod/c1b                      0/1     Error       0          22h
+pod/c2-m6cjm                 0/1     Completed   0          3h13m
+pod/c4-4ntwp                 0/1     Completed   0          48s
+pod/ca1-66d6b4f974-4dxf6     1/1     Running     1          4h31m
+pod/ca1-66d6b4f974-dl85x     1/1     Running     1          4h31m
+pod/ca1a-5799475b87-7xrs5    1/1     Running     1          3h26m
+pod/ca1a-5799475b87-h7vbr    1/1     Running     1          3h26m
+pod/ca1a-5799475b87-h9q9t    1/1     Running     1          3h26m
+pod/ca1a-5799475b87-hkkcj    1/1     Running     1          3h26m
+pod/ca1a-5799475b87-kmlfd    1/1     Running     1          3h26m
+pod/ca1a-5799475b87-qch6n    1/1     Running     1          3h26m
+pod/hello                    0/1     Error       0          8d
+pod/mysec                    0/1     Error       0          13d
+pod/nginx                    0/1     Error       1          33h
+pod/nginxenv                 0/1     Error       0          26h
+pod/not-running              0/1     Error       0          8d
+pod/secbusybox               0/1     Error       0          14d
+pod/test114                  0/1     Completed   0          14d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job,pod pod[8Plogs c4-4ntwp
+hello
+world
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs job/c4
+hello
+world
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cckubectl logs job/c4cc[Kkubectl logs c4-4ntwp[2Pget job,pod pod[5Plogs c4get job -w[3Plogs c24get job -w[Krun c4 --image=busybox --restart=OnnFailure -- /bin/sh -c "echo hello;sleep 30;echo world"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdry-run -o yaml[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=busybox --restart=OnF[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C6 --image=busybox --restart=On[1@F[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Cget job[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crun c6 --image=busybox --restart=OnnFailure --dry-run -o yaml
+kubectl run --generator=job/v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  labels:
+    run: c6
+  name: c6
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: c6
+    spec:
+      containers:
+      - image: busybox
+        name: c6
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run c6 --image=busybox --restart=OnnFailure --dry-run -o yaml > c6.yaml
+kubectl run --generator=job/v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nna[Kan[K[K[Kano c6.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    c6.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: batch/v1[4dkind: Job[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: c6[9;3Hname: c6[10dspec:[11;3Htemplate:[12;5Hmetadata:[13;7HcreationTimestamp: null[14;7Hlabels:[15;9Hrun: c6[16;5Hspec:[17;7Hcontainers:[18;7H- image: busybox[19;9Hname: c6[20;9Hresources: {}[21;7HrestartPolicy: OnFailure[22dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explan[Kin pof[K[Kd.[K[Kod.spec.[K[K[K[K[K[K[K[K[Kjob --recursive
+KIND:     Job
+VERSION:  batch/v1
+
+DESCRIPTION:
+     Job represents the configuration of a single job.
+
+FIELDS:
+   apiVersion	<string>
+   kind	<string>
+   metadata	<Object>
+      annotations	<map[string]string>
+      clusterName	<string>
+      creationTimestamp	<string>
+      deletionGracePeriodSeconds	<integer>
+      deletionTimestamp	<string>
+      finalizers	<[]string>
+      generateName	<string>
+      generation	<integer>
+      initializers	<Object>
+         pending	<[]Object>
+            name	<string>
+         result	<Object>
+            apiVersion	<string>
+            code	<integer>
+            details	<Object>
+               causes	<[]Object>
+                  field	<string>
+                  message	<string>
+                  reason	<string>
+               group	<string>
+               kind	<string>
+               name	<string>
+               retryAfterSeconds	<integer>
+               uid	<string>
+            kind	<string>
+            message	<string>
+            metadata	<Object>
+               continue	<string>
+               remainingItemCount	<integer>
+               resourceVersion	<string>
+               selfLink	<string>
+            reason	<string>
+            status	<string>
+      labels	<map[string]string>
+      managedFields	<[]Object>
+         apiVersion	<string>
+         fields	<map[string]>
+         manager	<string>
+         operation	<string>
+         time	<string>
+      name	<string>
+      namespace	<string>
+      ownerReferences	<[]Object>
+         apiVersion	<string>
+         blockOwnerDeletion	<boolean>
+         controller	<boolean>
+         kind	<string>
+         name	<string>
+         uid	<string>
+      resourceVersion	<string>
+      selfLink	<string>
+      uid	<string>
+   spec	<Object>
+      activeDeadlineSeconds	<integer>
+      backoffLimit	<integer>
+      completions	<integer>
+      manualSelector	<boolean>
+      parallelism	<integer>
+      selector	<Object>
+         matchExpressions	<[]Object>
+            key	<string>
+            operator	<string>
+            values	<[]string>
+         matchLabels	<map[string]string>
+      template	<Object>
+         metadata	<Object>
+            annotations	<map[string]string>
+            clusterName	<string>
+            creationTimestamp	<string>
+            deletionGracePeriodSeconds	<integer>
+            deletionTimestamp	<string>
+            finalizers	<[]string>
+            generateName	<string>
+            generation	<integer>
+            initializers	<Object>
+               pending	<[]Object>
+                  name	<string>
+               result	<Object>
+                  apiVersion	<string>
+                  code	<integer>
+                  details	<Object>
+                     causes	<[]Object>
+                        field	<string>
+                        message	<string>
+                        reason	<string>
+                     group	<string>
+                     kind	<string>
+                     name	<string>
+                     retryAfterSeconds	<integer>
+                     uid	<string>
+                  kind	<string>
+                  message	<string>
+                  metadata	<Object>
+                     continue	<string>
+                     remainingItemCount	<integer>
+                     resourceVersion	<string>
+                     selfLink	<string>
+                  reason	<string>
+                  status	<string>
+            labels	<map[string]string>
+            managedFields	<[]Object>
+               apiVersion	<string>
+               fields	<map[string]>
+               manager	<string>
+               operation	<string>
+               time	<string>
+            name	<string>
+            namespace	<string>
+            ownerReferences	<[]Object>
+               apiVersion	<string>
+               blockOwnerDeletion	<boolean>
+               controller	<boolean>
+               kind	<string>
+               name	<string>
+               uid	<string>
+            resourceVersion	<string>
+            selfLink	<string>
+            uid	<string>
+         spec	<Object>
+            activeDeadlineSeconds	<integer>
+            affinity	<Object>
+               nodeAffinity	<Object>
+                  preferredDuringSchedulingIgnoredDuringExecution	<[]Object>
+                     preference	<Object>
+                        matchExpressions	<[]Object>
+                           key	<string>
+                           operator	<string>
+                           values	<[]string>
+                        matchFields	<[]Object>
+                           key	<string>
+                           operator	<string>
+                           values	<[]string>
+                     weight	<integer>
+                  requiredDuringSchedulingIgnoredDuringExecution	<Object>
+                     nodeSelectorTerms	<[]Object>
+                        matchExpressions	<[]Object>
+                           key	<string>
+                           operator	<string>
+                           values	<[]string>
+                        matchFields	<[]Object>
+                           key	<string>
+                           operator	<string>
+                           values	<[]string>
+               podAffinity	<Object>
+                  preferredDuringSchedulingIgnoredDuringExecution	<[]Object>
+                     podAffinityTerm	<Object>
+                        labelSelector	<Object>
+                           matchExpressions	<[]Object>
+                              key	<string>
+                              operator	<string>
+                              values	<[]string>
+                           matchLabels	<map[string]string>
+                        namespaces	<[]string>
+                        topologyKey	<string>
+                     weight	<integer>
+                  requiredDuringSchedulingIgnoredDuringExecution	<[]Object>
+                     labelSelector	<Object>
+                        matchExpressions	<[]Object>
+                           key	<string>
+                           operator	<string>
+                           values	<[]string>
+                        matchLabels	<map[string]string>
+                     namespaces	<[]string>
+                     topologyKey	<string>
+               podAntiAffinity	<Object>
+                  preferredDuringSchedulingIgnoredDuringExecution	<[]Object>
+                     podAffinityTerm	<Object>
+                        labelSelector	<Object>
+                           matchExpressions	<[]Object>
+                              key	<string>
+                              operator	<string>
+                              values	<[]string>
+                           matchLabels	<map[string]string>
+                        namespaces	<[]string>
+                        topologyKey	<string>
+                     weight	<integer>
+                  requiredDuringSchedulingIgnoredDuringExecution	<[]Object>
+                     labelSelector	<Object>
+                        matchExpressions	<[]Object>
+                           key	<string>
+                           operator	<string>
+                           values	<[]string>
+                        matchLabels	<map[string]string>
+                     namespaces	<[]string>
+                     topologyKey	<string>
+            automountServiceAccountToken	<boolean>
+            containers	<[]Object>
+               args	<[]string>
+               command	<[]string>
+               env	<[]Object>
+                  name	<string>
+                  value	<string>
+                  valueFrom	<Object>
+                     configMapKeyRef	<Object>
+                        key	<string>
+                        name	<string>
+                        optional	<boolean>
+                     fieldRef	<Object>
+                        apiVersion	<string>
+                        fieldPath	<string>
+                     resourceFieldRef	<Object>
+                        containerName	<string>
+                        divisor	<string>
+                        resource	<string>
+                     secretKeyRef	<Object>
+                        key	<string>
+                        name	<string>
+                        optional	<boolean>
+               envFrom	<[]Object>
+                  configMapRef	<Object>
+                     name	<string>
+                     optional	<boolean>
+                  prefix	<string>
+                  secretRef	<Object>
+                     name	<string>
+                     optional	<boolean>
+               image	<string>
+               imagePullPolicy	<string>
+               lifecycle	<Object>
+                  postStart	<Object>
+                     exec	<Object>
+                        command	<[]string>
+                     httpGet	<Object>
+                        host	<string>
+                        httpHeaders	<[]Object>
+                           name	<string>
+                           value	<string>
+                        path	<string>
+                        port	<string>
+                        scheme	<string>
+                     tcpSocket	<Object>
+                        host	<string>
+                        port	<string>
+                  preStop	<Object>
+                     exec	<Object>
+                        command	<[]string>
+                     httpGet	<Object>
+                        host	<string>
+                        httpHeaders	<[]Object>
+                           name	<string>
+                           value	<string>
+                        path	<string>
+                        port	<string>
+                        scheme	<string>
+                     tcpSocket	<Object>
+                        host	<string>
+                        port	<string>
+               livenessProbe	<Object>
+                  exec	<Object>
+                     command	<[]string>
+                  failureThreshold	<integer>
+                  httpGet	<Object>
+                     host	<string>
+                     httpHeaders	<[]Object>
+                        name	<string>
+                        value	<string>
+                     path	<string>
+                     port	<string>
+                     scheme	<string>
+                  initialDelaySeconds	<integer>
+                  periodSeconds	<integer>
+                  successThreshold	<integer>
+                  tcpSocket	<Object>
+                     host	<string>
+                     port	<string>
+                  timeoutSeconds	<integer>
+               name	<string>
+               ports	<[]Object>
+                  containerPort	<integer>
+                  hostIP	<string>
+                  hostPort	<integer>
+                  name	<string>
+                  protocol	<string>
+               readinessProbe	<Object>
+                  exec	<Object>
+                     command	<[]string>
+                  failureThreshold	<integer>
+                  httpGet	<Object>
+                     host	<string>
+                     httpHeaders	<[]Object>
+                        name	<string>
+                        value	<string>
+                     path	<string>
+                     port	<string>
+                     scheme	<string>
+                  initialDelaySeconds	<integer>
+                  periodSeconds	<integer>
+                  successThreshold	<integer>
+                  tcpSocket	<Object>
+                     host	<string>
+                     port	<string>
+                  timeoutSeconds	<integer>
+               resources	<Object>
+                  limits	<map[string]string>
+                  requests	<map[string]string>
+               securityContext	<Object>
+                  allowPrivilegeEscalation	<boolean>
+                  capabilities	<Object>
+                     add	<[]string>
+                     drop	<[]string>
+                  privileged	<boolean>
+                  procMount	<string>
+                  readOnlyRootFilesystem	<boolean>
+                  runAsGroup	<integer>
+                  runAsNonRoot	<boolean>
+                  runAsUser	<integer>
+                  seLinuxOptions	<Object>
+                     level	<string>
+                     role	<string>
+                     type	<string>
+                     user	<string>
+                  windowsOptions	<Object>
+                     gmsaCredentialSpec	<string>
+                     gmsaCredentialSpecName	<string>
+               stdin	<boolean>
+               stdinOnce	<boolean>
+               terminationMessagePath	<string>
+               terminationMessagePolicy	<string>
+               tty	<boolean>
+               volumeDevices	<[]Object>
+                  devicePath	<string>
+                  name	<string>
+               volumeMounts	<[]Object>
+                  mountPath	<string>
+                  mountPropagation	<string>
+                  name	<string>
+                  readOnly	<boolean>
+                  subPath	<string>
+                  subPathExpr	<string>
+               workingDir	<string>
+            dnsConfig	<Object>
+               nameservers	<[]string>
+               options	<[]Object>
+                  name	<string>
+                  value	<string>
+               searches	<[]string>
+            dnsPolicy	<string>
+            enableServiceLinks	<boolean>
+            hostAliases	<[]Object>
+               hostnames	<[]string>
+               ip	<string>
+            hostIPC	<boolean>
+            hostNetwork	<boolean>
+            hostPID	<boolean>
+            hostname	<string>
+            imagePullSecrets	<[]Object>
+               name	<string>
+            initContainers	<[]Object>
+               args	<[]string>
+               command	<[]string>
+               env	<[]Object>
+                  name	<string>
+                  value	<string>
+                  valueFrom	<Object>
+                     configMapKeyRef	<Object>
+                        key	<string>
+                        name	<string>
+                        optional	<boolean>
+                     fieldRef	<Object>
+                        apiVersion	<string>
+                        fieldPath	<string>
+                     resourceFieldRef	<Object>
+                        containerName	<string>
+                        divisor	<string>
+                        resource	<string>
+                     secretKeyRef	<Object>
+                        key	<string>
+                        name	<string>
+                        optional	<boolean>
+               envFrom	<[]Object>
+                  configMapRef	<Object>
+                     name	<string>
+                     optional	<boolean>
+                  prefix	<string>
+                  secretRef	<Object>
+                     name	<string>
+                     optional	<boolean>
+               image	<string>
+               imagePullPolicy	<string>
+               lifecycle	<Object>
+                  postStart	<Object>
+                     exec	<Object>
+                        command	<[]string>
+                     httpGet	<Object>
+                        host	<string>
+                        httpHeaders	<[]Object>
+                           name	<string>
+                           value	<string>
+                        path	<string>
+                        port	<string>
+                        scheme	<string>
+                     tcpSocket	<Object>
+                        host	<string>
+                        port	<string>
+                  preStop	<Object>
+                     exec	<Object>
+                        command	<[]string>
+                     httpGet	<Object>
+                        host	<string>
+                        httpHeaders	<[]Object>
+                           name	<string>
+                           value	<string>
+                        path	<string>
+                        port	<string>
+                        scheme	<string>
+                     tcpSocket	<Object>
+                        host	<string>
+                        port	<string>
+               livenessProbe	<Object>
+                  exec	<Object>
+                     command	<[]string>
+                  failureThreshold	<integer>
+                  httpGet	<Object>
+                     host	<string>
+                     httpHeaders	<[]Object>
+                        name	<string>
+                        value	<string>
+                     path	<string>
+                     port	<string>
+                     scheme	<string>
+                  initialDelaySeconds	<integer>
+                  periodSeconds	<integer>
+                  successThreshold	<integer>
+                  tcpSocket	<Object>
+                     host	<string>
+                     port	<string>
+                  timeoutSeconds	<integer>
+               name	<string>
+               ports	<[]Object>
+                  containerPort	<integer>
+                  hostIP	<string>
+                  hostPort	<integer>
+                  name	<string>
+                  protocol	<string>
+               readinessProbe	<Object>
+                  exec	<Object>
+                     command	<[]string>
+                  failureThreshold	<integer>
+                  httpGet	<Object>
+                     host	<string>
+                     httpHeaders	<[]Object>
+                        name	<string>
+                        value	<string>
+                     path	<string>
+                     port	<string>
+                     scheme	<string>
+                  initialDelaySeconds	<integer>
+                  periodSeconds	<integer>
+                  successThreshold	<integer>
+                  tcpSocket	<Object>
+                     host	<string>
+                     port	<string>
+                  timeoutSeconds	<integer>
+               resources	<Object>
+                  limits	<map[string]string>
+                  requests	<map[string]string>
+               securityContext	<Object>
+                  allowPrivilegeEscalation	<boolean>
+                  capabilities	<Object>
+                     add	<[]string>
+                     drop	<[]string>
+                  privileged	<boolean>
+                  procMount	<string>
+                  readOnlyRootFilesystem	<boolean>
+                  runAsGroup	<integer>
+                  runAsNonRoot	<boolean>
+                  runAsUser	<integer>
+                  seLinuxOptions	<Object>
+                     level	<string>
+                     role	<string>
+                     type	<string>
+                     user	<string>
+                  windowsOptions	<Object>
+                     gmsaCredentialSpec	<string>
+                     gmsaCredentialSpecName	<string>
+               stdin	<boolean>
+               stdinOnce	<boolean>
+               terminationMessagePath	<string>
+               terminationMessagePolicy	<string>
+               tty	<boolean>
+               volumeDevices	<[]Object>
+                  devicePath	<string>
+                  name	<string>
+               volumeMounts	<[]Object>
+                  mountPath	<string>
+                  mountPropagation	<string>
+                  name	<string>
+                  readOnly	<boolean>
+                  subPath	<string>
+                  subPathExpr	<string>
+               workingDir	<string>
+            nodeName	<string>
+            nodeSelector	<map[string]string>
+            preemptionPolicy	<string>
+            priority	<integer>
+            priorityClassName	<string>
+            readinessGates	<[]Object>
+               conditionType	<string>
+            restartPolicy	<string>
+            runtimeClassName	<string>
+            schedulerName	<string>
+            securityContext	<Object>
+               fsGroup	<integer>
+               runAsGroup	<integer>
+               runAsNonRoot	<boolean>
+               runAsUser	<integer>
+               seLinuxOptions	<Object>
+                  level	<string>
+                  role	<string>
+                  type	<string>
+                  user	<string>
+               supplementalGroups	<[]integer>
+               sysctls	<[]Object>
+                  name	<string>
+                  value	<string>
+               windowsOptions	<Object>
+                  gmsaCredentialSpec	<string>
+                  gmsaCredentialSpecName	<string>
+            serviceAccount	<string>
+            serviceAccountName	<string>
+            shareProcessNamespace	<boolean>
+            subdomain	<string>
+            terminationGracePeriodSeconds	<integer>
+            tolerations	<[]Object>
+               effect	<string>
+               key	<string>
+               operator	<string>
+               tolerationSeconds	<integer>
+               value	<string>
+            volumes	<[]Object>
+               awsElasticBlockStore	<Object>
+                  fsType	<string>
+                  partition	<integer>
+                  readOnly	<boolean>
+                  volumeID	<string>
+               azureDisk	<Object>
+                  cachingMode	<string>
+                  diskName	<string>
+                  diskURI	<string>
+                  fsType	<string>
+                  kind	<string>
+                  readOnly	<boolean>
+               azureFile	<Object>
+                  readOnly	<boolean>
+                  secretName	<string>
+                  shareName	<string>
+               cephfs	<Object>
+                  monitors	<[]string>
+                  path	<string>
+                  readOnly	<boolean>
+                  secretFile	<string>
+                  secretRef	<Object>
+                     name	<string>
+                  user	<string>
+               cinder	<Object>
+                  fsType	<string>
+                  readOnly	<boolean>
+                  secretRef	<Object>
+                     name	<string>
+                  volumeID	<string>
+               configMap	<Object>
+                  defaultMode	<integer>
+                  items	<[]Object>
+                     key	<string>
+                     mode	<integer>
+                     path	<string>
+                  name	<string>
+                  optional	<boolean>
+               csi	<Object>
+                  driver	<string>
+                  fsType	<string>
+                  nodePublishSecretRef	<Object>
+                     name	<string>
+                  readOnly	<boolean>
+                  volumeAttributes	<map[string]string>
+               downwardAPI	<Object>
+                  defaultMode	<integer>
+                  items	<[]Object>
+                     fieldRef	<Object>
+                        apiVersion	<string>
+                        fieldPath	<string>
+                     mode	<integer>
+                     path	<string>
+                     resourceFieldRef	<Object>
+                        containerName	<string>
+                        divisor	<string>
+                        resource	<string>
+               emptyDir	<Object>
+                  medium	<string>
+                  sizeLimit	<string>
+               fc	<Object>
+                  fsType	<string>
+                  lun	<integer>
+                  readOnly	<boolean>
+                  targetWWNs	<[]string>
+                  wwids	<[]string>
+               flexVolume	<Object>
+                  driver	<string>
+                  fsType	<string>
+                  options	<map[string]string>
+                  readOnly	<boolean>
+                  secretRef	<Object>
+                     name	<string>
+               flocker	<Object>
+                  datasetName	<string>
+                  datasetUUID	<string>
+               gcePersistentDisk	<Object>
+                  fsType	<string>
+                  partition	<integer>
+                  pdName	<string>
+                  readOnly	<boolean>
+               gitRepo	<Object>
+                  directory	<string>
+                  repository	<string>
+                  revision	<string>
+               glusterfs	<Object>
+                  endpoints	<string>
+                  path	<string>
+                  readOnly	<boolean>
+               hostPath	<Object>
+                  path	<string>
+                  type	<string>
+               iscsi	<Object>
+                  chapAuthDiscovery	<boolean>
+                  chapAuthSession	<boolean>
+                  fsType	<string>
+                  initiatorName	<string>
+                  iqn	<string>
+                  iscsiInterface	<string>
+                  lun	<integer>
+                  portals	<[]string>
+                  readOnly	<boolean>
+                  secretRef	<Object>
+                     name	<string>
+                  targetPortal	<string>
+               name	<string>
+               nfs	<Object>
+                  path	<string>
+                  readOnly	<boolean>
+                  server	<string>
+               persistentVolumeClaim	<Object>
+                  claimName	<string>
+                  readOnly	<boolean>
+               photonPersistentDisk	<Object>
+                  fsType	<string>
+                  pdID	<string>
+               portworxVolume	<Object>
+                  fsType	<string>
+                  readOnly	<boolean>
+                  volumeID	<string>
+               projected	<Object>
+                  defaultMode	<integer>
+                  sources	<[]Object>
+                     configMap	<Object>
+                        items	<[]Object>
+                           key	<string>
+                           mode	<integer>
+                           path	<string>
+                        name	<string>
+                        optional	<boolean>
+                     downwardAPI	<Object>
+                        items	<[]Object>
+                           fieldRef	<Object>
+                              apiVersion	<string>
+                              fieldPath	<string>
+                           mode	<integer>
+                           path	<string>
+                           resourceFieldRef	<Object>
+                              containerName	<string>
+                              divisor	<string>
+                              resource	<string>
+                     secret	<Object>
+                        items	<[]Object>
+                           key	<string>
+                           mode	<integer>
+                           path	<string>
+                        name	<string>
+                        optional	<boolean>
+                     serviceAccountToken	<Object>
+                        audience	<string>
+                        expirationSeconds	<integer>
+                        path	<string>
+               quobyte	<Object>
+                  group	<string>
+                  readOnly	<boolean>
+                  registry	<string>
+                  tenant	<string>
+                  user	<string>
+                  volume	<string>
+               rbd	<Object>
+                  fsType	<string>
+                  image	<string>
+                  keyring	<string>
+                  monitors	<[]string>
+                  pool	<string>
+                  readOnly	<boolean>
+                  secretRef	<Object>
+                     name	<string>
+                  user	<string>
+               scaleIO	<Object>
+                  fsType	<string>
+                  gateway	<string>
+                  protectionDomain	<string>
+                  readOnly	<boolean>
+                  secretRef	<Object>
+                     name	<string>
+                  sslEnabled	<boolean>
+                  storageMode	<string>
+                  storagePool	<string>
+                  system	<string>
+                  volumeName	<string>
+               secret	<Object>
+                  defaultMode	<integer>
+                  items	<[]Object>
+                     key	<string>
+                     mode	<integer>
+                     path	<string>
+                  optional	<boolean>
+                  secretName	<string>
+               storageos	<Object>
+                  fsType	<string>
+                  readOnly	<boolean>
+                  secretRef	<Object>
+                     name	<string>
+                  volumeName	<string>
+                  volumeNamespace	<string>
+               vsphereVolume	<Object>
+                  fsType	<string>
+                  storagePolicyID	<string>
+                  storagePolicyName	<string>
+                  volumePath	<string>
+      ttlSecondsAfterFinished	<integer>
+   status	<Object>
+      active	<integer>
+      completionTime	<string>
+      conditions	<[]Object>
+         lastProbeTime	<string>
+         lastTransitionTime	<string>
+         message	<string>
+         reason	<string>
+         status	<string>
+         type	<string>
+      failed	<integer>
+      startTime	<string>
+      succeeded	<integer>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ exit
+exit
+
+Script done on 2020-03-16 01:36:36+0500
