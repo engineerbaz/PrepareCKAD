@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: ca1a
+  name: ca1a
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ca1a
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ca1a
+    spec:
+      containers:
+      - image: nginx:1.7.8
+        name: nginx
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}

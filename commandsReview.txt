@@ -1,0 +1,18 @@
+DEPLOYMENT 
+
+ROLLOUT
+
+#
+kubectl rollout status deploy ca1a
+
+
+#
+kubectl rollout history deploy ca1a
+
+
+#
+kubectl rollout undo deploy ca1a
+
+kubectl rollout undo deploy ca1a --to-revision=3
+
+

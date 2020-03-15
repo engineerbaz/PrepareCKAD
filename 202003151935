@@ -1,0 +1,3441 @@
+Script started on 2020-03-15 19:37:43+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ccexitll ??it*.sh[1Pit*.sh[3Ps *.shl ?it*.sh?it*.sh[7Pexit[2Pcc[Kkubectl ca1 [K[K[K[Krun ca1 --image=nginx:1.7.8 --rer[Kpl icas=2 --port=80
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/ca1 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create deplu[Koy ca1a --image=nginx:1 .7.8 --dry-run -o yaml > ca1a.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano ca1a.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                   ca1a.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: ca1a[9;3Hname: ca1a[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: ca1a[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: ca1a[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.7.8[24;9Hname: nginx[25;9Hresources: {}[26dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[11;14H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[11;13H [?12l[?25h[?25l2[?12l[?25h[?25l[12d[?12l[?25h[?25l[13dbe[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17da:[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21;10H[?12l[?25h[?25l[22;14H[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[36d[K[24;15H[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lx[?12l[?25h[?25l7[25;36r8[25dM[1;38r[25;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[26;36r8[26dM[1;38r[26;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l8[?12l[?25h[?25l0[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: ca1a.yaml                                (B[m[36;30H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create -[K[K[K[K[K[K[K[Kapply -f ca1a.yaml 
+deployment.apps/ca1a created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl dg[K[Kge [Kt deploy
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+67dep   4/4     4            4           15d
+ca1     2/2     2            2           112s
+ca1a    2/2     2            2           7s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy ca1 -o yaml
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2020-03-15T14:38:14Z"
+  generation: 1
+  labels:
+    run: ca1
+  name: ca1
+  namespace: default
+  resourceVersion: "386421"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/ca1
+  uid: 99cd6e21-58af-47fd-989f-def63c278aa2
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 2
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      run: ca1
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: ca1
+    spec:
+      containers:
+      - image: nginx:1.7.8
+        imagePullPolicy: IfNotPresent
+        name: ca1
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 2
+  conditions:
+  - lastTransitionTime: "2020-03-15T14:39:55Z"
+    lastUpdateTime: "2020-03-15T14:39:55Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2020-03-15T14:38:14Z"
+    lastUpdateTime: "2020-03-15T14:39:55Z"
+    message: ReplicaSet "ca1-66d6b4f974" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 1
+  readyReplicas: 2
+  replicas: 2
+  updatedReplicas: 2
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl descrei[K[Kie[Kv[Kbe depli[Ky ca1
+error: the server doesn't have a resource type "deply"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe deply ca1[1@o
+Name:                   ca1
+Namespace:              default
+CreationTimestamp:      Sun, 15 Mar 2020 19:38:14 +0500
+Labels:                 run=ca1
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=ca1
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=ca1
+  Containers:
+   ca1:
+    Image:        nginx:1.7.8
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   ca1-66d6b4f974 (2/2 replicas created)
+Events:
+  Type    Reason             Age    From                   Message
+  ----    ------             ----   ----                   -------
+  Normal  ScalingReplicaSet  2m55s  deployment-controller  Scaled up replica set ca1-66d6b4f974 to 2
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get rd [K[Ks =l [K[K[K-l run=nginx
+No resources found.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get rs -l run=nginx[K[K[K[K[Kca1
+NAME             DESIRED   CURRENT   READY   AGE
+ca1-66d6b4f974   2         2         2       3m49s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get rs -l run=ca1[1P[1P[1@p[1@o[1@d
+NAME                   READY   STATUS    RESTARTS   AGE
+ca1-66d6b4f974-4dxf6   1/1     Running   0          4m6s
+ca1-66d6b4f974-dl85x   1/1     Running   0          4m6s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod -l run=ca1[1P=ca1[1P=ca1[1P=ca1a=ca1p=ca1p=ca1
+No resources found.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod -l app=ca1[C[Ca
+NAME                    READY   STATUS    RESTARTS   AGE
+ca1a-6847576946-8zfv2   1/1     Running   0          2m29s
+ca1a-6847576946-tqthg   1/1     Running   0          2m29s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout status deploy ca1
+deployment "ca1" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl set image deploy 
+1.yaml        202003150112  2b.yaml       bb.yaml       .git/
+202003141414  202003151935  2rq.yaml      ca1a.yaml     gitBatch.sh
+202003141444  2b1.yaml      b2mc.yaml     envpod.yaml   README.md
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl set image deploy ca1=ngin[K[K[K[K[K nginx=nginx:1 .7.9
+error: unable to find container named "nginx"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl set image deploy ca1 nginx=nginx:1.7.9[C[C:=nginx:1.7.91=nginx:1.7.9.=nginx:1.7.98=nginx:1.7.9[1P=nginx:1.7.97=nginx:1.7.9.=nginx:1.7.98=nginx:1.7.9
+error: unable to find container named "nginx:1.7.8"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k[Knaa[Kno ca1a.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                         ca1a.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: ca1a[9;3Hname: ca1a[10dspec:[11;3Hreplicas: 2[12;3Hselector:[13;5HmatchLabels:[14;7Happ: ca1a[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: ca1a[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.7.8[24;9Hname: nginx[25;9Hports:[26;9H- containerPort: 80[27;9Hresources: {}[28dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano ca1a.yaml kubectl set image deploy ca1 nginx:1.7.8=nginx:1.7.9[6P=nginx:1.7.9[Ca nginx=nginx:1.7.9
+deployment.extensions/ca1a image updated
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout history deploy ca1
+deployment.extensions/ca1 
+REVISION  CHANGE-CAUSE
+1         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout history deploy ca1a
+deployment.extensions/ca1a 
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get rs
+NAME               DESIRED   CURRENT   READY   AGE
+67dep-55587b4f67   0         0         0       15d
+67dep-6dfdd9cbff   0         0         0       15d
+67dep-77585865c6   0         0         0       15d
+67dep-7db4cf66f7   4         4         4       15d
+67dep-f4677c588    0         0         0       16d
+ca1-66d6b4f974     2         2         2       7m54s
+ca1a-5b57bbb657    1         1         0       63s
+ca1a-6847576946    2         2         2       6m9s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout undo deploy ca1a
+deployment.extensions/ca1a rolled back
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po 
+NAME                     READY   STATUS        RESTARTS   AGE
+06nginx                  0/1     Error         0          28d
+07nginx                  0/1     Error         0          28d
+100vol                   0/1     Error         0          15d
+104pvc2b                 0/1     Error         0          15d
+111                      0/1     Error         0          14d
+113                      0/1     Completed     0          14d
+114nginx                 0/1     Completed     0          13d
+117                      0/1     Error         0          13d
+118                      0/1     Error         0          13d
+126                      0/1     Error         0          10d
+131                      0/1     Error         0          10d
+132                      0/1     Error         0          10d
+134                      0/1     Completed     0          8d
+136                      0/1     Completed     0          8d
+137busybox               0/1     Error         0          8d
+13nginx                  0/1     Completed     1          28d
+140                      0/1     Error         0          8d
+144                      0/1     Error         0          8d
+17shell                  0/1     Error         0          28d
+19bb                     0/1     Completed     0          28d
+21bb                     0/1     Completed     0          28d
+29mc                     0/3     Completed     0          26d
+2busybox1                0/1     Completed     0          22h
+33busybox1               0/1     Completed     0          22h
+34mc                     0/2     Error         0          26d
+37-ng-1                  0/1     Error         0          20d
+37-ng-2                  0/1     Error         0          20d
+37-ng-3                  0/1     Error         0          20d
+3busybox1                0/1     Completed     0          22h
+53busybox1               0/1     Completed     0          22h
+67dep-7db4cf66f7-2hfgb   1/1     Running       13         15d
+67dep-7db4cf66f7-9wrj7   1/1     Running       13         15d
+67dep-7db4cf66f7-h5g7f   1/1     Running       13         15d
+67dep-7db4cf66f7-m2269   1/1     Running       13         15d
+84job-9gkc8              0/1     Completed     0          15d
+88job-bx58m              0/1     Completed     0          15d
+b2mc                     0/2     Completed     0          18h
+busybox                  0/1     Completed     0          22h
+busybox1                 0/1     Completed     0          22h
+c1a                      0/1     Error         0          17h
+c1b                      0/1     Error         0          17h
+ca1-66d6b4f974-4dxf6     1/1     Running       0          8m37s
+ca1-66d6b4f974-dl85x     1/1     Running       0          8m37s
+ca1a-5b57bbb657-bnrbw    0/1     Terminating   0          105s
+ca1a-6847576946-62k27    1/1     Running       0          10s
+ca1a-6847576946-6snvt    1/1     Running       0          8s
+hello                    0/1     Error         0          8d
+mysec                    0/1     Error         0          13d
+nginx                    0/1     Error         1          28h
+nginxenv                 0/1     Error         0          22h
+not-running              0/1     Error         0          8d
+secbusybox               0/1     Error         0          13d
+test114                  0/1     Completed     0          13d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl descriv[Kbe pod ca1a.yaml [K[K[K[K[K[K-68[K[K[K[K[K[K[K^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ca1a-6847576946-62k27 | grep -i image
+ca1a-6847576946-62k27: command not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ca1a-6847576946-62k27 | grep -i image[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pkubectl get po 
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          28d
+07nginx                  0/1     Error       0          28d
+100vol                   0/1     Error       0          15d
+104pvc2b                 0/1     Error       0          15d
+111                      0/1     Error       0          14d
+113                      0/1     Completed   0          14d
+114nginx                 0/1     Completed   0          13d
+117                      0/1     Error       0          13d
+118                      0/1     Error       0          13d
+126                      0/1     Error       0          10d
+131                      0/1     Error       0          10d
+132                      0/1     Error       0          10d
+134                      0/1     Completed   0          8d
+136                      0/1     Completed   0          8d
+137busybox               0/1     Error       0          8d
+13nginx                  0/1     Completed   1          28d
+140                      0/1     Error       0          8d
+144                      0/1     Error       0          8d
+17shell                  0/1     Error       0          28d
+19bb                     0/1     Completed   0          28d
+21bb                     0/1     Completed   0          28d
+29mc                     0/3     Completed   0          26d
+2busybox1                0/1     Completed   0          22h
+33busybox1               0/1     Completed   0          22h
+34mc                     0/2     Error       0          26d
+37-ng-1                  0/1     Error       0          20d
+37-ng-2                  0/1     Error       0          20d
+37-ng-3                  0/1     Error       0          20d
+3busybox1                0/1     Completed   0          22h
+53busybox1               0/1     Completed   0          22h
+67dep-7db4cf66f7-2hfgb   1/1     Running     13         15d
+67dep-7db4cf66f7-9wrj7   1/1     Running     13         15d
+67dep-7db4cf66f7-h5g7f   1/1     Running     13         15d
+67dep-7db4cf66f7-m2269   1/1     Running     13         15d
+84job-9gkc8              0/1     Completed   0          15d
+88job-bx58m              0/1     Completed   0          15d
+b2mc                     0/2     Completed   0          18h
+busybox                  0/1     Completed   0          22h
+busybox1                 0/1     Completed   0          22h
+c1a                      0/1     Error       0          17h
+c1b                      0/1     Error       0          17h
+ca1-66d6b4f974-4dxf6     1/1     Running     0          9m33s
+ca1-66d6b4f974-dl85x     1/1     Running     0          9m33s
+ca1a-6847576946-62k27    1/1     Running     0          66s
+ca1a-6847576946-6snvt    1/1     Running     0          64s
+hello                    0/1     Error       0          8d
+mysec                    0/1     Error       0          13d
+nginx                    0/1     Error       1          28h
+nginxenv                 0/1     Error       0          22h
+not-running              0/1     Error       0          8d
+secbusybox               0/1     Error       0          13d
+test114                  0/1     Completed   0          13d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po ca1a-6847576946-62k27 | grep -i image[1@k[1@u[1@b[1@e[C[1@c[1@t[1@l[1@ [1@d[1@esca1a-6847576946-62k27 | grep -i image [A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[Cca1a-6847576946-62k27 | grep -i imagee[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[Crca1a-6847576946-62k27 | grep -i image[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[Cica1a-6847576946-62k27 | grep -i image[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Cbca1a-6847576946-62k27 | grep -i image[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceca1a-6847576946-62k27 | grep -i image[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ca1a-6847576946-62k27 | grep -i image[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpca1a-6847576946-62k27 | grep -i image[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Coca1a-6847576946-62k27 | grep -i image[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdca1a-6847576946-62k27 | grep [1@-[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ca1a-6847576946-62k27 | grep[1@ [A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+    [01;31m[KImage[m[K:          nginx:1.7.8
+    [01;31m[KImage[m[K ID:       docker-pullable://nginx@sha256:2c390758c6a4660d93467ce5e70e8d08d6e401f748bffba7885ce160ca7e481d
+  Normal  Pulled     87s   kubelet, minikube  Container [01;31m[Kimage[m[K "nginx:1.7.8" already present on machine
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl ser i[K[K[Kt image deploy n[Kca1a nginx=nginx:1.9.1
+deployment.extensions/ca1a image updated
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ j[Kkubectl rllout status deploy nginx
+Error: unknown command "rllout" for "kubectl"
+
+Did you mean this?
+	rollout
+
+Run 'kubectl --help' for usage.
+unknown command "rllout" for "kubectl"
+
+Did you mean this?
+	rollout
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rllout status deploy nginx[K[K[K[K[K[Kc[K ca1
+Error: unknown command "rllout" for "kubectl"
+
+Did you mean this?
+	rollout
+
+Run 'kubectl --help' for usage.
+unknown command "rllout" for "kubectl"
+
+Did you mean this?
+	rollout
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rllout status deploy ca1a
+Error: unknown command "rllout" for "kubectl"
+
+Did you mean this?
+	rollout
+
+Run 'kubectl --help' for usage.
+unknown command "rllout" for "kubectl"
+
+Did you mean this?
+	rollout
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rllout status deploy ca1a[1@o
+Waiting for deployment "ca1a" rollout to finish: 1 out of 2 new replicas have been updated...
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout status deploy ca1a[K
+deployment "ca1" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout status deploy ca1a
+Waiting for deployment "ca1a" rollout to finish: 1 out of 2 new replicas have been updated...
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout status deploy ca1a[K
+deployment "ca1" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout status deploy ca1a
+deployment "ca1a" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout undo [K[K[K[K[K[K stati[Kus
+error: required resource not specified
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout status deploy ca1a
+deployment "ca1a" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout status deploy ca1a[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klout history deploy ca1a
+deployment.extensions/ca1a 
+REVISION  CHANGE-CAUSE
+2         <none>
+3         <none>
+4         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout undo deploy ca1a --to-revision=2 [A
+deployment.extensions/ca1a rolled back
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe deploy ca1a | f[Kgrep Image:
+    [01;31m[KImage:[m[K        nginx:1.7.9
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollow[Kut status cat[K1a
+error: the server doesn't have a resource type "ca1a"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout status ca1adca1aeca1apca1alca1aoca1ayca1a ca1a
+deployment "ca1a" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollow[Kut history deploy ca1aa
+Error from server (NotFound): deployments.extensions "ca1aa" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout history deploy ca1aa[K
+deployment.extensions/ca1a 
+REVISION  CHANGE-CAUSE
+3         <none>
+4         <none>
+5         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout history deploy ca1a --revision=4 [A
+deployment.extensions/ca1a with revision #4
+Pod Template:
+  Labels:	app=ca1a
+	pod-template-hash=5799475b87
+  Containers:
+   nginx:
+    Image:	nginx:1.9.1
+    Port:	80/TCP
+    Host Port:	0/TCP
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout status deploy ca1a
+deployment "ca1a" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ history 
+ 1036  xcc
+ 1037  cc
+ 1038  echo var1=val1 > env.env
+ 1039  nano test114.yaml
+ 1040  kubectl run test114 --image=nginx --restart=Never --dry-run -o yaml > test114.yaml
+ 1041  nano test114.yaml
+ 1042  cat env.env
+ 1043  kubectl create configmap testenv --from-file=env.env
+ 1044  kubectl get cm
+ 1045  kubectl describe configmaps testenv 
+ 1046  kubectl describe configmaps envcfgmap
+ 1047  kubectl describe configmaps 112env
+ 1048  cat test114.yaml 
+ 1049  cat env.env 
+ 1050  cat file.env 
+ 1051  kubectl get configmaps testenv 
+ 1052  kubectl get configmaps envcfgmap 
+ 1053  kubectl get configmaps envcfgmap -o yaml --export
+ 1054  kubectl get configmaps testenv -o yaml --export
+ 1055  cat file.env 
+ 1056  cat env.env 
+ 1057  echo var1=val1 > file.env
+ 1058  cat file.env 
+ 1059  kubectl create configmap env2 --from-env-file=env.env 
+ 1060  kubectl get cm
+ 1061  nano test114.yaml 
+ 1062  kubectl get configmaps env2 -o yaml
+ 1063  nano test114.yaml 
+ 1064  kubectl create -f test114.yaml 
+ 1065  nano test114.yaml 
+ 1066  kubectl create -f test114.yaml 
+ 1067  kubectl exec -ti test114 -- env
+ 1068  kubectl exec -ti test114 -- env | grep val
+ 1069  nano 114check.yaml 
+ 1070  kubectl delete pod 114test
+ 1071  kubectl delete pod test114 
+ 1072  kubectl create -f test114.yaml 
+ 1073  kubectl get cm
+ 1074  kubectl get pod test114 
+ 1075  kubectl exec -ti test114 -- env | grep val
+ 1076  kubectl exec -ti test114 -- env 
+ 1077  kubectl exec -ti test114 -- sh
+ 1078  nano 114check.yaml 
+ 1079  cat env.env 
+ 1080  kubectl get configmaps env2 -o yaml
+ 1081  cat test114.yaml 
+ 1082  nano test114.yaml 
+ 1083  ll
+ 1084  nano 114check.yaml 
+ 1085  kubectl delete po nginx
+ 1086  kubectl delete pod nginx
+ 1087  kubectl create -f test114.yaml 
+ 1088  nano test114.yaml 
+ 1089  kubectl create -f 114check.yaml 
+ 1090  kubectl exec -ti nginx -- env | grep var1
+ 1091  kubectl get pod nginx
+ 1092  nano 114check.yaml 
+ 1093  kubectl delete pod nginx
+ 1094  kubectl create -f 114check.yaml 
+ 1095  kubectl get pod nginx
+ 1096  kubectl get pod nginx -w
+ 1097  kubectl exec -ti nginx -- env | grep var1
+ 1098  kubectl exec -ti nginx -- env 
+ 1099  cc
+ 1100  git status
+ 1101  git add 90.yaml 
+ 1102  git add 202002232000 
+ 1103  git add .
+ 1104  git commit -m "practice"
+ 1105  git push remote orgin
+ 1106  git push origin master 
+ 1107  cc
+ 1108  kubectl create configmap cfgvolume --from-literal=var1=val --from-literal=var2=val2
+ 1109  minikube status
+ 1110  minikube stop
+ 1111  minikube start
+ 1112  minikube status
+ 1113  kubectl create configmap cfgvolume --from-literal=var1=val --from-literal=var2=val2
+ 1114  kubectl get configmaps 
+ 1115  kubectl run 114nginx --image=nginx --restart=Never --dry-run -o yaml > 114nginx.yaml
+ 1116  nano 114nginx.yaml 
+ 1117  kubectl create -f 114nginx.yaml 
+ 1118  nano 114nginx.yaml 
+ 1119  kubectl create -f 114nginx.yaml 
+ 1120  kubectl get pod 114nginx 
+ 1121  kubectl exec -it 114nginx -- /bin/sh
+ 1122  exit
+ 1123  ping 8.8.8.8
+ 1124  ping 1.1.1.1
+ 1125  exit
+ 1126  ll
+ 1127  minikube sstatus
+ 1128  minikube status
+ 1129  minikube stop
+ 1130  minikube start
+ 1131  kubectl get sm
+ 1132  kubectl get cm
+ 1133  cc
+ 1134  script 2003012355
+ 1135  history | grep bash 
+ 1136  source <(kubectl completion bash)
+ 1137  kubectl run secbusybox --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -s "sleep 36000;" > 115.yaml
+ 1138  nano 115.yaml 
+ 1139  kubectl create -f 115.yaml 
+ 1140  kubectl get pod secbusybox 
+ 1141  kubectl exec -ti secbusybox 
+ 1142  kubectl exec -ti secbusybox --sh
+ 1143  kubectl exec -ti secbusybox --/bin/sh
+ 1144  history | grep exec
+ 1145  kubectl exec -ti secbusybox /bin/sh
+ 1146  kubectl exec -ti secbusybox sh
+ 1147  ls
+ 1148  kubectl get pd
+ 1149  kubectl get po
+ 1150  cc
+ 1151  c
+ 1152  cc
+ 1153  kubectl run 117 --image=nginx --restart=Never --dry-run -o yaml > 117.yaml
+ 1154  nano 117.yaml 
+ 1155  kubectl create -f 117.yaml 
+ 1156  kubectl get pod 117
+ 1157  kubectl exec -it -- sh
+ 1158  kubectl exec -it 117 -- sh
+ 1159  cc
+ 1160  kubectl run 118 --image=nginx --restart=Never --dry-run -o yaml > 118.yaml
+ 1161  nano 118
+ 1162  nano 118.yaml 
+ 1163  kubectl create -f 118.yaml 
+ 1164  kubectl get pod 
+ 1165  kubectl exec -ti 118 sh
+ 1166  cc
+ 1167  kubectl create secret generic 122 --from-literal=username=user --from-literal=password=mypassword
+ 1168  kubectl get secret
+ 1169  kubectl get secrets --all-namespaces 
+ 1170  cc
+ 1171  kubectl get secrets
+ 1172  kubectl get secrets 122 -o yaml
+ 1173  cc
+ 1174  kubectl run 125 --image=nginx --restart=Never --dry-run -o yaml > 125.yaml
+ 1175  nano 125.yaml 
+ 1176  kubectl get secrets 
+ 1177  nano 125.yaml 
+ 1178  kubectl create -f 125.yaml 
+ 1179  nano 125.yaml 
+ 1180  kubectl get secrets 
+ 1181  nano 125.yaml 
+ 1182  kubectl get secrets 
+ 1183  kubectl create -f 125.yaml 
+ 1184  kubectl get secrets 
+ 1185  nano 125.yaml 
+ 1186  kubectl get secrets 
+ 1187  kubectl create -f 125.yaml 
+ 1188  cc
+ 1189  kubectl exec -it 125 -- env
+ 1190  kubectl get po
+ 1191  kubectl describe pod mysec
+ 1192  kubectl get secrets 
+ 1193  nano 125.yaml 
+ 1194  kubectl delete pod mysec
+ 1195  kubectl exec -it 125 -- env
+ 1196  kubectl create -f 125.yaml 
+ 1197  history 
+ 1198  kubectl create secret generic 122 --from-literal=username=user --from-literal=password=mypassword
+ 1199  kubectl create secret generic mysec122 --from-literal=username=user --from-literal=password=mypassword
+ 1200  kubectl get secrets 
+ 1201  kubectl create -f 125.yaml 
+ 1202  nano 125.yaml 
+ 1203  kubectl create -f 125.yaml 
+ 1204  kubectl get secrets 
+ 1205  kubectl get po
+ 1206  kubectl get po mysec -w
+ 1207  kubectl exec -it 125 -- env
+ 1208  kubectl exec -it mysec -- env
+ 1209  exit
+ 1210  git status
+ 1211  git add 2003012355 
+ 1212  git add 114nginx.yaml 
+ 1213  git commit -m "add log and sample "
+ 1214  git push origin master 
+ 1215  minikube start
+ 1216  script 202003042031
+ 1217  history | grep bashir
+ 1218  history | grep bash
+ 1219  source <(kubectl completion bash)
+ 1220  cc
+ 1221  ll
+ 1222  cc
+ 1223  kubectl get secrets 
+ 1224  kubectl run 126 --image=nginx --restart=Never --dry-run -o yaml > 126.yaml
+ 1225  nano 12
+ 1226  nano 126.yaml 
+ 1227  kubectl create -f 126.yaml 
+ 1228  kubectl exec 126 -- env
+ 1229  cc
+ 1230  ls
+ 1231  kubectl get po
+ 1232  cc
+ 1233  kubectl get sa
+ 1234  kubectl create sa admin
+ 1235  kubectl create sa admin -o yaml
+ 1236  kubectl create sa admin1 -o yaml
+ 1237  kubectl run 131 --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c "sleep 3600" > 131.yaml
+ 1238  nano 131.yaml 
+ 1239  kubectl create -f 131.yaml 
+ 1240  kubectl exec -ti 131 -- sh
+ 1241  cc
+ 1242  kubectl run 132 --image=nginx --restart=Never --port=80 --dry-run -o yaml > 132.yaml
+ 1243  nano 132
+ 1244  nano 132.yaml 
+ 1245  kubectl explain pod.spec.containers
+ 1246  kubectl explain pod.spec.containers.readinessProbe
+ 1247  nano 132.yaml 
+ 1248  kubectl create -f 132.yaml 
+ 1249  cc
+ 1250  kubectl run 133 --image=nginx --restart=Never --port=80 --dry-run -o yaml > 133.yaml
+ 1251  kubectl explain containers.readinessProbe
+ 1252  kubectl explain pod.containers.readinessProbe
+ 1253  kubectl explain pod.spec.containers.readinessProbesss
+ 1254  kubectl explain pod.spec.containers.readinessProbe
+ 1255  nano 133.yaml 
+ 1256  kubectl explain pod.spec.containers.livenessProbe
+ 1257  gedit
+ 1258  minikube start
+ 1259  history | grep bash
+ 1260  source <(kubectl completion bash)
+ 1261  script 202003070954
+ 1262  cc
+ 1263  ll
+ 1264  cc
+ 1265  kubectl get po
+ 1266  cc
+ 1267  history | grep bash
+ 1268  source <(kubectl completion bash)
+ 1269  kubectl get po
+ 1270  cc
+ 1271  kubectl run 134 --image=nginx --restart=Never --port=80 --dry-run -o yaml > 134.yaml
+ 1272  kubectl explain pod.spec.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1273  cc
+ 1274  kubectl explain pod.spec
+ 1275  kubectl explain pod.spec.container
+ 1276  kubectl explain pod.spec.containers
+ 1277  kubectl explain pod.spec.containers.livenessProbe
+ 1278  nano 134
+ 1279  nano 134.yaml 
+ 1280  kubectl explain pod.spec.containers.readinessProbe
+ 1281  nano 134.yaml 
+ 1282  c
+ 1283  cc
+ 1284  kubectl create -f 134.yaml 
+ 1285  nano 134.yaml 
+ 1286  kubectl create -f 134.yaml 
+ 1287  kubectl describe pod 134 | grep -i ness
+ 1288  kubectl get pod
+ 1289  nano 134.yaml 
+ 1290  kubectl get pod 134
+ 1291  kubectl logs pods 134
+ 1292  kubectl logs pod 
+ 1293  kubectl describe pod 134 
+ 1294  cc
+ 1295  kubectl explain Pod.spec.containers.livenessProbe
+ 1296  kubectl explain Pod.spec.containers.readinessProbe
+ 1297  kubectl run 136 --image=nginx --restart=Never --dry-run -o yaml > 136.yaml
+ 1298  nano 136.yaml 
+ 1299  kubectl explain Pod.spec.containers.readinessProbe
+ 1300  nano 136.yaml 
+ 1301  kubectl create -f 136.yaml 
+ 1302  nano 136.yaml 
+ 1303  kubectl create -f 136.yaml 
+ 1304  kubectl logs pods 136
+ 1305  kubectl describe pod 136
+ 1306  kubectl run 137busybox --image=busybox --restart=Never -- /bin/sh -c "echo I am from busybox pod; sleep 3600;"
+ 1307  kubectl logs pods 136
+ 1308  kubectl explain Pod.spec.containers.livenessProbe
+ 1309  minikube status
+ 1310  minikube stop
+ 1311  minikube start
+ 1312  kubectl logs 137busybox 
+ 1313  cc
+ 1314  kubectl get po
+ 1315  cc
+ 1316  history | grep bash
+ 1317  source <(kubectl completion bash)
+ 1318  cc
+ 1319  kubectl get events --sort-by=.metadata.creationTimestamp
+ 1320  cc
+ 1321  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml --/bin/sh ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140yaml
+ 1322  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml --/bin/sh -c ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1323  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml -- /bin/sh -c ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1324  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1325  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml -- /bin/sh -c "while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1326  exit
+ 1327  //
+ 1328  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo ‘Hi I am from alpine’; sleep 5;done” > 140.yaml
+ 1329  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo ‘Hi I am from alpine’; sleep 5;done” 
+ 1330  kubectl get pod 140
+ 1331  cc
+ 1332  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo 'Hi I am from alpine'; sleep 5;done" > 140.yaml 
+ 1333  nano 140.yaml 
+ 1334  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo 'Hi I am from alpine'; sleep 5;done"
+ 1335  kubectl logs --follow hello
+ 1336  kubectl delete pod 140
+ 1337  cc
+ 1338  nano 140.yaml 
+ 1339  kubectl run hello --image=alpine --restart=Never  -- /bin/sh -c "while true; do echo 'Hi I am from Alpine'; sleep 5;done"
+ 1340  kubectl logs --follow hello
+ 1341  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo 'Hi I am from alpine'; sleep 5;done"
+ 1342  kubectl logs --follow hello
+ 1343  kubectl logs --follow 140
+ 1344  cc
+ 1345  kubectl create -f https://gist.githubusercontent.com/bbachi/212168375b39e36e2e2984c097167b00/raw/1fd63509c3ae3a3d3da844640fb4cca744543c1c/not-running.yml
+ 1346  kubectl get pot not-running
+ 1347  kubectl get pod not-running
+ 1348  kubectl edit pod not-running 
+ 1349  kubectl get pod not-running
+ 1350  kubectl edit pod not-running 
+ 1351  kubectl get pod not-running
+ 1352  kubectl create -f https://gist.githubusercontent.com/bbachi/1f001f10337234d46806929d12245397/raw/84b7295fb077f15de979fec5b3f7a13fc69c6d83/problem-pod.yaml
+ 1353  kubectl get po --all-namespaces 
+ 1354  kubectl get po -n namespace2
+ 1355  kubectl set image pod/pod2 pod2=nginx -n namespace2
+ 1356  kubectl get po --all-namespaces 
+ 1357  kubectl get po -n namespace2
+ 1358  cc
+ 1359  kubectl run 144 --image=nginx --restart=Never --port=80 --dry-run -o yaml > 144.yaml
+ 1360  nano 144.yaml 
+ 1361  kubectl create -f 144.yaml 
+ 1362  nano 145svc.yaml
+ 1363  kubectl create -f 145svc.yaml 
+ 1364  nano 145svc.yaml
+ 1365  kubectl create -f 145svc.yaml 
+ 1366  nano 145svc.yaml
+ 1367  kubectl create -f 145svc.yaml 
+ 1368  nano 145svc.yaml
+ 1369  kubectl create -f 145svc.yaml 
+ 1370  kubectl get svc
+ 1371  kubectl expose po nginx --port=80 --target-port=9376
+ 1372  kubectl get po nginx  -o yaml
+ 1373  kubectl get po nginx  -o yaml >148.yml
+ 1374  nano 148.yml 
+ 1375  kubectl expose po nginx --port=80 --type=NodePort
+ 1376  kubectl delete svc nginx
+ 1377  kubectl expose po nginx --port=80 --type=NodePort
+ 1378  kubectl ger svc nginx 
+ 1379  kubectl get svc nginx 
+ 1380  kubectl get svc nginx -o yaml
+ 1381  cat 144.yaml 
+ 1382  cat 145svc.yaml 
+ 1383  kubectl get svc nginx -o yaml
+ 1384  cc
+ 1385  kubectl get svc nginx -o yaml
+ 1386  cat 145svc.yaml 
+ 1387  cc
+ 1388  git add .
+ 1389  git status
+ 1390  git commit -m "all 150 k8"
+ 1391  git push origin master 
+ 1392  cc
+ 1393  kubectl explain --recursive 
+ 1394  kubectl explain pod --recursive 
+ 1395  kubectl explain pod.container.spec --recursive 
+ 1396  kubectl explain pod.containers.spec --recursive 
+ 1397  kubectl explain pod --recursive 
+ 1398  kubectl explain pod --recursive | grep container
+ 1399  kubectl explain pod.containers --recursive 
+ 1400  kubectl explain pod --recursive 
+ 1401  kubectl explain pod.spec --recursive 
+ 1402  c
+ 1403  cc
+ 1404  kubectl config view
+ 1405  kubectl explain pod --recursive  > ListOfResourcesOfPod
+ 1406  nano ListOfResourcesOfPod 
+ 1407  git add ListOfResourcesOfPod 
+ 1408  git commit -m "add List of resources of POD"
+ 1409  git push origin master 
+ 1410  git status
+ 1411  exit
+ 1412  alias gadd "git add"
+ 1413  alias gadd "git add ."
+ 1414  alias --h
+ 1415  alias help
+ 1416  alias
+ 1417  alias gadd="git add ."
+ 1418  alias gadd="git add"
+ 1419  gadd
+ 1420  gadd .
+ 1421  git status 
+ 1422  echo << EOF >> GitAlias
+ 1423  alias gadd="git add "
+ 1424  alias gcom="git commit -m ""
+ 1425  alias gpush="git push origin master"
+ 1426  EOF
+ 1427  cat GitAlias 
+ 1428  nano GitAlias 
+ 1429  echo << EOF > test1
+ 1430  hi 
+ 1431  hello 
+ 1432  How are u
+ 1433  EOF
+ 1434  cat test1
+ 1435  rm GitAlias 
+ 1436  echo << EOF > GitAlias.txt
+ 1437  alias gadd="git add "
+ 1438  alias gcom="git commit -m ""
+ 1439  alias gpush="git push origin master"
+ 1440  EOF
+ 1441  cat GitAlias.txt 
+ 1442  echo << EOF >> GitAlias.txt
+ 1443  alias gadd="git add "
+ 1444  alias gcom="git commit -m ""
+ 1445  alias gpush="git push origin master"
+ 1446  EOF
+ 1447  cat GitAlias.txt 
+ 1448  echo << EOF >> GitAlias.txt
+ 1449  alias gadd="git add "
+ 1450  alias gcom="git commit -m ""
+ 1451  alias gpush="git push origin master"
+ 1452  EOF
+ 1453  cat GitAlias.txt 
+ 1454  echo << EOF >> 12GitAlias.txt
+ 1455  asas
+ 1456  hi
+ 1457  EOF
+ 1458  cat 12
+ 1459  cat 12GitAlias.txt 
+ 1460  rm 12GitAlias.txt 
+ 1461  rm GitAlias.txt 
+ 1462  echo >> 12GitAlias.txt <<EOF
+ 1463  asas
+ 1464  hi
+ 1465  EOF
+ 1466  cat 12GitAlias.txt 
+ 1467  rm 12GitAlias.txt 
+ 1468  echo >> 12Git.txt <<EOF
+ 1469  hhi 
+ 1470  this is program aassssssssssssssssssssssssssssssssssssssss
+ 1471  EOF
+ 1472  cat 12Git.txt 
+ 1473  nano 12Git.txt 
+ 1474  rm 12Git.txt 
+ 1475  echo << EOF >> 12file.txt 
+ 1476  hi 
+ 1477  this 
+ 1478  das
+ 1479  EOF
+ 1480  cat 12file.txt 
+ 1481  cat << EOF >> 12file.txt 
+ 1482  hi 
+ 1483  this 
+ 1484  das
+ 1485  gu 
+ 1486  jklkj
+ 1487  hoi 
+ 1488  EOF
+ 1489  cat 12F
+ 1490  cat 12file.txt 
+ 1491  cat << EOF > GitAlias
+ 1492  alias gadd="git add "
+ 1493  alias gcom="git commit -m ""
+ 1494  alias gpush="git push origin master"
+ 1495  EOF
+ 1496  cat GitAlias 
+ 1497  gad
+ 1498  gadd
+ 1499  touch 123.txt 
+ 1500  git add llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+ 1501  git add 
+ 1502  git add 123.txt
+ 1503  gadd 123
+ 1504  gadd 123.txt
+ 1505  git status
+ 1506  gcom file to check
+ 1507  git status
+ 1508  git commit -m "check "
+ 1509  gpush
+ 1510  nano .bashrc
+ 1511  nano ./bashrc
+ 1512  cat ~/.bashrc 
+ 1513  s
+ 1514  ls
+ 1515  gpush
+ 1516  cat GitAlias 
+ 1517  alias gadd="git add "
+ 1518  alias gcom="git commit -m ""
+ 1519  alias gpush="git push origin master"
+ 1520  exit
+ 1521  cat ~/.bashrc 
+ 1522  gpush
+ 1523  gcomm
+ 1524  gcom hi"
+ 1525  cat GitAlias 
+ 1526  alias gpush="git push origin master"
+ 1527  gpush
+ 1528  touch 678
+ 1529  gadd 678
+ 1530  git status
+ 1531  gcom hi"
+ 1532  alias gcom="git commit -m "
+ 1533  gcomaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1534  gcom "test"
+ 1535  gpush
+ 1536  cat << EOF > testEOFfile 
+ 1537  jhjkhjk
+ 1538  hjkhk
+ 1539  EOF
+ 1540  cat testEOFfile 
+ 1541  rm testEOFfile 
+ 1542  exit
+ 1543  minikube start
+ 1544  cat << EOF > myfile.txt
+ 1545  hi 
+ 1546  Hello
+ 1547  bye
+ 1548  EOF
+ 1549  cat myfile.txt 
+ 1550  cat << EOF >> myfile.txt 
+ 1551  how are you
+ 1552  byebye
+ 1553  EOF
+ 1554  cat myfile.txt 
+ 1555  rm myfile.txt 
+ 1556  git status 
+ 1557  ll
+ 1558  cat GitAlias 
+ 1559  kubectl config view
+ 1560  kubectl <(bash completion)
+ 1561  history | grep bash
+ 1562  source <(kubectl completion bash)
+ 1563  cc
+ 1564  kubectl config view 
+ 1565  cat ~/.kube/config 
+ 1566  png 8.8.8.8
+ 1567  ping 8.8.8.8
+ 1568  minikube start
+ 1569  exit
+ 1570  kubectl get all
+ 1571  exit
+ 1572  cd Q2_CNC/
+ 1573  ls
+ 1574  ls java/
+ 1575  git remote add java/firstJava.js
+ 1576  git remote add --help
+ 1577  git remote --help
+ 1578  cc
+ 1579  git --help 
+ 1580  git help everyday 
+ 1581  git add .
+ 1582  git status
+ 1583  git config status
+ 1584  git config remote status
+ 1585  git remote add ABC.txt
+ 1586  minikube status
+ 1587  source <(kubectl completion bash)
+ 1588  kubectl get all 
+ 1589  kubectl config view 
+ 1590  cc
+ 1591  exit
+ 1592  echo "This is SOLUTION for CKAD Exercise by dgkanatsios"
+ 1593  echo "This is SOLUTION for CKAD Exercise by dgkanatsios" >> README.md 
+ 1594  kubectl create ns mynamespace
+ 1595  kubectl get ns
+ 1596  kubectl get pod
+ 1597  kubectl delete pod nginx
+ 1598  cc
+ 1599  kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml > 1.yaml
+ 1600  nano 1.yaml 
+ 1601  kubectl create -f 1.yaml 
+ 1602  kubectl get pod
+ 1603  kubectl get pod nginx
+ 1604  kubectl get pod nginx -n mynamespace
+ 1605  cc
+ 1606  kubectl get pod 
+ 1607  cc
+ 1608  kubectl run busybox --image=busybox --restart=Never --dry-run -o yaml --command -- env > envpod.yaml
+ 1609  nano envpod.yaml 
+ 1610  kubectl apply -f envpod.yaml
+ 1611  kubectl logs busybox
+ 1612  kubectl get pod 
+ 1613  kubectl get pod busybox
+ 1614  kubectl logs busybox
+ 1615  cc
+ 1616  kubectl exec -ti busybox 
+ 1617  kubectl exec -ti busybox --env
+ 1618  kubectl exec -ti busybox -- /bin/sh 
+ 1619  cc
+ 1620  kubectl create ns myns --dry-run 
+ 1621  kubectl create ns myns --dry-run -o yaml
+ 1622  kubectl create --help
+ 1623  kubectl create quota --help
+ 1624  cc
+ 1625  kubectl create quota myrq --hard=cpu=1,memory=1G,pods=2 --dry-run -o yaml > 2rq.yaml
+ 1626  nano 2rq.yaml 
+ 1627  kubectl get pods --all-namespace
+ 1628  kubectl get pods --all-namespaces
+ 1629  cc
+ 1630  kubectl run nginx --image=nginx --restart=Never --port=80 
+ 1631  kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml 
+ 1632  kubectl run nginx --image=nginx --restart=Never --port=80 --dry-run -o yaml 
+ 1633  cc
+ 1634  kubectl --h
+ 1635  kubectl set --h
+ 1636  kubectl set --help
+ 1637  kubectl set name 
+ 1638  kubectl set -h
+ 1639  kubectl set image -h
+ 1640  kubectl set image pod nginx=nginx:1.7.1
+ 1641  kubectl set image/pod nginx=nginx:1.7.1
+ 1642  kubectl set image pod/nginx nginx=nginx:1.7.1
+ 1643  kubectl describe po nginx
+ 1644  kubectl describe po nginx | grep Image
+ 1645  cc
+ 1646  kubectl get pod nginx
+ 1647  kubectl get pod nginx -o wide
+ 1648  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- 10.1.1.131:80
+ 1649  kubectl delete pod busybox
+ 1650  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- 172.17.0.10:80
+ 1651  kubectl get po nginx -oyaml
+ 1652  kubectl logs nginx -p
+ 1653  kubectl exec -it nginx -- /bin/sh
+ 1654  c
+ 1655  cc
+ 1656  git status
+ 1657  git add 1.yaml 
+ 1658  git commit -m "file"
+ 1659  git push origin master 
+ 1660  git add envpod.yaml 
+ 1661  git commit -m "env file"
+ 1662  git push origin master 
+ 1663  read fname 
+ 1664  echo $fname 
+ 1665  git add \$fname 
+ 1666  echo $fname 
+ 1667  git add fname
+ 1668  git add $fname
+ 1669  git status 
+ 1670  read fname
+ 1671  git status 
+ 1672  git add $fname
+ 1673  git status 
+ 1674  git commit -m "\$fname" 
+ 1675  git push origin master 
+ 1676  echo << EOF > gitBatch.sh
+ 1677  ls
+ 1678  git status
+ 1679  read fname
+ 1680  git add fname
+ 1681  EOF
+ 1682  ./gitBatch
+ 1683  gitBatch.sh
+ 1684  cat gitBatch.sh 
+ 1685  echo << EOF >> gitBatch.sh
+ 1686  ls
+ 1687  git status
+ 1688  read fname
+ 1689  git add fname
+ 1690  EOF
+ 1691  cat gitBatch.sh 
+ 1692  nano gitBatch.sh 
+ 1693  ./gitBatch
+ 1694  bash gitBatch.sh 
+ 1695  history 
+ 1696  nano gitBatch.sh 
+ 1697  bash gitBatch.sh 
+ 1698  nano gitBatch.sh 
+ 1699  cc
+ 1700  bash gitBatch.sh 
+ 1701  cc
+ 1702  nano gitBatch.sh 
+ 1703  bash gitBatch.sh 
+ 1704  nano gitBatch.sh 
+ 1705  git push origin master 
+ 1706  nano gitBatch.sh 
+ 1707  bash gitBatch.sh 
+ 1708  touch hi.txt
+ 1709  bash gitBatch.sh 
+ 1710  touch hey.txt
+ 1711  bash gitBatch.sh 
+ 1712  nano gitBatch.sh 
+ 1713  touch he.txt
+ 1714  bash gitBatch.sh 
+ 1715  touch he1.txt
+ 1716  bash gitBatch.sh 
+ 1717  nano gitBatch.sh 
+ 1718  touch he.txt
+ 1719  nano gitBatch.sh 
+ 1720  bash gitBatch.sh 
+ 1721  touch 2he.txt
+ 1722  bash gitBatch.sh 
+ 1723  nano gitBatch.sh 
+ 1724  cc
+ 1725  git status 
+ 1726  touch 3he.txt
+ 1727  git status 
+ 1728  cc
+ 1729  git add 3he.txt 
+ 1730  git commit -h
+ 1731  git commit -m "Update made on file"&&$fname
+ 1732  echo $fname
+ 1733  read fname
+ 1734  ll
+ 1735  ls
+ 1736  git commit -m "update on file " && $fname
+ 1737  touch 55.tt
+ 1738  read fnam
+ 1739  read fname
+ 1740  git add $fname
+ 1741  git status
+ 1742  git commit -m "update on file "&&$fname
+ 1743  cat gitBatch.sh 
+ 1744  git commit -m "update on file " && $fname
+ 1745  echo "hi " && $fname
+ 1746  echo "hi " && fname
+ 1747  echo "hi "&&$fname
+ 1748  echo "hi "&$fname
+ 1749  echo "hi "&&fname
+ 1750  echo "hi "&fname
+ 1751  man echp
+ 1752  man echo
+ 1753  whatis echo
+ 1754  nano gitBatch.sh 
+ 1755  echo fname
+ 1756  echo $fname
+ 1757  echo "hi $fname"
+ 1758  nano gitBatch.sh 
+ 1759  ls
+ 1760  ll
+ 1761  rm 3he.txt 
+ 1762  rm 2he.txt 
+ 1763  rm hi.txt 
+ 1764  rm hey.txt 
+ 1765  rm 55.tt 
+ 1766  rm hey
+ 1767  rm hey.txt
+ 1768  rm he.txt 
+ 1769  rm he1.txt 
+ 1770  ls
+ 1771  touch bye.txt
+ 1772  bash gitBatch.sh 
+ 1773  git push origin master 
+ 1774  git pull 
+ 1775  git merge
+ 1776  git pull 
+ 1777  git push origin master 
+ 1778  ls
+ 1779  touch 2.txt
+ 1780  bash gitBatch.sh 
+ 1781  ls
+ 1782  rm 2.txt 
+ 1783  rm bye.txt 
+ 1784  git add .
+ 1785  git commit -m "update all $fname"
+ 1786  git push origin master 
+ 1787  nano gitBatch.sh 
+ 1788  ls
+ 1789  cc
+ 1790  nano gitBatch.sh 
+ 1791  touch 66.tt
+ 1792  bash gitBatch.sh 
+ 1793  nano gitBatch.sh 
+ 1794  rm 66.tt 
+ 1795  touch 77.tt
+ 1796  bash gitBatch.sh 
+ 1797  nano gitBatch.sh 
+ 1798  bash gitBatch.sh 
+ 1799  ls
+ 1800  rm 77.tt 
+ 1801  git pull
+ 1802  git status 
+ 1803  echo --help
+ 1804  echo -h
+ 1805  man echo
+ 1806  nano gitBatch.sh 
+ 1807  echo -e "I ${RED}love${NC} Stack Overflow"
+ 1808  RED='\033[0;31m'
+ 1809  NC='\033[0m' # No Color
+ 1810  printf "I ${RED}love${NC} Stack Overflow\n"
+ 1811  nano gitBatch.sh 
+ 1812  RED='\033[0;31m'
+ 1813  NC='\033[0m' 
+ 1814  # printf "I ${RED}love${NC} Stack Overflow\n"
+ 1815  echo "                           " 
+ 1816  echo "****** Welcome to Git Script by ${RED}BAZ *****\n" 
+ 1817  nano gitBatch.sh 
+ 1818  cc
+ 1819  RED='\033[0;31m'
+ 1820  NC='\033[0m' 
+ 1821  # printf "I ${RED}love${NC} Stack Overflow\n"
+ 1822  echo -e "\n****** Welcome to Git Script by ${RED}BAZ *****\n" 
+ 1823  nano gitBatch.sh 
+ 1824  touch 33.ty
+ 1825  bash gitBatch.sh 
+ 1826  nano gitBatch.sh 
+ 1827  bash gitBatch.sh 
+ 1828  cc
+ 1829  ls
+ 1830  rm 33.ty 
+ 1831  cc
+ 1832  kubectl run bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld"
+ 1833  kubectl logs pod bb
+ 1834  kubectl get pod bb
+ 1835  kubectl describe pod bb
+ 1836  kubectl get pod bb --dry-run -oyaml
+ 1837  kubectl get pod bb --dry-run -o yaml
+ 1838  kubectl run pod bb --dry-run -oyaml
+ 1839  kubectl run bb --dry-run -oyaml
+ 1840  kubectl run bb --dry-run -o yaml
+ 1841  kubectl run bb --
+ 1842  kubectl get pod bb
+ 1843  kubectl run bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld" --dry-run -o yaml
+ 1844  kubectl run bb1 --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld" --dry-run -o yaml
+ 1845  kubectl get pod bb*
+ 1846  kubectl get pod bb1
+ 1847  kubectl delete pod bb
+ 1848  kubectl delete pod bb1
+ 1849  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld" -o yaml
+ 1850  kubectl delete pod bb
+ 1851  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld" -o yaml > bb.yaml
+ 1852  cat bb.yaml 
+ 1853  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  > bb.yaml
+ 1854  cat bb.yaml 
+ 1855  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  >> bb.yaml
+ 1856  cat bb.yaml 
+ 1857  kubectl run bb --image=busybox --restart=Never --dry-run  -o yaml -- /bin/sh "echo -c Hello W0rld"  >> bb.yaml
+ 1858  cat bb.yaml 
+ 1859  kubectl run busybox --image=busybox -it --restart=Never -- /bin/sh -c 'echo hello world'
+ 1860  kubectl run busybox --image=busybox -it --restart=Never -- echo 'hello world'
+ 1861  kubectl run busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1862  kubectl run 2busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1863  minikube status
+ 1864  kubectl run 2busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1865  kubectl run 3busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1866  kubectl run 3busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1867  kubectl run 33busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1868  kubectl run 43busybox1 --image=busybox -it --restart=Never --dry-run -o yaml -- echo 'hello world'
+ 1869  kubectl run 43busybox1 --image=busybox -it --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'
+ 1870  kubectl run 43busybox1 --image=busybox  --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'
+ 1871  kubectl run 43busybox1 --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'
+ 1872  kubectl run 3busybox1 --image=busybox  --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1873  kubectl run 53busybox1 --image=busybox --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1874  minikube status
+ 1875  cc
+ 1876  kubectl run nginxENV --image=nginx --restart=Never --env=var1=val1
+ 1877  kubectl run nginxenv --image=nginx --restart=Never --env=var1=val1
+ 1878  kubectl exec -it ngenv -- env
+ 1879  kubectl exec -it nginxenv -- env
+ 1880  cc'
+ 1881  cc
+ 1882  bash gitBatch.sh 
+ 1883  cc
+ 1884  exit
+ 1885  cc
+ 1886  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -oyaml
+ 1887  kubectl delete pod b2mc
+ 1888  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -oyaml > 2b1.yaml
+ 1889  nano 2b1.yaml 
+ 1890  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -o yaml> > 2b1.yaml
+ 1891  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -o yaml >> 2b1.yaml
+ 1892  kubectl delete pod b2mc
+ 1893  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -o yaml >> 2b1.yaml
+ 1894  nano 2b1.yaml 
+ 1895  kubectl run b2mc --image=busybox --restart=Never --dry-run -- /bin/sh "echo Helloo World; sleep 3600" -o yaml > 2b.yaml
+ 1896  nano 2b1.yaml 
+ 1897  cc
+ 1898  kubectl b2mc --image=busybox --restart=Never -o yaml --dry-run -- /bin/sh -c "echo hello; sleep 3600" > b2mc.yaml
+ 1899  kubectl run b2mc --image=busybox --restart=Never -o yaml --dry-run -- /bin/sh -c "echo hello; sleep 3600" > b2mc.yaml
+ 1900  nano b2mc.yaml 
+ 1901  kubectl create -f b2mc.yaml 
+ 1902  kubectl delete pod b2mc
+ 1903  kubectl create -f b2mc.yaml 
+ 1904  kubectl get pod b2mc
+ 1905  kubectl get pod b2mc -w
+ 1906  kubectl exec -ti b2mc -c bb2 -- /bin/sh
+ 1907  kubectl exec -ti b2mc -c bb -- /bin/sh
+ 1908  ls
+ 1909  kubectl exec -ti b2mc -c bb1 -- /bin/sh
+ 1910  cc
+ 1911  kubectl run c1a --image=nginx --restart=Never --label=app=v1
+ 1912  cc
+ 1913  kubectl run c1a --image=nginx --restart=Never --labels=app=v1
+ 1914  kubectl get pod c1a
+ 1915  kubectl get pod c1a --show-labels
+ 1916  kubectl run c1b --image=nginx --restart=Never --labels=app=v1
+ 1917  kubectl get pod c1a --show-labels
+ 1918  kubectl get pod  --show-labels
+ 1919  cc
+ 1920  kubectl label pod c3b app=v2 --overwrite
+ 1921  kubectl label pod c1b app=v2 --overwrite
+ 1922  kubectl get pod c1a --show-labels
+ 1923  kubectl get pod c1b --show-labels
+ 1924  kubectl get po -L app
+ 1925  kubectl get po -label-columns=app
+ 1926  kubectl get po --label-columns=app
+ 1927  cc
+ 1928  kget po -l aap=v2
+ 1929  kubectl get po -l aap=v2
+ 1930  kubectl get po -l app=v2
+ 1931  kubectl get po -l app=v1
+ 1932  kubectl get po -l 
+ 1933  kubectl get po -l a
+ 1934  cc
+ 1935  kubectl get po -l 'app in (v2)'
+ 1936  kubectl get po --selector=app=v2
+ 1937  cc
+ 1938  kubectl get  pod 
+ 1939  kubectl label pod c1a app-
+ 1940  kubectl get pod c1b
+ 1941  kubectl get pod c1b --show-label
+ 1942  kubectl get pod c1b --show-labels
+ 1943  kubectl get pod c1a --show-labels
+ 1944  cc
+ 1945  bash gitBash
+ 1946  bash gitBash.sh
+ 1947  history | grep bash
+ 1948  bash gitBatch.sh 
+ 1949  exit
+ 1950  minikube start
+ 1951  echo "# k8CKAD" >> README.md
+ 1952  git init
+ 1953  git add README.md
+ 1954  git commit -m "first commit"
+ 1955  git remote add origin https://github.com/engineerbaz/k8CKAD.git
+ 1956  git push -u origin master
+ 1957  echo "echo "# k8CKAD" >> README.md
+ 1958  git init
+ 1959  git add README.md
+ 1960  git commit -m "first commit"
+ 1961  git remote add origin https://github.com/engineerbaz/k8CKAD.git
+ 1962  git push -u origin master
+ 1963  echo "Preparation of K8s for CKAD exam" >> README.md 
+ 1964  git add README.md 
+ 1965  git commit -m "2nd"
+ 1966  git push -u origin master
+ 1967  cc
+ 1968  source <(kubectl completion bash)
+ 1969  script 202003141414
+ 1970  script 202003141444
+ 1971  script 202003150112
+ 1972  bash gitBatch.sh 
+ 1973  cc
+ 1974  exit
+ 1975  ls
+ 1976  ls *.bat
+ 1977  ls *.sh
+ 1978  ll ?it*.sh
+ 1979  ll ??it*.sh
+ 1980  exit
+ 1981  cc
+ 1982  kubectl run ca1 --image=nginx:1.7.8 --replicas=2 --port=80
+ 1983  kubectl create deploy ca1a --image=nginx:1.7.8 --dry-run -o yaml > ca1a.yaml
+ 1984  nano ca1a.yaml 
+ 1985  kubectl apply -f ca1a.yaml 
+ 1986  kubectl get deploy
+ 1987  kubectl get deploy ca1 -o yaml
+ 1988  cc
+ 1989  kubectl describe deply ca1
+ 1990  kubectl describe deploy ca1
+ 1991  cc
+ 1992  kubectl get rs -l run=nginx
+ 1993  kubectl get rs -l run=ca1
+ 1994  kubectl get pod -l run=ca1
+ 1995  kubectl get pod -l app=ca1
+ 1996  kubectl get pod -l app=ca1a
+ 1997  kubectl rollout status deploy ca1
+ 1998  kubectl set image deploy ca1 nginx=nginx:1.7.9
+ 1999  kubectl set image deploy ca1 nginx:1.7.8=nginx:1.7.9
+ 2000  nano ca1a.yaml 
+ 2001  kubectl set image deploy ca1a nginx=nginx:1.7.9
+ 2002  cc
+ 2003  kubectl rollout history deploy ca1
+ 2004  kubectl rollout history deploy ca1a
+ 2005  kubectl get rs
+ 2006  cc
+ 2007  kubectl rollout undo deploy ca1a
+ 2008  kubectl get po 
+ 2009  ca1a-6847576946-62k27 | grep -i image
+ 2010  kubectl get po 
+ 2011  kubectl describe pod ca1a-6847576946-62k27 | grep -i image
+ 2012  cc
+ 2013  kubectl set image deploy ca1a nginx=nginx:1.9.1
+ 2014  kubectl rllout status deploy nginx
+ 2015  kubectl rllout status deploy ca1
+ 2016  kubectl rllout status deploy ca1a
+ 2017  kubectl rollout status deploy ca1a
+ 2018  kubectl rollout status deploy ca1
+ 2019  kubectl rollout status deploy ca1a
+ 2020  kubectl rollout status deploy ca1
+ 2021  kubectl rollout status deploy ca1a
+ 2022  cc
+ 2023  kubectl rollout status
+ 2024  kubectl rollout status deploy ca1a
+ 2025  kubectl rollout history deploy ca1a
+ 2026  kubectl rollout undo deploy ca1a --to-revision=2
+ 2027  kubectl describe deploy ca1a | grep Image:
+ 2028  kubectl rollout status ca1a
+ 2029  kubectl rollout status deploy ca1a
+ 2030  cc
+ 2031  kubectl rollout history deploy ca1aa
+ 2032  kubectl rollout history deploy ca1a
+ 2033  kubectl rollout history deploy ca1a --revision=4
+ 2034  kubectl rollout status deploy ca1a
+ 2035  history 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout history deploy ca1a
+deployment.extensions/ca1a 
+REVISION  CHANGE-CAUSE
+3         <none>
+4         <none>
+5         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ history 
+ 1039  nano test114.yaml
+ 1040  kubectl run test114 --image=nginx --restart=Never --dry-run -o yaml > test114.yaml
+ 1041  nano test114.yaml
+ 1042  cat env.env
+ 1043  kubectl create configmap testenv --from-file=env.env
+ 1044  kubectl get cm
+ 1045  kubectl describe configmaps testenv 
+ 1046  kubectl describe configmaps envcfgmap
+ 1047  kubectl describe configmaps 112env
+ 1048  cat test114.yaml 
+ 1049  cat env.env 
+ 1050  cat file.env 
+ 1051  kubectl get configmaps testenv 
+ 1052  kubectl get configmaps envcfgmap 
+ 1053  kubectl get configmaps envcfgmap -o yaml --export
+ 1054  kubectl get configmaps testenv -o yaml --export
+ 1055  cat file.env 
+ 1056  cat env.env 
+ 1057  echo var1=val1 > file.env
+ 1058  cat file.env 
+ 1059  kubectl create configmap env2 --from-env-file=env.env 
+ 1060  kubectl get cm
+ 1061  nano test114.yaml 
+ 1062  kubectl get configmaps env2 -o yaml
+ 1063  nano test114.yaml 
+ 1064  kubectl create -f test114.yaml 
+ 1065  nano test114.yaml 
+ 1066  kubectl create -f test114.yaml 
+ 1067  kubectl exec -ti test114 -- env
+ 1068  kubectl exec -ti test114 -- env | grep val
+ 1069  nano 114check.yaml 
+ 1070  kubectl delete pod 114test
+ 1071  kubectl delete pod test114 
+ 1072  kubectl create -f test114.yaml 
+ 1073  kubectl get cm
+ 1074  kubectl get pod test114 
+ 1075  kubectl exec -ti test114 -- env | grep val
+ 1076  kubectl exec -ti test114 -- env 
+ 1077  kubectl exec -ti test114 -- sh
+ 1078  nano 114check.yaml 
+ 1079  cat env.env 
+ 1080  kubectl get configmaps env2 -o yaml
+ 1081  cat test114.yaml 
+ 1082  nano test114.yaml 
+ 1083  ll
+ 1084  nano 114check.yaml 
+ 1085  kubectl delete po nginx
+ 1086  kubectl delete pod nginx
+ 1087  kubectl create -f test114.yaml 
+ 1088  nano test114.yaml 
+ 1089  kubectl create -f 114check.yaml 
+ 1090  kubectl exec -ti nginx -- env | grep var1
+ 1091  kubectl get pod nginx
+ 1092  nano 114check.yaml 
+ 1093  kubectl delete pod nginx
+ 1094  kubectl create -f 114check.yaml 
+ 1095  kubectl get pod nginx
+ 1096  kubectl get pod nginx -w
+ 1097  kubectl exec -ti nginx -- env | grep var1
+ 1098  kubectl exec -ti nginx -- env 
+ 1099  cc
+ 1100  git status
+ 1101  git add 90.yaml 
+ 1102  git add 202002232000 
+ 1103  git add .
+ 1104  git commit -m "practice"
+ 1105  git push remote orgin
+ 1106  git push origin master 
+ 1107  cc
+ 1108  kubectl create configmap cfgvolume --from-literal=var1=val --from-literal=var2=val2
+ 1109  minikube status
+ 1110  minikube stop
+ 1111  minikube start
+ 1112  minikube status
+ 1113  kubectl create configmap cfgvolume --from-literal=var1=val --from-literal=var2=val2
+ 1114  kubectl get configmaps 
+ 1115  kubectl run 114nginx --image=nginx --restart=Never --dry-run -o yaml > 114nginx.yaml
+ 1116  nano 114nginx.yaml 
+ 1117  kubectl create -f 114nginx.yaml 
+ 1118  nano 114nginx.yaml 
+ 1119  kubectl create -f 114nginx.yaml 
+ 1120  kubectl get pod 114nginx 
+ 1121  kubectl exec -it 114nginx -- /bin/sh
+ 1122  exit
+ 1123  ping 8.8.8.8
+ 1124  ping 1.1.1.1
+ 1125  exit
+ 1126  ll
+ 1127  minikube sstatus
+ 1128  minikube status
+ 1129  minikube stop
+ 1130  minikube start
+ 1131  kubectl get sm
+ 1132  kubectl get cm
+ 1133  cc
+ 1134  script 2003012355
+ 1135  history | grep bash 
+ 1136  source <(kubectl completion bash)
+ 1137  kubectl run secbusybox --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -s "sleep 36000;" > 115.yaml
+ 1138  nano 115.yaml 
+ 1139  kubectl create -f 115.yaml 
+ 1140  kubectl get pod secbusybox 
+ 1141  kubectl exec -ti secbusybox 
+ 1142  kubectl exec -ti secbusybox --sh
+ 1143  kubectl exec -ti secbusybox --/bin/sh
+ 1144  history | grep exec
+ 1145  kubectl exec -ti secbusybox /bin/sh
+ 1146  kubectl exec -ti secbusybox sh
+ 1147  ls
+ 1148  kubectl get pd
+ 1149  kubectl get po
+ 1150  cc
+ 1151  c
+ 1152  cc
+ 1153  kubectl run 117 --image=nginx --restart=Never --dry-run -o yaml > 117.yaml
+ 1154  nano 117.yaml 
+ 1155  kubectl create -f 117.yaml 
+ 1156  kubectl get pod 117
+ 1157  kubectl exec -it -- sh
+ 1158  kubectl exec -it 117 -- sh
+ 1159  cc
+ 1160  kubectl run 118 --image=nginx --restart=Never --dry-run -o yaml > 118.yaml
+ 1161  nano 118
+ 1162  nano 118.yaml 
+ 1163  kubectl create -f 118.yaml 
+ 1164  kubectl get pod 
+ 1165  kubectl exec -ti 118 sh
+ 1166  cc
+ 1167  kubectl create secret generic 122 --from-literal=username=user --from-literal=password=mypassword
+ 1168  kubectl get secret
+ 1169  kubectl get secrets --all-namespaces 
+ 1170  cc
+ 1171  kubectl get secrets
+ 1172  kubectl get secrets 122 -o yaml
+ 1173  cc
+ 1174  kubectl run 125 --image=nginx --restart=Never --dry-run -o yaml > 125.yaml
+ 1175  nano 125.yaml 
+ 1176  kubectl get secrets 
+ 1177  nano 125.yaml 
+ 1178  kubectl create -f 125.yaml 
+ 1179  nano 125.yaml 
+ 1180  kubectl get secrets 
+ 1181  nano 125.yaml 
+ 1182  kubectl get secrets 
+ 1183  kubectl create -f 125.yaml 
+ 1184  kubectl get secrets 
+ 1185  nano 125.yaml 
+ 1186  kubectl get secrets 
+ 1187  kubectl create -f 125.yaml 
+ 1188  cc
+ 1189  kubectl exec -it 125 -- env
+ 1190  kubectl get po
+ 1191  kubectl describe pod mysec
+ 1192  kubectl get secrets 
+ 1193  nano 125.yaml 
+ 1194  kubectl delete pod mysec
+ 1195  kubectl exec -it 125 -- env
+ 1196  kubectl create -f 125.yaml 
+ 1197  history 
+ 1198  kubectl create secret generic 122 --from-literal=username=user --from-literal=password=mypassword
+ 1199  kubectl create secret generic mysec122 --from-literal=username=user --from-literal=password=mypassword
+ 1200  kubectl get secrets 
+ 1201  kubectl create -f 125.yaml 
+ 1202  nano 125.yaml 
+ 1203  kubectl create -f 125.yaml 
+ 1204  kubectl get secrets 
+ 1205  kubectl get po
+ 1206  kubectl get po mysec -w
+ 1207  kubectl exec -it 125 -- env
+ 1208  kubectl exec -it mysec -- env
+ 1209  exit
+ 1210  git status
+ 1211  git add 2003012355 
+ 1212  git add 114nginx.yaml 
+ 1213  git commit -m "add log and sample "
+ 1214  git push origin master 
+ 1215  minikube start
+ 1216  script 202003042031
+ 1217  history | grep bashir
+ 1218  history | grep bash
+ 1219  source <(kubectl completion bash)
+ 1220  cc
+ 1221  ll
+ 1222  cc
+ 1223  kubectl get secrets 
+ 1224  kubectl run 126 --image=nginx --restart=Never --dry-run -o yaml > 126.yaml
+ 1225  nano 12
+ 1226  nano 126.yaml 
+ 1227  kubectl create -f 126.yaml 
+ 1228  kubectl exec 126 -- env
+ 1229  cc
+ 1230  ls
+ 1231  kubectl get po
+ 1232  cc
+ 1233  kubectl get sa
+ 1234  kubectl create sa admin
+ 1235  kubectl create sa admin -o yaml
+ 1236  kubectl create sa admin1 -o yaml
+ 1237  kubectl run 131 --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c "sleep 3600" > 131.yaml
+ 1238  nano 131.yaml 
+ 1239  kubectl create -f 131.yaml 
+ 1240  kubectl exec -ti 131 -- sh
+ 1241  cc
+ 1242  kubectl run 132 --image=nginx --restart=Never --port=80 --dry-run -o yaml > 132.yaml
+ 1243  nano 132
+ 1244  nano 132.yaml 
+ 1245  kubectl explain pod.spec.containers
+ 1246  kubectl explain pod.spec.containers.readinessProbe
+ 1247  nano 132.yaml 
+ 1248  kubectl create -f 132.yaml 
+ 1249  cc
+ 1250  kubectl run 133 --image=nginx --restart=Never --port=80 --dry-run -o yaml > 133.yaml
+ 1251  kubectl explain containers.readinessProbe
+ 1252  kubectl explain pod.containers.readinessProbe
+ 1253  kubectl explain pod.spec.containers.readinessProbesss
+ 1254  kubectl explain pod.spec.containers.readinessProbe
+ 1255  nano 133.yaml 
+ 1256  kubectl explain pod.spec.containers.livenessProbe
+ 1257  gedit
+ 1258  minikube start
+ 1259  history | grep bash
+ 1260  source <(kubectl completion bash)
+ 1261  script 202003070954
+ 1262  cc
+ 1263  ll
+ 1264  cc
+ 1265  kubectl get po
+ 1266  cc
+ 1267  history | grep bash
+ 1268  source <(kubectl completion bash)
+ 1269  kubectl get po
+ 1270  cc
+ 1271  kubectl run 134 --image=nginx --restart=Never --port=80 --dry-run -o yaml > 134.yaml
+ 1272  kubectl explain pod.spec.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1273  cc
+ 1274  kubectl explain pod.spec
+ 1275  kubectl explain pod.spec.container
+ 1276  kubectl explain pod.spec.containers
+ 1277  kubectl explain pod.spec.containers.livenessProbe
+ 1278  nano 134
+ 1279  nano 134.yaml 
+ 1280  kubectl explain pod.spec.containers.readinessProbe
+ 1281  nano 134.yaml 
+ 1282  c
+ 1283  cc
+ 1284  kubectl create -f 134.yaml 
+ 1285  nano 134.yaml 
+ 1286  kubectl create -f 134.yaml 
+ 1287  kubectl describe pod 134 | grep -i ness
+ 1288  kubectl get pod
+ 1289  nano 134.yaml 
+ 1290  kubectl get pod 134
+ 1291  kubectl logs pods 134
+ 1292  kubectl logs pod 
+ 1293  kubectl describe pod 134 
+ 1294  cc
+ 1295  kubectl explain Pod.spec.containers.livenessProbe
+ 1296  kubectl explain Pod.spec.containers.readinessProbe
+ 1297  kubectl run 136 --image=nginx --restart=Never --dry-run -o yaml > 136.yaml
+ 1298  nano 136.yaml 
+ 1299  kubectl explain Pod.spec.containers.readinessProbe
+ 1300  nano 136.yaml 
+ 1301  kubectl create -f 136.yaml 
+ 1302  nano 136.yaml 
+ 1303  kubectl create -f 136.yaml 
+ 1304  kubectl logs pods 136
+ 1305  kubectl describe pod 136
+ 1306  kubectl run 137busybox --image=busybox --restart=Never -- /bin/sh -c "echo I am from busybox pod; sleep 3600;"
+ 1307  kubectl logs pods 136
+ 1308  kubectl explain Pod.spec.containers.livenessProbe
+ 1309  minikube status
+ 1310  minikube stop
+ 1311  minikube start
+ 1312  kubectl logs 137busybox 
+ 1313  cc
+ 1314  kubectl get po
+ 1315  cc
+ 1316  history | grep bash
+ 1317  source <(kubectl completion bash)
+ 1318  cc
+ 1319  kubectl get events --sort-by=.metadata.creationTimestamp
+ 1320  cc
+ 1321  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml --/bin/sh ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140yaml
+ 1322  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml --/bin/sh -c ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1323  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml -- /bin/sh -c ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1324  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1325  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml -- /bin/sh -c "while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1326  exit
+ 1327  //
+ 1328  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo ‘Hi I am from alpine’; sleep 5;done” > 140.yaml
+ 1329  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo ‘Hi I am from alpine’; sleep 5;done” 
+ 1330  kubectl get pod 140
+ 1331  cc
+ 1332  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo 'Hi I am from alpine'; sleep 5;done" > 140.yaml 
+ 1333  nano 140.yaml 
+ 1334  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo 'Hi I am from alpine'; sleep 5;done"
+ 1335  kubectl logs --follow hello
+ 1336  kubectl delete pod 140
+ 1337  cc
+ 1338  nano 140.yaml 
+ 1339  kubectl run hello --image=alpine --restart=Never  -- /bin/sh -c "while true; do echo 'Hi I am from Alpine'; sleep 5;done"
+ 1340  kubectl logs --follow hello
+ 1341  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo 'Hi I am from alpine'; sleep 5;done"
+ 1342  kubectl logs --follow hello
+ 1343  kubectl logs --follow 140
+ 1344  cc
+ 1345  kubectl create -f https://gist.githubusercontent.com/bbachi/212168375b39e36e2e2984c097167b00/raw/1fd63509c3ae3a3d3da844640fb4cca744543c1c/not-running.yml
+ 1346  kubectl get pot not-running
+ 1347  kubectl get pod not-running
+ 1348  kubectl edit pod not-running 
+ 1349  kubectl get pod not-running
+ 1350  kubectl edit pod not-running 
+ 1351  kubectl get pod not-running
+ 1352  kubectl create -f https://gist.githubusercontent.com/bbachi/1f001f10337234d46806929d12245397/raw/84b7295fb077f15de979fec5b3f7a13fc69c6d83/problem-pod.yaml
+ 1353  kubectl get po --all-namespaces 
+ 1354  kubectl get po -n namespace2
+ 1355  kubectl set image pod/pod2 pod2=nginx -n namespace2
+ 1356  kubectl get po --all-namespaces 
+ 1357  kubectl get po -n namespace2
+ 1358  cc
+ 1359  kubectl run 144 --image=nginx --restart=Never --port=80 --dry-run -o yaml > 144.yaml
+ 1360  nano 144.yaml 
+ 1361  kubectl create -f 144.yaml 
+ 1362  nano 145svc.yaml
+ 1363  kubectl create -f 145svc.yaml 
+ 1364  nano 145svc.yaml
+ 1365  kubectl create -f 145svc.yaml 
+ 1366  nano 145svc.yaml
+ 1367  kubectl create -f 145svc.yaml 
+ 1368  nano 145svc.yaml
+ 1369  kubectl create -f 145svc.yaml 
+ 1370  kubectl get svc
+ 1371  kubectl expose po nginx --port=80 --target-port=9376
+ 1372  kubectl get po nginx  -o yaml
+ 1373  kubectl get po nginx  -o yaml >148.yml
+ 1374  nano 148.yml 
+ 1375  kubectl expose po nginx --port=80 --type=NodePort
+ 1376  kubectl delete svc nginx
+ 1377  kubectl expose po nginx --port=80 --type=NodePort
+ 1378  kubectl ger svc nginx 
+ 1379  kubectl get svc nginx 
+ 1380  kubectl get svc nginx -o yaml
+ 1381  cat 144.yaml 
+ 1382  cat 145svc.yaml 
+ 1383  kubectl get svc nginx -o yaml
+ 1384  cc
+ 1385  kubectl get svc nginx -o yaml
+ 1386  cat 145svc.yaml 
+ 1387  cc
+ 1388  git add .
+ 1389  git status
+ 1390  git commit -m "all 150 k8"
+ 1391  git push origin master 
+ 1392  cc
+ 1393  kubectl explain --recursive 
+ 1394  kubectl explain pod --recursive 
+ 1395  kubectl explain pod.container.spec --recursive 
+ 1396  kubectl explain pod.containers.spec --recursive 
+ 1397  kubectl explain pod --recursive 
+ 1398  kubectl explain pod --recursive | grep container
+ 1399  kubectl explain pod.containers --recursive 
+ 1400  kubectl explain pod --recursive 
+ 1401  kubectl explain pod.spec --recursive 
+ 1402  c
+ 1403  cc
+ 1404  kubectl config view
+ 1405  kubectl explain pod --recursive  > ListOfResourcesOfPod
+ 1406  nano ListOfResourcesOfPod 
+ 1407  git add ListOfResourcesOfPod 
+ 1408  git commit -m "add List of resources of POD"
+ 1409  git push origin master 
+ 1410  git status
+ 1411  exit
+ 1412  alias gadd "git add"
+ 1413  alias gadd "git add ."
+ 1414  alias --h
+ 1415  alias help
+ 1416  alias
+ 1417  alias gadd="git add ."
+ 1418  alias gadd="git add"
+ 1419  gadd
+ 1420  gadd .
+ 1421  git status 
+ 1422  echo << EOF >> GitAlias
+ 1423  alias gadd="git add "
+ 1424  alias gcom="git commit -m ""
+ 1425  alias gpush="git push origin master"
+ 1426  EOF
+ 1427  cat GitAlias 
+ 1428  nano GitAlias 
+ 1429  echo << EOF > test1
+ 1430  hi 
+ 1431  hello 
+ 1432  How are u
+ 1433  EOF
+ 1434  cat test1
+ 1435  rm GitAlias 
+ 1436  echo << EOF > GitAlias.txt
+ 1437  alias gadd="git add "
+ 1438  alias gcom="git commit -m ""
+ 1439  alias gpush="git push origin master"
+ 1440  EOF
+ 1441  cat GitAlias.txt 
+ 1442  echo << EOF >> GitAlias.txt
+ 1443  alias gadd="git add "
+ 1444  alias gcom="git commit -m ""
+ 1445  alias gpush="git push origin master"
+ 1446  EOF
+ 1447  cat GitAlias.txt 
+ 1448  echo << EOF >> GitAlias.txt
+ 1449  alias gadd="git add "
+ 1450  alias gcom="git commit -m ""
+ 1451  alias gpush="git push origin master"
+ 1452  EOF
+ 1453  cat GitAlias.txt 
+ 1454  echo << EOF >> 12GitAlias.txt
+ 1455  asas
+ 1456  hi
+ 1457  EOF
+ 1458  cat 12
+ 1459  cat 12GitAlias.txt 
+ 1460  rm 12GitAlias.txt 
+ 1461  rm GitAlias.txt 
+ 1462  echo >> 12GitAlias.txt <<EOF
+ 1463  asas
+ 1464  hi
+ 1465  EOF
+ 1466  cat 12GitAlias.txt 
+ 1467  rm 12GitAlias.txt 
+ 1468  echo >> 12Git.txt <<EOF
+ 1469  hhi 
+ 1470  this is program aassssssssssssssssssssssssssssssssssssssss
+ 1471  EOF
+ 1472  cat 12Git.txt 
+ 1473  nano 12Git.txt 
+ 1474  rm 12Git.txt 
+ 1475  echo << EOF >> 12file.txt 
+ 1476  hi 
+ 1477  this 
+ 1478  das
+ 1479  EOF
+ 1480  cat 12file.txt 
+ 1481  cat << EOF >> 12file.txt 
+ 1482  hi 
+ 1483  this 
+ 1484  das
+ 1485  gu 
+ 1486  jklkj
+ 1487  hoi 
+ 1488  EOF
+ 1489  cat 12F
+ 1490  cat 12file.txt 
+ 1491  cat << EOF > GitAlias
+ 1492  alias gadd="git add "
+ 1493  alias gcom="git commit -m ""
+ 1494  alias gpush="git push origin master"
+ 1495  EOF
+ 1496  cat GitAlias 
+ 1497  gad
+ 1498  gadd
+ 1499  touch 123.txt 
+ 1500  git add llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+ 1501  git add 
+ 1502  git add 123.txt
+ 1503  gadd 123
+ 1504  gadd 123.txt
+ 1505  git status
+ 1506  gcom file to check
+ 1507  git status
+ 1508  git commit -m "check "
+ 1509  gpush
+ 1510  nano .bashrc
+ 1511  nano ./bashrc
+ 1512  cat ~/.bashrc 
+ 1513  s
+ 1514  ls
+ 1515  gpush
+ 1516  cat GitAlias 
+ 1517  alias gadd="git add "
+ 1518  alias gcom="git commit -m ""
+ 1519  alias gpush="git push origin master"
+ 1520  exit
+ 1521  cat ~/.bashrc 
+ 1522  gpush
+ 1523  gcomm
+ 1524  gcom hi"
+ 1525  cat GitAlias 
+ 1526  alias gpush="git push origin master"
+ 1527  gpush
+ 1528  touch 678
+ 1529  gadd 678
+ 1530  git status
+ 1531  gcom hi"
+ 1532  alias gcom="git commit -m "
+ 1533  gcomaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1534  gcom "test"
+ 1535  gpush
+ 1536  cat << EOF > testEOFfile 
+ 1537  jhjkhjk
+ 1538  hjkhk
+ 1539  EOF
+ 1540  cat testEOFfile 
+ 1541  rm testEOFfile 
+ 1542  exit
+ 1543  minikube start
+ 1544  cat << EOF > myfile.txt
+ 1545  hi 
+ 1546  Hello
+ 1547  bye
+ 1548  EOF
+ 1549  cat myfile.txt 
+ 1550  cat << EOF >> myfile.txt 
+ 1551  how are you
+ 1552  byebye
+ 1553  EOF
+ 1554  cat myfile.txt 
+ 1555  rm myfile.txt 
+ 1556  git status 
+ 1557  ll
+ 1558  cat GitAlias 
+ 1559  kubectl config view
+ 1560  kubectl <(bash completion)
+ 1561  history | grep bash
+ 1562  source <(kubectl completion bash)
+ 1563  cc
+ 1564  kubectl config view 
+ 1565  cat ~/.kube/config 
+ 1566  png 8.8.8.8
+ 1567  ping 8.8.8.8
+ 1568  minikube start
+ 1569  exit
+ 1570  kubectl get all
+ 1571  exit
+ 1572  cd Q2_CNC/
+ 1573  ls
+ 1574  ls java/
+ 1575  git remote add java/firstJava.js
+ 1576  git remote add --help
+ 1577  git remote --help
+ 1578  cc
+ 1579  git --help 
+ 1580  git help everyday 
+ 1581  git add .
+ 1582  git status
+ 1583  git config status
+ 1584  git config remote status
+ 1585  git remote add ABC.txt
+ 1586  minikube status
+ 1587  source <(kubectl completion bash)
+ 1588  kubectl get all 
+ 1589  kubectl config view 
+ 1590  cc
+ 1591  exit
+ 1592  echo "This is SOLUTION for CKAD Exercise by dgkanatsios"
+ 1593  echo "This is SOLUTION for CKAD Exercise by dgkanatsios" >> README.md 
+ 1594  kubectl create ns mynamespace
+ 1595  kubectl get ns
+ 1596  kubectl get pod
+ 1597  kubectl delete pod nginx
+ 1598  cc
+ 1599  kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml > 1.yaml
+ 1600  nano 1.yaml 
+ 1601  kubectl create -f 1.yaml 
+ 1602  kubectl get pod
+ 1603  kubectl get pod nginx
+ 1604  kubectl get pod nginx -n mynamespace
+ 1605  cc
+ 1606  kubectl get pod 
+ 1607  cc
+ 1608  kubectl run busybox --image=busybox --restart=Never --dry-run -o yaml --command -- env > envpod.yaml
+ 1609  nano envpod.yaml 
+ 1610  kubectl apply -f envpod.yaml
+ 1611  kubectl logs busybox
+ 1612  kubectl get pod 
+ 1613  kubectl get pod busybox
+ 1614  kubectl logs busybox
+ 1615  cc
+ 1616  kubectl exec -ti busybox 
+ 1617  kubectl exec -ti busybox --env
+ 1618  kubectl exec -ti busybox -- /bin/sh 
+ 1619  cc
+ 1620  kubectl create ns myns --dry-run 
+ 1621  kubectl create ns myns --dry-run -o yaml
+ 1622  kubectl create --help
+ 1623  kubectl create quota --help
+ 1624  cc
+ 1625  kubectl create quota myrq --hard=cpu=1,memory=1G,pods=2 --dry-run -o yaml > 2rq.yaml
+ 1626  nano 2rq.yaml 
+ 1627  kubectl get pods --all-namespace
+ 1628  kubectl get pods --all-namespaces
+ 1629  cc
+ 1630  kubectl run nginx --image=nginx --restart=Never --port=80 
+ 1631  kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml 
+ 1632  kubectl run nginx --image=nginx --restart=Never --port=80 --dry-run -o yaml 
+ 1633  cc
+ 1634  kubectl --h
+ 1635  kubectl set --h
+ 1636  kubectl set --help
+ 1637  kubectl set name 
+ 1638  kubectl set -h
+ 1639  kubectl set image -h
+ 1640  kubectl set image pod nginx=nginx:1.7.1
+ 1641  kubectl set image/pod nginx=nginx:1.7.1
+ 1642  kubectl set image pod/nginx nginx=nginx:1.7.1
+ 1643  kubectl describe po nginx
+ 1644  kubectl describe po nginx | grep Image
+ 1645  cc
+ 1646  kubectl get pod nginx
+ 1647  kubectl get pod nginx -o wide
+ 1648  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- 10.1.1.131:80
+ 1649  kubectl delete pod busybox
+ 1650  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- 172.17.0.10:80
+ 1651  kubectl get po nginx -oyaml
+ 1652  kubectl logs nginx -p
+ 1653  kubectl exec -it nginx -- /bin/sh
+ 1654  c
+ 1655  cc
+ 1656  git status
+ 1657  git add 1.yaml 
+ 1658  git commit -m "file"
+ 1659  git push origin master 
+ 1660  git add envpod.yaml 
+ 1661  git commit -m "env file"
+ 1662  git push origin master 
+ 1663  read fname 
+ 1664  echo $fname 
+ 1665  git add \$fname 
+ 1666  echo $fname 
+ 1667  git add fname
+ 1668  git add $fname
+ 1669  git status 
+ 1670  read fname
+ 1671  git status 
+ 1672  git add $fname
+ 1673  git status 
+ 1674  git commit -m "\$fname" 
+ 1675  git push origin master 
+ 1676  echo << EOF > gitBatch.sh
+ 1677  ls
+ 1678  git status
+ 1679  read fname
+ 1680  git add fname
+ 1681  EOF
+ 1682  ./gitBatch
+ 1683  gitBatch.sh
+ 1684  cat gitBatch.sh 
+ 1685  echo << EOF >> gitBatch.sh
+ 1686  ls
+ 1687  git status
+ 1688  read fname
+ 1689  git add fname
+ 1690  EOF
+ 1691  cat gitBatch.sh 
+ 1692  nano gitBatch.sh 
+ 1693  ./gitBatch
+ 1694  bash gitBatch.sh 
+ 1695  history 
+ 1696  nano gitBatch.sh 
+ 1697  bash gitBatch.sh 
+ 1698  nano gitBatch.sh 
+ 1699  cc
+ 1700  bash gitBatch.sh 
+ 1701  cc
+ 1702  nano gitBatch.sh 
+ 1703  bash gitBatch.sh 
+ 1704  nano gitBatch.sh 
+ 1705  git push origin master 
+ 1706  nano gitBatch.sh 
+ 1707  bash gitBatch.sh 
+ 1708  touch hi.txt
+ 1709  bash gitBatch.sh 
+ 1710  touch hey.txt
+ 1711  bash gitBatch.sh 
+ 1712  nano gitBatch.sh 
+ 1713  touch he.txt
+ 1714  bash gitBatch.sh 
+ 1715  touch he1.txt
+ 1716  bash gitBatch.sh 
+ 1717  nano gitBatch.sh 
+ 1718  touch he.txt
+ 1719  nano gitBatch.sh 
+ 1720  bash gitBatch.sh 
+ 1721  touch 2he.txt
+ 1722  bash gitBatch.sh 
+ 1723  nano gitBatch.sh 
+ 1724  cc
+ 1725  git status 
+ 1726  touch 3he.txt
+ 1727  git status 
+ 1728  cc
+ 1729  git add 3he.txt 
+ 1730  git commit -h
+ 1731  git commit -m "Update made on file"&&$fname
+ 1732  echo $fname
+ 1733  read fname
+ 1734  ll
+ 1735  ls
+ 1736  git commit -m "update on file " && $fname
+ 1737  touch 55.tt
+ 1738  read fnam
+ 1739  read fname
+ 1740  git add $fname
+ 1741  git status
+ 1742  git commit -m "update on file "&&$fname
+ 1743  cat gitBatch.sh 
+ 1744  git commit -m "update on file " && $fname
+ 1745  echo "hi " && $fname
+ 1746  echo "hi " && fname
+ 1747  echo "hi "&&$fname
+ 1748  echo "hi "&$fname
+ 1749  echo "hi "&&fname
+ 1750  echo "hi "&fname
+ 1751  man echp
+ 1752  man echo
+ 1753  whatis echo
+ 1754  nano gitBatch.sh 
+ 1755  echo fname
+ 1756  echo $fname
+ 1757  echo "hi $fname"
+ 1758  nano gitBatch.sh 
+ 1759  ls
+ 1760  ll
+ 1761  rm 3he.txt 
+ 1762  rm 2he.txt 
+ 1763  rm hi.txt 
+ 1764  rm hey.txt 
+ 1765  rm 55.tt 
+ 1766  rm hey
+ 1767  rm hey.txt
+ 1768  rm he.txt 
+ 1769  rm he1.txt 
+ 1770  ls
+ 1771  touch bye.txt
+ 1772  bash gitBatch.sh 
+ 1773  git push origin master 
+ 1774  git pull 
+ 1775  git merge
+ 1776  git pull 
+ 1777  git push origin master 
+ 1778  ls
+ 1779  touch 2.txt
+ 1780  bash gitBatch.sh 
+ 1781  ls
+ 1782  rm 2.txt 
+ 1783  rm bye.txt 
+ 1784  git add .
+ 1785  git commit -m "update all $fname"
+ 1786  git push origin master 
+ 1787  nano gitBatch.sh 
+ 1788  ls
+ 1789  cc
+ 1790  nano gitBatch.sh 
+ 1791  touch 66.tt
+ 1792  bash gitBatch.sh 
+ 1793  nano gitBatch.sh 
+ 1794  rm 66.tt 
+ 1795  touch 77.tt
+ 1796  bash gitBatch.sh 
+ 1797  nano gitBatch.sh 
+ 1798  bash gitBatch.sh 
+ 1799  ls
+ 1800  rm 77.tt 
+ 1801  git pull
+ 1802  git status 
+ 1803  echo --help
+ 1804  echo -h
+ 1805  man echo
+ 1806  nano gitBatch.sh 
+ 1807  echo -e "I ${RED}love${NC} Stack Overflow"
+ 1808  RED='\033[0;31m'
+ 1809  NC='\033[0m' # No Color
+ 1810  printf "I ${RED}love${NC} Stack Overflow\n"
+ 1811  nano gitBatch.sh 
+ 1812  RED='\033[0;31m'
+ 1813  NC='\033[0m' 
+ 1814  # printf "I ${RED}love${NC} Stack Overflow\n"
+ 1815  echo "                           " 
+ 1816  echo "****** Welcome to Git Script by ${RED}BAZ *****\n" 
+ 1817  nano gitBatch.sh 
+ 1818  cc
+ 1819  RED='\033[0;31m'
+ 1820  NC='\033[0m' 
+ 1821  # printf "I ${RED}love${NC} Stack Overflow\n"
+ 1822  echo -e "\n****** Welcome to Git Script by ${RED}BAZ *****\n" 
+ 1823  nano gitBatch.sh 
+ 1824  touch 33.ty
+ 1825  bash gitBatch.sh 
+ 1826  nano gitBatch.sh 
+ 1827  bash gitBatch.sh 
+ 1828  cc
+ 1829  ls
+ 1830  rm 33.ty 
+ 1831  cc
+ 1832  kubectl run bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld"
+ 1833  kubectl logs pod bb
+ 1834  kubectl get pod bb
+ 1835  kubectl describe pod bb
+ 1836  kubectl get pod bb --dry-run -oyaml
+ 1837  kubectl get pod bb --dry-run -o yaml
+ 1838  kubectl run pod bb --dry-run -oyaml
+ 1839  kubectl run bb --dry-run -oyaml
+ 1840  kubectl run bb --dry-run -o yaml
+ 1841  kubectl run bb --
+ 1842  kubectl get pod bb
+ 1843  kubectl run bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld" --dry-run -o yaml
+ 1844  kubectl run bb1 --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld" --dry-run -o yaml
+ 1845  kubectl get pod bb*
+ 1846  kubectl get pod bb1
+ 1847  kubectl delete pod bb
+ 1848  kubectl delete pod bb1
+ 1849  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld" -o yaml
+ 1850  kubectl delete pod bb
+ 1851  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld" -o yaml > bb.yaml
+ 1852  cat bb.yaml 
+ 1853  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  > bb.yaml
+ 1854  cat bb.yaml 
+ 1855  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  >> bb.yaml
+ 1856  cat bb.yaml 
+ 1857  kubectl run bb --image=busybox --restart=Never --dry-run  -o yaml -- /bin/sh "echo -c Hello W0rld"  >> bb.yaml
+ 1858  cat bb.yaml 
+ 1859  kubectl run busybox --image=busybox -it --restart=Never -- /bin/sh -c 'echo hello world'
+ 1860  kubectl run busybox --image=busybox -it --restart=Never -- echo 'hello world'
+ 1861  kubectl run busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1862  kubectl run 2busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1863  minikube status
+ 1864  kubectl run 2busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1865  kubectl run 3busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1866  kubectl run 3busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1867  kubectl run 33busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1868  kubectl run 43busybox1 --image=busybox -it --restart=Never --dry-run -o yaml -- echo 'hello world'
+ 1869  kubectl run 43busybox1 --image=busybox -it --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'
+ 1870  kubectl run 43busybox1 --image=busybox  --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'
+ 1871  kubectl run 43busybox1 --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'
+ 1872  kubectl run 3busybox1 --image=busybox  --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1873  kubectl run 53busybox1 --image=busybox --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1874  minikube status
+ 1875  cc
+ 1876  kubectl run nginxENV --image=nginx --restart=Never --env=var1=val1
+ 1877  kubectl run nginxenv --image=nginx --restart=Never --env=var1=val1
+ 1878  kubectl exec -it ngenv -- env
+ 1879  kubectl exec -it nginxenv -- env
+ 1880  cc'
+ 1881  cc
+ 1882  bash gitBatch.sh 
+ 1883  cc
+ 1884  exit
+ 1885  cc
+ 1886  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -oyaml
+ 1887  kubectl delete pod b2mc
+ 1888  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -oyaml > 2b1.yaml
+ 1889  nano 2b1.yaml 
+ 1890  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -o yaml> > 2b1.yaml
+ 1891  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -o yaml >> 2b1.yaml
+ 1892  kubectl delete pod b2mc
+ 1893  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -o yaml >> 2b1.yaml
+ 1894  nano 2b1.yaml 
+ 1895  kubectl run b2mc --image=busybox --restart=Never --dry-run -- /bin/sh "echo Helloo World; sleep 3600" -o yaml > 2b.yaml
+ 1896  nano 2b1.yaml 
+ 1897  cc
+ 1898  kubectl b2mc --image=busybox --restart=Never -o yaml --dry-run -- /bin/sh -c "echo hello; sleep 3600" > b2mc.yaml
+ 1899  kubectl run b2mc --image=busybox --restart=Never -o yaml --dry-run -- /bin/sh -c "echo hello; sleep 3600" > b2mc.yaml
+ 1900  nano b2mc.yaml 
+ 1901  kubectl create -f b2mc.yaml 
+ 1902  kubectl delete pod b2mc
+ 1903  kubectl create -f b2mc.yaml 
+ 1904  kubectl get pod b2mc
+ 1905  kubectl get pod b2mc -w
+ 1906  kubectl exec -ti b2mc -c bb2 -- /bin/sh
+ 1907  kubectl exec -ti b2mc -c bb -- /bin/sh
+ 1908  ls
+ 1909  kubectl exec -ti b2mc -c bb1 -- /bin/sh
+ 1910  cc
+ 1911  kubectl run c1a --image=nginx --restart=Never --label=app=v1
+ 1912  cc
+ 1913  kubectl run c1a --image=nginx --restart=Never --labels=app=v1
+ 1914  kubectl get pod c1a
+ 1915  kubectl get pod c1a --show-labels
+ 1916  kubectl run c1b --image=nginx --restart=Never --labels=app=v1
+ 1917  kubectl get pod c1a --show-labels
+ 1918  kubectl get pod  --show-labels
+ 1919  cc
+ 1920  kubectl label pod c3b app=v2 --overwrite
+ 1921  kubectl label pod c1b app=v2 --overwrite
+ 1922  kubectl get pod c1a --show-labels
+ 1923  kubectl get pod c1b --show-labels
+ 1924  kubectl get po -L app
+ 1925  kubectl get po -label-columns=app
+ 1926  kubectl get po --label-columns=app
+ 1927  cc
+ 1928  kget po -l aap=v2
+ 1929  kubectl get po -l aap=v2
+ 1930  kubectl get po -l app=v2
+ 1931  kubectl get po -l app=v1
+ 1932  kubectl get po -l 
+ 1933  kubectl get po -l a
+ 1934  cc
+ 1935  kubectl get po -l 'app in (v2)'
+ 1936  kubectl get po --selector=app=v2
+ 1937  cc
+ 1938  kubectl get  pod 
+ 1939  kubectl label pod c1a app-
+ 1940  kubectl get pod c1b
+ 1941  kubectl get pod c1b --show-label
+ 1942  kubectl get pod c1b --show-labels
+ 1943  kubectl get pod c1a --show-labels
+ 1944  cc
+ 1945  bash gitBash
+ 1946  bash gitBash.sh
+ 1947  history | grep bash
+ 1948  bash gitBatch.sh 
+ 1949  exit
+ 1950  minikube start
+ 1951  echo "# k8CKAD" >> README.md
+ 1952  git init
+ 1953  git add README.md
+ 1954  git commit -m "first commit"
+ 1955  git remote add origin https://github.com/engineerbaz/k8CKAD.git
+ 1956  git push -u origin master
+ 1957  echo "echo "# k8CKAD" >> README.md
+ 1958  git init
+ 1959  git add README.md
+ 1960  git commit -m "first commit"
+ 1961  git remote add origin https://github.com/engineerbaz/k8CKAD.git
+ 1962  git push -u origin master
+ 1963  echo "Preparation of K8s for CKAD exam" >> README.md 
+ 1964  git add README.md 
+ 1965  git commit -m "2nd"
+ 1966  git push -u origin master
+ 1967  cc
+ 1968  source <(kubectl completion bash)
+ 1969  script 202003141414
+ 1970  script 202003141444
+ 1971  script 202003150112
+ 1972  bash gitBatch.sh 
+ 1973  cc
+ 1974  exit
+ 1975  ls
+ 1976  ls *.bat
+ 1977  ls *.sh
+ 1978  ll ?it*.sh
+ 1979  ll ??it*.sh
+ 1980  exit
+ 1981  cc
+ 1982  kubectl run ca1 --image=nginx:1.7.8 --replicas=2 --port=80
+ 1983  kubectl create deploy ca1a --image=nginx:1.7.8 --dry-run -o yaml > ca1a.yaml
+ 1984  nano ca1a.yaml 
+ 1985  kubectl apply -f ca1a.yaml 
+ 1986  kubectl get deploy
+ 1987  kubectl get deploy ca1 -o yaml
+ 1988  cc
+ 1989  kubectl describe deply ca1
+ 1990  kubectl describe deploy ca1
+ 1991  cc
+ 1992  kubectl get rs -l run=nginx
+ 1993  kubectl get rs -l run=ca1
+ 1994  kubectl get pod -l run=ca1
+ 1995  kubectl get pod -l app=ca1
+ 1996  kubectl get pod -l app=ca1a
+ 1997  kubectl rollout status deploy ca1
+ 1998  kubectl set image deploy ca1 nginx=nginx:1.7.9
+ 1999  kubectl set image deploy ca1 nginx:1.7.8=nginx:1.7.9
+ 2000  nano ca1a.yaml 
+ 2001  kubectl set image deploy ca1a nginx=nginx:1.7.9
+ 2002  cc
+ 2003  kubectl rollout history deploy ca1
+ 2004  kubectl rollout history deploy ca1a
+ 2005  kubectl get rs
+ 2006  cc
+ 2007  kubectl rollout undo deploy ca1a
+ 2008  kubectl get po 
+ 2009  ca1a-6847576946-62k27 | grep -i image
+ 2010  kubectl get po 
+ 2011  kubectl describe pod ca1a-6847576946-62k27 | grep -i image
+ 2012  cc
+ 2013  kubectl set image deploy ca1a nginx=nginx:1.9.1
+ 2014  kubectl rllout status deploy nginx
+ 2015  kubectl rllout status deploy ca1
+ 2016  kubectl rllout status deploy ca1a
+ 2017  kubectl rollout status deploy ca1a
+ 2018  kubectl rollout status deploy ca1
+ 2019  kubectl rollout status deploy ca1a
+ 2020  kubectl rollout status deploy ca1
+ 2021  kubectl rollout status deploy ca1a
+ 2022  cc
+ 2023  kubectl rollout status
+ 2024  kubectl rollout status deploy ca1a
+ 2025  kubectl rollout history deploy ca1a
+ 2026  kubectl rollout undo deploy ca1a --to-revision=2
+ 2027  kubectl describe deploy ca1a | grep Image:
+ 2028  kubectl rollout status ca1a
+ 2029  kubectl rollout status deploy ca1a
+ 2030  cc
+ 2031  kubectl rollout history deploy ca1aa
+ 2032  kubectl rollout history deploy ca1a
+ 2033  kubectl rollout history deploy ca1a --revision=4
+ 2034  kubectl rollout status deploy ca1a
+ 2035  history 
+ 2036  cc
+ 2037  kubectl rollout history deploy ca1a
+ 2038  history 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl depl[K[K[K[Kscae[Kle deploy 
+1.yaml              2b.yaml             envpod.yaml
+202003141414        2rq.yaml            .git/
+202003141444        b2mc.yaml           gitBatch.sh
+202003150112        bb.yaml             README.md
+202003151935        ca1a.yaml           
+2b1.yaml            commandsReview.txt  
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl scale deploy ca1a --replicas=5
+deployment.extensions/ca1a scaled
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl de[K[Kget deploy
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+67dep   4/4     4            4           16d
+ca1     2/2     2            2           23m
+ca1a    5/5     5            5           21m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deployscale deploy ca1a --replicas=5[K6
+deployment.extensions/ca1a scaled
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl scale deploy ca1a --replicas=6[20Pget deploy
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+67dep   4/4     4            4           16d
+ca1     2/2     2            2           23m
+ca1a    5/6     6            5           22m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+67dep   4/4     4            4           16d
+ca1     2/2     2            2           23m
+ca1a    6/6     6            6           22m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl autp[Koscale 
+Error: required flag(s) "max" not set
+
+
+Examples:
+  # Auto scale a deployment "foo", with the number of pods between 2 and 10, no target CPU utilization specified so a default autoscaling policy will be used:
+  kubectl autoscale deployment foo --min=2 --max=10
+  
+  # Auto scale a replication controller "foo", with the number of pods between 1 and 5, target CPU utilization at 80%:
+  kubectl autoscale rc foo --max=5 --cpu-percent=80
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --cpu-percent=-1: The target average CPU utilization (represented as a percent of requested CPU) over all the pods. If it's not specified or negative, a default autoscaling policy will be used.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to autoscale.
+      --generator='horizontalpodautoscaler/v1': The name of the API generator to use. Currently there is only 1 generator.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+      --max=-1: The upper limit for the number of pods that can be set by the autoscaler. Required.
+      --min=-1: The lower limit for the number of pods that can be set by the autoscaler. If it's not specified or negative, the server will apply a default value.
+      --name='': The name for the newly created object. If not specified, the name of the input resource will be used.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+
+Usage:
+  kubectl autoscale (-f FILENAME | TYPE NAME | TYPE/NAME) [--min=MINPODS] --max=MAXPODS [--cpu-percent=CPU] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+required flag(s) "max" not set
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl autoscale deploy cata[K[K1a --min=3 --max=7 --cpu=80[K[K[K-percent=70
+horizontalpodautoscaler.autoscaling/ca1a autoscaled
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl autoscale deploy ca1a --min=3 --max=7 --cpu-percent=70[Kcc[Kkubectl get deploy
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+67dep   4/4     4            4           16d
+ca1     2/2     2            2           25m
+ca1a    6/6     6            6           23m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy ca1a.yaml [K[K[K[K[K[K 
+NAME   READY   UP-TO-DATE   AVAILABLE   AGE
+ca1a   6/6     6            6           23m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy ca1a 
+1.yaml              202003150112        2b.yaml             bb.yaml             envpod.yaml         README.md           
+202003141414        202003151935        2rq.yaml            ca1a.yaml           .git/               
+202003141444        2b1.yaml            b2mc.yaml           commandsReview.txt  gitBatch.sh         
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy ca1a -h
+Display one or many resources
+
+ Prints a table of the most important information about the specified resources. You can filter the list using a label
+selector and the --selector flag. If the desired resource type is namespaced you will only see results in your current
+namespace unless you pass --all-namespaces.
+
+ Uninitialized objects are not shown unless --include-uninitialized is passed.
+
+ By specifying the output as 'template' and providing a Go template as the value of the --template flag, you can filter
+the attributes of the fetched resources.
+
+Use "kubectl api-resources" for a complete list of supported resources.
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current
+context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in
+the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and
+may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector
+key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are
+case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print
+headers).
+  -o, --output='': Output format. One of:
+json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...
+See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template
+[http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template
+[http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage
+related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and
+CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed
+as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression
+must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The
+template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded
+if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get
+[(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...]
+(TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy ca1a -h[K[K[K top
+NAME   READY   UP-TO-DATE   AVAILABLE   AGE
+ca1a   6/6     6            6           24m
+Error from server (NotFound): deployments.extensions "top" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod 
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod 
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          28d
+07nginx                  0/1     Error       0          28d
+100vol                   0/1     Error       0          15d
+104pvc2b                 0/1     Error       0          15d
+111                      0/1     Error       0          14d
+113                      0/1     Completed   0          14d
+114nginx                 0/1     Completed   0          13d
+117                      0/1     Error       0          13d
+118                      0/1     Error       0          13d
+126                      0/1     Error       0          10d
+131                      0/1     Error       0          10d
+132                      0/1     Error       0          10d
+134                      0/1     Completed   0          8d
+136                      0/1     Completed   0          8d
+137busybox               0/1     Error       0          8d
+13nginx                  0/1     Completed   1          28d
+140                      0/1     Error       0          8d
+144                      0/1     Error       0          8d
+17shell                  0/1     Error       0          28d
+19bb                     0/1     Completed   0          28d
+21bb                     0/1     Completed   0          28d
+29mc                     0/3     Completed   0          26d
+2busybox1                0/1     Completed   0          23h
+33busybox1               0/1     Completed   0          22h
+34mc                     0/2     Error       0          26d
+37-ng-1                  0/1     Error       0          20d
+37-ng-2                  0/1     Error       0          20d
+37-ng-3                  0/1     Error       0          20d
+3busybox1                0/1     Completed   0          23h
+53busybox1               0/1     Completed   0          22h
+67dep-7db4cf66f7-2hfgb   1/1     Running     13         15d
+67dep-7db4cf66f7-9wrj7   1/1     Running     13         15d
+67dep-7db4cf66f7-h5g7f   1/1     Running     13         15d
+67dep-7db4cf66f7-m2269   1/1     Running     13         15d
+84job-9gkc8              0/1     Completed   0          15d
+88job-bx58m              0/1     Completed   0          15d
+b2mc                     0/2     Completed   0          18h
+busybox                  0/1     Completed   0          23h
+busybox1                 0/1     Completed   0          23h
+c1a                      0/1     Error       0          18h
+c1b                      0/1     Error       0          18h
+ca1-66d6b4f974-4dxf6     1/1     Running     0          26m
+ca1-66d6b4f974-dl85x     1/1     Running     0          26m
+ca1a-5b57bbb657-bwskd    1/1     Running     0          11m
+ca1a-5b57bbb657-c8z29    1/1     Running     0          2m41s
+ca1a-5b57bbb657-gv7nv    1/1     Running     0          2m23s
+ca1a-5b57bbb657-mjrt8    1/1     Running     0          2m41s
+ca1a-5b57bbb657-rh5tv    1/1     Running     0          11m
+ca1a-5b57bbb657-t55hh    1/1     Running     0          2m41s
+hello                    0/1     Error       0          8d
+mysec                    0/1     Error       0          13d
+nginx                    0/1     Error       1          29h
+nginxenv                 0/1     Error       0          22h
+not-running              0/1     Error       0          8d
+secbusybox               0/1     Error       0          13d
+test114                  0/1     Completed   0          13d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod ca1a-5b57bbb657-gv7nv 
+NAME                    READY   STATUS    RESTARTS   AGE
+ca1a-5b57bbb657-gv7nv   1/1     Running   0          2m37s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top -h
+Display Resource (CPU/Memory/Storage) usage.
+
+ The top command allows you to see the resource consumption for nodes or pods.
+
+ This command requires Heapster to be correctly configured and working on the server.
+
+Available Commands:
+  node        Display Resource (CPU/Memory/Storage) usage of nodes
+  pod         Display Resource (CPU/Memory/Storage) usage of pods
+
+Usage:
+  kubectl top [flags] [options]
+
+Use "kubectl <command> --help" for more information about a given command.
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top -h[K[Kpod ca1a-5b57bbb657-gv7nv
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod ca1a-5b57bbb657-gv7nv[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kd -h
+Display Resource (CPU/Memory/Storage) usage of pods.
+
+ The 'top pod' command allows you to see the resource consumption of pods.
+
+ Due to the metrics pipeline delay, they may be unavailable for a few minutes since pod creation.
+
+Aliases:
+pod, pods, po
+
+Examples:
+  # Show metrics for all pods in the default namespace
+  kubectl top pod
+  
+  # Show metrics for all pods in the given namespace
+  kubectl top pod --namespace=NAMESPACE
+  
+  # Show metrics for a given pod and its containers
+  kubectl top pod POD_NAME --containers
+  
+  # Show metrics for the pods defined by label name=myLabel
+  kubectl top pod -l name=myLabel
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current
+context is ignored even if specified with --namespace.
+      --containers=false: If present, print usage of containers within a pod.
+      --heapster-namespace='kube-system': Namespace Heapster service is located in
+      --heapster-port='': Port name in service to use
+      --heapster-scheme='http': Scheme (http or https) to connect to Heapster as
+      --heapster-service='heapster': Name of Heapster service
+      --no-headers=false: If present, print output without headers.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --sort-by='': If non-empty, sort pods list using specified field. The field can be either 'cpu' or 'memory'.
+
+Usage:
+  kubectl top pod [NAME | -l label] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod -h[K[K
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod 
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod [K[K[K[Knode
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top node --help
+Display Resource (CPU/Memory/Storage) usage of nodes.
+
+ The top-node command allows you to see the resource consumption of nodes.
+
+Aliases:
+node, nodes, no
+
+Examples:
+  # Show metrics for all nodes
+  kubectl top node
+  
+  # Show metrics for a given node
+  kubectl top node NODE_NAME
+
+Options:
+      --heapster-namespace='kube-system': Namespace Heapster service is located in
+      --heapster-port='': Port name in service to use
+      --heapster-scheme='http': Scheme (http or https) to connect to Heapster as
+      --heapster-service='heapster': Name of Heapster service
+      --no-headers=false: If present, print output without headers
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --sort-by='': If non-empty, sort nodes list using specified field. The field can be either 'cpu' or 'memory'.
+
+Usage:
+  kubectl top node [NAME | -l label] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top node --help[K[K[K[K[K[Kminikube
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top node --heapster-namespace='default
+> exit
+> ^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top node --heapster-namespace='default
+exit[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$  kubectl top node --heapster-namespace=kube-system
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[K[Kkubectl version 
+Client Version: version.Info{Major:"1", Minor:"15", GitVersion:"v1.15.2", GitCommit:"f6278300bebbb750328ac16ee6dd3aa7d3549568", GitTreeState:"clean", BuildDate:"2019-08-05T09:23:26Z", GoVersion:"go1.12.5", Compiler:"gc", Platform:"linux/amd64"}
+Server Version: version.Info{Major:"1", Minor:"15", GitVersion:"v1.15.2", GitCommit:"f6278300bebbb750328ac16ee6dd3aa7d3549568", GitTreeState:"clean", BuildDate:"2019-08-05T09:15:22Z", GoVersion:"go1.12.5", Compiler:"gc", Platform:"linux/amd64"}
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
+Cloning into 'kubernetes-metrics-server'...
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Compressing objects:  33% (1/3)[Kremote: Compressing objects:  66% (2/3)[Kremote: Compressing objects: 100% (3/3)[Kremote: Compressing objects: 100% (3/3), done.[K
+remote: Total 15 (delta 0), reused 0 (delta 0), pack-reused 12[K
+Unpacking objects:   6% (1/15)   Unpacking objects:  13% (2/15)   Unpacking objects:  20% (3/15)   Unpacking objects:  26% (4/15)   Unpacking objects:  33% (5/15)   Unpacking objects:  40% (6/15)   Unpacking objects:  46% (7/15)   Unpacking objects:  53% (8/15)   Unpacking objects:  60% (9/15)   Unpacking objects:  66% (10/15)   Unpacking objects:  73% (11/15)   Unpacking objects:  80% (12/15)   Unpacking objects:  86% (13/15)   Unpacking objects:  93% (14/15)   Unpacking objects: 100% (15/15)   Unpacking objects: 100% (15/15), done.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create -f kubernetes-metrics-server/
+clusterrole.rbac.authorization.k8s.io/system:aggregated-metrics-reader created
+clusterrolebinding.rbac.authorization.k8s.io/metrics-server:system:auth-delegator created
+rolebinding.rbac.authorization.k8s.io/metrics-server-auth-reader created
+apiservice.apiregistration.k8s.io/v1beta1.metrics.k8s.io created
+serviceaccount/metrics-server created
+deployment.apps/metrics-server created
+service/metrics-server created
+clusterrole.rbac.authorization.k8s.io/system:metrics-server created
+clusterrolebinding.rbac.authorization.k8s.io/system:metrics-server created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top nodes
+Error from server (ServiceUnavailable): the server is currently unable to handle the request (get nodes.metrics.k8s.io)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top nodes[K[K[K[K[Ko[po[K[K[K[Kpods
+Error from server (ServiceUnavailable): the server is currently unable to handle the request (get pods.metrics.k8s.io)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top podsnodes
+error: metrics not available yet
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top nodes[K
+error: metrics not available yet
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top nodes[1Ppods[K
+W0315 20:13:31.983931    6588 top_pod.go:266] Metrics not available for pod default/06nginx, age: 675h45m54.983921929s
+error: Metrics not available for pod default/06nginx, age: 675h45m54.983921929s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pods
+W0315 20:13:36.113325    6598 top_pod.go:266] Metrics not available for pod default/06nginx, age: 675h45m59.113317715s
+error: Metrics not available for pod default/06nginx, age: 675h45m59.113317715s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pods[Knodes[1Ppodsnodescreate -f kubernetes-metrics-server/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone https://github.com/kodekloudhub/kubernetes-metrics-server.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl version [Kcc[Kkubectl top node --heapster-namespace='default' 
+exit[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cminikube[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P--helpcc[Kkubectl top nodepod -hca1a-5b57bbb657-gv7nv
+Error from server (NotFound): podmetrics.metrics.k8s.io "default/ca1a-5b57bbb657-gv7nv" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod ca1a-5b57bbb657-gv7nv[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ko
+W0315 20:13:55.049916    6619 top_pod.go:266] Metrics not available for pod default/06nginx, age: 675h46m18.049908401s
+error: Metrics not available for pod default/06nginx, age: 675h46m18.049908401s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top po
+W0315 20:15:02.703539    6635 top_pod.go:266] Metrics not available for pod default/06nginx, age: 675h47m25.703525654s
+error: Metrics not available for pod default/06nginx, age: 675h47m25.703525654s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod ca1a-5b57bbb657-gv7nvs[K[Knodes[1Ppodsnodescreate -f kubernetes-metrics-server/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone https://github.com/kodekloudhub/kubernetes-metrics-server.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl version [Kcc[Kkubectl top node --heapster-namespace='default'
+error: metrics not available yet
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top node --heapster-namespace='default'po[K
+W0315 20:15:17.934840    6654 top_pod.go:266] Metrics not available for pod default/06nginx, age: 675h47m40.934832612s
+error: Metrics not available for pod default/06nginx, age: 675h47m40.934832612s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top po[K[K
+Display Resource (CPU/Memory/Storage) usage.
+
+ The top command allows you to see the resource consumption for nodes or pods.
+
+ This command requires Heapster to be correctly configured and working on the server.
+
+Available Commands:
+  node        Display Resource (CPU/Memory/Storage) usage of nodes
+  pod         Display Resource (CPU/Memory/Storage) usage of pods
+
+Usage:
+  kubectl top [flags] [options]
+
+Use "kubectl <command> --help" for more information about a given command.
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ node --h
+
+Command 'node' not found, but can be installed with:
+
+sudo apt install nodejs
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ node --hkubectl top nod [Ke -h
+Display Resource (CPU/Memory/Storage) usage of nodes.
+
+ The top-node command allows you to see the resource consumption of nodes.
+
+Aliases:
+node, nodes, no
+
+Examples:
+  # Show metrics for all nodes
+  kubectl top node
+  
+  # Show metrics for a given node
+  kubectl top node NODE_NAME
+
+Options:
+      --heapster-namespace='kube-system': Namespace Heapster service is located in
+      --heapster-port='': Port name in service to use
+      --heapster-scheme='http': Scheme (http or https) to connect to Heapster as
+      --heapster-service='heapster': Name of Heapster service
+      --no-headers=false: If present, print output without headers
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --sort-by='': If non-empty, sort nodes list using specified field. The field can be either 'cpu' or 'memory'.
+
+Usage:
+  kubectl top node [NAME | -l label] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top node -h[K[K[K[K[K[K[Kpod -h
+Display Resource (CPU/Memory/Storage) usage of pods.
+
+ The 'top pod' command allows you to see the resource consumption of pods.
+
+ Due to the metrics pipeline delay, they may be unavailable for a few minutes since pod creation.
+
+Aliases:
+pod, pods, po
+
+Examples:
+  # Show metrics for all pods in the default namespace
+  kubectl top pod
+  
+  # Show metrics for all pods in the given namespace
+  kubectl top pod --namespace=NAMESPACE
+  
+  # Show metrics for a given pod and its containers
+  kubectl top pod POD_NAME --containers
+  
+  # Show metrics for the pods defined by label name=myLabel
+  kubectl top pod -l name=myLabel
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current
+context is ignored even if specified with --namespace.
+      --containers=false: If present, print usage of containers within a pod.
+      --heapster-namespace='kube-system': Namespace Heapster service is located in
+      --heapster-port='': Port name in service to use
+      --heapster-scheme='http': Scheme (http or https) to connect to Heapster as
+      --heapster-service='heapster': Name of Heapster service
+      --no-headers=false: If present, print output without headers.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --sort-by='': If non-empty, sort pods list using specified field. The field can be either 'cpu' or 'memory'.
+
+Usage:
+  kubectl top pod [NAME | -l label] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod -h[KA
+W0315 20:15:53.842629    6707 top_pod.go:266] Metrics not available for pod default/06nginx, age: 675h48m16.842617594s
+error: Metrics not available for pod default/06nginx, age: 675h48m16.842617594s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod -Ah
+Display Resource (CPU/Memory/Storage) usage of pods.
+
+ The 'top pod' command allows you to see the resource consumption of pods.
+
+ Due to the metrics pipeline delay, they may be unavailable for a few minutes since pod creation.
+
+Aliases:
+pod, pods, po
+
+Examples:
+  # Show metrics for all pods in the default namespace
+  kubectl top pod
+  
+  # Show metrics for all pods in the given namespace
+  kubectl top pod --namespace=NAMESPACE
+  
+  # Show metrics for a given pod and its containers
+  kubectl top pod POD_NAME --containers
+  
+  # Show metrics for the pods defined by label name=myLabel
+  kubectl top pod -l name=myLabel
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current
+context is ignored even if specified with --namespace.
+      --containers=false: If present, print usage of containers within a pod.
+      --heapster-namespace='kube-system': Namespace Heapster service is located in
+      --heapster-port='': Port name in service to use
+      --heapster-scheme='http': Scheme (http or https) to connect to Heapster as
+      --heapster-service='heapster': Name of Heapster service
+      --no-headers=false: If present, print output without headers.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --sort-by='': If non-empty, sort pods list using specified field. The field can be either 'cpu' or 'memory'.
+
+Usage:
+  kubectl top pod [NAME | -l label] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl top pod -hA
+W0315 20:28:49.914214    6899 top_pod.go:266] Metrics not available for pod default/06nginx, age: 676h1m12.914198728s
+error: Metrics not available for pod default/06nginx, age: 676h1m12.914198728s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl pasuse [K[K[K[K[K[Kause [K[K[K[K[K[Krollout pause deploy ca1a
+deployment.extensions/ca1a paused
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl set image deploy n[Kca1a nginx=nginx: 1.91[K.1
+deployment.extensions/ca1a image updated
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rolloi[Kut history deploy ca1a
+deployment.extensions/ca1a 
+REVISION  CHANGE-CAUSE
+3         <none>
+5         <none>
+6         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl ri[Koloout resune [K[K[Kme deploy ca1a
+Error: unknown command "roloout" for "kubectl"
+
+Did you mean this?
+	rollout
+
+Run 'kubectl --help' for usage.
+unknown command "roloout" for "kubectl"
+
+Did you mean this?
+	rollout
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl roloout resume deploy ca1a[1P[1@l
+deployment.extensions/ca1a resumed
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rollout resume deploy ca1ao[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@lout history[C[C[C[C[C[C[C[C[C[C[C[Cset image deploy ca1a nginx=nginx:11.9.1[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[7Prollout history deploy ca1a
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+deployment.extensions/ca1a 
+REVISION  CHANGE-CAUSE
+3         <none>
+5         <none>
+6         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run c1[K2 --image=perl --restart=once [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[KnFa [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca ilure --dry-t[Krun -o yaml -- ./bin[K[K[K[K[K/bin/sh [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kperl -Mbignum=bpi -wle 'print bpi(2000)'
+Error: unknown flag: --perl
+
+
+Examples:
+  # Start a single instance of nginx.
+  kubectl run nginx --image=nginx
+  
+  # Start a single instance of hazelcast and let the container expose port 5701 .
+  kubectl run hazelcast --image=hazelcast --port=5701
+  
+  # Start a single instance of hazelcast and set environment variables "DNS_DOMAIN=cluster" and "POD_NAMESPACE=default" in the container.
+  kubectl run hazelcast --image=hazelcast --env="DNS_DOMAIN=cluster" --env="POD_NAMESPACE=default"
+  
+  # Start a single instance of hazelcast and set labels "app=hazelcast" and "env=prod" in the container.
+  kubectl run hazelcast --image=hazelcast --labels="app=hazelcast,env=prod"
+  
+  # Start a replicated instance of nginx.
+  kubectl run nginx --image=nginx --replicas=5
+  
+  # Dry run. Print the corresponding API objects without creating them.
+  kubectl run nginx --image=nginx --dry-run
+  
+  # Start a single instance of nginx, but overload the spec of the deployment with a partial set of values parsed from JSON.
+  kubectl run nginx --image=nginx --overrides='{ "apiVersion": "v1", "spec": { ... } }'
+  
+  # Start a pod of busybox and keep it in the foreground, don't restart it if it exits.
+  kubectl run -i -t busybox --image=busybox --restart=Never
+  
+  # Start the nginx container using the default command, but use custom arguments (arg1 .. argN) for that command.
+  kubectl run nginx --image=nginx -- <arg1> <arg2> ... <argN>
+  
+  # Start the nginx container using a different command and custom arguments.
+  kubectl run nginx --image=nginx --command -- <cmd> <arg1> ... <argN>
+  
+  # Start the perl container to compute π to 2000 places and print it out.
+  kubectl run pi --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+  
+  # Start the cron job to compute π to 2000 places and print it out every 5 minutes.
+  kubectl run pi --schedule="0/5 * * * ?" --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --attach=false: If true, wait for the Pod to start running, and then attach to the Pod as if 'kubectl attach ...' were called.  Default false, unless '-i/--stdin' is set, in which case the default is true. With '--restart=Never' the exit code of the container process is returned.
+      --cascade=true: If true, cascade the deletion of the resources managed by this resource (e.g. Pods created by a ReplicationController).  Default true.
+      --command=false: If true and extra arguments are present, use them as the 'command' field in the container, rather than the 'args' field which is the default.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --env=[]: Environment variables to set in the container
+      --expose=false: If true, a public, external service is created for the container(s) which are run
+  -f, --filename=[]: to use to replace the resource.
+      --force=false: Only used when grace-period=0. If true, immediately remove resources from API and bypass graceful deletion. Note that immediate deletion of some resources may result in inconsistency or data loss and requires confirmation.
+      --generator='': The name of the API generator to use, see http://kubernetes.io/docs/user-guide/kubectl-conventions/#generators for a list.
+      --grace-period=-1: Period of time in seconds given to the resource to terminate gracefully. Ignored if negative. Set to 1 for immediate shutdown. Can only be set to 0 when --force is true (force deletion).
+      --hostport=-1: The host port mapping for the container port. To demonstrate a single-machine container.
+      --image='': The image for the container to run.
+      --image-pull-policy='': The image pull policy for the container. If left empty, this value will not be specified by the client and defaulted by the server
+  -k, --kustomize='': Process a kustomization directory. This flag can't be used together with -f or -R.
+  -l, --labels='': Comma separated labels to apply to the pod(s). Will override previous values.
+      --leave-stdin-open=false: If the pod is started in interactive mode or with stdin, leave stdin open after the first attach completes. By default, stdin will be closed after the first attach completes.
+      --limits='': The resource requirement limits for this container.  For example, 'cpu=200m,memory=512Mi'.  Note that server side components may assign limits depending on the server configuration, such as limit ranges.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --overrides='': An inline JSON override for the generated object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.
+      --pod-running-timeout=1m0s: The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
+      --port='': The port that this container exposes.  If --expose is true, this is also the port used by the service that is created.
+      --quiet=false: If true, suppress prompt messages.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -r, --replicas=1: Number of replicas to create for this container. Default is 1.
+      --requests='': The resource requirement requests for this container.  For example, 'cpu=100m,memory=256Mi'.  Note that server side components may assign requests depending on the server configuration, such as limit ranges.
+      --restart='Always': The restart policy for this Pod.  Legal values [Always, OnFailure, Never].  If set to 'Always' a deployment is created, if set to 'OnFailure' a job is created, if set to 'Never', a regular pod is created. For the latter two --replicas must be 1.  Default 'Always', for CronJobs `Never`.
+      --rm=false: If true, delete resources created in this command for attached containers.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+      --schedule='': A schedule in the Cron format the job should be run with.
+      --service-generator='service/v2': The name of the generator to use for creating a service.  Only used if --expose is true
+      --service-overrides='': An inline JSON override for the generated service object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.  Only used if --expose is true.
+      --serviceaccount='': Service account to set in the pod spec
+  -i, --stdin=false: Keep stdin open on the container(s) in the pod, even if nothing is attached.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --timeout=0s: The length of time to wait before giving up on a delete, zero means determine a timeout from the size of the object
+  -t, --tty=false: Allocated a TTY for each container in the pod.
+      --wait=false: If true, wait for resources to be gone before returning. This waits for finalizers.
+
+Usage:
+  kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --perl
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run c2 --image=perl --restart=onFaiilure --perl -Mbignum=bpi -wle 'print bpi(2000)'[K[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run c2 --image=perl --restart=onFailure --perl -Mbignum=bpi -wle 'print bpi(2000)'[1@ 
+error: invalid restart policy: onFailure
+See 'kubectl run -h' for help and examples
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run c2 --image=perl --restart=onFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run c2 --image=perl --restart=onFaiilure -- perl -Mbignum=bpi -wle 'print bpi(2000)'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[K[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run c2 --image=perl --restart=onFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[20@--restart=OnFailure [1P
+kubectl run --generator=job/v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+job.batch/c2 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        15d
+88job   2/2           15s        15d
+c2      0/1           16s        16s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job -v
+Error: flag needs an argument: 'v' in -v
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+flag needs an argument: 'v' in -v
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job -v[Kw
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        15d
+88job   2/2           15s        15d
+c2      0/1           23s        23s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs c2
+Error from server (NotFound): pods "c2" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k[Kkubectl get pod
+NAME                     READY   STATUS              RESTARTS   AGE
+06nginx                  0/1     Error               0          28d
+07nginx                  0/1     Error               0          28d
+100vol                   0/1     Error               0          15d
+104pvc2b                 0/1     Error               0          15d
+111                      0/1     Error               0          14d
+113                      0/1     Completed           0          14d
+114nginx                 0/1     Completed           0          13d
+117                      0/1     Error               0          13d
+118                      0/1     Error               0          13d
+126                      0/1     Error               0          11d
+131                      0/1     Error               0          10d
+132                      0/1     Error               0          10d
+134                      0/1     Completed           0          8d
+136                      0/1     Completed           0          8d
+137busybox               0/1     Error               0          8d
+13nginx                  0/1     Completed           1          28d
+140                      0/1     Error               0          8d
+144                      0/1     Error               0          8d
+17shell                  0/1     Error               0          28d
+19bb                     0/1     Completed           0          28d
+21bb                     0/1     Completed           0          28d
+29mc                     0/3     Completed           0          26d
+2busybox1                0/1     Completed           0          23h
+33busybox1               0/1     Completed           0          23h
+34mc                     0/2     Error               0          26d
+37-ng-1                  0/1     Error               0          21d
+37-ng-2                  0/1     Error               0          21d
+37-ng-3                  0/1     Error               0          21d
+3busybox1                0/1     Completed           0          23h
+53busybox1               0/1     Completed           0          23h
+67dep-7db4cf66f7-2hfgb   1/1     Running             13         16d
+67dep-7db4cf66f7-9wrj7   1/1     Running             13         16d
+67dep-7db4cf66f7-h5g7f   1/1     Running             13         16d
+67dep-7db4cf66f7-m2269   1/1     Running             13         16d
+84job-9gkc8              0/1     Completed           0          15d
+88job-bx58m              0/1     Completed           0          15d
+b2mc                     0/2     Completed           0          19h
+busybox                  0/1     Completed           0          23h
+busybox1                 0/1     Completed           0          23h
+c1a                      0/1     Error               0          19h
+c1b                      0/1     Error               0          19h
+c2-m6cjm                 0/1     ContainerCreating   0          54s
+ca1-66d6b4f974-4dxf6     1/1     Running             0          78m
+ca1-66d6b4f974-dl85x     1/1     Running             0          78m
+ca1a-5799475b87-7xrs5    1/1     Running             0          13m
+ca1a-5799475b87-h7vbr    1/1     Running             0          13m
+ca1a-5799475b87-h9q9t    1/1     Running             0          13m
+ca1a-5799475b87-hkkcj    1/1     Running             0          13m
+ca1a-5799475b87-kmlfd    1/1     Running             0          13m
+ca1a-5799475b87-qch6n    1/1     Running             0          13m
+hello                    0/1     Error               0          8d
+mysec                    0/1     Error               0          13d
+nginx                    0/1     Error               1          30h
+nginxenv                 0/1     Error               0          23h
+not-running              0/1     Error               0          8d
+secbusybox               0/1     Error               0          13d
+test114                  0/1     Completed           0          13d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod c2*
+Error from server (NotFound): pods "c2*" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod c2*[K[K[Kb2*
+Error from server (NotFound): pods "b2mc.yaml" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod b2*[K{}
+Error from server (NotFound): pods "b2{}" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod b2{}[K.}
+Error from server (NotFound): pods "b2{.}" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod b2{.}[K[K[K[K[Kca[K1{1[Ka,b}
+NAME   READY   STATUS   RESTARTS   AGE
+c1a    0/1     Error    0          19h
+c1b    0/1     Error    0          19h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod c1{a,b}[1Pb}[C[1P},}.}
+NAME   READY   STATUS   RESTARTS   AGE
+c1a    0/1     Error    0          19h
+Error from server (NotFound): pods "c1." not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod c1{a,.}[1P,.}[C[1P.}[C.}
+Error from server (NotFound): pods "c1{..}" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod c1{..}a,.}b}[2Pb2{.}[1P}[1P*c2*[Klogs c2cc[Kkubectl get job -wv[K
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        15d
+88job   2/2           15s        15d
+c2      0/1           117s       117s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get jobpod c1{..}[K[K[K[K[K[K[K[K[K[Kjob
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        15d
+88job   2/2           15s        15d
+c2      0/1           2m7s       2m7s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job c2 
+NAME   COMPLETIONS   DURATION   AGE
+c2     0/1           2m10s      2m10s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get job c2 [K[K[K[Kpo
+NAME                     READY   STATUS              RESTARTS   AGE
+06nginx                  0/1     Error               0          28d
+07nginx                  0/1     Error               0          28d
+100vol                   0/1     Error               0          15d
+104pvc2b                 0/1     Error               0          15d
+111                      0/1     Error               0          14d
+113                      0/1     Completed           0          14d
+114nginx                 0/1     Completed           0          13d
+117                      0/1     Error               0          13d
+118                      0/1     Error               0          13d
+126                      0/1     Error               0          11d
+131                      0/1     Error               0          10d
+132                      0/1     Error               0          10d
+134                      0/1     Completed           0          8d
+136                      0/1     Completed           0          8d
+137busybox               0/1     Error               0          8d
+13nginx                  0/1     Completed           1          28d
+140                      0/1     Error               0          8d
+144                      0/1     Error               0          8d
+17shell                  0/1     Error               0          28d
+19bb                     0/1     Completed           0          28d
+21bb                     0/1     Completed           0          28d
+29mc                     0/3     Completed           0          26d
+2busybox1                0/1     Completed           0          23h
+33busybox1               0/1     Completed           0          23h
+34mc                     0/2     Error               0          26d
+37-ng-1                  0/1     Error               0          21d
+37-ng-2                  0/1     Error               0          21d
+37-ng-3                  0/1     Error               0          21d
+3busybox1                0/1     Completed           0          23h
+53busybox1               0/1     Completed           0          23h
+67dep-7db4cf66f7-2hfgb   1/1     Running             13         16d
+67dep-7db4cf66f7-9wrj7   1/1     Running             13         16d
+67dep-7db4cf66f7-h5g7f   1/1     Running             13         16d
+67dep-7db4cf66f7-m2269   1/1     Running             13         16d
+84job-9gkc8              0/1     Completed           0          15d
+88job-bx58m              0/1     Completed           0          15d
+b2mc                     0/2     Completed           0          19h
+busybox                  0/1     Completed           0          23h
+busybox1                 0/1     Completed           0          23h
+c1a                      0/1     Error               0          19h
+c1b                      0/1     Error               0          19h
+c2-m6cjm                 0/1     ContainerCreating   0          2m14s
+ca1-66d6b4f974-4dxf6     1/1     Running             0          79m
+ca1-66d6b4f974-dl85x     1/1     Running             0          79m
+ca1a-5799475b87-7xrs5    1/1     Running             0          14m
+ca1a-5799475b87-h7vbr    1/1     Running             0          14m
+ca1a-5799475b87-h9q9t    1/1     Running             0          14m
+ca1a-5799475b87-hkkcj    1/1     Running             0          14m
+ca1a-5799475b87-kmlfd    1/1     Running             0          14m
+ca1a-5799475b87-qch6n    1/1     Running             0          14m
+hello                    0/1     Error               0          8d
+mysec                    0/1     Error               0          13d
+nginx                    0/1     Error               1          30h
+nginxenv                 0/1     Error               0          23h
+not-running              0/1     Error               0          8d
+secbusybox               0/1     Error               0          13d
+test114                  0/1     Completed           0          13d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po
+NAME                     READY   STATUS              RESTARTS   AGE
+06nginx                  0/1     Error               0          28d
+07nginx                  0/1     Error               0          28d
+100vol                   0/1     Error               0          15d
+104pvc2b                 0/1     Error               0          15d
+111                      0/1     Error               0          14d
+113                      0/1     Completed           0          14d
+114nginx                 0/1     Completed           0          13d
+117                      0/1     Error               0          13d
+118                      0/1     Error               0          13d
+126                      0/1     Error               0          11d
+131                      0/1     Error               0          10d
+132                      0/1     Error               0          10d
+134                      0/1     Completed           0          8d
+136                      0/1     Completed           0          8d
+137busybox               0/1     Error               0          8d
+13nginx                  0/1     Completed           1          28d
+140                      0/1     Error               0          8d
+144                      0/1     Error               0          8d
+17shell                  0/1     Error               0          28d
+19bb                     0/1     Completed           0          28d
+21bb                     0/1     Completed           0          28d
+29mc                     0/3     Completed           0          26d
+2busybox1                0/1     Completed           0          23h
+33busybox1               0/1     Completed           0          23h
+34mc                     0/2     Error               0          26d
+37-ng-1                  0/1     Error               0          21d
+37-ng-2                  0/1     Error               0          21d
+37-ng-3                  0/1     Error               0          21d
+3busybox1                0/1     Completed           0          23h
+53busybox1               0/1     Completed           0          23h
+67dep-7db4cf66f7-2hfgb   1/1     Running             13         16d
+67dep-7db4cf66f7-9wrj7   1/1     Running             13         16d
+67dep-7db4cf66f7-h5g7f   1/1     Running             13         16d
+67dep-7db4cf66f7-m2269   1/1     Running             13         16d
+84job-9gkc8              0/1     Completed           0          15d
+88job-bx58m              0/1     Completed           0          15d
+b2mc                     0/2     Completed           0          19h
+busybox                  0/1     Completed           0          23h
+busybox1                 0/1     Completed           0          23h
+c1a                      0/1     Error               0          19h
+c1b                      0/1     Error               0          19h
+c2-m6cjm                 0/1     ContainerCreating   0          2m19s
+ca1-66d6b4f974-4dxf6     1/1     Running             0          79m
+ca1-66d6b4f974-dl85x     1/1     Running             0          79m
+ca1a-5799475b87-7xrs5    1/1     Running             0          14m
+ca1a-5799475b87-h7vbr    1/1     Running             0          14m
+ca1a-5799475b87-h9q9t    1/1     Running             0          14m
+ca1a-5799475b87-hkkcj    1/1     Running             0          14m
+ca1a-5799475b87-kmlfd    1/1     Running             0          14m
+ca1a-5799475b87-qch6n    1/1     Running             0          14m
+hello                    0/1     Error               0          8d
+mysec                    0/1     Error               0          13d
+nginx                    0/1     Error               1          30h
+nginxenv                 0/1     Error               0          23h
+not-running              0/1     Error               0          8d
+secbusybox               0/1     Error               0          13d
+test114                  0/1     Completed           0          13d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pojob c2 [K[K[Kc[K[K[K[K[Kpo c3[K2-m6cjm
+NAME       READY   STATUS              RESTARTS   AGE
+c2-m6cjm   0/1     ContainerCreating   0          2m37s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm[1P c2-m6cjm[1P c2-m6cjm[1Pc2-m6cjm[1P c2-m6cjm[1P c2-m6cjm[1P c2-m6cjml c2-m6cjmo c2-m6cjmg c2-m6cjms c2-m6cjm[C c2-m6cjm
+Error from server (BadRequest): container "c2" in pod "c2-m6cjm" is waiting to start: ContainerCreating
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs  c2-m6cjm[1@get po[C[C[C[C[C[C[C[C[C
+NAME       READY   STATUS              RESTARTS   AGE
+c2-m6cjm   0/1     ContainerCreating   0          3m49s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS              RESTARTS   AGE
+c2-m6cjm   0/1     ContainerCreating   0          3m51s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS              RESTARTS   AGE
+c2-m6cjm   0/1     ContainerCreating   0          3m59s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS              RESTARTS   AGE
+c2-m6cjm   0/1     ContainerCreating   0          4m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS              RESTARTS   AGE
+c2-m6cjm   0/1     ContainerCreating   0          4m1s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS              RESTARTS   AGE
+c2-m6cjm   0/1     ContainerCreating   0          4m3s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS              RESTARTS   AGE
+c2-m6cjm   0/1     ContainerCreating   0          4m6s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS              RESTARTS   AGE
+c2-m6cjm   0/1     ContainerCreating   0          4m7s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS      RESTARTS   AGE
+c2-m6cjm   0/1     Completed   0          13m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS      RESTARTS   AGE
+c2-m6cjm   0/1     Completed   0          13m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS      RESTARTS   AGE
+c2-m6cjm   0/1     Completed   0          13m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS      RESTARTS   AGE
+c2-m6cjm   0/1     Completed   0          13m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS      RESTARTS   AGE
+c2-m6cjm   0/1     Completed   0          13m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS      RESTARTS   AGE
+c2-m6cjm   0/1     Completed   0          13m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get po c2-m6cjm
+NAME       READY   STATUS      RESTARTS   AGE
+c2-m6cjm   0/1     Completed   0          21m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kb[Kubectl logs
+error: expected 'logs [-f] [-p] (POD | TYPE/NAME) [-c CONTAINER]'.
+POD or TYPE/NAME is a required argument for the logs command
+See 'kubectl logs -h' for help and examples
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logsc2-[K[K[K c2-m6cjm
+3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917153643678925903600113305305488204665213841469519415116094330572703657595919530921861173819326117931051185480744623799627495673518857527248912279381830119491298336733624406566430860213949463952247371907021798609437027705392171762931767523846748184676694051320005681271452635608277857713427577896091736371787214684409012249534301465495853710507922796892589235420199561121290219608640344181598136297747713099605187072113499999983729780499510597317328160963185950244594553469083026425223082533446850352619311881710100031378387528865875332083814206171776691473035982534904287554687311595628638823537875937519577818577805321712268066130019278766111959092164201989380952572010654858632788659361533818279682303019520353018529689957736225994138912497217752834791315155748572424541506959508295331168617278558890750983817546374649393192550604009277016711390098488240128583616035637076601047101819429555961989467678374494482553797747268471040475346462080466842590694912933136770289891521047521620569660240580381501935112533824300355876402474964732639141992726042699227967823547816360093417216412199245863150302861829745557067498385054945885869269956909272107975093029553211653449872027559602364806654991198818347977535663698074265425278625518184175746728909777727938000816470600161452491921732172147723501414419735685481613611573525521334757418494684385233239073941433345477624168625189835694855620992192221842725502542568876717904946016534668049886272327917860857843838279679766814541009538837863609506800642251252051173929848960841284886269456042419652850222106611863067442786220391949450471237137869609563643719172874677646575739624138908658326459958133904780275901
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl creat[K[K[K[K[Kget h[Kjob
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        15d
+88job   2/2           15s        15d
+c2      1/1           8m         33m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get jobcc[Kkubectl get job
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube status
+host: Running
+kubelet: Running
+apiserver: Stopped
+kubectl: Misconfigured: pointing to stale minikube-vm.
+To fix the kubectl context, run minikube update-context
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ min
+min12xxw  minfo     minikube  
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube upf[Kdate-context
+🎉  minikube IP has been updated to point at 172.17.0.1
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube update-context[8Pstatus
+host: Running
+kubelet: Running
+apiserver: Stopped
+kubectl: Correctly Configured: pointing to minikube-vm at 172.17.0.1
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube statusupdate-context[8Pstatuskubectl get job
+The connection to the server 172.17.0.1:8443 was refused - did you specify the right host or port?
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube status
+host: Running
+kubelet: Running
+apiserver: Stopped
+kubectl: Correctly Configured: pointing to minikube-vm at 172.17.0.1
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube statuskubectl get jobminikube statusupdate-context
+🙄  minikube IP was already correctly configured for 172.17.0.1
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube update-context[8Pstatus
+host: Running
+kubelet: Running
+apiserver: Stopped
+kubectl: Correctly Configured: pointing to minikube-vm at 172.17.0.1
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube 
+1.yaml                     bb.yaml
+202003141414               ca1a.yaml
+202003141444               commandsReview.txt
+202003150112               envpod.yaml
+202003151935               .git/
+2b1.yaml                   gitBatch.sh
+2b.yaml                    kubernetes-metrics-server/
+2rq.yaml                   README.md
+b2mc.yaml                  
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube [K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on 2020-03-15 23:58:53+0500
