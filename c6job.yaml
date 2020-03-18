@@ -1,0 +1,22 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  labels:
+    run: c6job
+  name: c6job
+spec:
+  parallelism: 5
+  completions: 2
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: c6job
+    spec:
+      containers:
+      - image: busybox
+        name: c6job
+        resources: {}
+      restartPolicy: OnFailure
+status: {}

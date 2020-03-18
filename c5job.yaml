@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  labels:
+    run: c5job
+  name: c5job
+spec:
+  activeDeadlineSeconds: 30
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: c5job
+    spec:
+      containers:
+      - image: busybox
+        name: c5job
+        args:
+        - /bin/sh
+        - -c 
+        - echo "hi"
+        resources: {}
+      restartPolicy: OnFailure
+status: {}
