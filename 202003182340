@@ -14159,4 +14159,115 @@ c6job.yaml
 ]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitBatch.sh 
 1.yaml                     c6.yaml
 202003141414               c77.yaml
-202003141444               c7cj.yam
+202003141444               c7cj.yaml
+202003150112               ca1a.yaml
+202003151935               commandsReview.txt
+202003160010               config4.txt
+202003182340               config.env
+2b1.yaml                   config.txt
+2b.yaml                    envpod.yaml
+2rq.yaml                   .git/
+b2mc.yaml                  gitBatch.sh
+bb.yaml                    kubernetes-metrics-server/
+c5job.yaml                 README.md
+c6job.yaml                 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitBatch.sh 
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      2rq.yaml	  commandsReview.txt
+202003141414  b2mc.yaml   config4.txt
+202003141444  bb.yaml	  config.env
+202003150112  c5job.yaml  config.txt
+202003151935  c6job.yaml  envpod.yaml
+202003160010  c6.yaml	  gitBatch.sh
+202003182340  c77.yaml	  kubernetes-metrics-server
+2b1.yaml      c7cj.yaml   README.md
+2b.yaml       ca1a.yaml
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m202003182340[m
+	[31mc5job.yaml[m
+	[31mc6job.yaml[m
+	[31mconfig.env[m
+	[31mconfig.txt[m
+	[31mconfig4.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+config.encv  v
+[master dd4b317] update on file config.env
+ 1 file changed, 3 insertions(+)
+ create mode 100644 config.env
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   3ad5160..dd4b317  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitBatch.sh 
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      2rq.yaml	  commandsReview.txt
+202003141414  b2mc.yaml   config4.txt
+202003141444  bb.yaml	  config.env
+202003150112  c5job.yaml  config.txt
+202003151935  c6job.yaml  envpod.yaml
+202003160010  c6.yaml	  gitBatch.sh
+202003182340  c77.yaml	  kubernetes-metrics-server
+2b1.yaml      c7cj.yaml   README.md
+2b.yaml       ca1a.yaml
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m202003182340[m
+	[31mc5job.yaml[m
+	[31mc6job.yaml[m
+	[31mconfig.txt[m
+	[31mconfig4.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+[master 2271c5d] update on file .
+ 5 files changed, 14213 insertions(+)
+ create mode 100644 202003182340
+ create mode 100644 c5job.yaml
+ create mode 100644 c6job.yaml
+ create mode 100644 config.txt
+ create mode 100644 config4.txt
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 36.69 KiB | 3.67 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   dd4b317..2271c5d  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ minikube stop
+✋  Stopping "minikube" in virtualbox ...
+🛑  "minikube" stopped.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ exit
+exit
+
+Script done on 2020-03-19 02:07:26+0500
