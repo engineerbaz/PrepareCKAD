@@ -1,0 +1,1633 @@
+Script started on 2020-03-20 00:21:57+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ l
+1.yaml        2b.yaml     ca1a.yaml
+202003141414  2rq.yaml    commandsReview.txt
+202003141444  b2mc.yaml   config4.txt
+202003150112  bb.yaml     config.env
+202003151935  c5job.yaml  config.txt
+202003160010  c6job.yaml  envpod.yaml
+202003182340  c6.yaml     gitBatch.sh
+202003200020  c77.yaml    [0m[01;34mkubernetes-metrics-server[0m/
+2b1.yaml      c7cj.yaml   README.md
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml        202003200020  c6job.yaml          config.env
+202003141414  2b1.yaml      c6.yaml             config.txt
+202003141444  2b.yaml       c77.yaml            envpod.yaml
+202003150112  2rq.yaml      c7cj.yaml           gitBatch.sh
+202003151935  b2mc.yaml     ca1a.yaml           [0m[01;34mkubernetes-metrics-server[0m
+202003160010  bb.yaml       commandsReview.txt  README.md
+202003182340  c5job.yaml    config4.txt
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ li[Kco[K[Kocaaa[K[Kte *.env
+/home/baz/Q1_CNC/CKAD Preparation/YAML/config.env
+/home/baz/Q1_CNC/k8CKAD/config.env
+/home/baz/Q1_CNC/yaml_files/config.env
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ll
+total 1528
+drwxr-xr-x  4 baz baz   4096 Mar 20 00:21 [0m[01;34m.[0m/
+drwxrwxr-x 12 baz baz   4096 Mar 14 14:03 [01;34m..[0m/
+-rw-r--r--  1 baz baz    256 Mar 14 14:46 1.yaml
+-rw-r--r--  1 baz baz  12235 Mar 14 14:42 202003141414
+-rw-r--r--  1 baz baz 369035 Mar 15 01:11 202003141444
+-rw-r--r--  1 baz baz  70963 Mar 15 02:23 202003150112
+-rw-r--r--  1 baz baz 180286 Mar 15 23:58 202003151935
+-rw-r--r--  1 baz baz  43918 Mar 16 01:36 202003160010
+-rw-r--r--  1 baz baz 758422 Mar 19 02:07 202003182340
+-rw-r--r--  1 baz baz      0 Mar 20 00:21 202003200020
+-rw-r--r--  1 baz baz     34 Mar 15 01:14 2b1.yaml
+-rw-r--r--  1 baz baz     27 Mar 15 01:15 2b.yaml
+-rw-r--r--  1 baz baz    151 Mar 14 14:54 2rq.yaml
+-rw-r--r--  1 baz baz    389 Mar 15 01:18 b2mc.yaml
+-rw-r--r--  1 baz baz    324 Mar 14 21:00 bb.yaml
+-rw-r--r--  1 baz baz    430 Mar 19 01:17 c5job.yaml
+-rw-r--r--  1 baz baz    370 Mar 19 01:22 c6job.yaml
+-rw-r--r--  1 baz baz    324 Mar 16 00:11 c6.yaml
+-rw-r--r--  1 baz baz    647 Mar 19 01:28 c77.yaml
+-rw-r--r--  1 baz baz    507 Mar 19 01:26 c7cj.yaml
+-rw-r--r--  1 baz baz    429 Mar 15 19:39 ca1a.yaml
+-rw-r--r--  1 baz baz    188 Mar 15 20:01 commandsReview.txt
+-rw-r--r--  1 baz baz     20 Mar 19 01:52 config4.txt
+-rw-r--r--  1 baz baz     42 Mar 19 01:50 config.env
+-rw-r--r--  1 baz baz     19 Mar 19 01:47 config.txt
+-rw-r--r--  1 baz baz    262 Mar 14 14:48 envpod.yaml
+drwxr-xr-x  8 baz baz   4096 Mar 20 00:21 [01;34m.git[0m/
+-rw-r--r--  1 baz baz    528 Mar 14 20:20 gitBatch.sh
+drwxr-xr-x  3 baz baz   4096 Mar 15 20:11 [01;34mkubernetes-metrics-server[0m/
+-rw-r--r--  1 baz baz     92 Mar 14 14:44 README.md
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get cm
+NAME        DATA   AGE
+106cm       1      19d
+110c        1      19d
+112env      1      18d
+cfgvolume   2      18d
+d1cm        2      22h
+d2cm        1      22h
+d3cm        2      22h
+d4cm        1      22h
+d5cm        1      22h
+env2        1      18d
+envcfgmap   1      18d
+testenv     1      18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ll s[Kd*
+ls: cannot access 'd*': No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ll d*[K[Kc*
+-rw-r--r-- 1 baz baz 430 Mar 19 01:17 c5job.yaml
+-rw-r--r-- 1 baz baz 370 Mar 19 01:22 c6job.yaml
+-rw-r--r-- 1 baz baz 324 Mar 16 00:11 c6.yaml
+-rw-r--r-- 1 baz baz 647 Mar 19 01:28 c77.yaml
+-rw-r--r-- 1 baz baz 507 Mar 19 01:26 c7cj.yaml
+-rw-r--r-- 1 baz baz 429 Mar 15 19:39 ca1a.yaml
+-rw-r--r-- 1 baz baz 188 Mar 15 20:01 commandsReview.txt
+-rw-r--r-- 1 baz baz  20 Mar 19 01:52 config4.txt
+-rw-r--r-- 1 baz baz  42 Mar 19 01:50 config.env
+-rw-r--r-- 1 baz baz  19 Mar 19 01:47 config.txt
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ history 
+  991  cc
+  992  kubectl get po
+  993  cc
+  994  history | grep bash
+  995  source <(kubectl completion bash)
+  996  cc
+  997  kubectl get events --sort-by=.metadata.creationTimestamp
+  998  cc
+  999  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml --/bin/sh ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140yaml
+ 1000  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml --/bin/sh -c ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1001  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml -- /bin/sh -c ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1002  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c ”while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1003  kubectl run 140 --image=alpine --restart=Never --dry-run -o yaml -- /bin/sh -c "while true; do echo ‘Hi I am from alpine’; sleep 5; done” > 140.yaml
+ 1004  exit
+ 1005  //
+ 1006  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo ‘Hi I am from alpine’; sleep 5;done” > 140.yaml
+ 1007  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo ‘Hi I am from alpine’; sleep 5;done” 
+ 1008  kubectl get pod 140
+ 1009  cc
+ 1010  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo 'Hi I am from alpine'; sleep 5;done" > 140.yaml 
+ 1011  nano 140.yaml 
+ 1012  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo 'Hi I am from alpine'; sleep 5;done"
+ 1013  kubectl logs --follow hello
+ 1014  kubectl delete pod 140
+ 1015  cc
+ 1016  nano 140.yaml 
+ 1017  kubectl run hello --image=alpine --restart=Never  -- /bin/sh -c "while true; do echo 'Hi I am from Alpine'; sleep 5;done"
+ 1018  kubectl logs --follow hello
+ 1019  kubectl run 140 --image=alpine --restart=Never -- /bin/sh -c "while true; do echo 'Hi I am from alpine'; sleep 5;done"
+ 1020  kubectl logs --follow hello
+ 1021  kubectl logs --follow 140
+ 1022  cc
+ 1023  kubectl create -f https://gist.githubusercontent.com/bbachi/212168375b39e36e2e2984c097167b00/raw/1fd63509c3ae3a3d3da844640fb4cca744543c1c/not-running.yml
+ 1024  kubectl get pot not-running
+ 1025  kubectl get pod not-running
+ 1026  kubectl edit pod not-running 
+ 1027  kubectl get pod not-running
+ 1028  kubectl edit pod not-running 
+ 1029  kubectl get pod not-running
+ 1030  kubectl create -f https://gist.githubusercontent.com/bbachi/1f001f10337234d46806929d12245397/raw/84b7295fb077f15de979fec5b3f7a13fc69c6d83/problem-pod.yaml
+ 1031  kubectl get po --all-namespaces 
+ 1032  kubectl get po -n namespace2
+ 1033  kubectl set image pod/pod2 pod2=nginx -n namespace2
+ 1034  kubectl get po --all-namespaces 
+ 1035  kubectl get po -n namespace2
+ 1036  cc
+ 1037  kubectl run 144 --image=nginx --restart=Never --port=80 --dry-run -o yaml > 144.yaml
+ 1038  nano 144.yaml 
+ 1039  kubectl create -f 144.yaml 
+ 1040  nano 145svc.yaml
+ 1041  kubectl create -f 145svc.yaml 
+ 1042  nano 145svc.yaml
+ 1043  kubectl create -f 145svc.yaml 
+ 1044  nano 145svc.yaml
+ 1045  kubectl create -f 145svc.yaml 
+ 1046  nano 145svc.yaml
+ 1047  kubectl create -f 145svc.yaml 
+ 1048  kubectl get svc
+ 1049  kubectl expose po nginx --port=80 --target-port=9376
+ 1050  kubectl get po nginx  -o yaml
+ 1051  kubectl get po nginx  -o yaml >148.yml
+ 1052  nano 148.yml 
+ 1053  kubectl expose po nginx --port=80 --type=NodePort
+ 1054  kubectl delete svc nginx
+ 1055  kubectl expose po nginx --port=80 --type=NodePort
+ 1056  kubectl ger svc nginx 
+ 1057  kubectl get svc nginx 
+ 1058  kubectl get svc nginx -o yaml
+ 1059  cat 144.yaml 
+ 1060  cat 145svc.yaml 
+ 1061  kubectl get svc nginx -o yaml
+ 1062  cc
+ 1063  kubectl get svc nginx -o yaml
+ 1064  cat 145svc.yaml 
+ 1065  cc
+ 1066  git add .
+ 1067  git status
+ 1068  git commit -m "all 150 k8"
+ 1069  git push origin master 
+ 1070  cc
+ 1071  kubectl explain --recursive 
+ 1072  kubectl explain pod --recursive 
+ 1073  kubectl explain pod.container.spec --recursive 
+ 1074  kubectl explain pod.containers.spec --recursive 
+ 1075  kubectl explain pod --recursive 
+ 1076  kubectl explain pod --recursive | grep container
+ 1077  kubectl explain pod.containers --recursive 
+ 1078  kubectl explain pod --recursive 
+ 1079  kubectl explain pod.spec --recursive 
+ 1080  c
+ 1081  cc
+ 1082  kubectl config view
+ 1083  kubectl explain pod --recursive  > ListOfResourcesOfPod
+ 1084  nano ListOfResourcesOfPod 
+ 1085  git add ListOfResourcesOfPod 
+ 1086  git commit -m "add List of resources of POD"
+ 1087  git push origin master 
+ 1088  git status
+ 1089  exit
+ 1090  alias gadd "git add"
+ 1091  alias gadd "git add ."
+ 1092  alias --h
+ 1093  alias help
+ 1094  alias
+ 1095  alias gadd="git add ."
+ 1096  alias gadd="git add"
+ 1097  gadd
+ 1098  gadd .
+ 1099  git status 
+ 1100  echo << EOF >> GitAlias
+ 1101  alias gadd="git add "
+ 1102  alias gcom="git commit -m ""
+ 1103  alias gpush="git push origin master"
+ 1104  EOF
+ 1105  cat GitAlias 
+ 1106  nano GitAlias 
+ 1107  echo << EOF > test1
+ 1108  hi 
+ 1109  hello 
+ 1110  How are u
+ 1111  EOF
+ 1112  cat test1
+ 1113  rm GitAlias 
+ 1114  echo << EOF > GitAlias.txt
+ 1115  alias gadd="git add "
+ 1116  alias gcom="git commit -m ""
+ 1117  alias gpush="git push origin master"
+ 1118  EOF
+ 1119  cat GitAlias.txt 
+ 1120  echo << EOF >> GitAlias.txt
+ 1121  alias gadd="git add "
+ 1122  alias gcom="git commit -m ""
+ 1123  alias gpush="git push origin master"
+ 1124  EOF
+ 1125  cat GitAlias.txt 
+ 1126  echo << EOF >> GitAlias.txt
+ 1127  alias gadd="git add "
+ 1128  alias gcom="git commit -m ""
+ 1129  alias gpush="git push origin master"
+ 1130  EOF
+ 1131  cat GitAlias.txt 
+ 1132  echo << EOF >> 12GitAlias.txt
+ 1133  asas
+ 1134  hi
+ 1135  EOF
+ 1136  cat 12
+ 1137  cat 12GitAlias.txt 
+ 1138  rm 12GitAlias.txt 
+ 1139  rm GitAlias.txt 
+ 1140  echo >> 12GitAlias.txt <<EOF
+ 1141  asas
+ 1142  hi
+ 1143  EOF
+ 1144  cat 12GitAlias.txt 
+ 1145  rm 12GitAlias.txt 
+ 1146  echo >> 12Git.txt <<EOF
+ 1147  hhi 
+ 1148  this is program aassssssssssssssssssssssssssssssssssssssss
+ 1149  EOF
+ 1150  cat 12Git.txt 
+ 1151  nano 12Git.txt 
+ 1152  rm 12Git.txt 
+ 1153  echo << EOF >> 12file.txt 
+ 1154  hi 
+ 1155  this 
+ 1156  das
+ 1157  EOF
+ 1158  cat 12file.txt 
+ 1159  cat << EOF >> 12file.txt 
+ 1160  hi 
+ 1161  this 
+ 1162  das
+ 1163  gu 
+ 1164  jklkj
+ 1165  hoi 
+ 1166  EOF
+ 1167  cat 12F
+ 1168  cat 12file.txt 
+ 1169  cat << EOF > GitAlias
+ 1170  alias gadd="git add "
+ 1171  alias gcom="git commit -m ""
+ 1172  alias gpush="git push origin master"
+ 1173  EOF
+ 1174  cat GitAlias 
+ 1175  gad
+ 1176  gadd
+ 1177  touch 123.txt 
+ 1178  git add llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+ 1179  git add 
+ 1180  git add 123.txt
+ 1181  gadd 123
+ 1182  gadd 123.txt
+ 1183  git status
+ 1184  gcom file to check
+ 1185  git status
+ 1186  git commit -m "check "
+ 1187  gpush
+ 1188  nano .bashrc
+ 1189  nano ./bashrc
+ 1190  cat ~/.bashrc 
+ 1191  s
+ 1192  ls
+ 1193  gpush
+ 1194  cat GitAlias 
+ 1195  alias gadd="git add "
+ 1196  alias gcom="git commit -m ""
+ 1197  alias gpush="git push origin master"
+ 1198  exit
+ 1199  cat ~/.bashrc 
+ 1200  gpush
+ 1201  gcomm
+ 1202  gcom hi"
+ 1203  cat GitAlias 
+ 1204  alias gpush="git push origin master"
+ 1205  gpush
+ 1206  touch 678
+ 1207  gadd 678
+ 1208  git status
+ 1209  gcom hi"
+ 1210  alias gcom="git commit -m "
+ 1211  gcomaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1212  gcom "test"
+ 1213  gpush
+ 1214  cat << EOF > testEOFfile 
+ 1215  jhjkhjk
+ 1216  hjkhk
+ 1217  EOF
+ 1218  cat testEOFfile 
+ 1219  rm testEOFfile 
+ 1220  exit
+ 1221  minikube start
+ 1222  cat << EOF > myfile.txt
+ 1223  hi 
+ 1224  Hello
+ 1225  bye
+ 1226  EOF
+ 1227  cat myfile.txt 
+ 1228  cat << EOF >> myfile.txt 
+ 1229  how are you
+ 1230  byebye
+ 1231  EOF
+ 1232  cat myfile.txt 
+ 1233  rm myfile.txt 
+ 1234  git status 
+ 1235  ll
+ 1236  cat GitAlias 
+ 1237  kubectl config view
+ 1238  kubectl <(bash completion)
+ 1239  history | grep bash
+ 1240  source <(kubectl completion bash)
+ 1241  cc
+ 1242  kubectl config view 
+ 1243  cat ~/.kube/config 
+ 1244  png 8.8.8.8
+ 1245  ping 8.8.8.8
+ 1246  minikube start
+ 1247  exit
+ 1248  kubectl get all
+ 1249  exit
+ 1250  cd Q2_CNC/
+ 1251  ls
+ 1252  ls java/
+ 1253  git remote add java/firstJava.js
+ 1254  git remote add --help
+ 1255  git remote --help
+ 1256  cc
+ 1257  git --help 
+ 1258  git help everyday 
+ 1259  git add .
+ 1260  git status
+ 1261  git config status
+ 1262  git config remote status
+ 1263  git remote add ABC.txt
+ 1264  minikube status
+ 1265  source <(kubectl completion bash)
+ 1266  kubectl get all 
+ 1267  kubectl config view 
+ 1268  cc
+ 1269  exit
+ 1270  echo "This is SOLUTION for CKAD Exercise by dgkanatsios"
+ 1271  echo "This is SOLUTION for CKAD Exercise by dgkanatsios" >> README.md 
+ 1272  kubectl create ns mynamespace
+ 1273  kubectl get ns
+ 1274  kubectl get pod
+ 1275  kubectl delete pod nginx
+ 1276  cc
+ 1277  kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml > 1.yaml
+ 1278  nano 1.yaml 
+ 1279  kubectl create -f 1.yaml 
+ 1280  kubectl get pod
+ 1281  kubectl get pod nginx
+ 1282  kubectl get pod nginx -n mynamespace
+ 1283  cc
+ 1284  kubectl get pod 
+ 1285  cc
+ 1286  kubectl run busybox --image=busybox --restart=Never --dry-run -o yaml --command -- env > envpod.yaml
+ 1287  nano envpod.yaml 
+ 1288  kubectl apply -f envpod.yaml
+ 1289  kubectl logs busybox
+ 1290  kubectl get pod 
+ 1291  kubectl get pod busybox
+ 1292  kubectl logs busybox
+ 1293  cc
+ 1294  kubectl exec -ti busybox 
+ 1295  kubectl exec -ti busybox --env
+ 1296  kubectl exec -ti busybox -- /bin/sh 
+ 1297  cc
+ 1298  kubectl create ns myns --dry-run 
+ 1299  kubectl create ns myns --dry-run -o yaml
+ 1300  kubectl create --help
+ 1301  kubectl create quota --help
+ 1302  cc
+ 1303  kubectl create quota myrq --hard=cpu=1,memory=1G,pods=2 --dry-run -o yaml > 2rq.yaml
+ 1304  nano 2rq.yaml 
+ 1305  kubectl get pods --all-namespace
+ 1306  kubectl get pods --all-namespaces
+ 1307  cc
+ 1308  kubectl run nginx --image=nginx --restart=Never --port=80 
+ 1309  kubectl run nginx --image=nginx --restart=Never --dry-run -o yaml 
+ 1310  kubectl run nginx --image=nginx --restart=Never --port=80 --dry-run -o yaml 
+ 1311  cc
+ 1312  kubectl --h
+ 1313  kubectl set --h
+ 1314  kubectl set --help
+ 1315  kubectl set name 
+ 1316  kubectl set -h
+ 1317  kubectl set image -h
+ 1318  kubectl set image pod nginx=nginx:1.7.1
+ 1319  kubectl set image/pod nginx=nginx:1.7.1
+ 1320  kubectl set image pod/nginx nginx=nginx:1.7.1
+ 1321  kubectl describe po nginx
+ 1322  kubectl describe po nginx | grep Image
+ 1323  cc
+ 1324  kubectl get pod nginx
+ 1325  kubectl get pod nginx -o wide
+ 1326  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- 10.1.1.131:80
+ 1327  kubectl delete pod busybox
+ 1328  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- 172.17.0.10:80
+ 1329  kubectl get po nginx -oyaml
+ 1330  kubectl logs nginx -p
+ 1331  kubectl exec -it nginx -- /bin/sh
+ 1332  c
+ 1333  cc
+ 1334  git status
+ 1335  git add 1.yaml 
+ 1336  git commit -m "file"
+ 1337  git push origin master 
+ 1338  git add envpod.yaml 
+ 1339  git commit -m "env file"
+ 1340  git push origin master 
+ 1341  read fname 
+ 1342  echo $fname 
+ 1343  git add \$fname 
+ 1344  echo $fname 
+ 1345  git add fname
+ 1346  git add $fname
+ 1347  git status 
+ 1348  read fname
+ 1349  git status 
+ 1350  git add $fname
+ 1351  git status 
+ 1352  git commit -m "\$fname" 
+ 1353  git push origin master 
+ 1354  echo << EOF > gitBatch.sh
+ 1355  ls
+ 1356  git status
+ 1357  read fname
+ 1358  git add fname
+ 1359  EOF
+ 1360  ./gitBatch
+ 1361  gitBatch.sh
+ 1362  cat gitBatch.sh 
+ 1363  echo << EOF >> gitBatch.sh
+ 1364  ls
+ 1365  git status
+ 1366  read fname
+ 1367  git add fname
+ 1368  EOF
+ 1369  cat gitBatch.sh 
+ 1370  nano gitBatch.sh 
+ 1371  ./gitBatch
+ 1372  bash gitBatch.sh 
+ 1373  history 
+ 1374  nano gitBatch.sh 
+ 1375  bash gitBatch.sh 
+ 1376  nano gitBatch.sh 
+ 1377  cc
+ 1378  bash gitBatch.sh 
+ 1379  cc
+ 1380  nano gitBatch.sh 
+ 1381  bash gitBatch.sh 
+ 1382  nano gitBatch.sh 
+ 1383  git push origin master 
+ 1384  nano gitBatch.sh 
+ 1385  bash gitBatch.sh 
+ 1386  touch hi.txt
+ 1387  bash gitBatch.sh 
+ 1388  touch hey.txt
+ 1389  bash gitBatch.sh 
+ 1390  nano gitBatch.sh 
+ 1391  touch he.txt
+ 1392  bash gitBatch.sh 
+ 1393  touch he1.txt
+ 1394  bash gitBatch.sh 
+ 1395  nano gitBatch.sh 
+ 1396  touch he.txt
+ 1397  nano gitBatch.sh 
+ 1398  bash gitBatch.sh 
+ 1399  touch 2he.txt
+ 1400  bash gitBatch.sh 
+ 1401  nano gitBatch.sh 
+ 1402  cc
+ 1403  git status 
+ 1404  touch 3he.txt
+ 1405  git status 
+ 1406  cc
+ 1407  git add 3he.txt 
+ 1408  git commit -h
+ 1409  git commit -m "Update made on file"&&$fname
+ 1410  echo $fname
+ 1411  read fname
+ 1412  ll
+ 1413  ls
+ 1414  git commit -m "update on file " && $fname
+ 1415  touch 55.tt
+ 1416  read fnam
+ 1417  read fname
+ 1418  git add $fname
+ 1419  git status
+ 1420  git commit -m "update on file "&&$fname
+ 1421  cat gitBatch.sh 
+ 1422  git commit -m "update on file " && $fname
+ 1423  echo "hi " && $fname
+ 1424  echo "hi " && fname
+ 1425  echo "hi "&&$fname
+ 1426  echo "hi "&$fname
+ 1427  echo "hi "&&fname
+ 1428  echo "hi "&fname
+ 1429  man echp
+ 1430  man echo
+ 1431  whatis echo
+ 1432  nano gitBatch.sh 
+ 1433  echo fname
+ 1434  echo $fname
+ 1435  echo "hi $fname"
+ 1436  nano gitBatch.sh 
+ 1437  ls
+ 1438  ll
+ 1439  rm 3he.txt 
+ 1440  rm 2he.txt 
+ 1441  rm hi.txt 
+ 1442  rm hey.txt 
+ 1443  rm 55.tt 
+ 1444  rm hey
+ 1445  rm hey.txt
+ 1446  rm he.txt 
+ 1447  rm he1.txt 
+ 1448  ls
+ 1449  touch bye.txt
+ 1450  bash gitBatch.sh 
+ 1451  git push origin master 
+ 1452  git pull 
+ 1453  git merge
+ 1454  git pull 
+ 1455  git push origin master 
+ 1456  ls
+ 1457  touch 2.txt
+ 1458  bash gitBatch.sh 
+ 1459  ls
+ 1460  rm 2.txt 
+ 1461  rm bye.txt 
+ 1462  git add .
+ 1463  git commit -m "update all $fname"
+ 1464  git push origin master 
+ 1465  nano gitBatch.sh 
+ 1466  ls
+ 1467  cc
+ 1468  nano gitBatch.sh 
+ 1469  touch 66.tt
+ 1470  bash gitBatch.sh 
+ 1471  nano gitBatch.sh 
+ 1472  rm 66.tt 
+ 1473  touch 77.tt
+ 1474  bash gitBatch.sh 
+ 1475  nano gitBatch.sh 
+ 1476  bash gitBatch.sh 
+ 1477  ls
+ 1478  rm 77.tt 
+ 1479  git pull
+ 1480  git status 
+ 1481  echo --help
+ 1482  echo -h
+ 1483  man echo
+ 1484  nano gitBatch.sh 
+ 1485  echo -e "I ${RED}love${NC} Stack Overflow"
+ 1486  RED='\033[0;31m'
+ 1487  NC='\033[0m' # No Color
+ 1488  printf "I ${RED}love${NC} Stack Overflow\n"
+ 1489  nano gitBatch.sh 
+ 1490  RED='\033[0;31m'
+ 1491  NC='\033[0m' 
+ 1492  # printf "I ${RED}love${NC} Stack Overflow\n"
+ 1493  echo "                           " 
+ 1494  echo "****** Welcome to Git Script by ${RED}BAZ *****\n" 
+ 1495  nano gitBatch.sh 
+ 1496  cc
+ 1497  RED='\033[0;31m'
+ 1498  NC='\033[0m' 
+ 1499  # printf "I ${RED}love${NC} Stack Overflow\n"
+ 1500  echo -e "\n****** Welcome to Git Script by ${RED}BAZ *****\n" 
+ 1501  nano gitBatch.sh 
+ 1502  touch 33.ty
+ 1503  bash gitBatch.sh 
+ 1504  nano gitBatch.sh 
+ 1505  bash gitBatch.sh 
+ 1506  cc
+ 1507  ls
+ 1508  rm 33.ty 
+ 1509  cc
+ 1510  kubectl run bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld"
+ 1511  kubectl logs pod bb
+ 1512  kubectl get pod bb
+ 1513  kubectl describe pod bb
+ 1514  kubectl get pod bb --dry-run -oyaml
+ 1515  kubectl get pod bb --dry-run -o yaml
+ 1516  kubectl run pod bb --dry-run -oyaml
+ 1517  kubectl run bb --dry-run -oyaml
+ 1518  kubectl run bb --dry-run -o yaml
+ 1519  kubectl run bb --
+ 1520  kubectl get pod bb
+ 1521  kubectl run bb --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld" --dry-run -o yaml
+ 1522  kubectl run bb1 --image=busybox --restart=Never -- /bin/sh "echo -c Hello W0rld" --dry-run -o yaml
+ 1523  kubectl get pod bb*
+ 1524  kubectl get pod bb1
+ 1525  kubectl delete pod bb
+ 1526  kubectl delete pod bb1
+ 1527  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld" -o yaml
+ 1528  kubectl delete pod bb
+ 1529  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld" -o yaml > bb.yaml
+ 1530  cat bb.yaml 
+ 1531  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  > bb.yaml
+ 1532  cat bb.yaml 
+ 1533  kubectl run bb --image=busybox --restart=Never --dry-run  -- /bin/sh "echo -c Hello W0rld"  >> bb.yaml
+ 1534  cat bb.yaml 
+ 1535  kubectl run bb --image=busybox --restart=Never --dry-run  -o yaml -- /bin/sh "echo -c Hello W0rld"  >> bb.yaml
+ 1536  cat bb.yaml 
+ 1537  kubectl run busybox --image=busybox -it --restart=Never -- /bin/sh -c 'echo hello world'
+ 1538  kubectl run busybox --image=busybox -it --restart=Never -- echo 'hello world'
+ 1539  kubectl run busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1540  kubectl run 2busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1541  minikube status
+ 1542  kubectl run 2busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1543  kubectl run 3busybox1 --image=busybox -it --restart=Never -- echo 'hello world'
+ 1544  kubectl run 3busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1545  kubectl run 33busybox1 --image=busybox -it --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1546  kubectl run 43busybox1 --image=busybox -it --restart=Never --dry-run -o yaml -- echo 'hello world'
+ 1547  kubectl run 43busybox1 --image=busybox -it --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'
+ 1548  kubectl run 43busybox1 --image=busybox  --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'
+ 1549  kubectl run 43busybox1 --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'hello world'
+ 1550  kubectl run 3busybox1 --image=busybox  --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1551  kubectl run 53busybox1 --image=busybox --restart=Never -- echo 'hello world' --dry-run -o yaml
+ 1552  minikube status
+ 1553  cc
+ 1554  kubectl run nginxENV --image=nginx --restart=Never --env=var1=val1
+ 1555  kubectl run nginxenv --image=nginx --restart=Never --env=var1=val1
+ 1556  kubectl exec -it ngenv -- env
+ 1557  kubectl exec -it nginxenv -- env
+ 1558  cc'
+ 1559  cc
+ 1560  bash gitBatch.sh 
+ 1561  cc
+ 1562  exit
+ 1563  cc
+ 1564  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -oyaml
+ 1565  kubectl delete pod b2mc
+ 1566  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -oyaml > 2b1.yaml
+ 1567  nano 2b1.yaml 
+ 1568  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -o yaml> > 2b1.yaml
+ 1569  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -o yaml >> 2b1.yaml
+ 1570  kubectl delete pod b2mc
+ 1571  kubectl run b2mc --image=busybox --restart=Never -- /bin/sh "echo Helloo World; sleep 3600" --dry-run -o yaml >> 2b1.yaml
+ 1572  nano 2b1.yaml 
+ 1573  kubectl run b2mc --image=busybox --restart=Never --dry-run -- /bin/sh "echo Helloo World; sleep 3600" -o yaml > 2b.yaml
+ 1574  nano 2b1.yaml 
+ 1575  cc
+ 1576  kubectl b2mc --image=busybox --restart=Never -o yaml --dry-run -- /bin/sh -c "echo hello; sleep 3600" > b2mc.yaml
+ 1577  kubectl run b2mc --image=busybox --restart=Never -o yaml --dry-run -- /bin/sh -c "echo hello; sleep 3600" > b2mc.yaml
+ 1578  nano b2mc.yaml 
+ 1579  kubectl create -f b2mc.yaml 
+ 1580  kubectl delete pod b2mc
+ 1581  kubectl create -f b2mc.yaml 
+ 1582  kubectl get pod b2mc
+ 1583  kubectl get pod b2mc -w
+ 1584  kubectl exec -ti b2mc -c bb2 -- /bin/sh
+ 1585  kubectl exec -ti b2mc -c bb -- /bin/sh
+ 1586  ls
+ 1587  kubectl exec -ti b2mc -c bb1 -- /bin/sh
+ 1588  cc
+ 1589  kubectl run c1a --image=nginx --restart=Never --label=app=v1
+ 1590  cc
+ 1591  kubectl run c1a --image=nginx --restart=Never --labels=app=v1
+ 1592  kubectl get pod c1a
+ 1593  kubectl get pod c1a --show-labels
+ 1594  kubectl run c1b --image=nginx --restart=Never --labels=app=v1
+ 1595  kubectl get pod c1a --show-labels
+ 1596  kubectl get pod  --show-labels
+ 1597  cc
+ 1598  kubectl label pod c3b app=v2 --overwrite
+ 1599  kubectl label pod c1b app=v2 --overwrite
+ 1600  kubectl get pod c1a --show-labels
+ 1601  kubectl get pod c1b --show-labels
+ 1602  kubectl get po -L app
+ 1603  kubectl get po -label-columns=app
+ 1604  kubectl get po --label-columns=app
+ 1605  cc
+ 1606  kget po -l aap=v2
+ 1607  kubectl get po -l aap=v2
+ 1608  kubectl get po -l app=v2
+ 1609  kubectl get po -l app=v1
+ 1610  kubectl get po -l 
+ 1611  kubectl get po -l a
+ 1612  cc
+ 1613  kubectl get po -l 'app in (v2)'
+ 1614  kubectl get po --selector=app=v2
+ 1615  cc
+ 1616  kubectl get  pod 
+ 1617  kubectl label pod c1a app-
+ 1618  kubectl get pod c1b
+ 1619  kubectl get pod c1b --show-label
+ 1620  kubectl get pod c1b --show-labels
+ 1621  kubectl get pod c1a --show-labels
+ 1622  cc
+ 1623  bash gitBash
+ 1624  bash gitBash.sh
+ 1625  history | grep bash
+ 1626  bash gitBatch.sh 
+ 1627  exit
+ 1628  minikube start
+ 1629  echo "# k8CKAD" >> README.md
+ 1630  git init
+ 1631  git add README.md
+ 1632  git commit -m "first commit"
+ 1633  git remote add origin https://github.com/engineerbaz/k8CKAD.git
+ 1634  git push -u origin master
+ 1635  echo "echo "# k8CKAD" >> README.md
+ 1636  git init
+ 1637  git add README.md
+ 1638  git commit -m "first commit"
+ 1639  git remote add origin https://github.com/engineerbaz/k8CKAD.git
+ 1640  git push -u origin master
+ 1641  echo "Preparation of K8s for CKAD exam" >> README.md 
+ 1642  git add README.md 
+ 1643  git commit -m "2nd"
+ 1644  git push -u origin master
+ 1645  cc
+ 1646  source <(kubectl completion bash)
+ 1647  script 202003141414
+ 1648  script 202003141444
+ 1649  script 202003150112
+ 1650  bash gitBatch.sh 
+ 1651  cc
+ 1652  exit
+ 1653  ls
+ 1654  ls *.bat
+ 1655  ls *.sh
+ 1656  ll ?it*.sh
+ 1657  ll ??it*.sh
+ 1658  exit
+ 1659  gedit
+ 1660  cc
+ 1661  kubectl run ca1 --image=nginx:1.7.8 --replicas=2 --port=80
+ 1662  kubectl create deploy ca1a --image=nginx:1.7.8 --dry-run -o yaml > ca1a.yaml
+ 1663  nano ca1a.yaml 
+ 1664  kubectl apply -f ca1a.yaml 
+ 1665  kubectl get deploy
+ 1666  kubectl get deploy ca1 -o yaml
+ 1667  cc
+ 1668  kubectl describe deply ca1
+ 1669  kubectl describe deploy ca1
+ 1670  cc
+ 1671  kubectl get rs -l run=nginx
+ 1672  kubectl get rs -l run=ca1
+ 1673  kubectl get pod -l run=ca1
+ 1674  kubectl get pod -l app=ca1
+ 1675  kubectl get pod -l app=ca1a
+ 1676  kubectl rollout status deploy ca1
+ 1677  kubectl set image deploy ca1 nginx=nginx:1.7.9
+ 1678  kubectl set image deploy ca1 nginx:1.7.8=nginx:1.7.9
+ 1679  nano ca1a.yaml 
+ 1680  kubectl set image deploy ca1a nginx=nginx:1.7.9
+ 1681  cc
+ 1682  kubectl rollout history deploy ca1
+ 1683  kubectl rollout history deploy ca1a
+ 1684  kubectl get rs
+ 1685  cc
+ 1686  kubectl rollout undo deploy ca1a
+ 1687  kubectl get po 
+ 1688  ca1a-6847576946-62k27 | grep -i image
+ 1689  kubectl get po 
+ 1690  kubectl describe pod ca1a-6847576946-62k27 | grep -i image
+ 1691  cc
+ 1692  kubectl set image deploy ca1a nginx=nginx:1.9.1
+ 1693  kubectl rllout status deploy nginx
+ 1694  kubectl rllout status deploy ca1
+ 1695  kubectl rllout status deploy ca1a
+ 1696  kubectl rollout status deploy ca1a
+ 1697  kubectl rollout status deploy ca1
+ 1698  kubectl rollout status deploy ca1a
+ 1699  kubectl rollout status deploy ca1
+ 1700  kubectl rollout status deploy ca1a
+ 1701  cc
+ 1702  kubectl rollout status
+ 1703  kubectl rollout status deploy ca1a
+ 1704  kubectl rollout history deploy ca1a
+ 1705  kubectl rollout undo deploy ca1a --to-revision=2
+ 1706  kubectl describe deploy ca1a | grep Image:
+ 1707  kubectl rollout status ca1a
+ 1708  kubectl rollout status deploy ca1a
+ 1709  cc
+ 1710  kubectl rollout history deploy ca1aa
+ 1711  kubectl rollout history deploy ca1a
+ 1712  kubectl rollout history deploy ca1a --revision=4
+ 1713  kubectl rollout status deploy ca1a
+ 1714  history 
+ 1715  cc
+ 1716  kubectl rollout history deploy ca1a
+ 1717  history 
+ 1718  cc
+ 1719  kubectl scale deploy ca1a --replicas=5
+ 1720  kubectl get deploy
+ 1721  kubectl scale deploy ca1a --replicas=6
+ 1722  kubectl get deploy
+ 1723  cc
+ 1724  kubectl autoscale 
+ 1725  kubectl autoscale deploy ca1a --min=3 --max=7 --cpu-percent=70
+ 1726  kubectl get deploy
+ 1727  kubectl get deploy ca1a 
+ 1728  kubectl get deploy ca1a -h
+ 1729  kubectl get deploy ca1a top
+ 1730  kubectl top pod 
+ 1731  kubectl get pod 
+ 1732  kubectl get pod ca1a-5b57bbb657-gv7nv 
+ 1733  kubectl top -h
+ 1734  kubectl top pod ca1a-5b57bbb657-gv7nv
+ 1735  kubectl top pod -h
+ 1736  kubectl top pod 
+ 1737  kubectl top node
+ 1738  cc
+ 1739  kubectl top node --help
+ 1740  kubectl top node minikube
+ 1741  kubectl top node --heapster-namespace='default
+ 1742  exit
+ 1743  kubectl top node --heapster-namespace='default'
+ 1744  cc
+ 1745  kubectl version 
+ 1746  git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
+ 1747  kubectl create -f kubernetes-metrics-server/
+ 1748  kubectl top nodes
+ 1749  kubectl top pods
+ 1750  kubectl top nodes
+ 1751  kubectl top node
+ 1752  kubectl top pod
+ 1753  kubectl top pods
+ 1754  kubectl top pod ca1a-5b57bbb657-gv7nv
+ 1755  kubectl top po
+ 1756  kubectl top node --heapster-namespace='default'
+ 1757  kubectl top po
+ 1758  kubectl top 
+ 1759  node --h
+ 1760  kubectl top node -h
+ 1761  kubectl top pod -h
+ 1762  kubectl top pod -A
+ 1763  kubectl top pod -h
+ 1764  kubectl top pod -A
+ 1765  cc
+ 1766  kubectl rollout pause deploy ca1a
+ 1767  kubectl set image deploy ca1a nginx=nginx:1.9.1
+ 1768  kubectl rollout history deploy ca1a
+ 1769  kubectl roloout resume deploy ca1a
+ 1770  kubectl rollout resume deploy ca1a
+ 1771  kubectl rollout history deploy ca1a
+ 1772  cc
+ 1773  kubectl run c2 --image=perl --restart=onFailure --perl -Mbignum=bpi -wle 'print bpi(2000)'
+ 1774  kubectl run c2 --image=perl --restart=onFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+ 1775  kubectl run c2 --image=perl --restart=OnFailure  -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+ 1776  kubectl get job
+ 1777  kubectl get job -v
+ 1778  kubectl get job -w
+ 1779  cc
+ 1780  kubectl logs c2
+ 1781  kubectl get pod
+ 1782  kubectl get pod c2*
+ 1783  kubectl get pod b2*
+ 1784  kubectl get pod b2{}
+ 1785  kubectl get pod b2{.}
+ 1786  kubectl get pod c1{a,b}
+ 1787  kubectl get pod c1{a,.}
+ 1788  kubectl get pod c1{..}
+ 1789  kubectl get job
+ 1790  kubectl get job c2 
+ 1791  kubectl get po
+ 1792  kubectl get po c2-m6cjm
+ 1793  kubectl logs  c2-m6cjm
+ 1794  kubectl get po c2-m6cjm
+ 1795  kubectl logs
+ 1796  kubectl logs c2-m6cjm
+ 1797  cc
+ 1798  kubectl get job
+ 1799  minikube status
+ 1800  minikube update-context
+ 1801  minikube status
+ 1802  kubectl get job
+ 1803  minikube status
+ 1804  minikube update-context
+ 1805  minikube status
+ 1806  exit
+ 1807  cc
+ 1808  ll
+ 1809  ls
+ 1810  ll kubernetes-metrics-server/
+ 1811  cc
+ 1812  kubectl c4 --image=busybox --restart=OnFailure -- /bin/sh -c "echo hello;sleep 30;echo world"
+ 1813  kubectl run c4 --image=busybox --restart=OnFailure -- /bin/sh -c "echo hello;sleep 30;echo world"
+ 1814  kubectl get job
+ 1815  kubectl get job -w
+ 1816  kubectl logs c4
+ 1817  kubectl logs c2
+ 1818  kubectl get job -w
+ 1819  kubectl logs c4
+ 1820  kubectl get job, pod
+ 1821  kubectl get job,pod
+ 1822  kubectl logs c4-4ntwp
+ 1823  cc
+ 1824  kubectl logs job/c4
+ 1825  cc
+ 1826  kubectl run c6 --image=busybox --restart=OnFailure --dry-run -o yaml
+ 1827  kubectl run c6 --image=busybox --restart=OnFailure --dry-run -o yaml > c6.yaml
+ 1828  nano c6.yaml 
+ 1829  cc
+ 1830  kubectl explain job --recursive
+ 1831  exit
+ 1832  ssh 39.50.149.54
+ 1833  exit
+ 1834  minikube start
+ 1835  kubectl run ca1 --image=nginx:1.7.8--replicas=2 --port=80
+ 1836  cc
+ 1837  script 202003151935
+ 1838  bash gitBatch.sh 
+ 1839  minikube stop
+ 1840  minikube start
+ 1841  script 202003160010
+ 1842  cc
+ 1843  bash gitBatch.sh 
+ 1844  cc
+ 1845  ip ad
+ 1846  ssh 192.168.10.8
+ 1847  service ssh status
+ 1848  cat /usr/sbin/sshd 
+ 1849  cc
+ 1850  cat ~/.ssh/config
+ 1851  nano ~/.ssh/config
+ 1852  nano /etc/ssh/sshd_config 
+ 1853  grep -i port /etc/ssh/sshd_config
+ 1854  service ssh status
+ 1855  nano /etc/ssh/sshd_config 
+ 1856  find sshd_config
+ 1857  locate sshd_config
+ 1858  cat /usr/share/openssh/sshd_config
+ 1859  nano /etc/ssh/sshd_config 
+ 1860  sudo nano /etc/ssh/sshd_config 
+ 1861  service ssh restart 
+ 1862  service ssh status
+ 1863  cat /var/log/
+ 1864  service ssh status
+ 1865  ip addr
+ 1866  cc
+ 1867  ip addr
+ 1868  cc
+ 1869  ip addr
+ 1870  cc
+ 1871  ls
+ 1872  k get all 
+ 1873  cc
+ 1874  kubectl run c5job --image=busybox --dry-run -o yaml > c5job.yaml
+ 1875  nano c5job.yaml 
+ 1876  kubectl explain job --recursive
+ 1877  kubectl explain job.spec.activeDeadlineSeconds
+ 1878  nano c5job.yaml 
+ 1879  kubectl create -f c5job.yaml 
+ 1880  nano c5job.yaml 
+ 1881  kubectl create -f c5job.yaml 
+ 1882  nano c5job.yaml 
+ 1883  kubectl create -f c5job.yaml 
+ 1884  nano c5job.yaml 
+ 1885  kubectl create -f c5job.yaml 
+ 1886  nano c5job.yaml 
+ 1887  kubectl create -f c5job.yaml 
+ 1888  nano c5job.yaml 
+ 1889  kubectl create -f c5job.yaml 
+ 1890  nano c5job.yaml 
+ 1891  kubectl create -f c5job.yaml 
+ 1892  kubectl get jo
+ 1893  kubectl get job
+ 1894  cc
+ 1895  kubectl explain job --recursive | grep -i 3 paralledl
+ 1896  kubectl explain job --recursive | grep -i 3 parallel
+ 1897  kubectl explain job --recursive | grep -i 3 Parallel
+ 1898  kubectl explain job --recursive | grep  Parallel
+ 1899  kubectl explain job --recursive | grep Parallel
+ 1900  kubectl explain job --recursive 
+ 1901  cc
+ 1902  kubectl explain job --recursive 
+ 1903  kubectl run c6job --image=busybox --restart=OnFailure --dry-run -o yaml > c6job.yaml
+ 1904  nano c6job.yaml 
+ 1905  kubectl create -f c6job.yaml 
+ 1906  kubectl get job
+ 1907  kubectl get job c2 --dry-run -o yaml
+ 1908  kubectl get job/c2 --dry-run -o yaml
+ 1909  kubectl get job/c2 --export
+ 1910  kubectl get job/c2 --export -o yaml
+ 1911  cc
+ 1912  kubectl run c7cj --image=busybox --restart=OnFailure --schedule="*/1 * * * *" --dry-run -o yaml > c7cj.yaml
+ 1913  nano c7cj.yaml 
+ 1914  kubectl run busybox --image=busybox --restart=OnFailure --schedule="*/1 * * * *" -- /bin/sh -c 'date; echo Hello from the Kubernetes cluster'
+ 1915  kubectl run bbusybox --image=busybox --restart=OnFailure --schedule="*/1 * * * *" -- /bin/sh -c 'date; echo Hello from the Kubernetes cluster' --export -o yaml > c77.yaml
+ 1916  nano c77.yaml 
+ 1917  kubectl run rbbusybox --image=busybox --restart=OnFailure --schedule="*/1 * * * *" -- /bin/sh -c 'date; echo Hello from the Kubernetes cluster' --dry-run -o yaml > c77.yaml
+ 1918  nano c77.yaml 
+ 1919  kubectl run erbbusybox --image=busybox --restart=OnFailure --schedule="*/1 * * * *" --dry-run -o yaml -- /bin/sh -c 'date; echo Hello from the Kubernetes cluster' > c77.yaml
+ 1920  nano c77.yaml 
+ 1921  kubectl get cj
+ 1922  kubectl logs cj 
+ 1923  cc
+ 1924  ls
+ 1925  bash gitBatch.sh 
+ 1926  cc
+ 1927  kubectl create configmap d1cm --from-literal=foo=lala, --from-literal=foo2=lolo
+ 1928  kubectl get c
+ 1929  kubectl get cm
+ 1930  kubectl get cm d1cm - oyaml
+ 1931  kubectl get cm d1cm -o yaml
+ 1932  cc
+ 1933  echo -e "foo3=lii\nfoo4=lele" > config.txt
+ 1934  cat config.txt 
+ 1935  kubectl create configmap d2cm --from-file=config.txt
+ 1936  kubectl get cm 
+ 1937  cc
+ 1938  kubectl get cm d2cm -o yaml
+ 1939  cc
+ 1940  echo -e "var11=val1\n # this is comment\n vaar22=val > config.env
+ 1941  echo -e "var11=val1\n # this is comment\n vaar22=val" > config.env
+ 1942  cat config.env 
+ 1943  kubectl create configmap d3cm --from-env-file=config.env
+ 1944  kubectl get cm d3cm -o yaml
+ 1945  kubectl get cm d2cm -o yaml
+ 1946  cc
+ 1947  echo -e "var3=val3\nvar4=val4" > config4.txt
+ 1948  rm 2he.txt aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1949  cc
+ 1950  kubectl create configmap d4cm --from-fil=special=config.env
+ 1951  kubectl create configmap d4cm --from-file=special=config.env
+ 1952  kubectl get cm
+ 1953  kubectl get cm d6cn=a=======assssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1954  kubectl get cm d6cm -o yaml
+ 1955  cc
+ 1956  kubectl get cm d6cm -o yamls
+ 1957  kubectl get cm
+ 1958  host
+ 1959  history 
+ 1960  kubectl create configmap d4cm --from-file=speciassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1961  cc
+ 1962  kubectl create configmap d4cm --from-file=special=config.txt
+ 1963  kubectl create configmap d5cm --from-file=special=config.txt
+ 1964  kubectl get cm
+ 1965  kubectl get cm d5cm - oyaml
+ 1966  kubectl get cm d5cm -o yaml
+ 1967  kubectl get cm d4cm -o yaml
+ 1968  kubectl get cm d3cm -o yaml
+ 1969  kubectl get cm d33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333cm -o yaml
+ 1970  kubectl get cm d2cm -o yaml
+ 1971  bash gitBatch.sh 
+ 1972  minikube stop
+ 1973  exit
+ 1974  minikube sart
+ 1975  minikube start
+ 1976  ll
+ 1977  ls
+ 1978  cc
+ 1979  ls
+ 1980  script 202003182340
+ 1981  exit
+ 1982  cc
+ 1983  l
+ 1984  ls
+ 1985  locate *.env
+ 1986  ll
+ 1987  kubectl get cm
+ 1988  ll d*
+ 1989  ll c*
+ 1990  history 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cchistory [3Pll c*d*kubectl get cm
+NAME        DATA   AGE
+106cm       1      19d
+110c        1      19d
+112env      1      18d
+cfgvolume   2      18d
+d1cm        2      22h
+d2cm        1      22h
+d3cm        2      22h
+d4cm        1      22h
+d5cm        1      22h
+env2        1      18d
+envcfgmap   1      18d
+testenv     1      18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl c[Krun[K[K[Kcreate dm[K[Kcm options --from-literal=v ar5=va5[Kl5
+configmap/options created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create cm options --from-literal=vaar5=val5[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl get cmcc[Kkubectl get cm
+NAME        DATA   AGE
+106cm       1      19d
+110c        1      19d
+112env      1      18d
+cfgvolume   2      18d
+d1cm        2      22h
+d2cm        1      22h
+d3cm        2      22h
+d4cm        1      22h
+d5cm        1      22h
+env2        1      18d
+envcfgmap   1      18d
+options     1      3s
+testenv     1      18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get cm[Km opti[K[K[K[K[K[Kong[KfigMap options
+NAME      DATA   AGE
+options   1      25s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get configMap options -o yaml
+apiVersion: v1
+data:
+  var5: val5
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2020-03-19T19:25:52Z"
+  name: options
+  namespace: default
+  resourceVersion: "422692"
+  selfLink: /api/v1/namespaces/default/configmaps/options
+  uid: 3f1e8536-173f-4731-a559-0650dab86300
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl re[K[Krun d7 --image=nginx --restart=Nev er --dry-run -o yaml > d7.t[Kyaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d7.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    d7.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d7[9;3Hname: d7[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d7[14;5Hresources: {}[15;3HdnsPolicy: ClusterFirst[16;3HrestartPolicy: Never[17dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[13;13H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[14;35r[14;1HM[1;38r[14;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lv[?12l[?25h[?25l:[?12l[?25h[?25l7[15;35r8[15dM[1;38r[15;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[36d[K[15;5H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d7.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 17 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.eb[Knv --recursive[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.env --recursive
+error: field "env" does not exist
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.env --recursive[1@c[1@o[1@n[1@t[1@a[1@i[1@n[C[1@e[1@r[1@s[1@ [1P[1@.
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: env <[]Object>
+
+DESCRIPTION:
+     List of environment variables to set in the container. Cannot be updated.
+
+     EnvVar represents an environment variable present in a Container.
+
+FIELDS:
+   name	<string>
+   value	<string>
+   valueFrom	<Object>
+      configMapKeyRef	<Object>
+         key	<string>
+         name	<string>
+         optional	<boolean>
+      fieldRef	<Object>
+         apiVersion	<string>
+         fieldPath	<string>
+      resourceFieldRef	<Object>
+         containerName	<string>
+         divisor	<string>
+         resource	<string>
+      secretKeyRef	<Object>
+         key	<string>
+         name	<string>
+         optional	<boolean>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.env --recursive[11P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano d7.yaml [Kkubectl run d7 --image=nginx --restart=Never --dry-run -o yaml > d7.yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano d7.yaml [K
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 17 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d7.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d7[9;3Hname: d7[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d7[14;5Henv:[16;5Hresources: {}[17;3HdnsPolicy: ClusterFirst[18;3HrestartPolicy: Never[19dstatus: {}[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d7[9;3Hname: d7[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d7[14;5Henv:[16;5Hresources: {}[17;3HdnsPolicy: ClusterFirst[18;3HrestartPolicy: Never[19dstatus: {}[36;67H(B[0;7m[ Read 1[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d7[9;3Hname: d7[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d7[14;5Henv:[16;5Hresources: {}[17;3HdnsPolicy: ClusterFirst[18;3HrestartPolicy: Never[19dstatus: {}[37d[1;37H(B[0;7md7.yaml[73G(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[?12l[?25h[?25l   valueFrom    <Object>[23;7HconfigMapKeyRef   <Object>[24;10Hkey    <string>[25;10Hname   <string>[26;10Hoptional[25G<boolean>[27d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[15d[?12l[?25h[?25l[14;9H[?12l[?25h[?25l7[15;36r8[15dM[1;38r[15;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25lF[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25l:[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d7.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d7.yaml kubectl explain pod.spec.containers.env --rrecursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: env <[]Object>
+
+DESCRIPTION:
+     List of environment variables to set in the container. Cannot be updated.
+
+     EnvVar represents an environment variable present in a Container.
+
+FIELDS:
+   name	<string>
+   value	<string>
+   valueFrom	<Object>
+      configMapKeyRef	<Object>
+         key	<string>
+         name	<string>
+         optional	<boolean>
+      fieldRef	<Object>
+         apiVersion	<string>
+         fieldPath	<string>
+      resourceFieldRef	<Object>
+         containerName	<string>
+         divisor	<string>
+         resource	<string>
+      secretKeyRef	<Object>
+         key	<string>
+         name	<string>
+         optional	<boolean>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.env --rrecursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d7.yaml [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    d7.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d7[9;3Hname: d7[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d7[14;5Henv:[15dvalueFrom:[17;5Hresources: {}[18;3HdnsPolicy: ClusterFirst[19;3HrestartPolicy: Never[20dstatus: {}[23;4HvalueFrom    <Object>[24;7HconfigMapKeyRef   <Object>[25;10Hkey    <string>[26;10Hname   <string>[27;10Hoptional[25G<boolean>[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[14;9H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[15;35r[15;1HM[1;38r[15;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d7.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 27 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d7.yaml kubectl explain pod.spec.containers.env --rrecursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: env <[]Object>
+
+DESCRIPTION:
+     List of environment variables to set in the container. Cannot be updated.
+
+     EnvVar represents an environment variable present in a Container.
+
+FIELDS:
+   name	<string>
+   value	<string>
+   valueFrom	<Object>
+      configMapKeyRef	<Object>
+         key	<string>
+         name	<string>
+         optional	<boolean>
+      fieldRef	<Object>
+         apiVersion	<string>
+         fieldPath	<string>
+      resourceFieldRef	<Object>
+         containerName	<string>
+         divisor	<string>
+         resource	<string>
+      secretKeyRef	<Object>
+         key	<string>
+         name	<string>
+         optional	<boolean>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.env --recursive[K[K[K[K[K[K[K[K[K[K[K[K
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: env <[]Object>
+
+DESCRIPTION:
+     List of environment variables to set in the container. Cannot be updated.
+
+     EnvVar represents an environment variable present in a Container.
+
+FIELDS:
+   name	<string> -required-
+     Name of the environment variable. Must be a C_IDENTIFIER.
+
+   value	<string>
+     Variable references $(VAR_NAME) are expanded using the previous defined
+     environment variables in the container and any service environment
+     variables. If a variable cannot be resolved, the reference in the input
+     string will be unchanged. The $(VAR_NAME) syntax can be escaped with a
+     double $$, ie: $$(VAR_NAME). Escaped references will never be expanded,
+     regardless of whether the variable exists or not. Defaults to "".
+
+   valueFrom	<Object>
+     Source for the environment variable's value. Cannot be used if value is not
+     empty.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.env --recursive[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano d7.yaml [K
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 27 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d7.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d7[9;3Hname: d7[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d7[14;5Henv:[16dvalueFrom:[18;5Hresources: {}[19;3HdnsPolicy: ClusterFirst[20;3HrestartPolicy: Never[21dstatus: {}[24;4HvalueFrom    <Object>[25;7HconfigMapKeyRef   <Object>[26;10Hkey    <string>[27;10Hname   <string>[28;10Hoptional[25G<boolean>[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d7[9;3Hname: d7[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d7[14;5Henv:[16dvalueFrom:[18;5Hresources: {}[19;3HdnsPolicy: ClusterFirst[20;3HrestartPolicy: Never[21dstatus: {}[24;4HvalueFrom    <Object>[25;7HconfigMapKeyRef   <Object>[26;10Hkey    <string>[27;10Hname   <string>[28;10Hoptional[25G<boolean>[36;67H(B[0;7m[ Read 2[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d7[9;3Hname: d7[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d7[14;5Henv:[16dvalueFrom:[18;5Hresources: {}[19;3HdnsPolicy: ClusterFirst[20;3HrestartPolicy: Never[21dstatus: {}[24;4HvalueFrom    <Object>[25;7HconfigMapKeyRef   <Object>[26;10Hkey    <string>[27;10Hname   <string>[28;10Hoptional[25G<boolean>[37d[1;37H(B[0;7md7.yaml[73G(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[15d[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[15d [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25lp[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ls[?12l[?25h[?25l[16;17H[?12l[?25h[?25l7[17;36r8[17dM[1;38r[17;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25lg[?12l[?25h[?25lM[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25lK[?12l[?25h[?25le[?12l[?25h[?25lY[?12l[?25h[?25l [?12l[?25h[?25ly[?12l[?25h[?25lR[?12l[?25h[?25le[?12l[?25h[?25lf[?12l[?25h[?25l:[?12l[?25h[?25l7[18;36r8[18dM[1;38r[18;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25lp[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ls[?12l[?25h[?25l7[19;36r8[19dM[1;38r[19;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[19;11H[?12l[?25h[?25lk[?12l[?25h[?25le[?12l[?25h[?25ly[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25l5[?12l[?25h[?25l[20d[?12l[?25h[?25l[20;36r[36;1H
+[1;38r[20;1H[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[A[?12l[?25h[?25l[24;36r[36;1H
+[1;38r[24;1H[?12l[?25h[?25l[24;36r[36;1H
+[1;38r[24;1H[?12l[?25h[?25l[24;36r[36;1H
+[1;38r[24;1H[?12l[?25h[?25l[24;36r[36;1H
+[1;38r[24;1H[?12l[?25h[?25l[24;36r[36;1H
+[1;38r[24;1H[?12l[?25h[?25l[24;36r[36;1H
+[1;38r[24;1H[?12l[?25h[?25l[K[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d7.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 22 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create -f d7.yaml 
+pod/d7 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kb[Kubectl get pod/d7
+NAME   READY   STATUS    RESTARTS   AGE
+d7     1/1     Running   0          10s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/d7[1P pod/d7[1P pod/d7[1P pod/d7l pod/d7o pod/d7g pod/d7s pod/d7
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl eec[K[Kxec -ti d7 --env env
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=d7
+TERM=xterm
+options=val5
+KUBERNETES_PORT_443_TCP=tcp://10.96.0.1:443
+NGINX_SERVICE_HOST=10.105.5.19
+NGINX_SERVICE_PORT=80
+NGINX_PORT_80_TCP=tcp://10.105.5.19:80
+NGINX_PORT_80_TCP_ADDR=10.105.5.19
+KUBERNETES_SERVICE_HOST=10.96.0.1
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_PORT=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP_PORT=443
+NGINX_PORT_80_TCP_PORT=80
+KUBERNETES_SERVICE_PORT_HTTPS=443
+KUBERNETES_PORT_443_TCP_ADDR=10.96.0.1
+NGINX_PORT=tcp://10.105.5.19:80
+NGINX_PORT_80_TCP_PROTO=tcp
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+NGINX_VERSION=1.17.9
+NJS_VERSION=0.3.9
+PKG_RELEASE=1~buster
+HOME=/root
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl creat [Ke [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kalias kcf[K="kubectl create"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc [K[Kc
+Error: must specify one of -f and -k
+
+Create a resource from a file or from stdin.
+
+ JSON and YAML formats are accepted.
+
+Examples:
+  # Create a pod using the data in pod.json.
+  kubectl create -f ./pod.json
+  
+  # Create a pod based on the JSON passed into stdin.
+  cat pod.json | kubectl create -f -
+  
+  # Edit the data in docker-registry.yaml in JSON then create the resource using the edited data.
+  kubectl create -f docker-registry.yaml --edit -o json
+
+Available Commands:
+  clusterrole         Create a ClusterRole.
+  clusterrolebinding  Create a ClusterRoleBinding for a particular ClusterRole
+  configmap           Create a configmap from a local file, directory or literal value
+  cronjob             Create a cronjob with the specified name.
+  deployment          Create a deployment with the specified name.
+  job                 Create a job with the specified name.
+  namespace           Create a namespace with the specified name
+  poddisruptionbudget Create a pod disruption budget with the specified name.
+  priorityclass       Create a priorityclass with the specified name.
+  quota               Create a quota with the specified name.
+  role                Create a role with single rule.
+  rolebinding         Create a RoleBinding for a particular Role or ClusterRole
+  secret              Create a secret using specified subcommand
+  service             Create a service using specified subcommand.
+  serviceaccount      Create a service account with the specified name
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --edit=false: Edit the API resource before creating
+  -f, --filename=[]: Filename, directory, or URL to files to use to create the resource
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --raw='': Raw URI to POST to the server.  Uses the transport specified by the kubeconfig file.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --validate=true: If true, use a schema to validate the input before sending it
+      --windows-line-endings=false: Only relevant if --edit=true. Defaults to the line ending native to your platform.
+
+Usage:
+  kubectl create -f FILENAME [options]
+
+Use "kubectl <command> --help" for more information about a given command.
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc cm aoth[K[K[Knother --from-literal=var6=val6 --f rom-literal=var7=val7
+configmap/another created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kin[K[K get cm
+NAME        DATA   AGE
+106cm       1      19d
+110c        1      19d
+112env      1      18d
+another     2      6s
+cfgvolume   2      18d
+d1cm        2      22h
+d2cm        1      22h
+d3cm        2      22h
+d4cm        1      22h
+d5cm        1      22h
+env2        1      18d
+envcfgmap   1      18d
+options     1      7m45s
+testenv     1      18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ku[K run d8 --image=nginx -res[K[K[K-restart=Never -o  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K--d ry-run -o yaml > d8.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k run d8 --image=nginx --restart=Never --drry-run -o yaml > d8.yaml[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[Cget cm[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc cm another --from-literal=var6=val6 --frrom-literal=var7=val7[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Calias kc="kubectl create"kubectl exec -ti d7 -- env[7Plogs pod/d7[1Pget[C[C[C[C[C[C[Ccreate -f d7.yaml [13Pnano[C[C[C[C[C[C[C[C[Ckubectl explain pod.spec.containers.env[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.env[K[K[K
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: containers <[]Object>
+
+DESCRIPTION:
+     List of containers belonging to the pod. Containers cannot currently be
+     added or removed. There must be at least one container in a Pod. Cannot be
+     updated.
+
+     A single application container that you want to run within a pod.
+
+FIELDS:
+   args	<[]string>
+     Arguments to the entrypoint. The docker image's CMD is used if this is not
+     provided. Variable references $(VAR_NAME) are expanded using the
+     container's environment. If a variable cannot be resolved, the reference in
+     the input string will be unchanged. The $(VAR_NAME) syntax can be escaped
+     with a double $$, ie: $$(VAR_NAME). Escaped references will never be
+     expanded, regardless of whether the variable exists or not. Cannot be
+     updated. More info:
+     https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+
+   command	<[]string>
+     Entrypoint array. Not executed within a shell. The docker image's
+     ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME)
+     are expanded using the container's environment. If a variable cannot be
+     resolved, the reference in the input string will be unchanged. The
+     $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME).
+     Escaped references will never be expanded, regardless of whether the
+     variable exists or not. Cannot be updated. More info:
+     https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+
+   env	<[]Object>
+     List of environment variables to set in the container. Cannot be updated.
+
+   envFrom	<[]Object>
+     List of sources to populate environment variables in the container. The
+     keys defined within a source must be a C_IDENTIFIER. All invalid keys will
+     be reported as an event when the container is starting. When a key exists
+     in multiple sources, the value associated with the last source will take
+     precedence. Values defined by an Env with a duplicate key will take
+     precedence. Cannot be updated.
+
+   image	<string>
+     Docker image name. More info:
+     https://kubernetes.io/docs/concepts/containers/images This field is
+     optional to allow higher level config management to default or override
+     container images in workload controllers like Deployments and StatefulSets.
+
+   imagePullPolicy	<string>
+     Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always
+     if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated.
+     More info:
+     https://kubernetes.io/docs/concepts/containers/images#updating-images
+
+   lifecycle	<Object>
+     Actions that the management system should take in response to container
+     lifecycle events. Cannot be updated.
+
+   livenessProbe	<Object>
+     Periodic probe of container liveness. Container will be restarted if the
+     probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+   name	<string> -required-
+     Name of the container specified as a DNS_LABEL. Each container in a pod
+     must have a unique name (DNS_LABEL). Cannot be updated.
+
+   ports	<[]Object>
+     List of ports to expose from the container. Exposing a port here gives the
+     system additional information about the network connections a container
+     uses, but is primarily informational. Not specifying a port here DOES NOT
+     prevent that port from being exposed. Any port which is listening on the
+     default "0.0.0.0" address inside a container will be accessible from the
+     network. Cannot be updated.
+
+   readinessProbe	<Object>
+     Periodic probe of container service readiness. Container will be removed
+     from service endpoints if the probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+   resources	<Object>
+     Compute Resources required by this container. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+
+   securityContext	<Object>
+     Security options the pod should run with. More info:
+     https://kubernetes.io/docs/concepts/policy/security-context/ More info:
+     https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+
+   stdin	<boolean>
+     Whether this container should allocate a buffer for stdin in the container
+     runtime. If this is not set, reads from stdin in the container will always
+     result in EOF. Default is false.
+
+   stdinOnce	<boolean>
+     Whether the container runtime should close the stdin channel after it has
+     been opened by a single attach. When stdin is true the stdin stream will
+     remain open across multiple attach sessions. If stdinOnce is set to true,
+     stdin is opened on container start, is empty until the first client
+     attaches to stdin, and then remains open and accepts data until the client
+     disconnects, at which time stdin is closed and remains closed until the
+     container is restarted. If this flag is false, a container processes that
+     reads from stdin will never receive an EOF. Default is false
+
+   terminationMessagePath	<string>
+     Optional: Path at which the file to which the container's termination
+     message will be written is mounted into the container's filesystem. Message
+     written is intended to be brief final status, such as an assertion failure
+     message. Will be truncated by the node if greater than 4096 bytes. The
+     total message length across all containers will be limited to 12kb.
+     Defaults to /dev/termination-log. Cannot be updated.
+
+   terminationMessagePolicy	<string>
+     Indicate how the termination message should be populated. File will use the
+     contents of terminationMessagePath to populate the container status message
+     on both success and failure. FallbackToLogsOnError will use the last chunk
+     of container log output if the termination message file is empty and the
+     container exited with an error. The log output is limited to 2048 bytes or
+     80 lines, whichever is smaller. Defaults to File. Cannot be updated.
+
+   tty	<boolean>
+     Whether this container should allocate a TTY for itself, also requires
+     'stdin' to be true. Default is false.
+
+   volumeDevices	<[]Object>
+     volumeDevices is the list of block devices to be used by the container.
+     This is a beta feature.
+
+   volumeMounts	<[]Object>
+     Pod volumes to mount into the container's filesystem. Cannot be updated.
+
+   workingDir	<string>
+     Container's working directory. If not specified, the container runtime's
+     default will be used, which might be configured in the container image.
+     Cannot be updated.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C run d8 --image=nginx --restart=Never --dry-run -o yaml > d8.yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cget cm[Kc cm another --from-literal=var6=val6 --from-literal=var7=val7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kalias kc="kubectl create"kubectl exec -ti d7 -- env[7Plogs pod/d7exec -ti d7 -- env[7Plogs pod/d7[1Pget[C[C[C[C[C[C[Ccreate -f d7.yaml [13Pnano[C[C[C[C[C[C[C[C[Ckubectl explain pod.spec.containers.env -[K[KFrom
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: envFrom <[]Object>
+
+DESCRIPTION:
+     List of sources to populate environment variables in the container. The
+     keys defined within a source must be a C_IDENTIFIER. All invalid keys will
+     be reported as an event when the container is starting. When a key exists
+     in multiple sources, the value associated with the last source will take
+     precedence. Values defined by an Env with a duplicate key will take
+     precedence. Cannot be updated.
+
+     EnvFromSource represents the source of a set of ConfigMaps
+
+FIELDS:
+   configMapRef	<Object>
+     The ConfigMap to select from
+
+   prefix	<string>
+     An optional identifier to prepend to each key in the ConfigMap. Must be a
+     C_IDENTIFIER.
+
+   secretRef	<Object>
+     The Secret to select from
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.envFrom.cpmf[K[K[Konfgmap[K[K[KMapRef
+error: field "confgMapRef" does not exist
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.envFrom.confgMapRef[K[K[K[K[K[K[K[K[K[K[K[K --recursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: envFrom <[]Object>
+
+DESCRIPTION:
+     List of sources to populate environment variables in the container. The
+     keys defined within a source must be a C_IDENTIFIER. All invalid keys will
+     be reported as an event when the container is starting. When a key exists
+     in multiple sources, the value associated with the last source will take
+     precedence. Values defined by an Env with a duplicate key will take
+     precedence. Cannot be updated.
+
+     EnvFromSource represents the source of a set of ConfigMaps
+
+FIELDS:
+   configMapRef	<Object>
+      name	<string>
+      optional	<boolean>
+   prefix	<string>
+   secretRef	<Object>
+      name	<string>
+      optional	<boolean>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ an[K[Knano d8.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    d8.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d8[9;3Hname: d8[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d8[14;5Hresources: {}[15;3HdnsPolicy: ClusterFirst[16;3HrestartPolicy: Never[17dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[14;18H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[15;35r[15;1HM[1;38r[15;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lv[?12l[?25h[?25lF[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25l:[36d[K[15;13H[?12l[?25h[?25l7[16;36r8[16dM[1;38r[16;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25lg[?12l[?25h[?25lM[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25lR[?12l[?25h[?25le[?12l[?25h[?25lf[?12l[?25h[?25l:[?12l[?25h[?25l7[17;36r8[17dM[1;38r[17;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25ly[?12l[?25h[?25lj[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d8.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 18 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f d8.yaml 
+pod/d8 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kib[K[K get pod/d8
+NAME   READY   STATUS              RESTARTS   AGE
+d8     0/1     ContainerCreating   0          8s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k get pod/d8[1P pod/d8[1P pod/d8[1P pod/d8l pod/d8o pod/d8g pod/d8s pod/d8
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k logs pod/d8[1Pget[C[C[C[C[C[C[C
+NAME   READY   STATUS    RESTARTS   AGE
+d8     1/1     Running   0          15s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl exec -ti d8 -- env
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=d8
+TERM=xterm
+var6=val6
+var7=val7
+KUBERNETES_SERVICE_PORT_HTTPS=443
+NGINX_PORT_80_TCP_ADDR=10.105.5.19
+KUBERNETES_SERVICE_PORT=443
+NGINX_SERVICE_HOST=10.105.5.19
+NGINX_SERVICE_PORT=80
+NGINX_PORT=tcp://10.105.5.19:80
+NGINX_PORT_80_TCP=tcp://10.105.5.19:80
+NGINX_PORT_80_TCP_PROTO=tcp
+NGINX_PORT_80_TCP_PORT=80
+KUBERNETES_SERVICE_HOST=10.96.0.1
+KUBERNETES_PORT_443_TCP=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP_PORT=443
+KUBERNETES_PORT_443_TCP_ADDR=10.96.0.1
+KUBERNETES_PORT=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+NGINX_VERSION=1.17.9
+NJS_VERSION=0.3.9
+PKG_RELEASE=1~buster
+HOME=/root
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl exec -ti d8 -- env[C[1P[1@7
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=d7
+TERM=xterm
+options=val5
+KUBERNETES_PORT_443_TCP=tcp://10.96.0.1:443
+NGINX_SERVICE_HOST=10.105.5.19
+NGINX_SERVICE_PORT=80
+NGINX_PORT_80_TCP=tcp://10.105.5.19:80
+NGINX_PORT_80_TCP_ADDR=10.105.5.19
+KUBERNETES_SERVICE_HOST=10.96.0.1
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_PORT=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP_PORT=443
+NGINX_PORT_80_TCP_PORT=80
+KUBERNETES_SERVICE_PORT_HTTPS=443
+KUBERNETES_PORT_443_TCP_ADDR=10.96.0.1
+NGINX_PORT=tcp://10.105.5.19:80
+NGINX_PORT_80_TCP_PROTO=tcp
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+NGINX_VERSION=1.17.9
+NJS_VERSION=0.3.9
+PKG_RELEASE=1~buster
+HOME=/root
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d7.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 22 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    d7.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d7[9;3Hname: d7[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d7[14;5Henv:[15;5H- name: options[16;7HvalueFrom:[17;9HconfigMapKeyRef:[18;11Hname: options[19;11Hkey: var5[20;5Hresources: {}[21;3HdnsPolicy: ClusterFirst[22;3HrestartPolicy: Never[23dstatus: {}[3d[?12l[?25h[?25l[36;13H(B[0;7m[ line 1/23 (4%), col 1/15 (6%), char 0/342 (0%) ](B[m[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gi[K[Kbash gitBatch.sh 
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	
