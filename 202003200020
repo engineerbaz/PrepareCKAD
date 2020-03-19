@@ -1630,4 +1630,1464 @@ HOME=/root
 ****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
 
 This script will upadte file to GtHub by taking filename input!
-1.yaml	
+1.yaml	      2b1.yaml	  c77.yaml	      d8.yaml
+202003141414  2b.yaml	  c7cj.yaml	      envpod.yaml
+202003141444  2rq.yaml	  ca1a.yaml	      gitBatch.sh
+202003150112  b2mc.yaml   commandsReview.txt  kubernetes-metrics-server
+202003151935  bb.yaml	  config4.txt	      README.md
+202003160010  c5job.yaml  config.env
+202003182340  c6job.yaml  config.txt
+202003200020  c6.yaml	  d7.yaml
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m202003200020[m
+	[31md7.yaml[m
+	[31md8.yaml[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+d7.yaml
+[master cd1d6a9] update on file d7.yaml
+ 1 file changed, 22 insertions(+)
+ create mode 100644 d7.yaml
+
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitBatch.sh 
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      2b1.yaml	  c77.yaml	      d8.yaml
+202003141414  2b.yaml	  c7cj.yaml	      envpod.yaml
+202003141444  2rq.yaml	  ca1a.yaml	      gitBatch.sh
+202003150112  b2mc.yaml   commandsReview.txt  kubernetes-metrics-server
+202003151935  bb.yaml	  config4.txt	      README.md
+202003160010  c5job.yaml  config.env
+202003182340  c6job.yaml  config.txt
+202003200020  c6.yaml	  d7.yaml
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m202003200020[m
+	[31md8.yaml[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+[master 533be61] update on file .
+ 2 files changed, 1651 insertions(+)
+ create mode 100644 202003200020
+ create mode 100644 d8.yaml
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ h[Kgit push master [K[K[K[K[K[K[K[K origin [Km[K master 
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ git push origin master [6Pbash gitBatch.sh[C
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      2b1.yaml	  c77.yaml	      d8.yaml
+202003141414  2b.yaml	  c7cj.yaml	      envpod.yaml
+202003141444  2rq.yaml	  ca1a.yaml	      gitBatch.sh
+202003150112  b2mc.yaml   commandsReview.txt  kubernetes-metrics-server
+202003151935  bb.yaml	  config4.txt	      README.md
+202003160010  c5job.yaml  config.env
+202003182340  c6job.yaml  config.txt
+202003200020  c6.yaml	  d7.yaml
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ccbash gitBatch.sh [6@git push origin master[C[6Pbash gitBatch.sh[Ccc[Knano d7.yaml kubectl exec -ti d7 -- env8[C[C[C[C[C[C[C[14P get pod/d8[1@logs[C[C[C[C[C[C[C[1Pget[C[C[C[C[C[C[Cc -f d8.yaml [1Pnano[C[C[C[C[C[C[C[C[Ckubectl explain pod.spec.containers.envFrom --recursive[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kvolume --recursive
+error: field "volume" does not exist
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.volume --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: containers <[]Object>
+
+DESCRIPTION:
+     List of containers belonging to the pod. Containers cannot currently be
+     added or removed. There must be at least one container in a Pod. Cannot be
+     updated.
+
+     A single application container that you want to run within a pod.
+
+FIELDS:
+   args	<[]string>
+   command	<[]string>
+   env	<[]Object>
+      name	<string>
+      value	<string>
+      valueFrom	<Object>
+         configMapKeyRef	<Object>
+            key	<string>
+            name	<string>
+            optional	<boolean>
+         fieldRef	<Object>
+            apiVersion	<string>
+            fieldPath	<string>
+         resourceFieldRef	<Object>
+            containerName	<string>
+            divisor	<string>
+            resource	<string>
+         secretKeyRef	<Object>
+            key	<string>
+            name	<string>
+            optional	<boolean>
+   envFrom	<[]Object>
+      configMapRef	<Object>
+         name	<string>
+         optional	<boolean>
+      prefix	<string>
+      secretRef	<Object>
+         name	<string>
+         optional	<boolean>
+   image	<string>
+   imagePullPolicy	<string>
+   lifecycle	<Object>
+      postStart	<Object>
+         exec	<Object>
+            command	<[]string>
+         httpGet	<Object>
+            host	<string>
+            httpHeaders	<[]Object>
+               name	<string>
+               value	<string>
+            path	<string>
+            port	<string>
+            scheme	<string>
+         tcpSocket	<Object>
+            host	<string>
+            port	<string>
+      preStop	<Object>
+         exec	<Object>
+            command	<[]string>
+         httpGet	<Object>
+            host	<string>
+            httpHeaders	<[]Object>
+               name	<string>
+               value	<string>
+            path	<string>
+            port	<string>
+            scheme	<string>
+         tcpSocket	<Object>
+            host	<string>
+            port	<string>
+   livenessProbe	<Object>
+      exec	<Object>
+         command	<[]string>
+      failureThreshold	<integer>
+      httpGet	<Object>
+         host	<string>
+         httpHeaders	<[]Object>
+            name	<string>
+            value	<string>
+         path	<string>
+         port	<string>
+         scheme	<string>
+      initialDelaySeconds	<integer>
+      periodSeconds	<integer>
+      successThreshold	<integer>
+      tcpSocket	<Object>
+         host	<string>
+         port	<string>
+      timeoutSeconds	<integer>
+   name	<string>
+   ports	<[]Object>
+      containerPort	<integer>
+      hostIP	<string>
+      hostPort	<integer>
+      name	<string>
+      protocol	<string>
+   readinessProbe	<Object>
+      exec	<Object>
+         command	<[]string>
+      failureThreshold	<integer>
+      httpGet	<Object>
+         host	<string>
+         httpHeaders	<[]Object>
+            name	<string>
+            value	<string>
+         path	<string>
+         port	<string>
+         scheme	<string>
+      initialDelaySeconds	<integer>
+      periodSeconds	<integer>
+      successThreshold	<integer>
+      tcpSocket	<Object>
+         host	<string>
+         port	<string>
+      timeoutSeconds	<integer>
+   resources	<Object>
+      limits	<map[string]string>
+      requests	<map[string]string>
+   securityContext	<Object>
+      allowPrivilegeEscalation	<boolean>
+      capabilities	<Object>
+         add	<[]string>
+         drop	<[]string>
+      privileged	<boolean>
+      procMount	<string>
+      readOnlyRootFilesystem	<boolean>
+      runAsGroup	<integer>
+      runAsNonRoot	<boolean>
+      runAsUser	<integer>
+      seLinuxOptions	<Object>
+         level	<string>
+         role	<string>
+         type	<string>
+         user	<string>
+      windowsOptions	<Object>
+         gmsaCredentialSpec	<string>
+         gmsaCredentialSpecName	<string>
+   stdin	<boolean>
+   stdinOnce	<boolean>
+   terminationMessagePath	<string>
+   terminationMessagePolicy	<string>
+   tty	<boolean>
+   volumeDevices	<[]Object>
+      devicePath	<string>
+      name	<string>
+   volumeMounts	<[]Object>
+      mountPath	<string>
+      mountPropagation	<string>
+      name	<string>
+      readOnly	<boolean>
+      subPath	<string>
+      subPathExpr	<string>
+   workingDir	<string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: spec <Object>
+
+DESCRIPTION:
+     Specification of the desired behavior of the pod. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+
+     PodSpec is a description of a pod.
+
+FIELDS:
+   activeDeadlineSeconds	<integer>
+   affinity	<Object>
+      nodeAffinity	<Object>
+         preferredDuringSchedulingIgnoredDuringExecution	<[]Object>
+            preference	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchFields	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+            weight	<integer>
+         requiredDuringSchedulingIgnoredDuringExecution	<Object>
+            nodeSelectorTerms	<[]Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchFields	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+      podAffinity	<Object>
+         preferredDuringSchedulingIgnoredDuringExecution	<[]Object>
+            podAffinityTerm	<Object>
+               labelSelector	<Object>
+                  matchExpressions	<[]Object>
+                     key	<string>
+                     operator	<string>
+                     values	<[]string>
+                  matchLabels	<map[string]string>
+               namespaces	<[]string>
+               topologyKey	<string>
+            weight	<integer>
+         requiredDuringSchedulingIgnoredDuringExecution	<[]Object>
+            labelSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+            namespaces	<[]string>
+            topologyKey	<string>
+      podAntiAffinity	<Object>
+         preferredDuringSchedulingIgnoredDuringExecution	<[]Object>
+            podAffinityTerm	<Object>
+               labelSelector	<Object>
+                  matchExpressions	<[]Object>
+                     key	<string>
+                     operator	<string>
+                     values	<[]string>
+                  matchLabels	<map[string]string>
+               namespaces	<[]string>
+               topologyKey	<string>
+            weight	<integer>
+         requiredDuringSchedulingIgnoredDuringExecution	<[]Object>
+            labelSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+            namespaces	<[]string>
+            topologyKey	<string>
+   automountServiceAccountToken	<boolean>
+   containers	<[]Object>
+      args	<[]string>
+      command	<[]string>
+      env	<[]Object>
+         name	<string>
+         value	<string>
+         valueFrom	<Object>
+            configMapKeyRef	<Object>
+               key	<string>
+               name	<string>
+               optional	<boolean>
+            fieldRef	<Object>
+               apiVersion	<string>
+               fieldPath	<string>
+            resourceFieldRef	<Object>
+               containerName	<string>
+               divisor	<string>
+               resource	<string>
+            secretKeyRef	<Object>
+               key	<string>
+               name	<string>
+               optional	<boolean>
+      envFrom	<[]Object>
+         configMapRef	<Object>
+            name	<string>
+            optional	<boolean>
+         prefix	<string>
+         secretRef	<Object>
+            name	<string>
+            optional	<boolean>
+      image	<string>
+      imagePullPolicy	<string>
+      lifecycle	<Object>
+         postStart	<Object>
+            exec	<Object>
+               command	<[]string>
+            httpGet	<Object>
+               host	<string>
+               httpHeaders	<[]Object>
+                  name	<string>
+                  value	<string>
+               path	<string>
+               port	<string>
+               scheme	<string>
+            tcpSocket	<Object>
+               host	<string>
+               port	<string>
+         preStop	<Object>
+            exec	<Object>
+               command	<[]string>
+            httpGet	<Object>
+               host	<string>
+               httpHeaders	<[]Object>
+                  name	<string>
+                  value	<string>
+               path	<string>
+               port	<string>
+               scheme	<string>
+            tcpSocket	<Object>
+               host	<string>
+               port	<string>
+      livenessProbe	<Object>
+         exec	<Object>
+            command	<[]string>
+         failureThreshold	<integer>
+         httpGet	<Object>
+            host	<string>
+            httpHeaders	<[]Object>
+               name	<string>
+               value	<string>
+            path	<string>
+            port	<string>
+            scheme	<string>
+         initialDelaySeconds	<integer>
+         periodSeconds	<integer>
+         successThreshold	<integer>
+         tcpSocket	<Object>
+            host	<string>
+            port	<string>
+         timeoutSeconds	<integer>
+      name	<string>
+      ports	<[]Object>
+         containerPort	<integer>
+         hostIP	<string>
+         hostPort	<integer>
+         name	<string>
+         protocol	<string>
+      readinessProbe	<Object>
+         exec	<Object>
+            command	<[]string>
+         failureThreshold	<integer>
+         httpGet	<Object>
+            host	<string>
+            httpHeaders	<[]Object>
+               name	<string>
+               value	<string>
+            path	<string>
+            port	<string>
+            scheme	<string>
+         initialDelaySeconds	<integer>
+         periodSeconds	<integer>
+         successThreshold	<integer>
+         tcpSocket	<Object>
+            host	<string>
+            port	<string>
+         timeoutSeconds	<integer>
+      resources	<Object>
+         limits	<map[string]string>
+         requests	<map[string]string>
+      securityContext	<Object>
+         allowPrivilegeEscalation	<boolean>
+         capabilities	<Object>
+            add	<[]string>
+            drop	<[]string>
+         privileged	<boolean>
+         procMount	<string>
+         readOnlyRootFilesystem	<boolean>
+         runAsGroup	<integer>
+         runAsNonRoot	<boolean>
+         runAsUser	<integer>
+         seLinuxOptions	<Object>
+            level	<string>
+            role	<string>
+            type	<string>
+            user	<string>
+         windowsOptions	<Object>
+            gmsaCredentialSpec	<string>
+            gmsaCredentialSpecName	<string>
+      stdin	<boolean>
+      stdinOnce	<boolean>
+      terminationMessagePath	<string>
+      terminationMessagePolicy	<string>
+      tty	<boolean>
+      volumeDevices	<[]Object>
+         devicePath	<string>
+         name	<string>
+      volumeMounts	<[]Object>
+         mountPath	<string>
+         mountPropagation	<string>
+         name	<string>
+         readOnly	<boolean>
+         subPath	<string>
+         subPathExpr	<string>
+      workingDir	<string>
+   dnsConfig	<Object>
+      nameservers	<[]string>
+      options	<[]Object>
+         name	<string>
+         value	<string>
+      searches	<[]string>
+   dnsPolicy	<string>
+   enableServiceLinks	<boolean>
+   hostAliases	<[]Object>
+      hostnames	<[]string>
+      ip	<string>
+   hostIPC	<boolean>
+   hostNetwork	<boolean>
+   hostPID	<boolean>
+   hostname	<string>
+   imagePullSecrets	<[]Object>
+      name	<string>
+   initContainers	<[]Object>
+      args	<[]string>
+      command	<[]string>
+      env	<[]Object>
+         name	<string>
+         value	<string>
+         valueFrom	<Object>
+            configMapKeyRef	<Object>
+               key	<string>
+               name	<string>
+               optional	<boolean>
+            fieldRef	<Object>
+               apiVersion	<string>
+               fieldPath	<string>
+            resourceFieldRef	<Object>
+               containerName	<string>
+               divisor	<string>
+               resource	<string>
+            secretKeyRef	<Object>
+               key	<string>
+               name	<string>
+               optional	<boolean>
+      envFrom	<[]Object>
+         configMapRef	<Object>
+            name	<string>
+            optional	<boolean>
+         prefix	<string>
+         secretRef	<Object>
+            name	<string>
+            optional	<boolean>
+      image	<string>
+      imagePullPolicy	<string>
+      lifecycle	<Object>
+         postStart	<Object>
+            exec	<Object>
+               command	<[]string>
+            httpGet	<Object>
+               host	<string>
+               httpHeaders	<[]Object>
+                  name	<string>
+                  value	<string>
+               path	<string>
+               port	<string>
+               scheme	<string>
+            tcpSocket	<Object>
+               host	<string>
+               port	<string>
+         preStop	<Object>
+            exec	<Object>
+               command	<[]string>
+            httpGet	<Object>
+               host	<string>
+               httpHeaders	<[]Object>
+                  name	<string>
+                  value	<string>
+               path	<string>
+               port	<string>
+               scheme	<string>
+            tcpSocket	<Object>
+               host	<string>
+               port	<string>
+      livenessProbe	<Object>
+         exec	<Object>
+            command	<[]string>
+         failureThreshold	<integer>
+         httpGet	<Object>
+            host	<string>
+            httpHeaders	<[]Object>
+               name	<string>
+               value	<string>
+            path	<string>
+            port	<string>
+            scheme	<string>
+         initialDelaySeconds	<integer>
+         periodSeconds	<integer>
+         successThreshold	<integer>
+         tcpSocket	<Object>
+            host	<string>
+            port	<string>
+         timeoutSeconds	<integer>
+      name	<string>
+      ports	<[]Object>
+         containerPort	<integer>
+         hostIP	<string>
+         hostPort	<integer>
+         name	<string>
+         protocol	<string>
+      readinessProbe	<Object>
+         exec	<Object>
+            command	<[]string>
+         failureThreshold	<integer>
+         httpGet	<Object>
+            host	<string>
+            httpHeaders	<[]Object>
+               name	<string>
+               value	<string>
+            path	<string>
+            port	<string>
+            scheme	<string>
+         initialDelaySeconds	<integer>
+         periodSeconds	<integer>
+         successThreshold	<integer>
+         tcpSocket	<Object>
+            host	<string>
+            port	<string>
+         timeoutSeconds	<integer>
+      resources	<Object>
+         limits	<map[string]string>
+         requests	<map[string]string>
+      securityContext	<Object>
+         allowPrivilegeEscalation	<boolean>
+         capabilities	<Object>
+            add	<[]string>
+            drop	<[]string>
+         privileged	<boolean>
+         procMount	<string>
+         readOnlyRootFilesystem	<boolean>
+         runAsGroup	<integer>
+         runAsNonRoot	<boolean>
+         runAsUser	<integer>
+         seLinuxOptions	<Object>
+            level	<string>
+            role	<string>
+            type	<string>
+            user	<string>
+         windowsOptions	<Object>
+            gmsaCredentialSpec	<string>
+            gmsaCredentialSpecName	<string>
+      stdin	<boolean>
+      stdinOnce	<boolean>
+      terminationMessagePath	<string>
+      terminationMessagePolicy	<string>
+      tty	<boolean>
+      volumeDevices	<[]Object>
+         devicePath	<string>
+         name	<string>
+      volumeMounts	<[]Object>
+         mountPath	<string>
+         mountPropagation	<string>
+         name	<string>
+         readOnly	<boolean>
+         subPath	<string>
+         subPathExpr	<string>
+      workingDir	<string>
+   nodeName	<string>
+   nodeSelector	<map[string]string>
+   preemptionPolicy	<string>
+   priority	<integer>
+   priorityClassName	<string>
+   readinessGates	<[]Object>
+      conditionType	<string>
+   restartPolicy	<string>
+   runtimeClassName	<string>
+   schedulerName	<string>
+   securityContext	<Object>
+      fsGroup	<integer>
+      runAsGroup	<integer>
+      runAsNonRoot	<boolean>
+      runAsUser	<integer>
+      seLinuxOptions	<Object>
+         level	<string>
+         role	<string>
+         type	<string>
+         user	<string>
+      supplementalGroups	<[]integer>
+      sysctls	<[]Object>
+         name	<string>
+         value	<string>
+      windowsOptions	<Object>
+         gmsaCredentialSpec	<string>
+         gmsaCredentialSpecName	<string>
+   serviceAccount	<string>
+   serviceAccountName	<string>
+   shareProcessNamespace	<boolean>
+   subdomain	<string>
+   terminationGracePeriodSeconds	<integer>
+   tolerations	<[]Object>
+      effect	<string>
+      key	<string>
+      operator	<string>
+      tolerationSeconds	<integer>
+      value	<string>
+   volumes	<[]Object>
+      awsElasticBlockStore	<Object>
+         fsType	<string>
+         partition	<integer>
+         readOnly	<boolean>
+         volumeID	<string>
+      azureDisk	<Object>
+         cachingMode	<string>
+         diskName	<string>
+         diskURI	<string>
+         fsType	<string>
+         kind	<string>
+         readOnly	<boolean>
+      azureFile	<Object>
+         readOnly	<boolean>
+         secretName	<string>
+         shareName	<string>
+      cephfs	<Object>
+         monitors	<[]string>
+         path	<string>
+         readOnly	<boolean>
+         secretFile	<string>
+         secretRef	<Object>
+            name	<string>
+         user	<string>
+      cinder	<Object>
+         fsType	<string>
+         readOnly	<boolean>
+         secretRef	<Object>
+            name	<string>
+         volumeID	<string>
+      configMap	<Object>
+         defaultMode	<integer>
+         items	<[]Object>
+            key	<string>
+            mode	<integer>
+            path	<string>
+         name	<string>
+         optional	<boolean>
+      csi	<Object>
+         driver	<string>
+         fsType	<string>
+         nodePublishSecretRef	<Object>
+            name	<string>
+         readOnly	<boolean>
+         volumeAttributes	<map[string]string>
+      downwardAPI	<Object>
+         defaultMode	<integer>
+         items	<[]Object>
+            fieldRef	<Object>
+               apiVersion	<string>
+               fieldPath	<string>
+            mode	<integer>
+            path	<string>
+            resourceFieldRef	<Object>
+               containerName	<string>
+               divisor	<string>
+               resource	<string>
+      emptyDir	<Object>
+         medium	<string>
+         sizeLimit	<string>
+      fc	<Object>
+         fsType	<string>
+         lun	<integer>
+         readOnly	<boolean>
+         targetWWNs	<[]string>
+         wwids	<[]string>
+      flexVolume	<Object>
+         driver	<string>
+         fsType	<string>
+         options	<map[string]string>
+         readOnly	<boolean>
+         secretRef	<Object>
+            name	<string>
+      flocker	<Object>
+         datasetName	<string>
+         datasetUUID	<string>
+      gcePersistentDisk	<Object>
+         fsType	<string>
+         partition	<integer>
+         pdName	<string>
+         readOnly	<boolean>
+      gitRepo	<Object>
+         directory	<string>
+         repository	<string>
+         revision	<string>
+      glusterfs	<Object>
+         endpoints	<string>
+         path	<string>
+         readOnly	<boolean>
+      hostPath	<Object>
+         path	<string>
+         type	<string>
+      iscsi	<Object>
+         chapAuthDiscovery	<boolean>
+         chapAuthSession	<boolean>
+         fsType	<string>
+         initiatorName	<string>
+         iqn	<string>
+         iscsiInterface	<string>
+         lun	<integer>
+         portals	<[]string>
+         readOnly	<boolean>
+         secretRef	<Object>
+            name	<string>
+         targetPortal	<string>
+      name	<string>
+      nfs	<Object>
+         path	<string>
+         readOnly	<boolean>
+         server	<string>
+      persistentVolumeClaim	<Object>
+         claimName	<string>
+         readOnly	<boolean>
+      photonPersistentDisk	<Object>
+         fsType	<string>
+         pdID	<string>
+      portworxVolume	<Object>
+         fsType	<string>
+         readOnly	<boolean>
+         volumeID	<string>
+      projected	<Object>
+         defaultMode	<integer>
+         sources	<[]Object>
+            configMap	<Object>
+               items	<[]Object>
+                  key	<string>
+                  mode	<integer>
+                  path	<string>
+               name	<string>
+               optional	<boolean>
+            downwardAPI	<Object>
+               items	<[]Object>
+                  fieldRef	<Object>
+                     apiVersion	<string>
+                     fieldPath	<string>
+                  mode	<integer>
+                  path	<string>
+                  resourceFieldRef	<Object>
+                     containerName	<string>
+                     divisor	<string>
+                     resource	<string>
+            secret	<Object>
+               items	<[]Object>
+                  key	<string>
+                  mode	<integer>
+                  path	<string>
+               name	<string>
+               optional	<boolean>
+            serviceAccountToken	<Object>
+               audience	<string>
+               expirationSeconds	<integer>
+               path	<string>
+      quobyte	<Object>
+         group	<string>
+         readOnly	<boolean>
+         registry	<string>
+         tenant	<string>
+         user	<string>
+         volume	<string>
+      rbd	<Object>
+         fsType	<string>
+         image	<string>
+         keyring	<string>
+         monitors	<[]string>
+         pool	<string>
+         readOnly	<boolean>
+         secretRef	<Object>
+            name	<string>
+         user	<string>
+      scaleIO	<Object>
+         fsType	<string>
+         gateway	<string>
+         protectionDomain	<string>
+         readOnly	<boolean>
+         secretRef	<Object>
+            name	<string>
+         sslEnabled	<boolean>
+         storageMode	<string>
+         storagePool	<string>
+         system	<string>
+         volumeName	<string>
+      secret	<Object>
+         defaultMode	<integer>
+         items	<[]Object>
+            key	<string>
+            mode	<integer>
+            path	<string>
+         optional	<boolean>
+         secretName	<string>
+      storageos	<Object>
+         fsType	<string>
+         readOnly	<boolean>
+         secretRef	<Object>
+            name	<string>
+         volumeName	<string>
+         volumeNamespace	<string>
+      vsphereVolume	<Object>
+         fsType	<string>
+         storagePolicyID	<string>
+         storagePolicyName	<string>
+         volumePath	<string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ dkubectl explain pod.spec --recursive[K[K[K[K[K[K[K[K[K[K[K[K.[K[K[K[K[Ksep[K[Kpec.volumes
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: volumes <[]Object>
+
+DESCRIPTION:
+     List of volumes that can be mounted by containers belonging to the pod.
+     More info: https://kubernetes.io/docs/concepts/storage/volumes
+
+     Volume represents a named volume in a pod that may be accessed by any
+     container in the pod.
+
+FIELDS:
+   awsElasticBlockStore	<Object>
+     AWSElasticBlockStore represents an AWS Disk resource that is attached to a
+     kubelet's host machine and then exposed to the pod. More info:
+     https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+
+   azureDisk	<Object>
+     AzureDisk represents an Azure Data Disk mount on the host and bind mount to
+     the pod.
+
+   azureFile	<Object>
+     AzureFile represents an Azure File Service mount on the host and bind mount
+     to the pod.
+
+   cephfs	<Object>
+     CephFS represents a Ceph FS mount on the host that shares a pod's lifetime
+
+   cinder	<Object>
+     Cinder represents a cinder volume attached and mounted on kubelets host
+     machine More info:
+     https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+
+   configMap	<Object>
+     ConfigMap represents a configMap that should populate this volume
+
+   csi	<Object>
+     CSI (Container Storage Interface) represents storage that is handled by an
+     external CSI driver (Alpha feature).
+
+   downwardAPI	<Object>
+     DownwardAPI represents downward API about the pod that should populate this
+     volume
+
+   emptyDir	<Object>
+     EmptyDir represents a temporary directory that shares a pod's lifetime.
+     More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
+
+   fc	<Object>
+     FC represents a Fibre Channel resource that is attached to a kubelet's host
+     machine and then exposed to the pod.
+
+   flexVolume	<Object>
+     FlexVolume represents a generic volume resource that is
+     provisioned/attached using an exec based plugin.
+
+   flocker	<Object>
+     Flocker represents a Flocker volume attached to a kubelet's host machine.
+     This depends on the Flocker control service being running
+
+   gcePersistentDisk	<Object>
+     GCEPersistentDisk represents a GCE Disk resource that is attached to a
+     kubelet's host machine and then exposed to the pod. More info:
+     https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+
+   gitRepo	<Object>
+     GitRepo represents a git repository at a particular revision. DEPRECATED:
+     GitRepo is deprecated. To provision a container with a git repo, mount an
+     EmptyDir into an InitContainer that clones the repo using git, then mount
+     the EmptyDir into the Pod's container.
+
+   glusterfs	<Object>
+     Glusterfs represents a Glusterfs mount on the host that shares a pod's
+     lifetime. More info:
+     https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
+
+   hostPath	<Object>
+     HostPath represents a pre-existing file or directory on the host machine
+     that is directly exposed to the container. This is generally used for
+     system agents or other privileged things that are allowed to see the host
+     machine. Most containers will NOT need this. More info:
+     https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+
+   iscsi	<Object>
+     ISCSI represents an ISCSI Disk resource that is attached to a kubelet's
+     host machine and then exposed to the pod. More info:
+     https://releases.k8s.io/HEAD/examples/volumes/iscsi/README.md
+
+   name	<string> -required-
+     Volume's name. Must be a DNS_LABEL and unique within the pod. More info:
+     https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+
+   nfs	<Object>
+     NFS represents an NFS mount on the host that shares a pod's lifetime More
+     info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
+
+   persistentVolumeClaim	<Object>
+     PersistentVolumeClaimVolumeSource represents a reference to a
+     PersistentVolumeClaim in the same namespace. More info:
+     https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
+
+   photonPersistentDisk	<Object>
+     PhotonPersistentDisk represents a PhotonController persistent disk attached
+     and mounted on kubelets host machine
+
+   portworxVolume	<Object>
+     PortworxVolume represents a portworx volume attached and mounted on
+     kubelets host machine
+
+   projected	<Object>
+     Items for all in one resources secrets, configmaps, and downward API
+
+   quobyte	<Object>
+     Quobyte represents a Quobyte mount on the host that shares a pod's lifetime
+
+   rbd	<Object>
+     RBD represents a Rados Block Device mount on the host that shares a pod's
+     lifetime. More info:
+     https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md
+
+   scaleIO	<Object>
+     ScaleIO represents a ScaleIO persistent volume attached and mounted on
+     Kubernetes nodes.
+
+   secret	<Object>
+     Secret represents a secret that should populate this volume. More info:
+     https://kubernetes.io/docs/concepts/storage/volumes#secret
+
+   storageos	<Object>
+     StorageOS represents a StorageOS volume attached and mounted on Kubernetes
+     nodes.
+
+   vsphereVolume	<Object>
+     VsphereVolume represents a vSphere volume attached and mounted on kubelets
+     host machine
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ubuntu-[K[K[K[K[K[K[Kk [K[Kkc cmvol --from-literal=var8=val8 --from-l iteral=var9=val9 
+Error: unknown flag: --from-literal
+
+
+Examples:
+  # Create a pod using the data in pod.json.
+  kubectl create -f ./pod.json
+  
+  # Create a pod based on the JSON passed into stdin.
+  cat pod.json | kubectl create -f -
+  
+  # Edit the data in docker-registry.yaml in JSON then create the resource using the edited data.
+  kubectl create -f docker-registry.yaml --edit -o json
+
+Available Commands:
+  clusterrole         Create a ClusterRole.
+  clusterrolebinding  Create a ClusterRoleBinding for a particular ClusterRole
+  configmap           Create a configmap from a local file, directory or literal value
+  cronjob             Create a cronjob with the specified name.
+  deployment          Create a deployment with the specified name.
+  job                 Create a job with the specified name.
+  namespace           Create a namespace with the specified name
+  poddisruptionbudget Create a pod disruption budget with the specified name.
+  priorityclass       Create a priorityclass with the specified name.
+  quota               Create a quota with the specified name.
+  role                Create a role with single rule.
+  rolebinding         Create a RoleBinding for a particular Role or ClusterRole
+  secret              Create a secret using specified subcommand
+  service             Create a service using specified subcommand.
+  serviceaccount      Create a service account with the specified name
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --edit=false: Edit the API resource before creating
+  -f, --filename=[]: Filename, directory, or URL to files to use to create the resource
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --raw='': Raw URI to POST to the server.  Uses the transport specified by the kubeconfig file.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --validate=true: If true, use a schema to validate the input before sending it
+      --windows-line-endings=false: Only relevant if --edit=true. Defaults to the line ending native to your platform.
+
+Usage:
+  kubectl create -f FILENAME [options]
+
+Use "kubectl <command> --help" for more information about a given command.
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --from-literal
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc cmvol --from-literal=var8=val8 --from-liiteral=var9=val9 [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccmvol --from-literal=var8=val8 --from-l[1@i[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[Cmcmvol --from-literal=var8=val8 --from-[1@l[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C cmvol --from-literal=var8=val8 --from[1@-[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C
+
+configmap/cmvol created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kub[K[K get cm
+NAME        DATA   AGE
+106cm       1      19d
+110c        1      19d
+112env      1      18d
+another     2      43m
+cfgvolume   2      18d
+cmvol       2      5s
+d1cm        2      23h
+d2cm        1      23h
+d3cm        2      23h
+d4cm        1      23h
+d5cm        1      23h
+env2        1      18d
+envcfgmap   1      18d
+options     1      51m
+testenv     1      18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rub[Kn d10 --image=nginx =[K--restart=Ne ver --dry-run -o yaml > d10.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d10.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    d10.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: d10[14;5Hresources: {}[15;3HdnsPolicy: ClusterFirst[16;3HrestartPolicy: Never[17dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[11;35r[11;1HM[1;38r[11;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[12;35r8[12dM[1;38r[12;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25la[36d[K[12;6H[?12l[?25h[?25ln[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25l7[13;36r8[13dM[1;38r[13;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25lg[?12l[?25h[?25lM[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d10.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 18 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d10.yaml kubectl run d10 --image=nginx --restart=Never --dry-run -o yaml > d10.yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kk get cmc cm cmvol --from-literal=var8=val8 --from-literal=var9=val9 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kkubectl explain pod.spec.volumes
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: volumes <[]Object>
+
+DESCRIPTION:
+     List of volumes that can be mounted by containers belonging to the pod.
+     More info: https://kubernetes.io/docs/concepts/storage/volumes
+
+     Volume represents a named volume in a pod that may be accessed by any
+     container in the pod.
+
+FIELDS:
+   awsElasticBlockStore	<Object>
+     AWSElasticBlockStore represents an AWS Disk resource that is attached to a
+     kubelet's host machine and then exposed to the pod. More info:
+     https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+
+   azureDisk	<Object>
+     AzureDisk represents an Azure Data Disk mount on the host and bind mount to
+     the pod.
+
+   azureFile	<Object>
+     AzureFile represents an Azure File Service mount on the host and bind mount
+     to the pod.
+
+   cephfs	<Object>
+     CephFS represents a Ceph FS mount on the host that shares a pod's lifetime
+
+   cinder	<Object>
+     Cinder represents a cinder volume attached and mounted on kubelets host
+     machine More info:
+     https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
+
+   configMap	<Object>
+     ConfigMap represents a configMap that should populate this volume
+
+   csi	<Object>
+     CSI (Container Storage Interface) represents storage that is handled by an
+     external CSI driver (Alpha feature).
+
+   downwardAPI	<Object>
+     DownwardAPI represents downward API about the pod that should populate this
+     volume
+
+   emptyDir	<Object>
+     EmptyDir represents a temporary directory that shares a pod's lifetime.
+     More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
+
+   fc	<Object>
+     FC represents a Fibre Channel resource that is attached to a kubelet's host
+     machine and then exposed to the pod.
+
+   flexVolume	<Object>
+     FlexVolume represents a generic volume resource that is
+     provisioned/attached using an exec based plugin.
+
+   flocker	<Object>
+     Flocker represents a Flocker volume attached to a kubelet's host machine.
+     This depends on the Flocker control service being running
+
+   gcePersistentDisk	<Object>
+     GCEPersistentDisk represents a GCE Disk resource that is attached to a
+     kubelet's host machine and then exposed to the pod. More info:
+     https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+
+   gitRepo	<Object>
+     GitRepo represents a git repository at a particular revision. DEPRECATED:
+     GitRepo is deprecated. To provision a container with a git repo, mount an
+     EmptyDir into an InitContainer that clones the repo using git, then mount
+     the EmptyDir into the Pod's container.
+
+   glusterfs	<Object>
+     Glusterfs represents a Glusterfs mount on the host that shares a pod's
+     lifetime. More info:
+     https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
+
+   hostPath	<Object>
+     HostPath represents a pre-existing file or directory on the host machine
+     that is directly exposed to the container. This is generally used for
+     system agents or other privileged things that are allowed to see the host
+     machine. Most containers will NOT need this. More info:
+     https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+
+   iscsi	<Object>
+     ISCSI represents an ISCSI Disk resource that is attached to a kubelet's
+     host machine and then exposed to the pod. More info:
+     https://releases.k8s.io/HEAD/examples/volumes/iscsi/README.md
+
+   name	<string> -required-
+     Volume's name. Must be a DNS_LABEL and unique within the pod. More info:
+     https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+
+   nfs	<Object>
+     NFS represents an NFS mount on the host that shares a pod's lifetime More
+     info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
+
+   persistentVolumeClaim	<Object>
+     PersistentVolumeClaimVolumeSource represents a reference to a
+     PersistentVolumeClaim in the same namespace. More info:
+     https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
+
+   photonPersistentDisk	<Object>
+     PhotonPersistentDisk represents a PhotonController persistent disk attached
+     and mounted on kubelets host machine
+
+   portworxVolume	<Object>
+     PortworxVolume represents a portworx volume attached and mounted on
+     kubelets host machine
+
+   projected	<Object>
+     Items for all in one resources secrets, configmaps, and downward API
+
+   quobyte	<Object>
+     Quobyte represents a Quobyte mount on the host that shares a pod's lifetime
+
+   rbd	<Object>
+     RBD represents a Rados Block Device mount on the host that shares a pod's
+     lifetime. More info:
+     https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md
+
+   scaleIO	<Object>
+     ScaleIO represents a ScaleIO persistent volume attached and mounted on
+     Kubernetes nodes.
+
+   secret	<Object>
+     Secret represents a secret that should populate this volume. More info:
+     https://kubernetes.io/docs/concepts/storage/volumes#secret
+
+   storageos	<Object>
+     StorageOS represents a StorageOS volume attached and mounted on Kubernetes
+     nodes.
+
+   vsphereVolume	<Object>
+     VsphereVolume represents a vSphere volume attached and mounted on kubelets
+     host machine
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.volumes.cong[KfigMap
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: configMap <Object>
+
+DESCRIPTION:
+     ConfigMap represents a configMap that should populate this volume
+
+     Adapts a ConfigMap into a volume. The contents of the target ConfigMap's
+     Data field will be presented in a volume as files using the keys in the
+     Data field as the file names, unless the items element is populated with
+     specific mappings of keys to paths. ConfigMap volumes support ownership
+     management and SELinux relabeling.
+
+FIELDS:
+   defaultMode	<integer>
+     Optional: mode bits to use on created files by default. Must be a value
+     between 0 and 0777. Defaults to 0644. Directories within the path are not
+     affected by this setting. This might be in conflict with other options that
+     affect the file mode, like fsGroup, and the result can be other mode bits
+     set.
+
+   items	<[]Object>
+     If unspecified, each key-value pair in the Data field of the referenced
+     ConfigMap will be projected into the volume as a file whose name is the key
+     and content is the value. If specified, the listed keys will be projected
+     into the specified paths, and unlisted keys will not be present. If a key
+     is specified which is not present in the ConfigMap, the volume setup will
+     error unless it is marked optional. Paths must be relative and may not
+     contain the '..' path or start with '..'.
+
+   name	<string>
+     Name of the referent. More info:
+     https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+
+   optional	<boolean>
+     Specify whether the ConfigMap or its keys must be defined
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.volumes.configMap --red[Kcursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: configMap <Object>
+
+DESCRIPTION:
+     ConfigMap represents a configMap that should populate this volume
+
+     Adapts a ConfigMap into a volume. The contents of the target ConfigMap's
+     Data field will be presented in a volume as files using the keys in the
+     Data field as the file names, unless the items element is populated with
+     specific mappings of keys to paths. ConfigMap volumes support ownership
+     management and SELinux relabeling.
+
+FIELDS:
+   defaultMode	<integer>
+   items	<[]Object>
+      key	<string>
+      mode	<integer>
+      path	<string>
+   name	<string>
+   optional	<boolean>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.volumes.configMap --recursive[K[K[18Pnano d10.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 18 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d10.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap[14;3Hcontainers:[15;3H- image: nginx[16;5Hname: d10[17;5Hresources: {}[18;3HdnsPolicy: ClusterFirst[19;3HrestartPolicy: Never[20dstatus: {}[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap[14;3Hcontainers:[15;3H- image: nginx[16;5Hname: d10[17;5Hresources: {}[18;3HdnsPolicy: ClusterFirst[19;3HrestartPolicy: Never[20dstatus: {}[36;67H(B[0;7m[ Read 1[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap[14;3Hcontainers:[15;3H- image: nginx[16;5Hname: d10[17;5Hresources: {}[18;3HdnsPolicy: ClusterFirst[19;3HrestartPolicy: Never[20dstatus: {}[37d[1;37H(B[0;7md10.yaml[73G(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[15;17H[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[13;14H:[?12l[?25h[?25l7[14;36r8[14dM[1;38r[14;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lm[?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25l[15;14H[?12l[?25h[?25l[16;17H[?12l[?25h[?25l[17;14H[?12l[?25h[?25l[18;18H[?12l[?25h[?25l7[19;36r8[19dM[1;38r[19;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lM[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[20;36r8[20dM[1;38r[20;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25lm[?12l[?25h[?25ly[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l7[21;36r8[21dM[1;38r[21;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25lP[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lc[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25l/[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d10.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 22 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f d10.yaml 
+error: error parsing d10.yaml: error converting YAML to JSON: yaml: line 19: mapping values are not allowed in this context
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f d10.yaml [1Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 22 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d10.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap:[14;7Hname: cmvol[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: d10[18;5Hresources: {}[19;5HvolumeMounts:[20;5H- name:myvol[21;7HmountPath: /etc/lala[22;3HdnsPolicy: ClusterFirst[23;3HrestartPolicy: Never[24dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap:[14;7Hname: cmvol[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: d10[18;5Hresources: {}[19;5HvolumeMounts:[20;5H- name:myvol[21;7HmountPath: /etc/lala[22;3HdnsPolicy: ClusterFirst[23;3HrestartPolicy: Never[24dstatus: {}[36;67H(B[0;7m[ Read 2[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[21d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap:[14;7Hname: cmvol[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: d10[18;5Hresources: {}[19;5HvolumeMounts:[20;5H- name:myvol[21;7HmountPath: /etc/lala[22;3HdnsPolicy: ClusterFirst[23;3HrestartPolicy: Never[24dstatus: {}[37d[1;37H(B[0;7md10.yaml[73G(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[21d[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[21ds      mountPath: /etc/lalas[?12l[?25h[?25l    [1K[1P[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d10.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 22 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d10.yaml [1@kc -f[C[C[C[C[C[C[C[C[C[C
+error: error parsing d10.yaml: error converting YAML to JSON: yaml: line 19: mapping values are not allowed in this context
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f d10.yaml [1Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 22 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    d10.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap:[14;7Hname: cmvol[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: d10[18;5Hresources: {}[19;5HvolumeMounts:[20;5H- name:myvol[21;7HmountPath: /etc/lala[22;3HdnsPolicy: ClusterFirst[23;3HrestartPolicy: Never[24dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[21dz      mountPath: /etc/lalaz[?12l[?25h[?25lzz      mountPath: /etc/lalazz[?12l[?25h[?25l[1Pz[?12l[?25h[?25l    [1K[1P[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d10.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 22 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d10.yaml [1@kc -f[C[C[C[C[C[C[C[C[C[C[1Pnano[C[C[C[C[C[C[C[C[C[C[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d10.yaml [1@kc -f[C[C[C[C[C[C[C[C[C[C[1Pnano[C[C[C[C[C[C[C[C[C[Ckubectl explain pod.spec.volumes.configMap --recursive[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kname
+KIND:     Pod
+VERSION:  v1
+
+FIELD:    name <string>
+
+DESCRIPTION:
+     Volume's name. Must be a DNS_LABEL and unique within the pod. More info:
+     https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.volumes.name[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pnano d10.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 22 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d10.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap:[14;7Hname: cmvol[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: d10[18;5Hresources: {}[19;5HvolumeMounts:[20;5H- name:myvol[21;7HmountPath: /etc/lala[22;3HdnsPolicy: ClusterFirst[23;3HrestartPolicy: Never[24dstatus: {}[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap:[14;7Hname: cmvol[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: d10[18;5Hresources: {}[19;5HvolumeMounts:[20;5H- name:myvol[21;7HmountPath: /etc/lala[22;3HdnsPolicy: ClusterFirst[23;3HrestartPolicy: Never[24dstatus: {}[36;67H(B[0;7m[ Read 2[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: d10[9;3Hname: d10[10dspec:[11;3Hvolumes:[12;3H- name: myvol[13;5HconfigMap:[14;7Hname: cmvol[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: d10[18;5Hresources: {}[19;5HvolumeMounts:[20;5H- name:myvol[21;7HmountPath: /etc/lala[22;3HdnsPolicy: ClusterFirst[23;3HrestartPolicy: Never[24dstatus: {}[37d[1;37H(B[0;7md10.yaml[73G(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[19dq    volumeMounts:q[?12l[?25h[?25l[1P[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lM[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l[20d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l myvol[13G[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d10.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 22 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano d10.yaml kubectl explain pod.spec.volumes.name
+KIND:     Pod
+VERSION:  v1
+
+FIELD:    name <string>
+
+DESCRIPTION:
+     Volume's name. Must be a DNS_LABEL and unique within the pod. More info:
+     https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.volumes.name[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pnano d10.yaml kubectl explain pod.spec.volumes.name[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pnano d10.yaml [1@kc -f[C[C[C[C[C[C[C[C[C[C
+pod/d10 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k get pod 
+NAME                         READY   STATUS              RESTARTS   AGE
+06nginx                      0/1     Error               0          32d
+07nginx                      0/1     Error               0          32d
+100vol                       0/1     Error               0          19d
+104pvc2b                     0/1     Error               0          19d
+111                          0/1     Error               0          18d
+113                          0/1     Completed           0          18d
+114nginx                     0/1     Completed           0          18d
+117                          0/1     Error               0          18d
+118                          0/1     Error               0          18d
+126                          0/1     Error               0          15d
+131                          0/1     Error               0          15d
+132                          0/1     Error               0          15d
+134                          0/1     Completed           0          12d
+136                          0/1     Completed           0          12d
+137busybox                   0/1     Error               0          12d
+13nginx                      0/1     Completed           1          32d
+140                          0/1     Error               0          12d
+144                          0/1     Error               0          12d
+17shell                      0/1     Error               0          32d
+19bb                         0/1     Completed           0          32d
+21bb                         0/1     Completed           0          32d
+29mc                         0/3     Completed           0          31d
+2busybox1                    0/1     Completed           0          5d4h
+33busybox1                   0/1     Completed           0          5d4h
+34mc                         0/2     Error               0          31d
+37-ng-1                      0/1     Error               0          25d
+37-ng-2                      0/1     Error               0          25d
+37-ng-3                      0/1     Error               0          25d
+3busybox1                    0/1     Completed           0          5d4h
+53busybox1                   0/1     Completed           0          5d4h
+67dep-7db4cf66f7-2hfgb       1/1     Running             16         20d
+67dep-7db4cf66f7-9wrj7       1/1     Running             16         20d
+67dep-7db4cf66f7-h5g7f       1/1     Running             16         20d
+67dep-7db4cf66f7-m2269       1/1     Running             16         20d
+84job-9gkc8                  0/1     Completed           0          20d
+88job-bx58m                  0/1     Completed           0          20d
+b2mc                         0/2     Completed           0          5d
+bbusybox-1584565440-pqtfb    0/1     Completed           0          23h
+bbusybox-1584565500-bwnbj    0/1     Completed           0          23h
+bbusybox-1584565560-m8p9z    0/1     Completed           0          23h
+busybox                      0/1     Completed           0          5d4h
+busybox-1584565440-bxgcl     0/1     Completed           0          23h
+busybox-1584565500-vzktl     0/1     Completed           0          23h
+busybox-1584565560-vxqrv     0/1     Completed           0          23h
+busybox1                     0/1     Completed           0          5d4h
+c1a                          0/1     Error               0          4d23h
+c1b                          0/1     Error               0          4d23h
+c2-m6cjm                     0/1     Completed           0          4d4h
+c4-4ntwp                     0/1     Completed           0          4d1h
+c5job-64cfd                  0/1     Completed           0          24h
+c6job-ldhpl                  0/1     Completed           0          24h
+c6job-vprsm                  0/1     Completed           0          24h
+ca1-66d6b4f974-4dxf6         1/1     Running             3          4d5h
+ca1-66d6b4f974-dl85x         1/1     Running             3          4d5h
+ca1a-5799475b87-7xrs5        1/1     Running             3          4d4h
+ca1a-5799475b87-h7vbr        1/1     Running             3          4d4h
+ca1a-5799475b87-h9q9t        1/1     Running             3          4d4h
+ca1a-5799475b87-hkkcj        1/1     Running             3          4d4h
+ca1a-5799475b87-kmlfd        1/1     Running             3          4d4h
+ca1a-5799475b87-qch6n        1/1     Running             3          4d4h
+d10                          0/1     ContainerCreating   0          5s
+d7                           1/1     Running             0          52m
+d8                           1/1     Running             0          43m
+hello                        0/1     Error               0          12d
+mysec                        0/1     Error               0          17d
+nginx                        0/1     Error               1          5d10h
+nginxenv                     0/1     Error               0          5d4h
+not-running                  0/1     Error               0          12d
+rbbusybox-1584565440-j4ssq   0/1     Completed           0          23h
+rbbusybox-1584565500-v775d   0/1     Completed           0          23h
+rbbusybox-1584565560-fh8mz   0/1     Completed           0          23h
+secbusybox                   0/1     Error               0          18d
+test114                      0/1     Completed           0          18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k get pod d10
+NAME   READY   STATUS    RESTARTS   AGE
+d10    1/1     Running   0          10s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k get pod d10[K[K[K[K[K[K[K[K[K[K[K[Kubectl exec -ti d10 -- /bin/sh
+# ;s
+/bin/sh: 1: Syntax error: ";" unexpected
+# ls
+/bin/sh: 1: sls: not found
+# ls
+bin   dev  home  lib64	mnt  proc  run	 srv  tmp  var
+boot  etc  lib	 media	opt  root  sbin  sys  usr
+# ls
+bin   dev  home  lib64	mnt  proc  run	 srv  tmp  var
+boot  etc  lib	 media	opt  root  sbin  sys  usr
+# ls e et	c
+adduser.conf		host.conf      mtab	      resolv.conf
+alternatives		hostname       nginx	      rmt
+apt			hosts	       nsswitch.conf  securetty
+bash.bashrc		init.d	       opt	      security
+bindresvport.blacklist	inputrc        os-release     selinux
+cron.daily		issue	       pam.conf       shadow
+debconf.conf		issue.net      pam.d	      shadow-
+debian_version		kernel	       passwd	      shells
+default			lala	       passwd-	      skel
+deluser.conf		ld.so.cache    profile	      subgid
+dpkg			ld.so.conf     profile.d      subuid
+environment		ld.so.conf.d   rc0.d	      systemd
+fonts			libaudit.conf  rc1.d	      terminfo
+fstab			localtime      rc2.d	      timezone
+gai.conf		login.defs     rc3.d	      ucf.conf
+group			logrotate.d    rc4.d	      update-motd.d
+group-			machine-id     rc5.d	      xattr.conf
+gshadow			mke2fs.conf    rc6.d
+gshadow-		motd	       rcS.d
+# at    cat /etcc /lalal 
+cat: /etc/lala: Is a directory
+# ^[[A^[[D        cat etc/lala
+cat: etc/lala: Is a directory
+# cd ca  etc
+# cd ;a;a
+/bin/sh: 8: a: not found
+/bin/sh: 8: a: not found
+# aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+/bin/sh: 9: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: not found
+# cd lala
+/bin/sh: 10: cd: can't cd to lala
+# ls
+# ls
+# cd/  /d etc/a lala
+# ls
+var8  var9
+# cat var8
+val8# cat var8 var9
+val8val9# echo $var8
+
+# 
+# 
+# 
+# exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gi[K[Kbashi[K gitBash
+bash: gitBash: No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash gitBash.sh
+bash: gitBash.sh: No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01
