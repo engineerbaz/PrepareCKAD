@@ -762,4 +762,136 @@ unknown flag: --resatrt
 [1;38r[16;39H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d11.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 18 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl cea[K[Kreate -f d11.yaml 
 pod/d11sec created
 ]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod d11
-E
+Error from server (NotFound): pods "d11" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod d11sec
+NAME     READY   STATUS    RESTARTS   AGE
+d11sec   1/1     Running   0          66s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      202003200020  c6.yaml		d10.yaml
+2003221644    2b1.yaml	    c77.yaml		d11.yaml
+202003141414  2b.yaml	    c7cj.yaml		d7.yaml
+202003141444  2rq.yaml	    ca1a.yaml		d8.yaml
+202003150112  b2mc.yaml     commandsReview.txt	envpod.yaml
+202003151935  bb.yaml	    config4.txt		gitBatch.sh
+202003160010  c5job.yaml    config.env		kubernetes-metrics-server
+202003182340  c6job.yaml    config.txt		README.md
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   2003221644[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31md11.yaml[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+[master d551f19] update on file .
+ 2 files changed, 348 insertions(+), 1 deletion(-)
+ create mode 100644 d11.yaml
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 10.41 KiB | 5.21 MiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   bca0aa9..d551f19  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get apiservices
+NAME                                   SERVICE                      AVAILABLE   AGE
+v1.                                    Local                        True        36d
+v1.apps                                Local                        True        36d
+v1.authentication.k8s.io               Local                        True        36d
+v1.authorization.k8s.io                Local                        True        36d
+v1.autoscaling                         Local                        True        36d
+v1.batch                               Local                        True        36d
+v1.coordination.k8s.io                 Local                        True        36d
+v1.networking.k8s.io                   Local                        True        36d
+v1.rbac.authorization.k8s.io           Local                        True        36d
+v1.scheduling.k8s.io                   Local                        True        36d
+v1.storage.k8s.io                      Local                        True        36d
+v1beta1.admissionregistration.k8s.io   Local                        True        36d
+v1beta1.apiextensions.k8s.io           Local                        True        36d
+v1beta1.apps                           Local                        True        36d
+v1beta1.authentication.k8s.io          Local                        True        36d
+v1beta1.authorization.k8s.io           Local                        True        36d
+v1beta1.batch                          Local                        True        36d
+v1beta1.certificates.k8s.io            Local                        True        36d
+v1beta1.coordination.k8s.io            Local                        True        36d
+v1beta1.events.k8s.io                  Local                        True        36d
+v1beta1.extensions                     Local                        True        36d
+v1beta1.metrics.k8s.io                 kube-system/metrics-server   True        6d21h
+v1beta1.networking.k8s.io              Local                        True        36d
+v1beta1.node.k8s.io                    Local                        True        36d
+v1beta1.policy                         Local                        True        36d
+v1beta1.rbac.authorization.k8s.io      Local                        True        36d
+v1beta1.scheduling.k8s.io              Local                        True        36d
+v1beta1.storage.k8s.io                 Local                        True        36d
+v1beta2.apps                           Local                        True        36d
+v2beta1.autoscaling                    Local                        True        36d
+v2beta2.autoscaling                    Local                        True        36d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cckubectl get apiservicescc[Kgup[1Pcckubectl get pod d11sec[Kcreate -f d11.yaml [13Pnano[C[C[C[C[C[C[C[C[C[Ckubectl run d11sec --image=nginx --restart==Never --dry-run -o yaml > d11.yaml[A[28Pnano d11.yaml 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl run d11sec --image=nginx --restart==Never --dry-run - oyaml > d11.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Catrt=[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C o[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Acc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl explain pod.spec.containers.securittyContext --recursive[Ke[C[C[1P --recursive[C[C[C[C[C[C[C[C[1P --recursive[C[C[C[C[C[C[C[1P --recursive[C[C[C[C[C[C[1P --recursive[C[C[C[C[C[1P --recursive[C[C[C[C[1P --recursive[C[C[C[1P --recursive[C[C[1P --recursive[C[1P --recursive[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -[C[1Precursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --[1Precursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --r[1Pecursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --re[1Pcursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --rec[1Pursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --recu[1Prsive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --recur[1Psive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --recurs[1Pive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --recursi[1Pve[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --recursiv[1Pe[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --recursive[K[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --recursive [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P --recursive
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P --recursive[1P --recursive[1P --recursive[1P --recursivec --recursiveo --recursiven --recursivet --recursivea --recursive [A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci --recursivee[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C. --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr [C-recursivec --recursive[Ce --recursive[C[Cs --recursive[C[C[C
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: resources <Object>
+
+DESCRIPTION:
+     Compute Resources required by this container. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+
+     ResourceRequirements describes the compute resource requirements.
+
+FIELDS:
+   limits	<map[string]string>
+   requests	<map[string]string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.resourcces --recursive[K[K[K[K[K[K[K[K[K[K[K
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: resources <Object>
+
+DESCRIPTION:
+     Compute Resources required by this container. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+
+     ResourceRequirements describes the compute resource requirements.
+
+FIELDS:
+   limits	<map[string]string>
+     Limits describes the maximum amount of compute resources allowed. More
+     info:
+     https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+
+   requests	<map[string]string>
+     Requests describes the minimum amount of compute resources required. If
+     Requests is omitted for a container, it defaults to Limits if that is
+     explicitly specified, otherwise to an implementation-defined value. More
+     info:
+     https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ exit
+exit
+
+Script done on 2020-03-22 17:35:07+0500
