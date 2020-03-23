@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: e3rp
+  name: e3rp
+spec:
+  containers:
+  - image: nginx
+    name: e3rp
+    resources: {}
+    ports:
+    - containerPort: 80
+    readinessProbe:
+      httpGet: 
+        path: /
+        port: 80
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
