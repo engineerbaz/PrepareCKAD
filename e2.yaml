@@ -3,16 +3,16 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: e1lp
-  name: e1lp
+    run: e2lp
+  name: e2lp
 spec:
   containers:
-  initialDelaySeconds: 5
-  periodSeconds: 5
   - image: nginx
-    name: e1lp
+    name: e2lp
     resources: {}
     livenessProbe:
+      periodSeconds: 5
+      initialDelaySeconds: 5
       exec:
         command:
         - ls  

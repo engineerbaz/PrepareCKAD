@@ -1,0 +1,1152 @@
+Script started on 2020-03-24 00:18:35+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ccscript 2003221644[3Pminikube startexit[K[K[K[K[Kcat 3[Ke1.yaml 
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: e1lp
+  name: e1lp
+spec:
+  containers:
+  - image: nginx
+    name: e1lp
+    resources: {}
+    livenessProbe:
+      exec:
+        command:
+        - ls  
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ k [K[Kkg [Ka
+NAME                             READY   STATUS      RESTARTS   AGE
+pod/06nginx                      0/1     Error       0          36d
+pod/07nginx                      0/1     Error       0          36d
+pod/100vol                       0/1     Error       0          23d
+pod/104pvc2b                     0/1     Error       0          23d
+pod/111                          0/1     Error       0          22d
+pod/113                          0/1     Completed   0          22d
+pod/114nginx                     0/1     Completed   0          22d
+pod/117                          0/1     Error       0          21d
+pod/118                          0/1     Error       0          21d
+pod/126                          0/1     Error       0          19d
+pod/131                          0/1     Error       0          19d
+pod/132                          0/1     Error       0          19d
+pod/134                          0/1     Completed   0          16d
+pod/136                          0/1     Completed   0          16d
+pod/137busybox                   0/1     Error       0          16d
+pod/13nginx                      0/1     Completed   1          36d
+pod/140                          0/1     Error       0          16d
+pod/144                          0/1     Error       0          16d
+pod/17shell                      0/1     Error       0          36d
+pod/19bb                         0/1     Completed   0          36d
+pod/21bb                         0/1     Completed   0          36d
+pod/29mc                         0/3     Completed   0          35d
+pod/2busybox1                    0/1     Completed   0          9d
+pod/33busybox1                   0/1     Completed   0          9d
+pod/34mc                         0/2     Error       0          35d
+pod/37-ng-1                      0/1     Error       0          29d
+pod/37-ng-2                      0/1     Error       0          29d
+pod/37-ng-3                      0/1     Error       0          29d
+pod/3busybox1                    0/1     Completed   0          9d
+pod/53busybox1                   0/1     Completed   0          9d
+pod/67dep-7db4cf66f7-2hfgb       1/1     Running     20         24d
+pod/67dep-7db4cf66f7-9wrj7       1/1     Running     20         24d
+pod/67dep-7db4cf66f7-h5g7f       1/1     Running     20         24d
+pod/67dep-7db4cf66f7-m2269       1/1     Running     20         24d
+pod/84job-9gkc8                  0/1     Completed   0          24d
+pod/88job-bx58m                  0/1     Completed   0          24d
+pod/b2mc                         0/2     Completed   0          8d
+pod/bbusybox-1584565440-pqtfb    0/1     Completed   0          4d22h
+pod/bbusybox-1584565500-bwnbj    0/1     Completed   0          4d22h
+pod/bbusybox-1584565560-m8p9z    0/1     Completed   0          4d22h
+pod/busybox                      0/1     Completed   0          9d
+pod/busybox-1584565440-bxgcl     0/1     Completed   0          4d22h
+pod/busybox-1584565500-vzktl     0/1     Completed   0          4d22h
+pod/busybox-1584565560-vxqrv     0/1     Completed   0          4d22h
+pod/busybox1                     0/1     Completed   0          9d
+pod/c1a                          0/1     Error       0          8d
+pod/c1b                          0/1     Error       0          8d
+pod/c2-m6cjm                     0/1     Completed   0          8d
+pod/c4-4ntwp                     0/1     Completed   0          8d
+pod/c5job-64cfd                  0/1     Completed   0          4d23h
+pod/c6job-ldhpl                  0/1     Completed   0          4d22h
+pod/c6job-vprsm                  0/1     Completed   0          4d22h
+pod/ca1-66d6b4f974-4dxf6         1/1     Running     7          8d
+pod/ca1-66d6b4f974-dl85x         1/1     Running     7          8d
+pod/ca1a-5799475b87-7xrs5        1/1     Running     7          8d
+pod/ca1a-5799475b87-h7vbr        1/1     Running     7          8d
+pod/ca1a-5799475b87-h9q9t        1/1     Running     7          8d
+pod/ca1a-5799475b87-hkkcj        1/1     Running     7          8d
+pod/ca1a-5799475b87-kmlfd        1/1     Running     7          8d
+pod/ca1a-5799475b87-qch6n        1/1     Running     7          8d
+pod/d10                          0/1     Error       0          3d22h
+pod/d11sec                       0/1     Error       0          30h
+pod/d12rl                        0/1     Completed   0          16h
+pod/d16                          0/1     Completed   0          10h
+pod/d7                           0/1     Error       0          3d23h
+pod/d8                           0/1     Error       0          3d23h
+pod/e1lp                         0/1     Completed   0          7h31m
+pod/hello                        0/1     Error       0          16d
+pod/mysec                        0/1     Error       0          21d
+pod/nginx                        0/1     Error       1          9d
+pod/nginx3                       0/1     Completed   0          17h
+pod/nginxenv                     0/1     Error       0          9d
+pod/not-running                  0/1     Error       0          16d
+pod/rbbusybox-1584565440-j4ssq   0/1     Completed   0          4d22h
+pod/rbbusybox-1584565500-v775d   0/1     Completed   0          4d22h
+pod/rbbusybox-1584565560-fh8mz   0/1     Completed   0          4d22h
+pod/secbusybox                   0/1     Error       0          22d
+pod/test114                      0/1     Completed   0          22d
+
+
+NAME                 TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)        AGE
+service/kubernetes   ClusterIP   10.96.0.1     <none>        443/TCP        37d
+service/nginx        NodePort    10.105.5.19   <none>        80:32286/TCP   16d
+
+
+NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/67dep   4/4     4            4           24d
+deployment.apps/ca1     2/2     2            2           8d
+deployment.apps/ca1a    6/6     6            6           8d
+
+NAME                               DESIRED   CURRENT   READY   AGE
+replicaset.apps/67dep-55587b4f67   0         0         0       24d
+replicaset.apps/67dep-6dfdd9cbff   0         0         0       24d
+replicaset.apps/67dep-77585865c6   0         0         0       24d
+replicaset.apps/67dep-7db4cf66f7   4         4         4       24d
+replicaset.apps/67dep-f4677c588    0         0         0       24d
+replicaset.apps/ca1-66d6b4f974     2         2         2       8d
+replicaset.apps/ca1a-5799475b87    6         6         6       8d
+replicaset.apps/ca1a-5b57bbb657    0         0         0       8d
+replicaset.apps/ca1a-6847576946    0         0         0       8d
+
+
+NAME                                       REFERENCE         TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/ca1a   Deployment/ca1a   <unknown>/70%   3         7         6          8d
+
+NAME                             COMPLETIONS   DURATION   AGE
+job.batch/84job                  1/1           48s        24d
+job.batch/88job                  2/2           15s        24d
+job.batch/bbusybox-1584565440    1/1           10s        4d22h
+job.batch/bbusybox-1584565500    1/1           7s         4d22h
+job.batch/bbusybox-1584565560    1/1           6s         4d22h
+job.batch/busybox-1584565440     1/1           27s        4d22h
+job.batch/busybox-1584565500     1/1           17s        4d22h
+job.batch/busybox-1584565560     1/1           12s        4d22h
+job.batch/c2                     1/1           8m         8d
+job.batch/c4                     1/1           38s        8d
+job.batch/c5job                  1/1           7s         4d23h
+job.batch/c6job                  2/2           11s        4d22h
+job.batch/rbbusybox-1584565440   1/1           36s        4d22h
+job.batch/rbbusybox-1584565500   1/1           11s        4d22h
+job.batch/rbbusybox-1584565560   1/1           16s        4d22h
+
+NAME                      SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+cronjob.batch/bbusybox    */1 * * * *   False     0        4d22h           4d22h
+cronjob.batch/busybox     */1 * * * *   False     0        4d22h           4d22h
+cronjob.batch/rbbusybox   */1 * * * *   False     0        4d22h           4d22h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.l[K[K --recu rsive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: containers <[]Object>
+
+DESCRIPTION:
+     List of containers belonging to the pod. Containers cannot currently be
+     added or removed. There must be at least one container in a Pod. Cannot be
+     updated.
+
+     A single application container that you want to run within a pod.
+
+FIELDS:
+   args	<[]string>
+   command	<[]string>
+   env	<[]Object>
+      name	<string>
+      value	<string>
+      valueFrom	<Object>
+         configMapKeyRef	<Object>
+            key	<string>
+            name	<string>
+            optional	<boolean>
+         fieldRef	<Object>
+            apiVersion	<string>
+            fieldPath	<string>
+         resourceFieldRef	<Object>
+            containerName	<string>
+            divisor	<string>
+            resource	<string>
+         secretKeyRef	<Object>
+            key	<string>
+            name	<string>
+            optional	<boolean>
+   envFrom	<[]Object>
+      configMapRef	<Object>
+         name	<string>
+         optional	<boolean>
+      prefix	<string>
+      secretRef	<Object>
+         name	<string>
+         optional	<boolean>
+   image	<string>
+   imagePullPolicy	<string>
+   lifecycle	<Object>
+      postStart	<Object>
+         exec	<Object>
+            command	<[]string>
+         httpGet	<Object>
+            host	<string>
+            httpHeaders	<[]Object>
+               name	<string>
+               value	<string>
+            path	<string>
+            port	<string>
+            scheme	<string>
+         tcpSocket	<Object>
+            host	<string>
+            port	<string>
+      preStop	<Object>
+         exec	<Object>
+            command	<[]string>
+         httpGet	<Object>
+            host	<string>
+            httpHeaders	<[]Object>
+               name	<string>
+               value	<string>
+            path	<string>
+            port	<string>
+            scheme	<string>
+         tcpSocket	<Object>
+            host	<string>
+            port	<string>
+   livenessProbe	<Object>
+      exec	<Object>
+         command	<[]string>
+      failureThreshold	<integer>
+      httpGet	<Object>
+         host	<string>
+         httpHeaders	<[]Object>
+            name	<string>
+            value	<string>
+         path	<string>
+         port	<string>
+         scheme	<string>
+      initialDelaySeconds	<integer>
+      periodSeconds	<integer>
+      successThreshold	<integer>
+      tcpSocket	<Object>
+         host	<string>
+         port	<string>
+      timeoutSeconds	<integer>
+   name	<string>
+   ports	<[]Object>
+      containerPort	<integer>
+      hostIP	<string>
+      hostPort	<integer>
+      name	<string>
+      protocol	<string>
+   readinessProbe	<Object>
+      exec	<Object>
+         command	<[]string>
+      failureThreshold	<integer>
+      httpGet	<Object>
+         host	<string>
+         httpHeaders	<[]Object>
+            name	<string>
+            value	<string>
+         path	<string>
+         port	<string>
+         scheme	<string>
+      initialDelaySeconds	<integer>
+      periodSeconds	<integer>
+      successThreshold	<integer>
+      tcpSocket	<Object>
+         host	<string>
+         port	<string>
+      timeoutSeconds	<integer>
+   resources	<Object>
+      limits	<map[string]string>
+      requests	<map[string]string>
+   securityContext	<Object>
+      allowPrivilegeEscalation	<boolean>
+      capabilities	<Object>
+         add	<[]string>
+         drop	<[]string>
+      privileged	<boolean>
+      procMount	<string>
+      readOnlyRootFilesystem	<boolean>
+      runAsGroup	<integer>
+      runAsNonRoot	<boolean>
+      runAsUser	<integer>
+      seLinuxOptions	<Object>
+         level	<string>
+         role	<string>
+         type	<string>
+         user	<string>
+      windowsOptions	<Object>
+         gmsaCredentialSpec	<string>
+         gmsaCredentialSpecName	<string>
+   stdin	<boolean>
+   stdinOnce	<boolean>
+   terminationMessagePath	<string>
+   terminationMessagePolicy	<string>
+   tty	<boolean>
+   volumeDevices	<[]Object>
+      devicePath	<string>
+      name	<string>
+   volumeMounts	<[]Object>
+      mountPath	<string>
+      mountPropagation	<string>
+      name	<string>
+      readOnly	<boolean>
+      subPath	<string>
+      subPathExpr	<string>
+   workingDir	<string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers --recurrsive | grep sa[Ktart
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers --recurrsive | grep start[C[C[C[C[C[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Knano 3[Ke1.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 19 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e1.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: e1lp[9;3Hname: e1lp[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: e1lp[14;5Hresources: {}[15;5HlivenessProbe:[16;7Hexec:[17;9Hcommand:[18;9H- ls[19;3HdnsPolicy: ClusterFirst[20;3HrestartPolicy: Never[21dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[12;17H[?12l[?25h[?25l[A[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[12;35r[12;1HM[1;38r[12;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25linitialDelaySeconds[36d[K[12;22H[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l5[?12l[?25h[?25l1[?12l[?25h[?25l0[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l0[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l5[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: e1.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 20 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e1.yaml kubectl explain pod.spec.containers --recurrsive | grep start[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e1.yaml [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e1.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: e1lp[9;3Hname: e1lp[10dspec:[11;3Hcontainers:[12;3HinitialDelaySeconds: 5[13;3H- image: nginx[14;5Hname: e1lp[15;5Hresources: {}[16;5HlivenessProbe:[17;7Hexec:[18;9Hcommand:[19;9H- ls[20;3HdnsPolicy: ClusterFirst[21;3HrestartPolicy: Never[22dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[12;25H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[13;35r[13;1HM[1;38r[13;1H[?12l[?25h[?25linitialDelaySeconds[36d[K[13;20H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[13;36r[36;1H
+[1;38r[12;25H[?12l[?25h[?25l[8;14H[?12l[?25h[?25l[4;10H[?12l[?25h[?25l[3;15H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e1.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e1.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: e1lp[9;3Hname: e1lp[10dspec:[11;3Hcontainers:[12;3HinitialDelaySeconds: 5[13;3H- image: nginx[14;5Hname: e1lp[15;5Hresources: {}[16;5HlivenessProbe:[17;7Hexec:[18;9Hcommand:[19;9H- ls[20;3HdnsPolicy: ClusterFirst[21;3HrestartPolicy: Never[22dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[13;17H[?12l[?25h[?25l[A[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l5[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[13;35r[13;1HM[1;38r[13;1H[?12l[?25h[?25lperiodSeconds[36d[K[13;14H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l periodSeconds [?12l[?25h[?25l  periodSeconds  [?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25l[14d[?12l[?25h[?25l[A[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25lS[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l5[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: e1.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 21 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e1.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 21 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e1.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: e1lp[9;3Hname: e1lp[10dspec:[11;3Hcontainers:[12;3HinitialDelaySeconds: 5[13;3HperiodSeconds: 5[14;3H- image: nginx[15;5Hname: e1lp[16;5Hresources: {}[17;5HlivenessProbe:[18;7Hexec:[19;9Hcommand:[20;9H- ls[21;3HdnsPolicy: ClusterFirst[22;3HrestartPolicy: Never[23dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[12d   initialDelaySeconds: 5 [?12l[?25h[?25l    initialDelaySeconds: 5  [?12l[?25h[?25l[13d[?12l[?25h[?25l[?12l[?25h[?25l   periodSeconds: 5  [?12l[?25h[?25l    periodSeconds: 5   [?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;7m    initialDelaySeconds: 5[13d(B[m[?12l[?25h[?25l(B[0;7m    periodSeconds: 5[14d(B[m[?12l[?25h[?25l[13;21H[?12l[?25h[?25l[12;35r[35;1H
+[1;38r[12;1H[K[?12l[?25h[?25l[12;35r[35;1H
+[1;38r[11;14H[?12l[?25h[?25l[12d[?12l[?25h[?25l[36d[K[13;14H[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l7[16;36r8[16dM[1;38r[16;1H[?12l[?25h[?25lperiodSeconds[?12l[?25h[?25l[38;1H[?12l[?25h[?1049l[23;0;0t[?1l>Use "fg" to return to nano.
+
+[1]+  Stopped                 nano e1.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e1.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36d(B[0;7mFile ...ml is being edited (by baz with nano 2.9.3, PID 23403); continue? [37;1H Y(B[m Yes[38d(B[0;7m N(B[m No[38;17H(B[0;7m^C(B[m Cancel[36;74H[?12l[?25h[?25l[H(B[0;7m  GNU nano 2.9.3                   New Buffer                             [36;1H(B[m[K[1;73H[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[37d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e1.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36d(B[0;7mFile ...ml is being edited (by baz with nano 2.9.3, PID 23403); continue? [37;1H Y(B[m Yes[38d(B[0;7m N(B[m No[38;17H(B[0;7m^C(B[m Cancel[36;74H[?12l[?25h[?25l[36;29H[1K (B[0;7m[ Reading File ](B[m[K[36;29H(B[0;7m[ Read 21 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e1.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: e1lp[9;3Hname: e1lp[10dspec:[11;3Hcontainers:[12;3HinitialDelaySeconds: 5[13;3HperiodSeconds: 5[14;3H- image: nginx[15;5Hname: e1lp[16;5Hresources: {}[17;5HlivenessProbe:[18;7Hexec:[19;9Hcommand:[20;9H- ls[21;3HdnsPolicy: ClusterFirst[22;3HrestartPolicy: Never[23dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l(B[0;7m  initialDelaySeconds: 5[13d(B[m[?12l[?25h[?25l[12;25H[?12l[?25h[?25l  initialDelaySeconds: 5[13;19H[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16;18H[?12l[?25h[?25l[17d:[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[18;35r[18;1HM[1;38r[18;1H[?12l[?25h[?25lperiodSeconds[36d[K[18;14H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l periodSeconds [?12l[?25h[?25l  periodSeconds  [?12l[?25h[?25l   periodSeconds   [?12l[?25h[?25l    periodSeconds[5G[?12l[?25h[?25l     periodSeconds[6G[?12l[?25h[?25l      periodSeconds[7G[?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25lS[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l5[?12l[?25h[?25l7[19;36r8[19dM[1;38r[19;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25lD[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25ly[?12l[?25h[?25lS[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l5[?12l[?25h[?25l[18;23H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[Anx[?12l[?25h[?25l[A 5[?12l[?25h[?25l[12;25H[?12l[?25h[?25l[11;14H[?12l[?25h[?25l[12d[?12l[?25h[?25l[12;36r[36;1H
+[1;38r[12;1H[?12l[?25h[?25l[12;36r[36;1H
+[1;38r[12;1H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: e1.yaml                                  (B[m[36;28H[?12l[?25h[?25l[36;27H[?12l[?25h[?25l[36;26H[?12l[?25h[?25l[36;25H[?12l[?25h[?25l[36;24H[?12l[?25h[?25l[36;23H[?12l[?25h[?25l(B[0;7m.yaml (B[m[36;22H[?12l[?25h[?25l(B[0;7m2.yaml(B[m[36;23H[?12l[?25h[?25l(B[0;7mSave file under DIFFERENT NAME?[37d Y(B[m Yes[K[38d(B[0;7m N(B[m No    [17G(B[0;7m^C(B[m Cancel[K[36;33H[?12l[?25h[?25l[1;73H[1;38H[39;49m(B[0;7m2[1;65H        (B[m[36;28H[1K (B[0;7m[ Wrote 21 lines ](B[m[K[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f [K[K[K[K[K[Kal[K[Khistory | grep alias
+ 1019  [01;31m[Kalias[m[K gadd="git add "
+ 1020  [01;31m[Kalias[m[K gcom="git commit -m ""
+ 1021  [01;31m[Kalias[m[K gpush="git push origin master"
+ 1044  [01;31m[Kalias[m[K gadd="git add "
+ 1045  [01;31m[Kalias[m[K gcom="git commit -m ""
+ 1046  [01;31m[Kalias[m[K gpush="git push origin master"
+ 1053  [01;31m[Kalias[m[K gpush="git push origin master"
+ 1059  [01;31m[Kalias[m[K gcom="git commit -m "
+ 1869  [01;31m[Kalias[m[K kc="kubectl create"
+ 1938  [01;31m[Kalias[m[K kgx="kubectl get $(read vr1)"
+ 1940  [01;31m[Kalias[m[K kgx="kubectl get && $(read vr1)"
+ 1947  [01;31m[Kalias[m[K kgx=read vr1&&echo "kubectl get $vr1
+ 1949  [01;31m[Kalias[m[K kgx=read vr1&&echo "kubectl get $vr1"
+ 1950  [01;31m[Kalias[m[K kgx="read vr1"&&echo "kubectl get $vr1"
+ 1951  [01;31m[Kalias[m[K gup="bash gitBash.sh"
+ 1954  [01;31m[Kalias[m[K gup="bash gitBatch.sh "
+ 1956  [01;31m[Kalias[m[K gup="bash gitBatch.sh "cc
+ 1989  history | grep [01;31m[Kalias[m[K
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc e2.yaml 
+
+Command 'kc' not found, but can be installed with:
+
+sudo apt install kimwitu
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ a;o[K[Klias kcf="kubectl create[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C "
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f e32[K2[K[K2.yaml 
+Error from server (AlreadyExists): error when creating "e2.yaml": pods "e1lp" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f e2.yaml alias kc="kubectl create "[15Pkc e2.yaml history | grep alias[7Pnano e1.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 21 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e1.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: e1lp[9;3Hname: e1lp[10dspec:[11;3Hcontainers:[12;3HinitialDelaySeconds: 5[13;3HperiodSeconds: 5[14;3H- image: nginx[15;5Hname: e1lp[16;5Hresources: {}[17;5HlivenessProbe:[18;7Hexec:[19;9Hcommand:[20;9H- ls[21;3HdnsPolicy: ClusterFirst[22;3HrestartPolicy: Never[23dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e1.yaml [1P[1@2
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 21 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e2.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: e1lp[9;3Hname: e1lp[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: e1lp[14;5Hresources: {}[15;5HlivenessProbe:[16;7HperiodSeconds: 5[17;7HinitialDelaySeconds: 5[18;7Hexec:[19;9Hcommand:[20;9H- ls[21;3HdnsPolicy: ClusterFirst[22;3HrestartPolicy: Never[23dstatus: {}[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[8;14H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l1[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[8;11Hlp[K[?12l[?25h[?25l2lp[?12l[?25h[?25l[9d[?12l[?25h[?25l[?12l[?25h[?25llp[K[?12l[?25h[?25l2lp[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[11;11H[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[A[?12l[?25h[?25le[?12l[?25h[?25l[36d[K[13;13H[?12l[?25h[?25llp[K[?12l[?25h[?25l2lp[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: e2.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 21 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e2.yaml 1[C[C[C[C[C[C[1@kc -f e2[C[C[C[C[C[C
+pod/e2lp created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/e2lp
+NAME   READY   STATUS              RESTARTS   AGE
+e2lp   0/1     ContainerCreating   0          8s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/e2lp
+NAME   READY   STATUS              RESTARTS   AGE
+e2lp   0/1     ContainerCreating   0          9s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/e2lp -w
+NAME   READY   STATUS              RESTARTS   AGE
+e2lp   0/1     ContainerCreating   0          12s
+e2lp   1/1     Running             0          15s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe pod/e2lp
+Name:         e2lp
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Tue, 24 Mar 2020 00:24:09 +0500
+Labels:       run=e2lp
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.18
+Containers:
+  e2lp:
+    Container ID:   docker://e94c5afc98a0615e974916e6b0f105c0fa2441f92b66f3f5973cefe2d36ce15c
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2539d4344dd18e1df02be842ffc435f8e1f699cfc55516e2cf2cb16b7a9aea0b
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 24 Mar 2020 00:24:23 +0500
+    Ready:          True
+    Restart Count:  0
+    Liveness:       exec [ls] delay=5s timeout=1s period=5s #success=1 #failure=3
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  28s   default-scheduler  Successfully assigned default/e2lp to minikube
+  Normal  Pulling    27s   kubelet, minikube  Pulling image "nginx"
+  Normal  Pulled     14s   kubelet, minikube  Successfully pulled image "nginx"
+  Normal  Created    14s   kubelet, minikube  Created container e2lp
+  Normal  Started    14s   kubelet, minikube  Started container e2lp
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe pod/e2lp | grep -i liveness
+    [01;31m[KLiveness[m[K:       exec [ls] delay=5s timeout=1s period=5s #success=1 #failure=3
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.livenesssProbe # get the exact names
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: livenessProbe <Object>
+
+DESCRIPTION:
+     Periodic probe of container liveness. Container will be restarted if the
+     probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+     Probe describes a health check to be performed against a container to
+     determine whether it is alive or ready to receive traffic.
+
+FIELDS:
+   exec	<Object>
+     One and only one of the following should be specified. Exec specifies the
+     action to take.
+
+   failureThreshold	<integer>
+     Minimum consecutive failures for the probe to be considered failed after
+     having succeeded. Defaults to 3. Minimum value is 1.
+
+   httpGet	<Object>
+     HTTPGet specifies the http request to perform.
+
+   initialDelaySeconds	<integer>
+     Number of seconds after the container has started before liveness probes
+     are initiated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+   periodSeconds	<integer>
+     How often (in seconds) to perform the probe. Default to 10 seconds. Minimum
+     value is 1.
+
+   successThreshold	<integer>
+     Minimum consecutive successes for the probe to be considered successful
+     after having failed. Defaults to 1. Must be 1 for liveness. Minimum value
+     is 1.
+
+   tcpSocket	<Object>
+     TCPSocket specifies an action involving a TCP port. TCP hooks not yet
+     supported
+
+   timeoutSeconds	<integer>
+     Number of seconds after which the probe times out. Defaults to 1 second.
+     Minimum value is 1. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain --help
+List the fields for supported resources
+
+ This command describes the fields associated with each supported API resource. Fields are identified via a simple
+JSONPath identifier:
+
+  <type>.<fieldName>[.<fieldName>]
+  
+ Add the --recursive flag to display all of the fields at once without descriptions. Information about each field is
+retrieved from the server in OpenAPI format.
+
+Use "kubectl api-resources" for a complete list of supported resources.
+
+Examples:
+  # Get the documentation of the resource and its fields
+  kubectl explain pods
+  
+  # Get the documentation of a specific field of a resource
+  kubectl explain pods.spec.containers
+
+Options:
+      --api-version='': Get different explanations for particular API version
+      --recursive=false: Print the fields of fields (Currently only 1 level deep)
+
+Usage:
+  kubectl explain RESOURCE [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cckubectl explain --helpcc[Kkubectl explain pod.spec.containers.livenesssProbe # get the exact names[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Kreadin essProbe
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: readinessProbe <Object>
+
+DESCRIPTION:
+     Periodic probe of container service readiness. Container will be removed
+     from service endpoints if the probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+     Probe describes a health check to be performed against a container to
+     determine whether it is alive or ready to receive traffic.
+
+FIELDS:
+   exec	<Object>
+     One and only one of the following should be specified. Exec specifies the
+     action to take.
+
+   failureThreshold	<integer>
+     Minimum consecutive failures for the probe to be considered failed after
+     having succeeded. Defaults to 3. Minimum value is 1.
+
+   httpGet	<Object>
+     HTTPGet specifies the http request to perform.
+
+   initialDelaySeconds	<integer>
+     Number of seconds after the container has started before liveness probes
+     are initiated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+   periodSeconds	<integer>
+     How often (in seconds) to perform the probe. Default to 10 seconds. Minimum
+     value is 1.
+
+   successThreshold	<integer>
+     Minimum consecutive successes for the probe to be considered successful
+     after having failed. Defaults to 1. Must be 1 for liveness. Minimum value
+     is 1.
+
+   tcpSocket	<Object>
+     TCPSocket specifies an action involving a TCP port. TCP hooks not yet
+     supported
+
+   timeoutSeconds	<integer>
+     Number of seconds after which the probe times out. Defaults to 1 second.
+     Minimum value is 1. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.readinessProbe.httpGet
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: httpGet <Object>
+
+DESCRIPTION:
+     HTTPGet specifies the http request to perform.
+
+     HTTPGetAction describes an action based on HTTP Get requests.
+
+FIELDS:
+   host	<string>
+     Host name to connect to, defaults to the pod IP. You probably want to set
+     "Host" in httpHeaders instead.
+
+   httpHeaders	<[]Object>
+     Custom headers to set in the request. HTTP allows repeated headers.
+
+   path	<string>
+     Path to access on the HTTP server.
+
+   port	<string> -required-
+     Name or number of the port to access on the container. Number must be in
+     the range 1 to 65535. Name must be an IANA_SVC_NAME.
+
+   scheme	<string>
+     Scheme to use for connecting to the host. Defaults to HTTP.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$  kubectl explain pod.spec.containers.readinessProbe.httpGet --recursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: httpGet <Object>
+
+DESCRIPTION:
+     HTTPGet specifies the http request to perform.
+
+     HTTPGetAction describes an action based on HTTP Get requests.
+
+FIELDS:
+   host	<string>
+   httpHeaders	<[]Object>
+      name	<string>
+      value	<string>
+   path	<string>
+   port	<string>
+   scheme	<string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rub[Kn e3rp --image=nginx --restart=never[K[K[K[K[KNever --dry-run -o yaml > e3.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nana[K[K[K[Kvim e3.yaml 
+
+Command 'vim' not found, but can be installed with:
+
+sudo apt install vim       
+sudo apt install vim-gtk3  
+sudo apt install vim-tiny  
+sudo apt install neovim    
+sudo apt install vim-athena
+sudo apt install vim-gtk   
+sudo apt install vim-nox   
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ a[Ksudo apt-get 
+autoclean        build-dep        check            dist-upgrade     dselect-upgrade  purge            source           upgrade
+autoremove       changelog        clean            download         install          remove           update           
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ sudo apt-get 
+autoclean        build-dep        check            dist-upgrade     dselect-upgrade  purge            source           upgrade
+autoremove       changelog        clean            download         install          remove           update           
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ sudo apt-get install vim
+[sudo] password for baz: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm7
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  vim-runtime
+Suggested packages:
+  ctags vim-doc vim-scripts
+The following NEW packages will be installed:
+  vim vim-runtime
+0 upgraded, 2 newly installed, 0 to remove and 29 not upgraded.
+Need to get 6,587 kB of archives.
+After this operation, 32.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::23)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]
+0% [Connecting to archive.ubuntu.com (2001:67c:1360:8001::24)]                                                              Ign:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 vim-runtime all 2:8.0.1453-1ubuntu1.1
+                                                              0% [Working]            Ign:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 vim amd64 2:8.0.1453-1ubuntu1.1
+0% [Working]            Ign:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 vim-runtime all 2:8.0.1453-1ubuntu1.1
+0% [Working]            Err:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 vim amd64 2:8.0.1453-1ubuntu1.1
+  Unable to connect to archive.ubuntu.com:http:
+0% [Working]            Ign:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 vim-runtime all 2:8.0.1453-1ubuntu1.1
+0% [Working]            Err:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 vim-runtime all 2:8.0.1453-1ubuntu1.1
+  Could not connect to archive.ubuntu.com:80 (2001:67c:1360:8001::23). - connect (101: Network is unreachable) Could not connect to archive.ubuntu.com:80 (2001:67c:1360:8001::24). - connect (101: Network is unreachable) Could not connect to archive.ubuntu.com:80 (91.189.88.152), connection timed out Could not connect to archive.ubuntu.com:80 (91.189.88.142), connection timed out
+0% [Working]            E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim-runtime_8.0.1453-1ubuntu1.1_all.deb  Could not connect to archive.ubuntu.com:80 (2001:67c:1360:8001::23). - connect (101: Network is unreachable) Could not connect to archive.ubuntu.com:80 (2001:67c:1360:8001::24). - connect (101: Network is unreachable) Could not connect to archive.ubuntu.com:80 (91.189.88.152), connection timed out Could not connect to archive.ubuntu.com:80 (91.189.88.142), connection timed out
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.0.1453-1ubuntu1.1_amd64.deb  Unable to connect to archive.ubuntu.com:http:
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ sudo apt-get install vim
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following package was automatically installed and is no longer required:
+  libllvm7
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  vim-runtime
+Suggested packages:
+  ctags vim-doc vim-scripts
+The following NEW packages will be installed:
+  vim vim-runtime
+0 upgraded, 2 newly installed, 0 to remove and 29 not upgraded.
+Need to get 6,587 kB of archives.
+After this operation, 32.0 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 vim-runtime all 2:8.0.1453-1ubuntu1.1 [5,435 kB]
+0% [1 vim-runtime 7,443 B/5,435 kB 0%]1% [1 vim-runtime 82.1 kB/5,435 kB 2%]                                      5% [1 vim-runtime 413 kB/5,435 kB 8%]9% [1 vim-runtime 742 kB/5,435 kB 14%]10% [1 vim-runtime 860 kB/5,435 kB 16%]15% [1 vim-runtime 1,208 kB/5,435 kB 22%]16% [1 vim-runtime 1,329 kB/5,435 kB 24%]21% [1 vim-runtime 1,702 kB/5,435 kB 31%]27% [1 vim-runtime 2,212 kB/5,435 kB 41%]32% [1 vim-runtime 2,607 kB/5,435 kB 48%]34% [1 vim-runtime 2,771 kB/5,435 kB 51%]37% [1 vim-runtime 3,069 kB/5,435 kB 56%]42% [1 vim-runtime 3,436 kB/5,435 kB 63%]                                                                                                 538 kB/s 5s47% [1 vim-runtime 3,877 kB/5,435 kB 71%]                                                                                                 538 kB/s 5s52% [1 vim-runtime 4,278 kB/5,435 kB 79%]                                                                                                 538 kB/s 4s58% [1 vim-runtime 4,801 kB/5,435 kB 88%]                                                                                                 538 kB/s 3s63% [1 vim-runtime 5,165 kB/5,435 kB 95%]                                                                                                 538 kB/s 2s66% [1 vim-runtime 5,435 kB/5,435 kB 100%]                                                                                                538 kB/s 2s76% [Working]                                                                                                                             538 kB/s 2s                                                                                                                                                     Get:2 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 vim amd64 2:8.0.1453-1ubuntu1.1 [1,152 kB]
+76% [2 vim 1,003 B/1,152 kB 0%]                                                                                                           538 kB/s 2s81% [2 vim 390 kB/1,152 kB 34%]                                                                                                           538 kB/s 1s85% [2 vim 756 kB/1,152 kB 66%]                                                                                                           538 kB/s 0s87% [2 vim 941 kB/1,152 kB 82%]                                                                                                           538 kB/s 0s100% [Working]                                                                                                                            538 kB/s 0s                                                                                                                                                     Fetched 6,587 kB in 11s (609 kB/s)
+Selecting previously unselected package vim-runtime.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 173367 files and directories currently installed.)
+Preparing to unpack .../vim-runtime_2%3a8.0.1453-1ubuntu1.1_all.deb ...
+Adding 'diversion of /usr/share/vim/vim80/doc/help.txt to /usr/share/vim/vim80/doc/help.txt.vim-tiny by vim-runtime'
+Adding 'diversion of /usr/share/vim/vim80/doc/tags to /usr/share/vim/vim80/doc/tags.vim-tiny by vim-runtime'
+Unpacking vim-runtime (2:8.0.1453-1ubuntu1.1) ...
+Selecting previously unselected package vim.
+Preparing to unpack .../vim_2%3a8.0.1453-1ubuntu1.1_amd64.deb ...
+Unpacking vim (2:8.0.1453-1ubuntu1.1) ...
+Setting up vim-runtime (2:8.0.1453-1ubuntu1.1) ...
+Setting up vim (2:8.0.1453-1ubuntu1.1) ...
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vim (vim) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vimdiff (vimdiff) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rvim (rvim) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/rview (rview) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/vi (vi) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/view (view) in auto mode
+update-alternatives: using /usr/bin/vim.basic to provide /usr/bin/ex (ex) in auto mode
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ vim 3[Ke3.yaml 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"e3.yaml" 15L, 228C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31mnull[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m e3rp
+  [36mname[m[35m:[m e3rp
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m
+  [38;5;130m- [m[36mimage[m[35m:[m nginx
+    [36mname[m[35m:[m e3rp
+    [36mresources[m[35m:[m [35m{}[m
+  [36mdnsPolicy[m[35m:[m ClusterFirst
+  [36mrestartPolicy[m[35m:[m Never
+[36mstatus[m[35m:[m [35m{}[m
+[94m~                                                                                                                                                     [17;1H~                                                                                                                                                     [18;1H~                                                                                                                                                     [19;1H~                                                                                                                                                     [20;1H~                                                                                                                                                     [21;1H~                                                                                                                                                     [22;1H~                                                                                                                                                     [23;1H~                                                                                                                                                     [24;1H~                                                                                                                                                     [25;1H~                                                                                                                                                     [26;1H~                                                                                                                                                     [27;1H~                                                                                                                                                     [28;1H~                                                                                                                                                     [29;1H~                                                                                                                                                     [30;1H~                                                                                                                                                     [31;1H~                                                                                                                                                     [32;1H~                                                                                                                                                     [33;1H~                                                                                                                                                     [34;1H~                                                                                                                                                     [35;1H~                                                                                                                                                     [36;1H~                                                                                                                                                     [37;1H~                                                                                                                                                     [m[38;133H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[38;133H2[2;1H[?25h[?25l[38;133H3[3;1H[?25h[?25l[38;133H4[4;1H[?25h[?25l[38;133H5[5;1H[?25h[?25l[38;133H6[6;1H[?25h[?25l[38;133H7[7;1H[?25h[?25l[38;133H8[8;1H[?25h[?25l[38;133H9[9;1H[?25h[?25l[38;133H10,1[10;1H[?25h[?25l[38;134H1[11;1H[?25h[?25l[38;134H2[12;1H[?25h[?25l[38;134H3[13;1H[?25h[?25l[38;1H[K[38;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"e3.yaml" 15L, 228C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ vim e3.yaml 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"e3.yaml" 15L, 228C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31mnull[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m e3rp
+  [36mname[m[35m:[m e3rp
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m
+  [38;5;130m- [m[36mimage[m[35m:[m nginx
+    [36mname[m[35m:[m e3rp
+    [36mresources[m[35m:[m [35m{}[m
+  [36mdnsPolicy[m[35m:[m ClusterFirst
+  [36mrestartPolicy[m[35m:[m Never
+[36mstatus[m[35m:[m [35m{}[m
+[94m~                                                                                                                                                     [17;1H~                                                                                                                                                     [18;1H~                                                                                                                                                     [19;1H~                                                                                                                                                     [20;1H~                                                                                                                                                     [21;1H~                                                                                                                                                     [22;1H~                                                                                                                                                     [23;1H~                                                                                                                                                     [24;1H~                                                                                                                                                     [25;1H~                                                                                                                                                     [26;1H~                                                                                                                                                     [27;1H~                                                                                                                                                     [28;1H~                                                                                                                                                     [29;1H~                                                                                                                                                     [30;1H~                                                                                                                                                     [31;1H~                                                                                                                                                     [32;1H~                                                                                                                                                     [33;1H~                                                                                                                                                     [34;1H~                                                                                                                                                     [35;1H~                                                                                                                                                     [36;1H~                                                                                                                                                     [37;1H~                                                                                                                                                     [m[38;133H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[38;1H[?2004l[38;1H[K[38;1H[?2004l[?1l>[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ vi
+vi            vigr          vimdiff       vipw          visudo
+view          vim           vim.tiny      virtualbox    
+viewres       vim.basic     vimtutor      virtualboxvm  
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ vim e3.yaml 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"e3.yaml" 15L, 228C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31mnull[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m e3rp
+  [36mname[m[35m:[m e3rp
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m
+  [38;5;130m- [m[36mimage[m[35m:[m nginx
+    [36mname[m[35m:[m e3rp
+    [36mresources[m[35m:[m [35m{}[m
+  [36mdnsPolicy[m[35m:[m ClusterFirst
+  [36mrestartPolicy[m[35m:[m Never
+[36mstatus[m[35m:[m [35m{}[m
+[94m~                                                                         [17;1H~                                                                         [18;1H~                                                                         [19;1H~                                                                         [20;1H~                                                                         [21;1H~                                                                         [22;1H~                                                                         [23;1H~                                                                         [24;1H~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [m[38;57H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[38;57H2[2;1H[?25h[?25l[38;57H3[3;1H[?25h[?25l[38;57H4[4;1H[?25h[?25l[38;57H5[5;1H[?25h[?25l[38;57H6[6;1H[?25h[?25l[38;57H7[7;1H[?25h[?25l[38;57H8[8;1H[?25h[?25l[38;57H9[9;1H[?25h[?25l[38;57H10,1[10;1H[?25h[?25l[38;57H9,1 [9;1H[?25h[?25l[38;1H[1m-- INSERT --[m[38;13H[K[38;57H9,1[11CAll[9;1H[?25h[?25l[31m0[m[36m  containers[m[35m:[m[38;59H2[9;2H[?25h[?25l  [36mcontainers[m[35m:[m[9;14H[K[38;59H1[9;1H[?25h[?25l[8;37r[37;1H
+[1;38r[8;1H[36mspec[m[35m:[m  containers:[37;1H[94m~                                                                         [m[38;57H[K[38;57H8,6[11CAll[8;6H[?25h[38;1H[K[8;5H[?25l[38;57H8,5[11CAll[8;5H[?25h[?25l[38;1HEntering Ex mode.  Type "visual" to go to Normal mode.[38;57H[K[?25h[38;1H
+:![38;2H[K[38;2Hq!
+[?2004l[?2004l[?1l>[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ vim e3.yaml 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"e3.yaml" 15L, 228C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31mnull[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m e3rp
+  [36mname[m[35m:[m e3rp
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m
+  [38;5;130m- [m[36mimage[m[35m:[m nginx
+    [36mname[m[35m:[m e3rp
+    [36mresources[m[35m:[m [35m{}[m
+  [36mdnsPolicy[m[35m:[m ClusterFirst
+  [36mrestartPolicy[m[35m:[m Never
+[36mstatus[m[35m:[m [35m{}[m
+[94m~                                                                         [17;1H~                                                                         [18;1H~                                                                         [19;1H~                                                                         [20;1H~                                                                         [21;1H~                                                                         [22;1H~                                                                         [23;1H~                                                                         [24;1H~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [m[38;57H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[38;57H2[2;1H[?25h[?25l[38;57H3[3;1H[?25h[?25l[38;57H4[4;1H[?25h[?25l[38;57H5[5;1H[?25h[?25l[38;57H6[6;1H[?25h[?25l[38;57H7[7;1H[?25h[?25l[38;57H8[8;1H[?25h[?25l[38;57H9[9;1H[?25h[?25l[38;57H10,1[10;1H[?25h[?25l[38;57H9,1 [9;1H[?25h[?25l[38;59H2[9;2H[?25h[?25l[38;59H3[9;3H[?25h[?25l[38;59H4[9;4H[?25h[?25l[38;59H5[9;5H[?25h[?25l[38;59H6[9;6H[?25h[?25l[38;59H7[9;7H[?25h[?25l[38;59H8[9;8H[?25h[?25l[38;59H9[9;9H[?25h[?25l[38;59H10[9;10H[?25h[?25l[38;60H1[9;11H[?25h[?25l[38;60H2[9;12H[?25h[?25l[38;60H3[9;13H[?25h[?25l[38;60H2[9;12H[?25h[?25l[38;60H1[9;11H[?25h[?25l[38;60H0[9;10H[?25h[?25l[38;59H9 [9;9H[?25h[?25l[38;59H8[9;8H[?25h[?25l[38;59H1[9;1H[?25h[?25l[38;60H3[9;13H[?25h[?25l[38;57H10,[10;3H[?25h[?25l[38;1H[1m-- INSERT --[m[38;13H[K[38;57H10,3[10CAll[10;3H[?25h[?25l[36mr- image[m[35m:[m nginx[38;60H4[10;4H[?25h[?25l[36me- image[m[35m:[m nginx[38;60H5[10;5H[?25h[?25l[36md- image[m[35m:[m nginx[38;60H6[10;6H[?25h[?25l[36m- image[m[35m:[m nginx[10;19H[K[38;60H5[10;5H[?25h[?25l[36ma- image[m[35m:[m nginx[38;60H6[10;6H[?25h[?25l[36md- image[m[35m:[m nginx[38;60H7[10;7H[?25h[?25l[36mi- image[m[35m:[m nginx[38;60H8[10;8H[?25h[?25l[36mn- image[m[35m:[m nginx[38;60H9[10;9H[?25h[?25l[36me- image[m[35m:[m nginx[38;60H10[10;10H[?25h[?25l[36ms- image[m[35m:[m nginx[38;61H1[10;11H[?25h[?25l[36ms- image[m[35m:[m nginx[38;61H2[10;12H[?25h[?25l[36mP- image[m[35m:[m nginx[38;61H3[10;13H[?25h[?25l[36mr- image[m[35m:[m nginx[38;61H4[10;14H[?25h[?25l[36mo- image[m[35m:[m nginx[38;61H5[10;15H[?25h[?25l[36mn- image[m[35m:[m nginx[38;61H6[10;16H[?25h[?25l[36m- image[m[35m:[m nginx[10;29H[K[38;61H5[10;15H[?25h[?25l[36mb- image[m[35m:[m nginx[38;61H6[10;16H[?25h[?25l[36me- image[m[35m:[m nginx[38;61H7[10;17H[?25h[?25l[36m:- image[m[35m:[m nginx[38;61H8[10;18H[?25h[?25l[11;37r[11;1H[L[1;38r[10;17H[35m:[m[10;18H[K[11;1H[38;5;130m- [m[36mimage[m[35m:[m nginx[38;57H[K[38;57H11,1[10CAll[11;1H[?25h[?25l [38;5;130m- [m[36mimage[m[35m:[m nginx[38;60H2[11;2H[?25h[?25l [38;5;130m- [m[36mimage[m[35m:[m nginx[38;60H3[11;3H[?25h[?25l[38;60H2[11;2H[?25h[?25l[38;60H1[11;1H[?25h[38;1H[K[11;1H[?25l[38;57H11,1[10CAll[11;1H[?25h[?25l[38;58H0[10;1H[?25h[?25l[38;60H2[10;2H[?25h[?25l[38;60H3[10;3H[?25h[?25l[38;60H4[10;4H[?25h[?25l[38;60H5[10;5H[?25h[?25l[38;60H6[10;6H[?25h[?25l[38;60H7[10;7H[?25h[?25l[38;60H8[10;8H[?25h[?25l[38;60H9[10;9H[?25h[?25l[38;60H10[10;10H[?25h[?25l[38;61H1[10;11H[?25h[?25l[38;61H2[10;12H[?25h[?25l[38;61H3[10;13H[?25h[?25l[38;61H4[10;14H[?25h[?25l[38;61H5[10;15H[?25h[?25l[38;61H6[10;16H[?25h[?25l[38;61H7[10;17H[?25h[?25l[38;58H1,3 [11;3H[?25h[?25l[38;58H2,5[12;5H[?25h[?25l[38;58H1[11;5H[?25h[?25l[38;60H4[11;4H[?25h[?25l[38;60H3[11;3H[?25h[?25l[38;1H[1m-- INSERT --[m[38;57H[K[38;57H11,3[10CAll[11;3H[?25h[?25l[12;37r[12;1H[L[1;38r[11;3H[K[12;1H[38;5;130m- [m[36mimage[m[35m:[m nginx[38;57H[K[38;57H12,1[10CAll[12;1H[?25h[?25l [38;5;130m- [m[36mimage[m[35m:[m nginx[38;60H2[12;2H[?25h[?25l [38;5;130m- [m[36mimage[m[35m:[m nginx[38;60H3[12;3H[?25h[?25l[38;58H1[11;3H[?25h[38;1H[K[11;2H[?25l[38;57H11,2[10CAll[11;2H[?25h[?25l[38;57H[K[38;1H:[?2004h[?25hq[?25l[?25h![?25l[?25h[?25l[?2004l[38;1H[K[38;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ vim e3.yaml cc[Kvim e3.yaml sudo apt-get install vim[12Pvim e3.yaml kubectl run e3rp --image=nginx --restart=Neever --dry-run -o yaml > e3.yaml[A[C[C[C[C[C[C[C[Cexplain pod.spec.containers.readine[4PssProbe.httpGet --recursive[K[K[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl explain --helpcc[Kkubectl explain pod.spec.containers.livenesssProbe # get the exact names[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[Cdescribe pod/e2lp | grep -i livenes[C[K[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pget pod/e2lp -w[K[6Pc -f e2.yaml [1Pnano[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 21 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e2.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: e2lp[9;3Hname: e2lp[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: e2lp[14;5Hresources: {}[15;5HlivenessProbe:[16;7HperiodSeconds: 5[17;7HinitialDelaySeconds: 5[18;7Hexec:[19;9Hcommand:[20;9H- ls[21;3HdnsPolicy: ClusterFirst[22;3HrestartPolicy: Never[23dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e2.yaml [1Pvim e3[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"e3.yaml" 15L, 228C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31mnull[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m e3rp
+  [36mname[m[35m:[m e3rp
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m
+  [38;5;130m- [m[36mimage[m[35m:[m nginx
+    [36mname[m[35m:[m e3rp
+    [36mresources[m[35m:[m [35m{}[m
+  [36mdnsPolicy[m[35m:[m ClusterFirst
+  [36mrestartPolicy[m[35m:[m Never
+[36mstatus[m[35m:[m [35m{}[m
+[94m~                                                                         [17;1H~                                                                         [18;1H~                                                                         [19;1H~                                                                         [20;1H~                                                                         [21;1H~                                                                         [22;1H~                                                                         [23;1H~                                                                         [24;1H~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [m[38;57H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[38;57H2[2;1H[?25h[?25l[38;57H3[3;1H[?25h[?25l[38;57H4[4;1H[?25h[?25l[38;57H5[5;1H[?25h[?25l[38;57H6[6;1H[?25h[?25l[38;57H7[7;1H[?25h[?25l[38;57H8[8;1H[?25h[?25l[38;57H9[9;1H[?25h[?25l[38;57H10,1[10;1H[?25h[?25l[38;58H1[11;1H[?25h[?25l[38;58H2[12;1H[?25h[?25l[38;58H3[13;1H[?25h[?25l[38;58H4[14;1H[?25h[?25l[38;58H5[15;1H[?25h[?25l[38;58H4[14;1H[?25h[?25l[38;58H3[13;1H[?25h[?25l[38;60H25[13;25H[?25h[?25l[12;16H[35m[106m{}[m[38;58H2,17[12;17H[?25h[?25l[35m{}[m[38;58H3,3 [13;3H[?25h[?25l[38;1H[1m-- INSERT --[m[38;13H[K[38;57H13,3[10CAll[13;3H[?25h[?25l[14;37r[14;1H[L[1;38r[13;3H[K[14;1H[36mdnsPolicy[m[35m:[m ClusterFirst[38;57H[K[38;57H14,1[10CAll[14;1H[?25h[?25l[38;58H3[13;1H[?25h[?25l[38;58H4[14;1H[?25h[?25l [36mdnsPolicy[m[35m:[m ClusterFirst[38;60H2[14;2H[?25h[?25l [36mdnsPolicy[m[35m:[m ClusterFirst[38;60H3[14;3H[?25h[?25l[38;58H3[13;3H[?25h[?25l[38;60H4[13;4H[?25h[?25l[38;60H5[13;5H[?25h[?25lr[38;60H6[13;6H[?25h[?25le[38;60H7[13;7H[?25h[?25la[38;60H8[13;8H[?25h[?25ld[38;60H9[13;9H[?25h[?25li[38;60H10[13;10H[?25h[?25ln[38;61H1[13;11H[?25h[?25le[38;61H2[13;12H[?25h[?25ls[38;61H3[13;13H[?25h[?25ls[38;61H4[13;14H[?25h[?25lP[38;61H5[13;15H[?25h[?25lr[38;61H6[13;16H[?25h[?25lo[38;61H7[13;17H[?25h[?25lb[38;61H8[13;18H[?25h[?25le[38;61H9[13;19H[?25h[?25l    [36mreadinessProbe[m[35m:[m[38;60H20[13;20H[?25h[?25l[38;61H1[13;21H[?25h[?25l[38;61H0[13;20H[?25h[?25l[14;37r[14;1H[L[1;38r[38;57H[K[38;57H14,1[10CAll[14;1H[?25h[?25l[38;60H2[14;2H[?25h[?25l[38;60H3[14;3H[?25h[?25l[38;60H4[14;4H[?25h[?25l[38;60H5[14;5H[?25h[?25l[38;60H4[14;4H[?25h[?25l[38;60H3[14;3H[?25h[?25l[38;60H2[14;2H[?25h[?25l[38;60H1[14;1H[?25h[?25l[38;60H2-9[14;9H[?25h[?25l[38;60H1  [14;1H[?25h[?25l[13;37r[37;1H
+[1;38r[13;5H[36mreadinessProbe[m[35m:[m[37;1H[94m~                                                                         [m[38;57H[K[38;57H13,20[9CAll[13;20H[?25h[?25l[14;37r[14;1H[L[1;38r[38;57H[K[38;57H14,1[10CAll[14;1H[?25h[?25l[38;60H2-9[14;9H[?25h[?25l[38;60H1  [14;1H[?25h[?25l[13;37r[37;1H
+[1;38r[13;5H[36mreadinessProbe[m[35m:[m[37;1H[94m~                                                                         [m[38;57H[K[38;57H13,20[9CAll[13;20H[?25h[?25l[14;37r[14;1H[L[1;38r[38;57H[K[38;57H14,1[10CAll[14;1H[?25h[?25l[38;60H2[14;2H[?25h[?25l[38;60H3[14;3H[?25h[?25l[38;60H4[14;4H[?25h[?25l[38;60H5[14;5H[?25h[?25l[38;60H6[14;6H[?25h[?25l[38;60H7[14;7H[?25h[?25le[38;60H8[14;8H[?25h[?25l[14;7H[K[38;60H7[14;7H[?25h[?25lh[38;60H8[14;8H[?25h[?25lt[38;60H9[14;9H[?25h[?25lt[38;60H10[14;10H[?25h[?25lp[38;61H1[14;11H[?25h[?25lG[38;61H2[14;12H[?25h[?25le[38;61H3[14;13H[?25h[?25lt[38;61H4[14;14H[?25h[?25l[14;7H[36mhttpGet[m[35m:[m[38;61H5[14;15H[?25h[?25l[38;61H6[14;16H[?25h[38;1H[K[14;15H[?25l[38;57H14,15[9CAll[14;15H[?25h[?2004l[?25l[38;1H"e3.yaml"[38;57H[K[38;11H17L, 264C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ vim e3.yaml 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"e3.yaml" 17L, 264C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31mnull[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m e3rp
+  [36mname[m[35m:[m e3rp
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m
+  [38;5;130m- [m[36mimage[m[35m:[m nginx
+    [36mname[m[35m:[m e3rp
+    [36mresources[m[35m:[m [35m{}[m
+    [36mreadinessProbe[m[35m:[m[14;7H[36mhttpGet[m[35m:[m
+  [36mdnsPolicy[m[35m:[m ClusterFirst
+  [36mrestartPolicy[m[35m:[m Never
+[36mstatus[m[35m:[m [35m{}[m
+[94m~                                                                         [19;1H~                                                                         [20;1H~                                                                         [21;1H~                                                                         [22;1H~                                                                         [23;1H~                                                                         [24;1H~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [m[38;57H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[38;1H[?2004l[38;1H[K[38;1H[?2004l[?1l>[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ vim e3.yaml [1@nano e2[C[C[C[C[C[C[1Pvim e3[C[C[C[C[C[Ccc[Kvim e3.yaml sudo apt-get install vim[12Pvim e3.yaml kubectl run e3rp --image=nginx --restart=Neever --dry-run -o yaml > e3.yaml[A[C[C[C[C[C[C[C[Cexplain pod.spec.containers.readine[4PssProbe.httpGet --recursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: httpGet <Object>
+
+DESCRIPTION:
+     HTTPGet specifies the http request to perform.
+
+     HTTPGetAction describes an action based on HTTP Get requests.
+
+FIELDS:
+   host	<string>
+   httpHeaders	<[]Object>
+      name	<string>
+      value	<string>
+   path	<string>
+   port	<string>
+   scheme	<string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.readineessProbe.httpGet --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[C[C[C[C[C[C[C[C[C[C[1P --recursive[C[C[C[C[C[C[C[C[C[1P --recursive[C[C[C[C[C[C[C[C
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: readinessProbe <Object>
+
+DESCRIPTION:
+     Periodic probe of container service readiness. Container will be removed
+     from service endpoints if the probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+     Probe describes a health check to be performed against a container to
+     determine whether it is alive or ready to receive traffic.
+
+FIELDS:
+   exec	<Object>
+      command	<[]string>
+   failureThreshold	<integer>
+   httpGet	<Object>
+      host	<string>
+      httpHeaders	<[]Object>
+         name	<string>
+         value	<string>
+      path	<string>
+      port	<string>
+      scheme	<string>
+   initialDelaySeconds	<integer>
+   periodSeconds	<integer>
+   successThreshold	<integer>
+   tcpSocket	<Object>
+      host	<string>
+      port	<string>
+   timeoutSeconds	<integer>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pod.spec.containers.readineessProbe --recursive[C[C[C[C[C[C[C[C.httpGet --recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ vim e3.yaml [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"e3.yaml" 17L, 264C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31mnull[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m e3rp
+  [36mname[m[35m:[m e3rp
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m
+  [38;5;130m- [m[36mimage[m[35m:[m nginx
+    [36mname[m[35m:[m e3rp
+    [36mresources[m[35m:[m [35m{}[m
+    [36mreadinessProbe[m[35m:[m[14;7H[36mhttpGet[m[35m:[m
+  [36mdnsPolicy[m[35m:[m ClusterFirst
+  [36mrestartPolicy[m[35m:[m Never
+[36mstatus[m[35m:[m [35m{}[m
+[94m~                                                                         [19;1H~                                                                         [20;1H~                                                                         [21;1H~                                                                         [22;1H~                                                                         [23;1H~                                                                         [24;1H~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [m[38;57H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[38;57H2[2;1H[?25h[?25l[38;57H3[3;1H[?25h[?25l[38;57H4[4;1H[?25h[?25l[38;57H5[5;1H[?25h[?25l[38;57H6[6;1H[?25h[?25l[38;57H7[7;1H[?25h[?25l[38;57H8[8;1H[?25h[?25l[38;57H9[9;1H[?25h[?25l[38;57H10,1[10;1H[?25h[?25l[38;58H1[11;1H[?25h[?25l[38;58H2[12;1H[?25h[?25l[15C[35m[106m{}[m[38;61H7[12;17H[?25h[?25l[35m{}[m[38;58H3,5 [13;5H[?25h[?25l[38;1H[1m-- INSERT --[m[38;13H[K[38;57H13,5[10CAll[13;5H[?25h[?25l[36mpreadinessProbe[m[35m:[m[38;60H6[13;6H[?25h[?25l[36moreadinessProbe[m[35m:[m[38;60H7[13;7H[?25h[?25l[1C[36mreadinessProbe[m[35m:[m[38;60H8[13;8H[?25h[?25l[36mtreadinessProbe[m[35m:[m[38;60H9[13;9H[?25h[?25l[36msreadinessProbe[m[35m:[m[38;60H10[13;10H[?25h[?25l[36m:readinessProbe[m[35m:[m[38;61H1[13;11H[?25h[?25l[14;37r[14;1H[L[1;38r[13;10H[35m:[m[13;11H[K[14;1H[36mreadinessProbe[m[35m:[m[38;57H[K[38;57H14,1[10CAll[14;1H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H2[14;2H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H3[14;3H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H4[14;4H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H5[14;5H[?25h[?25l[15;37r[15;1H[L[1;38r[14;5H[K[15;1H[36mreadinessProbe[m[35m:[m[38;57H[K[38;57H15,1[10CAll[15;1H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H2[15;2H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H3[15;3H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H4[15;4H[?25h[?25l[36mreadinessProbe[m[35m:[m[15;18H[K[38;60H3[15;3H[?25h[?25l[36mreadinessProbe[m[35m:[m[15;17H[K[38;60H2[15;2H[?25h[?25l[36mreadinessProbe[m[35m:[m[15;16H[K[38;60H1[15;1H[?25h[?25l        [36mreadinessProbe[m[35m:[m[38;60H2-9[15;9H[?25h[?25l[36mreadinessProbe[m[35m:[m[15;16H[K[38;60H1  [15;1H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H2[15;2H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H3[15;3H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H4[15;4H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H5[15;5H[?25h[?25l [36mreadinessProbe[m[35m:[m[38;60H6[15;6H[?25h[?25l[36mreadinessProbe[m[35m:[m[15;20H[K[38;60H5[15;5H[?25h[?25l[38;58H4[14;5H[?25h[?25l-[38;60H6[14;6H[?25h[?25l[38;5;130m- [m[38;60H7[14;7H[?25h[?25lc[38;60H8[14;8H[?25h[?25lo[38;60H9[14;9H[?25h[?25ln[38;60H10[14;10H[?25h[?25lt[38;61H1[14;11H[?25h[?25la[38;61H2[14;12H[?25h[?25li[38;61H3[14;13H[?25h[?25ln[38;61H4[14;14H[?25h[?25le[38;61H5[14;15H[?25h[?25lr[38;61H6[14;16H[?25h[?25lP[38;61H7[14;17H[?25h[?25lo[38;61H8[14;18H[?25h[?25lr[38;61H9[14;19H[?25h[?25lt[38;60H20[14;20H[?25h[?25l[14;7H[36mcontainerPort[m[35m:[m[38;61H1[14;21H[?25h[?25l[38;61H2[14;22H[?25h[?25l[31m8[m[38;61H3[14;23H[?25h[?25l[31m0[m[38;61H4[14;24H[?25h[?25l[38;58H5,20[15;20H[?25h[?25l[38;58H6,16[16;16H[?25h[?25l[17;37r[17;1H[L[1;38r[38;57H[K[38;57H17,1[10CAll[17;1H[?25h[?25l[38;60H2[17;2H[?25h[?25l[38;60H3[17;3H[?25h[?25l[38;60H4[17;4H[?25h[?25l[38;60H5[17;5H[?25h[?25l[38;60H6[17;6H[?25h[?25l[38;60H7[17;7H[?25h[?25l[38;60H8[17;8H[?25h[?25l[38;60H9[17;9H[?25h[?25lp[38;60H10[17;10H[?25h[?25la[38;61H1[17;11H[?25h[?25lt[38;61H2[17;12H[?25h[?25lh[38;61H3[17;13H[?25h[?25l[36mpath[m[35m:[m[38;61H4[17;14H[?25h[?25l[38;61H5[17;15H[?25h[?25l/[38;61H6[17;16H[?25h[?25l[18;37r[18;1H[L[1;38r[38;57H[K[38;57H18,1[10CAll[18;1H[?25h[?25l[38;60H2[18;2H[?25h[?25l[38;60H3[18;3H[?25h[?25l[38;60H4[18;4H[?25h[?25l[38;60H5[18;5H[?25h[?25l[38;60H6[18;6H[?25h[?25l[38;60H7[18;7H[?25h[?25l[38;60H8[18;8H[?25h[?25l[38;60H9[18;9H[?25h[?25lp[38;60H10[18;10H[?25h[?25lo[38;61H1[18;11H[?25h[?25lr[38;61H2[18;12H[?25h[?25lt[38;61H3[18;13H[?25h[?25l[36mport[m[35m:[m[38;61H4[18;14H[?25h[?25l[38;61H5[18;15H[?25h[?25l[31m8[m[38;61H6[18;16H[?25h[?25l[31m0[m[38;61H7[18;17H[?25h[38;1H[K[18;16H[?25l[38;57H18,16[9CAll[18;16H[?25h[?2004l[?25l[38;1H"e3.yaml"[38;57H[K[38;11H21L, 332C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc 0[K-f e3.yaml 
+pod/e3rp created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kill[K[K[Kubectl get pod/e3rp
+NAME   READY   STATUS              RESTARTS   AGE
+e3rp   0/1     ContainerCreating   0          8s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/e3rp
+NAME   READY   STATUS    RESTARTS   AGE
+e3rp   0/1     Running   0          10s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/e3rp
+NAME   READY   STATUS    RESTARTS   AGE
+e3rp   1/1     Running   0          18s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/e3rp
+NAME   READY   STATUS    RESTARTS   AGE
+e3rp   1/1     Running   0          21s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl descrip[Kbe pod/e3rp[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe pod/e3rp
+Name:         e3rp
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Tue, 24 Mar 2020 00:38:56 +0500
+Labels:       run=e3rp
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.19
+Containers:
+  e3rp:
+    Container ID:   docker://585aaa0f1bdc6350edb0446345bdb24f606fe9345f2b847924a1ff9a34a5d68f
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:2539d4344dd18e1df02be842ffc435f8e1f699cfc55516e2cf2cb16b7a9aea0b
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Tue, 24 Mar 2020 00:39:03 +0500
+    Ready:          True
+    Restart Count:  0
+    Readiness:      http-get http://:80/ delay=0s timeout=1s period=10s #success=1 #failure=3
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  32s   default-scheduler  Successfully assigned default/e3rp to minikube
+  Normal  Pulling    31s   kubelet, minikube  Pulling image "nginx"
+  Normal  Pulled     25s   kubelet, minikube  Successfully pulled image "nginx"
+  Normal  Created    25s   kubelet, minikube  Created container e3rp
+  Normal  Started    25s   kubelet, minikube  Started container e3rp
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano ~/,[K,[K.bashrc
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 129 lines ](B[m[H(B[0;7m  GNU nano 2.9.3               /home/baz/.bashrc                          [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m[36m# ~/.bashrc: executed by bash(1) for non-login shells.[4d# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)[5;1H# for examples[7d# If not running interactively, don't do anything[8d[39m(B[mcase $- in[9;5H*i*) ;;[10;7H*) return;;[11desac[13d[36m# don't put duplicate lines or lines starting with space in the history.[14d# See bash(1) for more options[15d[39m(B[mHISTCONTROL=ignoreboth[17d[36m# append to the history file, don't overwrite it[18d[39m(B[mshopt -s histappend[20d[36m# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)[21d[39m(B[mHISTSIZE=1000[22dHISTFILESIZE=2000[24d[36m# check the window size after each command and, if necessary,[25d# update the values of LINES and COLUMNS.[26d[39m(B[mshopt -s checkwinsize[28d[36m# If set, the pattern "**" used in a pathname expansion context will[29d# match all files and zero or more directories and subdirectories.[30d#shopt -s globstar[32d# make less more friendly for non-text input files, see lesspipe(1)[33d[39m(B[m[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"[35d[36m# set variable identifying the chroot you work in (used in the prompt bel[39m(B[m$[3;1H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3               /home/baz/.bashrc                          [3d(B[0m[36m# ~/.bashrc: executed by bash(1) for non-login shells.[4d# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)[5d# for examples[7d# If not running interactively, don't do anything[8d[39m(B[mcase $- in[9;5H*i*) ;;[10;7H*) return;;[11desac[13d[36m# don't put duplicate lines or lines starting with space in the history.[14d# See bash(1) for more options[15d[39m(B[mHISTCONTROL=ignoreboth[17d[36m# append to the history file, don't overwrite it[18d[39m(B[mshopt -s histappend[20d[36m# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)[21d[39m(B[mHISTSIZE=1000[22dHISTFILESIZE=2000[24d[36m# check the window size after each command and, if necessary,[25d# update the values of LINES and COLUMNS.[26d[39m(B[mshopt -s checkwinsize[28d[36m# If set, the pattern "**" used in a pathname expansion context will[29d# match all files and zero or more directories and subdirectories.[30d#shopt -s globstar[32d# make less more friendly for non-text input files, see lesspipe(1)[33d[39m(B[m[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"[35d[36m# set variable identifying the chroot you work in (used in the prompt bel[39m(B[m$[36;29H(B[0;7m[ Read 129 lines ][37d^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3               /home/baz/.bashrc                          [3d(B[0m[36m# ~/.bashrc: executed by bash(1) for non-login shells.[4d# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)[5d# for examples[7d# If not running interactively, don't do anything[8d[39m(B[mcase $- in[9;5H*i*) ;;[10;7H*) return;;[11desac[13d[36m# don't put duplicate lines or lines starting with space in the history.[14d# See bash(1) for more options[15d[39m(B[mHISTCONTROL=ignoreboth[17d[36m# append to the history file, don't overwrite it[18d[39m(B[mshopt -s histappend[20d[36m# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)[21d[39m(B[mHISTSIZE=1000[22dHISTFILESIZE=2000[24d[36m# check the window size after each command and, if necessary,[25d# update the values of LINES and COLUMNS.[26d[39m(B[mshopt -s checkwinsize[28d[36m# If set, the pattern "**" used in a pathname expansion context will[29d# match all files and zero or more directories and subdirectories.[30d#shopt -s globstar[32d# make less more friendly for non-text input files, see lesspipe(1)[33d[39m(B[m[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"[35d[36m# set variable identifying the chroot you work in (used in the prompt bel[39m(B[m$[37d[1;32H(B[0;7m                 [1;70H/home/baz/.bashrc                                                                [1;149H(B[m[35;74H[36mow)[37d[39m(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[2;36r8[36d[17S[1;38r[19;1Hif [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then[20;5Hdebian_chroot=$(cat /etc/debian_chroot)[21dfi[23d[36m# set a fancy prompt (non-color, unless we know we "want" color)[24d[39m(B[mcase "$TERM" in[25;5Hxterm-color|*-256color) color_prompt=yes;;[26desac[28d[36m# uncomment for a colored prompt, if the terminal has the capability; turned[29d# off by default to not distract the user: the focus in a terminal window[30d# should be on the output of commands, not on the prompt[31d#force_color_prompt=yes[33d[39m(B[mif [ -n "$force_color_prompt" ]; then[34;5Hif [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then[35;8H[36m[1K # We have color support; assume it's compliant with Ecma-48[19d[39m(B[m[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[3;36r8[36d[17S[1;38r[19;8H[36m[1K # (ISO/IEC-6429). (Lack of such support is extremely rare, and such[20;8H[1K # a case would tend to support setf rather than setaf.)[21;9H[39m(B[mcolor_prompt=yes[22;5Helse[23dcolor_prompt=[24;5Hfi[25dfi[27dif [ "$color_prompt" = yes ]; then[28;5HPS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '[29delse[30dPS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '[31dfi[32dunset color_prompt force_color_prompt[34d[36m# If this is an xterm set the title to user@host:dir[35d[39m(B[mcase "$TERM" in[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l[3;8H[36m[1K # a case would tend to support setf rather than setaf.)[4;8H[39m(B[m[1K color_prompt=yes[5;5Helse[6d[1K color_prompt=[K[7d    fi[K[8dfi[K[9d[K[10dif [ "$color_prompt" = yes ]; then[11d    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '[12delse[K[13d    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '[K[14dfi[K[15dunset color_prompt force_color_prompt[16d[K[17d[36m# If this is an xterm set the title to user@host:dir[39m(B[m[K[18dcase "$TERM" in[K[19dxterm*|rxvt*)[K[20d    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"[21;5H;;[K[22d*)[K[23d  ;;[K[24desac[K[25d[K[26d[36m# enable color support of ls and also add handy aliases[27;6H[39m(B[m-x /usr/bin/dircolor[28;5Htest -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"[K[29d    alias ls='ls --color=auto'[30d[36m    #alias dir='dir --color=auto'[39m(B[m[K[31d[36m    #alias vdir='vdir --color=auto'[32d[39m(B[m[K[33;5Halias grep='grep --color=auto'[34d    alias fgrep='fgrep --color=auto'[K[35d    alias egrep='egrep --color=auto'[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[3;36r8[36d[17S[1;38r[19;1Hfi[21d[36m# colored GCC warnings and errors[22d#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'[24d# some more ls aliases[25d[39m(B[malias ll='ls -alF'[26dalias la='ls -A'[27dalias l='ls -CF'[29d[36m#k8s Alias[31d[39m(B[malias cc=clear[32dalias k=kubectl[33dalias kga="kubectl get all"[35d[36m# Alias for Scripts by BAZ[19d[39m(B[m[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[A[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[2;36r8[36d[17S[1;38r[2;1H[K[20dalias gup="bash gitBatch.sh"[22d[36m# Add an "alert" alias for long running commands.  Use like so:[23d#   sleep 10; alert[24d[39m(B[malias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*$[26;1H[36m# Alias definitions.[27d# You may want to put all your additions into a separate file like[28d# ~/.bash_aliases, instead of adding them here directly.[29d# See /usr/share/doc/bash-doc/examples in the bash-doc package.[31d[39m(B[mif [ -f ~/.bash_aliases ]; then[32;5H. ~/.bash_aliases[33dfi[35d[36m# enable programmable completion features (you don't need to enable[19d[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[17;35r[17;1HM[1;38r[18;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[3;36r8[36d[17S[1;38r[19;1H[36m# enable programmable completion features (you don't need to enable[20d# this, if it's already enabled in /etc/bash.bashrc and /etc/profile[21d# sources /etc/bash.bashrc).[22d[39m(B[mif ! shopt -oq posix; then[23;3Hif [ -f /usr/share/bash-completion/bash_completion ]; then[24;5H. /usr/share/bash-completion/bash_completion[25;3Helif [ -f /etc/bash_completion ]; then[26;5H. /etc/bash_completion[27;3Hfi[28dfi[30d[36m# Run . ~/.bashrc after adding alias to Update.[19d[39m(B[m[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      2b.yaml		  config4.txt  e2.yaml
+2003221644    2rq.yaml		  config.env   e3.yaml
+2003240019    b2mc.yaml		  config.txt   envpod.yaml
+202003141414  bb.yaml		  d10.yaml     gitBatch.sh
+202003141444  c5job.yaml	  d11.yaml     gi.txt
+202003150112  c6job.yaml	  d12.yaml     kubernetes-metrics-server
+202003151935  c6.yaml		  d15.yaml     README.md
+202003160010  c77.yaml		  d16.yaml     rgi.txt
+202003182340  c7cj.yaml		  d7.yaml      username
+202003200020  ca1a.yaml		  d8.yaml      username1
+2b1.yaml      commandsReview.txt  e1.yaml
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   e1.yaml[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m2003240019[m
+	[31me2.yaml[m
+	[31me3.yaml[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+e3.y	aml
+[master 5528a17] update on file e3.yaml
+ 1 file changed, 21 insertions(+)
+ create mode 100644 e3.yaml
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 466 bytes | 466.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   409a9b2..5528a17  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run e4b[Klog --image=busybox --rea[Kstar t=never [K[K[K[K[K[KNever --dry-run -o yaml > e4.yaml[C[1@-[1@-[1@ [1@.[1P[1@/[1@b[1@i[1@n[1@/[1@s[1@h[1@ [1@-[1@c[1@ [1@e[1@c[1@h[1@o[1@ [1P[1P[1P[1P[1P[1@V[1Pi=0; while true; do echo "$i: $(datte)"; i=$((i+1)); sleep 1; done> e4.yaml[1@ 
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: e4log
+  name: e4log
+spec:
+  containers:
+  - args:
+    - /bin/sh
+    - -c
+    - i=0
+    image: busybox
+    name: e4log
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run e4log --image=busybox --restartt=Never --dry-run -o yaml -- /bin/sh -c i=0; while true; do echo "$i: $(datte)"; i=$((i+1)); sleep 1; done > e4.yaml[C[1@'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'i=0; while true; do echo "$i: $(da[1@t[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano e4.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 19 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e4.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: e4log[9;3Hname: e4log[10dspec:[11;3Hcontainers:[12;3H- args:[13;5H- /bin/sh[14;5H- -c[15;5H- 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done'[16;5Himage: busybox[17;5Hname: e4log[18;5Hresources: {}[19;3HdnsPolicy: ClusterFirst[20;3HrestartPolicy: Never[21dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc 0[K-f e4.yaml 
+pod/e4log created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ki[Kubectl get pod/e4log
+NAME    READY   STATUS    RESTARTS   AGE
+e4log   1/1     Running   0          10s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ l[Kkubectl logs pod/e4log
+0: Mon Mar 23 19:43:51 UTC 2020
+1: Mon Mar 23 19:43:52 UTC 2020
+2: Mon Mar 23 19:43:53 UTC 2020
+3: Mon Mar 23 19:43:54 UTC 2020
+4: Mon Mar 23 19:43:55 UTC 2020
+5: Mon Mar 23 19:43:56 UTC 2020
+6: Mon Mar 23 19:43:57 UTC 2020
+7: Mon Mar 23 19:43:58 UTC 2020
+8: Mon Mar 23 19:43:59 UTC 2020
+9: Mon Mar 23 19:44:00 UTC 2020
+10: Mon Mar 23 19:44:01 UTC 2020
+11: Mon Mar 23 19:44:02 UTC 2020
+12: Mon Mar 23 19:44:03 UTC 2020
+13: Mon Mar 23 19:44:04 UTC 2020
+14: Mon Mar 23 19:44:05 UTC 2020
+15: Mon Mar 23 19:44:06 UTC 2020
+16: Mon Mar 23 19:44:07 UTC 2020
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run e5deb --image=busybox --restar t=Never -- /bin/sh -c 'ls /notexist'
+pod/e5deb created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/e5deg[Kb
+NAME    READY   STATUS              RESTARTS   AGE
+e5deb   0/1     ContainerCreating   0          8s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/e5deb -w
+NAME    READY   STATUS   RESTARTS   AGE
+e5deb   0/1     Error    0          11s
+k	^Z
+[2]+  Stopped                 kubectl get pod/e5deb -w
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod/e5deb -w[K
+NAME    READY   STATUS   RESTARTS   AGE
+e5deb   0/1     Error    0          19s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs pod/e5deb
+ls: /notexist: No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl descru[Kibe pod/deb[K[K[Ke5deb
+Name:         e5deb
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Tue, 24 Mar 2020 00:45:53 +0500
+Labels:       run=e5deb
+Annotations:  <none>
+Status:       Failed
+IP:           172.17.0.21
+Containers:
+  e5deb:
+    Container ID:  docker://ed8b54d7b36ed4790eacf0f18daa47023a64c473f61376abe2ccf205e9aa40d7
+    Image:         busybox
+    Image ID:      docker-pullable://busybox@sha256:b26cd013274a657b86e706210ddd5cc1f82f50155791199d29b9e86e935ce135
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      /bin/sh
+      -c
+      ls /notexist
+    State:          Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Tue, 24 Mar 2020 00:46:02 +0500
+      Finished:     Tue, 24 Mar 2020 00:46:02 +0500
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  42s   default-scheduler  Successfully assigned default/e5deb to minikube
+  Normal  Pulling    42s   kubelet, minikube  Pulling image "busybox"
+  Normal  Pulled     33s   kubelet, minikube  Successfully pulled image "busybox"
+  Normal  Created    33s   kubelet, minikube  Created container e5deb
+  Normal  Started    33s   kubelet, minikube  Started container e5deb
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe pod/e5deb | grep -i not
+An[01;31m[Knot[m[Kations:  <none>
+      ls /[01;31m[Knot[m[Kexist
+Tolerations:     node.kubernetes.io/[01;31m[Knot[m[K-ready:NoExecute for 300s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cckubectl describe pod/e5deb | grep -i not[K[K[Kr[Kerror [A
+      Reason:       [01;31m[KError[m[K
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe pod/e5deb | grep -i error [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl describe pod/e5deb | grep -i not[K[K[K[K[K[K[K[K[K[K[K[K[K
+Name:         e5deb
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Tue, 24 Mar 2020 00:45:53 +0500
+Labels:       run=e5deb
+Annotations:  <none>
+Status:       Failed
+IP:           172.17.0.21
+Containers:
+  e5deb:
+    Container ID:  docker://ed8b54d7b36ed4790eacf0f18daa47023a64c473f61376abe2ccf205e9aa40d7
+    Image:         busybox
+    Image ID:      docker-pullable://busybox@sha256:b26cd013274a657b86e706210ddd5cc1f82f50155791199d29b9e86e935ce135
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      /bin/sh
+      -c
+      ls /notexist
+    State:          Terminated
+      Reason:       Error
+      Exit Code:    1
+      Started:      Tue, 24 Mar 2020 00:46:02 +0500
+      Finished:     Tue, 24 Mar 2020 00:46:02 +0500
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node
