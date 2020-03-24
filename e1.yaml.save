@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: e1lp
+  name: e1lp
+spec:
+  containers:
+  - image: nginx
+    name: e1lp
+    resources: {}
+    livenessProbe:
+periodSeconds
+      exec:
+        command:
+        - ls  
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
