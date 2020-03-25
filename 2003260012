@@ -407,4 +407,888 @@ Commercial support is available at
 ****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
 
 This script will upadte file to GtHub by taking filename input!
-1.yaml	      2b.yaml		  config.en
+1.yaml	      2b.yaml		  config.env  e4.yaml
+2003221644    2rq.yaml		  config.txt  envpod.yaml
+2003240019    b2mc.yaml		  d10.yaml    gitBatch.sh
+2003260012    bb.yaml		  d11.yaml    gi.txt
+202003141414  c5job.yaml	  d12.yaml    kubernetes-metrics-server
+202003141444  c6job.yaml	  d15.yaml    README.md
+202003150112  c6.yaml		  d16.yaml    rgi.txt
+202003151935  c77.yaml		  d7.yaml     username
+202003160010  c7cj.yaml		  d8.yaml     username1
+202003182340  ca1a.yaml		  e1.yaml
+202003200020  commandsReview.txt  e2.yaml
+2b1.yaml      config4.txt	  e3.yaml
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   2003260012[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+[master 7a8897d] update on file .
+ 1 file changed, 410 insertions(+)
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 5.59 KiB | 5.59 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   8bbbf70..7a8897d  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy 
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+67dep   4/4     4            4           26d
+ca1     2/2     2            2           10d
+ca1a    6/6     6            6           10d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run foo --imaga[Ke=dgkanatsios/simpleaapp --replica[K[Ka[Kcas=3 --labels=app=f0[Koo --f[Kdry-run -o yaml > f2dep.y[K[K[K[K[K.yaml
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f2.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    f2.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: foo[9;3Hname: foo[10dspec:[11;3Hreplicas: 3[12;3Hselector:[13;5HmatchLabels:[14;7Happ: foo[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: foo[21;5Hspec:[22;7Hcontainers:[23;7H- image: dgkanatsios/simpleapp[24;9Hname: foo[25;9Hresources: {}[26dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[24;18H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[25;35r[25;1HM[1;38r[25;1H[?12l[?25h[?25l [?12l[?25h[?25l[36d[K[25d  [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25lL[?12l[?25h[?25l [?12l[?25h[?25l:[?12l[?25h[?25l7[26;36r8[26dM[1;38r[26;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l8[?12l[?25h[?25l0[?12l[?25h[?25l8[?12l[?25h[?25l0[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: f2.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl et[K[Kget pods -l app=foo -o wide
+No resources found.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pods -l app=foo -o wide[1P[1@L
+NAME                         READY   STATUS               RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES   APP=FOO
+06nginx                      0/1     Error                0          38d     <none>        minikube   <none>           <none>            
+07nginx                      0/1     Error                0          38d     <none>        minikube   <none>           <none>            
+100vol                       0/1     Error                0          25d     <none>        minikube   <none>           <none>            
+104pvc2b                     0/1     Error                0          25d     <none>        minikube   <none>           <none>            
+111                          0/1     Error                0          24d     <none>        minikube   <none>           <none>            
+113                          0/1     Completed            0          24d     <none>        minikube   <none>           <none>            
+114nginx                     0/1     Completed            0          24d     <none>        minikube   <none>           <none>            
+117                          0/1     Error                0          23d     <none>        minikube   <none>           <none>            
+118                          0/1     Error                0          23d     <none>        minikube   <none>           <none>            
+126                          0/1     Error                0          21d     <none>        minikube   <none>           <none>            
+131                          0/1     Error                0          21d     <none>        minikube   <none>           <none>            
+132                          0/1     Error                0          21d     <none>        minikube   <none>           <none>            
+134                          0/1     Completed            0          18d     172.17.0.9    minikube   <none>           <none>            
+136                          0/1     Completed            0          18d     172.17.0.9    minikube   <none>           <none>            
+137busybox                   0/1     Error                0          18d     <none>        minikube   <none>           <none>            
+13nginx                      0/1     Completed            1          38d     172.17.0.5    minikube   <none>           <none>            
+140                          0/1     Error                0          18d     <none>        minikube   <none>           <none>            
+144                          0/1     Error                0          18d     <none>        minikube   <none>           <none>            
+17shell                      0/1     Error                0          38d     <none>        minikube   <none>           <none>            
+19bb                         0/1     Completed            0          38d     172.17.0.8    minikube   <none>           <none>            
+21bb                         0/1     Completed            0          38d     172.17.0.8    minikube   <none>           <none>            
+29mc                         0/3     Completed            0          37d     172.17.0.5    minikube   <none>           <none>            
+2busybox1                    0/1     Completed            0          11d     172.17.0.12   minikube   <none>           <none>            
+33busybox1                   0/1     Completed            0          11d     172.17.0.11   minikube   <none>           <none>            
+34mc                         0/2     Error                0          37d     <none>        minikube   <none>           <none>            
+37-ng-1                      0/1     Error                0          31d     <none>        minikube   <none>           <none>            
+37-ng-2                      0/1     Error                0          31d     <none>        minikube   <none>           <none>            
+37-ng-3                      0/1     Error                0          31d     <none>        minikube   <none>           <none>            
+3busybox1                    0/1     Completed            0          11d     172.17.0.11   minikube   <none>           <none>            
+53busybox1                   0/1     Completed            0          11d     172.17.0.11   minikube   <none>           <none>            
+67dep-7db4cf66f7-2hfgb       1/1     Running              22         26d     172.17.0.16   minikube   <none>           <none>            
+67dep-7db4cf66f7-9wrj7       1/1     Running              22         26d     172.17.0.10   minikube   <none>           <none>            
+67dep-7db4cf66f7-h5g7f       1/1     Running              22         26d     172.17.0.4    minikube   <none>           <none>            
+67dep-7db4cf66f7-m2269       1/1     Running              22         26d     172.17.0.14   minikube   <none>           <none>            
+84job-9gkc8                  0/1     Completed            0          26d     172.17.0.7    minikube   <none>           <none>            
+88job-bx58m                  0/1     Completed            0          26d     172.17.0.5    minikube   <none>           <none>            
+b2mc                         0/2     Completed            0          10d     172.17.0.12   minikube   <none>           <none>            
+bbusybox-1584565440-pqtfb    0/1     Completed            0          6d22h   172.17.0.18   minikube   <none>           <none>            
+bbusybox-1584565500-bwnbj    0/1     Completed            0          6d22h   172.17.0.18   minikube   <none>           <none>            
+bbusybox-1584565560-m8p9z    0/1     Completed            0          6d22h   172.17.0.18   minikube   <none>           <none>            
+busybox                      0/1     ContainerCannotRun   0          13m     172.17.0.19   minikube   <none>           <none>            
+busybox-1584565440-bxgcl     0/1     Completed            0          6d22h   172.17.0.19   minikube   <none>           <none>            
+busybox-1584565500-vzktl     0/1     Completed            0          6d22h   172.17.0.19   minikube   <none>           <none>            
+busybox-1584565560-vxqrv     0/1     Completed            0          6d22h   172.17.0.19   minikube   <none>           <none>            
+busybox1                     0/1     Completed            0          11d     172.17.0.11   minikube   <none>           <none>            
+c1a                          0/1     Error                0          10d     <none>        minikube   <none>           <none>            
+c1b                          0/1     Error                0          10d     <none>        minikube   <none>           <none>            
+c2-m6cjm                     0/1     Completed            0          10d     172.17.0.11   minikube   <none>           <none>            
+c4-4ntwp                     0/1     Completed            0          10d     172.17.0.18   minikube   <none>           <none>            
+c5job-64cfd                  0/1     Completed            0          6d23h   172.17.0.18   minikube   <none>           <none>            
+c6job-ldhpl                  0/1     Completed            0          6d23h   172.17.0.18   minikube   <none>           <none>            
+c6job-vprsm                  0/1     Completed            0          6d23h   172.17.0.19   minikube   <none>           <none>            
+ca1-66d6b4f974-4dxf6         1/1     Running              9          10d     172.17.0.12   minikube   <none>           <none>            
+ca1-66d6b4f974-dl85x         1/1     Running              9          10d     172.17.0.17   minikube   <none>           <none>            
+ca1a-5799475b87-7xrs5        1/1     Running              9          10d     172.17.0.13   minikube   <none>           <none>            
+ca1a-5799475b87-h7vbr        1/1     Running              9          10d     172.17.0.11   minikube   <none>           <none>            
+ca1a-5799475b87-h9q9t        1/1     Running              9          10d     172.17.0.8    minikube   <none>           <none>            
+ca1a-5799475b87-hkkcj        1/1     Running              9          10d     172.17.0.9    minikube   <none>           <none>            
+ca1a-5799475b87-kmlfd        1/1     Running              9          10d     172.17.0.15   minikube   <none>           <none>            
+ca1a-5799475b87-qch6n        1/1     Running              9          10d     172.17.0.6    minikube   <none>           <none>            
+d10                          0/1     Error                0          5d23h   <none>        minikube   <none>           <none>            
+d11sec                       0/1     Error                0          3d7h    <none>        minikube   <none>           <none>            
+d12rl                        0/1     Completed            0          2d16h   <none>        minikube   <none>           <none>            
+d16                          0/1     Completed            0          2d10h   <none>        minikube   <none>           <none>            
+d7                           0/1     Error                0          6d      <none>        minikube   <none>           <none>            
+d8                           0/1     Error                0          5d23h   <none>        minikube   <none>           <none>            
+e1lp                         0/1     Completed            0          2d7h    <none>        minikube   <none>           <none>            
+e2lp                         0/1     Error                0          2d      <none>        minikube   <none>           <none>            
+e3rp                         0/1     Error                0          47h     <none>        minikube   <none>           <none>            
+e4log                        0/1     Error                0          47h     <none>        minikube   <none>           <none>            
+e5deb                        0/1     Error                0          47h     172.17.0.21   minikube   <none>           <none>            
+f1svc                        1/1     Running              0          21m     172.17.0.18   minikube   <none>           <none>            
+hello                        0/1     Error                0          18d     <none>        minikube   <none>           <none>            
+mysec                        0/1     Error                0          23d     <none>        minikube   <none>           <none>            
+nginx                        0/1     Error                1          11d     <none>        minikube   <none>           <none>            
+nginx3                       0/1     Completed            0          2d17h   <none>        minikube   <none>           <none>            
+nginxenv                     0/1     Error                0          11d     <none>        minikube   <none>           <none>            
+not-running                  0/1     Error                0          18d     <none>        minikube   <none>           <none>            
+rbbusybox-1584565440-j4ssq   0/1     Completed            0          6d22h   172.17.0.20   minikube   <none>           <none>            
+rbbusybox-1584565500-v775d   0/1     Completed            0          6d22h   172.17.0.20   minikube   <none>           <none>            
+rbbusybox-1584565560-fh8mz   0/1     Completed            0          6d22h   172.17.0.20   minikube   <none>           <none>            
+secbusybox                   0/1     Error                0          24d     <none>        minikube   <none>           <none>            
+test114                      0/1     Completed            0          24d     <none>        minikube   <none>           <none>            
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cckubectl get pods -L app=foo -o wide[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+NAME                         READY   STATUS               RESTARTS   AGE
+06nginx                      0/1     Error                0          38d
+07nginx                      0/1     Error                0          38d
+100vol                       0/1     Error                0          25d
+104pvc2b                     0/1     Error                0          25d
+111                          0/1     Error                0          24d
+113                          0/1     Completed            0          24d
+114nginx                     0/1     Completed            0          24d
+117                          0/1     Error                0          23d
+118                          0/1     Error                0          23d
+126                          0/1     Error                0          21d
+131                          0/1     Error                0          21d
+132                          0/1     Error                0          21d
+134                          0/1     Completed            0          18d
+136                          0/1     Completed            0          18d
+137busybox                   0/1     Error                0          18d
+13nginx                      0/1     Completed            1          38d
+140                          0/1     Error                0          18d
+144                          0/1     Error                0          18d
+17shell                      0/1     Error                0          38d
+19bb                         0/1     Completed            0          38d
+21bb                         0/1     Completed            0          38d
+29mc                         0/3     Completed            0          37d
+2busybox1                    0/1     Completed            0          11d
+33busybox1                   0/1     Completed            0          11d
+34mc                         0/2     Error                0          37d
+37-ng-1                      0/1     Error                0          31d
+37-ng-2                      0/1     Error                0          31d
+37-ng-3                      0/1     Error                0          31d
+3busybox1                    0/1     Completed            0          11d
+53busybox1                   0/1     Completed            0          11d
+67dep-7db4cf66f7-2hfgb       1/1     Running              22         26d
+67dep-7db4cf66f7-9wrj7       1/1     Running              22         26d
+67dep-7db4cf66f7-h5g7f       1/1     Running              22         26d
+67dep-7db4cf66f7-m2269       1/1     Running              22         26d
+84job-9gkc8                  0/1     Completed            0          26d
+88job-bx58m                  0/1     Completed            0          26d
+b2mc                         0/2     Completed            0          10d
+bbusybox-1584565440-pqtfb    0/1     Completed            0          6d22h
+bbusybox-1584565500-bwnbj    0/1     Completed            0          6d22h
+bbusybox-1584565560-m8p9z    0/1     Completed            0          6d22h
+busybox                      0/1     ContainerCannotRun   0          13m
+busybox-1584565440-bxgcl     0/1     Completed            0          6d22h
+busybox-1584565500-vzktl     0/1     Completed            0          6d22h
+busybox-1584565560-vxqrv     0/1     Completed            0          6d22h
+busybox1                     0/1     Completed            0          11d
+c1a                          0/1     Error                0          10d
+c1b                          0/1     Error                0          10d
+c2-m6cjm                     0/1     Completed            0          10d
+c4-4ntwp                     0/1     Completed            0          10d
+c5job-64cfd                  0/1     Completed            0          6d23h
+c6job-ldhpl                  0/1     Completed            0          6d23h
+c6job-vprsm                  0/1     Completed            0          6d23h
+ca1-66d6b4f974-4dxf6         1/1     Running              9          10d
+ca1-66d6b4f974-dl85x         1/1     Running              9          10d
+ca1a-5799475b87-7xrs5        1/1     Running              9          10d
+ca1a-5799475b87-h7vbr        1/1     Running              9          10d
+ca1a-5799475b87-h9q9t        1/1     Running              9          10d
+ca1a-5799475b87-hkkcj        1/1     Running              9          10d
+ca1a-5799475b87-kmlfd        1/1     Running              9          10d
+ca1a-5799475b87-qch6n        1/1     Running              9          10d
+d10                          0/1     Error                0          5d23h
+d11sec                       0/1     Error                0          3d7h
+d12rl                        0/1     Completed            0          2d16h
+d16                          0/1     Completed            0          2d10h
+d7                           0/1     Error                0          6d
+d8                           0/1     Error                0          5d23h
+e1lp                         0/1     Completed            0          2d7h
+e2lp                         0/1     Error                0          2d
+e3rp                         0/1     Error                0          47h
+e4log                        0/1     Error                0          47h
+e5deb                        0/1     Error                0          47h
+f1svc                        1/1     Running              0          22m
+hello                        0/1     Error                0          18d
+mysec                        0/1     Error                0          23d
+nginx                        0/1     Error                1          11d
+nginx3                       0/1     Completed            0          2d17h
+nginxenv                     0/1     Error                0          11d
+not-running                  0/1     Error                0          18d
+rbbusybox-1584565440-j4ssq   0/1     Completed            0          6d22h
+rbbusybox-1584565500-v775d   0/1     Completed            0          6d22h
+rbbusybox-1584565560-fh8mz   0/1     Completed            0          6d22h
+secbusybox                   0/1     Error                0          24d
+test114                      0/1     Completed            0          24d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pods foo
+Error from server (NotFound): pods "foo" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl g[Kc[K[K[K[K[K[K[K[K[Kkc -f f2.yaml 
+
+Command 'kc' not found, but can be installed with:
+
+sudo apt install kimwitu
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano ~/.bashrc 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 129 lines ](B[m[H(B[0;7m  GNU nano 2.9.3               /home/baz/.bashrc                          [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m[36m# ~/.bashrc: executed by bash(1) for non-login shells.[4d# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)[5;1H# for examples[7d# If not running interactively, don't do anything[8d[39m(B[mcase $- in[9;5H*i*) ;;[10;7H*) return;;[11desac[13d[36m# don't put duplicate lines or lines starting with space in the history.[14d# See bash(1) for more options[15d[39m(B[mHISTCONTROL=ignoreboth[17d[36m# append to the history file, don't overwrite it[18d[39m(B[mshopt -s histappend[20d[36m# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)[21d[39m(B[mHISTSIZE=1000[22dHISTFILESIZE=2000[24d[36m# check the window size after each command and, if necessary,[25d# update the values of LINES and COLUMNS.[26d[39m(B[mshopt -s checkwinsize[28d[36m# If set, the pattern "**" used in a pathname expansion context will[29d# match all files and zero or more directories and subdirectories.[30d#shopt -s globstar[32d# make less more friendly for non-text input files, see lesspipe(1)[33d[39m(B[m[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"[35d[36m# set variable identifying the chroot you work in (used in the prompt bel[39m(B[m$[3;1H[?12l[?25h[?25l[37;15H(B[0;7mM-C(B[m Case Sens (B[0;7mM-B(B[m Backwards (B[0;7mM-J(B[m FullJstify(B[0;7m^W(B[m Beg of Par[38;2H(B[0;7mC(B[m Cancel     (B[0;7mM-R(B[m Regexp    (B[0;7m^R[38;44HT(B[m Go To Line (B[0;7m^O(B[m End of Par[36d(B[0;7mSearch:                                                                   [36;1H(B[m[36;9H[?12l[?25h[?25l(B[0;7mk(B[m[36;10H[?12l[?25h[?25l(B[0;7mc(B[m[36;11H[?12l[?25h[?25l[36;28H[1K (B[0;7m[ Search Wrapped ](B[m[K[36;31H(B[0;7m"kc" not found ](B[m[37;15H(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[K[38;2H(B[0;7mX(B[m Exit       (B[0;7m^R(B[m Read File  (B[0;7m^\[38;44HU(B[m Uncut Text (B[0;7m^T(B[m To Spell[K[36d[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[36d[K[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[2;36r8[36d[17S[1;38r[19;1Hif [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then[20;5Hdebian_chroot=$(cat /etc/debian_chroot)[21dfi[23d[36m# set a fancy prompt (non-color, unless we know we "want" color)[24d[39m(B[mcase "$TERM" in[25;5Hxterm-color|*-256color) color_prompt=yes;;[26desac[28d[36m# uncomment for a colored prompt, if the terminal has the capability; tur[39m(B[m$[29;1H[36m# off by default to not distract the user: the focus in a terminal window[30d# should be on the output of commands, not on the prompt[31d#force_color_prompt=yes[33d[39m(B[mif [ -n "$force_color_prompt" ]; then[34;5Hif [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then[35;8H[36m[1K # We have color support; assume it's compliant with Ecma-48[19d[39m(B[m[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[3;36r8[36d[17S[1;38r[19;8H[36m[1K # (ISO/IEC-6429). (Lack of such support is extremely rare, and su[39m(B[m$[20;8H[36m[1K # a case would tend to support setf rather than setaf.)[21;9H[39m(B[mcolor_prompt=yes[22;5Helse[23dcolor_prompt=[24;5Hfi[25dfi[27dif [ "$color_prompt" = yes ]; then[28;5HPS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m$[29;1Helse[30dPS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '[31dfi[32dunset color_prompt force_color_prompt[34d[36m# If this is an xterm set the title to user@host:dir[35d[39m(B[mcase "$TERM" in[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l[3;8H[36m[1K # a case would tend to support setf rather than setaf.)[4;8H[39m(B[m[1K color_prompt=yes[5;5Helse[6d[1K color_prompt=[K[7d    fi[K[8dfi[K[9d[K[10dif [ "$color_prompt" = yes ]; then[11d    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m[12delse[K[13d    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '[K[14dfi[K[15dunset color_prompt force_color_prompt[16d[K[17d[36m# If this is an xterm set the title to user@host:dir[39m(B[m[K[18dcase "$TERM" in[K[19dxterm*|rxvt*)[K[20d    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"[21;5H;;[K[22d*)[K[23d  ;;[K[24desac[K[25d[K[26d[36m# enable color support of ls and also add handy aliases[27;6H[39m(B[m-x /usr/bin/dircolor[28;5Htest -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "[29d    alias ls='ls --color=auto'[30d[36m    #alias dir='dir --color=auto'[39m(B[m[K[31d[36m    #alias vdir='vdir --color=auto'[32d[39m(B[m[K[33;5Halias grep='grep --color=auto'[34d    alias fgrep='fgrep --color=auto'[K[35d    alias egrep='egrep --color=auto'[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[3;36r8[36d[17S[1;38r[19;1Hfi[21d[36m# colored GCC warnings and errors[22d#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locu[39m(B[m$[24;1H[36m# some more ls aliases[25d[39m(B[malias ll='ls -alF'[26dalias la='ls -A'[27dalias l='ls -CF'[29d[36m#k8s Alias[31d[39m(B[malias cc=clear[32dalias k=kubectl[33dalias kga="kubectl get all"[35d[36m# Alias for Scripts by BAZ[19d[39m(B[m[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[2;36r8[36d[17S[1;38r[2;1H[K[20dalias gup="bash gitBatch.sh"[22d[36m# Add an "alert" alias for long running commands.  Use like so:[23d#   sleep 10; alert[24d[39m(B[malias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal $[26;1H[36m# Alias definitions.[27d# You may want to put all your additions into a separate file like[28d# ~/.bash_aliases, instead of adding them here directly.[29d# See /usr/share/doc/bash-doc/examples in the bash-doc package.[31d[39m(B[mif [ -f ~/.bash_aliases ]; then[32;5H. ~/.bash_aliases[33dfi[35d[36m# enable programmable completion features (you don't need to enable[19d[39m(B[m[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[2;36r8[36d[17S[1;38r[19;1H[36m# this, if it's already enabled in /etc/bash.bashrc and /etc/profile[20d# sources /etc/bash.bashrc).[21d[39m(B[mif ! shopt -oq posix; then[22;3Hif [ -f /usr/share/bash-completion/bash_completion ]; then[23;5H. /usr/share/bash-completion/bash_completion[24;3Helif [ -f /etc/bash_completion ]; then[25;5H. /etc/bash_completion[26;3Hfi[27dfi[29d[36m# Run . ~/.bashrc after adding alias to Update.[19d[39m(B[m[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[2;35r[2;1H[17T[1;38r[4;1H[36m# colored GCC warnings and errors[5d#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locu[39m(B[m$[7;1H[36m# some more ls aliases[8d[39m(B[malias ll='ls -alF'[9dalias la='ls -A'[10dalias l='ls -CF'[12d[36m#k8s Alias[14d[39m(B[malias cc=clear[15dalias k=kubectl[16dalias kga="kubectl get all"[18d[36m# Alias for Scripts by BAZ[19d[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[17;35r[17;1HM[1;38r[18;1H[?12l[?25h[?25l[A[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25lk[?12l[?25h[?25lc[?12l[?25h[?25l=[?12l[?25h[?25l"[?12l[?25h[?25lk[?12l[?25h[?25lu[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lt[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l"[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: /home/baz/.bashrc                        (B[m[36;38H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;28H(B[0;7m[ Wrote 130 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ source
+bash: source: filename argument required
+source: usage: source filename [arguments]
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ bash
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f f2.yaml 
+deployment.apps/foo created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f f2.yaml exit[Krm 202003250107[4@script[C[C[C[C[C[C[C[C[C[C[C[C[C-1-7kubectl describe pod/f1svc[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl dg[K[Kget pod -l app=foo -o wide
+NAME                   READY   STATUS              RESTARTS   AGE   IP       NODE       NOMINATED NODE   READINESS GATES
+foo-688d885f4b-m9zmp   0/1     ContainerCreating   0          29s   <none>   minikube   <none>           <none>
+foo-688d885f4b-q5vhv   0/1     ContainerCreating   0          29s   <none>   minikube   <none>           <none>
+foo-688d885f4b-wwpm7   0/1     ContainerCreating   0          29s   <none>   minikube   <none>           <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod -l app=foo -o wide
+NAME                   READY   STATUS              RESTARTS   AGE   IP       NODE       NOMINATED NODE   READINESS GATES
+foo-688d885f4b-m9zmp   0/1     ContainerCreating   0          31s   <none>   minikube   <none>           <none>
+foo-688d885f4b-q5vhv   0/1     ContainerCreating   0          31s   <none>   minikube   <none>           <none>
+foo-688d885f4b-wwpm7   0/1     ContainerCreating   0          31s   <none>   minikube   <none>           <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod -l app=foo -o wide
+NAME                   READY   STATUS              RESTARTS   AGE   IP       NODE       NOMINATED NODE   READINESS GATES
+foo-688d885f4b-m9zmp   0/1     ContainerCreating   0          33s   <none>   minikube   <none>           <none>
+foo-688d885f4b-q5vhv   0/1     ContainerCreating   0          33s   <none>   minikube   <none>           <none>
+foo-688d885f4b-wwpm7   0/1     ContainerCreating   0          33s   <none>   minikube   <none>           <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod -l app=foo -o wide -e[Kw
+NAME                   READY   STATUS              RESTARTS   AGE   IP       NODE       NOMINATED NODE   READINESS GATES
+foo-688d885f4b-m9zmp   0/1     ContainerCreating   0          38s   <none>   minikube   <none>           <none>
+foo-688d885f4b-q5vhv   0/1     ContainerCreating   0          38s   <none>   minikube   <none>           <none>
+foo-688d885f4b-wwpm7   0/1     ContainerCreating   0          38s   <none>   minikube   <none>           <none>
+foo-688d885f4b-q5vhv   1/1     Running             0          43s   172.17.0.19   minikube   <none>           <none>
+foo-688d885f4b-wwpm7   1/1     Running             0          46s   172.17.0.21   minikube   <none>           <none>
+foo-688d885f4b-m9zmp   1/1     Running             0          51s   172.17.0.20   minikube   <none>           <none>
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox -l app=foo -o wide[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K --image=busybox --rest art=Never -ti --rm --s[K sh
+Error from server (AlreadyExists): pods "busybox" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete pod/busybox
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete pod/busyboxrun busybox --image=busybox --restaart=Never -ti --rm -- sh
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jwget -O- / # wget -O- [J172.17.0.19:8080
+Connecting to 172.17.0.19:8080 (172.17.0.19:8080)
+writing to stdout
+Hello world from foo-688d885f4b-q5vhv and version 2.0
+-                    100% |******************************************************************************************************|    54  0:00:00 ETA
+written to stdout
+/ # / # wget -O- 172.17.0.19:8080[J[J1
+Connecting to 172.17.0.19:8081 (172.17.0.19:8081)
+wget: can't connect to remote host (172.17.0.19): Connection refused
+/ # / # wget -O- 172.17.0.19:8081[J:8081[J[5D:8081[J[5D2:8081[5D1:8081[5D:8081
+Connecting to 172.17.0.21:8081 (172.17.0.21:8081)
+wget: can't connect to remote host (172.17.0.21): Connection refused
+/ # / # wget -O- 172.17.0.21:8081[J.21:8081[J[8D6.21:8081[8D.21:8081[J0
+Connecting to 172.17.6.21:8080 (172.17.6.21:8080)
+wget: can't connect to remote host (172.17.6.21): No route to host
+/ # exit
+pod "busybox" deleted
+pod default/busybox terminated (Error)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl expose deploy foo --port=63[K262 --ta rget-port=8080
+service/foo exposed
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get svc
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+f1svc        NodePort    10.102.148.164   <none>        80:30669/TCP   36m
+foo          ClusterIP   10.100.81.253    <none>        6262/TCP       6s
+kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP        39d
+nginx        NodePort    10.105.5.19      <none>        80:32286/TCP   18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl ep foo
+Error: unknown command "ep" for "kubectl"
+
+Did you mean this?
+	set
+	get
+	top
+	cp
+
+Run 'kubectl --help' for usage.
+unknown command "ep" for "kubectl"
+
+Did you mean this?
+	set
+	get
+	top
+	cp
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl ep foo[C[1@g[C[1@e[1@t[1@ 
+NAME   ENDPOINTS                                            AGE
+foo    172.17.0.19:8080,172.17.0.20:8080,172.17.0.21:8080   29s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get svc foo --[Ko yaml
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-03-25T19:51:28Z"
+  labels:
+    app: foo
+  name: foo
+  namespace: default
+  resourceVersion: "497128"
+  selfLink: /api/v1/namespaces/default/services/foo
+  uid: 4f5932eb-0e21-486b-a0de-5052ee01fb31
+spec:
+  clusterIP: 10.100.81.253
+  ports:
+  - port: 6262
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: foo
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get svc
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+f1svc        NodePort    10.102.148.164   <none>        80:30669/TCP   44m
+foo          ClusterIP   10.100.81.253    <none>        6262/TCP       7m43s
+kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP        39d
+nginx        NodePort    10.105.5.19      <none>        80:32286/TCP   18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod [Kbusybo[K[K[K[K[K[K busybox
+Error from server (NotFound): pods "busybox" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ c
+c: command not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ckubectl get pod busyboxsvc[Kcc[K
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[Kkubectl get pod busyboxsvc[K
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+f1svc        NodePort    10.102.148.164   <none>        80:30669/TCP   44m
+foo          ClusterIP   10.100.81.253    <none>        6262/TCP       8m17s
+kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP        39d
+nginx        NodePort    10.105.5.19      <none>        80:32286/TCP   18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get[K[K[Krun busyboc[Kx --image=busybox -it -- rm --restart=Never -- sh
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox -it --rrm --restart=Never -- sh
+Error from server (AlreadyExists): pods "busybox" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox -it --rrm --restart=Never -- sh[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[Cget svc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[K[Kkubectl get pod busyboxsvc[Kcc[Kkubectl get svc foo -o yaml[9Pep foo[4P[C[C[C[C[C[Cget svcexpose deploy foo --port=6262 --tarrget-port=8080[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl run busybox --image=busybox --restaart=Never -ti --rm -- sh[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[16Pdelete pod/busybox
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+pod "busybox" deleted
+^[[A^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete pod/busyboxrun busybox --image=busybox -it --rrm --restart=Never -- sh[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[16Pdelete pod/busybox
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+pod "busybox" deleted
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ docker imahe[K[Kges[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              fce289e99eb9        14 months ago       1.84kB
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ docker images[K ls
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              fce289e99eb9        14 months ago       1.84kB
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ history | docter[K[K[Ke[Kker
+
+Usage:	docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default
+                           "/home/baz/.docker")
+  -c, --context string     Name of the context to use to connect to the
+                           daemon (overrides DOCKER_HOST env var and
+                           default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level
+                           ("debug"|"info"|"warn"|"error"|"fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "/home/baz/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default
+                           "/home/baz/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default
+                           "/home/baz/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  engine      Manage the docker engine
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ history | dockergdockerrdockeredockerpdocker docker
+ 2002  [01;31m[Kdocker[m[K images
+ 2003  [01;31m[Kdocker[m[K image ls
+ 2004  history | [01;31m[Kdocker[m[K
+ 2005  history | grep [01;31m[Kdocker[m[K
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cchistory | grep docker[5Pdocker[1Pdocker image ls[2Pskubectl delete pod/busyboxrun busybox --image=busybox -it --rrm --restart=Never -- sh
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jwget -O- 2D2D[J[J[J[Jfoo6[J:6262
+Connecting to foo:6262 (10.100.81.253:6262)
+writing to stdout
+Hello world from foo-688d885f4b-m9zmp and version 2.0
+-                    100% |**************************|    54  0:00:00 ETA
+written to stdout
+/ # / # wget -O- foo:6262[J[J[J[J[J[J[J[J[J[J 19,[J[J0.100.81.253:6262
+Connecting to 10.100.81.253:6262 (10.100.81.253:6262)
+writing to stdout
+Hello world from foo-688d885f4b-m9zmp and version 2.0
+-                    100% |**************************|    54  0:00:00 ETA
+written to stdout
+/ # exit
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod
+NAME                         READY   STATUS      RESTARTS   AGE
+06nginx                      0/1     Error       0          38d
+07nginx                      0/1     Error       0          38d
+100vol                       0/1     Error       0          25d
+104pvc2b                     0/1     Error       0          25d
+111                          0/1     Error       0          24d
+113                          0/1     Completed   0          24d
+114nginx                     0/1     Completed   0          24d
+117                          0/1     Error       0          24d
+118                          0/1     Error       0          24d
+126                          0/1     Error       0          21d
+131                          0/1     Error       0          21d
+132                          0/1     Error       0          21d
+134                          0/1     Completed   0          18d
+136                          0/1     Completed   0          18d
+137busybox                   0/1     Error       0          18d
+13nginx                      0/1     Completed   1          38d
+140                          0/1     Error       0          18d
+144                          0/1     Error       0          18d
+17shell                      0/1     Error       0          38d
+19bb                         0/1     Completed   0          38d
+21bb                         0/1     Completed   0          38d
+29mc                         0/3     Completed   0          37d
+2busybox1                    0/1     Completed   0          11d
+33busybox1                   0/1     Completed   0          11d
+34mc                         0/2     Error       0          37d
+37-ng-1                      0/1     Error       0          31d
+37-ng-2                      0/1     Error       0          31d
+37-ng-3                      0/1     Error       0          31d
+3busybox1                    0/1     Completed   0          11d
+53busybox1                   0/1     Completed   0          11d
+67dep-7db4cf66f7-2hfgb       1/1     Running     22         26d
+67dep-7db4cf66f7-9wrj7       1/1     Running     22         26d
+67dep-7db4cf66f7-h5g7f       1/1     Running     22         26d
+67dep-7db4cf66f7-m2269       1/1     Running     22         26d
+84job-9gkc8                  0/1     Completed   0          26d
+88job-bx58m                  0/1     Completed   0          26d
+b2mc                         0/2     Completed   0          11d
+bbusybox-1584565440-pqtfb    0/1     Completed   0          6d23h
+bbusybox-1584565500-bwnbj    0/1     Completed   0          6d23h
+bbusybox-1584565560-m8p9z    0/1     Completed   0          6d23h
+busybox-1584565440-bxgcl     0/1     Completed   0          6d23h
+busybox-1584565500-vzktl     0/1     Completed   0          6d23h
+busybox-1584565560-vxqrv     0/1     Completed   0          6d23h
+busybox1                     0/1     Completed   0          11d
+c1a                          0/1     Error       0          10d
+c1b                          0/1     Error       0          10d
+c2-m6cjm                     0/1     Completed   0          10d
+c4-4ntwp                     0/1     Completed   0          10d
+c5job-64cfd                  0/1     Completed   0          7d
+c6job-ldhpl                  0/1     Completed   0          6d23h
+c6job-vprsm                  0/1     Completed   0          6d23h
+ca1-66d6b4f974-4dxf6         1/1     Running     9          10d
+ca1-66d6b4f974-dl85x         1/1     Running     9          10d
+ca1a-5799475b87-7xrs5        1/1     Running     9          10d
+ca1a-5799475b87-h7vbr        1/1     Running     9          10d
+ca1a-5799475b87-h9q9t        1/1     Running     9          10d
+ca1a-5799475b87-hkkcj        1/1     Running     9          10d
+ca1a-5799475b87-kmlfd        1/1     Running     9          10d
+ca1a-5799475b87-qch6n        1/1     Running     9          10d
+d10                          0/1     Error       0          5d23h
+d11sec                       0/1     Error       0          3d8h
+d12rl                        0/1     Completed   0          2d17h
+d16                          0/1     Completed   0          2d11h
+d7                           0/1     Error       0          6d
+d8                           0/1     Error       0          6d
+e1lp                         0/1     Completed   0          2d8h
+e2lp                         0/1     Error       0          2d
+e3rp                         0/1     Error       0          2d
+e4log                        0/1     Error       0          2d
+e5deb                        0/1     Error       0          2d
+f1svc                        1/1     Running     0          66m
+foo-688d885f4b-m9zmp         1/1     Running     0          42m
+foo-688d885f4b-q5vhv         1/1     Running     0          42m
+foo-688d885f4b-wwpm7         1/1     Running     0          42m
+hello                        0/1     Error       0          18d
+mysec                        0/1     Error       0          23d
+nginx                        0/1     Error       1          11d
+nginx3                       0/1     Completed   0          2d18h
+nginxenv                     0/1     Error       0          11d
+not-running                  0/1     Error       0          18d
+rbbusybox-1584565440-j4ssq   0/1     Completed   0          6d23h
+rbbusybox-1584565500-v775d   0/1     Completed   0          6d23h
+rbbusybox-1584565560-fh8mz   0/1     Completed   0          6d23h
+secbusybox                   0/1     Error       0          24d
+test114                      0/1     Completed   0          24d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs pod/foo-688d885f4b-m9zmp
+
+> simpleapp@1.0.0 start /usr/src/app
+> node server.js
+
+Running version 2.0 on http://0.0.0.0:8080
+IP: 172.17.0.22 on 2020-03-25T20:20:43.948Z
+IP: 172.17.0.22 on 2020-03-25T20:21:04.339Z
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs pod/foo-688d885f4b-m9zmp
+
+> simpleapp@1.0.0 start /usr/src/app
+> node server.js
+
+Running version 2.0 on http://0.0.0.0:8080
+IP: 172.17.0.22 on 2020-03-25T20:20:43.948Z
+IP: 172.17.0.22 on 2020-03-25T20:21:04.339Z
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl logs pod/foo-688d885f4b-m9zmp
+
+> simpleapp@1.0.0 start /usr/src/app
+> node server.js
+
+Running version 2.0 on http://0.0.0.0:8080
+IP: 172.17.0.22 on 2020-03-25T20:20:43.948Z
+IP: 172.17.0.22 on 2020-03-25T20:21:04.339Z
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl f3dep --image=nginx --replia[Kcas=2 - -port=80 --expose
+Error: unknown command "f3dep" for "kubectl"
+Run 'kubectl --help' for usage.
+unknown command "f3dep" for "kubectl"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl f3dep --image=nginx --replicas=2 ---port=80 --expose[C[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crf3dep --image=nginx --replicas=2 -[1@-[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[Cuf3dep --image=nginx --replicas=2 [C[1@-[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[Cnf3dep --image=nginx --replicas=2[1@ [A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C f3dep --image=nginx --replicas=[1@2[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C
+
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+service/f3dep created
+deployment.apps/f3dep created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe svc fedep
+Error from server (NotFound): services "fedep" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe svc fedep[1Pdep3dep
+Name:              f3dep
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          run=f3dep
+Type:              ClusterIP
+IP:                10.105.87.61
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         172.17.0.22:80,172.17.0.23:80
+Session Affinity:  None
+Events:            <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe svc f3dep[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run nginx --image=nginx --replicas==2 --port=80 --expose
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/nginx created
+Error from server (AlreadyExists): services "nginx" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete deploy/nginx
+deployment.extensions "nginx" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete deploy/nginx[C[1P/nginx[1P/nginx[1P/nginx[1P/nginx[1P/nginx[1P/nginxs/nginxv/nginxc/nginx
+service "nginx" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cckubectl delete svc/nginxdeploy/nginxrun nginx --image=nginx --replicas==2 --port=80 --expose
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+service/nginx created
+deployment.apps/nginx created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe svc nginx
+Name:              nginx
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          run=nginx
+Type:              ClusterIP
+IP:                10.109.212.147
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         172.17.0.25:80
+Session Affinity:  None
+Events:            <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe svc nginxrun nginx --image=nginx --replicas==2 --port=80 --expose[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl delete svc/nginxdeploy/nginxrun nginx --image=nginx --replicas==2 --port=80 --expose[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl describe svc f3dep
+Name:              f3dep
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          run=f3dep
+Type:              ClusterIP
+IP:                10.105.87.61
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         172.17.0.22:80,172.17.0.23:80
+Session Affinity:  None
+Events:            <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe svc f3depnginx
+Name:              nginx
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          run=nginx
+Type:              ClusterIP
+IP:                10.109.212.147
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         172.17.0.24:80,172.17.0.25:80
+Session Affinity:  None
+Events:            <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cckubectl describe svc nginx
+Name:              nginx
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          run=nginx
+Type:              ClusterIP
+IP:                10.109.212.147
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         172.17.0.24:80,172.17.0.25:80
+Session Affinity:  None
+Events:            <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain po[K[Kpod.s[K[K[K[K[K--recursive
+error: You must specify the type of resource to explain. Use "kubectl api-resources" for a complete list of supported resources.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain --recursive[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kapi-resources
+NAME                              SHORTNAMES   APIGROUP                       NAMESPACED   KIND
+bindings                                                                      true         Binding
+componentstatuses                 cs                                          false        ComponentStatus
+configmaps                        cm                                          true         ConfigMap
+endpoints                         ep                                          true         Endpoints
+events                            ev                                          true         Event
+limitranges                       limits                                      true         LimitRange
+namespaces                        ns                                          false        Namespace
+nodes                             no                                          false        Node
+persistentvolumeclaims            pvc                                         true         PersistentVolumeClaim
+persistentvolumes                 pv                                          false        PersistentVolume
+pods                              po                                          true         Pod
+podtemplates                                                                  true         PodTemplate
+replicationcontrollers            rc                                          true         ReplicationController
+resourcequotas                    quota                                       true         ResourceQuota
+secrets                                                                       true         Secret
+serviceaccounts                   sa                                          true         ServiceAccount
+services                          svc                                         true         Service
+mutatingwebhookconfigurations                  admissionregistration.k8s.io   false        MutatingWebhookConfiguration
+validatingwebhookconfigurations                admissionregistration.k8s.io   false        ValidatingWebhookConfiguration
+customresourcedefinitions         crd,crds     apiextensions.k8s.io           false        CustomResourceDefinition
+apiservices                                    apiregistration.k8s.io         false        APIService
+controllerrevisions                            apps                           true         ControllerRevision
+daemonsets                        ds           apps                           true         DaemonSet
+deployments                       deploy       apps                           true         Deployment
+replicasets                       rs           apps                           true         ReplicaSet
+statefulsets                      sts          apps                           true         StatefulSet
+tokenreviews                                   authentication.k8s.io          false        TokenReview
+localsubjectaccessreviews                      authorization.k8s.io           true         LocalSubjectAccessReview
+selfsubjectaccessreviews                       authorization.k8s.io           false        SelfSubjectAccessReview
+selfsubjectrulesreviews                        authorization.k8s.io           false        SelfSubjectRulesReview
+subjectaccessreviews                           authorization.k8s.io           false        SubjectAccessReview
+horizontalpodautoscalers          hpa          autoscaling                    true         HorizontalPodAutoscaler
+cronjobs                          cj           batch                          true         CronJob
+jobs                                           batch                          true         Job
+certificatesigningrequests        csr          certificates.k8s.io            false        CertificateSigningRequest
+leases                                         coordination.k8s.io            true         Lease
+events                            ev           events.k8s.io                  true         Event
+daemonsets                        ds           extensions                     true         DaemonSet
+deployments                       deploy       extensions                     true         Deployment
+ingresses                         ing          extensions                     true         Ingress
+networkpolicies                   netpol       extensions                     true         NetworkPolicy
+podsecuritypolicies               psp          extensions                     false        PodSecurityPolicy
+replicasets                       rs           extensions                     true         ReplicaSet
+nodes                                          metrics.k8s.io                 false        NodeMetrics
+pods                                           metrics.k8s.io                 true         PodMetrics
+ingresses                         ing          networking.k8s.io              true         Ingress
+networkpolicies                   netpol       networking.k8s.io              true         NetworkPolicy
+runtimeclasses                                 node.k8s.io                    false        RuntimeClass
+poddisruptionbudgets              pdb          policy                         true         PodDisruptionBudget
+podsecuritypolicies               psp          policy                         false        PodSecurityPolicy
+clusterrolebindings                            rbac.authorization.k8s.io      false        ClusterRoleBinding
+clusterroles                                   rbac.authorization.k8s.io      false        ClusterRole
+rolebindings                                   rbac.authorization.k8s.io      true         RoleBinding
+roles                                          rbac.authorization.k8s.io      true         Role
+priorityclasses                   pc           scheduling.k8s.io              false        PriorityClass
+csidrivers                                     storage.k8s.io                 false        CSIDriver
+csinodes                                       storage.k8s.io                 false        CSINode
+storageclasses                    sc           storage.k8s.io                 false        StorageClass
+volumeattachments                              storage.k8s.io                 false        VolumeAttachment
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl api-resources | grep network
+[01;31m[Knetwork[m[Kpolicies                   netpol       extensions                     true         NetworkPolicy
+ingresses                         ing          [01;31m[Knetwork[m[King.k8s.io              true         Ingress
+[01;31m[Knetwork[m[Kpolicies                   netpol       [01;31m[Knetwork[m[King.k8s.io              true         NetworkPolicy
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl api-resources | grep network[Kexplain --recursive[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl describe svc nginxcc[Kkubectl describe svc nginxf3depnginxrun nginx --image=nginx --replicas=2 --port=80 --expose[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdescribe svc nginx[Kf3depnginxcc[Kkubectl describe svc nginx[Kkubectl describe svc nginxcc[Kkubectl describe svc nginxf3depnginxrun nginx --image=nginx --replicas=2 --port=80 --expose[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kkubectl delete svc/nginxdeploy/nginx[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl explain netpol --reco[Kursive
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
+     networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic
+     is allowed for a set of Pods
+
+FIELDS:
+   apiVersion	<string>
+   kind	<string>
+   metadata	<Object>
+      annotations	<map[string]string>
+      clusterName	<string>
+      creationTimestamp	<string>
+      deletionGracePeriodSeconds	<integer>
+      deletionTimestamp	<string>
+      finalizers	<[]string>
+      generateName	<string>
+      generation	<integer>
+      initializers	<Object>
+         pending	<[]Object>
+            name	<string>
+         result	<Object>
+            apiVersion	<string>
+            code	<integer>
+            details	<Object>
+               causes	<[]Object>
+                  field	<string>
+                  message	<string>
+                  reason	<string>
+               group	<string>
+               kind	<string>
+               name	<string>
+               retryAfterSeconds	<integer>
+               uid	<string>
+            kind	<string>
+            message	<string>
+            metadata	<Object>
+               continue	<string>
+               remainingItemCount	<integer>
+               resourceVersion	<string>
+               selfLink	<string>
+            reason	<string>
+            status	<string>
+      labels	<map[string]string>
+      managedFields	<[]Object>
+         apiVersion	<string>
+         fields	<map[string]>
+         manager	<string>
+         operation	<string>
+         time	<string>
+      name	<string>
+      namespace	<string>
+      ownerReferences	<[]Object>
+         apiVersion	<string>
+         blockOwnerDeletion	<boolean>
+         controller	<boolean>
+         kind	<string>
+         name	<string>
+         uid	<string>
+      resourceVersion	<string>
+      selfLink	<string>
+      uid	<string>
+   spec	<Object>
+      egress	<[]Object>
+         ports	<[]Object>
+            port	<string>
+            protocol	<string>
+         to	<[]Object>
+            ipBlock	<Object>
+               cidr	<string>
+               except	<[]string>
+            namespaceSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+            podSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+      ingress	<[]Object>
+         from	<[]Object>
+            ipBlock	<Object>
+               cidr	<string>
+               except	<[]string>
+            namespaceSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+            podSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+         ports	<[]Object>
+            port	<string>
+            protocol	<string>
+      podSelector	<Object>
+         matchExpressions	<[]Object>
+            key	<string>
+            operator	<string>
+            values	<[]string>
+         matchLabels	<map[string]string>
+      policyTypes	<[]string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat f4netpol.yan[Kml[C[C[C[1P f4netpol.yaml[1P f4netpol.yaml[1P f4netpol.yamle f4netpol.yamlc f4netpol.yamlh f4netpol.yamlo f4netpol.yaml[C f4netpol.yaml< f4netpol.yaml< f4netpol.yaml[C f4netpol.yaml[1@E[1@O[1@F[C[C f4netpol.yaml[1@>[1@>
+> apiVersion: extensions/v1beta1
+> kind:NetworkPolicy NetworkPolicy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+> metaD[Kdaa[Kta:
+>   name: netpol
+> spec:
+>   podSelectr[Kors:[K[K:
+>     matchLabels:
+>       acees[K[K[Kcess: granted
+> EOF
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat f4netpol.yaml 
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f4netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;74H(B[0;7m 1 line ](B[m[K[H(B[0;7m  GNU nano 2.9.3                                                       f4netpol.yaml                                                                  [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[m[?12l[?25h[?25l[1;141H(B[0;7mModified[36d(B[m[K[1;149H[3d> apiVersion: extensions/v1beta1[4d> kind: NetworkPolicy[5d> metadata:[6d>   name: netpol[7d> spec:[8d>   podSelector:[9d>     matchLabels:[10d>[9Gaccess: granted[11d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l>[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[4d[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[5d[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[6d[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[7d[?12l[?25h[?25l[1P[?12l[?25h[?25lspec:[K[?12l[?25h[?25l[8d[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[9d[?12l[?25h[?25l    [1K[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[10d[?12l[?25h[?25l[7G[1K[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: f4netpol.yaml                            (B[m[36;34H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 9 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f4netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;
