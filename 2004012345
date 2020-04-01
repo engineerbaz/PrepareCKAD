@@ -1,0 +1,2457 @@
+Script started on 2020-04-01 23:47:19+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run ng[K[Kf11n[Kdep --image=nginx --replica s=2 --port=80 --s[Kexpose 
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+service/f11dep created
+deployment.apps/f11dep created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy/fq[K11dep -o yaml 
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2020-04-01T18:48:09Z"
+  generation: 1
+  labels:
+    run: f11dep
+  name: f11dep
+  namespace: default
+  resourceVersion: "506011"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/f11dep
+  uid: b11ebff7-5550-4402-8d54-5c79c6891a48
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 2
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      run: f11dep
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: f11dep
+    spec:
+      containers:
+      - image: nginx
+        imagePullPolicy: Always
+        name: f11dep
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2020-04-01T18:48:09Z"
+    lastUpdateTime: "2020-04-01T18:48:09Z"
+    message: Deployment does not have minimum availability.
+    reason: MinimumReplicasUnavailable
+    status: "False"
+    type: Available
+  - lastTransitionTime: "2020-04-01T18:48:09Z"
+    lastUpdateTime: "2020-04-01T18:48:16Z"
+    message: ReplicaSet "f11dep-598b88ffd8" is progressing.
+    reason: ReplicaSetUpdated
+    status: "True"
+    type: Progressing
+  observedGeneration: 1
+  readyReplicas: 1
+  replicas: 2
+  unavailableReplicas: 1
+  updatedReplicas: 2
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy/f11dep -o yaml [1P[1P[1P[1P[1P[1P[1@s[1@v[1@c
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-04-01T18:48:09Z"
+  name: f11dep
+  namespace: default
+  resourceVersion: "505977"
+  selfLink: /api/v1/namespaces/default/services/f11dep
+  uid: 456ceacd-6127-4e24-b9bd-5fca49e0bc37
+spec:
+  clusterIP: 10.98.165.245
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: f11dep
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano netpl[Kolfnetpol1netpol1netpol[C[C[C[C[C[C.yanl[K[Kml
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;32H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                 f11netpol.yaml                           [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[3da[?12l[?25h[?25lp[?12l[?25h[?25li[?12l[?25h[?25lV[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l:[?12l[?25h[?25l[4d[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lN[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25lr[36d[K[4;13H[?12l[?25h[?25lk[?12l[?25h[?25l [?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25lc[?12l[?25h[?25ly[?12l[?25h[?25l[5d[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l:[?12l[?25h[?25l[6d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25l-[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lx[?12l[?25h[?25l[7d[?12l[?25h[?25ls[?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25l:[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25l[4d[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[3;12H[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l.[?12l[?25h[?25lk[?12l[?25h[?25l8[?12l[?25h[?25ls[?12l[?25h[?25l.[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25l/[?12l[?25h[?25lv[?12l[?25h[?25l1[?12l[?25h[?25l[4;20H[?12l[?25h[?25l[5;10H[?12l[?25h[?25l[6;20H[?12l[?25h[?25l[7;6H[?12l[?25h[?25l[8d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: f11netpol.yaml                           (B[m[36;35H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 6 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain net[K[K[Knetworkpol[K[KP[K[KPolicy
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
+     networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic
+     is allowed for a set of Pods
+
+FIELDS:
+   apiVersion	<string>
+     APIVersion defines the versioned schema of this representation of an
+     object. Servers should convert recognized schemas to the latest internal
+     value, and may reject unrecognized values. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
+   kind	<string>
+     Kind is a string value representing the REST resource this object
+     represents. Servers may infer this from the endpoint the client submits
+     requests to. Cannot be updated. In CamelCase. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+
+   metadata	<Object>
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+   spec	<Object>
+     Specification of the desired behavior for this NetworkPolicy.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain networkPolicy --res[Kcursive
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
+     networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic
+     is allowed for a set of Pods
+
+FIELDS:
+   apiVersion	<string>
+   kind	<string>
+   metadata	<Object>
+      annotations	<map[string]string>
+      clusterName	<string>
+      creationTimestamp	<string>
+      deletionGracePeriodSeconds	<integer>
+      deletionTimestamp	<string>
+      finalizers	<[]string>
+      generateName	<string>
+      generation	<integer>
+      initializers	<Object>
+         pending	<[]Object>
+            name	<string>
+         result	<Object>
+            apiVersion	<string>
+            code	<integer>
+            details	<Object>
+               causes	<[]Object>
+                  field	<string>
+                  message	<string>
+                  reason	<string>
+               group	<string>
+               kind	<string>
+               name	<string>
+               retryAfterSeconds	<integer>
+               uid	<string>
+            kind	<string>
+            message	<string>
+            metadata	<Object>
+               continue	<string>
+               remainingItemCount	<integer>
+               resourceVersion	<string>
+               selfLink	<string>
+            reason	<string>
+            status	<string>
+      labels	<map[string]string>
+      managedFields	<[]Object>
+         apiVersion	<string>
+         fields	<map[string]>
+         manager	<string>
+         operation	<string>
+         time	<string>
+      name	<string>
+      namespace	<string>
+      ownerReferences	<[]Object>
+         apiVersion	<string>
+         blockOwnerDeletion	<boolean>
+         controller	<boolean>
+         kind	<string>
+         name	<string>
+         uid	<string>
+      resourceVersion	<string>
+      selfLink	<string>
+      uid	<string>
+   spec	<Object>
+      egress	<[]Object>
+         ports	<[]Object>
+            port	<string>
+            protocol	<string>
+         to	<[]Object>
+            ipBlock	<Object>
+               cidr	<string>
+               except	<[]string>
+            namespaceSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+            podSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+      ingress	<[]Object>
+         from	<[]Object>
+            ipBlock	<Object>
+               cidr	<string>
+               except	<[]string>
+            namespaceSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+            podSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+         ports	<[]Object>
+            port	<string>
+            protocol	<string>
+      podSelector	<Object>
+         matchExpressions	<[]Object>
+            key	<string>
+            operator	<string>
+            values	<[]string>
+         matchLabels	<map[string]string>
+      policyTypes	<[]string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain networkPolicy --recursive[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+error: You must specify the type of resource to explain. Use "kubectl api-resources" for a complete list of supported resources.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain --h
+Error: unknown flag: --h
+
+
+Examples:
+  # Get the documentation of the resource and its fields
+  kubectl explain pods
+  
+  # Get the documentation of a specific field of a resource
+  kubectl explain pods.spec.containers
+
+Options:
+      --api-version='': Get different explanations for particular API version
+      --recursive=false: Print the fields of fields (Currently only 1 level deep)
+
+Usage:
+  kubectl explain RESOURCE [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain --h[K[K[Kpods
+KIND:     Pod
+VERSION:  v1
+
+DESCRIPTION:
+     Pod is a collection of containers that can run on a host. This resource is
+     created by clients and scheduled onto hosts.
+
+FIELDS:
+   apiVersion	<string>
+     APIVersion defines the versioned schema of this representation of an
+     object. Servers should convert recognized schemas to the latest internal
+     value, and may reject unrecognized values. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
+   kind	<string>
+     Kind is a string value representing the REST resource this object
+     represents. Servers may infer this from the endpoint the client submits
+     requests to. Cannot be updated. In CamelCase. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+
+   metadata	<Object>
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+
+   spec	<Object>
+     Specification of the desired behavior of the pod. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+
+   status	<Object>
+     Most recently observed status of the pod. This data may not be up to date.
+     Populated by the system. Read-only. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain pods[K[K[K[KnetworkPolicy
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
+     networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic
+     is allowed for a set of Pods
+
+FIELDS:
+   apiVersion	<string>
+     APIVersion defines the versioned schema of this representation of an
+     object. Servers should convert recognized schemas to the latest internal
+     value, and may reject unrecognized values. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
+   kind	<string>
+     Kind is a string value representing the REST resource this object
+     represents. Servers may infer this from the endpoint the client submits
+     requests to. Cannot be updated. In CamelCase. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+
+   metadata	<Object>
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+   spec	<Object>
+     Specification of the desired behavior for this NetworkPolicy.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain networkPolicy.apiVersion 
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+FIELD:    apiVersion <string>
+
+DESCRIPTION:
+     APIVersion defines the versioned schema of this representation of an
+     object. Servers should convert recognized schemas to the latest internal
+     value, and may reject unrecognized values. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain networkPolicy.apiVersion --recursive
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+FIELD:    apiVersion <string>
+
+DESCRIPTION:
+     APIVersion defines the versioned schema of this representation of an
+     object. Servers should convert recognized schemas to the latest internal
+     value, and may reject unrecognized values. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get ap[K[K--h
+Error: unknown flag: --h
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ history 
+  998  cc
+  999  kubectl run ca1 --image=nginx:1.7.8 --replicas=2 --port=80
+ 1000  kubectl create deploy ca1a --image=nginx:1.7.8 --dry-run -o yaml > ca1a.yaml
+ 1001  nano ca1a.yaml 
+ 1002  kubectl apply -f ca1a.yaml 
+ 1003  kubectl get deploy
+ 1004  kubectl get deploy ca1 -o yaml
+ 1005  cc
+ 1006  kubectl describe deply ca1
+ 1007  kubectl describe deploy ca1
+ 1008  cc
+ 1009  kubectl get rs -l run=nginx
+ 1010  kubectl get rs -l run=ca1
+ 1011  kubectl get pod -l run=ca1
+ 1012  kubectl get pod -l app=ca1
+ 1013  kubectl get pod -l app=ca1a
+ 1014  kubectl rollout status deploy ca1
+ 1015  kubectl set image deploy ca1 nginx=nginx:1.7.9
+ 1016  kubectl set image deploy ca1 nginx:1.7.8=nginx:1.7.9
+ 1017  nano ca1a.yaml 
+ 1018  kubectl set image deploy ca1a nginx=nginx:1.7.9
+ 1019  cc
+ 1020  kubectl rollout history deploy ca1
+ 1021  kubectl rollout history deploy ca1a
+ 1022  kubectl get rs
+ 1023  cc
+ 1024  kubectl rollout undo deploy ca1a
+ 1025  kubectl get po 
+ 1026  ca1a-6847576946-62k27 | grep -i image
+ 1027  kubectl get po 
+ 1028  kubectl describe pod ca1a-6847576946-62k27 | grep -i image
+ 1029  cc
+ 1030  kubectl set image deploy ca1a nginx=nginx:1.9.1
+ 1031  kubectl rllout status deploy nginx
+ 1032  kubectl rllout status deploy ca1
+ 1033  kubectl rllout status deploy ca1a
+ 1034  kubectl rollout status deploy ca1a
+ 1035  kubectl rollout status deploy ca1
+ 1036  kubectl rollout status deploy ca1a
+ 1037  kubectl rollout status deploy ca1
+ 1038  kubectl rollout status deploy ca1a
+ 1039  cc
+ 1040  kubectl rollout status
+ 1041  kubectl rollout status deploy ca1a
+ 1042  kubectl rollout history deploy ca1a
+ 1043  kubectl rollout undo deploy ca1a --to-revision=2
+ 1044  kubectl describe deploy ca1a | grep Image:
+ 1045  kubectl rollout status ca1a
+ 1046  kubectl rollout status deploy ca1a
+ 1047  cc
+ 1048  kubectl rollout history deploy ca1aa
+ 1049  kubectl rollout history deploy ca1a
+ 1050  kubectl rollout history deploy ca1a --revision=4
+ 1051  kubectl rollout status deploy ca1a
+ 1052  history 
+ 1053  cc
+ 1054  kubectl rollout history deploy ca1a
+ 1055  history 
+ 1056  cc
+ 1057  kubectl scale deploy ca1a --replicas=5
+ 1058  kubectl get deploy
+ 1059  kubectl scale deploy ca1a --replicas=6
+ 1060  kubectl get deploy
+ 1061  cc
+ 1062  kubectl autoscale 
+ 1063  kubectl autoscale deploy ca1a --min=3 --max=7 --cpu-percent=70
+ 1064  kubectl get deploy
+ 1065  kubectl get deploy ca1a 
+ 1066  kubectl get deploy ca1a -h
+ 1067  kubectl get deploy ca1a top
+ 1068  kubectl top pod 
+ 1069  kubectl get pod 
+ 1070  kubectl get pod ca1a-5b57bbb657-gv7nv 
+ 1071  kubectl top -h
+ 1072  kubectl top pod ca1a-5b57bbb657-gv7nv
+ 1073  kubectl top pod -h
+ 1074  kubectl top pod 
+ 1075  kubectl top node
+ 1076  cc
+ 1077  kubectl top node --help
+ 1078  kubectl top node minikube
+ 1079  kubectl top node --heapster-namespace='default
+ 1080  exit
+ 1081  kubectl top node --heapster-namespace='default'
+ 1082  cc
+ 1083  kubectl version 
+ 1084  git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
+ 1085  kubectl create -f kubernetes-metrics-server/
+ 1086  kubectl top nodes
+ 1087  kubectl top pods
+ 1088  kubectl top nodes
+ 1089  kubectl top node
+ 1090  kubectl top pod
+ 1091  kubectl top pods
+ 1092  kubectl top pod ca1a-5b57bbb657-gv7nv
+ 1093  kubectl top po
+ 1094  kubectl top node --heapster-namespace='default'
+ 1095  kubectl top po
+ 1096  kubectl top 
+ 1097  node --h
+ 1098  kubectl top node -h
+ 1099  kubectl top pod -h
+ 1100  kubectl top pod -A
+ 1101  kubectl top pod -h
+ 1102  kubectl top pod -A
+ 1103  cc
+ 1104  kubectl rollout pause deploy ca1a
+ 1105  kubectl set image deploy ca1a nginx=nginx:1.9.1
+ 1106  kubectl rollout history deploy ca1a
+ 1107  kubectl roloout resume deploy ca1a
+ 1108  kubectl rollout resume deploy ca1a
+ 1109  kubectl rollout history deploy ca1a
+ 1110  cc
+ 1111  kubectl run c2 --image=perl --restart=onFailure --perl -Mbignum=bpi -wle 'print bpi(2000)'
+ 1112  kubectl run c2 --image=perl --restart=onFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+ 1113  kubectl run c2 --image=perl --restart=OnFailure  -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+ 1114  kubectl get job
+ 1115  kubectl get job -v
+ 1116  kubectl get job -w
+ 1117  cc
+ 1118  kubectl logs c2
+ 1119  kubectl get pod
+ 1120  kubectl get pod c2*
+ 1121  kubectl get pod b2*
+ 1122  kubectl get pod b2{}
+ 1123  kubectl get pod b2{.}
+ 1124  kubectl get pod c1{a,b}
+ 1125  kubectl get pod c1{a,.}
+ 1126  kubectl get pod c1{..}
+ 1127  kubectl get job
+ 1128  kubectl get job c2 
+ 1129  kubectl get po
+ 1130  kubectl get po c2-m6cjm
+ 1131  kubectl logs  c2-m6cjm
+ 1132  kubectl get po c2-m6cjm
+ 1133  kubectl logs
+ 1134  kubectl logs c2-m6cjm
+ 1135  cc
+ 1136  kubectl get job
+ 1137  minikube status
+ 1138  minikube update-context
+ 1139  minikube status
+ 1140  kubectl get job
+ 1141  minikube status
+ 1142  minikube update-context
+ 1143  minikube status
+ 1144  exit
+ 1145  cc
+ 1146  ll
+ 1147  ls
+ 1148  ll kubernetes-metrics-server/
+ 1149  cc
+ 1150  kubectl c4 --image=busybox --restart=OnFailure -- /bin/sh -c "echo hello;sleep 30;echo world"
+ 1151  kubectl run c4 --image=busybox --restart=OnFailure -- /bin/sh -c "echo hello;sleep 30;echo world"
+ 1152  kubectl get job
+ 1153  kubectl get job -w
+ 1154  kubectl logs c4
+ 1155  kubectl logs c2
+ 1156  kubectl get job -w
+ 1157  kubectl logs c4
+ 1158  kubectl get job, pod
+ 1159  kubectl get job,pod
+ 1160  kubectl logs c4-4ntwp
+ 1161  cc
+ 1162  kubectl logs job/c4
+ 1163  cc
+ 1164  kubectl run c6 --image=busybox --restart=OnFailure --dry-run -o yaml
+ 1165  kubectl run c6 --image=busybox --restart=OnFailure --dry-run -o yaml > c6.yaml
+ 1166  nano c6.yaml 
+ 1167  cc
+ 1168  kubectl explain job --recursive
+ 1169  exit
+ 1170  ssh 39.50.149.54
+ 1171  exit
+ 1172  minikube start
+ 1173  kubectl run ca1 --image=nginx:1.7.8--replicas=2 --port=80
+ 1174  cc
+ 1175  script 202003151935
+ 1176  bash gitBatch.sh 
+ 1177  minikube stop
+ 1178  minikube start
+ 1179  script 202003160010
+ 1180  cc
+ 1181  bash gitBatch.sh 
+ 1182  cc
+ 1183  ip ad
+ 1184  ssh 192.168.10.8
+ 1185  service ssh status
+ 1186  cat /usr/sbin/sshd 
+ 1187  cc
+ 1188  cat ~/.ssh/config
+ 1189  nano ~/.ssh/config
+ 1190  nano /etc/ssh/sshd_config 
+ 1191  grep -i port /etc/ssh/sshd_config
+ 1192  service ssh status
+ 1193  nano /etc/ssh/sshd_config 
+ 1194  find sshd_config
+ 1195  locate sshd_config
+ 1196  cat /usr/share/openssh/sshd_config
+ 1197  nano /etc/ssh/sshd_config 
+ 1198  sudo nano /etc/ssh/sshd_config 
+ 1199  service ssh restart 
+ 1200  service ssh status
+ 1201  cat /var/log/
+ 1202  service ssh status
+ 1203  ip addr
+ 1204  cc
+ 1205  ip addr
+ 1206  cc
+ 1207  ip addr
+ 1208  cc
+ 1209  ls
+ 1210  k get all 
+ 1211  cc
+ 1212  kubectl run c5job --image=busybox --dry-run -o yaml > c5job.yaml
+ 1213  nano c5job.yaml 
+ 1214  kubectl explain job --recursive
+ 1215  kubectl explain job.spec.activeDeadlineSeconds
+ 1216  nano c5job.yaml 
+ 1217  kubectl create -f c5job.yaml 
+ 1218  nano c5job.yaml 
+ 1219  kubectl create -f c5job.yaml 
+ 1220  nano c5job.yaml 
+ 1221  kubectl create -f c5job.yaml 
+ 1222  nano c5job.yaml 
+ 1223  kubectl create -f c5job.yaml 
+ 1224  nano c5job.yaml 
+ 1225  kubectl create -f c5job.yaml 
+ 1226  nano c5job.yaml 
+ 1227  kubectl create -f c5job.yaml 
+ 1228  nano c5job.yaml 
+ 1229  kubectl create -f c5job.yaml 
+ 1230  kubectl get jo
+ 1231  kubectl get job
+ 1232  cc
+ 1233  kubectl explain job --recursive | grep -i 3 paralledl
+ 1234  kubectl explain job --recursive | grep -i 3 parallel
+ 1235  kubectl explain job --recursive | grep -i 3 Parallel
+ 1236  kubectl explain job --recursive | grep  Parallel
+ 1237  kubectl explain job --recursive | grep Parallel
+ 1238  kubectl explain job --recursive 
+ 1239  cc
+ 1240  kubectl explain job --recursive 
+ 1241  kubectl run c6job --image=busybox --restart=OnFailure --dry-run -o yaml > c6job.yaml
+ 1242  nano c6job.yaml 
+ 1243  kubectl create -f c6job.yaml 
+ 1244  kubectl get job
+ 1245  kubectl get job c2 --dry-run -o yaml
+ 1246  kubectl get job/c2 --dry-run -o yaml
+ 1247  kubectl get job/c2 --export
+ 1248  kubectl get job/c2 --export -o yaml
+ 1249  cc
+ 1250  kubectl run c7cj --image=busybox --restart=OnFailure --schedule="*/1 * * * *" --dry-run -o yaml > c7cj.yaml
+ 1251  nano c7cj.yaml 
+ 1252  kubectl run busybox --image=busybox --restart=OnFailure --schedule="*/1 * * * *" -- /bin/sh -c 'date; echo Hello from the Kubernetes cluster'
+ 1253  kubectl run bbusybox --image=busybox --restart=OnFailure --schedule="*/1 * * * *" -- /bin/sh -c 'date; echo Hello from the Kubernetes cluster' --export -o yaml > c77.yaml
+ 1254  nano c77.yaml 
+ 1255  kubectl run rbbusybox --image=busybox --restart=OnFailure --schedule="*/1 * * * *" -- /bin/sh -c 'date; echo Hello from the Kubernetes cluster' --dry-run -o yaml > c77.yaml
+ 1256  nano c77.yaml 
+ 1257  kubectl run erbbusybox --image=busybox --restart=OnFailure --schedule="*/1 * * * *" --dry-run -o yaml -- /bin/sh -c 'date; echo Hello from the Kubernetes cluster' > c77.yaml
+ 1258  nano c77.yaml 
+ 1259  kubectl get cj
+ 1260  kubectl logs cj 
+ 1261  cc
+ 1262  ls
+ 1263  bash gitBatch.sh 
+ 1264  cc
+ 1265  kubectl create configmap d1cm --from-literal=foo=lala, --from-literal=foo2=lolo
+ 1266  kubectl get c
+ 1267  kubectl get cm
+ 1268  kubectl get cm d1cm - oyaml
+ 1269  kubectl get cm d1cm -o yaml
+ 1270  cc
+ 1271  echo -e "foo3=lii\nfoo4=lele" > config.txt
+ 1272  cat config.txt 
+ 1273  kubectl create configmap d2cm --from-file=config.txt
+ 1274  kubectl get cm 
+ 1275  cc
+ 1276  kubectl get cm d2cm -o yaml
+ 1277  cc
+ 1278  echo -e "var11=val1\n # this is comment\n vaar22=val > config.env
+ 1279  echo -e "var11=val1\n # this is comment\n vaar22=val" > config.env
+ 1280  cat config.env 
+ 1281  kubectl create configmap d3cm --from-env-file=config.env
+ 1282  kubectl get cm d3cm -o yaml
+ 1283  kubectl get cm d2cm -o yaml
+ 1284  cc
+ 1285  echo -e "var3=val3\nvar4=val4" > config4.txt
+ 1286  rm 2he.txt aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1287  cc
+ 1288  kubectl create configmap d4cm --from-fil=special=config.env
+ 1289  kubectl create configmap d4cm --from-file=special=config.env
+ 1290  kubectl get cm
+ 1291  kubectl get cm d6cn=a=======assssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1292  kubectl get cm d6cm -o yaml
+ 1293  cc
+ 1294  kubectl get cm d6cm -o yamls
+ 1295  kubectl get cm
+ 1296  host
+ 1297  history 
+ 1298  kubectl create configmap d4cm --from-file=speciassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1299  cc
+ 1300  kubectl create configmap d4cm --from-file=special=config.txt
+ 1301  kubectl create configmap d5cm --from-file=special=config.txt
+ 1302  kubectl get cm
+ 1303  kubectl get cm d5cm - oyaml
+ 1304  kubectl get cm d5cm -o yaml
+ 1305  kubectl get cm d4cm -o yaml
+ 1306  kubectl get cm d3cm -o yaml
+ 1307  kubectl get cm d33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333cm -o yaml
+ 1308  kubectl get cm d2cm -o yaml
+ 1309  bash gitBatch.sh 
+ 1310  minikube stop
+ 1311  exit
+ 1312  minikube sart
+ 1313  minikube start
+ 1314  ll
+ 1315  ls
+ 1316  cc
+ 1317  ls
+ 1318  script 202003182340
+ 1319  exit
+ 1320  minikube start
+ 1321  bash gitBatch.sh 
+ 1322  git add .
+ 1323  git commit -m "new update of 18"
+ 1324  cc
+ 1325  ls
+ 1326  script 202003200020
+ 1327  cc
+ 1328  l
+ 1329  ls
+ 1330  locate *.env
+ 1331  ll
+ 1332  kubectl get cm
+ 1333  ll d*
+ 1334  ll c*
+ 1335  history 
+ 1336  cc
+ 1337  kubectl get cm
+ 1338  cc
+ 1339  kubectl create cm options --from-literal=var5=val5
+ 1340  kubectl get cm
+ 1341  kubectl get configMap options
+ 1342  kubectl get configMap options -o yaml
+ 1343  cc
+ 1344  kubectl run d7 --image=nginx --restart=Never --dry-run -o yaml > d7.yaml
+ 1345  nano d7.yaml 
+ 1346  kubectl explain pod.spec.env --recursive
+ 1347  kubectl explain pod.spec.containers.env --recursive
+ 1348  nano d7.yaml 
+ 1349  kubectl explain pod.spec.containers.env --recursive
+ 1350  nano d7.yaml 
+ 1351  kubectl explain pod.spec.containers.env --recursive
+ 1352  kubectl explain pod.spec.containers.env
+ 1353  nano d7.yaml 
+ 1354  kubectl create -f d7.yaml 
+ 1355  kubectl get pod/d7
+ 1356  kubectl logs pod/d7
+ 1357  kubectl exec -ti d7 -- env
+ 1358  alias kc="kubectl create"
+ 1359  kc
+ 1360  kc cm another --from-literal=var6=val6 --from-literal=var7=val7
+ 1361  k get cm
+ 1362  k run d8 --image=nginx --restart=Never --dry-run -o yaml > d8.yaml
+ 1363  kubectl explain pod.spec.containers.
+ 1364  kubectl explain pod.spec.containers.envFrom
+ 1365  kubectl explain pod.spec.containers.envFrom.confgMapRef
+ 1366  kubectl explain pod.spec.containers.envFrom --recursive
+ 1367  nano d8.yaml 
+ 1368  kc -f d8.yaml 
+ 1369  k get pod/d8
+ 1370  k logs pod/d8
+ 1371  k get pod/d8
+ 1372  kubectl exec -ti d8 -- env
+ 1373  kubectl exec -ti d7 -- env
+ 1374  nano d7.yaml 
+ 1375  cc
+ 1376  bash gitBatch.sh 
+ 1377  git push origin master 
+ 1378  bash gitBatch.sh 
+ 1379  cc
+ 1380  kubectl explain pod.spec.containers.volume --recursive
+ 1381  kubectl explain pod.spec.containers --recursive
+ 1382  kubectl explain pod.spec --recursive
+ 1383  kubectl explain pod.spec.volumes
+ 1384  cc
+ 1385  kc cmvol --from-literal=var8=val8 --from-literal=var9=val9 
+ 1386  kc cm cmvol --from-literal=var8=val8 --from-literal=var9=val9 
+ 1387  k get cm
+ 1388  cc
+ 1389  kubectl run d10 --image=nginx --restart=Never --dry-run -o yaml > d10.yaml
+ 1390  nano d10.yaml 
+ 1391  kubectl explain pod.spec.volumes
+ 1392  kubectl explain pod.spec.volumes.configMap
+ 1393  kubectl explain pod.spec.volumes.configMap --recursive
+ 1394  nano d10.yaml 
+ 1395  kc -f d10.yaml 
+ 1396  nano d10.yaml 
+ 1397  kc -f d10.yaml 
+ 1398  nano d10.yaml 
+ 1399  kubectl explain pod.spec.volumes.name
+ 1400  nano d10.yaml 
+ 1401  kubectl explain pod.spec.volumes.name
+ 1402  kc -f d10.yaml 
+ 1403  k get pod 
+ 1404  k get pod d10
+ 1405  kubectl exec -ti d10 -- /bin/sh
+ 1406  bash gitBash
+ 1407  bash gitBash.sh
+ 1408  bash gitBatch.sh 
+ 1409  kubectl explain pod.spec.volumes.name
+ 1410  kubectl explain pod.spec.volumes
+ 1411  bash gitBatch.sh 
+ 1412  cc
+ 1413  ls
+ 1414  kubectl get cm
+ 1415  cc
+ 1416  kubectl explain pod.spec.securityContext --reciursive
+ 1417  kubectl explain pod.spec.securityContext --recursive
+ 1418  cc
+ 1419  kubectl explain pod.spec.securityContext --recursivef
+ 1420  nano gitBatch.sh 
+ 1421  echo "tell vari"&& read vr&& echo "kubectl get $vr
+ 1422  pod
+ 1423  echo "tell vari"&& read vr&& echo "kubectl get $vr"
+ 1424  kubectl get pod
+ 1425  echo "tell vari"&& read vr&& echo "kubectl get $vr"
+ 1426  kubectl get $vr
+ 1427  alias kgx="kubectl get $(read vr1)"
+ 1428  kgx
+ 1429  alias kgx="kubectl get && $(read vr1)"
+ 1430  kgx pod
+ 1431  kgx cm
+ 1432  echo "kubectl get $(read vr1)"
+ 1433  echo "kubectl get && $(read vr1)"
+ 1434  echo "kubectl get "&& "$(read vr1)"
+ 1435  echo "kubectl get "&&read vr1
+ 1436  alias kgx=read vr1&&echo "kubectl get $vr1
+ 1437  cm
+ 1438  alias kgx=read vr1&&echo "kubectl get $vr1"
+ 1439  alias kgx="read vr1"&&echo "kubectl get $vr1"
+ 1440  alias gup="bash gitBash.sh"
+ 1441  gup
+ 1442  bash gitBash.sh
+ 1443  alias gup="bash gitBatch.sh "
+ 1444  gup
+ 1445  alias gup="bash gitBatch.sh "cc
+ 1446  gup
+ 1447  cc
+ 1448  kubectl explain pod.spec.securityContext
+ 1449  kubectl explain pod.spec.securityContext --recursive
+ 1450  kubectl explain pod.spec.containers.securityContext --recursive
+ 1451  cc
+ 1452  kubectl run d11sec --image=nginx --resatrt=Never --dry-run - oyaml > d11.yaml
+ 1453  kubectl run d11sec --image=nginx --resatrt=Never --dry-run -o yaml > d11.yaml
+ 1454  kubectl run d11sec --image=nginx --restart=Never --dry-run - oyaml > d11.yaml
+ 1455  nano d11.yaml 
+ 1456  kubectl run d11sec --image=nginx --restart=Never --dry-run -o yaml > d11.yaml
+ 1457  nano d11.yaml 
+ 1458  kubectl create -f d11.yaml 
+ 1459  kubectl get pod d11
+ 1460  kubectl get pod d11sec
+ 1461  cc
+ 1462  gup
+ 1463  cc
+ 1464  kubectl get apiservices
+ 1465  cc
+ 1466  kubectl explain pod.spec.containers.resources --recursive
+ 1467  kubectl explain pod.spec.containers.resources 
+ 1468  exit
+ 1469  minikube start
+ 1470  script 2003221644
+ 1471  minikube start
+ 1472  gup
+ 1473  nano ~/.bashrc 
+ 1474  gup
+ 1475  nano ~/.bashrc 
+ 1476  gup
+ 1477  nano ~/.bashrc 
+ 1478  gup
+ 1479  nano ~/.bashrc 
+ 1480  gup
+ 1481  bash gitBatch.sh 
+ 1482  nano ~/.bashrc 
+ 1483  kga
+ 1484  cc
+ 1485  kga
+ 1486  . ~/.bashrc
+ 1487  kga
+ 1488  gup
+ 1489  cc
+ 1490  kga
+ 1491  c
+ 1492  cc
+ 1493  nano ~/.bashrc 
+ 1494  ll
+ 1495  cc
+ 1496  ls
+ 1497  nano gitBatch.sh 
+ 1498  cc
+ 1499  kubectl run d12rl --image=nginx --restart=Never --dry-run - oyam > d12.yaml
+ 1500  nano d12.yaml 
+ 1501  kubectl run d12rl --image=nginx --restart=Never --dry-run - oyaml >> d12.yaml
+ 1502  nano d12.yaml 
+ 1503  rm d12.yaml 
+ 1504  kubectl run d12rl --image=nginx --restart=Never --dry-run -o yaml >> d12.yaml
+ 1505  nano d12.yaml 
+ 1506  kubectl create -f d12.yaml 
+ 1507  kga
+ 1508  kubectl get d12rl
+ 1509  kubectl get po d12rl
+ 1510  kubectl describe pod d12rl
+ 1511  kubectl run nginx --image=nginx --restart=Never --requests='cpu=100m,memory=256Mi' --limits='cpu=200m,memory=512Mi'
+ 1512  kubectl run nginx3 --image=nginx --restart=Never --requests='cpu=100m,memory=256Mi' --limits='cpu=200m,memory=512Mi'
+ 1513  kubectl get po nginx3
+ 1514  kubectl get po nginx3 -w
+ 1515  kubectl describe pod nginx
+ 1516  nano d12.yaml 
+ 1517  kubectl delete pod/d12rl
+ 1518  kubectl create -f d12.yaml 
+ 1519  kubectl get d12rl
+ 1520  kubectl get pod d12rl
+ 1521  kubectl describe pod d12rl
+ 1522  nano d12.yaml 
+ 1523  kubectl delete pod/d12rl
+ 1524  kubectl create -f d12.yaml 
+ 1525  kubectl get pod d12rl
+ 1526  kubectl get pod d12rl -w
+ 1527  kubectl delete pod/d12rl
+ 1528  nano d12.yaml 
+ 1529  kubectl create -f d12.yaml 
+ 1530  kubectl get pod d12rl -w
+ 1531  kubectl delete pod/d12rl
+ 1532  nano d12.yaml 
+ 1533  kubectl create -f d12.yaml 
+ 1534  kubectl get pod d12rl -w
+ 1535  kubectl exec -ti d12rl 
+ 1536  kubectl exec -ti d12rl -- sh
+ 1537  cc
+ 1538  gup
+ 1539  ls
+ 1540  cat commandsReview.txt 
+ 1541  cat README.md 
+ 1542  echo "Practice only" >> README.md 
+ 1543  gup
+ 1544  cc
+ 1545  git status
+ 1546  git config 
+ 1547  git config --show-origin 
+ 1548  git config --global 
+ 1549  git config --global --get-all 
+ 1550  git config -h
+ 1551  git config -l
+ 1552  ls
+ 1553  ll
+ 1554  ls .git/
+ 1555  touch .gitignore
+ 1556  echo "gi.txt" > .gitignore
+ 1557  cat .gitignore 
+ 1558  echo "gi.txt" > gi.txt
+ 1559  echo "rgi.txt" > rgi.txt
+ 1560  gup
+ 1561  cc
+ 1562  nano gitBatch.sh 
+ 1563  gup
+ 1564  cc
+ 1565  gup
+ 1566  cc
+ 1567  kubectl create secret -h
+ 1568  kubectl create secret generic --help
+ 1569  cc
+ 1570  minikube status
+ 1571  minikube stop
+ 1572  minikube start
+ 1573  cc
+ 1574  kubectl get secret
+ 1575  kubectl create secret generic d13sec --from-literal=password=mypass
+ 1576  kubectl get secret
+ 1577  kubectl get secret d13sec -o yaml
+ 1578  echo -n admin > username
+ 1579  cat usernam
+ 1580  kubectl create secret generic d13sec 4sec --from-file=username
+ 1581  echo -n admin > username1
+ 1582  kubectl create secret generic d13sec 4sec --from-file=username1
+ 1583  cc
+ 1584  kubectl create secret generic d14sec --from-file=username1
+ 1585  kubectl get secret
+ 1586  kubectl get secret d14sec -o yaml
+ 1587  cc
+ 1588  kubectl get secret d14sec -o yaml
+ 1589  echo YWRtaW4= | base64 -d
+ 1590  echo YWRtaW4 | base64 -d
+ 1591  gup
+ 1592  cc
+ 1593  echo YWRtaW4= | base64 -d
+ 1594  cc
+ 1595  kubectl explain pod.spec.volume.secret
+ 1596  kubectl explain pod.spec.volumes.secret
+ 1597  kubectl explain pod.spec.volumes.secret --recursive
+ 1598  kubectl explain pod.spec.containers.volumeMount.secret
+ 1599  kubectl explain pod.spec.containers.volumeMounts.secret
+ 1600  kubectl explain pod.spec.containers.volumeMount.secret
+ 1601  kubectl explain pod.spec.containers.volumeMount
+ 1602  kubectl explain pod.spec.containers --recursive
+ 1603  kubectl explain pod.spec.containers.volumeMountcc
+ 1604  cc
+ 1605  kubectl run d15 --image=nginx --restart=Never --dry-run -o yaml
+ 1606  kubectl run d15 --image=nginx --restart=Never --dry-run -o yaml > d15.yaml
+ 1607  nano d15.yaml 
+ 1608  kubectl get secret
+ 1609  kubectl create -f d15.yaml 
+ 1610  kubectl get pod/d15
+ 1611  kubectl exec -ti d15
+ 1612  kubectl exec -ti d15 -- sh
+ 1613  gup
+ 1614  cc
+ 1615  kubectl run d16 --image=nginx --restart=Never --dry-run -o yaml > d16.yaml
+ 1616  nano d16.yaml 
+ 1617  kubectl delete pod/d15sec
+ 1618  kubectl get pod 
+ 1619  kubectl delete pod/d15
+ 1620  nano d16.yaml 
+ 1621  cc
+ 1622  kubectl explain pod.spec.containers --recursive
+ 1623  kubectl explain pod.spec.containers --recursive | grep -i 3
+ 1624  kubectl explain pod.spec.containers --recursive | grep -i 3 env
+ 1625  kubectl explain pod.spec.containers --recursive | grep env
+ 1626  kubectl explain pod.spec.containers --recursive | grep -i3 env
+ 1627  kubectl explain pod.spec.containers
+ 1628  nano d16.yaml 
+ 1629  kubectl explain pod.spec.containers --recursive | grep -i3 env
+ 1630  nano d16.yaml 
+ 1631  kubectl explain pod.spec.containers --recursive | grep -i7 env
+ 1632  kubectl explain pod.spec.containers --recursive | grep -i9 env
+ 1633  nano d16.yaml 
+ 1634  kubectl create -f d16.yaml 
+ 1635  kubectl get pod/d16
+ 1636  kubectl describe pod/d16
+ 1637  kubectl get secret
+ 1638  kubectl delete pod/d16
+ 1639  nano d16.yaml 
+ 1640  kubectl create -f d16.yaml 
+ 1641  kubectl get secret
+ 1642  kubectl delete pod/d16
+ 1643  kubectl create -f d16.yaml 
+ 1644  kubectl get pod/d16
+ 1645  kubectl describe pod/d16
+ 1646  kubectl exec -ti d16 -- sh
+ 1647  cat d16.yaml 
+ 1648  kubectl exec -ti d16 -- env
+ 1649  kubectl exec -ti d16 -- env | grep username
+ 1650  kubectl exec -ti d16 -- env | grep username1
+ 1651  kubectl exec -ti d16 -- sh
+ 1652  cc
+ 1653  kubectl explain pod.spec.serviceAccountName
+ 1654  kubectl explain pod.spec.serviceAccountName --recursive
+ 1655  cc
+ 1656  gup
+ 1657  cc
+ 1658  kubectl explain pod.spec.livenessProbe
+ 1659  kubectl explain pod.spec.containers.livenessProbe
+ 1660  kubectl explain pod.spec.containers.livenessProbe --recursive
+ 1661  cc
+ 1662  kubectl run e1lp --image=nginx --restart=Never --dry-run -o yaml > e1.yaml
+ 1663  nano e1.yaml 
+ 1664  kubectl explain pod.spec.containers.livenessProbe --recursive
+ 1665  kubectl explain pod.spec.containers.livenessProbe 
+ 1666  nano e1.yaml 
+ 1667  alias kc="k create "
+ 1668  kc -f d16.yaml 
+ 1669  kc -f e1.yaml 
+ 1670  k get pod/e1
+ 1671  kubectl get pod 
+ 1672  k get pod/e1lp
+ 1673  kubectl describe pod/e1lp
+ 1674  kubectl describe pod/e1lp | grep livenessProbe
+ 1675  kubectl describe pod/e1lp | grep liveness
+ 1676  kubectl describe pod/e1lp | grep -i liveness
+ 1677  cc
+ 1678  gup
+ 1679  minikube status
+ 1680  minikube stop
+ 1681  minikube start
+ 1682  cat e1.yaml 
+ 1683  script 2003240019
+ 1684  cc
+ 1685  cat e1.yaml 
+ 1686  kga
+ 1687  cc
+ 1688  kubectl explain pod.spec.containers --recursive
+ 1689  kubectl explain pod.spec.containers --recursive | grep start
+ 1690  nano e1.yaml 
+ 1691  history | grep alias
+ 1692  kc e2.yaml 
+ 1693  alias kc="kubectl create "
+ 1694  kc -f e2.yaml 
+ 1695  nano e1.yaml 
+ 1696  nano e2.yaml 
+ 1697  kc -f e2.yaml 
+ 1698  kubectl get pod/e2lp
+ 1699  kubectl get pod/e2lp -w
+ 1700  kubectl describe pod/e2lp
+ 1701  kubectl describe pod/e2lp | grep -i liveness
+ 1702  kubectl explain pod.spec.containers.livenessProbe # get the exact names
+ 1703  cc
+ 1704  kubectl explain --help
+ 1705  cc
+ 1706  kubectl explain pod.spec.containers.readinessProbe
+ 1707  kubectl explain pod.spec.containers.readinessProbe.httpGet
+ 1708  kubectl explain pod.spec.containers.readinessProbe.httpGet --recursive
+ 1709  kubectl run e3rp --image=nginx --restart=Never --dry-run -o yaml > e3.yaml
+ 1710  vim e3.yaml 
+ 1711  sudo apt-get install vim
+ 1712  vim e3.yaml 
+ 1713  cc
+ 1714  vim e3.yaml 
+ 1715  nano e2.yaml 
+ 1716  vim e3.yaml 
+ 1717  kubectl explain pod.spec.containers.readinessProbe.httpGet --recursive
+ 1718  kubectl explain pod.spec.containers.readinessProbe --recursive
+ 1719  vim e3.yaml 
+ 1720  kc -f e3.yaml 
+ 1721  kubectl get pod/e3rp
+ 1722  kubectl describe pod/e3rp
+ 1723  cc
+ 1724  nano ~/.bashrc
+ 1725  gup
+ 1726  cc
+ 1727  kubectl run e4log --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done > e4.yaml
+ 1728  kubectl run e4log --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done' > e4.yaml
+ 1729  nano e4.yaml 
+ 1730  kc -f e4.yaml 
+ 1731  kubectl get pod/e4log
+ 1732  kubectl logs pod/e4log
+ 1733  cc
+ 1734  kubectl run e5deb --image=busybox --restart=Never -- /bin/sh -c 'ls /notexist'
+ 1735  kubectl get pod/e5deb
+ 1736  kubectl get pod/e5deb -w
+ 1737  kubectl get pod/e5deb
+ 1738  kubectl logs pod/e5deb
+ 1739  kubectl describe pod/e5deb
+ 1740  kubectl describe pod/e5deb | grep -i not
+ 1741  cc
+ 1742  kubectl describe pod/e5deb | grep -i error
+ 1743  kubectl describe pod/e5deb 
+ 1744  cc
+ 1745  kubectl top nodes
+ 1746  kubectl top pod
+ 1747  gup
+ 1748  sudo apt-get update & apt-get upgrade
+ 1749  sudo apt-get update && apt-get upgrade
+ 1750  sudo apt-get upgrade
+ 1751  cc
+ 1752  minikube status
+ 1753  kubectl run f1svc --image=nginx --restart=Never --port=80 --export
+ 1754  kubectl run f1svc --image=nginx --restart=Never --port=80 --expose
+ 1755  exit
+ 1756  rm 20200325-1-7 
+ 1757  ls
+ 1758  mv e1.yaml.save .gitignore 
+ 1759  gup
+ 1760  cat gi.txt 
+ 1761  ll 
+ 1762  ll gi.txt 
+ 1763  exit
+ 1764  minikube start
+ 1765  la
+ 1766  ls
+ 1767  cc
+ 1768  ls
+ 1769  ll
+ 1770  gup
+ 1771  kubectl get pod
+ 1772  kubectl get pod f1sv
+ 1773  kubectl get pod f1svc
+ 1774  kubectl describe pod/f1svc
+ 1775  script 20200325-1-7
+ 1776  script 202003250107
+ 1777  rm 202003250107
+ 1778  exit
+ 1779  kc -f f2.yaml 
+ 1780  kubectl get pod -l app=foo -o wide
+ 1781  kubectl get pod -l app=foo -o wide -w
+ 1782  kubectl run busybox --image=busybox --restart=Never -ti --rm -- sh
+ 1783  kubectl delete pod/busybox
+ 1784  kubectl run busybox --image=busybox --restart=Never -ti --rm -- sh
+ 1785  cc
+ 1786  kubectl expose deploy foo --port=6262 --target-port=8080
+ 1787  kubectl get svc
+ 1788  kubectl ep foo
+ 1789  kubectl get ep foo
+ 1790  kubectl get svc foo -o yaml
+ 1791  cc
+ 1792  kubectl get svc
+ 1793  kubectl get pod busybox
+ 1794  c
+ 1795  cc
+ 1796  kubectl get svc
+ 1797  kubectl run busybox --image=busybox -it --rm --restart=Never -- sh
+ 1798  kubectl delete pod/busybox
+ 1799  docker images
+ 1800  docker image ls
+ 1801  history | docker
+ 1802  history | grep docker
+ 1803  cc
+ 1804  kubectl run busybox --image=busybox -it --rm --restart=Never -- sh
+ 1805  kubectl get pod
+ 1806  kubectl logs pod/foo-688d885f4b-m9zmp
+ 1807  cc
+ 1808  kubectl f3dep --image=nginx --replicas=2 --port=80 --expose
+ 1809  kubectl run f3dep --image=nginx --replicas=2 --port=80 --expose
+ 1810  kubectl describe svc fedep
+ 1811  kubectl describe svc f3dep
+ 1812  cc
+ 1813  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1814  kubectl delete deploy/nginx
+ 1815  kubectl delete svc/nginx
+ 1816  cc
+ 1817  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1818  kubectl describe svc nginx
+ 1819  kubectl describe svc f3dep
+ 1820  kubectl describe svc nginx
+ 1821  cc
+ 1822  kubectl describe svc nginx
+ 1823  kubectl api-resources
+ 1824  kubectl api-resources | grep network
+ 1825  kubectl explain netpol --recursive
+ 1826  echo <<EOF >>  f4netpol.yaml
+ 1827  apiVersion: extensions/v1beta1
+ 1828  kind: NetworkPolicy
+ 1829  metadata:
+ 1830    name: netpol
+ 1831  spec:
+ 1832    podSelector:
+ 1833      matchLabels:
+ 1834        access: granted
+ 1835  EOF
+ 1836  cat f4netpol.yaml 
+ 1837  nano f4netpol.yaml 
+ 1838  exit
+ 1839  minikube start
+ 1840  cc
+ 1841  script 2003260012
+ 1842  gup
+ 1843  cc
+ 1844  kubectl getpod
+ 1845  kubectl get pod
+ 1846  kubectl get pod f1svc
+ 1847  kubectl delete  pod/f1svc
+ 1848  cc
+ 1849  kubectl run f1svc --image=nginx --restart=Never --port=80 --expose
+ 1850  kubectl delete  pod/f1svc
+ 1851  kubectl get svc
+ 1852  kubectl delete svc f1svc
+ 1853  cc
+ 1854  kubectl run f1svc --image=nginx --restart=Never --port=80 --expose
+ 1855  kubectl get svc
+ 1856  kubectl ep
+ 1857  kubectl get ep
+ 1858  cc
+ 1859  kubectl get svc f1svc
+ 1860  kubectl run f1bb --image=busybox --restart=Never 
+ 1861  kubectl exec -ti -sh
+ 1862  kubectl exec -ti f1bb -- sh
+ 1863  kubectl get pod f1bb
+ 1864  kubectl delete  pod/f1bb
+ 1865  cc
+ 1866  kubectl run f1bb --image=busybox --restart=Never -- sh 
+ 1867  kubectl get pod f1bb
+ 1868  kubectl delete  pod/f1bb
+ 1869  kubectl run f1bb --image=busybox --restart=Never -- sh wget -O- 10.102.148.164
+ 1870  kubectl logs f1bb
+ 1871  kubectl get pod f1bb
+ 1872  kubectl delete  pod/f1bb
+ 1873  kubectl run f1bb --image=busybox --restart=Never -- sh
+ 1874  kubectl get pod f1bb
+ 1875  kubectl delete  pod/f1bb
+ 1876  cc
+ 1877  kubectl run busybox --rm --image=busybox -it --restart=Never -- sh
+ 1878  kubectl delete  pod/busybox
+ 1879  kubectl run busybox --rm --image=busybox -it --restart=Never -- sh
+ 1880  cc
+ 1881  kubectl run busybox --rm --image=busybox -it --restart=Never -- shs
+ 1882  cc
+ 1883  kubectl edit svc f1bb
+ 1884  kubectl get svc
+ 1885  kubectl edit svc f1svc
+ 1886  kubectl get svc
+ 1887  minikube ip
+ 1888  wget -O- 10.102.148.164:30669
+ 1889  wget -O- 192.168.99.101:30669
+ 1890  cc
+ 1891  gup
+ 1892  cc
+ 1893  kubectl get deploy 
+ 1894  cc
+ 1895  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --dry-run -o yaml > f2.yaml
+ 1896  nano f2.yaml 
+ 1897  kubectl get pods -l app=foo -o wide
+ 1898  kubectl get pods -L app=foo -o wide
+ 1899  cc
+ 1900  kubectl get pods 
+ 1901  kubectl get pods foo
+ 1902  kc -f f2.yaml 
+ 1903  nano ~/.bashrc 
+ 1904  source
+ 1905  bash
+ 1906  gup
+ 1907  cc
+ 1908  kubectl get deploy
+ 1909  kubectl delete deploy/foo
+ 1910  kubectl delete svc/foo
+ 1911  kubectl delete pod/foo
+ 1912  cc
+ 1913  kubectl create deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080
+ 1914  kubectl run  deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080
+ 1915  kubectl run  deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 > f8.yaml
+ 1916  kubectl delete deploy/foo
+ 1917  kubectl run  deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 > f8.yaml
+ 1918  kubectl delete deploy/foo
+ 1919  kubectl delete deploy/deploy
+ 1920  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 > f8.yaml
+ 1921  nano f8.yaml 
+ 1922  kubectl delete deploy/deploy
+ 1923  kubectl delete deploy/foo
+ 1924  cc
+ 1925  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 --dry-run > f8.yaml
+ 1926  nano f8.yaml 
+ 1927  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 --dry-run -o yaml > f8.yaml
+ 1928  nano f8.yaml 
+ 1929  kc -f f8.yaml 
+ 1930  kubectl get deploy/foo
+ 1931  cc
+ 1932  kubectl get pods -l app=foo -o wie
+ 1933  kubectl get pods -l app=foo -o wide
+ 1934  kubectl run bbb --image=busybox --restart=Never -it --rm -- sh wget -o- 172.17.0.3:8080
+ 1935  kubectl run bbb --image=busybox --restart=Never -it --rm -- sh wget -0- 172.17.0.3:8080
+ 1936  kubectl get pods -l app=foo -o wide
+ 1937  kubectl run bbb --image=busybox --restart=Never -it --rm -- sh
+ 1938  cc
+ 1939  kubectl expose deploy foo --port=6262 --target-port=8080
+ 1940  kubectl get svc
+ 1941  kubectl get ep
+ 1942  kubectl run bbb --image=busybox --restart=never -ti --rm -- sh
+ 1943  kubectl run bbb --image=busybox --restart=Never -ti --rm -- sh
+ 1944  cc
+ 1945  kubectl create dploy nginx --dry-run -o yaml >f9.yaml
+ 1946  kubectl create dploy nginx --image=nginx --dry-run -o yaml >f9.yaml
+ 1947  kubectl create deploy nginx --image=nginx --dry-run -o yaml >f9.yaml
+ 1948  nano f9.yaml 
+ 1949  cc
+ 1950  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1951  kubectl delete svc/nginx
+ 1952  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1953  kubectl delete svc/nginx
+ 1954  kubectl delete deploy/nginx
+ 1955  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1956  kubectl get svc nginx -o yaml > f10.yaml
+ 1957  nano f10
+ 1958  nano f10.yaml 
+ 1959  nano f10policy.yaml
+ 1960  kubectl get api-version 
+ 1961  kubectl explain --h
+ 1962  kubectl explain --api-version
+ 1963  kubectl explain pods --api-version
+ 1964  history | api-vers
+ 1965  history | grep api-vers
+ 1966  kubectl explain --h
+ 1967  kubectl explain network-Policy
+ 1968  wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\
+ 1969  33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333312
+ 1970  dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd2
+ 1971  exit
+ 1972  gup
+ 1973  exit
+ 1974  minikube status
+ 1975  minikube start
+ 1976  kubectl get all 
+ 1977  kubectl get svc
+ 1978  cc
+ 1979  script 2003312337
+ 1980  exit
+ 1981  ping 1.1.1.1
+ 1982  cc
+ 1983  kubectl run f11dep --image=nginx --replicas=2 --port=80 --expose 
+ 1984  kubectl get deploy/f11dep -o yaml 
+ 1985  kubectl get svc/f11dep -o yaml 
+ 1986  nano f11netpol.yaml
+ 1987  cc
+ 1988  kubectl explain networkPolicy
+ 1989  kubectl explain networkPolicy --recursive
+ 1990  kubectl explain 
+ 1991  kubectl explain --h
+ 1992  kubectl explain pods
+ 1993  kubectl explain networkPolicy
+ 1994  kubectl explain networkPolicy.apiVersion 
+ 1995  kubectl explain networkPolicy.apiVersion --recursive
+ 1996  kubectl get --h
+ 1997  history 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ c
+c: command not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl api-resource
+Error: unknown command "api-resource" for "kubectl"
+
+Did you mean this?
+	api-resources
+
+Run 'kubectl --help' for usage.
+unknown command "api-resource" for "kubectl"
+
+Did you mean this?
+	api-resources
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl api-resources
+NAME                              SHORTNAMES   APIGROUP                       NAMESPACED   KIND
+bindings                                                                      true         Binding
+componentstatuses                 cs                                          false        ComponentStatus
+configmaps                        cm                                          true         ConfigMap
+endpoints                         ep                                          true         Endpoints
+events                            ev                                          true         Event
+limitranges                       limits                                      true         LimitRange
+namespaces                        ns                                          false        Namespace
+nodes                             no                                          false        Node
+persistentvolumeclaims            pvc                                         true         PersistentVolumeClaim
+persistentvolumes                 pv                                          false        PersistentVolume
+pods                              po                                          true         Pod
+podtemplates                                                                  true         PodTemplate
+replicationcontrollers            rc                                          true         ReplicationController
+resourcequotas                    quota                                       true         ResourceQuota
+secrets                                                                       true         Secret
+serviceaccounts                   sa                                          true         ServiceAccount
+services                          svc                                         true         Service
+mutatingwebhookconfigurations                  admissionregistration.k8s.io   false        MutatingWebhookConfiguration
+validatingwebhookconfigurations                admissionregistration.k8s.io   false        ValidatingWebhookConfiguration
+customresourcedefinitions         crd,crds     apiextensions.k8s.io           false        CustomResourceDefinition
+apiservices                                    apiregistration.k8s.io         false        APIService
+controllerrevisions                            apps                           true         ControllerRevision
+daemonsets                        ds           apps                           true         DaemonSet
+deployments                       deploy       apps                           true         Deployment
+replicasets                       rs           apps                           true         ReplicaSet
+statefulsets                      sts          apps                           true         StatefulSet
+tokenreviews                                   authentication.k8s.io          false        TokenReview
+localsubjectaccessreviews                      authorization.k8s.io           true         LocalSubjectAccessReview
+selfsubjectaccessreviews                       authorization.k8s.io           false        SelfSubjectAccessReview
+selfsubjectrulesreviews                        authorization.k8s.io           false        SelfSubjectRulesReview
+subjectaccessreviews                           authorization.k8s.io           false        SubjectAccessReview
+horizontalpodautoscalers          hpa          autoscaling                    true         HorizontalPodAutoscaler
+cronjobs                          cj           batch                          true         CronJob
+jobs                                           batch                          true         Job
+certificatesigningrequests        csr          certificates.k8s.io            false        CertificateSigningRequest
+leases                                         coordination.k8s.io            true         Lease
+events                            ev           events.k8s.io                  true         Event
+daemonsets                        ds           extensions                     true         DaemonSet
+deployments                       deploy       extensions                     true         Deployment
+ingresses                         ing          extensions                     true         Ingress
+networkpolicies                   netpol       extensions                     true         NetworkPolicy
+podsecuritypolicies               psp          extensions                     false        PodSecurityPolicy
+replicasets                       rs           extensions                     true         ReplicaSet
+nodes                                          metrics.k8s.io                 false        NodeMetrics
+pods                                           metrics.k8s.io                 true         PodMetrics
+ingresses                         ing          networking.k8s.io              true         Ingress
+networkpolicies                   netpol       networking.k8s.io              true         NetworkPolicy
+runtimeclasses                                 node.k8s.io                    false        RuntimeClass
+poddisruptionbudgets              pdb          policy                         true         PodDisruptionBudget
+podsecuritypolicies               psp          policy                         false        PodSecurityPolicy
+clusterrolebindings                            rbac.authorization.k8s.io      false        ClusterRoleBinding
+clusterroles                                   rbac.authorization.k8s.io      false        ClusterRole
+rolebindings                                   rbac.authorization.k8s.io      true         RoleBinding
+roles                                          rbac.authorization.k8s.io      true         Role
+priorityclasses                   pc           scheduling.k8s.io              false        PriorityClass
+csidrivers                                     storage.k8s.io                 false        CSIDriver
+csinodes                                       storage.k8s.io                 false        CSINode
+storageclasses                    sc           storage.k8s.io                 false        StorageClass
+volumeattachments                              storage.k8s.io                 false        VolumeAttachment
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl api-resources | grep cj
+cronjobs                          [01;31m[Kcj[m[K           batch                          true         CronJob
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;74H(B[0;7m 6 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[36;68H(B[0;7m[ Read [37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[37d[1;34H(B[0;7mf11netpol.yaml[72G   [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[37d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl ec[Kxplain networkpol[K[K[Kpolicy
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
+     networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic
+     is allowed for a set of Pods
+
+FIELDS:
+   apiVersion	<string>
+     APIVersion defines the versioned schema of this representation of an
+     object. Servers should convert recognized schemas to the latest internal
+     value, and may reject unrecognized values. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
+   kind	<string>
+     Kind is a string value representing the REST resource this object
+     represents. Servers may infer this from the endpoint the client submits
+     requests to. Cannot be updated. In CamelCase. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+
+   metadata	<Object>
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+   spec	<Object>
+     Specification of the desired behavior for this NetworkPolicy.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain networkpolicy.spec
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+RESOURCE: spec <Object>
+
+DESCRIPTION:
+     Specification of the desired behavior for this NetworkPolicy.
+
+     DEPRECATED 1.9 - This group version of NetworkPolicySpec is deprecated by
+     networking/v1/NetworkPolicySpec.
+
+FIELDS:
+   egress	<[]Object>
+     List of egress rules to be applied to the selected pods. Outgoing traffic
+     is allowed if there are no NetworkPolicies selecting the pod (and cluster
+     policy otherwise allows the traffic), OR if the traffic matches at least
+     one egress rule across all of the NetworkPolicy objects whose podSelector
+     matches the pod. If this field is empty then this NetworkPolicy limits all
+     outgoing traffic (and serves solely to ensure that the pods it selects are
+     isolated by default). This field is beta-level in 1.8
+
+   ingress	<[]Object>
+     List of ingress rules to be applied to the selected pods. Traffic is
+     allowed to a pod if there are no NetworkPolicies selecting the pod OR if
+     the traffic source is the pod's local node, OR if the traffic matches at
+     least one ingress rule across all of the NetworkPolicy objects whose
+     podSelector matches the pod. If this field is empty then this NetworkPolicy
+     does not allow any traffic (and serves solely to ensure that the pods it
+     selects are isolated by default).
+
+   podSelector	<Object> -required-
+     Selects the pods to which this NetworkPolicy object applies. The array of
+     ingress rules is applied to any pods selected by this field. Multiple
+     network policies can select the same set of pods. In this case, the ingress
+     rules for each are combined additively. This field is NOT optional and
+     follows standard label selector semantics. An empty podSelector matches all
+     pods in this namespace.
+
+   policyTypes	<[]string>
+     List of rule types that the NetworkPolicy relates to. Valid options are
+     "Ingress", "Egress", or "Ingress,Egress". If this field is not specified,
+     it will default based on the existence of Ingress or Egress rules; policies
+     that contain an Egress section are assumed to affect Egress, and all
+     policies (whether or not they contain an Ingress section) are assumed to
+     affect Ingress. If you want to write an egress-only policy, you must
+     explicitly specify policyTypes [ "Egress" ]. Likewise, if you want to write
+     a policy that specifies that no egress is allowed, you must specify a
+     policyTypes value that include "Egress" (since such a policy would not
+     include an Egress section and would otherwise default to just [ "Ingress"
+     ]). This field is beta-level in 1.8
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain networkpolicy.spec[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl explain networkpolicy.spec --recursive
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+RESOURCE: spec <Object>
+
+DESCRIPTION:
+     Specification of the desired behavior for this NetworkPolicy.
+
+     DEPRECATED 1.9 - This group version of NetworkPolicySpec is deprecated by
+     networking/v1/NetworkPolicySpec.
+
+FIELDS:
+   egress	<[]Object>
+      ports	<[]Object>
+         port	<string>
+         protocol	<string>
+      to	<[]Object>
+         ipBlock	<Object>
+            cidr	<string>
+            except	<[]string>
+         namespaceSelector	<Object>
+            matchExpressions	<[]Object>
+               key	<string>
+               operator	<string>
+               values	<[]string>
+            matchLabels	<map[string]string>
+         podSelector	<Object>
+            matchExpressions	<[]Object>
+               key	<string>
+               operator	<string>
+               values	<[]string>
+            matchLabels	<map[string]string>
+   ingress	<[]Object>
+      from	<[]Object>
+         ipBlock	<Object>
+            cidr	<string>
+            except	<[]string>
+         namespaceSelector	<Object>
+            matchExpressions	<[]Object>
+               key	<string>
+               operator	<string>
+               values	<[]string>
+            matchLabels	<map[string]string>
+         podSelector	<Object>
+            matchExpressions	<[]Object>
+               key	<string>
+               operator	<string>
+               values	<[]string>
+            matchLabels	<map[string]string>
+      ports	<[]Object>
+         port	<string>
+         protocol	<string>
+   podSelector	<Object>
+      matchExpressions	<[]Object>
+         key	<string>
+         operator	<string>
+         values	<[]string>
+      matchLabels	<map[string]string>
+   policyTypes	<[]string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ echo >> [K[K[K>> EOF >> [1P[1P[1@<[1@<[C[C[C[C[C[C[C[Cf11netpl[Kol.yaml 
+> 
+>   podse[K[KSelector:
+>     matchExpressions:
+>       key: value
+> EOF
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;74H(B[0;7m 7 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[A[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[8d [?12l[?25h[?25l [?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[36;68H(B[0;7m[ Read [37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[8;3H[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[37d[1;34H(B[0;7mf11netpol.yaml[1;65HModified  [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[8d  [?12l[?25h[?25l[?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25lS[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25l:[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25lL[?12l[?25h[?25la[?12l[?25h[?25lb[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[10d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lr[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lx[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25l1[?12l[?25h[?25l1[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lp[?12l[?25h[?25l[11d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25l[12d[?12l[?25h[?25l[11;10H[?12l[?25h[?25l:[?12l[?25h[?25l[12d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25l:[?12l[?25h[?25l[13d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25lS[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25l:[?12l[?25h[?25l[14d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25l[K[14;9H[?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25lL[?12l[?25h[?25la[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l[15d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lg[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: f11netpol.yaml                           (B[m[36;35H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 14 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml echo << EOF >> f11netpol.yaml 
+
+  podSelector:
+    matchExpressions:
+      key: value
+EOF
+[A[A[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl explain networkpolicy.spec --recurssive
+[K
+[K
+[K
+[K
+[K[A[A[A[A[A[C[C[C[C[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[9Pnano f11netpol.yaml kubectl explain networkpolicy[9Pnano f11netpol.yaml cc[Kkubectl api-resources | grep cj[K[Kc[Khistory kubectl get --hexplain networkPolicy.apiVersion ---recursive[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kpods[K[1P--h[KnetworkPolicy --recursive[Kcc[Knano f11netpol.yamlkubectl get svc/f11dep -o yaml [3@deploy[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crun f11dep --image=nginx --replicass=2 --port=80 --expose [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kl get deploy/f11deploy
+Error from server (NotFound): deployments.extensions "f11deploy" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy/f11deploy[K[K[K
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+f11dep   2/2     2            2           14m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy/f11dep -o yaml
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2020-04-01T18:48:09Z"
+  generation: 1
+  labels:
+    run: f11dep
+  name: f11dep
+  namespace: default
+  resourceVersion: "506042"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/f11dep
+  uid: b11ebff7-5550-4402-8d54-5c79c6891a48
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 2
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      run: f11dep
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: f11dep
+    spec:
+      containers:
+      - image: nginx
+        imagePullPolicy: Always
+        name: f11dep
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 2
+  conditions:
+  - lastTransitionTime: "2020-04-01T18:48:29Z"
+    lastUpdateTime: "2020-04-01T18:48:29Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: "2020-04-01T18:48:09Z"
+    lastUpdateTime: "2020-04-01T18:48:29Z"
+    message: ReplicaSet "f11dep-598b88ffd8" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 1
+  readyReplicas: 2
+  replicas: 2
+  updatedReplicas: 2
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                 f11netpol.yaml                           [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[8;3HpodSeector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f f11netpol.yaml 
+error: error validating "f11netpol.yaml": error validating data: [ValidationError(NetworkPolicy.metadata): invalid type for io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta: got "string", expected "map", ValidationError(NetworkPolicy.spec): unknown field "podSeector" in io.k8s.api.networking.v1.NetworkPolicySpec, ValidationError(NetworkPolicy.spec): missing required field "podSelector" in io.k8s.api.networking.v1.NetworkPolicySpec]; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f f11netpol.yaml [1Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[8;3HpodSeector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[8;3HpodSeector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[36;67H(B[0;7m[ Read 1[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[8;3HpodSeector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[37d[1;34H(B[0;7mf11netpol.yaml[72G   [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25li[?12l[?25h[?25lV[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l.[?12l[?25h[?25lk[?12l[?25h[?25l8[?12l[?25h[?25ls[?12l[?25h[?25l.[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25l/[?12l[?25h[?25lv[?12l[?25h[?25l1[?12l[?25h[?25l[?12l[?25h[?25l[37d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml [1@kc -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[8;3HpodSeector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25lS[?12l[?25h[?25le[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[8;8Hlector:[9G[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: f11netpol.yaml                           (B[m[36;35H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 14 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml [1@kc -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+error: error validating "f11netpol.yaml": error validating data: ValidationError(NetworkPolicy.metadata): invalid type for io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta: got "string", expected "map"; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f f11netpol.yaml [1Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[36;67H(B[0;7m[ Read 1[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname:access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[37d[1;34H(B[0;7mf11netpol.yaml[72G   [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[6;8H access-nginx[6;9H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: f11netpol.yaml                           (B[m[36;35H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 14 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml [1@kc -f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+networkpolicy.networking.k8s.io/access-nginx created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get netpol
+NAME           POD-SELECTOR   AGE
+access-nginx   run=f11dep     6s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -iit --restart=Never -- wget -O- http://nginx:80                       # Thiss should not work
+^[[A    
+Connecting to nginx:80 (10.96.37.142:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |********************************|   612  0:00:00 ETA
+written to stdout
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -iit --restart=Never -- wget -O- http://nginx:80                       # Thiss should not work[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cakubectl get netpol
+NAME           POD-SELECTOR   AGE
+access-nginx   run=f11dep     36s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get netpol[K[K[K[K[K[Kd[Ksvc/f11dep
+NAME     TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+f11dep   ClusterIP   10.98.165.245   <none>        80/TCP    18m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get svc/f11dep[K[K[K[K[K[K[K[K[K[Kep/f[K[K
+NAME         ENDPOINTS                                            AGE
+f11dep       172.17.0.25:80,172.17.0.26:80                        18m
+f1svc        <none>                                               6d23h
+f3dep        172.17.0.2:80,172.17.0.9:80                          6d22h
+foo          172.17.0.13:8080,172.17.0.17:8080,172.17.0.18:8080   24h
+kubernetes   192.168.99.101:8443                                  46d
+nginx        172.17.0.19:80,172.17.0.23:80                        24h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://f11dep:80
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://f11dep:80[C[C[C[C[C[C[1@ [1@-[1@-[1@l[1@a[1@b[1@e[1@l[1@s[1@=[1@a[1@c[1@c[1@e[1@s[1@s[1@=[1@g[1@r[1@a[1@n[1@t[1@e[1@d[C[1@ 
+Error from server (AlreadyExists): pods "busybox" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl e[Kdelete pod/busybox
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete pod/busyboxrun busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- http://f11dep:80
+Connecting to f11dep:80 (10.98.165.245:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |********************************|   612  0:00:00 ETA
+written to stdout
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- http://f11dep:80[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdelete pod/busybox[Krun busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- http://f11dep:80[25P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Connecting to f11dep:80 (10.98.165.245:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |********************************|   612  0:00:00 ETA
+written to stdout
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano ne[K[Kf11netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname: access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[3d[?12l[?25h[?25l[36d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname: access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname: access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[36;67H(B[0;7m[ Read 1[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname: access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[37d[1;34H(B[0;7mf11netpol.yaml[72G   [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[37d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://f11dep:80[1P:80[1P:80[1P:80[1P:80[1P:80[1P:80[1P:80[1P:80[1P80[1P:80[1P:80[1P:80[1P:8010.98.165.245:80
+Connecting to 10.98.165.245:80 (10.98.165.245:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |********************************|   612  0:00:00 ETA
+written to stdout
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- 10.98.165.245:80[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano f11netpol.yaml [Kkubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://f11dep:80[25@labels=access=granted  --[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P:80[1P:80[1P:80[1P:80[1P:80[1P:80[1P:80[1P:80[1P80[1P:80[1P:80[1P:80[1P:8010.98.165.245:80
+Connecting to 10.98.165.245:80 (10.98.165.245:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |********************************|   612  0:00:00 ETA
+written to stdout
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get svc,pod
+NAME                 TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+service/f11dep       ClusterIP   10.98.165.245    <none>        80/TCP         40m
+service/f1svc        NodePort    10.102.148.164   <none>        80:30669/TCP   7d
+service/f3dep        ClusterIP   10.105.87.61     <none>        80/TCP         6d23h
+service/foo          ClusterIP   10.97.79.96      <none>        6262/TCP       24h
+service/kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP        46d
+service/nginx        ClusterIP   10.96.37.142     <none>        80/TCP         24h
+
+NAME                             READY   STATUS      RESTARTS   AGE
+pod/06nginx                      0/1     Error       0          45d
+pod/07nginx                      0/1     Error       0          45d
+pod/100vol                       0/1     Error       0          32d
+pod/104pvc2b                     0/1     Error       0          32d
+pod/111                          0/1     Error       0          31d
+pod/113                          0/1     Completed   0          31d
+pod/114nginx                     0/1     Completed   0          31d
+pod/117                          0/1     Error       0          30d
+pod/118                          0/1     Error       0          30d
+pod/126                          0/1     Error       0          28d
+pod/131                          0/1     Error       0          28d
+pod/132                          0/1     Error       0          28d
+pod/134                          0/1     Completed   0          25d
+pod/136                          0/1     Completed   0          25d
+pod/137busybox                   0/1     Error       0          25d
+pod/13nginx                      0/1     Completed   1          45d
+pod/140                          0/1     Error       0          25d
+pod/144                          0/1     Error       0          25d
+pod/17shell                      0/1     Error       0          45d
+pod/19bb                         0/1     Completed   0          45d
+pod/21bb                         0/1     Completed   0          45d
+pod/29mc                         0/3     Completed   0          44d
+pod/2busybox1                    0/1     Completed   0          18d
+pod/33busybox1                   0/1     Completed   0          18d
+pod/34mc                         0/2     Error       0          44d
+pod/37-ng-1                      0/1     Error       0          38d
+pod/37-ng-2                      0/1     Error       0          38d
+pod/37-ng-3                      0/1     Error       0          38d
+pod/3busybox1                    0/1     Completed   0          18d
+pod/53busybox1                   0/1     Completed   0          18d
+pod/67dep-7db4cf66f7-2hfgb       1/1     Running     24         33d
+pod/67dep-7db4cf66f7-9wrj7       1/1     Running     24         33d
+pod/67dep-7db4cf66f7-h5g7f       1/1     Running     24         33d
+pod/67dep-7db4cf66f7-m2269       1/1     Running     24         33d
+pod/84job-9gkc8                  0/1     Completed   0          33d
+pod/88job-bx58m                  0/1     Completed   0          33d
+pod/b2mc                         0/2     Completed   0          17d
+pod/bbusybox-1584565440-pqtfb    0/1     Completed   0          13d
+pod/bbusybox-1584565500-bwnbj    0/1     Completed   0          13d
+pod/bbusybox-1584565560-m8p9z    0/1     Completed   0          13d
+pod/busybox-1584565440-bxgcl     0/1     Completed   0          13d
+pod/busybox-1584565500-vzktl     0/1     Completed   0          13d
+pod/busybox-1584565560-vxqrv     0/1     Completed   0          13d
+pod/busybox1                     0/1     Completed   0          18d
+pod/c1a                          0/1     Error       0          17d
+pod/c1b                          0/1     Error       0          17d
+pod/c2-m6cjm                     0/1     Completed   0          17d
+pod/c4-4ntwp                     0/1     Completed   0          17d
+pod/c5job-64cfd                  0/1     Completed   0          13d
+pod/c6job-ldhpl                  0/1     Completed   0          13d
+pod/c6job-vprsm                  0/1     Completed   0          13d
+pod/ca1-66d6b4f974-4dxf6         1/1     Running     11         17d
+pod/ca1-66d6b4f974-dl85x         1/1     Running     11         17d
+pod/ca1a-5799475b87-7xrs5        1/1     Running     11         17d
+pod/ca1a-5799475b87-h7vbr        1/1     Running     11         17d
+pod/ca1a-5799475b87-h9q9t        1/1     Running     11         17d
+pod/ca1a-5799475b87-hkkcj        1/1     Running     11         17d
+pod/ca1a-5799475b87-kmlfd        1/1     Running     11         17d
+pod/ca1a-5799475b87-qch6n        1/1     Running     11         17d
+pod/d10                          0/1     Error       0          12d
+pod/d11sec                       0/1     Error       0          10d
+pod/d12rl                        0/1     Completed   0          9d
+pod/d16                          0/1     Completed   0          9d
+pod/d7                           0/1     Error       0          12d
+pod/d8                           0/1     Error       0          12d
+pod/e1lp                         0/1     Completed   0          9d
+pod/e2lp                         0/1     Error       0          9d
+pod/e3rp                         0/1     Error       0          8d
+pod/e4log                        0/1     Error       0          8d
+pod/e5deb                        0/1     Error       0          8d
+pod/f11dep-598b88ffd8-d2rp9      1/1     Running     0          40m
+pod/f11dep-598b88ffd8-qfsfq      1/1     Running     0          40m
+pod/f1svc                        0/1     Error       0          7d
+pod/f3dep-6b9b97f8c6-7vx4q       1/1     Running     2          6d23h
+pod/f3dep-6b9b97f8c6-xcdtl       1/1     Running     2          6d23h
+pod/foo-688d885f4b-5b2j4         1/1     Running     1          24h
+pod/foo-688d885f4b-ddx2q         1/1     Running     1          24h
+pod/foo-688d885f4b-m7hnf         1/1     Running     1          24h
+pod/hello                        0/1     Error       0          25d
+pod/mysec                        0/1     Error       0          30d
+pod/nginx                        0/1     Error       1          18d
+pod/nginx-7c45b84548-mcdxp       1/1     Running     1          24h
+pod/nginx-7c45b84548-vmzxg       1/1     Running     1          24h
+pod/nginx3                       0/1     Completed   0          9d
+pod/nginxenv                     0/1     Error       0          18d
+pod/not-running                  0/1     Error       0          25d
+pod/rbbusybox-1584565440-j4ssq   0/1     Completed   0          13d
+pod/rbbusybox-1584565500-v775d   0/1     Completed   0          13d
+pod/rbbusybox-1584565560-fh8mz   0/1     Completed   0          13d
+pod/secbusybox                   0/1     Error       0          31d
+pod/test114                      0/1     Completed   0          31d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get svc,podrun busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- 10.98.165.245:80[25P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksh
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jwget --spider --timeout=1 nginx
+Connecting to nginx (10.96.37.142:80)
+remote file exists
+/ # / # wget --spider --timeout=1 nginx[J[J[J[J[J[Jf11e[Jdep
+Connecting to f11dep (10.98.165.245:80)
+remote file exists
+/ # / # wget --spider --timeout=1 f11dep[J[J[J[J[J[J[Jf11dep-598b88ffd8-d2rp9
+wget: bad address 'f11dep-598b88ffd8-d2rp9'
+/ # / # wget --spider --timeout=1 f11dep-598b88ffd8-d2rp9[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[Jo[Jo[Jp
+Connecting to f11dep (10.98.165.245:80)
+remote file exists
+/ # / # wget --spider --timeout=1 f11dep[J[J[J[J[J[J[Jnginx
+Connecting to nginx (10.96.37.142:80)
+remote file exists
+/ # / # wget --spider --timeout=1 nginx[J/ # wget --spider --timeout=1 f11dep[J/ # wget --spider --timeout=1 f11dep-598b88ffd8-d2rp9[J[J[J[J[J[J[J
+wget: bad address 'f11dep-598b88ffd8'
+/ # / # wget --spider --timeout=1 f11dep-598b88ffd8[J[J[J[J[J[J[J[J[J[J[J[J
+Connecting to f11dep (10.98.165.245:80)
+remote file exists
+/ # exxit
+sh: exxit: not found
+/ # exit
+pod "busybox" deleted
+pod default/busybox terminated (Error)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never -- sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cget svc,pod[Krun busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- 10.98.165.245:80[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksh
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jwget --spider --timeout=1 f11dep
+Connecting to f11dep (10.98.165.245:80)
+remote file exists
+/ # / # wget --spider --timeout=1 f11dep[J[J[J[J[J
+wget: bad address 'f1'
+/ # / # wget --spider --timeout=1 f1[J[J[J
+BusyBox v1.31.1 (2020-03-09 21:47:38 UTC) multi-call binary.
+
+Usage: wget [-c|--continue] [--spider] [-q|--quiet] [-O|--output-document FILE]
+	[-o|--output-file FILE] [--header 'header: value'] [-Y|--proxy on/off]
+	[-P DIR] [-S|--server-response] [-U|--user-agent AGENT] [-T SEC] URL...
+
+Retrieve files via HTTP or FTP
+
+	--spider	Only check URL existence: $? is 0 if exists
+	-c		Continue retrieval of aborted transfer
+	-q		Quiet
+	-P DIR		Save to DIR (default .)
+	-S    		Show server response
+	-T SEC		Network read timeout is SEC seconds
+	-O FILE		Save to FILE ('-' for stdout)
+	-o FILE		Log messages to FILE
+	-U STR		Use STR for User-Agent header
+	-Y on/off	Use proxy
+/ # exit
+pod "busybox" deleted
+pod default/busybox terminated (Error)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- sh[1@"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@"
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jwget --spider --timeout=1 nginx
+Connecting to nginx (10.96.37.142:80)
+remote file exists
+/ # w[Jexit
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never --labels="access=granted"  -- sh[2Paccess=granted[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[C[1P
+wget --spider --timeout=1 nginx
+If you don't see a command prompt, try pressing enter.
+/ # [Jwget --spider --timeout=1 nginx
+Connecting to nginx (10.96.37.142:80)
+remote file exists
+/ # exit
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never -- shlabels="access=granted"  -- sh[2Paccess=granted[C[C[C[C[C[C[C sh[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cget svc,pod[Krun busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- 10.98.165.245:80[25P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano f11netpol.yaml [K
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname: access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname: access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[36;67H(B[0;7m[ Read 1[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                       f11[3;1H(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname: access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: granted[37d[1;34H(B[0;7mf11netpol.yaml[72G   [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[A[?12l[?25h[?25l[15;28H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[15;19H"granted[20G[?12l[?25h[?25lg[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l"[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: f11netpol.yaml                           (B[m[36;35H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 14 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete netpol/f11dep
+Error from server (NotFound): networkpolicies.extensions "f11dep" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete netpol/f11dep[K[K[K[K[K[K[K[1Pnetpol[1Pnetpol[1Pnetpol[1Pnetpol[1Pnetpol[1Pnetpol[1Pnetpolgnetpolenetpoltnetpol netpol
+NAME           POD-SELECTOR   AGE
+access-nginx   run=f11dep     50m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get netpoldelete netpol/f11dep[K[K[K[K[K[Kaccess-nginx
+networkpolicy.extensions "access-nginx" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete netpol/access-nginx[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpod/nginx
+pod "nginx" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run nginx --image=nginx --replicas==2 --port=80 --expose
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+Error from server (AlreadyExists): deployments.apps "nginx" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run nginx --image=nginx --replicas==2 --port=80 --expose[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[18Pdelete pod/nginx
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Error from server (NotFound): pods "nginx" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete pod/nginx[C[1P/nginx[1P/nginx[1P/nginx[1P/nginx /nginxd/nginxe/nginxp/nginxl/nginxo/nginxy/nginx
+deployment.extensions "nginx" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run nginx --image=nginx --replicas==2 --port=80 --expose
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/nginx created
+Error from server (AlreadyExists): services "nginx" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run nginx --image=nginx --replicas==2 --port=80 --expose[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[15Pdelete deploy/nginx
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+deployment.extensions "nginx" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete deploy/nginx[1P/nginx[1P/nginx[1P/nginx[1P/nginx[1P/nginx[1P/nginxs/nginxv/nginxc/nginx
+service "nginx" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete svc/nginx[C[C[C[1P/nginx[1P/nginx[1P/nginxp/nginxo/nginxd/nginx
+Error from server (NotFound): pods "nginx" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl delete pod/nginxsvc/nginxdeploy/nginxrun nginx --image=nginx --replicas==2 --port=80 --expose
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+service/nginx created
+deployment.apps/nginx created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl desce[Kribe svc nginx
+Name:              nginx
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          run=nginx
+Type:              ClusterIP
+IP:                10.98.16.229
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         <none>
+Session Affinity:  None
+Events:            <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl fe[Kger[K[K[K[Kget n[Ksvc nginx -o yaml
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-04-01T19:57:26Z"
+  name: nginx
+  namespace: default
+  resourceVersion: "511364"
+  selfLink: /api/v1/namespaces/default/services/nginx
+  uid: d7b6136a-8bb9-40c4-96ce-d23d278c0a84
+spec:
+  clusterIP: 10.98.16.229
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    run: nginx
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get svc nginx -o yaml[3Pdescribe svc nginx
+Name:              nginx
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          run=nginx
+Type:              ClusterIP
+IP:                10.98.16.229
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         172.17.0.19:80,172.17.0.23:80
+Session Affinity:  None
+Events:            <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano fa[Kww[K[K11netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                 f11netpol.yaml                           [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: networking.k8s.io/v1[4dkind: NetworkPolicy[5dmetadata:[6;3Hname: access-nginx[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: f11dep[11;3Hingress:[12;3H- from:[13;5H- podSelector:[14;9HmatchLabels:[15;11Haccess: "granted"[3d[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[3dkapiVersion: networking.k8s.io/v1k[?12l[?25h[?25liapiVersion: networking.k8s.io/v1ki[?12l[?25h[?25lnapiVersion: networking.k8s.io/v1kin[?12l[?25h[?25lnnapiVersion: networking.k8s.io/v1[5G[?12l[?25h[?25ldapiVersion: networking.k8s.io/v1[6G[?12l[?25h[?25l[1P[?12l[?25h[?25l[1Pn[?12l[?25h[?25ldapiVersion: networking.k8s.io/v1[5G[?12l[?25h[?25l:apiVersion: networking.k8s.io/v1[6G[?12l[?25h[?25l[2;35r[2;1HM[1;38r[3;1Hkind:[4d[5P[?12l[?25h[?25l[3;6H[?12l[?25h[?25l [?12l[?25h[?25lN[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25ll[36d[K[3;20H[?12l[?25h[?25li[?12l[?25h[?25lc[?12l[?25h[?25lu[?12l[?25h[?25l [?12l[?25h[?25ly[?12l[?25h[?25l7[4;36r8[4dM[1;38r[4;1H[?12l[?25h[?25l[4;36r[36;1H
+[1;38r[4;1H[?12l[?25h[?25l[5d[?12l[?25h[?25l[5;36r[36;1H
+[1;38r[5;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[4d[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25li[?12l[?25h[?25lV[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l.[?12l[?25h[?25l[5;10H[?12l[?25h[?25l[6;21H[?12l[?25h[?25l[7;6H[?12l[?25h[?25l[8;15H[?12l[?25h[?25l[9ds:[?12l[?25h[?25l[10dp[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lx[?12l[?25h[?25l[11;11H[?12l[?25h[?25l[12d[?12l[?25h[?25l[A:[?12l[?25h[?25l[10;17H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[7;6H[?12l[?25h[?25l[6;17H[?12l[?25h[?25l[5;10H[?12l[?25h[?25l[4;17H[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[3;36r[36;1H
+[1;38r[3;1H[?12l[?25h[?25l[K[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lkind: NetworkPolicy[4dapiVersion: networking.k8s.io/v1[5dmetadata:[6;3Hname: access-nginx # pick a name[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: nginx # selector for the pods[11;3Hingress: # allow ingress traffic[12;3H- from:[13;5H- podSelector: # from pods[14;9HmatchLabels: # with this label[15;11Haccess: granted[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: f11netpol.yaml                           (B[m[36;35H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 13 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create -f f11dep.yaml
+error: the path "f11dep.yaml" does not exist
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create -f f11dep.yaml[9Pnano f11netpol.yaml [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl describe svc nginxget svc nginx -o yaml[3Pdescribe svc nginx[Kkubectl create -f f11dep.yaml[Kkubectl create -f f11dep.yaml[K[K[K[K[K[K[K[Knetpol.yaml 
+networkpolicy.networking.k8s.io/access-nginx created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -iit --restart=Never -- wget -O- http://nginx:80                     [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+Connecting to nginx:80 (10.98.16.229:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |********************************|   612  0:00:00 ETA
+written to stdout
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -iit --restart=Never --labels=access=granted -- wget -O- http://nginx:80[K[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted -- wget -O- http://nginx:80
+Connecting to nginx:80 (10.98.16.229:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |********************************|   612  0:00:00 ETA
+written to stdout
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted -- wget -O- http://nginx:80[24P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksh
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jwget --spider --timeout=1 nginx
+Connecting to nginx (10.98.16.229:80)
+remote file exists
+/ # exit
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never -- shlabels=access=granted -- wget -O- http://nginx:80[24P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kkubectl create -f f11netpol.yaml [4Pdep.yaml[Kkubectl describe svc nginxget svc nginx -o yaml[3Pdescribe svc nginxrun nginx --image=nginx --replicas=2 --port=80 --expose[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdelete pod/nginx[Ksvc/nginxdeploy/nginxrun nginx --image=nginx --replicas=2 --port=80 --expose[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[36Pdelete deploy/nginx[3Psvc/nginxpod/nginxsvc/nginxdeploy/nginxrun nginx --image=nginx --replicas=2 --port=80 --expose[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[36Pdelete deploy/nginx[3Ppod/nginxrun nginx --image=nginx --replicas=2 --port=80 --expose[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdelete pod/nginx[Knetpol/access-nginx[16Pget netpoldelete netpol/access-nginx
+networkpolicy.extensions "access-nginx" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 13 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mkind: NetworkPolicy[4dapiVersion: networking.k8s.io/v1[5dmetadata:[6;3Hname: access-nginx # pick a name[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: nginx # selector for the pods[11;3Hingress: # allow ingress traffic[12;3H- from:[13;5H- podSelector: # from pods[14;9HmatchLabels: # with this label[15;11Haccess: granted[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[15;26H[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[15;26H"[?12l[?25h[?25l[15;19H[?12l[?25h[?25l"granted"[15;20H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: f11netpol.yaml                           (B[m[36;35H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 13 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 13 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mkind: NetworkPolicy[4dapiVersion: networking.k8s.io/v1[5dmetadata:[6;3Hname: access-nginx # pick a name[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: nginx # selector for the pods[11;3Hingress: # allow ingress traffic[12;3H- from:[13;5H- podSelector: # from pods[14;9HmatchLabels: # with this label[15;11Haccess: "granted"[3d[?12l[?25h[?25l[36d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create -g[Kf net[K[K[Kf11netpol.yaml 
+networkpolicy.networking.k8s.io/access-nginx created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create -f f11netpol.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl delete netpol/access-nginxrun busybox --image=busybox --rm -it --restart=Never -- sh
+If you don't see a command prompt, try pressing enter.
+/ # [Jwget --spider --timeout=1 nginx
+Connecting to nginx (10.98.16.229:80)
+remote file exists
+/ # exit
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never -- sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Pcreate -f f11netpol.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl delete netpol/access-nginxrun busybox --image=busybox --rm -it --restart=Never -- shlabels=access=granted -- wget -O- http://nginx:80[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksh
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jwget --spider --timeout=1 nginx
+Connecting to nginx (10.98.16.229:80)
+remote file exists
+/ # exit
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted -- sh sh[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Pcreate -f f11netpol.yaml run busybox --image=busybox --rm -it --restart=Never -- shlabels=access=granted -- sh[1@"[C[1@"
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jwget --spider --timeout=1 nginx
+Connecting to nginx (10.98.16.229:80)
+remote file exists
+/ # exit
+pod "busybox" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get svc 
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+f11dep       ClusterIP   10.98.165.245    <none>        80/TCP         85m
+f1svc        NodePort    10.102.148.164   <none>        80:30669/TCP   7d
+f3dep        ClusterIP   10.105.87.61     <none>        80/TCP         6d23h
+foo          ClusterIP   10.97.79.96      <none>        6262/TCP       25h
+kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP        46d
+nginx        ClusterIP   10.98.16.229     <none>        80/TCP         15m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod [K[K[Kod nginx
+Error from server (NotFound): pods "nginx" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pod nginx[K[K[K[K[K[K[K[K[Kdeploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+67dep    4/4     4            4           33d
+ca1      2/2     2            2           17d
+ca1a     6/6     6            6           17d
+f11dep   2/2     2            2           85m
+f3dep    2/2     2            2           6d23h
+foo      3/3     3            3           25h
+nginx    2/2     2            2           16m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy nginx
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+nginx   2/2     2            2           16m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get deploy nginx[K[K[K[K[K[K[K[K[K[K[K[Kpod
+NAME                         READY   STATUS      RESTARTS   AGE
+06nginx                      0/1     Error       0          45d
+07nginx                      0/1     Error       0          45d
+100vol                       0/1     Error       0          32d
+104pvc2b                     0/1     Error       0          32d
+111                          0/1     Error       0          31d
+113                          0/1     Completed   0          31d
+114nginx                     0/1     Completed   0          31d
+117                          0/1     Error       0          31d
+118                          0/1     Error       0          31d
+126                          0/1     Error       0          28d
+131                          0/1     Error       0          28d
+132                          0/1     Error       0          28d
+134                          0/1     Completed   0          25d
+136                          0/1     Completed   0          25d
+137busybox                   0/1     Error       0          25d
+13nginx                      0/1     Completed   1          45d
+140                          0/1     Error       0          25d
+144                          0/1     Error       0          25d
+17shell                      0/1     Error       0          45d
+19bb                         0/1     Completed   0          45d
+21bb                         0/1     Completed   0          45d
+29mc                         0/3     Completed   0          44d
+2busybox1                    0/1     Completed   0          18d
+33busybox1                   0/1     Completed   0          18d
+34mc                         0/2     Error       0          44d
+37-ng-1                      0/1     Error       0          38d
+37-ng-2                      0/1     Error       0          38d
+37-ng-3                      0/1     Error       0          38d
+3busybox1                    0/1     Completed   0          18d
+53busybox1                   0/1     Completed   0          18d
+67dep-7db4cf66f7-2hfgb       1/1     Running     24         33d
+67dep-7db4cf66f7-9wrj7       1/1     Running     24         33d
+67dep-7db4cf66f7-h5g7f       1/1     Running     24         33d
+67dep-7db4cf66f7-m2269       1/1     Running     24         33d
+84job-9gkc8                  0/1     Completed   0          33d
+88job-bx58m                  0/1     Completed   0          33d
+b2mc                         0/2     Completed   0          17d
+bbusybox-1584565440-pqtfb    0/1     Completed   0          13d
+bbusybox-1584565500-bwnbj    0/1     Completed   0          13d
+bbusybox-1584565560-m8p9z    0/1     Completed   0          13d
+busybox-1584565440-bxgcl     0/1     Completed   0          13d
+busybox-1584565500-vzktl     0/1     Completed   0          13d
+busybox-1584565560-vxqrv     0/1     Completed   0          13d
+busybox1                     0/1     Completed   0          18d
+c1a                          0/1     Error       0          17d
+c1b                          0/1     Error       0          17d
+c2-m6cjm                     0/1     Completed   0          17d
+c4-4ntwp                     0/1     Completed   0          17d
+c5job-64cfd                  0/1     Completed   0          13d
+c6job-ldhpl                  0/1     Completed   0          13d
+c6job-vprsm                  0/1     Completed   0          13d
+ca1-66d6b4f974-4dxf6         1/1     Running     11         17d
+ca1-66d6b4f974-dl85x         1/1     Running     11         17d
+ca1a-5799475b87-7xrs5        1/1     Running     11         17d
+ca1a-5799475b87-h7vbr        1/1     Running     11         17d
+ca1a-5799475b87-h9q9t        1/1     Running     11         17d
+ca1a-5799475b87-hkkcj        1/1     Running     11         17d
+ca1a-5799475b87-kmlfd        1/1     Running     11         17d
+ca1a-5799475b87-qch6n        1/1     Running     11         17d
+d10                          0/1     Error       0          12d
+d11sec                       0/1     Error       0          10d
+d12rl                        0/1     Completed   0          9d
+d16                          0/1     Completed   0          9d
+d7                           0/1     Error       0          13d
+d8                           0/1     Error       0          13d
+e1lp                         0/1     Completed   0          9d
+e2lp                         0/1     Error       0          9d
+e3rp                         0/1     Error       0          9d
+e4log                        0/1     Error       0          9d
+e5deb                        0/1     Error       0          9d
+f11dep-598b88ffd8-d2rp9      1/1     Running     0          85m
+f11dep-598b88ffd8-qfsfq      1/1     Running     0          85m
+f1svc                        0/1     Error       0          7d
+f3dep-6b9b97f8c6-7vx4q       1/1     Running     2          6d23h
+f3dep-6b9b97f8c6-xcdtl       1/1     Running     2          6d23h
+foo-688d885f4b-5b2j4         1/1     Running     1          25h
+foo-688d885f4b-ddx2q         1/1     Running     1          25h
+foo-688d885f4b-m7hnf         1/1     Running     1          25h
+hello                        0/1     Error       0          25d
+mysec                        0/1     Error       0          30d
+nginx-7c45b84548-hc82p       1/1     Running     0          16m
+nginx-7c45b84548-l52dj       1/1     Running     0          16m
+nginx3                       0/1     Completed   0          9d
+nginxenv                     0/1     Error       0          18d
+not-running                  0/1     Error       0          25d
+rbbusybox-1584565440-j4ssq   0/1     Completed   0          13d
+rbbusybox-1584565500-v775d   0/1     Completed   0          13d
+rbbusybox-1584565560-fh8mz   0/1     Completed   0          13d
+secbusybox                   0/1     Error       0          31d
+test114                      0/1     Completed   0          31d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl ds[Kescre[Kibe svc/nginc[Kx
+Name:              nginx
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          run=nginx
+Type:              ClusterIP
+IP:                10.98.16.229
+Port:              <unset>  80/TCP
+TargetPort:        80/TCP
+Endpoints:         172.17.0.19:80,172.17.0.23:80
+Session Affinity:  None
+Events:            <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 13 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       f11netpol.yaml                                                                 [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mkind: NetworkPolicy[4dapiVersion: networking.k8s.io/v1[5dmetadata:[6;3Hname: access-nginx # pick a name[7dspec:[8;3HpodSelector:[9;5HmatchLabels:[10;7Hrun: nginx # selector for the pods[11;3Hingress: # allow ingress traffic[12;3H- from:[13;5H- podSelector: # from pods[14;9HmatchLabels: # with this label[15;11Haccess: "granted"[3d[?12l[?25h[?25l[36d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano f11netpol.yaml kubectl describe svc/nginx[C[C[1P/nginx[1P/nginx[1P/nginxp/nginxo/nginxd/nginx
+Error from server (NotFound): pods "nginx" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl describe pod/nginx[1P/nginx[1P/nginx[1P/nginxd/nginxe/nginxp/nginxl/nginxo/nginxy/nginx
+Name:                   nginx
+Namespace:              default
+CreationTimestamp:      Thu, 02 Apr 2020 00:57:26 +0500
+Labels:                 run=nginx
+Annotations:            deployment.kubernetes.io/revision: 1
+Selector:               run=nginx
+Replicas:               2 desired | 2 updated | 2 total | 2 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  run=nginx
+  Containers:
+   nginx:
+    Image:        nginx
+    Port:         80/TCP
+    Host Port:    0/TCP
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  <none>
+NewReplicaSet:   nginx-7c45b84548 (2/2 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  25m   deployment-controller  Scaled up replica set nginx-7c45b84548 to 2
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ exit
+exit
+
+Script done on 2020-04-02 01:22:55+0500
