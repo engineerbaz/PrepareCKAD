@@ -1,0 +1,95 @@
+Script started on 2020-04-04 21:08:01+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      202003200020	  config.env   f11netpol.yaml
+2003221644    2b1.yaml		  config.txt   f2.yaml
+2003240019    2b.yaml		  d10.yaml     f4netpol.yaml
+2003260012    2rq.yaml		  d11.yaml     g1.yaml
+2004012345    b2mc.yaml		  d12.yaml     g2pvc.yaml
+2004030023    bb.yaml		  d15.yaml     g2pv.yaml
+2004041545    c5job.yaml	  d16.yaml     gitBatch.sh
+2004042103    c6job.yaml	  d7.yaml      gi.txt
+202003141414  c6.yaml		  d8.yaml      kubernetes-metrics-server
+202003141444  c77.yaml		  e1.yaml      README.md
+202003150112  c7cj.yaml		  e2.yaml      rgi.txt
+202003151935  ca1a.yaml		  e3.yaml      username
+202003160010  commandsReview.txt  e4.yaml      username1
+202003182340  config4.txt	  envpod.yaml
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m2004030023[m
+	[31m2004041545[m
+	[31m2004042103[m
+	[31mg1.yaml[m
+	[31mg2pv.yaml[m
+	[31mg2pvc.yaml[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+[master 42f8bcd] update on file .
+ 6 files changed, 4282 insertions(+)
+ create mode 100644 2004030023
+ create mode 100644 2004041545
+ create mode 100644 2004042103
+ create mode 100644 g1.yaml
+ create mode 100644 g2pv.yaml
+ create mode 100644 g2pvc.yaml
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects:  14% (1/7)   Compressing objects:  28% (2/7)   Compressing objects:  42% (3/7)   Compressing objects:  57% (4/7)   Compressing objects:  71% (5/7)   Compressing objects:  85% (6/7)   Compressing objects: 100% (7/7)   Compressing objects: 100% (7/7), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 27.35 KiB | 2.73 MiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0)
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      202003200020	  config.env   f11netpol.yaml
+2003221644    2b1.yaml		  config.txt   f2.yaml
+2003240019    2b.yaml		  d10.yaml     f4netpol.yaml
+2003260012    2rq.yaml		  d11.yaml     g1.yaml
+2004012345    b2mc.yaml		  d12.yaml     g2pvc.yaml
+2004030023    bb.yaml		  d15.yaml     g2pv.yaml
+2004041545    c5job.yaml	  d16.yaml     gitBatch.sh
+2004042103    c6job.yaml	  d7.yaml      gi.txt
+202003141414  c6.yaml		  d8.yaml      kubernetes-metrics-server
+202003141444  c77.yaml		  e1.yaml      README.md
+202003150112  c7cj.yaml		  e2.yaml      rgi.txt
+202003151935  ca1a.yaml		  e3.yaml      username
+202003160010  commandsReview.txt  e4.yaml      username1
+202003182340  config4.txt	  envpod.yaml
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+, .
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	      202003200020	  config.env   f11netpol.yaml
+2003221644    2b1.yaml		  config.txt   f2.yaml
+2003240019    2b.ya
