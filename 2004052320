@@ -1,0 +1,561 @@
+Script started on 2020-04-05 23:18:32+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl get pd[Kod
+NAME                         READY   STATUS      RESTARTS   AGE
+06nginx                      0/1     Error       0          49d
+07nginx                      0/1     Error       0          49d
+100vol                       0/1     Error       0          36d
+104pvc2b                     0/1     Error       0          36d
+111                          0/1     Error       0          35d
+113                          0/1     Completed   0          35d
+114nginx                     0/1     Completed   0          35d
+117                          0/1     Error       0          34d
+118                          0/1     Error       0          34d
+126                          0/1     Error       0          32d
+131                          0/1     Error       0          31d
+132                          0/1     Error       0          31d
+134                          0/1     Completed   0          29d
+136                          0/1     Completed   0          29d
+137busybox                   0/1     Error       0          29d
+13nginx                      0/1     Completed   1          49d
+140                          0/1     Error       0          29d
+144                          0/1     Error       0          29d
+17shell                      0/1     Error       0          49d
+19bb                         0/1     Completed   0          49d
+21bb                         0/1     Completed   0          49d
+29mc                         0/3     Completed   0          48d
+2busybox1                    0/1     Completed   0          22d
+33busybox1                   0/1     Completed   0          22d
+34mc                         0/2     Error       0          48d
+37-ng-1                      0/1     Error       0          42d
+37-ng-2                      0/1     Error       0          42d
+37-ng-3                      0/1     Error       0          42d
+3busybox1                    0/1     Completed   0          22d
+53busybox1                   0/1     Completed   0          22d
+67dep-7db4cf66f7-2hfgb       1/1     Running     28         37d
+67dep-7db4cf66f7-9wrj7       1/1     Running     28         37d
+67dep-7db4cf66f7-h5g7f       1/1     Running     28         37d
+67dep-7db4cf66f7-m2269       1/1     Running     28         37d
+84job-9gkc8                  0/1     Completed   0          36d
+88job-bx58m                  0/1     Completed   0          36d
+b2mc                         0/2     Completed   0          21d
+bbusybox-1584565440-pqtfb    0/1     Completed   0          17d
+bbusybox-1584565500-bwnbj    0/1     Completed   0          17d
+bbusybox-1584565560-m8p9z    0/1     Completed   0          17d
+busybox-1584565440-bxgcl     0/1     Completed   0          17d
+busybox-1584565500-vzktl     0/1     Completed   0          17d
+busybox-1584565560-vxqrv     0/1     Completed   0          17d
+busybox1                     0/1     Completed   0          22d
+c1a                          0/1     Error       0          21d
+c1b                          0/1     Error       0          21d
+c2-m6cjm                     0/1     Completed   0          21d
+c4-4ntwp                     0/1     Completed   0          20d
+c5job-64cfd                  0/1     Completed   0          17d
+c6job-ldhpl                  0/1     Completed   0          17d
+c6job-vprsm                  0/1     Completed   0          17d
+ca1-66d6b4f974-4dxf6         1/1     Running     15         21d
+ca1-66d6b4f974-dl85x         1/1     Running     15         21d
+ca1a-5799475b87-7xrs5        1/1     Running     15         21d
+ca1a-5799475b87-h7vbr        1/1     Running     15         21d
+ca1a-5799475b87-h9q9t        1/1     Running     15         21d
+ca1a-5799475b87-hkkcj        1/1     Running     15         21d
+ca1a-5799475b87-kmlfd        1/1     Running     15         21d
+ca1a-5799475b87-qch6n        1/1     Running     15         21d
+d10                          0/1     Error       0          16d
+d11sec                       0/1     Error       0          14d
+d12rl                        0/1     Completed   0          13d
+d16                          0/1     Completed   0          13d
+d7                           0/1     Error       0          16d
+d8                           0/1     Error       0          16d
+e1lp                         0/1     Completed   0          13d
+e2lp                         0/1     Error       0          12d
+e3rp                         0/1     Error       0          12d
+e4log                        0/1     Error       0          12d
+e5deb                        0/1     Error       0          12d
+f11dep-598b88ffd8-d2rp9      1/1     Running     4          3d23h
+f11dep-598b88ffd8-qfsfq      1/1     Running     4          3d23h
+f1svc                        0/1     Error       0          10d
+f3dep-6b9b97f8c6-7vx4q       1/1     Running     6          10d
+f3dep-6b9b97f8c6-xcdtl       1/1     Running     6          10d
+foo-688d885f4b-5b2j4         1/1     Running     5          4d23h
+foo-688d885f4b-ddx2q         1/1     Running     5          4d23h
+foo-688d885f4b-m7hnf         1/1     Running     5          4d23h
+g1                           0/2     Error       0          2d22h
+hello                        0/1     Error       0          29d
+mysec                        0/1     Error       0          34d
+nginx-7c45b84548-hc82p       1/1     Running     4          3d22h
+nginx-7c45b84548-l52dj       1/1     Running     4          3d22h
+nginx3                       0/1     Completed   0          13d
+nginxenv                     0/1     Error       0          22d
+not-running                  0/1     Error       0          29d
+rbbusybox-1584565440-j4ssq   0/1     Completed   0          17d
+rbbusybox-1584565500-v775d   0/1     Completed   0          17d
+rbbusybox-1584565560-fh8mz   0/1     Completed   0          17d
+secbusybox                   0/1     Error       0          34d
+test114                      0/1     Completed   0          35d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml        202003182340        config4.txt  envpod.yaml
+2003221644    202003200020        config.env   f11netpol.yaml
+2003240019    2b1.yaml            config.txt   f2.yaml
+2003260012    2b.yaml             d10.yaml     f4netpol.yaml
+2004012345    2rq.yaml            d11.yaml     g1.yaml
+2004030023    b2mc.yaml           d12.yaml     g2pvc.yaml
+2004041545    bb.yaml             d15.yaml     g2pv.yaml
+2004042103    c5job.yaml          d16.yaml     gitBatch.sh
+2004052320    c6job.yaml          d7.yaml      gi.txt
+202003141414  c6.yaml             d8.yaml      [0m[01;34mkubernetes-metrics-server[0m
+202003141444  c77.yaml            e1.yaml      README.md
+202003150112  c7cj.yaml           e2.yaml      rgi.txt
+202003151935  ca1a.yaml           e3.yaml      username
+202003160010  commandsReview.txt  e4.yaml      username1
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl ger[Kt po[Kv
+NAME             CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                   STORAGECLASS   REASON   AGE
+myvolume         10Gi       RWO,RWX        Retain           Bound    default/mypvc           normal                  26h
+task-pv-volume   10Gi       RWO            Retain           Bound    default/task-pv-claim   manual                  36d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ckubectl get pvc
+NAME            STATUS   VOLUME           CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+mypvc           Bound    myvolume         10Gi       RWO,RWX        normal         25h
+task-pv-claim   Bound    task-pv-volume   10Gi       RWO            manual         36d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl rub [K[Kn bb bb --[Kimage=busybox [1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C - - r e s t a  [A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr  t = N e v e r [C - - d r y - r u n [C - o [C y a m l [C - - / [1P [C / b i n / s h [C - c [C " s l e e p p [1P [C 3 6 0 0 " [C > [C g 3 . y a m l 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano g3.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    g3.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: bb[9;3Hname: bb[10dspec:[11;3Hcontainers:[12;3H- args:[13;5H- bb[14;5H- /bin/sh[15;5H- -c[16;5H- sleep 3600[17;5Himage: busybox[18;5Hname: bb[19;5Hresources: {}[20;3HdnsPolicy: ClusterFirst[21;3HrestartPolicy: Never[22dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano g3.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    g3.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: bb[9;3Hname: bb[10dspec:[11;3Hcontainers:[12;3H- args:[13;5H- bb[14;5H- /bin/sh[15;5H- -c[16;5H- sleep 3600[17;5Himage: busybox[18;5Hname: bb[19;5Hresources: {}[20;3HdnsPolicy: ClusterFirst[21;3HrestartPolicy: Never[22dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[11;35r[11;1HM[1;38r[11;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[12;35r8[12dM[1;38r[12;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[36d[K[12;6H[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25ly[?12l[?25h[?25lv[?12l[?25h[?25li[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25l7[13;36r8[13dM[1;38r[13;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l7[23;36r8M[1;38r[24;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[22;18H[?12l[?25h[?25l7[23;36r8[23dM[1;38r[23;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25lM[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[24;36r8[24dM[1;38r[24;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25ly[?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25l7[25;36r8[25dM[1;38r[25;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25lP[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l7[26;36r8[26dM[1;38r[26;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lc[?12l[?25h[?25l/[?12l[?25h[?25lf[?12l[?25h[?25lo[?12l[?25h[?25lo[?12l[?25h[?25l[27d[?12l[?25h[?25l[27;36r[36;1H
+[1;38r[26;23H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: g3.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 27 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano g3.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 27 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    g3.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: bb[9;3Hname: bb[10dspec:[11;3Hvolumes:[12;3H- name: myvol[14;3Hcontainers:[15;3H- args:[16;5H- bb[17;5H- /bin/sh[18;5H- -c[19;5H- sleep 3600[20;5Himage: busybox[21;5Hname: bb[22;5Hresources: {}[23;5HvolumeMounts:[24;5H- name: myvol[25;7HhostPath:[26;9Hpath: /etc/foo[27;3HdnsPolicy: ClusterFirst[28;3HrestartPolicy: Never[29dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[16;35r[35;1H
+[1;38r[16;1H[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l [?12l[?25h[?25l[24d[?12l[?25h[?25l[?12l[?25h[?25l[23;18H[?12l[?25h[?25lu[36d[K[23;19H[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: g3.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano g3.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    g3.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: bb[9;3Hname: bb[10dspec:[11;3Hvolumes:[12;3H- name: myvol[14;3Hcontainers:[15;3H- args:[16;5H- /bin/sh[17;5H- -c[18;5H- sleep 3600[19;5Himage: busybox[20;5Hname: bb[21;5Hresources: {}[22;5HvolumeMounts:[23;5H- name: myvolume[24;7HhostPath:[25;9Hpath: /etc/foo[26;3HdnsPolicy: ClusterFirst[27;3HrestartPolicy: Never[28dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano g3.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    g3.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: bb[9;3Hname: bb[10dspec:[11;3Hvolumes:[12;3H- name: myvol[14;3Hcontainers:[15;3H- args:[16;5H- /bin/sh[17;5H- -c[18;5H- sleep 3600[19;5Himage: busybox[20;5Hname: bb[21;5Hresources: {}[22;5HvolumeMounts:[23;5H- name: myvolume[24;7HhostPath:[25;9Hpath: /etc/foo[26;3HdnsPolicy: ClusterFirst[27;3HrestartPolicy: Never[28dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[24;16H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36d[K[24;13H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[24;10HPath:[K[10G[?12l[?25h[?25lPath:[K[9G[?12l[?25h[?25lPath:[K[8G[?12l[?25h[?25lPath:[K[7G[?12l[?25h[?25lmPath:[8G[?12l[?25h[?25loPath:[9G[?12l[?25h[?25luPath:[10G[?12l[?25h[?25lnPath:[11G[?12l[?25h[?25ltPath:[12G[?12l[?25h[?25l[25d[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[8G[?12l[?25h[?25l[1P[7G[?12l[?25h[?25l[1P[6G[?12l[?25h[?25l[1P    [?12l[?25h[?25l[1P   [?12l[?25h[?25l[1P  [?12l[?25h[?25l[1P [?12l[?25h[?25l[1P[?12l[?25h[?25l[25;36r[36;1H
+[1;38r[24;17H/etc/foo[24;17H[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25lh/etc/foo[24;16H[?12l[?25h[?25l:/etc/foo[24;17H[?12l[?25h[?25l /etc/foo[24;18H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[20;13H[?12l[?25h[?25l[19;18H[?12l[?25h[?25l[A[?12l[?25h[?25l[17;9H[?12l[?25h[?25l[16;14H[?12l[?25h[?25l[A[?12l[?25h[?25l[Aers:[?12l[?25h[?25l[13;5H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[12;16H[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l7[13;36r8[13dM[1;38r[13;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lV[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lC[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25lm[?12l[?25h[?25l:[?12l[?25h[?25l7[14;36r8[14dM[1;38r[14;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25lm[?12l[?25h[?25lN[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25ly[?12l[?25h[?25lp[?12l[?25h[?25lv[?12l[?25h[?25lc[?12l[?25h[?25l[15;5H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[15;36r[36;1H
+[1;38r[14;23H[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: g3.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ a[Kkubectl create -f g3.yaml 
+error: error validating "g3.yaml": error validating data: ValidationError(Pod.spec.volumes[0]): unknown field "presistentVolumeClaim" in io.k8s.api.core.v1.Volume; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl create -f g3.yaml [13Pnano[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    g3.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: bb[9;3Hname: bb[10dspec:[11;3Hvolumes:[12;3H- name: myvolume[13;5HpresistentVolumeClaim:[14;7HclaimName: mypvc[15;3Hcontainers:[16;3H- args:[17;5H- /bin/sh[18;5H- -c[19;5H- sleep 3600[20;5Himage: busybox[21;5Hname: bb[22;5Hresources: {}[23;5HvolumeMounts:[24;5H- name: myvolume[25;7HmountPath: /etc/foo[26;3HdnsPolicy: ClusterFirst[27;3HrestartPolicy: Never[28dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[A[?12l[?25h[?25l[15d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25l[13d[?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25l[1;65H(B[0;7mModified[36d(B[m[K[1;73H[13;8HrsistentVolumeClaim:[13;9H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: g3.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ nano g3.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C
+pod/bb created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl exect[K -ti bb [K[K[K[K[K[K[Kbb -ti -- cp /etc/passwd /etc /fonts/[K[K[K[Ko/passwf[Kd
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl exec bb -ti -- cp /etc/passwd /etc//foo/passwd[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl create -f g3.yaml [13Pnano[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    g3.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: bb[9;3Hname: bb[10dspec:[11;3Hvolumes:[12;3H- name: myvolume[13;5HpersistentVolumeClaim:[14;7HclaimName: mypvc[15;3Hcontainers:[16;3H- args:[17;5H- /bin/sh[18;5H- -c[19;5H- sleep 3600[20;5Himage: busybox[21;5Hname: bb[22;5Hresources: {}[23;5HvolumeMounts:[24;5H- name: myvolume[25;7HmountPath: /etc/foo[26;3HdnsPolicy: ClusterFirst[27;3HrestartPolicy: Never[28dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[8;12H[?12l[?25h[?25l[9d[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[9;11H1[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[11;11H[?12l[?25h[?25l[12dm[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17dn/[?12l[?25h[?25l[18;9H[?12l[?25h[?25l[19;12H[?12l[?25h[?25l[36d[K[20;12H[?12l[?25h[?25l[21d[?12l[?25h[?25lb[?12l[?25h[?25l1[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: g3.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f bb1 
+error: the path "bb1" does not exist
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f bb1 [K[K[K[Kg3.yaml 
+pod/bb1 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kc -f g3.yaml [4Pbb1[C[3@nano g3.yaml[Ckubectl exec bb -ti -- cp /etc/passwd /etc//foo/passwd[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K1 -rm -- ls /etc/foo
+Error: unknown shorthand flag: 'r' in -rm
+
+
+Examples:
+  # Get output from running 'date' command from pod mypod, using the first container by default
+  kubectl exec mypod date
+  
+  # Get output from running 'date' command in ruby-container from pod mypod
+  kubectl exec mypod -c ruby-container date
+  
+  # Switch to raw terminal mode, sends stdin to 'bash' in ruby-container from pod mypod
+  # and sends stdout/stderr from 'bash' back to the client
+  kubectl exec mypod -c ruby-container -i -t -- bash -il
+  
+  # List contents of /usr from the first container of pod mypod and sort by modification time.
+  # If the command you want to execute in the pod has any flags in common (e.g. -i),
+  # you must use two dashes (--) to separate your command's flags/arguments.
+  # Also note, do not surround your command and its flags/arguments with quotes
+  # unless that is how you would execute it normally (i.e., do ls -t /usr, not "ls -t /usr").
+  kubectl exec mypod -i -t -- ls -t /usr
+  
+  # Get output from running 'date' command from the first pod of the deployment mydeployment, using the first container by default
+  kubectl exec deploy/mydeployment date
+  
+  # Get output from running 'date' command from the first pod of the service myservice, using the first container by default
+  kubectl exec svc/myservice date
+
+Options:
+  -c, --container='': Container name. If omitted, the first container in the pod will be chosen
+      --pod-running-timeout=1m0s: The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
+  -i, --stdin=false: Pass stdin to the container
+  -t, --tty=false: Stdin is a TTY
+
+Usage:
+  kubectl exec (POD | TYPE/NAME) [-c CONTAINER] [flags] -- COMMAND [args...] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown shorthand flag: 'r' in -rm
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl exec bb1 -rm -- ls /etc/foo[21Pc -f g3.yaml [4Pbb1[C[3@nano g3.yaml[Ckubectl exec bb -ti -- cp /etc/passwd /etc/foo/passwd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano g3.yaml [K[3Pkc -f bb1[C[4@g3.yaml[Cubectl exec bb1 -rm -- ls /etc/foo[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@-[1@t[1@i
+Error: unknown shorthand flag: 'r' in -rm
+
+
+Examples:
+  # Get output from running 'date' command from pod mypod, using the first container by default
+  kubectl exec mypod date
+  
+  # Get output from running 'date' command in ruby-container from pod mypod
+  kubectl exec mypod -c ruby-container date
+  
+  # Switch to raw terminal mode, sends stdin to 'bash' in ruby-container from pod mypod
+  # and sends stdout/stderr from 'bash' back to the client
+  kubectl exec mypod -c ruby-container -i -t -- bash -il
+  
+  # List contents of /usr from the first container of pod mypod and sort by modification time.
+  # If the command you want to execute in the pod has any flags in common (e.g. -i),
+  # you must use two dashes (--) to separate your command's flags/arguments.
+  # Also note, do not surround your command and its flags/arguments with quotes
+  # unless that is how you would execute it normally (i.e., do ls -t /usr, not "ls -t /usr").
+  kubectl exec mypod -i -t -- ls -t /usr
+  
+  # Get output from running 'date' command from the first pod of the deployment mydeployment, using the first container by default
+  kubectl exec deploy/mydeployment date
+  
+  # Get output from running 'date' command from the first pod of the service myservice, using the first container by default
+  kubectl exec svc/myservice date
+
+Options:
+  -c, --container='': Container name. If omitted, the first container in the pod will be chosen
+      --pod-running-timeout=1m0s: The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
+  -i, --stdin=false: Pass stdin to the container
+  -t, --tty=false: Stdin is a TTY
+
+Usage:
+  kubectl exec (POD | TYPE/NAME) [-c CONTAINER] [flags] -- COMMAND [args...] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown shorthand flag: 'r' in -rm
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl exec bb1 -rm -ti -- ls /etc/foo[C[C[C[C[1P[1P[1P[C[1P[1P[1P[1P[C[1P
+passwd
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cckubectl exec bb1 -- ls /etc/foo[8@rm -ti -[C[C[C[C[C[C[C[C[C[C[C[C[C[4P[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pc -f g3.yaml [4Pbb1[C[3@nano g3.yaml[Ckubectl exec bb -ti -- cp /etc/passwd /etc//foo/passwd[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl create -f g3.yaml [13Pnano[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[Ckubectl run bb bb --image=busybox --restartt=Never --dry-run -o yaml -- /bin/sh -c "sleep 3600" > g3.yaml [K[K[K[K[K[K[K[K[K[K[C[C[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=busybox --restart=[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=busybox --restart=N[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--image=busybox --restart=Ne[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Cw --image=busybox --restart=N[1@e[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--image=busybox --restart=Ne[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--image=busybox --restart=Nev[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C2--image=busybox --restart=Ne[1@v[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=busybox --restart=N[1@e[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@s[1@l[1@e[1@e[1@p[1@ [1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1P[1P[1P[C[C[C[C[C[C[C[K[K
+pod/bb2 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl cp bb3[K2:/etc/passwd ./pass[Kswd
+tar: removing leading '/' from member names
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ kubectl cp bb2:/etc/passwd ./passwd[C[1Ppasswd
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ll
+total 2848
+drwxr-xr-x  4 baz baz   4096 Apr  5 23:31 [0m[01;34m.[0m/
+drwxrwxr-x 12 baz baz   4096 Apr  1 00:22 [01;34m..[0m/
+-rw-r--r--  1 baz baz    256 Mar 14 14:46 1.yaml
+-rw-r--r--  1 baz baz  80681 Mar 22 17:35 2003221644
+-rw-r--r--  1 baz baz 315392 Mar 24 01:09 2003240019
+-rw-r--r--  1 baz baz 118784 Mar 26 01:32 2003260012
+-rw-r--r--  1 baz baz 169097 Apr  2 01:22 2004012345
+-rw-r--r--  1 baz baz 102400 Apr  3 00:40 2004030023
+-rw-r--r--  1 baz baz 155648 Apr  5 01:17 2004041545
+-rw-r--r--  1 baz baz  45814 Apr  5 01:37 2004042103
+-rw-r--r--  1 baz baz  36864 Apr  5 23:28 2004052320
+-rw-r--r--  1 baz baz  12235 Mar 14 14:42 202003141414
+-rw-r--r--  1 baz baz 369035 Mar 15 01:11 202003141444
+-rw-r--r--  1 baz baz  70963 Mar 15 02:23 202003150112
+-rw-r--r--  1 baz baz 180286 Mar 15 23:58 202003151935
+-rw-r--r--  1 baz baz  43918 Mar 16 01:36 202003160010
+-rw-r--r--  1 baz baz 758422 Mar 19 02:07 202003182340
+-rw-r--r--  1 baz baz 180224 Mar 20 01:27 202003200020
+-rw-r--r--  1 baz baz     34 Mar 15 01:14 2b1.yaml
+-rw-r--r--  1 baz baz     27 Mar 15 01:15 2b.yaml
+-rw-r--r--  1 baz baz    151 Mar 14 14:54 2rq.yaml
+-rw-r--r--  1 baz baz    389 Mar 15 01:18 b2mc.yaml
+-rw-r--r--  1 baz baz    324 Mar 14 21:00 bb.yaml
+-rw-r--r--  1 baz baz    430 Mar 19 01:17 c5job.yaml
+-rw-r--r--  1 baz baz    370 Mar 19 01:22 c6job.yaml
+-rw-r--r--  1 baz baz    324 Mar 16 00:11 c6.yaml
+-rw-r--r--  1 baz baz    647 Mar 19 01:28 c77.yaml
+-rw-r--r--  1 baz baz    507 Mar 19 01:26 c7cj.yaml
+-rw-r--r--  1 baz baz    429 Mar 15 19:39 ca1a.yaml
+-rw-r--r--  1 baz baz    188 Mar 15 20:01 commandsReview.txt
+-rw-r--r--  1 baz baz     20 Mar 19 01:52 config4.txt
+-rw-r--r--  1 baz baz     42 Mar 19 01:50 config.env
+-rw-r--r--  1 baz baz     19 Mar 19 01:47 config.txt
+-rw-r--r--  1 baz baz    348 Mar 20 01:23 d10.yaml
+-rw-r--r--  1 baz baz    314 Mar 22 17:20 d11.yaml
+-rw-r--r--  1 baz baz    338 Mar 23 07:41 d12.yaml
+-rw-r--r--  1 baz baz    353 Mar 23 13:37 d15.yaml
+-rw-r--r--  1 baz baz    340 Mar 23 14:09 d16.yaml
+-rw-r--r--  1 baz baz    342 Mar 20 00:30 d7.yaml
+-rw-r--r--  1 baz baz    277 Mar 20 00:37 d8.yaml
+-rw-r--r--  1 baz baz    335 Mar 24 00:21 e1.yaml
+-rw-r--r--  1 baz baz    343 Mar 24 00:24 e2.yaml
+-rw-r--r--  1 baz baz    332 Mar 24 00:38 e3.yaml
+-rw-r--r--  1 baz baz    340 Mar 24 00:43 e4.yaml
+-rw-r--r--  1 baz baz    262 Mar 14 14:48 envpod.yaml
+-rw-r--r--  1 baz baz    320 Apr  2 01:06 f11netpol.yaml
+-rw-r--r--  1 baz baz    435 Mar 26 00:35 f2.yaml
+-rw-r--r--  1 baz baz    137 Mar 26 01:32 f4netpol.yaml
+-rw-r--r--  1 baz baz    527 Apr  3 00:37 g1.yaml
+-rw-r--r--  1 baz baz    182 Apr  4 21:29 g2pvc.yaml
+-rw-r--r--  1 baz baz    216 Apr  4 21:06 g2pv.yaml
+-rw-r--r--  1 baz baz    421 Apr  5 23:27 g3.yaml
+drwxr-xr-x  8 baz baz   4096 Apr  5 01:17 [01;34m.git[0m/
+-rw-r--r--  1 baz baz    528 Mar 14 20:20 gitBatch.sh
+-rw-r--r--  1 baz baz    305 Mar 24 01:54 .gitignore
+-rw-r--r--  1 baz baz      7 Mar 23 07:49 gi.txt
+drwxr-xr-x  3 baz baz   4096 Mar 15 20:11 [01;34mkubernetes-metrics-server[0m/
+-rw-r--r--  1 baz baz    340 Apr  5 23:30 passwd
+-rw-r--r--  1 baz baz    340 Apr  5 23:31 .passwd
+-rw-r--r--  1 baz baz    106 Mar 23 07:45 README.md
+-rw-r--r--  1 baz baz      8 Mar 23 07:49 rgi.txt
+-rw-r--r--  1 baz baz      5 Mar 23 13:24 username
+-rw-r--r--  1 baz baz      5 Mar 23 13:25 username1
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml      2004041545    202003151935  2rq.yaml    c77.yaml            config.txt  d7.yaml  envpod.yaml     g2pv.yaml                  README.md
+2003221644  2004042103    202003160010  b2mc.yaml   c7cj.yaml           d10.yaml    d8.yaml  f11netpol.yaml  g3.yaml                    rgi.txt
+2003240019  2004052320    202003182340  bb.yaml     ca1a.yaml           d11.yaml    e1.yaml  f2.yaml         gitBatch.sh                username
+2003260012  202003141414  202003200020  c5job.yaml  commandsReview.txt  d12.yaml    e2.yaml  f4netpol.yaml   gi.txt                     username1
+2004012345  202003141444  2b1.yaml      c6job.yaml  config4.txt         d15.yaml    e3.yaml  g1.yaml         [0m[01;34mkubernetes-metrics-server[0m
+2004030023  202003150112  2b.yaml       c6.yaml     config.env          d16.yaml    e4.yaml  g2pvc.yaml      passwd
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ c [Kd pass[K[K[K[K[K[K[Kcd [K[K[Kls ./ps[Kasswd 
+./passwd
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls ./passwd [C[C[1P[1P[1@c[1@d
+bash: cd: ./passwd: Not a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cd ..
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ ;[Kls
+ 2003312337                     [0m[01;34mckad1[0m                             Commands.txt     f8.yaml  'k8s ommands.txt'       'Things to do for exam CKAD.txt'
+ [01;34mbmuschko_CKAD[0m                 [01;34m'CKAD Preparation'[0m                 [01;34mdany_CKAD[0m        f9.yaml   [01;34mMedium_KimWuestkamp[0m     [01;34myaml_files[0m
+ [01;34mBooks[0m                          ckad-study-guide_1553796139.pdf   f10policy.yaml   [01;34mk8CKAD[0m    practice-cj.yaml.save
+ cheatsheet-kubernetes-A4.pdf   commands_k8s.txt                  f10.yaml         [01;34mK8s[0m       [01;34mtestgh[0m
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ pas
+passwd       paste        pasuspender  
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ pas
+passwd       paste        pasuspender  
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ pas[K[K[Kpas
+passwd       paste        pasuspender  
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ passwd 
+Changing password for baz.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+Password unchanged
+Enter new UNIX password: 
+Retype new UNIX password: 
+Password unchanged
+Enter new UNIX password: 
+Retype new UNIX password: 
+You must choose a longer password
+passwd: Authentication token manipulation error
+passwd: password unchanged
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ cd k8CKAD/
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml      2004041545    202003151935  2rq.yaml    c77.yaml            config.txt  d7.yaml  envpod.yaml     g2pv.yaml                  README.md
+2003221644  2004042103    202003160010  b2mc.yaml   c7cj.yaml           d10.yaml    d8.yaml  f11netpol.yaml  g3.yaml                    rgi.txt
+2003240019  2004052320    202003182340  bb.yaml     ca1a.yaml           d11.yaml    e1.yaml  f2.yaml         gitBatch.sh                username
+2003260012  202003141414  202003200020  c5job.yaml  commandsReview.txt  d12.yaml    e2.yaml  f4netpol.yaml   gi.txt                     username1
+2004012345  202003141444  2b1.yaml      c6job.yaml  config4.txt         d15.yaml    e3.yaml  g1.yaml         [0m[01;34mkubernetes-metrics-server[0m
+2004030023  202003150112  2b.yaml       c6.yaml     config.env          d16.yaml    e4.yaml  g2pvc.yaml      passwd
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ca[Kat passwd 
+root:x:0:0:root:/root:/bin/sh
+daemon:x:1:1:daemon:/usr/sbin:/bin/false
+bin:x:2:2:bin:/bin:/bin/false
+sys:x:3:3:sys:/dev:/bin/false
+sync:x:4:100:sync:/bin:/bin/sync
+mail:x:8:8:mail:/var/spool/mail:/bin/false
+www-data:x:33:33:www-data:/var/www:/bin/false
+operator:x:37:37:Operator:/var:/bin/false
+nobody:x:65534:65534:nobody:/home:/bin/false
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cd ..
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ cd [K[Kat passs[K[K[K[K[K.pas[K[K[K[K[K[K[K[Kls
+ 2003312337                     [0m[01;34mckad1[0m                             Commands.txt     f8.yaml  'k8s ommands.txt'       'Things to do for exam CKAD.txt'
+ [01;34mbmuschko_CKAD[0m                 [01;34m'CKAD Preparation'[0m                 [01;34mdany_CKAD[0m        f9.yaml   [01;34mMedium_KimWuestkamp[0m     [01;34myaml_files[0m
+ [01;34mBooks[0m                          ckad-study-guide_1553796139.pdf   f10policy.yaml   [01;34mk8CKAD[0m    practice-cj.yaml.save
+ cheatsheet-kubernetes-A4.pdf   commands_k8s.txt                  f10.yaml         [01;34mK8s[0m       [01;34mtestgh[0m
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ pas
+passwd       paste        pasuspender  
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ pas
+passwd       paste        pasuspender  
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ pas[K[K[Kcd[Kat .passww[K[K[K[K[K[K[K[K[K[K[Kcat passwd
+cat: passwd: No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC[00m$ cd k8CKAD/
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ c[Kcd k8CKAD/at passwdls[Kcd ..at passwd ls[Kcd k8CKAD/[3Ppasswd ls[Kcd ../passwd ls[C[C[C[C[C[C[C[C[C[C[Klkubectl cp bb2:/etc/passwd .passwd/passwdrun bb2 --image=busybox --restart=Never -- sleep 3600[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pcp bb2:/etc/passwd ./passwd[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kctl exec bb2 -ti -- /bin/sh
+/ # / # [Jls
+[1;34mbin[m   [1;34mdev[m   [1;34metc[m   [1;34mhome[m  [1;34mproc[m  [1;34mroot[m  [1;34msys[m   [1;34mtmp[m   [1;34musr[m   [1;34mvar[m
+/ # cs[Jat /etc/ # cat /etc/[Jpas/ # cat /etc/passwd [J
+root:x:0:0:root:/root:/bin/sh
+daemon:x:1:1:daemon:/usr/sbin:/bin/false
+bin:x:2:2:bin:/bin:/bin/false
+sys:x:3:3:sys:/dev:/bin/false
+sync:x:4:100:sync:/bin:/bin/sync
+mail:x:8:8:mail:/var/spool/mail:/bin/false
+www-data:x:33:33:www-data:/var/www:/bin/false
+operator:x:37:37:Operator:/var:/bin/false
+nobody:x:65534:65534:nobody:/home:/bin/false
+/ # exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat ./passwd 
+root:x:0:0:root:/root:/bin/sh
+daemon:x:1:1:daemon:/usr/sbin:/bin/false
+bin:x:2:2:bin:/bin:/bin/false
+sys:x:3:3:sys:/dev:/bin/false
+sync:x:4:100:sync:/bin:/bin/sync
+mail:x:8:8:mail:/var/spool/mail:/bin/false
+www-data:x:33:33:www-data:/var/www:/bin/false
+operator:x:37:37:Operator:/var:/bin/false
+nobody:x:65534:65534:nobody:/home:/bin/false
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat ./passwd [C[C[1P[1P[1P[1@l[1@l
+-rw-r--r-- 1 baz baz 340 Apr  5 23:30 ./passwd
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ less /etc/passwd
+[?1049h[22;0;0t[?1h=root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:105:111::/run/uuidd:/usr/sbin/nologin
+avahi-autoipd:x:106:112:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:107:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:108:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+rtkit:x:109:114:RealtimeKit,,,:/proc:/usr/sbin/nologin
+cups-pk-helper:x:110:116:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:111:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+whoopsie:x:112:117::/nonexistent:/bin/false
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:114:119::/var/lib/saned:/usr/sbin/nologin
+pulse:x:115:120:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+avahi:x:116:122:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+colord:x:117:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:118:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+[7m/etc/passwd[27m[K[Kgeoclue:x:119:124::/var/lib/geoclue:/usr/sbin/nologin
+gnome-initial-setup:x:120:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:121:125:Gnome Display Manager:/var/lib/gdm3:/bin/false
+baz:x:1000:1000:Baz,,,:/home/baz:/bin/bash
+sshd:x:122:65534::/run/sshd:/usr/sbin/nologin
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t
+[1]+  Stopped                 less /etc/passwd
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	    2004041545	  202003151935	2rq.yaml    c77.yaml		config.txt  d7.yaml  envpod.yaml     g2pv.yaml			README.md
+2003221644  2004042103	  202003160010	b2mc.yaml   c7cj.yaml		d10.yaml    d8.yaml  f11netpol.yaml  g3.yaml			rgi.txt
+2003240019  2004052320	  202003182340	bb.yaml     ca1a.yaml		d11.yaml    e1.yaml  f2.yaml	     gitBatch.sh		username
+2003260012  202003141414  202003200020	c5job.yaml  commandsReview.txt	d12.yaml    e2.yaml  f4netpol.yaml   gi.txt			username1
+2004012345  202003141444  2b1.yaml	c6job.yaml  config4.txt		d15.yaml    e3.yaml  g1.yaml	     kubernetes-metrics-server
+2004030023  202003150112  2b.yaml	c6.yaml     config.env		d16.yaml    e4.yaml  g2pvc.yaml      passwd
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   2004041545[m
+	[31mmodified:   2004042103[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.passwd[m
+	[31m2004052320[m
+	[31mg3.yaml[m
+	[31mpasswd[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+g3.yaml
+[master 4aad1a5] update on file g3.yaml
+ 1 file changed, 26 insertions(+)
+ create mode 100644 g3.yaml
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 510 bytes | 510.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   f1ac303..4aad1a5  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat passwd 
+root:x:0:0:root:/root:/bin/sh
+daemon:x:1:1:daemon:/usr/sbin:/bin/false
+bin:x:2:2:bin:/bin:/bin/false
+sys:x:3:3:sys:/dev:/bin/false
+sync:x:4:100:sync:/bin:/bin/sync
+mail:x:8:8:mail:/var/spool/mail:/bin/false
+www-data:x:33:33:www-data:/var/www:/bin/false
+operator:x:37:37:Operator:/var:/bin/false
+nobody:x:65534:65534:nobody:/home:/bin/false
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cat .passwd 
+root:x:0:0:root:/root:/bin/sh
+daemon:x:1:1:daemon:/usr/sbin:/bin/false
+bin:x:2:2:bin:/bin:/bin/false
+sys:x:3:3:sys:/dev:/bin/false
+sync:x:4:100:sync:/bin:/bin/sync
+mail:x:8:8:mail:/var/spool/mail:/bin/false
+www-data:x:33:33:www-data:/var/www:/bin/false
+operator:x:37:37:Operator:/var:/bin/false
+nobody:x:65534:65534:nobody:/home:/bin/false
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	    2004041545	  202003151935	2rq.yaml    c77.yaml		config.txt  d7.yaml  envpod.yaml     g2pv.yaml			README.md
+2003221644  2004042103	  202003160010	b2mc.yaml   c7cj.yaml		d10.yaml    d8.yaml  f11netpol.yaml  g3.yaml			rgi.txt
+2003240019  2004052320	  202003182340	bb.yaml     ca1a.yaml		d11.yaml    e1.yaml  f2.yaml	     gitBatch.sh		username
+2003260012  202003141414  202003200020	c5job.yaml  commandsReview.txt	d12.yaml    e2.yaml  f4netpol.yaml   gi.txt			username1
+2004012345  202003141444  2b1.yaml	c6job.yaml  config4.txt		d15.yaml    e3.yaml  g1.yaml	     kubernetes-metrics-server
+2004030023  202003150112  2b.yaml	c6.yaml     config.env		d16.yaml    e4.yaml  g2pvc.yaml      passwd
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   2004041545[m
+	[31mmodified:   2004042103[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.passwd[m
+	[31m2004052320[m
+	[31mpasswd[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+passwd
+[master e81e289] update on file passwd
+ 1 file changed, 9 insertions(+)
+ create mode 100644 passwd
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 429 bytes | 429.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   4aad1a5..e81e289  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	    2004041545	  202003151935	2rq.yaml    c77.yaml		config.txt  d7.yaml  envpod.yaml     g2pv.yaml			README.md
+2003221644  2004042103	  202003160010	b2mc.yaml   c7cj.yaml		d10.yaml    d8.yaml  f11netpol.yaml  g3.yaml			rgi.txt
+2003240019  2004052320	  202003182340	bb.yaml     ca1a.yaml		d11.yaml    e1.yaml  f2.yaml	     gitBatch.sh		username
+2003260012  202003141414  202003200020	c5job.yaml  commandsReview.txt	d12.yaml    e2.yaml  f4netpol.yaml   gi.txt			username1
+2004012345  202003141444  2b1.yaml	c6job.yaml  config4.txt		d15.yaml    e3.yaml  g1.yaml	     kubernetes-metrics-ser

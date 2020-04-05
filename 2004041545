@@ -2522,4 +2522,71 @@ drwxrwxr-x 12 baz baz   4096 Apr  1 00:22 [01;34m..[0m/
 -rw-r--r--  1 baz baz    324 Mar 16 00:11 c6.yaml
 -rw-r--r--  1 baz baz    647 Mar 19 01:28 c77.yaml
 -rw-r--r--  1 baz baz    507 Mar 19 01:26 c7cj.yaml
--rw-r--r--  1 baz 
+-rw-r--r--  1 baz baz    429 Mar 15 19:39 ca1a.yaml
+-rw-r--r--  1 baz baz    188 Mar 15 20:01 commandsReview.txt
+-rw-r--r--  1 baz baz     20 Mar 19 01:52 config4.txt
+-rw-r--r--  1 baz baz     42 Mar 19 01:50 config.env
+-rw-r--r--  1 baz baz     19 Mar 19 01:47 config.txt
+-rw-r--r--  1 baz baz    348 Mar 20 01:23 d10.yaml
+-rw-r--r--  1 baz baz    314 Mar 22 17:20 d11.yaml
+-rw-r--r--  1 baz baz    338 Mar 23 07:41 d12.yaml
+-rw-r--r--  1 baz baz    353 Mar 23 13:37 d15.yaml
+-rw-r--r--  1 baz baz    340 Mar 23 14:09 d16.yaml
+-rw-r--r--  1 baz baz    342 Mar 20 00:30 d7.yaml
+-rw-r--r--  1 baz baz    277 Mar 20 00:37 d8.yaml
+-rw-r--r--  1 baz baz    335 Mar 24 00:21 e1.yaml
+-rw-r--r--  1 baz baz    343 Mar 24 00:24 e2.yaml
+-rw-r--r--  1 baz baz    332 Mar 24 00:38 e3.yaml
+-rw-r--r--  1 baz baz    340 Mar 24 00:43 e4.yaml
+-rw-r--r--  1 baz baz    262 Mar 14 14:48 envpod.yaml
+-rw-r--r--  1 baz baz    320 Apr  2 01:06 f11netpol.yaml
+-rw-r--r--  1 baz baz    435 Mar 26 00:35 f2.yaml
+-rw-r--r--  1 baz baz    137 Mar 26 01:32 f4netpol.yaml
+-rw-r--r--  1 baz baz    527 Apr  3 00:37 g1.yaml
+-rw-r--r--  1 baz baz    182 Apr  4 21:29 g2pvc.yaml
+-rw-r--r--  1 baz baz    216 Apr  4 21:06 g2pv.yaml
+drwxr-xr-x  8 baz baz   4096 Apr  4 21:11 [01;34m.git[0m/
+-rw-r--r--  1 baz baz    528 Mar 14 20:20 gitBatch.sh
+-rw-r--r--  1 baz baz    305 Mar 24 01:54 .gitignore
+-rw-r--r--  1 baz baz      7 Mar 23 07:49 gi.txt
+drwxr-xr-x  3 baz baz   4096 Mar 15 20:11 [01;34mkubernetes-metrics-server[0m/
+-rw-r--r--  1 baz baz    106 Mar 23 07:45 README.md
+-rw-r--r--  1 baz baz      8 Mar 23 07:49 rgi.txt
+-rw-r--r--  1 baz baz      5 Mar 23 13:24 username
+-rw-r--r--  1 baz baz      5 Mar 23 13:25 username1
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ ls
+1.yaml      2004041545    202003160010  b2mc.yaml   c7cj.yaml           d10.yaml  d8.yaml      f11netpol.yaml  gitBatch.sh                username1
+2003221644  2004042103    202003182340  bb.yaml     ca1a.yaml           d11.yaml  e1.yaml      f2.yaml         gi.txt
+2003240019  202003141414  202003200020  c5job.yaml  commandsReview.txt  d12.yaml  e2.yaml      f4netpol.yaml   [0m[01;34mkubernetes-metrics-server[0m
+2003260012  202003141444  2b1.yaml      c6job.yaml  config4.txt         d15.yaml  e3.yaml      g1.yaml         README.md
+2004012345  202003150112  2b.yaml       c6.yaml     config.env          d16.yaml  e4.yaml      g2pvc.yaml      rgi.txt
+2004030023  202003151935  2rq.yaml      c77.yaml    config.txt          d7.yaml   envpod.yaml  g2pv.yaml       username
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+1.yaml	    2004041545	  202003160010	b2mc.yaml   c7cj.yaml		d10.yaml  d8.yaml      f11netpol.yaml  gitBatch.sh		  username1
+2003221644  2004042103	  202003182340	bb.yaml     ca1a.yaml		d11.yaml  e1.yaml      f2.yaml	       gi.txt
+2003240019  202003141414  202003200020	c5job.yaml  commandsReview.txt	d12.yaml  e2.yaml      f4netpol.yaml   kubernetes-metrics-server
+2003260012  202003141444  2b1.yaml	c6job.yaml  config4.txt		d15.yaml  e3.yaml      g1.yaml	       README.md
+2004012345  202003150112  2b.yaml	c6.yaml     config.env		d16.yaml  e4.yaml      g2pvc.yaml      rgi.txt
+2004030023  202003151935  2rq.yaml	c77.yaml    config.txt		d7.yaml   envpod.yaml  g2pv.yaml       username
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   2004041545[m
+	[31mmodified:   2004042103[m
+	[31mmodified:   g2pvc.yaml[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+[master f1ac303] update on file .
+ 3 files changed, 675 insertions(+), 3 deletions(
