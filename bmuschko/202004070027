@@ -420,4 +420,2077 @@ writing to stdout
 working. Further configuration is required.</p>
 
 <p>For online documentation and support please refer to
-<a href="http://nginx.or
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |*****************************************************************************************************|   612  0:00:00 ETA
+written to stdout
+/ # / # wget -O- 172.17.0.27:80[J:80[J:80
+Connecting to 172.17.0.2:80 (172.17.0.2:80)
+wget: can't connect to remote host (172.17.0.2): Connection refused
+/ # exit
+pod "bb" deleted
+pod ckad-prep/bb terminated (Error)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs mypod -n ckad-prep
+172.17.0.28 - - [06/Apr/2020:19:40:21 +0000] "GET / HTTP/1.1" 200 612 "-" "Wget" "-"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs mypod -n ckad-prep[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl delete pod mypod --namespace=ckad-prep
+pod "mypod" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ gup
+bash: gitBatch.sh: No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cd [K[K[K~/Q1_CNC/k8CKAD/gup
+bash: /home/baz/Q1_CNC/k8CKAD/gup: No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ~/Q1_CNC/k8CKAD/gup[K[K[KgitBatch.sh
+bash: /home/baz/Q1_CNC/k8CKAD/gitBatch.sh: Permission denied
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ~/Q1_CNC/k8CKAD/gitBatch.shs~/Q1_CNC/k8CKAD/gitBatch.shu~/Q1_CNC/k8CKAD/gitBatch.shd~/Q1_CNC/k8CKAD/gitBatch.sho~/Q1_CNC/k8CKAD/gitBatch.sh ~/Q1_CNC/k8CKAD/gitBatch.sh
+[sudo] password for baz: 
+sudo: /home/baz/Q1_CNC/k8CKAD/gitBatch.sh: command not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cd ..
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+bmuschko  dgkanatsios  gitBatch.sh  kubernetes-metrics-server  logfiles
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mbmuschko/202004070027[m
+	[31mbmuschko/pod-error.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+, .
+[master bcc4457] update on file .
+ 2 files changed, 429 insertions(+)
+ create mode 100644 bmuschko/202004070027
+ create mode 100644 bmuschko/pod-error.txt
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 6.69 KiB | 6.69 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   dcf63d1..bcc4457  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$  ## End 1-core-concepts.md
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ history 
+ 1020  cc
+ 1021  kubectl create configmap d4cm --from-fil=special=config.env
+ 1022  kubectl create configmap d4cm --from-file=special=config.env
+ 1023  kubectl get cm
+ 1024  kubectl get cm d6cn=a=======assssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1025  kubectl get cm d6cm -o yaml
+ 1026  cc
+ 1027  kubectl get cm d6cm -o yamls
+ 1028  kubectl get cm
+ 1029  host
+ 1030  history 
+ 1031  kubectl create configmap d4cm --from-file=speciassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1032  cc
+ 1033  kubectl create configmap d4cm --from-file=special=config.txt
+ 1034  kubectl create configmap d5cm --from-file=special=config.txt
+ 1035  kubectl get cm
+ 1036  kubectl get cm d5cm - oyaml
+ 1037  kubectl get cm d5cm -o yaml
+ 1038  kubectl get cm d4cm -o yaml
+ 1039  kubectl get cm d3cm -o yaml
+ 1040  kubectl get cm d33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333cm -o yaml
+ 1041  kubectl get cm d2cm -o yaml
+ 1042  bash gitBatch.sh 
+ 1043  minikube stop
+ 1044  exit
+ 1045  minikube sart
+ 1046  minikube start
+ 1047  ll
+ 1048  ls
+ 1049  cc
+ 1050  ls
+ 1051  script 202003182340
+ 1052  exit
+ 1053  minikube start
+ 1054  bash gitBatch.sh 
+ 1055  git add .
+ 1056  git commit -m "new update of 18"
+ 1057  cc
+ 1058  ls
+ 1059  script 202003200020
+ 1060  cc
+ 1061  l
+ 1062  ls
+ 1063  locate *.env
+ 1064  ll
+ 1065  kubectl get cm
+ 1066  ll d*
+ 1067  ll c*
+ 1068  history 
+ 1069  cc
+ 1070  kubectl get cm
+ 1071  cc
+ 1072  kubectl create cm options --from-literal=var5=val5
+ 1073  kubectl get cm
+ 1074  kubectl get configMap options
+ 1075  kubectl get configMap options -o yaml
+ 1076  cc
+ 1077  kubectl run d7 --image=nginx --restart=Never --dry-run -o yaml > d7.yaml
+ 1078  nano d7.yaml 
+ 1079  kubectl explain pod.spec.env --recursive
+ 1080  kubectl explain pod.spec.containers.env --recursive
+ 1081  nano d7.yaml 
+ 1082  kubectl explain pod.spec.containers.env --recursive
+ 1083  nano d7.yaml 
+ 1084  kubectl explain pod.spec.containers.env --recursive
+ 1085  kubectl explain pod.spec.containers.env
+ 1086  nano d7.yaml 
+ 1087  kubectl create -f d7.yaml 
+ 1088  kubectl get pod/d7
+ 1089  kubectl logs pod/d7
+ 1090  kubectl exec -ti d7 -- env
+ 1091  alias kc="kubectl create"
+ 1092  kc
+ 1093  kc cm another --from-literal=var6=val6 --from-literal=var7=val7
+ 1094  k get cm
+ 1095  k run d8 --image=nginx --restart=Never --dry-run -o yaml > d8.yaml
+ 1096  kubectl explain pod.spec.containers.
+ 1097  kubectl explain pod.spec.containers.envFrom
+ 1098  kubectl explain pod.spec.containers.envFrom.confgMapRef
+ 1099  kubectl explain pod.spec.containers.envFrom --recursive
+ 1100  nano d8.yaml 
+ 1101  kc -f d8.yaml 
+ 1102  k get pod/d8
+ 1103  k logs pod/d8
+ 1104  k get pod/d8
+ 1105  kubectl exec -ti d8 -- env
+ 1106  kubectl exec -ti d7 -- env
+ 1107  nano d7.yaml 
+ 1108  cc
+ 1109  bash gitBatch.sh 
+ 1110  git push origin master 
+ 1111  bash gitBatch.sh 
+ 1112  cc
+ 1113  kubectl explain pod.spec.containers.volume --recursive
+ 1114  kubectl explain pod.spec.containers --recursive
+ 1115  kubectl explain pod.spec --recursive
+ 1116  kubectl explain pod.spec.volumes
+ 1117  cc
+ 1118  kc cmvol --from-literal=var8=val8 --from-literal=var9=val9 
+ 1119  kc cm cmvol --from-literal=var8=val8 --from-literal=var9=val9 
+ 1120  k get cm
+ 1121  cc
+ 1122  kubectl run d10 --image=nginx --restart=Never --dry-run -o yaml > d10.yaml
+ 1123  nano d10.yaml 
+ 1124  kubectl explain pod.spec.volumes
+ 1125  kubectl explain pod.spec.volumes.configMap
+ 1126  kubectl explain pod.spec.volumes.configMap --recursive
+ 1127  nano d10.yaml 
+ 1128  kc -f d10.yaml 
+ 1129  nano d10.yaml 
+ 1130  kc -f d10.yaml 
+ 1131  nano d10.yaml 
+ 1132  kubectl explain pod.spec.volumes.name
+ 1133  nano d10.yaml 
+ 1134  kubectl explain pod.spec.volumes.name
+ 1135  kc -f d10.yaml 
+ 1136  k get pod 
+ 1137  k get pod d10
+ 1138  kubectl exec -ti d10 -- /bin/sh
+ 1139  bash gitBash
+ 1140  bash gitBash.sh
+ 1141  bash gitBatch.sh 
+ 1142  kubectl explain pod.spec.volumes.name
+ 1143  kubectl explain pod.spec.volumes
+ 1144  bash gitBatch.sh 
+ 1145  cc
+ 1146  ls
+ 1147  kubectl get cm
+ 1148  cc
+ 1149  kubectl explain pod.spec.securityContext --reciursive
+ 1150  kubectl explain pod.spec.securityContext --recursive
+ 1151  cc
+ 1152  kubectl explain pod.spec.securityContext --recursivef
+ 1153  nano gitBatch.sh 
+ 1154  echo "tell vari"&& read vr&& echo "kubectl get $vr
+ 1155  pod
+ 1156  echo "tell vari"&& read vr&& echo "kubectl get $vr"
+ 1157  kubectl get pod
+ 1158  echo "tell vari"&& read vr&& echo "kubectl get $vr"
+ 1159  kubectl get $vr
+ 1160  alias kgx="kubectl get $(read vr1)"
+ 1161  kgx
+ 1162  alias kgx="kubectl get && $(read vr1)"
+ 1163  kgx pod
+ 1164  kgx cm
+ 1165  echo "kubectl get $(read vr1)"
+ 1166  echo "kubectl get && $(read vr1)"
+ 1167  echo "kubectl get "&& "$(read vr1)"
+ 1168  echo "kubectl get "&&read vr1
+ 1169  alias kgx=read vr1&&echo "kubectl get $vr1
+ 1170  cm
+ 1171  alias kgx=read vr1&&echo "kubectl get $vr1"
+ 1172  alias kgx="read vr1"&&echo "kubectl get $vr1"
+ 1173  alias gup="bash gitBash.sh"
+ 1174  gup
+ 1175  bash gitBash.sh
+ 1176  alias gup="bash gitBatch.sh "
+ 1177  gup
+ 1178  alias gup="bash gitBatch.sh "cc
+ 1179  gup
+ 1180  cc
+ 1181  kubectl explain pod.spec.securityContext
+ 1182  kubectl explain pod.spec.securityContext --recursive
+ 1183  kubectl explain pod.spec.containers.securityContext --recursive
+ 1184  cc
+ 1185  kubectl run d11sec --image=nginx --resatrt=Never --dry-run - oyaml > d11.yaml
+ 1186  kubectl run d11sec --image=nginx --resatrt=Never --dry-run -o yaml > d11.yaml
+ 1187  kubectl run d11sec --image=nginx --restart=Never --dry-run - oyaml > d11.yaml
+ 1188  nano d11.yaml 
+ 1189  kubectl run d11sec --image=nginx --restart=Never --dry-run -o yaml > d11.yaml
+ 1190  nano d11.yaml 
+ 1191  kubectl create -f d11.yaml 
+ 1192  kubectl get pod d11
+ 1193  kubectl get pod d11sec
+ 1194  cc
+ 1195  gup
+ 1196  cc
+ 1197  kubectl get apiservices
+ 1198  cc
+ 1199  kubectl explain pod.spec.containers.resources --recursive
+ 1200  kubectl explain pod.spec.containers.resources 
+ 1201  exit
+ 1202  minikube start
+ 1203  script 2003221644
+ 1204  minikube start
+ 1205  gup
+ 1206  nano ~/.bashrc 
+ 1207  gup
+ 1208  nano ~/.bashrc 
+ 1209  gup
+ 1210  nano ~/.bashrc 
+ 1211  gup
+ 1212  nano ~/.bashrc 
+ 1213  gup
+ 1214  bash gitBatch.sh 
+ 1215  nano ~/.bashrc 
+ 1216  kga
+ 1217  cc
+ 1218  kga
+ 1219  . ~/.bashrc
+ 1220  kga
+ 1221  gup
+ 1222  cc
+ 1223  kga
+ 1224  c
+ 1225  cc
+ 1226  nano ~/.bashrc 
+ 1227  ll
+ 1228  cc
+ 1229  ls
+ 1230  nano gitBatch.sh 
+ 1231  cc
+ 1232  kubectl run d12rl --image=nginx --restart=Never --dry-run - oyam > d12.yaml
+ 1233  nano d12.yaml 
+ 1234  kubectl run d12rl --image=nginx --restart=Never --dry-run - oyaml >> d12.yaml
+ 1235  nano d12.yaml 
+ 1236  rm d12.yaml 
+ 1237  kubectl run d12rl --image=nginx --restart=Never --dry-run -o yaml >> d12.yaml
+ 1238  nano d12.yaml 
+ 1239  kubectl create -f d12.yaml 
+ 1240  kga
+ 1241  kubectl get d12rl
+ 1242  kubectl get po d12rl
+ 1243  kubectl describe pod d12rl
+ 1244  kubectl run nginx --image=nginx --restart=Never --requests='cpu=100m,memory=256Mi' --limits='cpu=200m,memory=512Mi'
+ 1245  kubectl run nginx3 --image=nginx --restart=Never --requests='cpu=100m,memory=256Mi' --limits='cpu=200m,memory=512Mi'
+ 1246  kubectl get po nginx3
+ 1247  kubectl get po nginx3 -w
+ 1248  kubectl describe pod nginx
+ 1249  nano d12.yaml 
+ 1250  kubectl delete pod/d12rl
+ 1251  kubectl create -f d12.yaml 
+ 1252  kubectl get d12rl
+ 1253  kubectl get pod d12rl
+ 1254  kubectl describe pod d12rl
+ 1255  nano d12.yaml 
+ 1256  kubectl delete pod/d12rl
+ 1257  kubectl create -f d12.yaml 
+ 1258  kubectl get pod d12rl
+ 1259  kubectl get pod d12rl -w
+ 1260  kubectl delete pod/d12rl
+ 1261  nano d12.yaml 
+ 1262  kubectl create -f d12.yaml 
+ 1263  kubectl get pod d12rl -w
+ 1264  kubectl delete pod/d12rl
+ 1265  nano d12.yaml 
+ 1266  kubectl create -f d12.yaml 
+ 1267  kubectl get pod d12rl -w
+ 1268  kubectl exec -ti d12rl 
+ 1269  kubectl exec -ti d12rl -- sh
+ 1270  cc
+ 1271  gup
+ 1272  ls
+ 1273  cat commandsReview.txt 
+ 1274  cat README.md 
+ 1275  echo "Practice only" >> README.md 
+ 1276  gup
+ 1277  cc
+ 1278  git status
+ 1279  git config 
+ 1280  git config --show-origin 
+ 1281  git config --global 
+ 1282  git config --global --get-all 
+ 1283  git config -h
+ 1284  git config -l
+ 1285  ls
+ 1286  ll
+ 1287  ls .git/
+ 1288  touch .gitignore
+ 1289  echo "gi.txt" > .gitignore
+ 1290  cat .gitignore 
+ 1291  echo "gi.txt" > gi.txt
+ 1292  echo "rgi.txt" > rgi.txt
+ 1293  gup
+ 1294  cc
+ 1295  nano gitBatch.sh 
+ 1296  gup
+ 1297  cc
+ 1298  gup
+ 1299  cc
+ 1300  kubectl create secret -h
+ 1301  kubectl create secret generic --help
+ 1302  cc
+ 1303  minikube status
+ 1304  minikube stop
+ 1305  minikube start
+ 1306  cc
+ 1307  kubectl get secret
+ 1308  kubectl create secret generic d13sec --from-literal=password=mypass
+ 1309  kubectl get secret
+ 1310  kubectl get secret d13sec -o yaml
+ 1311  echo -n admin > username
+ 1312  cat usernam
+ 1313  kubectl create secret generic d13sec 4sec --from-file=username
+ 1314  echo -n admin > username1
+ 1315  kubectl create secret generic d13sec 4sec --from-file=username1
+ 1316  cc
+ 1317  kubectl create secret generic d14sec --from-file=username1
+ 1318  kubectl get secret
+ 1319  kubectl get secret d14sec -o yaml
+ 1320  cc
+ 1321  kubectl get secret d14sec -o yaml
+ 1322  echo YWRtaW4= | base64 -d
+ 1323  echo YWRtaW4 | base64 -d
+ 1324  gup
+ 1325  cc
+ 1326  echo YWRtaW4= | base64 -d
+ 1327  cc
+ 1328  kubectl explain pod.spec.volume.secret
+ 1329  kubectl explain pod.spec.volumes.secret
+ 1330  kubectl explain pod.spec.volumes.secret --recursive
+ 1331  kubectl explain pod.spec.containers.volumeMount.secret
+ 1332  kubectl explain pod.spec.containers.volumeMounts.secret
+ 1333  kubectl explain pod.spec.containers.volumeMount.secret
+ 1334  kubectl explain pod.spec.containers.volumeMount
+ 1335  kubectl explain pod.spec.containers --recursive
+ 1336  kubectl explain pod.spec.containers.volumeMountcc
+ 1337  cc
+ 1338  kubectl run d15 --image=nginx --restart=Never --dry-run -o yaml
+ 1339  kubectl run d15 --image=nginx --restart=Never --dry-run -o yaml > d15.yaml
+ 1340  nano d15.yaml 
+ 1341  kubectl get secret
+ 1342  kubectl create -f d15.yaml 
+ 1343  kubectl get pod/d15
+ 1344  kubectl exec -ti d15
+ 1345  kubectl exec -ti d15 -- sh
+ 1346  gup
+ 1347  cc
+ 1348  kubectl run d16 --image=nginx --restart=Never --dry-run -o yaml > d16.yaml
+ 1349  nano d16.yaml 
+ 1350  kubectl delete pod/d15sec
+ 1351  kubectl get pod 
+ 1352  kubectl delete pod/d15
+ 1353  nano d16.yaml 
+ 1354  cc
+ 1355  kubectl explain pod.spec.containers --recursive
+ 1356  kubectl explain pod.spec.containers --recursive | grep -i 3
+ 1357  kubectl explain pod.spec.containers --recursive | grep -i 3 env
+ 1358  kubectl explain pod.spec.containers --recursive | grep env
+ 1359  kubectl explain pod.spec.containers --recursive | grep -i3 env
+ 1360  kubectl explain pod.spec.containers
+ 1361  nano d16.yaml 
+ 1362  kubectl explain pod.spec.containers --recursive | grep -i3 env
+ 1363  nano d16.yaml 
+ 1364  kubectl explain pod.spec.containers --recursive | grep -i7 env
+ 1365  kubectl explain pod.spec.containers --recursive | grep -i9 env
+ 1366  nano d16.yaml 
+ 1367  kubectl create -f d16.yaml 
+ 1368  kubectl get pod/d16
+ 1369  kubectl describe pod/d16
+ 1370  kubectl get secret
+ 1371  kubectl delete pod/d16
+ 1372  nano d16.yaml 
+ 1373  kubectl create -f d16.yaml 
+ 1374  kubectl get secret
+ 1375  kubectl delete pod/d16
+ 1376  kubectl create -f d16.yaml 
+ 1377  kubectl get pod/d16
+ 1378  kubectl describe pod/d16
+ 1379  kubectl exec -ti d16 -- sh
+ 1380  cat d16.yaml 
+ 1381  kubectl exec -ti d16 -- env
+ 1382  kubectl exec -ti d16 -- env | grep username
+ 1383  kubectl exec -ti d16 -- env | grep username1
+ 1384  kubectl exec -ti d16 -- sh
+ 1385  cc
+ 1386  kubectl explain pod.spec.serviceAccountName
+ 1387  kubectl explain pod.spec.serviceAccountName --recursive
+ 1388  cc
+ 1389  gup
+ 1390  cc
+ 1391  kubectl explain pod.spec.livenessProbe
+ 1392  kubectl explain pod.spec.containers.livenessProbe
+ 1393  kubectl explain pod.spec.containers.livenessProbe --recursive
+ 1394  cc
+ 1395  kubectl run e1lp --image=nginx --restart=Never --dry-run -o yaml > e1.yaml
+ 1396  nano e1.yaml 
+ 1397  kubectl explain pod.spec.containers.livenessProbe --recursive
+ 1398  kubectl explain pod.spec.containers.livenessProbe 
+ 1399  nano e1.yaml 
+ 1400  alias kc="k create "
+ 1401  kc -f d16.yaml 
+ 1402  kc -f e1.yaml 
+ 1403  k get pod/e1
+ 1404  kubectl get pod 
+ 1405  k get pod/e1lp
+ 1406  kubectl describe pod/e1lp
+ 1407  kubectl describe pod/e1lp | grep livenessProbe
+ 1408  kubectl describe pod/e1lp | grep liveness
+ 1409  kubectl describe pod/e1lp | grep -i liveness
+ 1410  cc
+ 1411  gup
+ 1412  minikube status
+ 1413  minikube stop
+ 1414  minikube start
+ 1415  cat e1.yaml 
+ 1416  script 2003240019
+ 1417  cc
+ 1418  cat e1.yaml 
+ 1419  kga
+ 1420  cc
+ 1421  kubectl explain pod.spec.containers --recursive
+ 1422  kubectl explain pod.spec.containers --recursive | grep start
+ 1423  nano e1.yaml 
+ 1424  history | grep alias
+ 1425  kc e2.yaml 
+ 1426  alias kc="kubectl create "
+ 1427  kc -f e2.yaml 
+ 1428  nano e1.yaml 
+ 1429  nano e2.yaml 
+ 1430  kc -f e2.yaml 
+ 1431  kubectl get pod/e2lp
+ 1432  kubectl get pod/e2lp -w
+ 1433  kubectl describe pod/e2lp
+ 1434  kubectl describe pod/e2lp | grep -i liveness
+ 1435  kubectl explain pod.spec.containers.livenessProbe # get the exact names
+ 1436  cc
+ 1437  kubectl explain --help
+ 1438  cc
+ 1439  kubectl explain pod.spec.containers.readinessProbe
+ 1440  kubectl explain pod.spec.containers.readinessProbe.httpGet
+ 1441  kubectl explain pod.spec.containers.readinessProbe.httpGet --recursive
+ 1442  kubectl run e3rp --image=nginx --restart=Never --dry-run -o yaml > e3.yaml
+ 1443  vim e3.yaml 
+ 1444  sudo apt-get install vim
+ 1445  vim e3.yaml 
+ 1446  cc
+ 1447  vim e3.yaml 
+ 1448  nano e2.yaml 
+ 1449  vim e3.yaml 
+ 1450  kubectl explain pod.spec.containers.readinessProbe.httpGet --recursive
+ 1451  kubectl explain pod.spec.containers.readinessProbe --recursive
+ 1452  vim e3.yaml 
+ 1453  kc -f e3.yaml 
+ 1454  kubectl get pod/e3rp
+ 1455  kubectl describe pod/e3rp
+ 1456  cc
+ 1457  nano ~/.bashrc
+ 1458  gup
+ 1459  cc
+ 1460  kubectl run e4log --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done > e4.yaml
+ 1461  kubectl run e4log --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done' > e4.yaml
+ 1462  nano e4.yaml 
+ 1463  kc -f e4.yaml 
+ 1464  kubectl get pod/e4log
+ 1465  kubectl logs pod/e4log
+ 1466  cc
+ 1467  kubectl run e5deb --image=busybox --restart=Never -- /bin/sh -c 'ls /notexist'
+ 1468  kubectl get pod/e5deb
+ 1469  kubectl get pod/e5deb -w
+ 1470  kubectl get pod/e5deb
+ 1471  kubectl logs pod/e5deb
+ 1472  kubectl describe pod/e5deb
+ 1473  kubectl describe pod/e5deb | grep -i not
+ 1474  cc
+ 1475  kubectl describe pod/e5deb | grep -i error
+ 1476  kubectl describe pod/e5deb 
+ 1477  cc
+ 1478  kubectl top nodes
+ 1479  kubectl top pod
+ 1480  gup
+ 1481  sudo apt-get update & apt-get upgrade
+ 1482  sudo apt-get update && apt-get upgrade
+ 1483  sudo apt-get upgrade
+ 1484  cc
+ 1485  minikube status
+ 1486  kubectl run f1svc --image=nginx --restart=Never --port=80 --export
+ 1487  kubectl run f1svc --image=nginx --restart=Never --port=80 --expose
+ 1488  exit
+ 1489  rm 20200325-1-7 
+ 1490  ls
+ 1491  mv e1.yaml.save .gitignore 
+ 1492  gup
+ 1493  cat gi.txt 
+ 1494  ll 
+ 1495  ll gi.txt 
+ 1496  exit
+ 1497  minikube start
+ 1498  la
+ 1499  ls
+ 1500  cc
+ 1501  ls
+ 1502  ll
+ 1503  gup
+ 1504  kubectl get pod
+ 1505  kubectl get pod f1sv
+ 1506  kubectl get pod f1svc
+ 1507  kubectl describe pod/f1svc
+ 1508  script 20200325-1-7
+ 1509  script 202003250107
+ 1510  rm 202003250107
+ 1511  exit
+ 1512  kc -f f2.yaml 
+ 1513  kubectl get pod -l app=foo -o wide
+ 1514  kubectl get pod -l app=foo -o wide -w
+ 1515  kubectl run busybox --image=busybox --restart=Never -ti --rm -- sh
+ 1516  kubectl delete pod/busybox
+ 1517  kubectl run busybox --image=busybox --restart=Never -ti --rm -- sh
+ 1518  cc
+ 1519  kubectl expose deploy foo --port=6262 --target-port=8080
+ 1520  kubectl get svc
+ 1521  kubectl ep foo
+ 1522  kubectl get ep foo
+ 1523  kubectl get svc foo -o yaml
+ 1524  cc
+ 1525  kubectl get svc
+ 1526  kubectl get pod busybox
+ 1527  c
+ 1528  cc
+ 1529  kubectl get svc
+ 1530  kubectl run busybox --image=busybox -it --rm --restart=Never -- sh
+ 1531  kubectl delete pod/busybox
+ 1532  docker images
+ 1533  docker image ls
+ 1534  history | docker
+ 1535  history | grep docker
+ 1536  cc
+ 1537  kubectl run busybox --image=busybox -it --rm --restart=Never -- sh
+ 1538  kubectl get pod
+ 1539  kubectl logs pod/foo-688d885f4b-m9zmp
+ 1540  cc
+ 1541  kubectl f3dep --image=nginx --replicas=2 --port=80 --expose
+ 1542  kubectl run f3dep --image=nginx --replicas=2 --port=80 --expose
+ 1543  kubectl describe svc fedep
+ 1544  kubectl describe svc f3dep
+ 1545  cc
+ 1546  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1547  kubectl delete deploy/nginx
+ 1548  kubectl delete svc/nginx
+ 1549  cc
+ 1550  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1551  kubectl describe svc nginx
+ 1552  kubectl describe svc f3dep
+ 1553  kubectl describe svc nginx
+ 1554  cc
+ 1555  kubectl describe svc nginx
+ 1556  kubectl api-resources
+ 1557  kubectl api-resources | grep network
+ 1558  kubectl explain netpol --recursive
+ 1559  echo <<EOF >>  f4netpol.yaml
+ 1560  apiVersion: extensions/v1beta1
+ 1561  kind: NetworkPolicy
+ 1562  metadata:
+ 1563    name: netpol
+ 1564  spec:
+ 1565    podSelector:
+ 1566      matchLabels:
+ 1567        access: granted
+ 1568  EOF
+ 1569  cat f4netpol.yaml 
+ 1570  nano f4netpol.yaml 
+ 1571  exit
+ 1572  minikube start
+ 1573  cc
+ 1574  script 2003260012
+ 1575  gup
+ 1576  cc
+ 1577  kubectl getpod
+ 1578  kubectl get pod
+ 1579  kubectl get pod f1svc
+ 1580  kubectl delete  pod/f1svc
+ 1581  cc
+ 1582  kubectl run f1svc --image=nginx --restart=Never --port=80 --expose
+ 1583  kubectl delete  pod/f1svc
+ 1584  kubectl get svc
+ 1585  kubectl delete svc f1svc
+ 1586  cc
+ 1587  kubectl run f1svc --image=nginx --restart=Never --port=80 --expose
+ 1588  kubectl get svc
+ 1589  kubectl ep
+ 1590  kubectl get ep
+ 1591  cc
+ 1592  kubectl get svc f1svc
+ 1593  kubectl run f1bb --image=busybox --restart=Never 
+ 1594  kubectl exec -ti -sh
+ 1595  kubectl exec -ti f1bb -- sh
+ 1596  kubectl get pod f1bb
+ 1597  kubectl delete  pod/f1bb
+ 1598  cc
+ 1599  kubectl run f1bb --image=busybox --restart=Never -- sh 
+ 1600  kubectl get pod f1bb
+ 1601  kubectl delete  pod/f1bb
+ 1602  kubectl run f1bb --image=busybox --restart=Never -- sh wget -O- 10.102.148.164
+ 1603  kubectl logs f1bb
+ 1604  kubectl get pod f1bb
+ 1605  kubectl delete  pod/f1bb
+ 1606  kubectl run f1bb --image=busybox --restart=Never -- sh
+ 1607  kubectl get pod f1bb
+ 1608  kubectl delete  pod/f1bb
+ 1609  cc
+ 1610  kubectl run busybox --rm --image=busybox -it --restart=Never -- sh
+ 1611  kubectl delete  pod/busybox
+ 1612  kubectl run busybox --rm --image=busybox -it --restart=Never -- sh
+ 1613  cc
+ 1614  kubectl run busybox --rm --image=busybox -it --restart=Never -- shs
+ 1615  cc
+ 1616  kubectl edit svc f1bb
+ 1617  kubectl get svc
+ 1618  kubectl edit svc f1svc
+ 1619  kubectl get svc
+ 1620  minikube ip
+ 1621  wget -O- 10.102.148.164:30669
+ 1622  wget -O- 192.168.99.101:30669
+ 1623  cc
+ 1624  gup
+ 1625  cc
+ 1626  kubectl get deploy 
+ 1627  cc
+ 1628  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --dry-run -o yaml > f2.yaml
+ 1629  nano f2.yaml 
+ 1630  kubectl get pods -l app=foo -o wide
+ 1631  kubectl get pods -L app=foo -o wide
+ 1632  cc
+ 1633  kubectl get pods 
+ 1634  kubectl get pods foo
+ 1635  kc -f f2.yaml 
+ 1636  nano ~/.bashrc 
+ 1637  source
+ 1638  bash
+ 1639  gup
+ 1640  cc
+ 1641  kubectl get deploy
+ 1642  kubectl delete deploy/foo
+ 1643  kubectl delete svc/foo
+ 1644  kubectl delete pod/foo
+ 1645  cc
+ 1646  kubectl create deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080
+ 1647  kubectl run  deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080
+ 1648  kubectl run  deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 > f8.yaml
+ 1649  kubectl delete deploy/foo
+ 1650  kubectl run  deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 > f8.yaml
+ 1651  kubectl delete deploy/foo
+ 1652  kubectl delete deploy/deploy
+ 1653  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 > f8.yaml
+ 1654  nano f8.yaml 
+ 1655  kubectl delete deploy/deploy
+ 1656  kubectl delete deploy/foo
+ 1657  cc
+ 1658  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 --dry-run > f8.yaml
+ 1659  nano f8.yaml 
+ 1660  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 --dry-run -o yaml > f8.yaml
+ 1661  nano f8.yaml 
+ 1662  kc -f f8.yaml 
+ 1663  kubectl get deploy/foo
+ 1664  cc
+ 1665  kubectl get pods -l app=foo -o wie
+ 1666  kubectl get pods -l app=foo -o wide
+ 1667  kubectl run bbb --image=busybox --restart=Never -it --rm -- sh wget -o- 172.17.0.3:8080
+ 1668  kubectl run bbb --image=busybox --restart=Never -it --rm -- sh wget -0- 172.17.0.3:8080
+ 1669  kubectl get pods -l app=foo -o wide
+ 1670  kubectl run bbb --image=busybox --restart=Never -it --rm -- sh
+ 1671  cc
+ 1672  kubectl expose deploy foo --port=6262 --target-port=8080
+ 1673  kubectl get svc
+ 1674  kubectl get ep
+ 1675  kubectl run bbb --image=busybox --restart=never -ti --rm -- sh
+ 1676  kubectl run bbb --image=busybox --restart=Never -ti --rm -- sh
+ 1677  cc
+ 1678  kubectl create dploy nginx --dry-run -o yaml >f9.yaml
+ 1679  kubectl create dploy nginx --image=nginx --dry-run -o yaml >f9.yaml
+ 1680  kubectl create deploy nginx --image=nginx --dry-run -o yaml >f9.yaml
+ 1681  nano f9.yaml 
+ 1682  cc
+ 1683  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1684  kubectl delete svc/nginx
+ 1685  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1686  kubectl delete svc/nginx
+ 1687  kubectl delete deploy/nginx
+ 1688  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1689  kubectl get svc nginx -o yaml > f10.yaml
+ 1690  nano f10
+ 1691  nano f10.yaml 
+ 1692  nano f10policy.yaml
+ 1693  kubectl get api-version 
+ 1694  kubectl explain --h
+ 1695  kubectl explain --api-version
+ 1696  kubectl explain pods --api-version
+ 1697  history | api-vers
+ 1698  history | grep api-vers
+ 1699  kubectl explain --h
+ 1700  kubectl explain network-Policy
+ 1701  wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\
+ 1702  33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333312
+ 1703  dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd2
+ 1704  exit
+ 1705  gup
+ 1706  exit
+ 1707  minikube status
+ 1708  minikube start
+ 1709  kubectl get all 
+ 1710  kubectl get svc
+ 1711  cc
+ 1712  script 2003312337
+ 1713  exit
+ 1714  ping 1.1.1.1
+ 1715  cc
+ 1716  kubectl run f11dep --image=nginx --replicas=2 --port=80 --expose 
+ 1717  kubectl get deploy/f11dep -o yaml 
+ 1718  kubectl get svc/f11dep -o yaml 
+ 1719  nano f11netpol.yaml
+ 1720  cc
+ 1721  kubectl explain networkPolicy
+ 1722  kubectl explain networkPolicy --recursive
+ 1723  kubectl explain 
+ 1724  kubectl explain --h
+ 1725  kubectl explain pods
+ 1726  kubectl explain networkPolicy
+ 1727  kubectl explain networkPolicy.apiVersion 
+ 1728  kubectl explain networkPolicy.apiVersion --recursive
+ 1729  kubectl get --h
+ 1730  history 
+ 1731  c
+ 1732  kubectl api-resource
+ 1733  kubectl api-resources
+ 1734  kubectl api-resources | grep cj
+ 1735  cc
+ 1736  nano f11netpol.yaml 
+ 1737  kubectl explain networkpolicy
+ 1738  kubectl explain networkpolicy.spec
+ 1739  kubectl explain networkpolicy.spec --recursive
+ 1740  echo << EOF >> f11netpol.yaml 
+ 1741    podSelector:
+ 1742      matchExpressions:
+ 1743        key: value
+ 1744  EOF
+ 1745  nano f11netpol.yaml 
+ 1746  kubectl get deploy/f11deploy
+ 1747  kubectl get deploy/f11dep
+ 1748  kubectl get deploy/f11dep -o yaml
+ 1749  nano f11netpol.yaml 
+ 1750  kc -f f11netpol.yaml 
+ 1751  nano f11netpol.yaml 
+ 1752  kc -f f11netpol.yaml 
+ 1753  nano f11netpol.yaml 
+ 1754  kc -f f11netpol.yaml 
+ 1755  kubectl get netpol
+ 1756  cca
+ 1757  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://nginx:80                       # This should not work
+ 1758  kubectl get netpol
+ 1759  kubectl get svc/f11dep
+ 1760  kubectl get ep
+ 1761  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://f11dep:80
+ 1762  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- http://f11dep:80
+ 1763  kubectl delete pod/busybox
+ 1764  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- http://f11dep:80
+ 1765  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://f11dep:80
+ 1766  nano f11netpol.yaml 
+ 1767  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- 10.98.165.245:80
+ 1768  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- 10.98.165.245:80
+ 1769  kubectl get svc,pod
+ 1770  kubectl run busybox --image=busybox --rm -it --restart=Never -- sh
+ 1771  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- sh
+ 1772  kubectl run busybox --image=busybox --rm -it --restart=Never --labels="access=granted"  -- sh
+ 1773  kubectl run busybox --image=busybox --rm -it --restart=Never -- sh
+ 1774  nano f11netpol.yaml 
+ 1775  kubectl delete netpol/f11dep
+ 1776  kubectl get netpol
+ 1777  kubectl delete netpol/access-nginx
+ 1778  kubectl delete pod/nginx
+ 1779  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1780  kubectl delete pod/nginx
+ 1781  kubectl delete deploy/nginx
+ 1782  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1783  kubectl delete deploy/nginx
+ 1784  kubectl delete svc/nginx
+ 1785  kubectl delete pod/nginx
+ 1786  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1787  kubectl describe svc nginx
+ 1788  kubectl get svc nginx -o yaml
+ 1789  kubectl describe svc nginx
+ 1790  kubectl create -f f11dep.yaml
+ 1791  kubectl create -f f11netpol.yaml 
+ 1792  cc
+ 1793  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://nginx:80
+ 1794  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted -- wget -O- http://nginx:80
+ 1795  kubectl run busybox --image=busybox --rm -it --restart=Never -- sh
+ 1796  kubectl delete netpol/access-nginx
+ 1797  nano f11netpol.yaml 
+ 1798  kubectl create -f f11netpol.yaml 
+ 1799  kubectl run busybox --image=busybox --rm -it --restart=Never -- sh
+ 1800  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted -- sh
+ 1801  kubectl run busybox --image=busybox --rm -it --restart=Never --labels="access=granted" -- sh
+ 1802  kubectl get svc 
+ 1803  kubectl get pod nginx
+ 1804  kubectl get deploy
+ 1805  kubectl get deploy nginx
+ 1806  kubectl get pod
+ 1807  kubectl describe svc/nginx
+ 1808  nano f11netpol.yaml 
+ 1809  kubectl describe pod/nginx
+ 1810  kubectl describe deploy/nginx
+ 1811  exit
+ 1812  minikube start
+ 1813  kubectl get all 
+ 1814  kubectl netpol
+ 1815  kubectl get netpol
+ 1816  gup
+ 1817  cc
+ 1818  script 2004012345
+ 1819  gup
+ 1820  minikube start
+ 1821  kubectl get all 
+ 1822  gup
+ 1823  cc
+ 1824  script 2004030023
+ 1825  kubectl run g1 --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'sleep 3600' > g1.yaml
+ 1826  nano g1.yaml 
+ 1827  kubectl explain pod.volumeMounts --rescursive
+ 1828  kubectl explain pods.volumeMounts --rescursive
+ 1829  kubectl explain pods.spec.volumeMounts --rescursive
+ 1830  kubectl explain pods.spec.volumes --rescursive
+ 1831  kubectl explain pods.spec --rescursive
+ 1832  kubectl explain pod.spec --rescursive
+ 1833  kubectl explain pod --recursive
+ 1834  kubectl explain pods.conatiners.volumeMounts
+ 1835  kubectl explain pods.conatiners
+ 1836  kubectl explain pods.spec.conatiners
+ 1837  kubectl explain pod.spec.conatiners
+ 1838  kubectl explain pod.spec.containers
+ 1839  kubectl explain pod.
+ 1840  kubectl explain pod.spec
+ 1841  kubectl explain pod.spec.volumes
+ 1842  nano g1.yaml 
+ 1843  kubectl explain pod.spec.
+ 1844  kubectl explain pod.spec.containers
+ 1845  kubectl explain pod.spec.containers.volumeMounts
+ 1846  kubectl explain pod.spec.containers.volumeMounts --recursive
+ 1847  nano g1.yaml 
+ 1848  kc -f g1.yaml 
+ 1849  kubectl get pod/g1
+ 1850  kubectl get pod/g1 -w
+ 1851  cc
+ 1852  kubectl exec -ti g1 -c g1a -- /bin/sh
+ 1853  kubectl exec -ti g1 -c g1b -- /bin/sh
+ 1854  cc
+ 1855  kubectl explain persistentVolume 
+ 1856  kubectl explain persistentVolume --recursive
+ 1857  cc
+ 1858  kubectl get pv,pvc
+ 1859  kubectl get pv
+ 1860  kubectl get pvc
+ 1861  cc
+ 1862  touch g2pv.yaml
+ 1863  nano g2pv.yaml 
+ 1864  gup
+ 1865  nano g2pvc.yaml 
+ 1866  kubectl explain persistentVolumeClaim --recursive
+ 1867  kubectl explain persistentVolumeClaim.spec
+ 1868  nano g2pvc.yaml 
+ 1869  kc -f g2pvc.yaml 
+ 1870  nano g2pvc.yaml 
+ 1871  kc -f g2pvc.yaml 
+ 1872  nano g2pvc.yaml 
+ 1873  kc -f g2pvc.yaml 
+ 1874  nano g2pvc.yaml 
+ 1875  kc -f g2pvc.yaml 
+ 1876  minikube status
+ 1877  kubectl get pod
+ 1878  ll
+ 1879  ls
+ 1880  gup
+ 1881  cc
+ 1882  nano g2pvc.yaml 
+ 1883  kc -f g2pvc.yaml 
+ 1884  kubectl get pv
+ 1885  kubectl get pvc
+ 1886  exit
+ 1887  minikube start
+ 1888  script 2004041545
+ 1889  cc
+ 1890  kubectl get all 
+ 1891  cc
+ 1892  ll
+ 1893  ls
+ 1894  nano g2pv.yaml 
+ 1895  cc
+ 1896  kubectl explain pod. --recursive
+ 1897  kubectl explain --h
+ 1898  kubectl explain --help
+ 1899  kubectl options
+ 1900  kubectl PesistentVolume --recursive
+ 1901  kubectl explain PesistentVolume --recursive
+ 1902  kubectl explain presistentVolume --recursive
+ 1903  kubectl explain PersistentVolume --recursive
+ 1904  kubectl explain PersistentVolume 
+ 1905  kubectl explain PersistentVolume.spec
+ 1906  kubectl explain PersistentVolume.kind
+ 1907  kubectl explain PersistentVolume.apiVersion
+ 1908  kubectl explain PersistentVolume.metadata
+ 1909  nano g2pv.yaml 
+ 1910  kubectl explain PersistentVolume.spec
+ 1911  kubectl get pod
+ 1912  minikube status
+ 1913  minikube stop
+ 1914  minikube start
+ 1915  kubectl explain PersistentVolume.spec
+ 1916  kubectl explain PersistentVolume.spec --recursive
+ 1917  nano g2pv.yaml 
+ 1918  kubectl create -f g2pv.yaml 
+ 1919  nano g2pv.yaml 
+ 1920  kubectl create -f g2pv.yaml 
+ 1921  nano g2pv.yaml 
+ 1922  kubectl create -f g2pv.yaml 
+ 1923  kubectl get pv
+ 1924  kubectl get pvc
+ 1925  nano g2pvc.yaml 
+ 1926  cc
+ 1927  script 2004042103
+ 1928  geit
+ 1929  gedit
+ 1930  minikube start
+ 1931  script 2004052320
+ 1932  cc
+ 1933  kubectl get pod
+ 1934  cc
+ 1935  ls
+ 1936  kubectl get pv
+ 1937  kubectl get pvc
+ 1938  kubectl run bb bb --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c "sleep 3600" > g3.yaml 
+ 1939  nano g3.yaml 
+ 1940  kubectl create -f g3.yaml 
+ 1941  nano g3.yaml 
+ 1942  kubectl create -f g3.yaml 
+ 1943  cc
+ 1944  kubectl exec bb -ti -- cp /etc/passwd /etc/foo/passwd
+ 1945  nano g3.yaml 
+ 1946  kc -f bb1 
+ 1947  kc -f g3.yaml 
+ 1948  kubectl exec bb1 -rm -- ls /etc/foo
+ 1949  kubectl exec bb1 -rm -ti -- ls /etc/foo
+ 1950  kubectl exec bb1 -- ls /etc/foo
+ 1951  cc
+ 1952  kubectl run bb2 --image=busybox --restart=Never -- sleep 3600
+ 1953  kubectl cp bb2:/etc/passwd ./passwd
+ 1954  kubectl cp bb2:/etc/passwd .passwd
+ 1955  ll
+ 1956  ls
+ 1957  ls ./passwd 
+ 1958  cd ./passwd 
+ 1959  cd ..
+ 1960  ls
+ 1961  passwd 
+ 1962  cd k8CKAD/
+ 1963  ls
+ 1964  cat passwd 
+ 1965  cd ..
+ 1966  ls
+ 1967  cat passwd
+ 1968  cd k8CKAD/
+ 1969  kubectl exec bb2 -ti -- /bin/sh
+ 1970  cat ./passwd 
+ 1971  ll ./passwd 
+ 1972  less /etc/passwd
+ 1973  cc
+ 1974  gup
+ 1975  cat passwd 
+ 1976  cat .passwd 
+ 1977  gup
+ 1978  ping 1.1.1.1
+ 1979  ping 8.8.8.8
+ 1980  cc
+ 1981  kubectl create ns ckad-prep
+ 1982  kubectl get ns
+ 1983  cc
+ 1984  kubectl run mypod --image=nginx:2.3.5 --restart=Never --port=80 --namespace=ckad-prep
+ 1985  kubectl get pod -n ckad-prep
+ 1986  kubectl describe pod mypod -n ckad-prep
+ 1987  touch pod-error.txt
+ 1988  kubectl describe pod mypod -n ckad-prep | grep Events
+ 1989  kubectl describe pod mypod -n ckad-prep | grep -2 Events
+ 1990  kubectl describe pod mypod -n ckad-prep | grep -2 Failed
+ 1991  kubectl describe pod mypod -n ckad-prep | grep -2 Warning Failed
+ 1992  kubectl describe pod mypod -n ckad-prep | grep -2 Failed > pod-error.txt 
+ 1993  cat pod-error.txt 
+ 1994  cc
+ 1995  kubectl set --h
+ 1996  kubectl set image --h
+ 1997  kubectl set image pod/mypod nginx:2.3.5=nginx:1.15.12 -n ckad-prep
+ 1998  kubectl set image pod/mypod mypod=nginx:1.15.12 -n ckad-prep
+ 1999  kubectl describe pod mypod -n ckad-prep
+ 2000  kubectl get pod mypod -n ckad-prep
+ 2001  kubectl edit pod mypod -n ckad-prep
+ 2002  kubectl get pod -n ckad-prep
+ 2003  6
+ 2004  kubectl log pod/mypod
+ 2005  kubectl logs pod/mypod -n ckad-prep
+ 2006  cc
+ 2007  kubectl exec mypod -ti -n ckad-prep -- sh
+ 2008  kubectl get pod -n ckad-prep -o wide
+ 2009  cc
+ 2010  kubectl run bb --image=busybox --restart=Never --rm -ti -n ckad-prep -- /bin/sh
+ 2011  kubectl logs mypod -n ckad-prep
+ 2012  kubectl delete pod mypod --namespace=ckad-prep
+ 2013  gup
+ 2014  ~/Q1_CNC/k8CKAD/gup
+ 2015  ~/Q1_CNC/k8CKAD/gitBatch.sh
+ 2016  sudo ~/Q1_CNC/k8CKAD/gitBatch.sh
+ 2017  cd ..
+ 2018  gup
+ 2019  history 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ history [5Pgupcd ..sudo ~/Q1_CNC/k8CKAD/gitBatch.shcd ..[K[2Pguphistory [K// 1-core-concepts.md
+bash: //: Is a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ // 1-core-concepts.md[13Phistory 
+ 1022  kubectl create configmap d4cm --from-file=special=config.env
+ 1023  kubectl get cm
+ 1024  kubectl get cm d6cn=a=======assssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1025  kubectl get cm d6cm -o yaml
+ 1026  cc
+ 1027  kubectl get cm d6cm -o yamls
+ 1028  kubectl get cm
+ 1029  host
+ 1030  history 
+ 1031  kubectl create configmap d4cm --from-file=speciassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+ 1032  cc
+ 1033  kubectl create configmap d4cm --from-file=special=config.txt
+ 1034  kubectl create configmap d5cm --from-file=special=config.txt
+ 1035  kubectl get cm
+ 1036  kubectl get cm d5cm - oyaml
+ 1037  kubectl get cm d5cm -o yaml
+ 1038  kubectl get cm d4cm -o yaml
+ 1039  kubectl get cm d3cm -o yaml
+ 1040  kubectl get cm d33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333cm -o yaml
+ 1041  kubectl get cm d2cm -o yaml
+ 1042  bash gitBatch.sh 
+ 1043  minikube stop
+ 1044  exit
+ 1045  minikube sart
+ 1046  minikube start
+ 1047  ll
+ 1048  ls
+ 1049  cc
+ 1050  ls
+ 1051  script 202003182340
+ 1052  exit
+ 1053  minikube start
+ 1054  bash gitBatch.sh 
+ 1055  git add .
+ 1056  git commit -m "new update of 18"
+ 1057  cc
+ 1058  ls
+ 1059  script 202003200020
+ 1060  cc
+ 1061  l
+ 1062  ls
+ 1063  locate *.env
+ 1064  ll
+ 1065  kubectl get cm
+ 1066  ll d*
+ 1067  ll c*
+ 1068  history 
+ 1069  cc
+ 1070  kubectl get cm
+ 1071  cc
+ 1072  kubectl create cm options --from-literal=var5=val5
+ 1073  kubectl get cm
+ 1074  kubectl get configMap options
+ 1075  kubectl get configMap options -o yaml
+ 1076  cc
+ 1077  kubectl run d7 --image=nginx --restart=Never --dry-run -o yaml > d7.yaml
+ 1078  nano d7.yaml 
+ 1079  kubectl explain pod.spec.env --recursive
+ 1080  kubectl explain pod.spec.containers.env --recursive
+ 1081  nano d7.yaml 
+ 1082  kubectl explain pod.spec.containers.env --recursive
+ 1083  nano d7.yaml 
+ 1084  kubectl explain pod.spec.containers.env --recursive
+ 1085  kubectl explain pod.spec.containers.env
+ 1086  nano d7.yaml 
+ 1087  kubectl create -f d7.yaml 
+ 1088  kubectl get pod/d7
+ 1089  kubectl logs pod/d7
+ 1090  kubectl exec -ti d7 -- env
+ 1091  alias kc="kubectl create"
+ 1092  kc
+ 1093  kc cm another --from-literal=var6=val6 --from-literal=var7=val7
+ 1094  k get cm
+ 1095  k run d8 --image=nginx --restart=Never --dry-run -o yaml > d8.yaml
+ 1096  kubectl explain pod.spec.containers.
+ 1097  kubectl explain pod.spec.containers.envFrom
+ 1098  kubectl explain pod.spec.containers.envFrom.confgMapRef
+ 1099  kubectl explain pod.spec.containers.envFrom --recursive
+ 1100  nano d8.yaml 
+ 1101  kc -f d8.yaml 
+ 1102  k get pod/d8
+ 1103  k logs pod/d8
+ 1104  k get pod/d8
+ 1105  kubectl exec -ti d8 -- env
+ 1106  kubectl exec -ti d7 -- env
+ 1107  nano d7.yaml 
+ 1108  cc
+ 1109  bash gitBatch.sh 
+ 1110  git push origin master 
+ 1111  bash gitBatch.sh 
+ 1112  cc
+ 1113  kubectl explain pod.spec.containers.volume --recursive
+ 1114  kubectl explain pod.spec.containers --recursive
+ 1115  kubectl explain pod.spec --recursive
+ 1116  kubectl explain pod.spec.volumes
+ 1117  cc
+ 1118  kc cmvol --from-literal=var8=val8 --from-literal=var9=val9 
+ 1119  kc cm cmvol --from-literal=var8=val8 --from-literal=var9=val9 
+ 1120  k get cm
+ 1121  cc
+ 1122  kubectl run d10 --image=nginx --restart=Never --dry-run -o yaml > d10.yaml
+ 1123  nano d10.yaml 
+ 1124  kubectl explain pod.spec.volumes
+ 1125  kubectl explain pod.spec.volumes.configMap
+ 1126  kubectl explain pod.spec.volumes.configMap --recursive
+ 1127  nano d10.yaml 
+ 1128  kc -f d10.yaml 
+ 1129  nano d10.yaml 
+ 1130  kc -f d10.yaml 
+ 1131  nano d10.yaml 
+ 1132  kubectl explain pod.spec.volumes.name
+ 1133  nano d10.yaml 
+ 1134  kubectl explain pod.spec.volumes.name
+ 1135  kc -f d10.yaml 
+ 1136  k get pod 
+ 1137  k get pod d10
+ 1138  kubectl exec -ti d10 -- /bin/sh
+ 1139  bash gitBash
+ 1140  bash gitBash.sh
+ 1141  bash gitBatch.sh 
+ 1142  kubectl explain pod.spec.volumes.name
+ 1143  kubectl explain pod.spec.volumes
+ 1144  bash gitBatch.sh 
+ 1145  cc
+ 1146  ls
+ 1147  kubectl get cm
+ 1148  cc
+ 1149  kubectl explain pod.spec.securityContext --reciursive
+ 1150  kubectl explain pod.spec.securityContext --recursive
+ 1151  cc
+ 1152  kubectl explain pod.spec.securityContext --recursivef
+ 1153  nano gitBatch.sh 
+ 1154  echo "tell vari"&& read vr&& echo "kubectl get $vr
+ 1155  pod
+ 1156  echo "tell vari"&& read vr&& echo "kubectl get $vr"
+ 1157  kubectl get pod
+ 1158  echo "tell vari"&& read vr&& echo "kubectl get $vr"
+ 1159  kubectl get $vr
+ 1160  alias kgx="kubectl get $(read vr1)"
+ 1161  kgx
+ 1162  alias kgx="kubectl get && $(read vr1)"
+ 1163  kgx pod
+ 1164  kgx cm
+ 1165  echo "kubectl get $(read vr1)"
+ 1166  echo "kubectl get && $(read vr1)"
+ 1167  echo "kubectl get "&& "$(read vr1)"
+ 1168  echo "kubectl get "&&read vr1
+ 1169  alias kgx=read vr1&&echo "kubectl get $vr1
+ 1170  cm
+ 1171  alias kgx=read vr1&&echo "kubectl get $vr1"
+ 1172  alias kgx="read vr1"&&echo "kubectl get $vr1"
+ 1173  alias gup="bash gitBash.sh"
+ 1174  gup
+ 1175  bash gitBash.sh
+ 1176  alias gup="bash gitBatch.sh "
+ 1177  gup
+ 1178  alias gup="bash gitBatch.sh "cc
+ 1179  gup
+ 1180  cc
+ 1181  kubectl explain pod.spec.securityContext
+ 1182  kubectl explain pod.spec.securityContext --recursive
+ 1183  kubectl explain pod.spec.containers.securityContext --recursive
+ 1184  cc
+ 1185  kubectl run d11sec --image=nginx --resatrt=Never --dry-run - oyaml > d11.yaml
+ 1186  kubectl run d11sec --image=nginx --resatrt=Never --dry-run -o yaml > d11.yaml
+ 1187  kubectl run d11sec --image=nginx --restart=Never --dry-run - oyaml > d11.yaml
+ 1188  nano d11.yaml 
+ 1189  kubectl run d11sec --image=nginx --restart=Never --dry-run -o yaml > d11.yaml
+ 1190  nano d11.yaml 
+ 1191  kubectl create -f d11.yaml 
+ 1192  kubectl get pod d11
+ 1193  kubectl get pod d11sec
+ 1194  cc
+ 1195  gup
+ 1196  cc
+ 1197  kubectl get apiservices
+ 1198  cc
+ 1199  kubectl explain pod.spec.containers.resources --recursive
+ 1200  kubectl explain pod.spec.containers.resources 
+ 1201  exit
+ 1202  minikube start
+ 1203  script 2003221644
+ 1204  minikube start
+ 1205  gup
+ 1206  nano ~/.bashrc 
+ 1207  gup
+ 1208  nano ~/.bashrc 
+ 1209  gup
+ 1210  nano ~/.bashrc 
+ 1211  gup
+ 1212  nano ~/.bashrc 
+ 1213  gup
+ 1214  bash gitBatch.sh 
+ 1215  nano ~/.bashrc 
+ 1216  kga
+ 1217  cc
+ 1218  kga
+ 1219  . ~/.bashrc
+ 1220  kga
+ 1221  gup
+ 1222  cc
+ 1223  kga
+ 1224  c
+ 1225  cc
+ 1226  nano ~/.bashrc 
+ 1227  ll
+ 1228  cc
+ 1229  ls
+ 1230  nano gitBatch.sh 
+ 1231  cc
+ 1232  kubectl run d12rl --image=nginx --restart=Never --dry-run - oyam > d12.yaml
+ 1233  nano d12.yaml 
+ 1234  kubectl run d12rl --image=nginx --restart=Never --dry-run - oyaml >> d12.yaml
+ 1235  nano d12.yaml 
+ 1236  rm d12.yaml 
+ 1237  kubectl run d12rl --image=nginx --restart=Never --dry-run -o yaml >> d12.yaml
+ 1238  nano d12.yaml 
+ 1239  kubectl create -f d12.yaml 
+ 1240  kga
+ 1241  kubectl get d12rl
+ 1242  kubectl get po d12rl
+ 1243  kubectl describe pod d12rl
+ 1244  kubectl run nginx --image=nginx --restart=Never --requests='cpu=100m,memory=256Mi' --limits='cpu=200m,memory=512Mi'
+ 1245  kubectl run nginx3 --image=nginx --restart=Never --requests='cpu=100m,memory=256Mi' --limits='cpu=200m,memory=512Mi'
+ 1246  kubectl get po nginx3
+ 1247  kubectl get po nginx3 -w
+ 1248  kubectl describe pod nginx
+ 1249  nano d12.yaml 
+ 1250  kubectl delete pod/d12rl
+ 1251  kubectl create -f d12.yaml 
+ 1252  kubectl get d12rl
+ 1253  kubectl get pod d12rl
+ 1254  kubectl describe pod d12rl
+ 1255  nano d12.yaml 
+ 1256  kubectl delete pod/d12rl
+ 1257  kubectl create -f d12.yaml 
+ 1258  kubectl get pod d12rl
+ 1259  kubectl get pod d12rl -w
+ 1260  kubectl delete pod/d12rl
+ 1261  nano d12.yaml 
+ 1262  kubectl create -f d12.yaml 
+ 1263  kubectl get pod d12rl -w
+ 1264  kubectl delete pod/d12rl
+ 1265  nano d12.yaml 
+ 1266  kubectl create -f d12.yaml 
+ 1267  kubectl get pod d12rl -w
+ 1268  kubectl exec -ti d12rl 
+ 1269  kubectl exec -ti d12rl -- sh
+ 1270  cc
+ 1271  gup
+ 1272  ls
+ 1273  cat commandsReview.txt 
+ 1274  cat README.md 
+ 1275  echo "Practice only" >> README.md 
+ 1276  gup
+ 1277  cc
+ 1278  git status
+ 1279  git config 
+ 1280  git config --show-origin 
+ 1281  git config --global 
+ 1282  git config --global --get-all 
+ 1283  git config -h
+ 1284  git config -l
+ 1285  ls
+ 1286  ll
+ 1287  ls .git/
+ 1288  touch .gitignore
+ 1289  echo "gi.txt" > .gitignore
+ 1290  cat .gitignore 
+ 1291  echo "gi.txt" > gi.txt
+ 1292  echo "rgi.txt" > rgi.txt
+ 1293  gup
+ 1294  cc
+ 1295  nano gitBatch.sh 
+ 1296  gup
+ 1297  cc
+ 1298  gup
+ 1299  cc
+ 1300  kubectl create secret -h
+ 1301  kubectl create secret generic --help
+ 1302  cc
+ 1303  minikube status
+ 1304  minikube stop
+ 1305  minikube start
+ 1306  cc
+ 1307  kubectl get secret
+ 1308  kubectl create secret generic d13sec --from-literal=password=mypass
+ 1309  kubectl get secret
+ 1310  kubectl get secret d13sec -o yaml
+ 1311  echo -n admin > username
+ 1312  cat usernam
+ 1313  kubectl create secret generic d13sec 4sec --from-file=username
+ 1314  echo -n admin > username1
+ 1315  kubectl create secret generic d13sec 4sec --from-file=username1
+ 1316  cc
+ 1317  kubectl create secret generic d14sec --from-file=username1
+ 1318  kubectl get secret
+ 1319  kubectl get secret d14sec -o yaml
+ 1320  cc
+ 1321  kubectl get secret d14sec -o yaml
+ 1322  echo YWRtaW4= | base64 -d
+ 1323  echo YWRtaW4 | base64 -d
+ 1324  gup
+ 1325  cc
+ 1326  echo YWRtaW4= | base64 -d
+ 1327  cc
+ 1328  kubectl explain pod.spec.volume.secret
+ 1329  kubectl explain pod.spec.volumes.secret
+ 1330  kubectl explain pod.spec.volumes.secret --recursive
+ 1331  kubectl explain pod.spec.containers.volumeMount.secret
+ 1332  kubectl explain pod.spec.containers.volumeMounts.secret
+ 1333  kubectl explain pod.spec.containers.volumeMount.secret
+ 1334  kubectl explain pod.spec.containers.volumeMount
+ 1335  kubectl explain pod.spec.containers --recursive
+ 1336  kubectl explain pod.spec.containers.volumeMountcc
+ 1337  cc
+ 1338  kubectl run d15 --image=nginx --restart=Never --dry-run -o yaml
+ 1339  kubectl run d15 --image=nginx --restart=Never --dry-run -o yaml > d15.yaml
+ 1340  nano d15.yaml 
+ 1341  kubectl get secret
+ 1342  kubectl create -f d15.yaml 
+ 1343  kubectl get pod/d15
+ 1344  kubectl exec -ti d15
+ 1345  kubectl exec -ti d15 -- sh
+ 1346  gup
+ 1347  cc
+ 1348  kubectl run d16 --image=nginx --restart=Never --dry-run -o yaml > d16.yaml
+ 1349  nano d16.yaml 
+ 1350  kubectl delete pod/d15sec
+ 1351  kubectl get pod 
+ 1352  kubectl delete pod/d15
+ 1353  nano d16.yaml 
+ 1354  cc
+ 1355  kubectl explain pod.spec.containers --recursive
+ 1356  kubectl explain pod.spec.containers --recursive | grep -i 3
+ 1357  kubectl explain pod.spec.containers --recursive | grep -i 3 env
+ 1358  kubectl explain pod.spec.containers --recursive | grep env
+ 1359  kubectl explain pod.spec.containers --recursive | grep -i3 env
+ 1360  kubectl explain pod.spec.containers
+ 1361  nano d16.yaml 
+ 1362  kubectl explain pod.spec.containers --recursive | grep -i3 env
+ 1363  nano d16.yaml 
+ 1364  kubectl explain pod.spec.containers --recursive | grep -i7 env
+ 1365  kubectl explain pod.spec.containers --recursive | grep -i9 env
+ 1366  nano d16.yaml 
+ 1367  kubectl create -f d16.yaml 
+ 1368  kubectl get pod/d16
+ 1369  kubectl describe pod/d16
+ 1370  kubectl get secret
+ 1371  kubectl delete pod/d16
+ 1372  nano d16.yaml 
+ 1373  kubectl create -f d16.yaml 
+ 1374  kubectl get secret
+ 1375  kubectl delete pod/d16
+ 1376  kubectl create -f d16.yaml 
+ 1377  kubectl get pod/d16
+ 1378  kubectl describe pod/d16
+ 1379  kubectl exec -ti d16 -- sh
+ 1380  cat d16.yaml 
+ 1381  kubectl exec -ti d16 -- env
+ 1382  kubectl exec -ti d16 -- env | grep username
+ 1383  kubectl exec -ti d16 -- env | grep username1
+ 1384  kubectl exec -ti d16 -- sh
+ 1385  cc
+ 1386  kubectl explain pod.spec.serviceAccountName
+ 1387  kubectl explain pod.spec.serviceAccountName --recursive
+ 1388  cc
+ 1389  gup
+ 1390  cc
+ 1391  kubectl explain pod.spec.livenessProbe
+ 1392  kubectl explain pod.spec.containers.livenessProbe
+ 1393  kubectl explain pod.spec.containers.livenessProbe --recursive
+ 1394  cc
+ 1395  kubectl run e1lp --image=nginx --restart=Never --dry-run -o yaml > e1.yaml
+ 1396  nano e1.yaml 
+ 1397  kubectl explain pod.spec.containers.livenessProbe --recursive
+ 1398  kubectl explain pod.spec.containers.livenessProbe 
+ 1399  nano e1.yaml 
+ 1400  alias kc="k create "
+ 1401  kc -f d16.yaml 
+ 1402  kc -f e1.yaml 
+ 1403  k get pod/e1
+ 1404  kubectl get pod 
+ 1405  k get pod/e1lp
+ 1406  kubectl describe pod/e1lp
+ 1407  kubectl describe pod/e1lp | grep livenessProbe
+ 1408  kubectl describe pod/e1lp | grep liveness
+ 1409  kubectl describe pod/e1lp | grep -i liveness
+ 1410  cc
+ 1411  gup
+ 1412  minikube status
+ 1413  minikube stop
+ 1414  minikube start
+ 1415  cat e1.yaml 
+ 1416  script 2003240019
+ 1417  cc
+ 1418  cat e1.yaml 
+ 1419  kga
+ 1420  cc
+ 1421  kubectl explain pod.spec.containers --recursive
+ 1422  kubectl explain pod.spec.containers --recursive | grep start
+ 1423  nano e1.yaml 
+ 1424  history | grep alias
+ 1425  kc e2.yaml 
+ 1426  alias kc="kubectl create "
+ 1427  kc -f e2.yaml 
+ 1428  nano e1.yaml 
+ 1429  nano e2.yaml 
+ 1430  kc -f e2.yaml 
+ 1431  kubectl get pod/e2lp
+ 1432  kubectl get pod/e2lp -w
+ 1433  kubectl describe pod/e2lp
+ 1434  kubectl describe pod/e2lp | grep -i liveness
+ 1435  kubectl explain pod.spec.containers.livenessProbe # get the exact names
+ 1436  cc
+ 1437  kubectl explain --help
+ 1438  cc
+ 1439  kubectl explain pod.spec.containers.readinessProbe
+ 1440  kubectl explain pod.spec.containers.readinessProbe.httpGet
+ 1441  kubectl explain pod.spec.containers.readinessProbe.httpGet --recursive
+ 1442  kubectl run e3rp --image=nginx --restart=Never --dry-run -o yaml > e3.yaml
+ 1443  vim e3.yaml 
+ 1444  sudo apt-get install vim
+ 1445  vim e3.yaml 
+ 1446  cc
+ 1447  vim e3.yaml 
+ 1448  nano e2.yaml 
+ 1449  vim e3.yaml 
+ 1450  kubectl explain pod.spec.containers.readinessProbe.httpGet --recursive
+ 1451  kubectl explain pod.spec.containers.readinessProbe --recursive
+ 1452  vim e3.yaml 
+ 1453  kc -f e3.yaml 
+ 1454  kubectl get pod/e3rp
+ 1455  kubectl describe pod/e3rp
+ 1456  cc
+ 1457  nano ~/.bashrc
+ 1458  gup
+ 1459  cc
+ 1460  kubectl run e4log --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done > e4.yaml
+ 1461  kubectl run e4log --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done' > e4.yaml
+ 1462  nano e4.yaml 
+ 1463  kc -f e4.yaml 
+ 1464  kubectl get pod/e4log
+ 1465  kubectl logs pod/e4log
+ 1466  cc
+ 1467  kubectl run e5deb --image=busybox --restart=Never -- /bin/sh -c 'ls /notexist'
+ 1468  kubectl get pod/e5deb
+ 1469  kubectl get pod/e5deb -w
+ 1470  kubectl get pod/e5deb
+ 1471  kubectl logs pod/e5deb
+ 1472  kubectl describe pod/e5deb
+ 1473  kubectl describe pod/e5deb | grep -i not
+ 1474  cc
+ 1475  kubectl describe pod/e5deb | grep -i error
+ 1476  kubectl describe pod/e5deb 
+ 1477  cc
+ 1478  kubectl top nodes
+ 1479  kubectl top pod
+ 1480  gup
+ 1481  sudo apt-get update & apt-get upgrade
+ 1482  sudo apt-get update && apt-get upgrade
+ 1483  sudo apt-get upgrade
+ 1484  cc
+ 1485  minikube status
+ 1486  kubectl run f1svc --image=nginx --restart=Never --port=80 --export
+ 1487  kubectl run f1svc --image=nginx --restart=Never --port=80 --expose
+ 1488  exit
+ 1489  rm 20200325-1-7 
+ 1490  ls
+ 1491  mv e1.yaml.save .gitignore 
+ 1492  gup
+ 1493  cat gi.txt 
+ 1494  ll 
+ 1495  ll gi.txt 
+ 1496  exit
+ 1497  minikube start
+ 1498  la
+ 1499  ls
+ 1500  cc
+ 1501  ls
+ 1502  ll
+ 1503  gup
+ 1504  kubectl get pod
+ 1505  kubectl get pod f1sv
+ 1506  kubectl get pod f1svc
+ 1507  kubectl describe pod/f1svc
+ 1508  script 20200325-1-7
+ 1509  script 202003250107
+ 1510  rm 202003250107
+ 1511  exit
+ 1512  kc -f f2.yaml 
+ 1513  kubectl get pod -l app=foo -o wide
+ 1514  kubectl get pod -l app=foo -o wide -w
+ 1515  kubectl run busybox --image=busybox --restart=Never -ti --rm -- sh
+ 1516  kubectl delete pod/busybox
+ 1517  kubectl run busybox --image=busybox --restart=Never -ti --rm -- sh
+ 1518  cc
+ 1519  kubectl expose deploy foo --port=6262 --target-port=8080
+ 1520  kubectl get svc
+ 1521  kubectl ep foo
+ 1522  kubectl get ep foo
+ 1523  kubectl get svc foo -o yaml
+ 1524  cc
+ 1525  kubectl get svc
+ 1526  kubectl get pod busybox
+ 1527  c
+ 1528  cc
+ 1529  kubectl get svc
+ 1530  kubectl run busybox --image=busybox -it --rm --restart=Never -- sh
+ 1531  kubectl delete pod/busybox
+ 1532  docker images
+ 1533  docker image ls
+ 1534  history | docker
+ 1535  history | grep docker
+ 1536  cc
+ 1537  kubectl run busybox --image=busybox -it --rm --restart=Never -- sh
+ 1538  kubectl get pod
+ 1539  kubectl logs pod/foo-688d885f4b-m9zmp
+ 1540  cc
+ 1541  kubectl f3dep --image=nginx --replicas=2 --port=80 --expose
+ 1542  kubectl run f3dep --image=nginx --replicas=2 --port=80 --expose
+ 1543  kubectl describe svc fedep
+ 1544  kubectl describe svc f3dep
+ 1545  cc
+ 1546  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1547  kubectl delete deploy/nginx
+ 1548  kubectl delete svc/nginx
+ 1549  cc
+ 1550  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1551  kubectl describe svc nginx
+ 1552  kubectl describe svc f3dep
+ 1553  kubectl describe svc nginx
+ 1554  cc
+ 1555  kubectl describe svc nginx
+ 1556  kubectl api-resources
+ 1557  kubectl api-resources | grep network
+ 1558  kubectl explain netpol --recursive
+ 1559  echo <<EOF >>  f4netpol.yaml
+ 1560  apiVersion: extensions/v1beta1
+ 1561  kind: NetworkPolicy
+ 1562  metadata:
+ 1563    name: netpol
+ 1564  spec:
+ 1565    podSelector:
+ 1566      matchLabels:
+ 1567        access: granted
+ 1568  EOF
+ 1569  cat f4netpol.yaml 
+ 1570  nano f4netpol.yaml 
+ 1571  exit
+ 1572  minikube start
+ 1573  cc
+ 1574  script 2003260012
+ 1575  gup
+ 1576  cc
+ 1577  kubectl getpod
+ 1578  kubectl get pod
+ 1579  kubectl get pod f1svc
+ 1580  kubectl delete  pod/f1svc
+ 1581  cc
+ 1582  kubectl run f1svc --image=nginx --restart=Never --port=80 --expose
+ 1583  kubectl delete  pod/f1svc
+ 1584  kubectl get svc
+ 1585  kubectl delete svc f1svc
+ 1586  cc
+ 1587  kubectl run f1svc --image=nginx --restart=Never --port=80 --expose
+ 1588  kubectl get svc
+ 1589  kubectl ep
+ 1590  kubectl get ep
+ 1591  cc
+ 1592  kubectl get svc f1svc
+ 1593  kubectl run f1bb --image=busybox --restart=Never 
+ 1594  kubectl exec -ti -sh
+ 1595  kubectl exec -ti f1bb -- sh
+ 1596  kubectl get pod f1bb
+ 1597  kubectl delete  pod/f1bb
+ 1598  cc
+ 1599  kubectl run f1bb --image=busybox --restart=Never -- sh 
+ 1600  kubectl get pod f1bb
+ 1601  kubectl delete  pod/f1bb
+ 1602  kubectl run f1bb --image=busybox --restart=Never -- sh wget -O- 10.102.148.164
+ 1603  kubectl logs f1bb
+ 1604  kubectl get pod f1bb
+ 1605  kubectl delete  pod/f1bb
+ 1606  kubectl run f1bb --image=busybox --restart=Never -- sh
+ 1607  kubectl get pod f1bb
+ 1608  kubectl delete  pod/f1bb
+ 1609  cc
+ 1610  kubectl run busybox --rm --image=busybox -it --restart=Never -- sh
+ 1611  kubectl delete  pod/busybox
+ 1612  kubectl run busybox --rm --image=busybox -it --restart=Never -- sh
+ 1613  cc
+ 1614  kubectl run busybox --rm --image=busybox -it --restart=Never -- shs
+ 1615  cc
+ 1616  kubectl edit svc f1bb
+ 1617  kubectl get svc
+ 1618  kubectl edit svc f1svc
+ 1619  kubectl get svc
+ 1620  minikube ip
+ 1621  wget -O- 10.102.148.164:30669
+ 1622  wget -O- 192.168.99.101:30669
+ 1623  cc
+ 1624  gup
+ 1625  cc
+ 1626  kubectl get deploy 
+ 1627  cc
+ 1628  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --dry-run -o yaml > f2.yaml
+ 1629  nano f2.yaml 
+ 1630  kubectl get pods -l app=foo -o wide
+ 1631  kubectl get pods -L app=foo -o wide
+ 1632  cc
+ 1633  kubectl get pods 
+ 1634  kubectl get pods foo
+ 1635  kc -f f2.yaml 
+ 1636  nano ~/.bashrc 
+ 1637  source
+ 1638  bash
+ 1639  gup
+ 1640  cc
+ 1641  kubectl get deploy
+ 1642  kubectl delete deploy/foo
+ 1643  kubectl delete svc/foo
+ 1644  kubectl delete pod/foo
+ 1645  cc
+ 1646  kubectl create deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080
+ 1647  kubectl run  deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080
+ 1648  kubectl run  deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 > f8.yaml
+ 1649  kubectl delete deploy/foo
+ 1650  kubectl run  deploy foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 > f8.yaml
+ 1651  kubectl delete deploy/foo
+ 1652  kubectl delete deploy/deploy
+ 1653  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 > f8.yaml
+ 1654  nano f8.yaml 
+ 1655  kubectl delete deploy/deploy
+ 1656  kubectl delete deploy/foo
+ 1657  cc
+ 1658  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 --dry-run > f8.yaml
+ 1659  nano f8.yaml 
+ 1660  kubectl run foo --image=dgkanatsios/simpleapp --replicas=3 --labels=app=foo --port=8080 --dry-run -o yaml > f8.yaml
+ 1661  nano f8.yaml 
+ 1662  kc -f f8.yaml 
+ 1663  kubectl get deploy/foo
+ 1664  cc
+ 1665  kubectl get pods -l app=foo -o wie
+ 1666  kubectl get pods -l app=foo -o wide
+ 1667  kubectl run bbb --image=busybox --restart=Never -it --rm -- sh wget -o- 172.17.0.3:8080
+ 1668  kubectl run bbb --image=busybox --restart=Never -it --rm -- sh wget -0- 172.17.0.3:8080
+ 1669  kubectl get pods -l app=foo -o wide
+ 1670  kubectl run bbb --image=busybox --restart=Never -it --rm -- sh
+ 1671  cc
+ 1672  kubectl expose deploy foo --port=6262 --target-port=8080
+ 1673  kubectl get svc
+ 1674  kubectl get ep
+ 1675  kubectl run bbb --image=busybox --restart=never -ti --rm -- sh
+ 1676  kubectl run bbb --image=busybox --restart=Never -ti --rm -- sh
+ 1677  cc
+ 1678  kubectl create dploy nginx --dry-run -o yaml >f9.yaml
+ 1679  kubectl create dploy nginx --image=nginx --dry-run -o yaml >f9.yaml
+ 1680  kubectl create deploy nginx --image=nginx --dry-run -o yaml >f9.yaml
+ 1681  nano f9.yaml 
+ 1682  cc
+ 1683  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1684  kubectl delete svc/nginx
+ 1685  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1686  kubectl delete svc/nginx
+ 1687  kubectl delete deploy/nginx
+ 1688  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1689  kubectl get svc nginx -o yaml > f10.yaml
+ 1690  nano f10
+ 1691  nano f10.yaml 
+ 1692  nano f10policy.yaml
+ 1693  kubectl get api-version 
+ 1694  kubectl explain --h
+ 1695  kubectl explain --api-version
+ 1696  kubectl explain pods --api-version
+ 1697  history | api-vers
+ 1698  history | grep api-vers
+ 1699  kubectl explain --h
+ 1700  kubectl explain network-Policy
+ 1701  wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\
+ 1702  33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333312
+ 1703  dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd2
+ 1704  exit
+ 1705  gup
+ 1706  exit
+ 1707  minikube status
+ 1708  minikube start
+ 1709  kubectl get all 
+ 1710  kubectl get svc
+ 1711  cc
+ 1712  script 2003312337
+ 1713  exit
+ 1714  ping 1.1.1.1
+ 1715  cc
+ 1716  kubectl run f11dep --image=nginx --replicas=2 --port=80 --expose 
+ 1717  kubectl get deploy/f11dep -o yaml 
+ 1718  kubectl get svc/f11dep -o yaml 
+ 1719  nano f11netpol.yaml
+ 1720  cc
+ 1721  kubectl explain networkPolicy
+ 1722  kubectl explain networkPolicy --recursive
+ 1723  kubectl explain 
+ 1724  kubectl explain --h
+ 1725  kubectl explain pods
+ 1726  kubectl explain networkPolicy
+ 1727  kubectl explain networkPolicy.apiVersion 
+ 1728  kubectl explain networkPolicy.apiVersion --recursive
+ 1729  kubectl get --h
+ 1730  history 
+ 1731  c
+ 1732  kubectl api-resource
+ 1733  kubectl api-resources
+ 1734  kubectl api-resources | grep cj
+ 1735  cc
+ 1736  nano f11netpol.yaml 
+ 1737  kubectl explain networkpolicy
+ 1738  kubectl explain networkpolicy.spec
+ 1739  kubectl explain networkpolicy.spec --recursive
+ 1740  echo << EOF >> f11netpol.yaml 
+ 1741    podSelector:
+ 1742      matchExpressions:
+ 1743        key: value
+ 1744  EOF
+ 1745  nano f11netpol.yaml 
+ 1746  kubectl get deploy/f11deploy
+ 1747  kubectl get deploy/f11dep
+ 1748  kubectl get deploy/f11dep -o yaml
+ 1749  nano f11netpol.yaml 
+ 1750  kc -f f11netpol.yaml 
+ 1751  nano f11netpol.yaml 
+ 1752  kc -f f11netpol.yaml 
+ 1753  nano f11netpol.yaml 
+ 1754  kc -f f11netpol.yaml 
+ 1755  kubectl get netpol
+ 1756  cca
+ 1757  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://nginx:80                       # This should not work
+ 1758  kubectl get netpol
+ 1759  kubectl get svc/f11dep
+ 1760  kubectl get ep
+ 1761  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://f11dep:80
+ 1762  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- http://f11dep:80
+ 1763  kubectl delete pod/busybox
+ 1764  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- http://f11dep:80
+ 1765  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://f11dep:80
+ 1766  nano f11netpol.yaml 
+ 1767  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- 10.98.165.245:80
+ 1768  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- wget -O- 10.98.165.245:80
+ 1769  kubectl get svc,pod
+ 1770  kubectl run busybox --image=busybox --rm -it --restart=Never -- sh
+ 1771  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted  -- sh
+ 1772  kubectl run busybox --image=busybox --rm -it --restart=Never --labels="access=granted"  -- sh
+ 1773  kubectl run busybox --image=busybox --rm -it --restart=Never -- sh
+ 1774  nano f11netpol.yaml 
+ 1775  kubectl delete netpol/f11dep
+ 1776  kubectl get netpol
+ 1777  kubectl delete netpol/access-nginx
+ 1778  kubectl delete pod/nginx
+ 1779  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1780  kubectl delete pod/nginx
+ 1781  kubectl delete deploy/nginx
+ 1782  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1783  kubectl delete deploy/nginx
+ 1784  kubectl delete svc/nginx
+ 1785  kubectl delete pod/nginx
+ 1786  kubectl run nginx --image=nginx --replicas=2 --port=80 --expose
+ 1787  kubectl describe svc nginx
+ 1788  kubectl get svc nginx -o yaml
+ 1789  kubectl describe svc nginx
+ 1790  kubectl create -f f11dep.yaml
+ 1791  kubectl create -f f11netpol.yaml 
+ 1792  cc
+ 1793  kubectl run busybox --image=busybox --rm -it --restart=Never -- wget -O- http://nginx:80
+ 1794  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted -- wget -O- http://nginx:80
+ 1795  kubectl run busybox --image=busybox --rm -it --restart=Never -- sh
+ 1796  kubectl delete netpol/access-nginx
+ 1797  nano f11netpol.yaml 
+ 1798  kubectl create -f f11netpol.yaml 
+ 1799  kubectl run busybox --image=busybox --rm -it --restart=Never -- sh
+ 1800  kubectl run busybox --image=busybox --rm -it --restart=Never --labels=access=granted -- sh
+ 1801  kubectl run busybox --image=busybox --rm -it --restart=Never --labels="access=granted" -- sh
+ 1802  kubectl get svc 
+ 1803  kubectl get pod nginx
+ 1804  kubectl get deploy
+ 1805  kubectl get deploy nginx
+ 1806  kubectl get pod
+ 1807  kubectl describe svc/nginx
+ 1808  nano f11netpol.yaml 
+ 1809  kubectl describe pod/nginx
+ 1810  kubectl describe deploy/nginx
+ 1811  exit
+ 1812  minikube start
+ 1813  kubectl get all 
+ 1814  kubectl netpol
+ 1815  kubectl get netpol
+ 1816  gup
+ 1817  cc
+ 1818  script 2004012345
+ 1819  gup
+ 1820  minikube start
+ 1821  kubectl get all 
+ 1822  gup
+ 1823  cc
+ 1824  script 2004030023
+ 1825  kubectl run g1 --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c 'sleep 3600' > g1.yaml
+ 1826  nano g1.yaml 
+ 1827  kubectl explain pod.volumeMounts --rescursive
+ 1828  kubectl explain pods.volumeMounts --rescursive
+ 1829  kubectl explain pods.spec.volumeMounts --rescursive
+ 1830  kubectl explain pods.spec.volumes --rescursive
+ 1831  kubectl explain pods.spec --rescursive
+ 1832  kubectl explain pod.spec --rescursive
+ 1833  kubectl explain pod --recursive
+ 1834  kubectl explain pods.conatiners.volumeMounts
+ 1835  kubectl explain pods.conatiners
+ 1836  kubectl explain pods.spec.conatiners
+ 1837  kubectl explain pod.spec.conatiners
+ 1838  kubectl explain pod.spec.containers
+ 1839  kubectl explain pod.
+ 1840  kubectl explain pod.spec
+ 1841  kubectl explain pod.spec.volumes
+ 1842  nano g1.yaml 
+ 1843  kubectl explain pod.spec.
+ 1844  kubectl explain pod.spec.containers
+ 1845  kubectl explain pod.spec.containers.volumeMounts
+ 1846  kubectl explain pod.spec.containers.volumeMounts --recursive
+ 1847  nano g1.yaml 
+ 1848  kc -f g1.yaml 
+ 1849  kubectl get pod/g1
+ 1850  kubectl get pod/g1 -w
+ 1851  cc
+ 1852  kubectl exec -ti g1 -c g1a -- /bin/sh
+ 1853  kubectl exec -ti g1 -c g1b -- /bin/sh
+ 1854  cc
+ 1855  kubectl explain persistentVolume 
+ 1856  kubectl explain persistentVolume --recursive
+ 1857  cc
+ 1858  kubectl get pv,pvc
+ 1859  kubectl get pv
+ 1860  kubectl get pvc
+ 1861  cc
+ 1862  touch g2pv.yaml
+ 1863  nano g2pv.yaml 
+ 1864  gup
+ 1865  nano g2pvc.yaml 
+ 1866  kubectl explain persistentVolumeClaim --recursive
+ 1867  kubectl explain persistentVolumeClaim.spec
+ 1868  nano g2pvc.yaml 
+ 1869  kc -f g2pvc.yaml 
+ 1870  nano g2pvc.yaml 
+ 1871  kc -f g2pvc.yaml 
+ 1872  nano g2pvc.yaml 
+ 1873  kc -f g2pvc.yaml 
+ 1874  nano g2pvc.yaml 
+ 1875  kc -f g2pvc.yaml 
+ 1876  minikube status
+ 1877  kubectl get pod
+ 1878  ll
+ 1879  ls
+ 1880  gup
+ 1881  cc
+ 1882  nano g2pvc.yaml 
+ 1883  kc -f g2pvc.yaml 
+ 1884  kubectl get pv
+ 1885  kubectl get pvc
+ 1886  exit
+ 1887  minikube start
+ 1888  script 2004041545
+ 1889  cc
+ 1890  kubectl get all 
+ 1891  cc
+ 1892  ll
+ 1893  ls
+ 1894  nano g2pv.yaml 
+ 1895  cc
+ 1896  kubectl explain pod. --recursive
+ 1897  kubectl explain --h
+ 1898  kubectl explain --help
+ 1899  kubectl options
+ 1900  kubectl PesistentVolume --recursive
+ 1901  kubectl explain PesistentVolume --recursive
+ 1902  kubectl explain presistentVolume --recursive
+ 1903  kubectl explain PersistentVolume --recursive
+ 1904  kubectl explain PersistentVolume 
+ 1905  kubectl explain PersistentVolume.spec
+ 1906  kubectl explain PersistentVolume.kind
+ 1907  kubectl explain PersistentVolume.apiVersion
+ 1908  kubectl explain PersistentVolume.metadata
+ 1909  nano g2pv.yaml 
+ 1910  kubectl explain PersistentVolume.spec
+ 1911  kubectl get pod
+ 1912  minikube status
+ 1913  minikube stop
+ 1914  minikube start
+ 1915  kubectl explain PersistentVolume.spec
+ 1916  kubectl explain PersistentVolume.spec --recursive
+ 1917  nano g2pv.yaml 
+ 1918  kubectl create -f g2pv.yaml 
+ 1919  nano g2pv.yaml 
+ 1920  kubectl create -f g2pv.yaml 
+ 1921  nano g2pv.yaml 
+ 1922  kubectl create -f g2pv.yaml 
+ 1923  kubectl get pv
+ 1924  kubectl get pvc
+ 1925  nano g2pvc.yaml 
+ 1926  cc
+ 1927  script 2004042103
+ 1928  geit
+ 1929  gedit
+ 1930  minikube start
+ 1931  script 2004052320
+ 1932  cc
+ 1933  kubectl get pod
+ 1934  cc
+ 1935  ls
+ 1936  kubectl get pv
+ 1937  kubectl get pvc
+ 1938  kubectl run bb bb --image=busybox --restart=Never --dry-run -o yaml -- /bin/sh -c "sleep 3600" > g3.yaml 
+ 1939  nano g3.yaml 
+ 1940  kubectl create -f g3.yaml 
+ 1941  nano g3.yaml 
+ 1942  kubectl create -f g3.yaml 
+ 1943  cc
+ 1944  kubectl exec bb -ti -- cp /etc/passwd /etc/foo/passwd
+ 1945  nano g3.yaml 
+ 1946  kc -f bb1 
+ 1947  kc -f g3.yaml 
+ 1948  kubectl exec bb1 -rm -- ls /etc/foo
+ 1949  kubectl exec bb1 -rm -ti -- ls /etc/foo
+ 1950  kubectl exec bb1 -- ls /etc/foo
+ 1951  cc
+ 1952  kubectl run bb2 --image=busybox --restart=Never -- sleep 3600
+ 1953  kubectl cp bb2:/etc/passwd ./passwd
+ 1954  kubectl cp bb2:/etc/passwd .passwd
+ 1955  ll
+ 1956  ls
+ 1957  ls ./passwd 
+ 1958  cd ./passwd 
+ 1959  cd ..
+ 1960  ls
+ 1961  passwd 
+ 1962  cd k8CKAD/
+ 1963  ls
+ 1964  cat passwd 
+ 1965  cd ..
+ 1966  ls
+ 1967  cat passwd
+ 1968  cd k8CKAD/
+ 1969  kubectl exec bb2 -ti -- /bin/sh
+ 1970  cat ./passwd 
+ 1971  ll ./passwd 
+ 1972  less /etc/passwd
+ 1973  cc
+ 1974  gup
+ 1975  cat passwd 
+ 1976  cat .passwd 
+ 1977  gup
+ 1978  ping 1.1.1.1
+ 1979  ping 8.8.8.8
+ 1980  cc
+ 1981  kubectl create ns ckad-prep
+ 1982  kubectl get ns
+ 1983  cc
+ 1984  kubectl run mypod --image=nginx:2.3.5 --restart=Never --port=80 --namespace=ckad-prep
+ 1985  kubectl get pod -n ckad-prep
+ 1986  kubectl describe pod mypod -n ckad-prep
+ 1987  touch pod-error.txt
+ 1988  kubectl describe pod mypod -n ckad-prep | grep Events
+ 1989  kubectl describe pod mypod -n ckad-prep | grep -2 Events
+ 1990  kubectl describe pod mypod -n ckad-prep | grep -2 Failed
+ 1991  kubectl describe pod mypod -n ckad-prep | grep -2 Warning Failed
+ 1992  kubectl describe pod mypod -n ckad-prep | grep -2 Failed > pod-error.txt 
+ 1993  cat pod-error.txt 
+ 1994  cc
+ 1995  kubectl set --h
+ 1996  kubectl set image --h
+ 1997  kubectl set image pod/mypod nginx:2.3.5=nginx:1.15.12 -n ckad-prep
+ 1998  kubectl set image pod/mypod mypod=nginx:1.15.12 -n ckad-prep
+ 1999  kubectl describe pod mypod -n ckad-prep
+ 2000  kubectl get pod mypod -n ckad-prep
+ 2001  kubectl edit pod mypod -n ckad-prep
+ 2002  kubectl get pod -n ckad-prep
+ 2003  6
+ 2004  kubectl log pod/mypod
+ 2005  kubectl logs pod/mypod -n ckad-prep
+ 2006  cc
+ 2007  kubectl exec mypod -ti -n ckad-prep -- sh
+ 2008  kubectl get pod -n ckad-prep -o wide
+ 2009  cc
+ 2010  kubectl run bb --image=busybox --restart=Never --rm -ti -n ckad-prep -- /bin/sh
+ 2011  kubectl logs mypod -n ckad-prep
+ 2012  kubectl delete pod mypod --namespace=ckad-prep
+ 2013  gup
+ 2014  ~/Q1_CNC/k8CKAD/gup
+ 2015  ~/Q1_CNC/k8CKAD/gitBatch.sh
+ 2016  sudo ~/Q1_CNC/k8CKAD/gitBatch.sh
+ 2017  cd ..
+ 2018  gup
+ 2019  history 
+ 2020  // 1-core-concepts.md
+ 2021  history 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ history // 1-core-concepts.mdE1-core-concepts.mdn1-core-concepts.mdd1-core-concepts.md 1-core-concepts.mdo1-core-concepts.mdf1-core-concepts.md 1-core-concepts.md
+bash: //: Is a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ exit
+exit
+
+Script done on 2020-04-07 00:43:59+0500
