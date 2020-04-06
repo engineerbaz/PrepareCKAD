@@ -1,0 +1,423 @@
+Script started on 2020-04-07 00:27:04+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create ns ckad-prep
+namespace/ckad-prep created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get ns
+NAME              STATUS   AGE
+ckad-prep         Active   3s
+default           Active   51d
+kube-node-lease   Active   51d
+kube-public       Active   51d
+kube-system       Active   51d
+mynamespace       Active   23d
+namespace1        Active   30d
+namespace2        Active   30d
+namespace3        Active   30d
+namespace4        Active   30d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run mypod --image=nginc[Kx:2.3.5 --resat[K[Ktart=Nver[K[K[Ker[Kver --port=80 --namespace=ckad-prep
+pod/mypod created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod -n ckad-prep
+NAME    READY   STATUS         RESTARTS   AGE
+mypod   0/1     ErrImagePull   0          9s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl describe pod mypod -n ckad-pred[Kp
+Name:         mypod
+Namespace:    ckad-prep
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Tue, 07 Apr 2020 00:28:02 +0500
+Labels:       run=mypod
+Annotations:  <none>
+Status:       Pending
+IP:           172.17.0.27
+Containers:
+  mypod:
+    Container ID:   
+    Image:          nginx:2.3.5
+    Image ID:       
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-n2h5v (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  default-token-n2h5v:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-n2h5v
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason     Age                From               Message
+  ----     ------     ----               ----               -------
+  Normal   Scheduled  29s                default-scheduler  Successfully assigned ckad-prep/mypod to minikube
+  Normal   BackOff    24s                kubelet, minikube  Back-off pulling image "nginx:2.3.5"
+  Warning  Failed     24s                kubelet, minikube  Error: ImagePullBackOff
+  Normal   Pulling    12s (x2 over 29s)  kubelet, minikube  Pulling image "nginx:2.3.5"
+  Warning  Failed     8s (x2 over 25s)   kubelet, minikube  Failed to pull image "nginx:2.3.5": rpc error: code = Unknown desc = Error response from daemon: manifest for nginx:2.3.5 not found
+  Warning  Failed     8s (x2 over 25s)   kubelet, minikube  Error: ErrImagePull
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ tou[K[K[Kecho [K[K[K[K[Ktoucj[Kh pod-error.txt
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ echo "[K[K[K[K[K[Ktail -2 ku[K[K[K[K[K[K[K[K[K[Ktouch pod-error.txtkubectl describe pod mypod -n ckad-prep[11Pget [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11@describe pod my[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | grep Events
+[01;31m[KEvents[m[K:
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl describe pod mypod -n ckad-prep | grep Events[C[C[C-Events2Events Events
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+[01;31m[KEvents[m[K:
+  Type     Reason     Age                From               Message
+  ----     ------     ----               ----               -------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl describe pod mypod -n ckad-prep | grep -2 Events[K[K[K[K[K[KWarningD[K[K[K[K[K[K[K[KFailed
+  Normal   Scheduled  112s                default-scheduler  Successfully assigned ckad-prep/mypod to minikube
+  Normal   BackOff    23s (x5 over 107s)  kubelet, minikube  Back-off pulling image "nginx:2.3.5"
+  Warning  [01;31m[KFailed[m[K     23s (x5 over 107s)  kubelet, minikube  Error: ImagePullBackOff
+  Normal   Pulling    10s (x4 over 112s)  kubelet, minikube  Pulling image "nginx:2.3.5"
+  Warning  [01;31m[KFailed[m[K     6s (x4 over 108s)   kubelet, minikube  [01;31m[KFailed[m[K to pull image "nginx:2.3.5": rpc error: code = Unknown desc = Error response from daemon: manifest for nginx:2.3.5 not found
+  Warning  [01;31m[KFailed[m[K     6s (x4 over 108s)   kubelet, minikube  Error: ErrImagePull
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl describe pod mypod -n ckad-prep | grep -2 Failed[C[C[C[C[C[C[C[C[C[C[CWFailedaFailedrFailednFailediFailednFailedgFailed Failed[1PFailed Failed
+grep: Failed: No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl describe pod mypod -n ckad-prep | grep -2 Warning Failed[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K Failed > pod-error.txt 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nan[K[K[Kcat pod-error.txt 
+  Normal   Scheduled  2m29s                default-scheduler  Successfully assigned ckad-prep/mypod to minikube
+  Normal   Pulling    47s (x4 over 2m29s)  kubelet, minikube  Pulling image "nginx:2.3.5"
+  Warning  Failed     43s (x4 over 2m25s)  kubelet, minikube  Failed to pull image "nginx:2.3.5": rpc error: code = Unknown desc = Error response from daemon: manifest for nginx:2.3.5 not found
+  Warning  Failed     43s (x4 over 2m25s)  kubelet, minikube  Error: ErrImagePull
+  Warning  Failed     28s (x6 over 2m24s)  kubelet, minikube  Error: ImagePullBackOff
+  Normal   BackOff    16s (x7 over 2m24s)  kubelet, minikube  Back-off pulling image "nginx:2.3.5"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl ima[K[K[Kset 
+202004070027   pod-error.txt  README.md      
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl set --h
+Error: unknown flag: --h
+
+
+Available Commands:
+  env            Update environment variables on a pod template
+  image          Update image of a pod template
+  resources      Update resource requests/limits on objects with pod templates
+  selector       Set the selector on a resource
+  serviceaccount Update ServiceAccount of a resource
+  subject        Update User, Group or ServiceAccount in a RoleBinding/ClusterRoleBinding
+
+Usage:
+  kubectl set SUBCOMMAND [options]
+
+Use "kubectl <command> --help" for more information about a given command.
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl set --h[K[K[Kimage --h
+Error: unknown flag: --h
+
+
+Examples:
+  # Set a deployment's nginx container image to 'nginx:1.9.1', and its busybox container image to 'busybox'.
+  kubectl set image deployment/nginx busybox=busybox nginx=nginx:1.9.1
+  
+  # Update all deployments' and rc's nginx container's image to 'nginx:1.9.1'
+  kubectl set image deployments,rc nginx=nginx:1.9.1 --all
+  
+  # Update image of all containers of daemonset abc to 'nginx:1.9.1'
+  kubectl set image daemonset abc *=nginx:1.9.1
+  
+  # Print result (in yaml format) of updating nginx container image from local file, without hitting the server
+  kubectl set image -f path/to/file.yaml nginx=nginx:1.9.1 --local -o yaml
+
+Options:
+      --all=false: Select all resources, including uninitialized ones, in the namespace of the specified resource types
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+      --local=false: If true, set image will NOT contact api-server but run locally.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, not including uninitialized ones, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+
+Usage:
+  kubectl set image (-f FILENAME | TYPE NAME) CONTAINER_NAME_1=CONTAINER_IMAGE_1 ... CONTAINER_NAME_N=CONTAINER_IMAGE_N [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl set image --h[K[K[Kpod/mu[Kt[Kypod m[Knginx:2.3.5=nginx:1.15.12 -n ckad-prep
+error: unable to find container named "nginx:2.3.5"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl set image pod/mypod nginx:2.3.5=nginx:1.15.12 -n ckad-prep[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@m[1@y[1@p[1@o[1@d
+pod/mypod image updated
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl set image pod/mypod mypod=nginx:1.15.12 -n ckad-prep[6@nginx:2.3.5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--h[K[6P--hcc[Kat pod-error.txt [55@kubectl describe pod mypod -n ckad-prep | grep -2 Failed >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9PWarning Failed[8PFailedEvents[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+Name:         mypod
+Namespace:    ckad-prep
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Tue, 07 Apr 2020 00:28:02 +0500
+Labels:       run=mypod
+Annotations:  <none>
+Status:       Pending
+IP:           172.17.0.27
+Containers:
+  mypod:
+    Container ID:   
+    Image:          nginx:1.15.12
+    Image ID:       
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-n2h5v (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             False 
+  ContainersReady   False 
+  PodScheduled      True 
+Volumes:
+  default-token-n2h5v:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-n2h5v
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason     Age                    From               Message
+  ----     ------     ----                   ----               -------
+  Normal   Scheduled  5m38s                  default-scheduler  Successfully assigned ckad-prep/mypod to minikube
+  Normal   Pulling    3m56s (x4 over 5m38s)  kubelet, minikube  Pulling image "nginx:2.3.5"
+  Warning  Failed     3m52s (x4 over 5m34s)  kubelet, minikube  Failed to pull image "nginx:2.3.5": rpc error: code = Unknown desc = Error response from daemon: manifest for nginx:2.3.5 not found
+  Warning  Failed     3m52s (x4 over 5m34s)  kubelet, minikube  Error: ErrImagePull
+  Normal   BackOff    3m25s (x7 over 5m33s)  kubelet, minikube  Back-off pulling image "nginx:2.3.5"
+  Warning  Failed     37s (x19 over 5m33s)   kubelet, minikube  Error: ImagePullBackOff
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod mypod -n ckad-prep
+NAME    READY   STATUS             RESTARTS   AGE
+mypod   0/1     ImagePullBackOff   0          5m54s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl edit pod p[Kmypod -n ckad-prep
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;18r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[18;1H"/tmp/kubectl-edit-urobw.yaml" 92L, 2472C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#[m
+[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31m"2020-04-06T19:28:02Z"[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m mypod
+  [36mname[m[35m:[m mypod
+  [36mnamespace[m[35m:[m ckad-prep
+  [36mresourceVersion[m[35m:[m [31m"566519"[m
+  [36mselfLink[m[35m:[m /api/v1/namespaces/ckad-prep/pods/mypod
+  [36muid[m[35m:[m 58579f94-6afa-4556-883e-f8ece254802d
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m[18;132H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[34m# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#[m
+[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31m"2020-04-06T19:28:02Z"[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m mypod
+  [36mname[m[35m:[m mypod
+  [36mnamespace[m[35m:[m ckad-prep
+  [36mresourceVersion[m[35m:[m [31m"566519"[m
+  [36mselfLink[m[35m:[m /api/v1/namespaces/ckad-prep/pods/mypod
+  [36muid[m[35m:[m 58579f94-6afa-4556-883e-f8ece254802d
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m
+  [38;5;130m- [m[36mimage[m[35m:[m nginx:1.15.12
+    [36mimagePullPolicy[m[35m:[m IfNotPresent
+    [36mname[m[35m:[m mypod
+    [36mports[m[35m:[m
+    [38;5;130m- [m[36mcontainerPort[m[35m:[m [31m80[m[23;7H[36mprotocol[m[35m:[m TCP
+    [36mresources[m[35m:[m [35m{}[m
+    [36mterminationMessagePath[m[35m:[m /dev/termination-log
+    [36mterminationMessagePolicy[m[35m:[m File
+    [36mvolumeMounts[m[35m:[m
+    [38;5;130m- [m[36mmountPath[m[35m:[m /var/run/secrets/kubernetes.io/serviceaccount[29;7H[36mname[m[35m:[m default-token-n2h5v[30;7H[36mreadOnly[m[35m:[m [31mtrue[m
+  [36mdnsPolicy[m[35m:[m ClusterFirst
+  [36menableServiceLinks[m[35m:[m [31mtrue[m
+  [36mnodeName[m[35m:[m minikube
+  [36mpriority[m[35m:[m [31m0[m
+  [36mrestartPolicy[m[35m:[m Never
+  [36mschedulerName[m[35m:[m default-scheduler
+  [36msecurityContext[m[35m:[m [35m{}[m[38;133H1,1[11CTop[1;1H[?25h[?25l[38;133H2[2;1H[?25h[?25l[38;133H3[3;1H[?25h[?25l[38;133H4[4;1H[?25h[?25l[38;133H5[5;1H[?25h[?25l[38;133H6[6;1H[?25h[?25l[38;133H7[7;1H[?25h[?25l[38;133H8[8;1H[?25h[?25l[38;133H9[9;1H[?25h[?25l[38;133H10,1[10;1H[?25h[?25l[38;134H1[11;1H[?25h[?25l[38;134H2[12;1H[?25h[?25l[38;134H3[13;1H[?25h[?25l[38;134H4[14;1H[?25h[?25l[38;134H5[15;1H[?25h[?25l[38;134H6[16;1H[?25h[?25l[38;134H7[17;1H[?25h[?25l[38;134H8[18;1H[?25h[?25l[38;134H9[19;1H[?25h[?25l[38;133H20[20;1H[?25h[?25l[38;134H1[21;1H[?25h[?25l[38;134H2[22;1H[?25h[?25l[38;134H3[23;1H[?25h[?25l[38;134H4[24;1H[?25h[?25l[38;134H5[25;1H[?25h[?25l[38;134H6[26;1H[?25h[?25l[38;134H7[27;1H[?25h[?25l[38;134H8[28;1H[?25h[?25l[38;134H9[29;1H[?25h[?25l[38;133H30[30;1H[?25h[?25l[38;134H1[31;1H[?25h[?25l[38;134H2[32;1H[?25h[?25l[38;134H3[33;1H[?25h[?25l[38;134H4[34;1H[?25h[?25l[38;134H5[35;1H[?25h[?25l[38;134H6[36;1H[?25h[?25l[38;134H7[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mserviceAccount[m[35m:[m default[38;133H[K[38;133H38,1[11C1%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mserviceAccountName[m[35m:[m default[38;133H[K[38;133H39,1[11C3%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mterminationGracePeriodSeconds[m[35m:[m [31m30[m[38;133H[K[38;133H40,1[11C5%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mtolerations[m[35m:[m[38;133H[K[38;133H41,1[11C7%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36meffect[m[35m:[m NoExecute[38;133H[K[38;133H42,1[11C9%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mkey[m[35m:[m node.kubernetes.io/not-ready[38;133H[K[38;133H43,1[10C10%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36moperator[m[35m:[m Exists[38;133H[K[38;133H44,1[10C12%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtolerationSeconds[m[35m:[m [31m300[m[38;133H[K[38;133H45,1[10C14%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36meffect[m[35m:[m NoExecute[38;133H[K[38;133H46,1[10C16%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mkey[m[35m:[m node.kubernetes.io/unreachable[38;133H[K[38;133H47,1[10C18%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36moperator[m[35m:[m Exists[38;133H[K[38;133H48,1[10C20%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtolerationSeconds[m[35m:[m [31m300[m[38;133H[K[38;133H49,1[10C21%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mvolumes[m[35m:[m[38;133H[K[38;133H50,1[10C23%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36mname[m[35m:[m default-token-n2h5v[38;133H[K[38;133H51,1[10C25%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36msecret[m[35m:[m[38;133H[K[38;133H52,1[10C27%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;7H[36mdefaultMode[m[35m:[m [31m420[m[38;133H[K[38;133H53,1[10C29%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;7H[36msecretName[m[35m:[m default-token-n2h5v[38;133H[K[38;133H54,1[10C30%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;1H[36mstatus[m[35m:[m[38;133H[K[38;133H55,1[10C32%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mconditions[m[35m:[m[38;133H[K[38;133H56,1[10C34%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36mlastProbeTime[m[35m:[m [31mnull[m[38;133H[K[38;133H57,1[10C36%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mlastTransitionTime[m[35m:[m [31m"2020-04-06T19:28:02Z"[m[38;133H[K[38;133H58,1[10C38%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mstatus[m[35m:[m [31m"True"[m[38;133H[K[38;133H59,1[10C40%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtype[m[35m:[m Initialized[38;133H[K[38;133H60,1[10C41%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36mlastProbeTime[m[35m:[m [31mnull[m[38;133H[K[38;133H61,1[10C43%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mlastTransitionTime[m[35m:[m [31m"2020-04-06T19:28:02Z"[m[38;133H[K[38;133H62,1[10C45%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mmessage[m[35m:[m [31m'containers with unready status: [mypod]'[m[38;133H[K[38;133H63,1[10C47%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mreason[m[35m:[m ContainersNotReady[38;133H[K[38;133H64,1[10C49%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mstatus[m[35m:[m [31m"False"[m[38;133H[K[38;133H65,1[10C50%[37;1H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtype[m[35m:[m Ready[38;133H[K[38;133H66,1[10C52%[37;1H[?25h
+[?2004l[38;133H[K[38;1H[?2004l[?1l>[?1049l[23;0;0tEdit cancelled, no changes made.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl edit pod mypod -n ckad-prep[1Pge[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@edi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"/tmp/kubectl-edit-ha1a7.yaml" 92L, 2472C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#[m
+[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Pod
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31m"2020-04-06T19:28:02Z"[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m mypod
+  [36mname[m[35m:[m mypod
+  [36mnamespace[m[35m:[m ckad-prep
+  [36mresourceVersion[m[35m:[m [31m"566519"[m
+  [36mselfLink[m[35m:[m /api/v1/namespaces/ckad-prep/pods/mypod
+  [36muid[m[35m:[m 58579f94-6afa-4556-883e-f8ece254802d
+[36mspec[m[35m:[m
+  [36mcontainers[m[35m:[m
+  [38;5;130m- [m[36mimage[m[35m:[m nginx:1.15.12
+    [36mimagePullPolicy[m[35m:[m IfNotPresent
+    [36mname[m[35m:[m mypod
+    [36mports[m[35m:[m
+    [38;5;130m- [m[36mcontainerPort[m[35m:[m [31m80[m[23;7H[36mprotocol[m[35m:[m TCP
+    [36mresources[m[35m:[m [35m{}[m
+    [36mterminationMessagePath[m[35m:[m /dev/termination-log
+    [36mterminationMessagePolicy[m[35m:[m File
+    [36mvolumeMounts[m[35m:[m
+    [38;5;130m- [m[36mmountPath[m[35m:[m /var/run/secrets/kubernetes.io/serviceaccount[29;7H[36mname[m[35m:[m default-token-n2h5v[30;7H[36mreadOnly[m[35m:[m [31mtrue[m
+  [36mdnsPolicy[m[35m:[m ClusterFirst
+  [36menableServiceLinks[m[35m:[m [31mtrue[m
+  [36mnodeName[m[35m:[m minikube
+  [36mpriority[m[35m:[m [31m0[m
+  [36mrestartPolicy[m[35m:[m Never
+  [36mschedulerName[m[35m:[m default-scheduler
+  [36msecurityContext[m[35m:[m [35m{}[m[38;133H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[38;133H2[2;1H[?25h[?25l[38;133H3[3;1H[?25h[?25l[38;133H4[4;1H[?25h[?25l[38;133H5[5;1H[?25h[?25l[38;133H6[6;1H[?25h[?25l[38;133H7[7;1H[?25h[?25l[38;133H8[8;1H[?25h[?25l[38;133H9[9;1H[?25h[?25l[38;133H10,1[10;1H[?25h[?25l[38;134H1[11;1H[?25h[?25l[38;134H2[12;1H[?25h[?25l[38;134H3[13;1H[?25h[?25l[38;134H4[14;1H[?25h[?25l[38;134H5[15;1H[?25h[?25l[38;134H6[16;1H[?25h[?25l[38;134H7[17;1H[?25h[?25l[38;134H8[18;1H[?25h[?25l[38;134H9[19;1H[?25h[?25l[38;133H20[20;1H[?25h[?25l[38;134H1[21;1H[?25h[?25l[38;136H2[21;2H[?25h[?25l[38;136H3[21;3H[?25h[?25l[38;136H4[21;4H[?25h[?25l[38;136H5[21;5H[?25h[?25l[38;136H6[21;6H[?25h[?25l[38;134H2[22;6H[?25h[?25l[38;134H3[23;6H[?25h[?25l[38;134H4[24;6H[?25h[?25l[38;134H5[25;6H[?25h[?25l[38;134H6[26;6H[?25h[?25l[38;134H7[27;6H[?25h[?25l[38;134H8[28;6H[?25h[?25l[38;134H9[29;6H[?25h[?25l[38;133H30[30;6H[?25h[?25l[38;134H1[31;6H[?25h[?25l[38;134H2[32;6H[?25h[?25l[38;134H3[33;6H[?25h[?25l[38;134H4[34;6H[?25h[?25l[38;134H5[35;6H[?25h[?25l[38;134H6[36;6H[?25h[?25l[38;134H7[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mserviceAccount[m[35m:[m default[38;1H[K[38;133H38,6[11C1%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mserviceAccountName[m[35m:[m default[38;133H[K[38;133H39,6[11C3%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mterminationGracePeriodSeconds[m[35m:[m [31m30[m[38;133H[K[38;133H40,6[11C5%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mtolerations[m[35m:[m[38;133H[K[38;133H41,6[11C7%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36meffect[m[35m:[m NoExecute[38;133H[K[38;133H42,6[11C9%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mkey[m[35m:[m node.kubernetes.io/not-ready[38;133H[K[38;133H43,6[10C10%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36moperator[m[35m:[m Exists[38;133H[K[38;133H44,6[10C12%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtolerationSeconds[m[35m:[m [31m300[m[38;133H[K[38;133H45,6[10C14%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36meffect[m[35m:[m NoExecute[38;133H[K[38;133H46,6[10C16%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mkey[m[35m:[m node.kubernetes.io/unreachable[38;133H[K[38;133H47,6[10C18%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36moperator[m[35m:[m Exists[38;133H[K[38;133H48,6[10C20%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtolerationSeconds[m[35m:[m [31m300[m[38;133H[K[38;133H49,6[10C21%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mvolumes[m[35m:[m[38;133H[K[38;133H50,6[10C23%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36mname[m[35m:[m default-token-n2h5v[38;133H[K[38;133H51,6[10C25%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36msecret[m[35m:[m[38;133H[K[38;133H52,6[10C27%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;7H[36mdefaultMode[m[35m:[m [31m420[m[38;133H[K[38;133H53,6[10C29%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;7H[36msecretName[m[35m:[m default-token-n2h5v[38;133H[K[38;133H54,6[10C30%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;1H[36mstatus[m[35m:[m[38;133H[K[38;133H55,6[10C32%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mconditions[m[35m:[m[38;133H[K[38;133H56,6[10C34%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36mlastProbeTime[m[35m:[m [31mnull[m[38;133H[K[38;133H57,6[10C36%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mlastTransitionTime[m[35m:[m [31m"2020-04-06T19:28:02Z"[m[38;133H[K[38;133H58,6[10C38%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mstatus[m[35m:[m [31m"True"[m[38;133H[K[38;133H59,6[10C40%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtype[m[35m:[m Initialized[38;133H[K[38;133H60,6[10C41%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36mlastProbeTime[m[35m:[m [31mnull[m[38;133H[K[38;133H61,6[10C43%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mlastTransitionTime[m[35m:[m [31m"2020-04-06T19:28:02Z"[m[38;133H[K[38;133H62,6[10C45%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mmessage[m[35m:[m [31m'containers with unready status: [mypod]'[m[38;133H[K[38;133H63,6[10C47%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mreason[m[35m:[m ContainersNotReady[38;133H[K[38;133H64,6[10C49%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mstatus[m[35m:[m [31m"False"[m[38;133H[K[38;133H65,6[10C50%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtype[m[35m:[m Ready[38;133H[K[38;133H66,6[10C52%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36mlastProbeTime[m[35m:[m [31mnull[m[38;133H[K[38;133H67,6[10C54%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mlastTransitionTime[m[35m:[m [31m"2020-04-06T19:28:02Z"[m[38;133H[K[38;133H68,6[10C56%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mmessage[m[35m:[m [31m'containers with unready status: [mypod]'[m[38;133H[K[38;133H69,6[10C58%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mreason[m[35m:[m ContainersNotReady[38;133H[K[38;133H70,6[10C60%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mstatus[m[35m:[m [31m"False"[m[38;133H[K[38;133H71,6[10C61%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtype[m[35m:[m ContainersReady[38;133H[K[38;133H72,6[10C63%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36mlastProbeTime[m[35m:[m [31mnull[m[38;133H[K[38;133H73,6[10C65%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mlastTransitionTime[m[35m:[m [31m"2020-04-06T19:28:02Z"[m[38;133H[K[38;133H74,6[10C67%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mstatus[m[35m:[m [31m"True"[m[38;133H[K[38;133H75,6[10C69%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mtype[m[35m:[m PodScheduled[38;133H[K[38;133H76,6[10C70%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mcontainerStatuses[m[35m:[m[38;133H[K[38;133H77,6[10C72%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[38;5;130m- [m[36mimage[m[35m:[m nginx:1.15.12[38;133H[K[38;133H78,6[10C74%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mimageID[m[35m:[m [31m""[m[38;133H[K[38;133H79,6[10C76%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mlastState[m[35m:[m [35m{}[m[38;133H[K[38;133H80,6[10C78%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mname[m[35m:[m mypod[38;133H[K[38;133H81,6[10C80%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mready[m[35m:[m [31mfalse[m[38;133H[K[38;133H82,6[10C81%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mrestartCount[m[35m:[m [31m0[m[38;133H[K[38;133H83,6[10C83%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;5H[36mstate[m[35m:[m[38;133H[K[38;133H84,6[10C85%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;7H[36mwaiting[m[35m:[m[38;133H[K[38;133H85,6[10C87%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;9H[36mmessage[m[35m:[m Back-off pulling image [31m"nginx:2.3.5"[m[38;133H[K[38;133H86,6[10C89%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;9H[36mreason[m[35m:[m ImagePullBackOff[38;133H[K[38;133H87,6[10C90%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mhostIP[m[35m:[m 10.0.2.15[38;133H[K[38;133H88,6[10C92%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mphase[m[35m:[m Pending[38;133H[K[38;133H89,6[10C94%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mpodIP[m[35m:[m 172.17.0.27[38;133H[K[38;133H90,6[10C96%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mqosClass[m[35m:[m BestEffort[38;133H[K[38;133H91,6[10C98%[37;6H[?25h[?25l[1;37r[37;1H
+[1;38r[37;3H[36mstartTime[m[35m:[m [31m"2020-04-06T19:28:02Z"[m[38;133H[K[38;133H92,6[10CBot[37;6H[?25h
+[?2004l[38;133H[K[38;1H[?2004l[?1l>[?1049l[23;0;0tEdit cancelled, no changes made.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl edit pod mypod -n ckad-prep[1Pge[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@describe[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21@set image pod/mypod mypod=nginx:1.15.12[C[C[C[C[C[C[C[C[C[C[C[C[C[6@nginx:2.3.5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--h[K[6P--hcc[Kat pod-error.txt c[Kat pod-error.txt [55@kubectl describe pod mypod -n ckad-prep | grep -2 Failed >[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9PWarning Failed[8PFailedEvents[3PEvents[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[34Ptouch pod-error.txtkubectl describe pod mypod -n ckad-prep[11Pget [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+NAME    READY   STATUS    RESTARTS   AGE
+mypod   1/1     Running   0          7m13s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ 6
+6: command not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl log pod/mypod
+log is DEPRECATED and will be removed in a future version. Use logs instead.
+Error from server (NotFound): pods "mypod" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl log pod/mypod[Cs pod/mypod[C[C[C[C[C[C[C[C[C[C -n ckad-prep
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl exec mypod -ti -n ckad-prep -- ll[K[Ksh
+# ls
+bin  boot  dev	etc  home  lib	lib64  media  mnt  opt	proc  root  run  sbin  srv  sys  tmp  usr  var
+# exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod -n ckad-prep -o wide
+NAME    READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+mypod   1/1     Running   0          9m30s   172.17.0.27   minikube   <none>           <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run bb --image=busybox --restart=Never --rm -ti -n ckad-prep -- b[K/bin/sh
+If you don't see a command prompt, try pressing enter.
+/ # [JwgeT [J[J[J/ # wget [J-O- 172.17.0.27:80
+Connecting to 172.17.0.27:80 (172.17.0.27:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.or

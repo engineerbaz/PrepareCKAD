@@ -1,0 +1,6 @@
+  Normal   Scheduled  2m29s                default-scheduler  Successfully assigned ckad-prep/mypod to minikube
+  Normal   Pulling    47s (x4 over 2m29s)  kubelet, minikube  Pulling image "nginx:2.3.5"
+  Warning  Failed     43s (x4 over 2m25s)  kubelet, minikube  Failed to pull image "nginx:2.3.5": rpc error: code = Unknown desc = Error response from daemon: manifest for nginx:2.3.5 not found
+  Warning  Failed     43s (x4 over 2m25s)  kubelet, minikube  Error: ErrImagePull
+  Warning  Failed     28s (x6 over 2m24s)  kubelet, minikube  Error: ImagePullBackOff
+  Normal   BackOff    16s (x7 over 2m24s)  kubelet, minikube  Back-off pulling image "nginx:2.3.5"
