@@ -1,0 +1,539 @@
+Script started on 2020-04-09 00:38:19+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run hello --image=bonomat/nodejs-hello-world --restat[Krt=Never --port [K-[K=3000 --r[Kdry-run-[K -o yaml > d1.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano d1.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 17 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d1.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;5Hresources: {}[17;3HdnsPolicy: ClusterFirst[18;3HrestartPolicy: Never[19dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[36d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain pod.spec.containers.ports
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: ports <[]Object>
+
+DESCRIPTION:
+     List of ports to expose from the container. Exposing a port here gives the
+     system additional information about the network connections a container
+     uses, but is primarily informational. Not specifying a port here DOES NOT
+     prevent that port from being exposed. Any port which is listening on the
+     default "0.0.0.0" address inside a container will be accessible from the
+     network. Cannot be updated.
+
+     ContainerPort represents a network port in a single container.
+
+FIELDS:
+   containerPort	<integer> -required-
+     Number of port to expose on the pod's IP address. This must be a valid port
+     number, 0 < x < 65536.
+
+   hostIP	<string>
+     What host IP to bind the external port to.
+
+   hostPort	<integer>
+     Number of port to expose on the host. If specified, this must be a valid
+     port number, 0 < x < 65536. If HostNetwork is specified, this must match
+     ContainerPort. Most containers do not need this.
+
+   name	<string>
+     If specified, this must be an IANA_SVC_NAME and unique within the pod. Each
+     named port in a pod must have a unique name. Name for the port that can be
+     referred to by services.
+
+   protocol	<string>
+     Protocol for port. Must be UDP, TCP, or SCTP. Defaults to "TCP".
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain pod.spec.containers.ports --recursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: ports <[]Object>
+
+DESCRIPTION:
+     List of ports to expose from the container. Exposing a port here gives the
+     system additional information about the network connections a container
+     uses, but is primarily informational. Not specifying a port here DOES NOT
+     prevent that port from being exposed. Any port which is listening on the
+     default "0.0.0.0" address inside a container will be accessible from the
+     network. Cannot be updated.
+
+     ContainerPort represents a network port in a single container.
+
+FIELDS:
+   containerPort	<integer>
+   hostIP	<string>
+   hostPort	<integer>
+   name	<string>
+   protocol	<string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain pod.spec.containers.ports --recursive[Knano d1.yaml [Kkubectl run hello --image=bonomat/nodejs-hello-world --restart=Never --port=3000 --dry-run -o yaml > d1.yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano d1.yaml [K
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 17 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d1.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;5Hresources: {}[17;3HdnsPolicy: ClusterFirst[18;3HrestartPolicy: Never[19dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[A[?12l[?25h[?25l[15;26H[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[16;35r[16;1HM[1;38r[16;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[36d[K[16;10H[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lj[?12l[?25h[?25ls[?12l[?25h[?25l-[?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d1.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 18 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain cc[Knano d1.yaml kubectl explain pod.spec.containers.ports --recursive[K[K[K[K[K[KreadinessPrro[K[Kb[Kobe --reci[Kursive
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: readinessProbe <Object>
+
+DESCRIPTION:
+     Periodic probe of container service readiness. Container will be removed
+     from service endpoints if the probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+     Probe describes a health check to be performed against a container to
+     determine whether it is alive or ready to receive traffic.
+
+FIELDS:
+   exec	<Object>
+      command	<[]string>
+   failureThreshold	<integer>
+   httpGet	<Object>
+      host	<string>
+      httpHeaders	<[]Object>
+         name	<string>
+         value	<string>
+      path	<string>
+      port	<string>
+      scheme	<string>
+   initialDelaySeconds	<integer>
+   periodSeconds	<integer>
+   successThreshold	<integer>
+   tcpSocket	<Object>
+      host	<string>
+      port	<string>
+   timeoutSeconds	<integer>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ echo << EOF >> [K[K y.yml
+> initial[K[K[K[K[K[KinitialDelaySeconds[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KinitialDelaySeconds: 2
+> httpGet:
+>   host[K[K[K[Kport: 3000
+>   host[K[K[K[Kpath: /
+> EOF
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ caty[K y.yml 
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano d1.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 18 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d1.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;7Hname: nodejs-port[17;5Hresources: {}[18;3HdnsPolicy: ClusterFirst[19;3HrestartPolicy: Never[20dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[A[?12l[?25h[?25l[13;16H[?12l[?25h[?25l[A[?12l[?25h[?25l[13d[?12l[?25h[?25l[14;11H[?12l[?25h[?25l[15;16H[?12l[?25h[?25l[16d[?12l[?25h[?25le[?12l[?25h[?25lj[?12l[?25h[?25ls[?12l[?25h[?25l-[?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25l[36d[K[16;23H[?12l[?25h[?25lt[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[17;36r[17;1HM[1;38r[17;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l7[17;36r8[4T[1;38r[17;5H> initialDelaySeconds: 2[18d> httpGet:[19d>   port: 3000[20d>   path: /[21d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l>[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25lrinitialDelaySeconds: 2[6G[?12l[?25h[?25leinitialDelaySeconds: 2[7G[?12l[?25h[?25lainitialDelaySeconds: 2[8G[?12l[?25h[?25ldinitialDelaySeconds: 2[17;9H[?12l[?25h[?25liinitialDelaySeconds: 2[17;10H[?12l[?25h[?25lninitialDelaySeconds: 2[17;11H[?12l[?25h[?25leinitialDelaySeconds: 2[17;12H[?12l[?25h[?25lsinitialDelaySeconds: 2[17;13H[?12l[?25h[?25lssinitialDelaySeconds: 2[17;14H[?12l[?25h[?25lRinitialDelaySeconds: 2[17;15H[?12l[?25h[?25l[1P[?12l[?25h[?25lPinitialDelaySeconds: 2[17;15H[?12l[?25h[?25lrinitialDelaySeconds: 2[17;16H[?12l[?25h[?25loinitialDelaySeconds: 2[17;17H[?12l[?25h[?25lbinitialDelaySeconds: 2[17;18H[?12l[?25h[?25leinitialDelaySeconds: 2[17;19H[?12l[?25h[?25l:initialDelaySeconds: 2[17;20H[?12l[?25h[?25l7[18;36r8[18dM[1;38r[17;20H[K[18dinitialDelaySeconds: 2[?12l[?25h[?25l initialDelaySeconds: 2 [?12l[?25h[?25l  initialDelaySeconds: 2  [?12l[?25h[?25l   initialDelaySeconds: 2   [?12l[?25h[?25l    initialDelaySeconds: 2[5G[?12l[?25h[?25l     initialDelaySeconds: 2[6G[?12l[?25h[?25l      initialDelaySeconds: 2[7G[?12l[?25h[?25l[19d[?12l[?25h[?25l[?12l[?25h[?25l>[?12l[?25h[?25l [?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[19;36r[36;1H
+[1;38r[18;29HhttpGet:[18;29H[?12l[?25h[?25l7[19;36r8[19dM[1;38r[18;29H[K[19dhttpGet:[?12l[?25h[?25l httpGet: [?12l[?25h[?25l  httpGet:  [?12l[?25h[?25l   httpGet:   [?12l[?25h[?25l    httpGet:[5G[?12l[?25h[?25l     httpGet:[6G[?12l[?25h[?25l      httpGet:[7G[?12l[?25h[?25l[?12l[?25h[?25l[20d[?12l[?25h[?25l[?12l[?25h[?25l>[1P  [?12l[?25h[?25l[1P [?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l port: 3000 [?12l[?25h[?25l  port: 3000  [?12l[?25h[?25l   port: 3000   [?12l[?25h[?25l    port: 3000[5G[?12l[?25h[?25l     port: 3000[6G[?12l[?25h[?25l      port: 3000[7G[?12l[?25h[?25l[7G port: 3000[8G[?12l[?25h[?25l[21d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l    path: /[5G[?12l[?25h[?25l>     path: /[6G[?12l[?25h[?25l>      path: /[7G[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l    [1K[1P[?12l[?25h[?25l[7G path: / [?12l[?25h[?25l[22d[?12l[?25h[?25l[22;36r[36;1H
+[1;38r[21;15H[?12l[?25h[?25l[A[?12l[?25h[?25l0[?12l[?25h[?25l0[?12l[?25h[?25l0[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lj[?12l[?25h[?25ls[?12l[?25h[?25l-[?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;7Hname: nodejs-port[17;5HreadinessProbe:[18;7HinitialDelaySeconds: 2[19;7HhttpGet:[20;8Hport: nodejs-port[21;8Hpath: /[22;5Hresources: {}[23;3HdnsPolicy: ClusterFirst[24;3HrestartPolicy: Never[25dstatus: {}[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[20;25H[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;7Hname: nodejs-port[17;5HreadinessProbe:[18;7HinitialDelaySeconds: 2[19;7HhttpGet:[20;8Hport: nodejs-port[21;8Hpath: /[22;5Hresources: {}[23;3HdnsPolicy: ClusterFirst[24;3HrestartPolicy: Never[25dstatus: {}[37d[1;37H(B[0;7md1.yaml[1;65HModified(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[20;25H[?12l[?25h[?25l[?12l[?25h[?25l[21;15H[?12l[?25h[?25l7[22;36r8[22dM[1;38r[22;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[18d[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[16;24H[?12l[?25h[?25l[17d[?12l[?25h[?25l[36;10H(B[0;7m[ line 15/25 (60%), col 1/20 (5%), char 235/423 (55%) ](B[m[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l7[22;36r8[6T[1;38r[22;5HreadinessProbe:[23;7HinitialDelaySeconds: 2[24;7HhttpGet:[25;8Hport: nodejs-port[26;8Hpath: /[28d[?12l[?25h[?25l[27;36r[36;1H
+[1;38r[27;6H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[27;36r[36;1H
+[1;38r[26;15H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25llinessProbe:[6G[?12l[?25h[?25liinessProbe:[7G[?12l[?25h[?25lvinessProbe:[8G[?12l[?25h[?25leinessProbe:[22;9H[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25lt[?12l[?25h[?25l[A[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25lD[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25ly[?12l[?25h[?25lS[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l2[?12l[?25h[?25l [?12l[?25h[?25l5[?12l[?25h[?25l[24;15H[?12l[?25h[?25l[25;25H[?12l[?25h[?25l[26;20H[?12l[?25h[?25l[27d[?12l[?25h[?25l[A  [?12l[?25h[?25l[25;25H[?12l[?25h[?25l[24;15H[?12l[?25h[?25l[23;29H[?12l[?25h[?25l[22;20H[?12l[?25h[?25l[23;29H[?12l[?25h[?25l7[24;36r8[24dM[1;38r[24;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25lS[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l8[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d1.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 29 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl e[Kcreate -f d1.yaml 
+error: error validating "d1.yaml": error validating data: ValidationError(Pod.spec.containers[0]): unknown field "liveinessProbe" in io.k8s.api.core.v1.Container; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create -f d1.yaml cc[Knano d1.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 29 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d1.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;7Hname: nodejs-port[17;5HreadinessProbe:[18;7HinitialDelaySeconds: 2[19;7HhttpGet:[20;8Hport: nodejs-port[21;8Hpath: /[22;5HliveinessProbe:[23;7HinitialDelaySeconds: 5[24;7HperiodSeconds: 8[25;7HhttpGet:[26;8Hport: nodejs-port[27;8Hpath: /[28;5Hresources: {}[29;3HdnsPolicy: ClusterFirst[30;3HrestartPolicy: Never[31dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[36d[K[23;7H[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25l[A[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[22;8H[1P[?12l[?25h[?25l[23d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d1.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 29 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano d1.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C
+error: error validating "d1.yaml": error validating data: ValidationError(Pod.spec.containers[0]): unknown field "livinessProbe" in io.k8s.api.core.v1.Container; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create -f d1.yaml [13Pnano[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 29 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d1.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;7Hname: nodejs-port[17;5HreadinessProbe:[18;7HinitialDelaySeconds: 2[19;7HhttpGet:[20;8Hport: nodejs-port[21;8Hpath: /[22;5HlivinessProbe:[23;7HinitialDelaySeconds: 5[24;7HperiodSeconds: 8[25;7HhttpGet:[26;8Hport: nodejs-port[27;8Hpath: /[28;5Hresources: {}[29;3HdnsPolicy: ClusterFirst[30;3HrestartPolicy: Never[31dstatus: {}[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;7Hname: nodejs-port[17;5HreadinessProbe:[18;7HinitialDelaySeconds: 2[19;7HhttpGet:[20;8Hport: nodejs-port[21;8Hpath: /[22;5HlivinessProbe:[23;7HinitialDelaySeconds: 5[24;7HperiodSeconds: 8[25;7HhttpGet:[26;8Hport: nodejs-port[27;8Hpath: /[28;5Hresources: {}[29;3HdnsPolicy: ClusterFirst[30;3HrestartPolicy: Never[31dstatus: {}[36;67H(B[0;7m[ Read 2[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;7Hname: nodejs-port[17;5HreadinessProbe:[18;7HinitialDelaySeconds: 2[19;7HhttpGet:[20;8Hport: nodejs-port[21;8Hpath: /[22;5HlivinessProbe:[23;7HinitialDelaySeconds: 5[24;7HperiodSeconds: 8[25;7HhttpGet:[26;8Hport: nodejs-port[27;8Hpath: /[28;5Hresources: {}[29;3HdnsPolicy: ClusterFirst[30;3HrestartPolicy: Never[31dstatus: {}[37d[1;37H(B[0;7md1.yaml[73G(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25li[?12l[?25h[?25lv[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[22;8H[1P[?12l[?25h[?25lenessProbe:[22;9H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d1.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 29 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano d1.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C
+Error from server (AlreadyExists): error when creating "d1.yaml": pods "hello" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create -f d1.yaml [13Pnano[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 29 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    d1.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: hello[9;3Hname: hello[10dspec:[11;3Hcontainers:[12;3H- image: bonomat/nodejs-hello-world[13;5Hname: hello[14;5Hports:[15;5H- containerPort: 3000[16;7Hname: nodejs-port[17;5HreadinessProbe:[18;7HinitialDelaySeconds: 2[19;7HhttpGet:[20;8Hport: nodejs-port[21;8Hpath: /[22;5HlivenessProbe:[23;7HinitialDelaySeconds: 5[24;7HperiodSeconds: 8[25;7HhttpGet:[26;8Hport: nodejs-port[27;8Hpath: /[28;5Hresources: {}[29;3HdnsPolicy: ClusterFirst[30;3HrestartPolicy: Never[31dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl getp[K o[Kpod hell
+Error from server (NotFound): pods "hell" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod hello
+NAME    READY   STATUS   RESTARTS   AGE
+hello   0/1     Error    0          32d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl delete pod/hello
+pod "hello" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl delete pod/hello[3Pget pod hello[K[7Pnano d1.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C
+pod/hello created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create -f d1.yaml [2Pdelete pod/hello[3Pget pod hello
+NAME    READY   STATUS              RESTARTS   AGE
+hello   0/1     ContainerCreating   0          4s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod hello
+NAME    READY   STATUS              RESTARTS   AGE
+hello   0/1     ContainerCreating   0          5s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod hello -2[Kw
+NAME    READY   STATUS              RESTARTS   AGE
+hello   0/1     ContainerCreating   0          8s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod hello -w[K[K
+NAME    READY   STATUS              RESTARTS   AGE
+hello   0/1     ContainerCreating   0          22s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod hello 
+NAME    READY   STATUS              RESTARTS   AGE
+hello   0/1     ContainerCreating   0          44s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod hello -w
+NAME    READY   STATUS              RESTARTS   AGE
+hello   0/1     ContainerCreating   0          47s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cckubectl get pod hello -w
+NAME    READY   STATUS              RESTARTS   AGE
+hello   0/1     ContainerCreating   0          62s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ docker[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              fce289e99eb9        15 months ago       1.84kB
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ docker images[K lls
+
+Usage:	docker image COMMAND
+
+Manage images
+
+Commands:
+  build       Build an image from a Dockerfile
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Display detailed information on one or more images
+  load        Load an image from a tar archive or STDIN
+  ls          List images
+  prune       Remove unused images
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rm          Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+
+Run 'docker image COMMAND --help' for more information on a command.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ docker image lls[1Ps
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              fce289e99eb9        15 months ago       1.84kB
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ docker image lsls[1Ps --all
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              fce289e99eb9        15 months ago       1.84kB
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ docker image ls --all[1@s[C[C[C[1P --all[1P --all[1P--all
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              fce289e99eb9        15 months ago       1.84kB
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ docker images --all[2@ l[C[C[C[C[C[C[C[Klss[Kkubectl get pod hello -w
+NAME    READY   STATUS              RESTARTS   AGE
+hello   0/1     ContainerCreating   0          2m38s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod hello -w
+NAME    READY   STATUS              RESTARTS   AGE
+hello   0/1     ContainerCreating   0          3m43s
+hello   0/1     Running             0          4m59s
+hello   1/1     Running             0          5m7s
+^[[A    ^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl exece[K hellp[Ko -ti -- /bin/sh
+# ls 
+bin  boot  dev	etc  home  lib	lib64  media  mnt  opt	proc  root  run  sbin  src  srv  sys  tmp  usr	var
+# cur	l localhost:33 000
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NodeJS Docker Hello World</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/stylesheets/styles.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="well well-sm">			
+			<h2>This is just a hello world message</h2>
+			<img a href="./cage.jpg"/>
+			<img src="src/cage.jpg" alt="Smiley face" width="640">
+		</div>
+	</div>
+</body>
+</html>
+# exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs pod/helo[Klo
+Magic happens on port 3000
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ // d2 Fixing a Misconfigured Pod
+bash: //: Is a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano de[K2.yaml
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;70H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d2.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[m[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[3dapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: failing-pod[9;3Hname: failing-pod[10dspec:[11;3Hcontainers:[12;3H- args:[13;5H- /bin/sh[14;5H- -c[15;5H- while true; do echo $(date) >> ~/tmp/curr-date.txt; sleep[16;7H5; done;[17;5Himage: busybox[18;5Hname: failing-pod[19;5Hresources: {}[20;3HdnsPolicy: ClusterFirst[21;3HrestartPolicy: Never[22dstatus: {}[36d[K[22;11H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[15;64H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25le[?12l[?25h[?25lp[?12l[?25h[?25l[16d[?12l[?25h[?25l[16;36r[36;1H
+[1;38r[15;70H5; done;[15;64H[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: d2.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 19 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kc -f d2.yaml 
+pod/failing-pod created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kuu[Kbectl get pod 
+NAME                         READY   STATUS      RESTARTS   AGE
+06nginx                      0/1     Error       0          52d
+07nginx                      0/1     Error       0          52d
+100vol                       0/1     Error       0          39d
+104pvc2b                     0/1     Error       0          39d
+111                          0/1     Error       0          38d
+113                          0/1     Completed   0          38d
+114nginx                     0/1     Completed   0          38d
+117                          0/1     Error       0          38d
+118                          0/1     Error       0          38d
+126                          0/1     Error       0          35d
+131                          0/1     Error       0          35d
+132                          0/1     Error       0          35d
+134                          0/1     Completed   0          32d
+136                          0/1     Completed   0          32d
+137busybox                   0/1     Error       0          32d
+13nginx                      0/1     Completed   1          52d
+140                          0/1     Error       0          32d
+144                          0/1     Error       0          32d
+17shell                      0/1     Error       0          52d
+19bb                         0/1     Completed   0          52d
+21bb                         0/1     Completed   0          52d
+29mc                         0/3     Completed   0          51d
+2busybox1                    0/1     Completed   0          25d
+33busybox1                   0/1     Completed   0          25d
+34mc                         0/2     Error       0          51d
+37-ng-1                      0/1     Error       0          45d
+37-ng-2                      0/1     Error       0          45d
+37-ng-3                      0/1     Error       0          45d
+3busybox1                    0/1     Completed   0          25d
+53busybox1                   0/1     Completed   0          25d
+67dep-7db4cf66f7-2hfgb       1/1     Running     31         40d
+67dep-7db4cf66f7-9wrj7       1/1     Running     31         40d
+67dep-7db4cf66f7-h5g7f       1/1     Running     31         40d
+67dep-7db4cf66f7-m2269       1/1     Running     31         40d
+84job-9gkc8                  0/1     Completed   0          40d
+88job-bx58m                  0/1     Completed   0          40d
+adapter                      0/2     Error       0          22h
+b2mc                         0/2     Completed   0          24d
+backend                      0/1     Error       0          23h
+bb                           0/1     Completed   0          3d1h
+bb1                          0/1     Completed   0          3d1h
+bb2                          0/1     Completed   0          3d1h
+bbusybox-1584565440-pqtfb    0/1     Completed   0          20d
+bbusybox-1584565500-bwnbj    0/1     Completed   0          20d
+bbusybox-1584565560-m8p9z    0/1     Completed   0          20d
+busybox-1584565440-bxgcl     0/1     Completed   0          20d
+busybox-1584565500-vzktl     0/1     Completed   0          20d
+busybox-1584565560-vxqrv     0/1     Completed   0          20d
+busybox1                     0/1     Completed   0          25d
+c1a                          0/1     Error       0          24d
+c1b                          0/1     Error       0          24d
+c2-m6cjm                     0/1     Completed   0          24d
+c4-4ntwp                     0/1     Completed   0          24d
+c5job-64cfd                  0/1     Completed   0          20d
+c6job-ldhpl                  0/1     Completed   0          20d
+c6job-vprsm                  0/1     Completed   0          20d
+ca1-66d6b4f974-4dxf6         1/1     Running     18         24d
+ca1-66d6b4f974-dl85x         1/1     Running     18         24d
+ca1a-5799475b87-7xrs5        1/1     Running     18         24d
+ca1a-5799475b87-h7vbr        1/1     Running     18         24d
+ca1a-5799475b87-h9q9t        1/1     Running     18         24d
+ca1a-5799475b87-hkkcj        1/1     Running     18         24d
+ca1a-5799475b87-kmlfd        1/1     Running     18         24d
+ca1a-5799475b87-qch6n        1/1     Running     18         24d
+d10                          0/1     Error       0          19d
+d11sec                       0/1     Error       0          17d
+d12rl                        0/1     Completed   0          16d
+d16                          0/1     Completed   0          16d
+d7                           0/1     Error       0          20d
+d8                           0/1     Error       0          20d
+e1lp                         0/1     Completed   0          16d
+e2lp                         0/1     Error       0          16d
+e3rp                         0/1     Error       0          16d
+e4log                        0/1     Error       0          16d
+e5deb                        0/1     Error       0          16d
+f11dep-598b88ffd8-d2rp9      1/1     Running     7          7d1h
+f11dep-598b88ffd8-qfsfq      1/1     Running     7          7d1h
+f1svc                        0/1     Error       0          14d
+f3dep-6b9b97f8c6-7vx4q       1/1     Running     9          13d
+f3dep-6b9b97f8c6-xcdtl       1/1     Running     9          13d
+failing-pod                  1/1     Running     0          6s
+foo-688d885f4b-5b2j4         1/1     Running     8          8d
+foo-688d885f4b-ddx2q         1/1     Running     8          8d
+foo-688d885f4b-m7hnf         1/1     Running     8          8d
+g1                           0/2     Error       0          6d
+hello                        1/1     Running     0          28m
+mysec                        0/1     Error       0          37d
+nginx-7c45b84548-hc82p       1/1     Running     7          7d
+nginx-7c45b84548-l52dj       1/1     Running     7          7d
+nginx3                       0/1     Completed   0          16d
+nginxenv                     0/1     Error       0          25d
+not-running                  0/1     Error       0          32d
+rbbusybox-1584565440-j4ssq   0/1     Completed   0          20d
+rbbusybox-1584565500-v775d   0/1     Completed   0          20d
+rbbusybox-1584565560-fh8mz   0/1     Completed   0          20d
+secbusybox                   0/1     Error       0          38d
+secured                      0/1     Error       0          24h
+test114                      0/1     Completed   0          38d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod [2Pc -f d2.yaml[C[2Pnano d2.yaml
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 19 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d2.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: failing-pod[9;3Hname: failing-pod[10dspec:[11;3Hcontainers:[12;3H- args:[13;5H- /bin/sh[14;5H- -c[15;5H- while true; do echo $(date) >> ~/tmp/curr-date.txt; sleep 5; done;[16;5Himage: busybox[17;5Hname: failing-pod[18;5Hresources: {}[19;3HdnsPolicy: ClusterFirst[20;3HrestartPolicy: Never[21dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano d2.yamlkubectl get pod failling pod
+Error from server (NotFound): pods "failling" not found
+Error from server (NotFound): pods "pod" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod failling pod[1P
+Error from server (NotFound): pods "failing" not found
+Error from server (NotFound): pods "pod" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod failing pod[1Ppod-pod
+NAME          READY   STATUS    RESTARTS   AGE
+failing-pod   1/1     Running   0          34s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod failing-pod pod[1@l[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C-pod[C[C[C[1Pfailing-pod/failing-pod[1P pod/failing-pod[1P pod/failing-pod[1P pod/failing-podl pod/failing-podo pod/failing-podg pod/failing-pods pod/failing-pod[C pod/failing-pod
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs  pod/failing-pod[2Pget pod failing-pod pod[1@l[C[C[C[C[C[C[C[16Pnano d2.yaml
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 19 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          d2.yaml                                                                     [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: failing-pod[9;3Hname: failing-pod[10dspec:[11;3Hcontainers:[12;3H- args:[13;5H- /bin/sh[14;5H- -c[15;5H- while true; do echo $(date) >> ~/tmp/curr-date.txt; sleep 5; done;[16;5Himage: busybox[17;5Hname: failing-pod[18;5Hresources: {}[19;3HdnsPolicy: ClusterFirst[20;3HrestartPolicy: Never[21dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$  kubectl exec failing-pod -it -- /bin/sh
+/ # / # [Jmkdir -p ~/tmp
+/ # / # mkdir -p ~/tmp[Jir -p ~/tmp[J[6D ~/tmp[J[6D ~/tmp[J[6D ~/tmp[J[6D ~/tmp[J[6D ~/tmp[J[6D ~/tmp[J[6D ~/tmp[J[6Dc ~/tmp[6Dc ~/tmp[6D ~/tmp[J[6Dd ~/tmp[6D  ~/tmp[6D ~/tmp
+~/tmp # ls -l
+total 4
+-rw-r--r--    1 root     root            84 Apr  8 20:17 [0;0mcurr-date.txt[m
+~/tmp # cat cu~/tmp # cat curr-date.txt [J
+Wed Apr 8 20:16:50 UTC 2020
+Wed Apr 8 20:16:55 UTC 2020
+Wed Apr 8 20:17:00 UTC 2020
+Wed Apr 8 20:17:05 UTC 2020
+~/tmp # ~/tmp # cat curr-date.txt [J
+Wed Apr 8 20:16:50 UTC 2020
+Wed Apr 8 20:16:55 UTC 2020
+Wed Apr 8 20:17:00 UTC 2020
+Wed Apr 8 20:17:05 UTC 2020
+~/tmp # ~/tmp # cat curr-date.txt [J
+Wed Apr 8 20:16:50 UTC 2020
+Wed Apr 8 20:16:55 UTC 2020
+Wed Apr 8 20:17:00 UTC 2020
+Wed Apr 8 20:17:05 UTC 2020
+Wed Apr 8 20:17:10 UTC 2020
+~/tmp # exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano d2.yamlkubectl logs  pod/failing-pod
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs  pod/failing-pod
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs  pod/failing-pod
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs  pod/failing-pod
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs  pod/failing-pod
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs  pod/failing-pod
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+/bin/sh: can't create /root/tmp/curr-date.txt: nonexistent directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs  pod/failing-pod[17Pnano d2.yamlkubectl logs  pod/failing-pod[2Pget pod failing-pod pod[1@l[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C-pod
+NAME          READY   STATUS    RESTARTS   AGE
+failing-pod   1/1     Running   0          2m56s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ // End d2
+bash: //: Is a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ gup
+bash: gitBatch.sh: No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ~/Q1_CNC/gitBa[K[K[K[K[Kk8CKAD/gitB[K[K[K[K
+bmuschko/                  dgkanatsios/               .git/                      kubernetes-metrics-server/ logfiles/
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ~/Q1_CNC/k8CKAD/
+bmuschko/                  dgkanatsios/               .git/                      kubernetes-metrics-server/ logfiles/
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ~/Q1_CNC/k8CKAD/l~/Q1_CNC/k8CKAD/s~/Q1_CNC/k8CKAD/ ~/Q1_CNC/k8CKAD/
+[0m[01;34mbmuschko[0m  [01;34mdgkanatsios[0m  gitBatch.sh  [01;34mkubernetes-metrics-server[0m  [01;34mlogfiles[0m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ls ~/Q1_CNC/k8CKAD/gup[Kls ~/Q1_CNC/k8CKAD/gut[K[KitBatch.sh[C[C[1P ~/Q1_CNC/k8CKAD/gitBatch.sh[1P ~/Q1_CNC/k8CKAD/gitBatch.sh
+bash: /home/baz/Q1_CNC/k8CKAD/gitBatch.sh: Permission denied
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ls ~/Q1_CNC/k8CKAD/[Kls ~/Q1_CNC/k8CKAD/gup[Kls ~/Q1_CNC/k8CKAD/gup[Kls ~/Q1_CNC/k8CKAD/[Kls ~/Q1_CNC/k8CKAD/gitBatch.sh[C[C[C[C[C[C[C[1P~/Q1_CNC/k8CKAD/gitBatch.sh[1P~/Q1_CNC/k8CKAD/gitBatch.sh[1P~/Q1_CNC/k8CKAD/gitBatch.shs~/Q1_CNC/k8CKAD/gitBatch.shu~/Q1_CNC/k8CKAD/gitBatch.shd~/Q1_CNC/k8CKAD/gitBatch.sho~/Q1_CNC/k8CKAD/gitBatch.sh ~/Q1_CNC/k8CKAD/gitBatch.sh
+[sudo] password for baz: 
+sudo: /home/baz/Q1_CNC/k8CKAD/gitBatch.sh: command not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ./gitBatch.sh
+bash: ./gitBatch.sh: No such file or directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cd ..
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+bmuschko  dgkanatsios  gitBatch.sh  kubernetes-metrics-server  logfiles
+On branch master
+Your branch
