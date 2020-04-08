@@ -536,4 +536,1032 @@ bash: ./gitBatch.sh: No such file or directory
 This script will upadte file to GtHub by taking filename input!
 bmuschko  dgkanatsios  gitBatch.sh  kubernetes-metrics-server  logfiles
 On branch master
-Your branch
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mbmuschko/202004090039[m
+	[31mbmuschko/d1.yaml[m
+	[31mbmuschko/d2.yaml[m
+	[31mbmuschko/y.yml[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+bmuschko/d1.yaml
+[master ecaa28a] update on file bmuschko/d1.yaml
+ 1 file changed, 29 insertions(+)
+ create mode 100644 bmuschko/d1.yaml
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 599 bytes | 599.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   3784231..ecaa28a  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+bmuschko  dgkanatsios  gitBatch.sh  kubernetes-metrics-server  logfiles
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mbmuschko/202004090039[m
+	[31mbmuschko/d2.yaml[m
+	[31mbmuschko/y.yml[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+^[[A    bmuschko/d1.yaml^[[D^[[D              2 2.yaml
+[master 5d8a6e7] update on file bmuschko/d2.yaml
+ 1 file changed, 19 insertions(+)
+ create mode 100644 bmuschko/d2.yaml
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  25% (1/4)   Writing objects:  50% (2/4)   Writing objects:  75% (3/4)   Writing objects: 100% (4/4)   Writing objects: 100% (4/4), 567 bytes | 567.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   ecaa28a..5d8a6e7  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ gup
+
+****** Welcome to [0;31mGit[0m Script by [0;32mBAZ[0m *****
+
+This script will upadte file to GtHub by taking filename input!
+bmuschko  dgkanatsios  gitBatch.sh  kubernetes-metrics-server  logfiles
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mbmuschko/202004090039[m
+	[31mbmuschko/y.yml[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ [0;34mPlease enter file name you want to upload to remote repo? [0m
+
+.
+[master ebba8a1] update on file .
+ 2 files changed, 540 insertions(+)
+ create mode 100644 bmuschko/202004090039
+ create mode 100644 bmuschko/y.yml
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 7.73 KiB | 3.87 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/engineerbaz/k8CKAD.git
+   5d8a6e7..ebba8a1  master -> master
+     
+--------- [0;34mCompleted update on Git ------
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD[00m$ cd bmuschko/
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ // E - 5-pod-design.md
+bash: //: Is a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run frontend --image=ngin x --restart=ever[K[K[K[KNever --labels=end[Kv=prod, [Kteama[K[K[K[K[K[K --labels=team=shhi[K[Kiny
+pod/frontend created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl r[Kgt[Ket frontend
+error: the server doesn't have a resource type "frontend"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get frontend[Cpfrontendofrontenddfrontend
+error: the server doesn't have a resource type "podfrontend"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get podfrontend[C frontend
+NAME       READY   STATUS    RESTARTS   AGE
+frontend   1/1     Running   0          16s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod frontend[K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod frontend -o wide
+NAME       READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+frontend   1/1     Running   0          21s   172.17.0.29   minikube   <none>           <none>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod frontend -o wide[K[K[K[K[K[K[K
+202004070027   202004090039   b2.yaml        b4.yaml        c2.yaml        d1.yaml        pod-error.txt  rq.yaml        y.yml
+202004080008   b1.yaml        b3.yaml        c1.yaml        config.txt     d2.yaml        README.md      secured.yaml   
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod frontend [K[K[K[K[K[K[K[K[K--help
+Display one or many resources
+
+ Prints a table of the most important information about the specified resources. You can filter the list using a label
+selector and the --selector flag. If the desired resource type is namespaced you will only see results in your current
+namespace unless you pass --all-namespaces.
+
+ Uninitialized objects are not shown unless --include-uninitialized is passed.
+
+ By specifying the output as 'template' and providing a Go template as the value of the --template flag, you can filter
+the attributes of the fetched resources.
+
+Use "kubectl api-resources" for a complete list of supported resources.
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current
+context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in
+the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and
+may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector
+key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are
+case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print
+headers).
+  -o, --output='': Output format. One of:
+json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...
+See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template
+[http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template
+[http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage
+related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and
+CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed
+as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression
+must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The
+template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded
+if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get
+[(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...]
+(TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod --helpfrontend -o wide[K[K[K[K[K[Kl
+Error: flag needs an argument: 'l' in -l
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+flag needs an argument: 'l' in -l
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod frontend -l[Ka[K-all
+Error: unknown flag: --all
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --all
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod frontend --all[K[K[K[KL
+Error: flag needs an argument: 'L' in -L
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+flag needs an argument: 'L' in -L
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod frontend -L-all[K[K[K[Ks[Kshow-labels
+Unable to connect to the server: dial tcp: lookup how-labels on 127.0.0.53:53: server misbehaving
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod frontend -show-labels[C-show-labels
+NAME       READY   STATUS    RESTARTS   AGE   LABELS
+frontend   1/1     Running   0          92s   team=shiny
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl del[K[K[K[K[K[K[K[K[K[K[Kkubectl labels[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl run backend --image=nginx --restart=Never --labels=env=prod,team=legacy,app=v1.2.4
+Error from server (AlreadyExists): pods "backend" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run database --image=nginx --restart=Never --labels=env=prod,team=storage
+pod/database created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run database --image=nginx --restart=Never --labels=env=prod,team=storage[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbackend --image=nginx --restart=Never --labels=env=prod,team=legacy,app=v1.2.4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[52Pget pod frontend --show-labels[1P --show-labels[1P --show-labels[1P --show-labels[1P --show-labels[1P --show-labels[1P --show-labels[1P --show-labels[1P --show-labels
+NAME                         READY   STATUS              RESTARTS   AGE     LABELS
+06nginx                      0/1     Error               0          52d     run=06nginx
+07nginx                      0/1     Error               0          52d     run=07nginx
+100vol                       0/1     Error               0          39d     run=100vol
+104pvc2b                     0/1     Error               0          39d     run=104pvc
+111                          0/1     Error               0          38d     run=111
+113                          0/1     Completed           0          38d     run=113
+114nginx                     0/1     Completed           0          38d     run=114nginx
+117                          0/1     Error               0          38d     run=117
+118                          0/1     Error               0          38d     run=118
+126                          0/1     Error               0          35d     run=126
+131                          0/1     Error               0          35d     run=131
+132                          0/1     Error               0          35d     run=132
+134                          0/1     Completed           0          32d     run=134
+136                          0/1     Completed           0          32d     run=136
+137busybox                   0/1     Error               0          32d     run=137busybox
+13nginx                      0/1     Completed           1          52d     run=13nginx
+140                          0/1     Error               0          32d     run=140
+144                          0/1     Error               0          32d     app=my-nginx,run=144
+17shell                      0/1     Error               0          52d     run=17shell
+19bb                         0/1     Completed           0          52d     run=19bb
+21bb                         0/1     Completed           0          52d     run=21bb
+29mc                         0/3     Completed           0          51d     run=29mc
+2busybox1                    0/1     Completed           0          25d     run=2busybox1
+33busybox1                   0/1     Completed           0          25d     run=33busybox1
+34mc                         0/2     Error               0          51d     run=34mc
+37-ng-1                      0/1     Error               0          45d     app=nginx
+37-ng-2                      0/1     Error               0          45d     app=red
+37-ng-3                      0/1     Error               0          45d     env=prod
+3busybox1                    0/1     Completed           0          25d     run=3busybox1
+53busybox1                   0/1     Completed           0          25d     run=53busybox1
+67dep-7db4cf66f7-2hfgb       1/1     Running             31         40d     app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7       1/1     Running             31         40d     app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f       1/1     Running             31         40d     app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269       1/1     Running             31         40d     app=67dep,pod-template-hash=7db4cf66f7
+84job-9gkc8                  0/1     Completed           0          40d     controller-uid=4a06a68a-42fb-42ec-8b0c-1b876760f65c,job-name=84job
+88job-bx58m                  0/1     Completed           0          40d     controller-uid=aa655949-0475-483a-a6e3-a617b053da23,job-name=88job
+adapter                      0/2     Error               0          22h     <none>
+b2mc                         0/2     Completed           0          25d     run=b2mc
+backend                      0/1     Error               0          24h     run=backend
+bb                           0/1     Completed           0          3d2h    run=bb
+bb1                          0/1     Completed           0          3d2h    run=bb
+bb2                          0/1     Completed           0          3d2h    run=bb2
+bbusybox-1584565440-pqtfb    0/1     Completed           0          20d     controller-uid=aefc3d99-bf89-46f6-bf54-92fbb381466c,job-name=bbusybox-1584565440,run=bbusybox
+bbusybox-1584565500-bwnbj    0/1     Completed           0          20d     controller-uid=55ba2bb5-6209-479a-8288-16d809ef3351,job-name=bbusybox-1584565500,run=bbusybox
+bbusybox-1584565560-m8p9z    0/1     Completed           0          20d     controller-uid=abe7a20b-8f76-4850-8584-85651726dacd,job-name=bbusybox-1584565560,run=bbusybox
+busybox-1584565440-bxgcl     0/1     Completed           0          20d     controller-uid=0432f3de-ca25-47bb-a05c-fa324992ee0f,job-name=busybox-1584565440,run=busybox
+busybox-1584565500-vzktl     0/1     Completed           0          20d     controller-uid=affaba13-83f4-4b8b-bd22-5c3f00148776,job-name=busybox-1584565500,run=busybox
+busybox-1584565560-vxqrv     0/1     Completed           0          20d     controller-uid=2ad70d16-b51e-440a-9915-88402b48cad7,job-name=busybox-1584565560,run=busybox
+busybox1                     0/1     Completed           0          25d     run=busybox1
+c1a                          0/1     Error               0          24d     <none>
+c1b                          0/1     Error               0          24d     app=v2
+c2-m6cjm                     0/1     Completed           0          24d     controller-uid=c6c7eee8-a30e-4e26-8efb-293b9d0c8876,job-name=c2,run=c2
+c4-4ntwp                     0/1     Completed           0          24d     controller-uid=0528c866-bc19-4334-9185-d2e648b6cac1,job-name=c4,run=c4
+c5job-64cfd                  0/1     Completed           0          21d     controller-uid=5b1bd09b-abd1-45e9-a350-b8932a9ff89e,job-name=c5job,run=c5job
+c6job-ldhpl                  0/1     Completed           0          21d     controller-uid=874616a1-189c-4257-b1b9-10be853731b7,job-name=c6job,run=c6job
+c6job-vprsm                  0/1     Completed           0          21d     controller-uid=874616a1-189c-4257-b1b9-10be853731b7,job-name=c6job,run=c6job
+ca1-66d6b4f974-4dxf6         1/1     Running             18         24d     pod-template-hash=66d6b4f974,run=ca1
+ca1-66d6b4f974-dl85x         1/1     Running             18         24d     pod-template-hash=66d6b4f974,run=ca1
+ca1a-5799475b87-7xrs5        1/1     Running             18         24d     app=ca1a,pod-template-hash=5799475b87
+ca1a-5799475b87-h7vbr        1/1     Running             18         24d     app=ca1a,pod-template-hash=5799475b87
+ca1a-5799475b87-h9q9t        1/1     Running             18         24d     app=ca1a,pod-template-hash=5799475b87
+ca1a-5799475b87-hkkcj        1/1     Running             18         24d     app=ca1a,pod-template-hash=5799475b87
+ca1a-5799475b87-kmlfd        1/1     Running             18         24d     app=ca1a,pod-template-hash=5799475b87
+ca1a-5799475b87-qch6n        1/1     Running             18         24d     app=ca1a,pod-template-hash=5799475b87
+d10                          0/1     Error               0          20d     run=d10
+d11sec                       0/1     Error               0          17d     run=d11sec
+d12rl                        0/1     Completed           0          16d     run=d12rl
+d16                          0/1     Completed           0          16d     run=d16
+d7                           0/1     Error               0          20d     run=d7
+d8                           0/1     Error               0          20d     run=d8
+database                     0/1     ContainerCreating   0          7s      env=prod,team=storage
+e1lp                         0/1     Completed           0          16d     run=e1lp
+e2lp                         0/1     Error               0          16d     run=e2lp
+e3rp                         0/1     Error               0          16d     run=e3rp
+e4log                        0/1     Error               0          16d     run=e4log
+e5deb                        0/1     Error               0          16d     run=e5deb
+f11dep-598b88ffd8-d2rp9      1/1     Running             7          7d1h    pod-template-hash=598b88ffd8,run=f11dep
+f11dep-598b88ffd8-qfsfq      1/1     Running             7          7d1h    pod-template-hash=598b88ffd8,run=f11dep
+f1svc                        0/1     Error               0          14d     run=f1svc
+f3dep-6b9b97f8c6-7vx4q       1/1     Running             9          14d     pod-template-hash=6b9b97f8c6,run=f3dep
+f3dep-6b9b97f8c6-xcdtl       1/1     Running             9          14d     pod-template-hash=6b9b97f8c6,run=f3dep
+failing-pod                  1/1     Running             0          22m     run=failing-pod
+foo-688d885f4b-5b2j4         1/1     Running             8          8d      app=foo,pod-template-hash=688d885f4b
+foo-688d885f4b-ddx2q         1/1     Running             8          8d      app=foo,pod-template-hash=688d885f4b
+foo-688d885f4b-m7hnf         1/1     Running             8          8d      app=foo,pod-template-hash=688d885f4b
+frontend                     1/1     Running             0          2m35s   team=shiny
+g1                           0/2     Error               0          6d      run=g1
+hello                        1/1     Running             0          50m     run=hello
+mysec                        0/1     Error               0          37d     run=125
+nginx-7c45b84548-hc82p       1/1     Running             7          7d      pod-template-hash=7c45b84548,run=nginx
+nginx-7c45b84548-l52dj       1/1     Running             7          7d      pod-template-hash=7c45b84548,run=nginx
+nginx3                       0/1     Completed           0          16d     run=nginx3
+nginxenv                     0/1     Error               0          25d     run=nginxenv
+not-running                  0/1     Error               0          32d     run=not-running
+rbbusybox-1584565440-j4ssq   0/1     Completed           0          20d     controller-uid=55f873fe-bac1-47dc-a7aa-ed2750d627aa,job-name=rbbusybox-1584565440,run=rbbusybox
+rbbusybox-1584565500-v775d   0/1     Completed           0          20d     controller-uid=8ebabd23-7c41-458c-8825-9c0b8b9a92bf,job-name=rbbusybox-1584565500,run=rbbusybox
+rbbusybox-1584565560-fh8mz   0/1     Completed           0          20d     controller-uid=b57d64f9-fc61-44f0-bcd1-e94dafc9bd71,job-name=rbbusybox-1584565560,run=rbbusybox
+secbusybox                   0/1     Error               0          38d     run=secbusybox
+secured                      0/1     Error               0          24h     run=secured
+test114                      0/1     Completed           0          38d     run=test114
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod  --show-labels[Cd --show-labelsa --show-labelst --show-labelsa --show-labelsb --show-labelss --show-labels[1P --show-labelsa --show-labelss --show-labelse --show-labels[C --show-labels
+NAME       READY   STATUS    RESTARTS   AGE   LABELS
+database   1/1     Running   0          14s   env=prod,team=storage
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl label --h
+Error: unknown flag: --h
+
+
+Examples:
+  # Update pod 'foo' with the label 'unhealthy' and the value 'true'.
+  kubectl label pods foo unhealthy=true
+  
+  # Update pod 'foo' with the label 'status' and the value 'unhealthy', overwriting any existing value.
+  kubectl label --overwrite pods foo status=unhealthy
+  
+  # Update all pods in the namespace
+  kubectl label pods --all status=unhealthy
+  
+  # Update a pod identified by the type and name in "pod.json"
+  kubectl label -f pod.json status=unhealthy
+  
+  # Update pod 'foo' only if the resource is unchanged from version 1.
+  kubectl label pods foo status=unhealthy --resource-version=1
+  
+  # Update pod 'foo' by removing a label named 'bar' if it exists.
+  # Does not require the --overwrite flag.
+  kubectl label pods foo bar-
+
+Options:
+      --all=false: Select all resources, including uninitialized ones, in the namespace of the specified resource types
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to update the labels
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+      --list=false: If true, display the labels for a given resource.
+      --local=false: If true, label will NOT contact api-server but run locally.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --overwrite=false: If true, allow labels to be overwritten, otherwise reject label updates that overwrite existing labels.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+      --resource-version='': If non-empty, the labels update will only succeed if this is the current resource-version for the object. Only valid when specifying a single resource.
+  -l, --selector='': Selector (label query) to filter on, not including uninitialized ones, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2).
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+
+Usage:
+  kubectl label [--overwrite] (-f FILENAME | TYPE NAME) KEY_1=VAL_1 ... KEY_N=VAL_N [--resource-version=version] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl labels pod/frontend cc[Kkubectl label --h
+Error: unknown flag: --h
+
+
+Examples:
+  # Update pod 'foo' with the label 'unhealthy' and the value 'true'.
+  kubectl label pods foo unhealthy=true
+  
+  # Update pod 'foo' with the label 'status' and the value 'unhealthy', overwriting any existing value.
+  kubectl label --overwrite pods foo status=unhealthy
+  
+  # Update all pods in the namespace
+  kubectl label pods --all status=unhealthy
+  
+  # Update a pod identified by the type and name in "pod.json"
+  kubectl label -f pod.json status=unhealthy
+  
+  # Update pod 'foo' only if the resource is unchanged from version 1.
+  kubectl label pods foo status=unhealthy --resource-version=1
+  
+  # Update pod 'foo' by removing a label named 'bar' if it exists.
+  # Does not require the --overwrite flag.
+  kubectl label pods foo bar-
+
+Options:
+      --all=false: Select all resources, including uninitialized ones, in the namespace of the specified resource types
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to update the labels
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+      --list=false: If true, display the labels for a given resource.
+      --local=false: If true, label will NOT contact api-server but run locally.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --overwrite=false: If true, allow labels to be overwritten, otherwise reject label updates that overwrite existing labels.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+      --resource-version='': If non-empty, the labels update will only succeed if this is the current resource-version for the object. Only valid when specifying a single resource.
+  -l, --selector='': Selector (label query) to filter on, not including uninitialized ones, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2).
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+
+Usage:
+  kubectl label [--overwrite] (-f FILENAME | TYPE NAME) KEY_1=VAL_1 ... KEY_N=VAL_N [--resource-version=version] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl label --hcc[K[K[Kkubectl lable[K[Kel bac[K[K[Kfrontend env=prod 
+error: resource(s) were provided, but no name, label selector, or --all flag specified
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl label frontend env=prod --h[Kfrontend env=prod [C[1@ [1@p[1@o[1@d
+pod/frontend labeled
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl label pod frontend env=prod [4P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--h[Kcc[Kkubectl label --hget pod database  --show-labels[9P --show-labelsrun database --image=nginx --restart=Never --labels=env=prod,team=storage[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbackend --image=nginx --restart=Never --labels=env=prod,team=legacy,app=v1.2.4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pdatabase --image=nginx --restart=Never --labels=env=prod,team=storage[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbackend --image=nginx --restart=Never --labels=env=prod,team=legacy,app=v1.2.4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[52Pget pod frontend --show-labels[1Pshow-labels-show-labels
+NAME       READY   STATUS    RESTARTS   AGE     LABELS
+frontend   1/1     Running   0          4m51s   env=prod,team=shiny
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ..[K[K..[K[K// Performing Rolling Updates for a Deployment
+bash: //: Is a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl deployrdeployudeployndeploy deploy[C[C[C[C[C[C --image=nginx  --replicas=3 --labels=tier=backed[Knd asdjal
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/deploy created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl delet [Ke deploy/deploy
+deployment.extensions "deploy" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create deploy deploy --im age=nginx --f[Kdry-run -o yaml > e2.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano 3[Ke3[K2.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    e2.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: deploy[9;3Hname: deploy[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: deploy[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: deploy[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx[24;9Hname: nginx[25;9Hresources: {}[26dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[8;16H[?12l[?25h[?25l[7;10H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[8;35r[8;1HM[1;38r[8;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lb[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l [36d[K[8;16H[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11;6H[?12l[?25h[?25l[12;14H[?12l[?25h[?25l [?12l[?25h[?25l3[?12l[?25h[?25l[13d[?12l[?25h[?25l[14dbe[?12l[?25h[?25l[15d[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25l1[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18da:[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25lvdeploy[15G[?12l[?25h[?25l1deploy[16G[?12l[?25h[?25leploy[K[16G[?12l[?25h[?25lploy[K[?12l[?25h[?25lloy[K[?12l[?25h[?25loy[K[?12l[?25h[?25ly[K[?12l[?25h[?25l [?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27;11H[?12l[?25h[?25l[28d[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: e2.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 25 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create -f e2.yaml 
+deployment.apps/deploy created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get p[Kdeploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+67dep    4/4     4            4           40d
+ca1      2/2     2            2           24d
+ca1a     6/6     6            6           24d
+deploy   0/3     3            0           10s
+f11dep   2/2     2            2           7d1h
+f3dep    2/2     2            2           14d
+foo      3/3     3            3           8d
+nginx    2/2     2            2           7d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+deploy   0/3     3            0           17s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+deploy   1/3     3            1           26s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+deploy   1/3     3            1           28s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cckubectl get deploy deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+deploy   1/3     3            1           32s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl d[Kser[Kt image ded[Kployment/depl i[Koy nginx-nginx:latest
+error: there is no need to specify a resource type as a separate argument when passing arguments in resource/name form (e.g. 'kubectl get resource/<resource_name>' instead of 'kubectl get resource resource/<resource_name>'
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl set image deployment/deplooy nginx-nginx:latest[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[1Pnginx:latest[C[C[C[C[C[C[C[C=nginx:latest[C[C[C[C[C[C[C[C[C
+deployment.extensions/deploy image updated
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rollout deploy
+error: unknown command "deploy"
+See 'kubectl rollout -h' for help and examples
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rollout deploy[Chdeployideploysdeploytdeployodeployrdeployydeploy deploy
+deployment.extensions/67dep 
+REVISION  CHANGE-CAUSE
+2         <none>
+4         <none>
+6         <none>
+7         <none>
+8         <none>
+
+deployment.extensions/ca1 
+REVISION  CHANGE-CAUSE
+1         <none>
+
+deployment.extensions/ca1a 
+REVISION  CHANGE-CAUSE
+3         <none>
+5         <none>
+6         <none>
+
+deployment.extensions/deploy 
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+
+deployment.extensions/f11dep 
+REVISION  CHANGE-CAUSE
+1         <none>
+
+deployment.extensions/f3dep 
+REVISION  CHANGE-CAUSE
+1         <none>
+
+deployment.extensions/foo 
+REVISION  CHANGE-CAUSE
+1         <none>
+
+deployment.extensions/nginx 
+REVISION  CHANGE-CAUSE
+1         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rollout history deploy[C[C[C[C[C[C/de lpoy
+Error from server (NotFound): deployments.extensions "delpoy" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rollout history deploy/dellpoy[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce ploy
+deployment.extensions/deploy 
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rollout history deploy/depploy --res[Kvision-=[K[K-[K=2
+deployment.extensions/deploy with revision #2
+Pod Template:
+  Labels:	app=v1
+	pod-template-hash=7fbcfcd7f7
+  Containers:
+   nginx:
+    Image:	nginx:latest
+    Port:	<none>
+    Host Port:	<none>
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl scale deployments deploy ---replicas=5
+deployment.extensions/deploy scaled
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy/deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+deploy   3/5     5            3           2m53s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy/deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+deploy   4/5     5            4           2m56s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy/deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+deploy   4/5     5            4           2m58s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy/deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+deploy   5/5     5            5           3m7s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rollout undo deploy/deplo y --to-revsion=1
+Error: unknown flag: --to-revsion
+
+
+Examples:
+  # Rollback to the previous deployment
+  kubectl rollout undo deployment/abc
+  
+  # Rollback to daemonset revision 3
+  kubectl rollout undo daemonset/abc --to-revision=3
+  
+  # Rollback to the previous deployment with dry-run
+  kubectl rollout undo --dry-run=true deployment/abc
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --to-revision=0: The revision to rollback to. Default to 0 (last revision).
+
+Usage:
+  kubectl rollout undo (TYPE NAME | TYPE/NAME) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --to-revsion
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cckubectl rollout undo deploy/deployy --to-revsion=1[C[Cision=1
+deployment.extensions/deploy rolled back
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rollout undo deploy/deployy --to-revision=1[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl rollout undo deploy/deployy --to-revsion=1[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl rollout undo deploy/deployy --to-revsion=1[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl get deploy/deployscale deployments deploy ---replicas=5[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [C[C[C[C[C[C[C[C[8Pget deploy/deploy
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscale deployments deploy ---replicas=5[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [C[C[C[C[C[C[C[Crollout history deploy/deploy --revision=2
+deployment.extensions/deploy with revision #2
+Pod Template:
+  Labels:	app=v1
+	pod-template-hash=7fbcfcd7f7
+  Containers:
+   nginx:
+    Image:	nginx:latest
+    Port:	<none>
+    Host Port:	<none>
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rollout history deploy/depploy --revision=2[K[K[K[K[K[K[K[K[K[K[K[K
+deployment.extensions/deploy 
+REVISION  CHANGE-CAUSE
+2         <none>
+3         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rollout history deploy/depploy --revision=2[K3
+deployment.extensions/deploy with revision #3
+Pod Template:
+  Labels:	app=v1
+	pod-template-hash=7f84c66bc8
+  Containers:
+   nginx:
+    Image:	nginx
+    Port:	<none>
+    Host Port:	<none>
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ // scheduled Cont
+bash: //: Is a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run cuurent-ate[K[K[K[Kda[K[K-date --image= nginz [K[Kx --restart=OnFailure --scg[Khedule="1/[K[K*/1 * * * *" [1P[1P[C[C[C[C[C[C[C[C[C[C-- /bin/sh -c 'echi[Ko "Curr ent date"[K: $(date)"'
+kubectl run --generator=cronjob/v1beta1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+cronjob.batch/cuurent-date created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get cj 
+NAME           SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+bbusybox       */1 * * * *   False     0        20d             21d
+busybox        */1 * * * *   False     0        20d             21d
+cuurent-date   * * * * *     False     0        <none>          9s
+rbbusybox      */1 * * * *   False     0        20d             21d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get cj fa[Kc[K[Kcuurent-date
+NAME           SCHEDULE    SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+cuurent-date   * * * * *   False     0        <none>          22s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get cj cuurent-date -w
+NAME           SCHEDULE    SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+cuurent-date   * * * * *   False     1        4s              25s
+cuurent-date   * * * * *   False     0        12s             33s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get cj cuurent-date -w[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kronjob  --2[Kw
+Error: unknown flag: --w
+
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print headers).
+  -o, --output='': Output format. One of: json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=... See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template [http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template [http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get [(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...] (TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --w
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get cronjob  --w[K[Kw
+NAME           SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+bbusybox       */1 * * * *   False     0        20d             21d
+busybox        */1 * * * *   False     0        20d             21d
+cuurent-date   * * * * *     False     0        35s             56s
+rbbusybox      */1 * * * *   False     0        20d             21d
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get cronjob  -w-wj cuurent-date -w
+NAME           SCHEDULE    SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+cuurent-date   * * * * *   False     1        2s              83s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod 
+NAME                            READY   STATUS      RESTARTS   AGE
+06nginx                         0/1     Error       0          52d
+07nginx                         0/1     Error       0          52d
+100vol                          0/1     Error       0          39d
+104pvc2b                        0/1     Error       0          39d
+111                             0/1     Error       0          38d
+113                             0/1     Completed   0          38d
+114nginx                        0/1     Completed   0          38d
+117                             0/1     Error       0          38d
+118                             0/1     Error       0          38d
+126                             0/1     Error       0          35d
+131                             0/1     Error       0          35d
+132                             0/1     Error       0          35d
+134                             0/1     Completed   0          32d
+136                             0/1     Completed   0          32d
+137busybox                      0/1     Error       0          32d
+13nginx                         0/1     Completed   1          52d
+140                             0/1     Error       0          32d
+144                             0/1     Error       0          32d
+17shell                         0/1     Error       0          52d
+19bb                            0/1     Completed   0          52d
+21bb                            0/1     Completed   0          52d
+29mc                            0/3     Completed   0          51d
+2busybox1                       0/1     Completed   0          25d
+33busybox1                      0/1     Completed   0          25d
+34mc                            0/2     Error       0          51d
+37-ng-1                         0/1     Error       0          45d
+37-ng-2                         0/1     Error       0          45d
+37-ng-3                         0/1     Error       0          45d
+3busybox1                       0/1     Completed   0          25d
+53busybox1                      0/1     Completed   0          25d
+67dep-7db4cf66f7-2hfgb          1/1     Running     31         40d
+67dep-7db4cf66f7-9wrj7          1/1     Running     31         40d
+67dep-7db4cf66f7-h5g7f          1/1     Running     31         40d
+67dep-7db4cf66f7-m2269          1/1     Running     31         40d
+84job-9gkc8                     0/1     Completed   0          40d
+88job-bx58m                     0/1     Completed   0          40d
+adapter                         0/2     Error       0          23h
+b2mc                            0/2     Completed   0          25d
+backend                         0/1     Error       0          24h
+bb                              0/1     Completed   0          3d2h
+bb1                             0/1     Completed   0          3d2h
+bb2                             0/1     Completed   0          3d2h
+bbusybox-1584565440-pqtfb       0/1     Completed   0          20d
+bbusybox-1584565500-bwnbj       0/1     Completed   0          20d
+bbusybox-1584565560-m8p9z       0/1     Completed   0          20d
+busybox-1584565440-bxgcl        0/1     Completed   0          20d
+busybox-1584565500-vzktl        0/1     Completed   0          20d
+busybox-1584565560-vxqrv        0/1     Completed   0          20d
+busybox1                        0/1     Completed   0          25d
+c1a                             0/1     Error       0          24d
+c1b                             0/1     Error       0          24d
+c2-m6cjm                        0/1     Completed   0          24d
+c4-4ntwp                        0/1     Completed   0          24d
+c5job-64cfd                     0/1     Completed   0          21d
+c6job-ldhpl                     0/1     Completed   0          21d
+c6job-vprsm                     0/1     Completed   0          21d
+ca1-66d6b4f974-4dxf6            1/1     Running     18         24d
+ca1-66d6b4f974-dl85x            1/1     Running     18         24d
+ca1a-5799475b87-7xrs5           1/1     Running     18         24d
+ca1a-5799475b87-h7vbr           1/1     Running     18         24d
+ca1a-5799475b87-h9q9t           1/1     Running     18         24d
+ca1a-5799475b87-hkkcj           1/1     Running     18         24d
+ca1a-5799475b87-kmlfd           1/1     Running     18         24d
+ca1a-5799475b87-qch6n           1/1     Running     18         24d
+cuurent-date-1586379120-fgmcw   0/1     Completed   0          72s
+cuurent-date-1586379180-mmcvg   0/1     Completed   0          12s
+d10                             0/1     Error       0          20d
+d11sec                          0/1     Error       0          17d
+d12rl                           0/1     Completed   0          16d
+d16                             0/1     Completed   0          16d
+d7                              0/1     Error       0          20d
+d8                              0/1     Error       0          20d
+database                        1/1     Running     0          16m
+deploy-7f84c66bc8-7qc26         1/1     Running     0          4m32s
+deploy-7f84c66bc8-dgcvw         1/1     Running     0          4m32s
+deploy-7f84c66bc8-ntlcd         1/1     Running     0          4m32s
+deploy-7f84c66bc8-rgrzl         1/1     Running     0          4m21s
+deploy-7f84c66bc8-s5vxs         1/1     Running     0          4m15s
+e1lp                            0/1     Completed   0          16d
+e2lp                            0/1     Error       0          16d
+e3rp                            0/1     Error       0          16d
+e4log                           0/1     Error       0          16d
+e5deb                           0/1     Error       0          16d
+f11dep-598b88ffd8-d2rp9         1/1     Running     7          7d2h
+f11dep-598b88ffd8-qfsfq         1/1     Running     7          7d2h
+f1svc                           0/1     Error       0          14d
+f3dep-6b9b97f8c6-7vx4q          1/1     Running     9          14d
+f3dep-6b9b97f8c6-xcdtl          1/1     Running     9          14d
+failing-pod                     1/1     Running     0          38m
+foo-688d885f4b-5b2j4            1/1     Running     8          8d
+foo-688d885f4b-ddx2q            1/1     Running     8          8d
+foo-688d885f4b-m7hnf            1/1     Running     8          8d
+frontend                        1/1     Running     0          18m
+g1                              0/2     Error       0          6d1h
+hello                           1/1     Running     0          66m
+mysec                           0/1     Error       0          38d
+nginx-7c45b84548-hc82p          1/1     Running     7          7d
+nginx-7c45b84548-l52dj          1/1     Running     7          7d
+nginx3                          0/1     Completed   0          16d
+nginxenv                        0/1     Error       0          25d
+not-running                     0/1     Error       0          32d
+rbbusybox-1584565440-j4ssq      0/1     Completed   0          20d
+rbbusybox-1584565500-v775d      0/1     Completed   0          20d
+rbbusybox-1584565560-fh8mz      0/1     Completed   0          20d
+secbusybox                      0/1     Error       0          38d
+secured                         0/1     Error       0          24h
+test114                         0/1     Completed   0          38d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl logs pod/cuurent-date-1586379180-mmcvg
+Current date: Wed Apr  8 20:53:08 UTC 2020
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl delete cj/cu[K[Kcuurent-date-1586379180-mmcvg[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+cronjob.batch "cuurent-date" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ // end E
+bash: //: Is a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ exit
+exit
+
+Script done on 2020-04-09 01:54:20+0500
