@@ -1,0 +1,125 @@
+Script started on 2020-04-10 00:37:46+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ // 60 [K[K- Service & Networi[Kkingg
+[1] 14252
+bash: //: Is a directory
+Networkingg: command not found
+[1]+  Exit 126                // 6- Service
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ // // [K[K[KRouting tragg[K[Kfic[K[Kfi //
+bash: //: Is a directory
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run a[Kmyapp --image=nginx --resatrt[K[K[K[Ktart=Never --port=80
+pod/myapp created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod [K/myapp
+NAME    READY   STATUS              RESTARTS   AGE
+myapp   0/1     ContainerCreating   0          7s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod/myapp
+NAME    READY   STATUS    RESTARTS   AGE
+myapp   1/1     Running   0          31m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl expose pod/myap [Kp --targetPort=[K[K[K[K[K[K[K[K[K[K[Kport [K=80tport=80aport=80rport=80gport=80eport=80tport=80-port=80
+service/myapp exposed
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get se[Kvs
+error: the server doesn't have a resource type "svs"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get svs[Kc
+NAME         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)        AGE
+f11dep       ClusterIP   10.98.165.245    <none>        80/TCP         8d
+f1svc        NodePort    10.102.148.164   <none>        80:30669/TCP   15d
+f3dep        ClusterIP   10.105.87.61     <none>        80/TCP         15d
+foo          ClusterIP   10.97.79.96      <none>        6262/TCP       9d
+kubernetes   ClusterIP   10.96.0.1        <none>        443/TCP        54d
+myapp        ClusterIP   10.106.176.94    <none>        80/TCP         7s
+nginx        ClusterIP   10.98.16.229     <none>        80/TCP         8d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run tmp --image=busybox --restart=Never -it --rm -- wget -O- 10.106.176.94
+Connecting to 10.106.176.94 (10.106.176.94:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |********************************|   612  0:00:00 ETA
+written to stdout
+pod "tmp" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl edit serc[Kvice myapp
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"/tmp/kubectl-edit-sufw8.yaml" 27L, 665C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#[m
+[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Service
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31m"2020-04-09T20:30:04Z"[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m myapp
+  [36mname[m[35m:[m myapp
+  [36mnamespace[m[35m:[m default
+  [36mresourceVersion[m[35m:[m [31m"598487"[m
+  [36mselfLink[m[35m:[m /api/v1/namespaces/default/services/myapp
+  [36muid[m[35m:[m bea54eab-55a7-4802-8ed4-c14b31147835
+[36mspec[m[35m:[m
+  [36mclusterIP[m[35m:[m 10.106.176.94
+  [36mports[m[35m:[m
+  [38;5;130m- [m[36mport[m[35m:[m [31m80[m
+    [36mprotocol[m[35m:[m TCP
+    [36mtargetPort[m[35m:[m [31m80[m
+  [36mselector[m[35m:[m
+    [36mrun[m[35m:[m myapp
+  [36msessionAffinity[m[35m:[m None
+  [36mtype[m[35m:[m ClusterIP
+[36mstatus[m[35m:[m
+  [36mloadBalancer[m[35m:[m [35m{}[m
+[94m~                                                                                                                                                     [29;1H~                                                                                                                                                     [30;1H~                                                                                                                                                     [31;1H~                                                                                                                                                     [32;1H~                                                                                                                                                     [33;1H~                                                                                                                                                     [34;1H~                                                                                                                                                     [35;1H~                                                                                                                                                     [36;1H~                                                                                                                                                     [37;1H~                                                                                                                                                     [m[38;133H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[38;133H2[2;1H[?25h[?25l[38;133H3[3;1H[?25h[?25l[38;133H4[4;1H[?25h[?25l[38;133H5[5;1H[?25h[?25l[38;133H6[6;1H[?25h[?25l[38;133H7[7;1H[?25h[?25l[38;133H8[8;1H[?25h[?25l[38;133H9[9;1H[?25h[?25l[38;133H10,1[10;1H[?25h[?25l[38;134H1[11;1H[?25h[?25l[38;134H2[12;1H[?25h[?25l[38;134H3[13;1H[?25h[?25l[38;134H4[14;1H[?25h[?25l[38;134H5[15;1H[?25h[?25l[38;134H6[16;1H[?25h[?25l[38;134H7[17;1H[?25h[?25l[38;134H8[18;1H[?25h[?25l[38;134H9[19;1H[?25h[?25l[38;133H20[20;1H[?25h[?25l[38;134H1[21;1H[?25h[?25l[38;134H2[22;1H[?25h[?25l[38;134H1[21;1H[?25h[?25l[38;134H2[22;1H[?25h[?25l[38;134H3[23;1H[?25h[?25l[38;134H4[24;1H[?25h[?25l[38;134H5[25;1H[?25h[?25l[38;136H2[25;2H[?25h[?25l[38;136H3[25;3H[?25h[?25l[38;136H4[25;4H[?25h[?25l[38;136H5[25;5H[?25h[?25l[38;136H6[25;6H[?25h[?25l[38;136H7[25;7H[?25h[?25l[38;136H8[25;8H[?25h[?25l[38;136H9[25;9H[?25h[?25l[38;1H[97m[41mE35: No previous regular expression[m[38;37H[K[38;133H25,9[10CAll[25;9H[?25h[?25l[38;1H[1m-- INSERT --[m[38;13H[K[38;133H26,1[10CTop[26;37r[26;1H[L[1;38r[38;133H[K[38;133H26,1[10CAll[26;1H[?25h[?25ld[38;136H2[26;2H[?25h[?25le[38;136H3[26;3H[?25h[?25l[26;2H[K[38;136H2[26;2H[?25h[?25l[26;1H[K[38;136H1[26;1H[?25h[38;1H[K[26;1H[?25l[38;133H26,0-1[8CAll[26;1H[?25h[?25l[38;133H[K[38;1H:[?2004h[?25hq[?25l[?25h![?25l[?25h[?25l[?2004l[38;1H[K[38;1H[?2004l[?1l>[?25h[?1049l[23;0;0tEdit cancelled, no changes made.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl edit service myapp
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"/tmp/kubectl-edit-gqhi0.yaml" 27L, 665C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#[m
+[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Service
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31m"2020-04-09T20:30:04Z"[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m myapp
+  [36mname[m[35m:[m myapp
+  [36mnamespace[m[35m:[m default
+  [36mresourceVersion[m[35m:[m [31m"598487"[m
+  [36mselfLink[m[35m:[m /api/v1/namespaces/default/services/myapp
+  [36muid[m[35m:[m bea54eab-55a7-4802-8ed4-c14b31147835
+[36mspec[m[35m:[m
+  [36mclusterIP[m[35m:[m 10.106.176.94
+  [36mports[m[35m:[m
+  [38;5;130m- [m[36mport[m[35m:[m [31m80[m
+    [36mprotocol[m[35m:[m TCP
+    [36mtargetPort[m[35m:[m [31m80[m
+  [36mselector[m[35m:[m
+    [36mrun[m[35m:[m myapp
+  [36msessionAffinity[m[35m:[m None
+  [36mtype[m[35m:[m ClusterIP
+[36mstatus[m[35m:[m
+  [36mloadBalancer[m[35m:[m [35m{}[m
+[94m~                                                                                                                                                     [29;1H~                                                                                                                                                     [30;1H~                                                                                                                                                     [31;1H~                                                                                                                                                     [32;1H~                                                                                                                                                     [33;1H~                                                                                                                                                     [34;1H~                                                                                                                                                     [35;1H~                                                                                                                                                     [36;1H~                                                                                                                                                     [37;1H~                                                                                                                                                     [m[38;133H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[38;133H2[2;1H[?25h[?25l[38;133H3[3;1H[?25h[?25l[38;133H4[4;1H[?25h[?25l[38;133H5[5;1H[?25h[?25l[38;133H6[6;1H[?25h[?25l[38;133H7[7;1H[?25h[?25l[38;133H8[8;1H[?25h[?25l[38;133H9[9;1H[?25h[?25l[38;133H10,1[10;1H[?25h[?25l[38;134H1[11;1H[?25h[?25l[38;134H2[12;1H[?25h[?25l[38;134H3[13;1H[?25h[?25l[38;134H4[14;1H[?25h[?25l[38;134H5[15;1H[?25h[?25l[38;134H6[16;1H[?25h[?25l[38;134H7[17;1H[?25h[?25l[38;134H8[18;1H[?25h[?25l[38;134H9[19;1H[?25h[?25l[38;133H20[20;1H[?25h[?25l[38;134H1[21;1H[?25h[?25l[38;134H2[22;1H[?25h[?25l[38;134H3[23;1H[?25h[?25l[38;136H2[23;2H[?25h[?25l[38;136H3[23;3H[?25h[?25l[38;136H4[23;4H[?25h[?25l[38;136H5[23;5H[?25h[?25l[38;136H6[23;6H[?25h[?25l[38;136H7[23;7H[?25h[?25l[38;134H4[24;7H[?25h[?25l[38;134H5[25;7H[?25h[?25l[38;136H8[25;8H[?25h[?25l[38;136H9[25;9H[?25h[?25l[38;1H[1m-- INSERT --[m[38;13H[K[38;133H25,9[10CAll[25;9H[?25h[?25lNClusterIP[38;136H10[25;10H[?25h[?25loClusterIP[38;137H1[25;11H[?25h[?25ldClusterIP[38;137H2[25;12H[?25h[?25leClusterIP[38;137H3[25;13H[?25h[?25lPClusterIP[38;137H4[25;14H[?25h[?25loClusterIP[38;137H5[25;15H[?25h[?25lrClusterIP[38;137H6[25;16H[?25h[?25ltClusterIP[38;137H7[25;17H[?25h[?25llusterIP[25;25H[K[25;17H[?25h[?25lusterIP[25;24H[K[25;17H[?25h[?25lsterIP[25;23H[K[25;17H[?25h[?25lterIP[25;22H[K[25;17H[?25h[?25lerIP[25;21H[K[25;17H[?25h[?25lrIP[25;20H[K[25;17H[?25h[?25lIP[25;19H[K[25;17H[?25h[?25lP[25;18H[K[25;17H[?25h[?25l[25;17H[K[25;17H[?25h[38;1H[K[25;16H[?25l[38;133H25,16[9CAll[25;16H[?25h[?2004l[?25l[38;1H"/tmp/kubectl-edit-gqhi0.yaml"[38;133H[K[38;32H27L, 664C written
+[?2004l[?1l>[?25h[?1049l[23;0;0tservice/myapp edited
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ exit
+exit
+
+Script done on 2020-04-10 02:32:29+0500
