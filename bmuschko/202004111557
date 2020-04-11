@@ -1,0 +1,1584 @@
+Script started on 2020-04-11 15:57:15+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod myapp
+NAME    READY   STATUS   RESTARTS   AGE
+myapp   0/1     Error    0          39h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ u[Kkubectl p[Kdelete pod[K[K[K{pd,[K[Kod, dep[K[K[K[K[K,deploy}/myapp [A
+pod "myapp" deleted
+Error from server (NotFound): deployments.extensions "myapp" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl delete {pod,deploy}/myapp [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/myapp
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/myapp[1P/myapp[1P/myapp[1P/myapp[1P/myapp[1P/myapp[1P/myapp[1P/myapp[1P/myapp[1P/myapp[1P/myappd/myappe/myappp/myappl/myappo/myappy/myapp
+Error from server (NotFound): deployments.extensions "myapp" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl delete deploy/myapp[K[K[K[K[K[K[K[K[K[K[K[Ksvc/myapp
+service "myapp" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl de[K[Kcreate dpl[K[Keploy myapp --rep[K[K[Kimage=nginx - -replocas=2 --[K[K[K[K[K[K[K[K[Kicas=2 --port=80
+Error: unknown flag: --replicas
+
+
+Aliases:
+deployment, deploy
+
+Examples:
+  # Create a new deployment named my-dep that runs the busybox image.
+  kubectl create deployment my-dep --image=busybox
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --generator='': The name of the API generator to use.
+      --image=[]: Image name to run.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --validate=true: If true, use a schema to validate the input before sending it
+
+Usage:
+  kubectl create deployment NAME --image=image [--dry-run] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --replicas
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create deploy myapp --image=nginx ---replicas=2 --port=80[C[1P --port=80[1P --port=80[1P --port=80[C[C[C[C[C[C[C[C[1P --port=80[C[C[C[C[C[C[C[1P --port=80[C[C[C[C[C[C[1P --port=80[C[C[C[C[C[1P --port=80[C[C[C[C[1P --port=80[C[C[C[1P --port=80[C[C[1P --port=80[C[1P --port=80[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -[C[1Pport=80[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--[1Pport=80[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C --fr[K[Kdry-run -o yaml > f1.yaml
+Error: unknown flag: --port
+
+
+Aliases:
+deployment, deploy
+
+Examples:
+  # Create a new deployment named my-dep that runs the busybox image.
+  kubectl create deployment my-dep --image=busybox
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --generator='': The name of the API generator to use.
+      --image=[]: Image name to run.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --validate=true: If true, use a schema to validate the input before sending it
+
+Usage:
+  kubectl create deployment NAME --image=image [--dry-run] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --port
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl rn[Knu[K[Kun myapp --image =[K[K-[K=i[Knginxs[K --replicas[K[K[Kcas= 2 --poe[Krt=80
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/myapp created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+67dep    4/4     4            4           42d
+ca1      2/2     2            2           26d
+ca1a     6/6     6            6           26d
+deploy   5/5     5            5           2d14h
+f11dep   2/2     2            2           9d
+f3dep    2/2     2            2           16d
+foo      3/3     3            3           10d
+myapp    2/2     2            2           58s
+nginx    2/2     2            2           9d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy,pod myapp
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+myapp   2/2     2            2           71s
+Error from server (NotFound): pods "myapp" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy,pod myapp[Cs myapp
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+myapp   2/2     2            2           78s
+Error from server (NotFound): pods "myapp" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy,pods myapp[1P myapp[C[1P[1P[1P[1P[1P[1P[1P
+Error from server (NotFound): pods "myapp" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod myapp[K[K[K[K[K[K
+NAME                         READY   STATUS      RESTARTS   AGE
+06nginx                      0/1     Error       0          54d
+07nginx                      0/1     Error       0          54d
+100vol                       0/1     Error       0          42d
+104pvc2b                     0/1     Error       0          42d
+111                          0/1     Error       0          41d
+113                          0/1     Completed   0          40d
+114nginx                     0/1     Completed   0          40d
+117                          0/1     Error       0          40d
+118                          0/1     Error       0          40d
+126                          0/1     Error       0          37d
+131                          0/1     Error       0          37d
+132                          0/1     Error       0          37d
+134                          0/1     Completed   0          35d
+136                          0/1     Completed   0          34d
+137busybox                   0/1     Error       0          34d
+13nginx                      0/1     Completed   1          54d
+140                          0/1     Error       0          34d
+144                          0/1     Error       0          34d
+17shell                      0/1     Error       0          54d
+19bb                         0/1     Completed   0          54d
+21bb                         0/1     Completed   0          54d
+29mc                         0/3     Completed   0          53d
+2busybox1                    0/1     Completed   0          27d
+33busybox1                   0/1     Completed   0          27d
+34mc                         0/2     Error       0          53d
+37-ng-1                      0/1     Error       0          47d
+37-ng-2                      0/1     Error       0          47d
+37-ng-3                      0/1     Error       0          47d
+3busybox1                    0/1     Completed   0          27d
+53busybox1                   0/1     Completed   0          27d
+67dep-7db4cf66f7-2hfgb       1/1     Running     33         42d
+67dep-7db4cf66f7-9wrj7       1/1     Running     33         42d
+67dep-7db4cf66f7-h5g7f       1/1     Running     33         42d
+67dep-7db4cf66f7-m2269       1/1     Running     33         42d
+84job-9gkc8                  0/1     Completed   0          42d
+88job-bx58m                  0/1     Completed   0          42d
+adapter                      0/2     Error       0          3d13h
+b2mc                         0/2     Completed   0          27d
+backend                      0/1     Error       0          3d14h
+bb                           0/1     Completed   0          5d16h
+bb1                          0/1     Completed   0          5d16h
+bb2                          0/1     Completed   0          5d16h
+bbusybox-1584565440-pqtfb    0/1     Completed   0          23d
+bbusybox-1584565500-bwnbj    0/1     Completed   0          23d
+bbusybox-1584565560-m8p9z    0/1     Completed   0          23d
+busybox-1584565440-bxgcl     0/1     Completed   0          23d
+busybox-1584565500-vzktl     0/1     Completed   0          23d
+busybox-1584565560-vxqrv     0/1     Completed   0          23d
+busybox1                     0/1     Completed   0          27d
+c1a                          0/1     Error       0          27d
+c1b                          0/1     Error       0          27d
+c2-m6cjm                     0/1     Completed   0          26d
+c4-4ntwp                     0/1     Completed   0          26d
+c5job-64cfd                  0/1     Completed   0          23d
+c6job-ldhpl                  0/1     Completed   0          23d
+c6job-vprsm                  0/1     Completed   0          23d
+ca1-66d6b4f974-4dxf6         1/1     Running     20         26d
+ca1-66d6b4f974-dl85x         1/1     Running     20         26d
+ca1a-5799475b87-7xrs5        1/1     Running     20         26d
+ca1a-5799475b87-h7vbr        1/1     Running     20         26d
+ca1a-5799475b87-h9q9t        1/1     Running     20         26d
+ca1a-5799475b87-hkkcj        1/1     Running     20         26d
+ca1a-5799475b87-kmlfd        1/1     Running     20         26d
+ca1a-5799475b87-qch6n        1/1     Running     20         26d
+d10                          0/1     Error       0          22d
+d11sec                       0/1     Error       0          19d
+d12rl                        0/1     Completed   0          19d
+d16                          0/1     Completed   0          19d
+d7                           0/1     Error       0          22d
+d8                           0/1     Error       0          22d
+database                     0/1     Error       0          2d14h
+deploy-7f84c66bc8-7qc26      1/1     Running     2          2d14h
+deploy-7f84c66bc8-dgcvw      1/1     Running     2          2d14h
+deploy-7f84c66bc8-ntlcd      1/1     Running     2          2d14h
+deploy-7f84c66bc8-rgrzl      1/1     Running     2          2d14h
+deploy-7f84c66bc8-s5vxs      1/1     Running     2          2d14h
+e1lp                         0/1     Completed   0          18d
+e2lp                         0/1     Error       0          18d
+e3rp                         0/1     Error       0          18d
+e4log                        0/1     Error       0          18d
+e5deb                        0/1     Error       0          18d
+f11dep-598b88ffd8-d2rp9      1/1     Running     9          9d
+f11dep-598b88ffd8-qfsfq      1/1     Running     9          9d
+f1svc                        0/1     Error       0          16d
+f3dep-6b9b97f8c6-7vx4q       1/1     Running     11         16d
+f3dep-6b9b97f8c6-xcdtl       1/1     Running     11         16d
+failing-pod                  0/1     Error       0          2d14h
+foo-688d885f4b-5b2j4         1/1     Running     10         10d
+foo-688d885f4b-ddx2q         1/1     Running     10         10d
+foo-688d885f4b-m7hnf         1/1     Running     10         10d
+frontend                     0/1     Error       0          2d14h
+g1                           0/2     Error       0          8d
+hello                        0/1     Error       0          2d15h
+myapp-b5df8f6b8-9z75m        1/1     Running     0          92s
+myapp-b5df8f6b8-x824j        1/1     Running     0          92s
+mysec                        0/1     Error       0          40d
+nginx-7c45b84548-hc82p       1/1     Running     9          9d
+nginx-7c45b84548-l52dj       1/1     Running     9          9d
+nginx3                       0/1     Completed   0          19d
+nginxenv                     0/1     Error       0          27d
+not-running                  0/1     Error       0          34d
+rbbusybox-1584565440-j4ssq   0/1     Completed   0          23d
+rbbusybox-1584565500-v775d   0/1     Completed   0          23d
+rbbusybox-1584565560-fh8mz   0/1     Completed   0          23d
+secbusybox                   0/1     Error       0          40d
+secured                      0/1     Error       0          3d15h
+test114                      0/1     Completed   0          40d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ls
+202004070027  202004111557  b4.yaml     d1.yaml  pod-error.txt  y.yml
+202004080008  b1.yaml       c1.yaml     d2.yaml  README.md
+202004090039  b2.yaml       c2.yaml     e2.yaml  rq.yaml
+202004100037  b3.yaml       config.txt  f1.yaml  secured.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get deploy
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+67dep    4/4     4            4           42d
+ca1      2/2     2            2           26d
+ca1a     6/6     6            6           26d
+deploy   5/5     5            5           2d14h
+f11dep   2/2     2            2           9d
+f3dep    2/2     2            2           16d
+foo      3/3     3            3           10d
+myapp    2/2     2            2           11m
+nginx    2/2     2            2           9d
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl expose pod myapp[1Pmyapp[1Pmyapp[1Pmyapp[1Pmyappdmyappemyapppmyapplmyappomyappymyapp myapp[C[C[C[C[C --target-port=8 0
+service/myapp exposed
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl e[Kger [K[Kt svc myapp 
+NAME    TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+myapp   ClusterIP   10.99.192.102   <none>        80/TCP    48s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl g[Krun bb [K[K[K[K tno[K[Kmp --image=busybiz[K[Koz[Kx --resatrt[K[K[K[K[Kstart=N eb[Kver -rm -ti -- /s[Kbin/sh
+Error: invalid argument "m" for "-r, --replicas" flag: strconv.ParseInt: parsing "m": invalid syntax
+
+
+Examples:
+  # Start a single instance of nginx.
+  kubectl run nginx --image=nginx
+  
+  # Start a single instance of hazelcast and let the container expose port 5701 .
+  kubectl run hazelcast --image=hazelcast --port=5701
+  
+  # Start a single instance of hazelcast and set environment variables "DNS_DOMAIN=cluster" and "POD_NAMESPACE=default" in the container.
+  kubectl run hazelcast --image=hazelcast --env="DNS_DOMAIN=cluster" --env="POD_NAMESPACE=default"
+  
+  # Start a single instance of hazelcast and set labels "app=hazelcast" and "env=prod" in the container.
+  kubectl run hazelcast --image=hazelcast --labels="app=hazelcast,env=prod"
+  
+  # Start a replicated instance of nginx.
+  kubectl run nginx --image=nginx --replicas=5
+  
+  # Dry run. Print the corresponding API objects without creating them.
+  kubectl run nginx --image=nginx --dry-run
+  
+  # Start a single instance of nginx, but overload the spec of the deployment with a partial set of values parsed from JSON.
+  kubectl run nginx --image=nginx --overrides='{ "apiVersion": "v1", "spec": { ... } }'
+  
+  # Start a pod of busybox and keep it in the foreground, don't restart it if it exits.
+  kubectl run -i -t busybox --image=busybox --restart=Never
+  
+  # Start the nginx container using the default command, but use custom arguments (arg1 .. argN) for that command.
+  kubectl run nginx --image=nginx -- <arg1> <arg2> ... <argN>
+  
+  # Start the nginx container using a different command and custom arguments.
+  kubectl run nginx --image=nginx --command -- <cmd> <arg1> ... <argN>
+  
+  # Start the perl container to compute π to 2000 places and print it out.
+  kubectl run pi --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+  
+  # Start the cron job to compute π to 2000 places and print it out every 5 minutes.
+  kubectl run pi --schedule="0/5 * * * ?" --image=perl --restart=OnFailure -- perl -Mbignum=bpi -wle 'print bpi(2000)'
+
+Options:
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --attach=false: If true, wait for the Pod to start running, and then attach to the Pod as if 'kubectl attach ...' were called.  Default false, unless '-i/--stdin' is set, in which case the default is true. With '--restart=Never' the exit code of the container process is returned.
+      --cascade=true: If true, cascade the deletion of the resources managed by this resource (e.g. Pods created by a ReplicationController).  Default true.
+      --command=false: If true and extra arguments are present, use them as the 'command' field in the container, rather than the 'args' field which is the default.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --env=[]: Environment variables to set in the container
+      --expose=false: If true, a public, external service is created for the container(s) which are run
+  -f, --filename=[]: to use to replace the resource.
+      --force=false: Only used when grace-period=0. If true, immediately remove resources from API and bypass graceful deletion. Note that immediate deletion of some resources may result in inconsistency or data loss and requires confirmation.
+      --generator='': The name of the API generator to use, see http://kubernetes.io/docs/user-guide/kubectl-conventions/#generators for a list.
+      --grace-period=-1: Period of time in seconds given to the resource to terminate gracefully. Ignored if negative. Set to 1 for immediate shutdown. Can only be set to 0 when --force is true (force deletion).
+      --hostport=-1: The host port mapping for the container port. To demonstrate a single-machine container.
+      --image='': The image for the container to run.
+      --image-pull-policy='': The image pull policy for the container. If left empty, this value will not be specified by the client and defaulted by the server
+  -k, --kustomize='': Process a kustomization directory. This flag can't be used together with -f or -R.
+  -l, --labels='': Comma separated labels to apply to the pod(s). Will override previous values.
+      --leave-stdin-open=false: If the pod is started in interactive mode or with stdin, leave stdin open after the first attach completes. By default, stdin will be closed after the first attach completes.
+      --limits='': The resource requirement limits for this container.  For example, 'cpu=200m,memory=512Mi'.  Note that server side components may assign limits depending on the server configuration, such as limit ranges.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --overrides='': An inline JSON override for the generated object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.
+      --pod-running-timeout=1m0s: The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
+      --port='': The port that this container exposes.  If --expose is true, this is also the port used by the service that is created.
+      --quiet=false: If true, suppress prompt messages.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+  -r, --replicas=1: Number of replicas to create for this container. Default is 1.
+      --requests='': The resource requirement requests for this container.  For example, 'cpu=100m,memory=256Mi'.  Note that server side components may assign requests depending on the server configuration, such as limit ranges.
+      --restart='Always': The restart policy for this Pod.  Legal values [Always, OnFailure, Never].  If set to 'Always' a deployment is created, if set to 'OnFailure' a job is created, if set to 'Never', a regular pod is created. For the latter two --replicas must be 1.  Default 'Always', for CronJobs `Never`.
+      --rm=false: If true, delete resources created in this command for attached containers.
+      --save-config=false: If true, the configuration of current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+      --schedule='': A schedule in the Cron format the job should be run with.
+      --service-generator='service/v2': The name of the generator to use for creating a service.  Only used if --expose is true
+      --service-overrides='': An inline JSON override for the generated service object. If this is non-empty, it is used to override the generated object. Requires that the object supply a valid apiVersion field.  Only used if --expose is true.
+      --serviceaccount='': Service account to set in the pod spec
+  -i, --stdin=false: Keep stdin open on the container(s) in the pod, even if nothing is attached.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+      --timeout=0s: The length of time to wait before giving up on a delete, zero means determine a timeout from the size of the object
+  -t, --tty=false: Allocated a TTY for each container in the pod.
+      --wait=false: If true, wait for resources to be gone before returning. This waits for finalizers.
+
+Usage:
+  kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [--command] -- [COMMAND] [args...] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+invalid argument "m" for "-r, --replicas" flag: strconv.ParseInt: parsing "m": invalid syntax
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run tmp --image=busybox --restart=Neever -rm -ti -- /bin/sh[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [C[C[C[C[C[C[C[C[21Pget svc myapp 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexpose deploy myapp --target-port=800[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run tmp --image=bi[Kusyboc[Kx --restr[Kart=N ever -r[K-rm -to[K- [K[Ki -- /bin/sh
+If you don't see a command prompt, try pressing enter.
+/ # [Jexir[Jt
+pod "tmp" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl run tmp --image=busybox --restart=Neever --rm -ti -- /bin/sh[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl run tmp --image=busybox --restart=Neever -rm -ti -- /bin/sh[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [C[C[C[C[C[C[C[C[21Pget svc myapp 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+NAME    TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+myapp   ClusterIP   10.99.192.102   <none>        80/TCP    5m6s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get svc myapp run tmp --image=busybox --restart=Neever --rm -ti -- /bin/sh
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jwg/ # wget [J-O- 10.99.192.102
+Connecting to 10.99.192.102 (10.99.192.102:80)
+writing to stdout
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
+</body>
+</html>
+-                    100% |************************************|   612  0:00:00 ETA
+written to stdout
+/ # exit'[J
+pod "tmp" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl edits[K service myapp
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"/tmp/kubectl-edit-l77s7.yaml" 27L, 665C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file ww[3;1Hill be
+# reopened with the relevant failures.
+#[m
+[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Service
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31m"2020-04-11T11:30:02Z"[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m myapp
+  [36mname[m[35m:[m myapp
+  [36mnamespace[m[35m:[m default
+  [36mresourceVersion[m[35m:[m [31m"604424"[m
+  [36mselfLink[m[35m:[m /api/v1/namespaces/default/services/myapp
+  [36muid[m[35m:[m 6c40ff6d-cb25-4f0d-9f12-540e1e4f065e
+[36mspec[m[35m:[m
+  [36mclusterIP[m[35m:[m 10.99.192.102
+  [36mports[m[35m:[m
+  [38;5;130m- [m[36mport[m[35m:[m [31m80[m
+    [36mprotocol[m[35m:[m TCP
+    [36mtargetPort[m[35m:[m [31m80[m
+  [36mselector[m[35m:[m
+    [36mrun[m[35m:[m myapp
+  [36msessionAffinity[m[35m:[m None
+  [36mtype[m[35m:[m ClusterIP
+[36mstatus[m[35m:[m
+  [36mloadBalancer[m[35m:[m [35m{}[m
+[94m~                                                                                   [30;1H~                                                                                   [31;1H~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [m[38;67H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?25l[38;67H2[2;1H[?25h[?25l[38;67H3[4;1H[?25h[?25l[38;67H4[5;1H[?25h[?25l[38;67H5[6;1H[?25h[?25l[38;67H6[7;1H[?25h[?25l[38;67H7[8;1H[?25h[?25l[38;67H8[9;1H[?25h[?25l[38;67H9[10;1H[?25h[?25l[38;67H10,1[11;1H[?25h[?25l[38;68H1[12;1H[?25h[?25l[38;68H2[13;1H[?25h[?25l[38;68H3[14;1H[?25h[?25l[38;68H4[15;1H[?25h[?25l[38;68H5[16;1H[?25h[?25l[38;68H6[17;1H[?25h[?25l[38;68H7[18;1H[?25h[?25l[38;68H8[19;1H[?25h[?25l[38;68H9[20;1H[?25h[?25l[38;67H20[21;1H[?25h[?25l[38;68H1[22;1H[?25h[?25l[38;68H2[23;1H[?25h[?25l[38;68H3[24;1H[?25h[?25l[38;68H4[25;1H[?25h[?25l[38;68H5[26;1H[?25h[?25l[38;68H6[27;1H[?25h[?25l[38;68H5[26;1H[?25h[?25l[38;70H2[26;2H[?25h[?25l[38;70H3[26;3H[?25h[?25l[38;70H4[26;4H[?25h[?25l[38;70H5[26;5H[?25h[?25l[38;70H6[26;6H[?25h[?25l[38;70H7[26;7H[?25h[?25l[38;70H8[26;8H[?25h[?25l[38;70H9[26;9H[?25h[?25l[38;1H[1m-- INSERT --[m[38;13H[K[38;67H25,9[10CAll[26;9H[?25h[?25lNClusterIP[38;70H10[26;10H[?25h[?25loClusterIP[38;71H1[26;11H[?25h[?25ldClusterIP[38;71H2[26;12H[?25h[?25leClusterIP[38;71H3[26;13H[?25h[?25lPClusterIP[38;71H4[26;14H[?25h[?25loClusterIP[38;71H5[26;15H[?25h[?25lrClusterIP[38;71H6[26;16H[?25h[?25ltClusterIP[38;71H7[26;17H[?25h[?25l[38;71H8[26;18H[?25h[?25l[38;71H7[26;17H[?25h[?25llusterIP[26;25H[K[26;17H[?25h[?25lusterIP[26;24H[K[26;17H[?25h[?25lsterIP[26;23H[K[26;17H[?25h[?25lterIP[26;22H[K[26;17H[?25h[?25lerIP[26;21H[K[26;17H[?25h[?25lrIP[26;20H[K[26;17H[?25h[?25lIP[26;19H[K[26;17H[?25h[?25lP[26;18H[K[26;17H[?25h[?25l[26;17H[K[26;17H[?25h[38;1H[K[26;16H[?25l[38;67H25,16[9CAll[26;16H[?25h[?2004l[?25l[38;1H"/tmp/kubectl-edit-l77s7.yaml"[38;67H[K[38;32H27L, 664C written
+[?2004l[?1l>[?25h[?1049l[23;0;0tservice/myapp edited
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl edit service myappcc[Kkubectl run tmp --image=busybox --restart=Neever --rm -ti -- /bin/sh[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl run tmp --image=busybox --restart=Neever --rm -ti -- /bin/sh[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [C[C[C[C[C[C[C[C[21Pget svc myapp 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+NAME    TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+myapp   NodePort   10.99.192.102   <none>        80:30496/TCP   6m24s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get svc myapp edit service myapp
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"/tmp/kubectl-edit-ftu9v.yaml" 29L, 717C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file ww[3;1Hill be
+# reopened with the relevant failures.
+#[m
+[36mapiVersion[m[35m:[m v1
+[36mkind[m[35m:[m Service
+[36mmetadata[m[35m:[m
+  [36mcreationTimestamp[m[35m:[m [31m"2020-04-11T11:30:02Z"[m
+  [36mlabels[m[35m:[m
+    [36mrun[m[35m:[m myapp
+  [36mname[m[35m:[m myapp
+  [36mnamespace[m[35m:[m default
+  [36mresourceVersion[m[35m:[m [31m"604916"[m
+  [36mselfLink[m[35m:[m /api/v1/namespaces/default/services/myapp
+  [36muid[m[35m:[m 6c40ff6d-cb25-4f0d-9f12-540e1e4f065e
+[36mspec[m[35m:[m
+  [36mclusterIP[m[35m:[m 10.99.192.102
+  [36mexternalTrafficPolicy[m[35m:[m Cluster
+  [36mports[m[35m:[m
+  [38;5;130m- [m[36mnodePort[m[35m:[m [31m30496[m
+    [36mport[m[35m:[m [31m80[m
+    [36mprotocol[m[35m:[m TCP
+    [36mtargetPort[m[35m:[m [31m80[m
+  [36mselector[m[35m:[m
+    [36mrun[m[35m:[m myapp
+  [36msessionAffinity[m[35m:[m None
+  [36mtype[m[35m:[m NodePort
+[36mstatus[m[35m:[m
+  [36mloadBalancer[m[35m:[m [35m{}[m
+[94m~                                                                                   [32;1H~                                                                                   [33;1H~                                                                                   [34;1H~                                                                                   [35;1H~                                                                                   [36;1H~                                                                                   [37;1H~                                                                                   [m[38;67H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[38;1H[?2004l[38;1H[K[38;1H[?2004l[?1l>[?1049l[23;0;0tEdit cancelled, no changes made.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl edit service myapp[4Pget svc myapp edit service myapp[4Pget svc myapp 
+NAME    TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+myapp   NodePort   10.99.192.102   <none>        80:30496/TCP   6m38s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get svc myapp edit service myapp[4Pget svc myapp edit service myappcc[Kkubectl run tmp --image=busybox --restart=Neever --rm -ti -- /bin/sh
+If you don't see a command prompt, try pressing enter.
+/ # [J/ # [Jl[Jwg/ # wget [J-O- localhost:30496
+Connecting to localhost:30496 (127.0.0.1:30496)
+wget: can't connect to remote host (127.0.0.1): Connection refused
+/ # / # wget -O- localhost:30496[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J[J10.99.192.102:30496
+Connecting to 10.99.192.102:30496 (10.99.192.102:30496)
+^C
+/ # exit
+pod "tmp" deleted
+pod default/tmp terminated (Error)
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ wget -O- localhost:30496
+--2020-04-11 16:39:50--  http://localhost:30496/
+Resolving localhost (localhost)... 127.0.0.1
+Connecting to localhost (localhost)|127.0.0.1|:30496... failed: Connection refused.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ wget -O- localhost:30496
+--2020-04-11 16:40:01--  http://localhost:30496/
+Resolving localhost (localhost)... 127.0.0.1
+Connecting to localhost (localhost)|127.0.0.1|:30496... failed: Connection refused.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ wget -O- localhost:30496kubectl run tmp --image=busybox --restart=Neever --rm -ti -- /bin/sh[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [C[C[C[C[C[C[C[C[21Pget svc myapp 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+NAME    TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+myapp   NodePort   10.99.192.102   <none>        80:30496/TCP   10m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get svc myapp [Kkubectl get svc myapp wget -O- localhost:30496[C[1P:30496[1P:30496[1P:30496[1P:30496[1P:30496[1P:30496[1P:30496[1P:30496[1P:304961:304962:304967:30496.:304960:30496.:304960:30496.:304961:30496
+--2020-04-11 16:40:22--  http://127.0.0.1:30496/
+Connecting to 127.0.0.1:30496... failed: Connection refused.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ccwget -O- 127.0.0.1:30496[1P[1@0
+wget: invalid option -- '0'
+wget: invalid option -- '-'
+Usage: wget [OPTION]... [URL]...
+
+Try `wget --help' for more options.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ wget -0- 127.0.0.1:30496[1P[1@o[1P[1@O
+--2020-04-11 16:41:25--  http://127.0.0.1:30496/
+Connecting to 127.0.0.1:30496... failed: Connection refused.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ wget -O- 127.0.0.1:304960[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kwget -O- 127.0.0.1:30496[2Pkubectl get svc myapp 
+NAME    TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
+myapp   NodePort   10.99.192.102   <none>        80:30496/TCP   11m
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get node
+NAME       STATUS   ROLES    AGE   VERSION
+minikube   Ready    master   56d   v1.15.2
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get node -o e[Kwide
+NAME       STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE              KERNEL-VERSION   CONTAINER-RUNTIME
+minikube   Ready    master   56d   v1.15.2   10.0.2.15     <none>        Buildroot 2018.05.3   4.15.0           docker://18.9.8
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get node -o wide[Ksvc myapp wget -O- 127.0.0.1:30496[C[1P:30496[1P:30496[1P:30496[1P:30496[1P:30496[1P:30496[1P:30496[1P:30496[1P:304961:304960:30496.:304960:30496.:304962:30496.:304961:304965:30496
+--2020-04-11 16:42:09--  http://10.0.2.15:30496/
+Connecting to 10.0.2.15:30496... ^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get ns app-stack
+Error from server (NotFound): namespaces "app-stack" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get ns app-stack
+Error from server (NotFound): namespaces "app-stack" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nana[Ko aa[Kpp-stack.yaml
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;32H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                 app-stack.yaml                           [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[3dmetadata:[4;3Hname: backend[5;3Hnamespace: app-stack[6;3Hlabels:[7;5Happ: todo[8;5Htier: backend[9dspec:[10;3Hcontainers:[11;5H- name: backend[12;7Himage: nginx[14d---[16dkind: Pod[17dapiVersion: v1[18dmetadata:[19;3Hname: database[20;3Hnamespace: app-stack[21;3Hlabels:[22;5Happ: todo[23;5Htier: database[24dspec:[25;3Hcontainers:[26;5H- name: database[27;7Himage: mysql[28;7Henv:[29;7H- name: MYSQL_ROOT_PASSWORD[30;9Hvalue: example[36d[K[30;23H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: app-stack.yaml                           (B[m[36;35H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 45 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create -f app-stack.yaml  [A
+Error from server (NotFound): error when creating "app-stack.yaml": namespaces "app-stack" not found
+Error from server (NotFound): error when creating "app-stack.yaml": namespaces "app-stack" not found
+Error from server (NotFound): error when creating "app-stack.yaml": namespaces "app-stack" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create ns app-stack
+namespace/app-stack created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl create ns app-stack-f app-stack.yaml  [A
+pod/frontend created
+pod/backend created
+pod/database created
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl get pod ns app[K[K[K[K[K[K-n app-stack
+NAME       READY   STATUS              RESTARTS   AGE
+backend    1/1     Running             0          23s
+database   0/1     ContainerCreating   0          23s
+frontend   1/1     Running             0          23s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano app-stack-network-policy.yamll
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;32H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3         app-stack-network-policy.yaml                    [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[3da[?12l[?25h[?25lp[?12l[?25h[?25li[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: app-stack-network-policy.yaml            (B[m[36;50H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;30H(B[0;7m[ Wrote 1 line ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cat app-stack-network-policy.yaml  
+api
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cat app-stack-network-policy.yaml  [A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano app-stack-network-policy.yaml[A]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl get pod -n app-stack
+NAME       READY   STATUS              RESTARTS   AGE
+backend    1/1     Running             0          115s
+database   0/1     ContainerCreating   0          115s
+frontend   1/1     Running             0          115s
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl expa[Klain api-resources
+the server doesn't have a resource type "api-resources"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain api-resources[K
+the server doesn't have a resource type "api-resource"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain api-resource[K[K[K[K[K[K[K[K[K[K[K[K--h
+Error: unknown flag: --h
+
+
+Examples:
+  # Get the documentation of the resource and its fields
+  kubectl explain pods
+  
+  # Get the documentation of a specific field of a resource
+  kubectl explain pods.spec.containers
+
+Options:
+      --api-version='': Get different explanations for particular API version
+      --recursive=false: Print the fields of fields (Currently only 1 level deep)
+
+Usage:
+  kubectl explain RESOURCE [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain --h[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl api[K[K[K--h
+Error: unknown flag: --h
+
+
+Basic Commands (Beginner):
+  create         Create a resource from a file or from stdin.
+  expose         Take a replication controller, service, deployment or pod and expose it as a new Kubernetes Service
+  run            Run a particular image on the cluster
+  set            Set specific features on objects
+
+Basic Commands (Intermediate):
+  explain        Documentation of resources
+  get            Display one or many resources
+  edit           Edit a resource on the server
+  delete         Delete resources by filenames, stdin, resources and names, or by resources and label selector
+
+Deploy Commands:
+  rollout        Manage the rollout of a resource
+  scale          Set a new size for a Deployment, ReplicaSet, Replication Controller, or Job
+  autoscale      Auto-scale a Deployment, ReplicaSet, or ReplicationController
+
+Cluster Management Commands:
+  certificate    Modify certificate resources.
+  cluster-info   Display cluster info
+  top            Display Resource (CPU/Memory/Storage) usage.
+  cordon         Mark node as unschedulable
+  uncordon       Mark node as schedulable
+  drain          Drain node in preparation for maintenance
+  taint          Update the taints on one or more nodes
+
+Troubleshooting and Debugging Commands:
+  describe       Show details of a specific resource or group of resources
+  logs           Print the logs for a container in a pod
+  attach         Attach to a running container
+  exec           Execute a command in a container
+  port-forward   Forward one or more local ports to a pod
+  proxy          Run a proxy to the Kubernetes API server
+  cp             Copy files and directories to and from containers.
+  auth           Inspect authorization
+
+Advanced Commands:
+  diff           Diff live version against would-be applied version
+  apply          Apply a configuration to a resource by filename or stdin
+  patch          Update field(s) of a resource using strategic merge patch
+  replace        Replace a resource by filename or stdin
+  wait           Experimental: Wait for a specific condition on one or many resources.
+  convert        Convert config files between different API versions
+  kustomize      Build a kustomization target from a directory or a remote url.
+
+Settings Commands:
+  label          Update the labels on a resource
+  annotate       Update the annotations on a resource
+  completion     Output shell completion code for the specified shell (bash or zsh)
+
+Other Commands:
+  api-resources  Print the supported API resources on the server
+  api-versions   Print the supported API versions on the server, in the form of "group/version"
+  config         Modify kubeconfig files
+  plugin         Provides utilities for interacting with plugins.
+  version        Print the client and server version information
+
+Usage:
+  kubectl [flags] [options]
+
+Use "kubectl <command> --help" for more information about a given command.
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl --h[K[K[Kapi-resources
+NAME                              SHORTNAMES   APIGROUP                       NAMESPACED   KIND
+bindings                                                                      true         Binding
+componentstatuses                 cs                                          false        ComponentStatus
+configmaps                        cm                                          true         ConfigMap
+endpoints                         ep                                          true         Endpoints
+events                            ev                                          true         Event
+limitranges                       limits                                      true         LimitRange
+namespaces                        ns                                          false        Namespace
+nodes                             no                                          false        Node
+persistentvolumeclaims            pvc                                         true         PersistentVolumeClaim
+persistentvolumes                 pv                                          false        PersistentVolume
+pods                              po                                          true         Pod
+podtemplates                                                                  true         PodTemplate
+replicationcontrollers            rc                                          true         ReplicationController
+resourcequotas                    quota                                       true         ResourceQuota
+secrets                                                                       true         Secret
+serviceaccounts                   sa                                          true         ServiceAccount
+services                          svc                                         true         Service
+mutatingwebhookconfigurations                  admissionregistration.k8s.io   false        MutatingWebhookConfiguration
+validatingwebhookconfigurations                admissionregistration.k8s.io   false        ValidatingWebhookConfiguration
+customresourcedefinitions         crd,crds     apiextensions.k8s.io           false        CustomResourceDefinition
+apiservices                                    apiregistration.k8s.io         false        APIService
+controllerrevisions                            apps                           true         ControllerRevision
+daemonsets                        ds           apps                           true         DaemonSet
+deployments                       deploy       apps                           true         Deployment
+replicasets                       rs           apps                           true         ReplicaSet
+statefulsets                      sts          apps                           true         StatefulSet
+tokenreviews                                   authentication.k8s.io          false        TokenReview
+localsubjectaccessreviews                      authorization.k8s.io           true         LocalSubjectAccessReview
+selfsubjectaccessreviews                       authorization.k8s.io           false        SelfSubjectAccessReview
+selfsubjectrulesreviews                        authorization.k8s.io           false        SelfSubjectRulesReview
+subjectaccessreviews                           authorization.k8s.io           false        SubjectAccessReview
+horizontalpodautoscalers          hpa          autoscaling                    true         HorizontalPodAutoscaler
+cronjobs                          cj           batch                          true         CronJob
+jobs                                           batch                          true         Job
+certificatesigningrequests        csr          certificates.k8s.io            false        CertificateSigningRequest
+leases                                         coordination.k8s.io            true         Lease
+events                            ev           events.k8s.io                  true         Event
+daemonsets                        ds           extensions                     true         DaemonSet
+deployments                       deploy       extensions                     true         Deployment
+ingresses                         ing          extensions                     true         Ingress
+networkpolicies                   netpol       extensions                     true         NetworkPolicy
+podsecuritypolicies               psp          extensions                     false        PodSecurityPolicy
+replicasets                       rs           extensions                     true         ReplicaSet
+nodes                                          metrics.k8s.io                 false        NodeMetrics
+pods                                           metrics.k8s.io                 true         PodMetrics
+ingresses                         ing          networking.k8s.io              true         Ingress
+networkpolicies                   netpol       networking.k8s.io              true         NetworkPolicy
+runtimeclasses                                 node.k8s.io                    false        RuntimeClass
+poddisruptionbudgets              pdb          policy                         true         PodDisruptionBudget
+podsecuritypolicies               psp          policy                         false        PodSecurityPolicy
+clusterrolebindings                            rbac.authorization.k8s.io      false        ClusterRoleBinding
+clusterroles                                   rbac.authorization.k8s.io      false        ClusterRole
+rolebindings                                   rbac.authorization.k8s.io      true         RoleBinding
+roles                                          rbac.authorization.k8s.io      true         Role
+priorityclasses                   pc           scheduling.k8s.io              false        PriorityClass
+csidrivers                                     storage.k8s.io                 false        CSIDriver
+csinodes                                       storage.k8s.io                 false        CSINode
+storageclasses                    sc           storage.k8s.io                 false        StorageClass
+volumeattachments                              storage.k8s.io                 false        VolumeAttachment
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl api-resources | grep netpol
+networkpolicies                   [01;31m[Knetpol[m[K       extensions                     true         NetworkPolicy
+networkpolicies                   [01;31m[Knetpol[m[K       networking.k8s.io              true         NetworkPolicy
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl api-resources | grep netpol[K--h[Kexplain --h[K[K[K[K networkpolices --recursive
+the server doesn't have a resource type "networkpolices"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolices --recursive[1@i
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
+     networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic
+     is allowed for a set of Pods
+
+FIELDS:
+   apiVersion	<string>
+   kind	<string>
+   metadata	<Object>
+      annotations	<map[string]string>
+      clusterName	<string>
+      creationTimestamp	<string>
+      deletionGracePeriodSeconds	<integer>
+      deletionTimestamp	<string>
+      finalizers	<[]string>
+      generateName	<string>
+      generation	<integer>
+      initializers	<Object>
+         pending	<[]Object>
+            name	<string>
+         result	<Object>
+            apiVersion	<string>
+            code	<integer>
+            details	<Object>
+               causes	<[]Object>
+                  field	<string>
+                  message	<string>
+                  reason	<string>
+               group	<string>
+               kind	<string>
+               name	<string>
+               retryAfterSeconds	<integer>
+               uid	<string>
+            kind	<string>
+            message	<string>
+            metadata	<Object>
+               continue	<string>
+               remainingItemCount	<integer>
+               resourceVersion	<string>
+               selfLink	<string>
+            reason	<string>
+            status	<string>
+      labels	<map[string]string>
+      managedFields	<[]Object>
+         apiVersion	<string>
+         fields	<map[string]>
+         manager	<string>
+         operation	<string>
+         time	<string>
+      name	<string>
+      namespace	<string>
+      ownerReferences	<[]Object>
+         apiVersion	<string>
+         blockOwnerDeletion	<boolean>
+         controller	<boolean>
+         kind	<string>
+         name	<string>
+         uid	<string>
+      resourceVersion	<string>
+      selfLink	<string>
+      uid	<string>
+   spec	<Object>
+      egress	<[]Object>
+         ports	<[]Object>
+            port	<string>
+            protocol	<string>
+         to	<[]Object>
+            ipBlock	<Object>
+               cidr	<string>
+               except	<[]string>
+            namespaceSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+            podSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+      ingress	<[]Object>
+         from	<[]Object>
+            ipBlock	<Object>
+               cidr	<string>
+               except	<[]string>
+            namespaceSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+            podSelector	<Object>
+               matchExpressions	<[]Object>
+                  key	<string>
+                  operator	<string>
+                  values	<[]string>
+               matchLabels	<map[string]string>
+         ports	<[]Object>
+            port	<string>
+            protocol	<string>
+      podSelector	<Object>
+         matchExpressions	<[]Object>
+            key	<string>
+            operator	<string>
+            values	<[]string>
+         matchLabels	<map[string]string>
+      policyTypes	<[]string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cckubectl explain networkpolicies --recursive[K[K[K[K[K[K[K[K[K[K[K[K
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
+     networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic
+     is allowed for a set of Pods
+
+FIELDS:
+   apiVersion	<string>
+     APIVersion defines the versioned schema of this representation of an
+     object. Servers should convert recognized schemas to the latest internal
+     value, and may reject unrecognized values. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
+   kind	<string>
+     Kind is a string value representing the REST resource this object
+     represents. Servers may infer this from the endpoint the client submits
+     requests to. Cannot be updated. In CamelCase. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+
+   metadata	<Object>
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+   spec	<Object>
+     Specification of the desired behavior for this NetworkPolicy.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.spec
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+RESOURCE: spec <Object>
+
+DESCRIPTION:
+     Specification of the desired behavior for this NetworkPolicy.
+
+     DEPRECATED 1.9 - This group version of NetworkPolicySpec is deprecated by
+     networking/v1/NetworkPolicySpec.
+
+FIELDS:
+   egress	<[]Object>
+     List of egress rules to be applied to the selected pods. Outgoing traffic
+     is allowed if there are no NetworkPolicies selecting the pod (and cluster
+     policy otherwise allows the traffic), OR if the traffic matches at least
+     one egress rule across all of the NetworkPolicy objects whose podSelector
+     matches the pod. If this field is empty then this NetworkPolicy limits all
+     outgoing traffic (and serves solely to ensure that the pods it selects are
+     isolated by default). This field is beta-level in 1.8
+
+   ingress	<[]Object>
+     List of ingress rules to be applied to the selected pods. Traffic is
+     allowed to a pod if there are no NetworkPolicies selecting the pod OR if
+     the traffic source is the pod's local node, OR if the traffic matches at
+     least one ingress rule across all of the NetworkPolicy objects whose
+     podSelector matches the pod. If this field is empty then this NetworkPolicy
+     does not allow any traffic (and serves solely to ensure that the pods it
+     selects are isolated by default).
+
+   podSelector	<Object> -required-
+     Selects the pods to which this NetworkPolicy object applies. The array of
+     ingress rules is applied to any pods selected by this field. Multiple
+     network policies can select the same set of pods. In this case, the ingress
+     rules for each are combined additively. This field is NOT optional and
+     follows standard label selector semantics. An empty podSelector matches all
+     pods in this namespace.
+
+   policyTypes	<[]string>
+     List of rule types that the NetworkPolicy relates to. Valid options are
+     "Ingress", "Egress", or "Ingress,Egress". If this field is not specified,
+     it will default based on the existence of Ingress or Egress rules; policies
+     that contain an Egress section are assumed to affect Egress, and all
+     policies (whether or not they contain an Ingress section) are assumed to
+     affect Ingress. If you want to write an egress-only policy, you must
+     explicitly specify policyTypes [ "Egress" ]. Likewise, if you want to write
+     a policy that specifies that no egress is allowed, you must specify a
+     policyTypes value that include "Egress" (since such a policy would not
+     include an Egress section and would otherwise default to just [ "Ingress"
+     ]). This field is beta-level in 1.8
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano net[K[K[Ka[K
+202004070027                   app-stack.yaml                 c2.yaml                        pod-error.txt
+202004080008                   b1.yaml                        config.txt                     README.md
+202004090039                   b2.yaml                        d1.yaml                        rq.yaml
+202004100037                   b3.yaml                        d2.yaml                        secured.yaml
+202004111557                   b4.yaml                        e2.yaml                        y.yml
+app-stack-network-policy.yaml  c1.yaml                        f1.yaml                        
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano app-stack-network-policy.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;74H(B[0;7m 1 line ](B[m[K[H(B[0;7m  GNU nano 2.9.3                                               app-stack-network-policy.yaml                                                          [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapi[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25li[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[3;3H [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25lextensions/v1beta1[?12l[?25h[?25l[?12l[?25h[?25l[36d[K[3;17H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25laextensions/v1beta1a[?12l[?25h[?25lpextensions/v1beta1ap[?12l[?25h[?25liextensions/v1beta1api[?12l[?25h[?25lVextensions/v1beta1[5G[?12l[?25h[?25leextensions/v1beta1[6G[?12l[?25h[?25lrextensions/v1beta1[7G[?12l[?25h[?25lsextensions/v1beta1[8G[?12l[?25h[?25liextensions/v1beta1[3;9H[?12l[?25h[?25loextensions/v1beta1[3;10H[?12l[?25h[?25lnextensions/v1beta1[3;11H[?12l[?25h[?25l:extensions/v1beta1[3;12H[?12l[?25h[?25l extensions/v1beta1[3;13H[?12l[?25h[?25l[3;24H[?12l[?25h[?25l[4d[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lw[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lk[?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25lc[?12l[?25h[?25li[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: app-stack-network-policy.yaml            (B[m[36;50H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 2 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ nano app-stack-network-policy.yaml kubectl explain networkpolicies.spec[K
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
+     networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic
+     is allowed for a set of Pods
+
+FIELDS:
+   apiVersion	<string>
+     APIVersion defines the versioned schema of this representation of an
+     object. Servers should convert recognized schemas to the latest internal
+     value, and may reject unrecognized values. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
+   kind	<string>
+     Kind is a string value representing the REST resource this object
+     represents. Servers may infer this from the endpoint the client submits
+     requests to. Cannot be updated. In CamelCase. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+
+   metadata	<Object>
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+   spec	<Object>
+     Specification of the desired behavior for this NetworkPolicy.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+RESOURCE: metadata <Object>
+
+DESCRIPTION:
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+     ObjectMeta is metadata that all persisted resources must have, which
+     includes all objects users must create.
+
+FIELDS:
+   annotations	<map[string]string>
+     Annotations is an unstructured key value map stored with a resource that
+     may be set by external tools to store and retrieve arbitrary metadata. They
+     are not queryable and should be preserved when modifying objects. More
+     info: http://kubernetes.io/docs/user-guide/annotations
+
+   clusterName	<string>
+     The name of the cluster which the object belongs to. This is used to
+     distinguish resources with same name and namespace in different clusters.
+     This field is not set anywhere right now and apiserver is going to ignore
+     it if set in create or update request.
+
+   creationTimestamp	<string>
+     CreationTimestamp is a timestamp representing the server time when this
+     object was created. It is not guaranteed to be set in happens-before order
+     across separate operations. Clients may not set this value. It is
+     represented in RFC3339 form and is in UTC. Populated by the system.
+     Read-only. Null for lists. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+
+   deletionGracePeriodSeconds	<integer>
+     Number of seconds allowed for this object to gracefully terminate before it
+     will be removed from the system. Only set when deletionTimestamp is also
+     set. May only be shortened. Read-only.
+
+   deletionTimestamp	<string>
+     DeletionTimestamp is RFC 3339 date and time at which this resource will be
+     deleted. This field is set by the server when a graceful deletion is
+     requested by the user, and is not directly settable by a client. The
+     resource is expected to be deleted (no longer visible from resource lists,
+     and not reachable by name) after the time in this field, once the
+     finalizers list is empty. As long as the finalizers list contains items,
+     deletion is blocked. Once the deletionTimestamp is set, this value may not
+     be unset or be set further into the future, although it may be shortened or
+     the resource may be deleted prior to this time. For example, a user may
+     request that a pod is deleted in 30 seconds. The Kubelet will react by
+     sending a graceful termination signal to the containers in the pod. After
+     that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL)
+     to the container and after cleanup, remove the pod from the API. In the
+     presence of network partitions, this object may still exist after this
+     timestamp, until an administrator or automated process can determine the
+     resource is fully terminated. If not set, graceful deletion of the object
+     has not been requested. Populated by the system when a graceful deletion is
+     requested. Read-only. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+
+   finalizers	<[]string>
+     Must be empty before the object is deleted from the registry. Each entry is
+     an identifier for the responsible component that will remove the entry from
+     the list. If the deletionTimestamp of the object is non-nil, entries in
+     this list can only be removed.
+
+   generateName	<string>
+     GenerateName is an optional prefix, used by the server, to generate a
+     unique name ONLY IF the Name field has not been provided. If this field is
+     used, the name returned to the client will be different than the name
+     passed. This value will also be combined with a unique suffix. The provided
+     value has the same validation rules as the Name field, and may be truncated
+     by the length of the suffix required to make the value unique on the
+     server. If this field is specified and the generated name exists, the
+     server will NOT return a 409 - instead, it will either return 201 Created
+     or 500 with Reason ServerTimeout indicating a unique name could not be
+     found in the time allotted, and the client should retry (optionally after
+     the time indicated in the Retry-After header). Applied only if Name is not
+     specified. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency
+
+   generation	<integer>
+     A sequence number representing a specific generation of the desired state.
+     Populated by the system. Read-only.
+
+   initializers	<Object>
+     An initializer is a controller which enforces some system invariant at
+     object creation time. This field is a list of initializers that have not
+     yet acted on this object. If nil or empty, this object has been completely
+     initialized. Otherwise, the object is considered uninitialized and is
+     hidden (in list/watch and get calls) from clients that haven't explicitly
+     asked to observe uninitialized objects. When an object is created, the
+     system will populate this list with the current set of initializers. Only
+     privileged users may set or modify this list. Once it is empty, it may not
+     be modified further by any user. DEPRECATED - initializers are an alpha
+     field and will be removed in v1.15.
+
+   labels	<map[string]string>
+     Map of string keys and values that can be used to organize and categorize
+     (scope and select) objects. May match selectors of replication controllers
+     and services. More info: http://kubernetes.io/docs/user-guide/labels
+
+   managedFields	<[]Object>
+     ManagedFields maps workflow-id and version to the set of fields that are
+     managed by that workflow. This is mostly for internal housekeeping, and
+     users typically shouldn't need to set or understand this field. A workflow
+     can be the user's name, a controller's name, or the name of a specific
+     apply path like "ci-cd". The set of fields is always in the version that
+     the workflow used when modifying the object. This field is alpha and can be
+     changed or removed without notice.
+
+   name	<string>
+     Name must be unique within a namespace. Is required when creating
+     resources, although some resources may allow a client to request the
+     generation of an appropriate name automatically. Name is primarily intended
+     for creation idempotence and configuration definition. Cannot be updated.
+     More info: http://kubernetes.io/docs/user-guide/identifiers#names
+
+   namespace	<string>
+     Namespace defines the space within each name must be unique. An empty
+     namespace is equivalent to the "default" namespace, but "default" is the
+     canonical representation. Not all objects are required to be scoped to a
+     namespace - the value of this field for those objects will be empty. Must
+     be a DNS_LABEL. Cannot be updated. More info:
+     http://kubernetes.io/docs/user-guide/namespaces
+
+   ownerReferences	<[]Object>
+     List of objects depended by this object. If ALL objects in the list have
+     been deleted, this object will be garbage collected. If this object is
+     managed by a controller, then an entry in this list will point to this
+     controller, with the controller field set to true. There cannot be more
+     than one managing controller.
+
+   resourceVersion	<string>
+     An opaque value that represents the internal version of this object that
+     can be used by clients to determine when objects have changed. May be used
+     for optimistic concurrency, change detection, and the watch operation on a
+     resource or set of resources. Clients must treat these values as opaque and
+     passed unmodified back to the server. They may only be valid for a
+     particular resource or set of resources. Populated by the system.
+     Read-only. Value must be treated as opaque by clients and . More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+
+   selfLink	<string>
+     SelfLink is a URL representing this object. Populated by the system.
+     Read-only.
+
+   uid	<string>
+     UID is the unique in time and space value for this object. It is typically
+     generated by the server on successful creation of a resource and is not
+     allowed to change on PUT operations. Populated by the system. Read-only.
+     More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata --recursi[K[K[K[K[K[K[K[K[Ks
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ alias -r="re[K[K--recursive"
+bash: alias: -r: invalid option
+alias: usage: alias [-p] [name[=value] ... ]
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ alias -r="--recursive"[1Pr="--recursive"[Cr="--recursive"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ alias rr="--recursive"-r="--recursive"kubectl explain networkpolicies.metadata s[Krr
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata rr[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Palias rr="--recursive"[1Precursive"[1Precursive"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ alias rr="recursive"kubectl explain networkpolicies.metadata rr-rr-rr
+Error: unknown flag: --rr
+
+
+Examples:
+  # Get the documentation of the resource and its fields
+  kubectl explain pods
+  
+  # Get the documentation of a specific field of a resource
+  kubectl explain pods.spec.containers
+
+Options:
+      --api-version='': Get different explanations for particular API version
+      --recursive=false: Print the fields of fields (Currently only 1 level deep)
+
+Usage:
+  kubectl explain RESOURCE [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --rr
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata --rr[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Palias rr="recursive"kubectl explain networkpolicies.metadata rr[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Palias rr="--recursive"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"--recursive=false"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ alias rr="--recursive=false"kubectl explain networkpolicies.metadata --rr[K[K[K[Krr
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata rr[K[K--recursive=false'[K
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata --recursive=false[K[K[K[K[K[K[Ke
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl [K[K[K[K[K[K[K[Kminikube status
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ minikube stop
+✋  Stopping "minikube" in virtualbox ...
+🛑  "minikube" stopped.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ minikube stop[K[Kart
+😄  minikube v1.3.1 on Ubuntu 18.04
+💡  Tip: Use 'minikube start -p <name>' to create a new cluster, or 'minikube delete' to delete this one.
+🔄  Starting existing virtualbox VM for "minikube" ...
+⌛  Waiting for the host to be provisioned ...
+🐳  Preparing Kubernetes v1.15.2 on Docker 18.09.8 ...
+🔄  Relaunching Kubernetes using kubeadm ... 
+⌛  Waiting for: apiserver proxy etcd scheduler controller dns
+🏄  Done! kubectl is now configured to use "minikube"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ ccminikube start[1Popatuskubectl explain networkpolicies.metadata --recursive=false
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+RESOURCE: metadata <Object>
+
+DESCRIPTION:
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+     ObjectMeta is metadata that all persisted resources must have, which
+     includes all objects users must create.
+
+FIELDS:
+   annotations	<map[string]string>
+     Annotations is an unstructured key value map stored with a resource that
+     may be set by external tools to store and retrieve arbitrary metadata. They
+     are not queryable and should be preserved when modifying objects. More
+     info: http://kubernetes.io/docs/user-guide/annotations
+
+   clusterName	<string>
+     The name of the cluster which the object belongs to. This is used to
+     distinguish resources with same name and namespace in different clusters.
+     This field is not set anywhere right now and apiserver is going to ignore
+     it if set in create or update request.
+
+   creationTimestamp	<string>
+     CreationTimestamp is a timestamp representing the server time when this
+     object was created. It is not guaranteed to be set in happens-before order
+     across separate operations. Clients may not set this value. It is
+     represented in RFC3339 form and is in UTC. Populated by the system.
+     Read-only. Null for lists. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+
+   deletionGracePeriodSeconds	<integer>
+     Number of seconds allowed for this object to gracefully terminate before it
+     will be removed from the system. Only set when deletionTimestamp is also
+     set. May only be shortened. Read-only.
+
+   deletionTimestamp	<string>
+     DeletionTimestamp is RFC 3339 date and time at which this resource will be
+     deleted. This field is set by the server when a graceful deletion is
+     requested by the user, and is not directly settable by a client. The
+     resource is expected to be deleted (no longer visible from resource lists,
+     and not reachable by name) after the time in this field, once the
+     finalizers list is empty. As long as the finalizers list contains items,
+     deletion is blocked. Once the deletionTimestamp is set, this value may not
+     be unset or be set further into the future, although it may be shortened or
+     the resource may be deleted prior to this time. For example, a user may
+     request that a pod is deleted in 30 seconds. The Kubelet will react by
+     sending a graceful termination signal to the containers in the pod. After
+     that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL)
+     to the container and after cleanup, remove the pod from the API. In the
+     presence of network partitions, this object may still exist after this
+     timestamp, until an administrator or automated process can determine the
+     resource is fully terminated. If not set, graceful deletion of the object
+     has not been requested. Populated by the system when a graceful deletion is
+     requested. Read-only. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+
+   finalizers	<[]string>
+     Must be empty before the object is deleted from the registry. Each entry is
+     an identifier for the responsible component that will remove the entry from
+     the list. If the deletionTimestamp of the object is non-nil, entries in
+     this list can only be removed.
+
+   generateName	<string>
+     GenerateName is an optional prefix, used by the server, to generate a
+     unique name ONLY IF the Name field has not been provided. If this field is
+     used, the name returned to the client will be different than the name
+     passed. This value will also be combined with a unique suffix. The provided
+     value has the same validation rules as the Name field, and may be truncated
+     by the length of the suffix required to make the value unique on the
+     server. If this field is specified and the generated name exists, the
+     server will NOT return a 409 - instead, it will either return 201 Created
+     or 500 with Reason ServerTimeout indicating a unique name could not be
+     found in the time allotted, and the client should retry (optionally after
+     the time indicated in the Retry-After header). Applied only if Name is not
+     specified. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency
+
+   generation	<integer>
+     A sequence number representing a specific generation of the desired state.
+     Populated by the system. Read-only.
+
+   initializers	<Object>
+     An initializer is a controller which enforces some system invariant at
+     object creation time. This field is a list of initializers that have not
+     yet acted on this object. If nil or empty, this object has been completely
+     initialized. Otherwise, the object is considered uninitialized and is
+     hidden (in list/watch and get calls) from clients that haven't explicitly
+     asked to observe uninitialized objects. When an object is created, the
+     system will populate this list with the current set of initializers. Only
+     privileged users may set or modify this list. Once it is empty, it may not
+     be modified further by any user. DEPRECATED - initializers are an alpha
+     field and will be removed in v1.15.
+
+   labels	<map[string]string>
+     Map of string keys and values that can be used to organize and categorize
+     (scope and select) objects. May match selectors of replication controllers
+     and services. More info: http://kubernetes.io/docs/user-guide/labels
+
+   managedFields	<[]Object>
+     ManagedFields maps workflow-id and version to the set of fields that are
+     managed by that workflow. This is mostly for internal housekeeping, and
+     users typically shouldn't need to set or understand this field. A workflow
+     can be the user's name, a controller's name, or the name of a specific
+     apply path like "ci-cd". The set of fields is always in the version that
+     the workflow used when modifying the object. This field is alpha and can be
+     changed or removed without notice.
+
+   name	<string>
+     Name must be unique within a namespace. Is required when creating
+     resources, although some resources may allow a client to request the
+     generation of an appropriate name automatically. Name is primarily intended
+     for creation idempotence and configuration definition. Cannot be updated.
+     More info: http://kubernetes.io/docs/user-guide/identifiers#names
+
+   namespace	<string>
+     Namespace defines the space within each name must be unique. An empty
+     namespace is equivalent to the "default" namespace, but "default" is the
+     canonical representation. Not all objects are required to be scoped to a
+     namespace - the value of this field for those objects will be empty. Must
+     be a DNS_LABEL. Cannot be updated. More info:
+     http://kubernetes.io/docs/user-guide/namespaces
+
+   ownerReferences	<[]Object>
+     List of objects depended by this object. If ALL objects in the list have
+     been deleted, this object will be garbage collected. If this object is
+     managed by a controller, then an entry in this list will point to this
+     controller, with the controller field set to true. There cannot be more
+     than one managing controller.
+
+   resourceVersion	<string>
+     An opaque value that represents the internal version of this object that
+     can be used by clients to determine when objects have changed. May be used
+     for optimistic concurrency, change detection, and the watch operation on a
+     resource or set of resources. Clients must treat these values as opaque and
+     passed unmodified back to the server. They may only be valid for a
+     particular resource or set of resources. Populated by the system.
+     Read-only. Value must be treated as opaque by clients and . More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+
+   selfLink	<string>
+     SelfLink is a URL representing this object. Populated by the system.
+     Read-only.
+
+   uid	<string>
+     UID is the unique in time and space value for this object. It is typically
+     generated by the server on successful creation of a resource and is not
+     allowed to change on PUT operations. Populated by the system. Read-only.
+     More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ cckubectl explain networkpolicies.metadata --recursive=false[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krr
+error: We accept only this format: explain RESOURCE
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata rr[K[K--rr
+Error: unknown flag: --rr
+
+
+Examples:
+  # Get the documentation of the resource and its fields
+  kubectl explain pods
+  
+  # Get the documentation of a specific field of a resource
+  kubectl explain pods.spec.containers
+
+Options:
+      --api-version='': Get different explanations for particular API version
+      --recursive=false: Print the fields of fields (Currently only 1 level deep)
+
+Usage:
+  kubectl explain RESOURCE [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --rr
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata --rr[K
+Error: unknown flag: --r
+
+
+Examples:
+  # Get the documentation of the resource and its fields
+  kubectl explain pods
+  
+  # Get the documentation of a specific field of a resource
+  kubectl explain pods.spec.containers
+
+Options:
+      --api-version='': Get different explanations for particular API version
+      --recursive=false: Print the fields of fields (Currently only 1 level deep)
+
+Usage:
+  kubectl explain RESOURCE [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --r
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata --rr[2Prr[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kkubectl explain networkpolicies.metadata --recursive=false[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kminikube start[1Popatuskubectl explain networkpolicies.metadata --recursive=falserr[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Palias rr="--recursive=false"kubectl explain networkpolicies.metadata --rr[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[17Palias rr="--recursive=false"
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ alias rr="--recursive=false"kubectl explain networkpolicies.metadata --r[K[K[Krr
+error: We accept only this format: explain RESOURCE
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata rr[K[K--recursive
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+RESOURCE: metadata <Object>
+
+DESCRIPTION:
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+     ObjectMeta is metadata that all persisted resources must have, which
+     includes all objects users must create.
+
+FIELDS:
+   annotations	<map[string]string>
+   clusterName	<string>
+   creationTimestamp	<string>
+   deletionGracePeriodSeconds	<integer>
+   deletionTimestamp	<string>
+   finalizers	<[]string>
+   generateName	<string>
+   generation	<integer>
+   initializers	<Object>
+      pending	<[]Object>
+         name	<string>
+      result	<Object>
+         apiVersion	<string>
+         code	<integer>
+         details	<Object>
+            causes	<[]Object>
+               field	<string>
+               message	<string>
+               reason	<string>
+            group	<string>
+            kind	<string>
+            name	<string>
+            retryAfterSeconds	<integer>
+            uid	<string>
+         kind	<string>
+         message	<string>
+         metadata	<Object>
+            continue	<string>
+            remainingItemCount	<integer>
+            resourceVersion	<string>
+            selfLink	<string>
+         reason	<string>
+         status	<string>
+   labels	<map[string]string>
+   managedFields	<[]Object>
+      apiVersion	<string>
+      fields	<map[string]>
+      manager	<string>
+      operation	<string>
+      time	<string>
+   name	<string>
+   namespace	<string>
+   ownerReferences	<[]Object>
+      apiVersion	<string>
+      blockOwnerDeletion	<boolean>
+      controller	<boolean>
+      kind	<string>
+      name	<string>
+      uid	<string>
+   resourceVersion	<string>
+   selfLink	<string>
+   uid	<string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.metadata --recursive[C[C[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursive[1P --recursives --recursivep --recursivee --recursivec --recursive
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+RESOURCE: spec <Object>
+
+DESCRIPTION:
+     Specification of the desired behavior for this NetworkPolicy.
+
+     DEPRECATED 1.9 - This group version of NetworkPolicySpec is deprecated by
+     networking/v1/NetworkPolicySpec.
+
+FIELDS:
+   egress	<[]Object>
+      ports	<[]Object>
+         port	<string>
+         protocol	<string>
+      to	<[]Object>
+         ipBlock	<Object>
+            cidr	<string>
+            except	<[]string>
+         namespaceSelector	<Object>
+            matchExpressions	<[]Object>
+               key	<string>
+               operator	<string>
+               values	<[]string>
+            matchLabels	<map[string]string>
+         podSelector	<Object>
+            matchExpressions	<[]Object>
+               key	<string>
+               operator	<string>
+               values	<[]string>
+            matchLabels	<map[string]string>
+   ingress	<[]Object>
+      from	<[]Object>
+         ipBlock	<Object>
+            cidr	<string>
+            except	<[]string>
+         namespaceSelector	<Object>
+            matchExpressions	<[]Object>
+               key	<string>
+               operator	<string>
+               values	<[]string>
+            matchLabels	<map[string]string>
+         podSelector	<Object>
+            matchExpressions	<[]Object>
+               key	<string>
+               operator	<string>
+               values	<[]string>
+            matchLabels	<map[string]string>
+      ports	<[]Object>
+         port	<string>
+         protocol	<string>
+   podSelector	<Object>
+      matchExpressions	<[]Object>
+         key	<string>
+         operator	<string>
+         values	<[]string>
+      matchLabels	<map[string]string>
+   policyTypes	<[]string>
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.spec --recursive[K[K[K[K[K[K[K[K[K[K[K[K
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+RESOURCE: spec <Object>
+
+DESCRIPTION:
+     Specification of the desired behavior for this NetworkPolicy.
+
+     DEPRECATED 1.9 - This group version of NetworkPolicySpec is deprecated by
+     networking/v1/NetworkPolicySpec.
+
+FIELDS:
+   egress	<[]Object>
+     List of egress rules to be applied to the selected pods. Outgoing traffic
+     is allowed if there are no NetworkPolicies selecting the pod (and cluster
+     policy otherwise allows the traffic), OR if the traffic matches at least
+     one egress rule across all of the NetworkPolicy objects whose podSelector
+     matches the pod. If this field is empty then this NetworkPolicy limits all
+     outgoing traffic (and serves solely to ensure that the pods it selects are
+     isolated by default). This field is beta-level in 1.8
+
+   ingress	<[]Object>
+     List of ingress rules to be applied to the selected pods. Traffic is
+     allowed to a pod if there are no NetworkPolicies selecting the pod OR if
+     the traffic source is the pod's local node, OR if the traffic matches at
+     least one ingress rule across all of the NetworkPolicy objects whose
+     podSelector matches the pod. If this field is empty then this NetworkPolicy
+     does not allow any traffic (and serves solely to ensure that the pods it
+     selects are isolated by default).
+
+   podSelector	<Object> -required-
+     Selects the pods to which this NetworkPolicy object applies. The array of
+     ingress rules is applied to any pods selected by this field. Multiple
+     network policies can select the same set of pods. In this case, the ingress
+     rules for each are combined additively. This field is NOT optional and
+     follows standard label selector semantics. An empty podSelector matches all
+     pods in this namespace.
+
+   policyTypes	<[]string>
+     List of rule types that the NetworkPolicy relates to. Valid options are
+     "Ingress", "Egress", or "Ingress,Egress". If this field is not specified,
+     it will default based on the existence of Ingress or Egress rules; policies
+     that contain an Egress section are assumed to affect Egress, and all
+     policies (whether or not they contain an Ingress section) are assumed to
+     affect Ingress. If you want to write an egress-only policy, you must
+     explicitly specify policyTypes [ "Egress" ]. Likewise, if you want to write
+     a policy that specifies that no egress is allowed, you must specify a
+     policyTypes value that include "Egress" (since such a policy would not
+     include an Egress section and would otherwise default to just [ "Ingress"
+     ]). This field is beta-level in 1.8
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.spec[C[C[C.podSelector
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+RESOURCE: podSelector <Object>
+
+DESCRIPTION:
+     Selects the pods to which this NetworkPolicy object applies. The array of
+     ingress rules is applied to any pods selected by this field. Multiple
+     network policies can select the same set of pods. In this case, the ingress
+     rules for each are combined additively. This field is NOT optional and
+     follows standard label selector semantics. An empty podSelector matches all
+     pods in this namespace.
+
+     A label selector is a label query over a set of resources. The result of
+     matchLabels and matchExpressions are ANDed. An empty label selector matches
+     all objects. A null label selector matches no objects.
+
+FIELDS:
+   matchExpressions	<[]Object>
+     matchExpressions is a list of label selector requirements. The requirements
+     are ANDed.
+
+   matchLabels	<map[string]string>
+     matchLabels is a map of {key,value} pairs. A single {key,value} in the
+     matchLabels map is equivalent to an element of matchExpressions, whose key
+     field is "key", the operator is "In", and the values array contains only
+     "value". The requirements are ANDed.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies.spec.podSelector[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+
+KIND:     NetworkPolicy
+VERSION:  extensions/v1beta1
+
+DESCRIPTION:
+     DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
+     networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic
+     is allowed for a set of Pods
+
+FIELDS:
+   apiVersion	<string>
+     APIVersion defines the versioned schema of this representation of an
+     object. Servers should convert recognized schemas to the latest internal
+     value, and may reject unrecognized values. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
+
+   kind	<string>
+     Kind is a string value representing the REST resource this object
+     represents. Servers may infer this from the endpoint the client submits
+     requests to. Cannot be updated. In CamelCase. More info:
+     https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+
+   metadata	<Object>
+     Standard object's metadata. More info:
+     https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
+
+   spec	<Object>
+     Specification of the desired behavior for this NetworkPolicy.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies --recursive
+Unable to connect to the server: net/http: TLS handshake timeout
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl explain networkpolicies --recursive
+The connection to the server 192.168.99.101:8443 was refused - did you specify the right host or port?
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ kubectl gte [K[K[K[Kget pod
+The connection to the server 192.168.99.101:8443 was refused - did you specify the right host or port?
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ minikube status
+host: Running
+kubelet: Running
+apiserver: Stopped
+kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.101
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ minikube status[K[K[K[K[K[Krestart
+Error: unknown command "restart" for "minikube"
+
+Did you mean this?
+	start
+
+Run 'minikube --help' for usage.
+]0;baz@baz-ubuntu: ~/Q1_CNC/k8CKAD/bmuschko[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/k8CKAD/bmuschko[00m$ minikube restart[K[K[K[K[K[K[K--h
+Error: unknown flag: --h
+
+
+Basic Commands:
+  start          Starts a local kubernetes cluster
+  status         Gets the status of a local kubernetes cluster
+  stop           Stops a running local kubernetes cluster
+  delete         Deletes a local kubernetes cluster
+  dashboard      Access the kubernetes dashboard running within the minikube cluster
+
+Images Commands:
+  docker-env     Sets up docker env variables; similar to '$(docker-machine env)'
+  cache          Add or delete an image from the local cache.
+
+Configuration a
