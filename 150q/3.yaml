@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: bb
+  name: bb
+spec:
+  volumes:
+  - name: myvol
+    emptyDir: {}
+  containers:
+  - args:
+    - /bin/sh
+    - -c
+    - while true; do echo ‘Hi I am from Main container’ >> /var/log/index.html; sleep 5; done
+    image: busybox
+    name: bb
+    volumeMounts:
+    - name: myvol
+      mountPath: /var/log
+  - image: nginx
+    name: side
+    ports: 
+    - containerPort: 80
+    volumeMounts:
+    - name: myvol
+      mountPath: /usr/share/nginx/html
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
