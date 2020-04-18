@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 125sec
+  name: a125sec
+spec:
+  containers:
+  - image: nginx
+    name: a125sec
+    envFrom:
+    - secretRef:
+        name: "122"
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
