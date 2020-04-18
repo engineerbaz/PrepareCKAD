@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: "114"
+  name: "114"
+spec:
+  volumes:
+  - name: ngvol
+    configMap:
+      name: cfgvolume
+  containers:
+  - image: nginx
+    name: "114"
+    resources: {}
+    volumeMounts:
+    - name: ngvol
+      mountPath: /etc/config
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
