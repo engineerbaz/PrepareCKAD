@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: "88"
+spec:
+  completions: 10
+  parallelism: 5
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - command:
+        - echo
+        - Helo
+        image: busybox
+        name: "88"
+        resources: {}
+      restartPolicy: Never
+status: {}
