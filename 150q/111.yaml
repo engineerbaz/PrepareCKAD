@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 111ng
+  name: 111ng
+spec:
+  containers:
+  - image: nginx
+    name: 111ng
+    resources: {}
+    envFrom:
+    -  configMapRef: 
+         name:  keyvalcfgmap
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
