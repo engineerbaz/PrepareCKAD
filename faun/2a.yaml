@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx-deployment
+  name: nginx-deployment1
+  namespace: k8s-challenge-2-a
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      run: nginx-deployment
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: nginx-deployment
+    spec:
+      containers:
+      - image: nginx
+        name: nginx-deployment
+        resources:
+          limits:
+             memory: "6Mi"
+status: {}

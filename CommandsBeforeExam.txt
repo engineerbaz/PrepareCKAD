@@ -28,3 +28,21 @@ alias kdr= 'kubectl -n $ns -o yaml --dry-run'
 # Shell auto-complete for kubectl
 echo 'source <(kubectl completion bash)' >>~/.bashrc
 kubectl completion bash >/etc/bash_completion.d/kubectl
+
+===
+
+question ZERO read
+each Qs use 3 min 
+write Qs and weight in notepad
+
+tab
+completion
+alias
+copy
+
+aryan
+
+
+
+
+
