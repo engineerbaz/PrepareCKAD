@@ -2,4 +2,7 @@ export ns=default
 alias k='kubectl -n $ns'
 
 export kdr="-o yaml --dry-run"
+export rr="--recursive"
+
+alias ke="kubectl explain"
 
