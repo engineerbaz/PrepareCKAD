@@ -6,3 +6,25 @@ export rr="--recursive"
 
 alias ke="kubectl explain"
 
+
+
+alias k=kubectl
+source <(kubectl completion bash) # completion will save a lot of time and avoid typo
+source <(kubectl completion bash | sed 's/kubectl/k/g' ) # so completion works with the alias "k"
+
+## good to know
+k get po -n prod[TAB]uction # will autocomplete the namespace
+k describe po -n production [TAB] # will list the pods in the namespace "production"
+
+
+" in .vimrc
+autocmd FileType yml,yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+inoremap jk <Esc>
+cnoremap ke kubectl explain
+
+
+alias kdr= 'kubectl -n $ns -o yaml --dry-run'
+# Shell auto-complete for kubectl
+echo 'source <(kubectl completion bash)' >>~/.bashrc
+kubectl completion bash >/etc/bash_completion.d/kubectl
