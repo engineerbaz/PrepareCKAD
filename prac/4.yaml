@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: question-13
+  name: question-13
+  namespace: ggckad-s4
+spec:
+  containers:
+  - image: kubegoldenguide/question-thirteen
+    name: question-13
+    ports:
+    - containerPort: 8000
+    readinessProbe:
+      httpGet:
+        path: /health
+        port: 8000
+      initialDelaySeconds: 60
+    livenessProbe:
+      httpGet:
+        path: /health
+        port: 8000
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
