@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: q6
+  name: q6
+spec:
+  volumes:
+  - name: user-login
+    secret:
+      secretName: user-login
+  containers:
+  - image: kubegoldenguide/alpine-spin:1.0.0
+    name: q6
+    resources: {}
+    volumeMounts:
+    - name: user-login
+      mountPath: "/etc/secret"
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}

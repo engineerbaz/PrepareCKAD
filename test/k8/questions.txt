@@ -73,7 +73,7 @@ the kubegoldenguide/alpine-spin:1.0.0 image, and expose these
 configuration settings as environment variables inside the container.
 
 
-Question 6
+Question 6 ****
 ----------
 All operations in this question should be performed in
 the ggckad-s2 namespace.
@@ -90,7 +90,7 @@ entries into this container's filesystem at /etc/secrets.
 Note that you may need to use the `base64` unix utility
 
 
-Question 7
+Question 7******
 ----------
 All operations in this question should be performed in
 the ggckad-s2 namespace.
@@ -103,7 +103,7 @@ container with user ID 2000.
 Both containers should use file system group ID 3000.
 
 
-Question 8
+Question 8*******
 ----------
 All operations in this question should be performed in
 the **ggckad-s2-rq** namespace.
@@ -118,7 +118,7 @@ After the pod has been created, find out how much memory is still
 available to be requested in the ggckad-s2-rq namespace.
 
 
-Question 9
+Question 9****
 ----------
 All operations in this question should be performed in
 the ggckad-s2 namespace.
@@ -139,19 +139,13 @@ Question 10
 All operations in this question should be performed in
 the ggckad-s3 namespace.
 
-In the ggckad-s3 namespace there is currently a pod running called
-question-ten-pod. This pod has a single container that writes the
-current date and time to /var/log.txt every ten seconds.
+In the ggckad-s3 namespace there is currently a pod running called question-ten-pod. This pod has a single container that writes the current date and time to /var/log.txt every ten seconds.
 
-In the resources directory, you'll find a question-10.yaml file that was
-used to create this pod. We will be updating that file.
+In the resources directory, you'll find a question-10.yaml file that was used to create this pod. We will be updating that file.
 
-In the resources directory, there is a Dockerfile for a log collector image.
-
+In the resources directory, there is a Dockerfile for a log collector image. 
 Build the Docker image and tag it as question-ten-collector.
-
-Add the new Docker image as a sidecar container alongside the
-currently running container in the pod by editing the YAML file.
+Add the new Docker image as a sidecar container alongside the currently running container in the pod by editing the YAML file.
 
 Recreate the running pod to include the sidecar container.
 
@@ -161,17 +155,11 @@ Question 11
 All operations in this question should be performed in
 the ggckad-s3 namespace.
 
-In the resources directory, there is a file called question-11.yaml
-that configures a pod. This pod writes to a new data file in
-/var/data every five seconds.
+In the resources directory, there is a file called question-11.yaml that configures a pod. This pod writes to a new data file in /var/data every five seconds.
 
-We have a third party service that is going to collect
-these data files. However, the service requires that all of
-the data is concatenated together and inserted into a file 
-located at /collect/data.txt.
+We have a third party service that is going to collect these data files. However, the service requires that all of the data is concatenated together and inserted into a file located at /collect/data.txt.
 
-Update the pod to include an adapter container that concatenates 
-the individual data files using `cat /var/data/*` every ten seconds, 
+Update the pod to include an adapter container that concatenates the individual data files using `cat /var/data/*` every ten seconds, 
 and writes the concatenated output to /collect/data.txt.
 
 (Don't worry about cleaning up the already-collected files, simply
@@ -219,10 +207,9 @@ to define liveness and readiness probes that use this health endpoint.
 
 Question 14
 -----------
-Say we had a pod called "file-worker" that had three containers,
-'file-watcher', 'file-uploader', and 'file-processor'. The last 
-time the pod was run, the 'file-uploader' container failed.
+Say we had a pod called "file-worker" that had three containers, 'file-watcher', 'file-uploader', and 'file-processor'. The last time the pod was run, the 'file-uploader' container failed.
 What kubectl command would you use to inspect the logs for this container?
+kubectl logs -p file-worker -c file-uploader 
 
 
 Question 15
@@ -230,6 +217,7 @@ Question 15
 Run a kubectl command that outputs the total amount of CPU requests
 and memory requests for each node. What is the total capacity of memory
 available in your cluster? Write down the command and these amounts.
+
 
 
 Question 16
@@ -246,7 +234,7 @@ Inspect the YAML file and the running pod and diagnose the issue.
 Then, fix the issue and recreate the pod so that it works as expected.
 
 
-Question 17
+Question 17****
 -----------
 All operations in this question should be performed in
 the ggckad-s4 namespace.

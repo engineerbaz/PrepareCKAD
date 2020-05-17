@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: q8
+  name: q8
+spec:
+  containers:
+  - image: nginx:1.7.9
+    name: q8
+    resources:
+      memory:
+        request: 128m
+      cpu:
+        request: 0.5    
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}

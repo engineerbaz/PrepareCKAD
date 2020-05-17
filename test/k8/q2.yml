@@ -9,10 +9,10 @@ metadata:
   name: q2
 spec:
   containers:
-  - image: ggckad-question-two:latest
+  - image: kubegoldenguide/alpine-spin:ggckad-question-two
     name: q2
     resources: {}
-    imagePullPolicy: IfNotPresent
+#    imagePullPolicy: IfNotPresent
   dnsPolicy: ClusterFirst
   restartPolicy: Never
 status: {}

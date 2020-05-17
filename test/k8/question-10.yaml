@@ -1,0 +1,22 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: question-ten-pod
+  namespace: ggckad-s3
+spec:
+  volumes:
+    - name: var-volume
+      emptyDir: {}
+  containers:
+    - image: question-ten-collector:1
+      name: sidecar
+      volumeMounts:
+        - name: var-volume
+          mountPath: /var/
+    - image: busybox:1.28.4
+      name: app
+      command: ["/bin/sh"]
+      args: ["-c", "while true; do date >> /var/log.txt; sleep 10; done;"]
+      volumeMounts:
+        - name: var-volume
+          mountPath: /var/

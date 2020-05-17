@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: q7
+  name: q7
+spec:
+  securityContext:
+    fsGroup: 3000
+  containers:
+  - image: kubegoldenguide/alpine-spin:1.0.0
+    name: pod1
+    resources: {}
+    securityContext:
+      runAsUser: 1000
+  - image: kubegoldenguide/alpine-spin:1.0.0
+    name: pod2
+    resources: {}
+    securityContext:
+      runAsUser: 2000
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
