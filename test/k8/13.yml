@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: question-13-pod
+  name: question-13-pod
+spec:
+  containers:
+  - image: kubegoldenguide/question-thirteen
+    name: question-13-pod
+    ports:
+    - containerPort: 8080
+    resources: {}
+    livenessProbe:
+      httpGet:
+        path: /health
+        port: 8080
+      initialDelaySeconds: 60
+    readinessProbe:
+      httpGet:
+        path: /health
+        port: 8080
+      initialDelaySeconds: 60
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
