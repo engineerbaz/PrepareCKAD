@@ -1,0 +1,97 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"question-ten-pod","namespace":"ggckad-s3"},"spec":{"containers":[{"args":["-c","while true; do date \u003e\u003e /var/log.txt; sleep 10; done;"],"command":["/bin/sh"],"image":"busybox:1.28.4","name":"app","volumeMounts":[{"mountPath":"/var/","name":"var-volume"}]}],"volumes":[{"emptyDir":{},"name":"var-volume"}]}}
+  creationTimestamp: "2020-05-16T15:59:48Z"
+  name: question-ten-pod
+  namespace: ggckad-s3
+  resourceVersion: "201522"
+  selfLink: /api/v1/namespaces/ggckad-s3/pods/question-ten-pod
+  uid: 3a52dc8f-14b8-4541-b31f-3ed360b66ceb
+spec:
+  containers:
+  - args:
+    - -c
+    - while true; do date >> /var/log.txt; sleep 10; done;
+    command:
+    - /bin/sh
+    image: busybox:1.28.4
+    imagePullPolicy: IfNotPresent
+    name: app
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/
+      name: var-volume
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-z7gvz
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: minikube
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - emptyDir: {}
+    name: var-volume
+  - name: default-token-z7gvz
+    secret:
+      defaultMode: 420
+      secretName: default-token-z7gvz
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-05-16T15:59:48Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-05-16T16:14:56Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-05-16T16:14:56Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-05-16T15:59:48Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://f16a4a9ff40d15c07da243cf8c3e876525c475ff4adc5c91a1f7a15c96fb2afb
+    image: busybox:1.28.4
+    imageID: docker-pullable://busybox@sha256:141c253bc4c3fd0a201d32dc1f493bcf3fff003b6df416dea4f41046e0f37d47
+    lastState:
+      terminated:
+        containerID: docker://158a49e5558cc40522930640488c538b84e1818dced499d01f42d35c3b438ee9
+        exitCode: 255
+        finishedAt: "2020-05-16T16:13:53Z"
+        reason: Error
+        startedAt: "2020-05-16T16:00:22Z"
+    name: app
+    ready: true
+    restartCount: 1
+    state:
+      running:
+        startedAt: "2020-05-16T16:14:52Z"
+  hostIP: 10.0.2.15
+  phase: Running
+  podIP: 172.17.0.24
+  qosClass: BestEffort
+  startTime: "2020-05-16T15:59:48Z"
