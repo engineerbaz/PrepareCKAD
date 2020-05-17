@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: question-eighteen-pod
+  namespace: ggckad-s5
+  labels:
+    app: nginx
+    tier: backend
+  annotations:
+    commit: "6fede89"
+    stream: "practice"
+spec:
+  containers:
+    - image: nginx:1.7.9
+      name: nginx
