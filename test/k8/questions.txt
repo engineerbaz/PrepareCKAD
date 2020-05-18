@@ -278,7 +278,7 @@ Write down the kubectl commands you used and the list of
 resources.
 
 
-Question 20
+Question 20***
 -----------
 All operations in this question should be performed in
 the ggckad-s5 namespace.
@@ -293,7 +293,7 @@ the existing pods are killed off before new pods are created to
 replace them.
 
 
-Question 21
+Question 21***
 -----------
 All operations in this question should be performed in
 the ggckad-s5 namespace.
@@ -312,7 +312,7 @@ Roll back the deployment to the previous version,
 and get the status of the deployment after it's been rolled back
 
 
-Question 22
+Question 22 *******
 -----------
 All operations in this question should be performed in
 the ggckad-s5 namespace.
@@ -361,12 +361,17 @@ Using a single kubectl command, create a deployment of the nginx:1.7.9
 image called question-24-deployment running with five replicas. 
 Write down this command.
 
+$ kubectl run deploy q24 --image=nginx --replicas=5 
+
 Once the deployment is running successfully, expose the deployment's
 pods so that network requests can be made to them from outside the cluster.
 
 It may be helpful to know that, by default, the nginx image listens on port 80.
 
-Question 25
+
+$ kubectl expose deploy q24 --port=80 --type=NodePort
+
+Question 25****
 -----------
 
 All operations in this question should be performed in
@@ -385,7 +390,7 @@ requests can be made to these nginx pods through the Service.
 Note that the Service is currently, and must remain, internal to the cluster.
 
 
-Question 26
+Question 26****
 -----------
 
 All operations in this question should be performed in
@@ -405,21 +410,16 @@ Question 27
 All operations in this question should be performed in
 the ggckad-s6 namespace.
 
-In the resources directory there is a YAML configuration file called
-question-27.yaml.
+In the resources directory there is a YAML configuration file called question-27.yaml.
 
-This YAML file declares two pods. The first pod simulates a pod running
-a database. The second pod simulates a pod running a web application.
+This YAML file declares two pods. The first pod simulates a pod running a database. The second pod simulates a pod running a web application.
 
-As it is currently configured, incoming and outgoing network requests 
-can be made between any pod in this file. However, we want to configure
-a Network Policy that restricts network traffic.
+As it is currently configured, incoming and outgoing network requests can be made between any pod in this file. However, we want to configure a Network Policy that restricts network traffic.
 
 Add labels to these pods, and create network policies so that:
 
 * allows incoming and outgoing network requests for the web application pod
-* only allows incoming network requests for the database pod if they are 
-  made from the web application pod
+* only allows incoming network requests for the database pod if they are made from the web application pod
 * disallows outgoing network requests for the database pod
 
 

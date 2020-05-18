@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: access-nginx
+spec:
+  policyTypes:
+  - Ingress
+  - Egress
+  podSelector:
+    matchLabels:
+      app: web
+  ingress:
+  - {}
+  egress:
+  - {}
+  podSelector:
+    matchLabels:
+      app: db
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: web
+  egress: 
+
+
+
+
+
+
+
+* allows incoming and outgoing network requests for the web application pod
+* only allows incoming network requests for the database pod if they are made from the web application pod
+* disallows outgoing network requests for the database pod
+
+
+

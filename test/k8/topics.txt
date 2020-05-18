@@ -1,0 +1,7 @@
+Stateful
+	DameonSet
+ Taint & Toleration
+ Node Affinity
+  Ingress
+	DownwardAPI
+Network Policy
